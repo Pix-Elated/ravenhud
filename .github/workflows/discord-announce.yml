@@ -12,6 +12,10 @@ on:
         description: 'Release tag to announce (e.g., v0.20.1)'
         required: true
         type: string
+      changelog:
+        description: 'Changelog summary (optional - falls back to GitHub release body)'
+        required: false
+        type: string
 
 jobs:
   announce:
@@ -31,8 +35,15 @@ jobs:
             RELEASE_NAME=$(echo "$RELEASE_DATA" | jq -r '.name')
             RELEASE_URL=$(echo "$RELEASE_DATA" | jq -r '.html_url')
             PRERELEASE=$(echo "$RELEASE_DATA" | jq -r '.prerelease')
-            BODY=$(echo "$RELEASE_DATA" | jq -r '.body')
             DOWNLOAD_URL=$(echo "$RELEASE_DATA" | jq -r '.assets[0].browser_download_url // empty')
+
+            # Use provided changelog if available, otherwise fall back to release body
+            CHANGELOG_INPUT='${{ inputs.changelog }}'
+            if [ -n "$CHANGELOG_INPUT" ]; then
+              BODY="$CHANGELOG_INPUT"
+            else
+              BODY=$(echo "$RELEASE_DATA" | jq -r '.body')
+            fi
           else
             # Use release event data
             VERSION="${{ github.event.release.tag_name }}"
