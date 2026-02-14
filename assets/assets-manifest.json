@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-14T18:06:34.736Z",
+  "generatedAt": "2026-02-14T18:12:17.352Z",
   "archives": [
     {
       "name": "images-cosmetics.zip",
@@ -9,7 +9,7 @@
     },
     {
       "name": "images-creatures.zip",
-      "hash": "sha256:df4401f800291c0d7e498b1f68c00d8e65f5349e4383be933eab5c2ec2d5b629",
+      "hash": "sha256:f2122b6301d9e2ec295bb0ac4ce6033a0d6b826f5de3e0d5810b93973e2ec501",
       "files": 398,
       "sizeMB": 0.7
     },
@@ -39,7 +39,7 @@
     },
     {
       "name": "images-materials.zip",
-      "hash": "sha256:e07cb749f687ae9de1ab70134ed60fae782f9e752161fb5f55f277a8af32d4fa",
+      "hash": "sha256:48135599d30b7667c3d07dbde4be4f65f9c9efce5c316d714894f96013cd07a2",
       "files": 690,
       "sizeMB": 1.5
     },
@@ -69,7 +69,7 @@
     },
     {
       "name": "images-ravenguardian.zip",
-      "hash": "sha256:0c8eb580967786df8b69db3b9ac3438f9366c02e31b4c385347f00d8180344f3",
+      "hash": "sha256:6bf28acc9c0e3468c6e265e43d30f65b2fa3d7442ec2a6dccf3e7a8db31fda67",
       "files": 148,
       "sizeMB": 1.1
     },
@@ -87,7 +87,7 @@
     },
     {
       "name": "images-tradepacks.zip",
-      "hash": "sha256:c0169044d75271665356d173106de49fc8fb75ca30ceda96042e376eb50977c7",
+      "hash": "sha256:d1f3053dbf4bdca300ff423e1776473438e0102f5de0368f7e70fff4468a1617",
       "files": 83,
       "sizeMB": 0.2
     },
