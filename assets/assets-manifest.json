@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-02-15T15:24:39.903Z",
+  "generatedAt": "2026-02-16T06:52:35.390Z",
   "archives": [
     {
       "name": "images-cosmetics.zip",
-      "hash": "sha256:4640eb72eafc4ba297899304d006dd2b71d641f2182bcff01892d6b5d661c982",
-      "files": 76,
+      "hash": "sha256:3885243830b0ff02312e324a55e60476f51fb17883c2236a6bd88a6dfa9330e7",
+      "files": 77,
       "sizeMB": 0.1
     },
     {
       "name": "images-creatures.zip",
-      "hash": "sha256:72a109cce621e6d529381b4ac0dd7f48bf5cb75755c43883c8730848db46ed8a",
+      "hash": "sha256:5c16f7e2c0ffe6817059ec6fb8f0527d94d4bc16241884677eda10de586b5d7e",
       "files": 398,
       "sizeMB": 0.7
     },
@@ -27,8 +27,8 @@
     },
     {
       "name": "images-items.zip",
-      "hash": "sha256:9e9697f1ed2d309148bba77dcc0dbb715503b5aa4bd59eb7d5182d49361a96ef",
-      "files": 3028,
+      "hash": "sha256:9e5c488b41eb6a3ac3d82fe8ff0399d08eac7c909ed5ebfecf6e780c3636206c",
+      "files": 3051,
       "sizeMB": 5.9
     },
     {
@@ -39,7 +39,7 @@
     },
     {
       "name": "images-materials.zip",
-      "hash": "sha256:1d0f462eb1379e097a21db2c8737b34b1eaf4e035b00d7699c23ed51e4d59269",
+      "hash": "sha256:cc1c1ac8672d3be2cff9416ba266506dbbf9498d80a106af775a778344453737",
       "files": 690,
       "sizeMB": 1.5
     },
@@ -51,15 +51,15 @@
     },
     {
       "name": "images-moas.zip",
-      "hash": "sha256:22261151f5b4377c30be3bee74b8dd368f7d31447791c4fc9428ed18d09c931d",
+      "hash": "sha256:a2c5c52859f29b1b10bf7d86550fb85b16c1fa57e123b06fffec6f0b18917d94",
       "files": 116,
       "sizeMB": 0.2
     },
     {
       "name": "images-munks.zip",
-      "hash": "sha256:3c686c221c0dfede10beb685064aac7931c4af1527c2f1c6a545a74800978abb",
-      "files": 283,
-      "sizeMB": 70.9
+      "hash": "sha256:b0b5b7c1b4949551d07a5a26678a7b4387ea21c8fc47d6189172e222f5f7b0c2",
+      "files": 383,
+      "sizeMB": 96.2
     },
     {
       "name": "images-ravencards.zip",
@@ -69,7 +69,7 @@
     },
     {
       "name": "images-ravenguardian.zip",
-      "hash": "sha256:f99fb2c7eae06099653baea3d7681b42313349bab3e06d95ac6c2457fbfe0ac1",
+      "hash": "sha256:df0edb65d8617ac2a2c1b0db66cc6c7ca7cf29cdc334a456ae223eb44e5be29f",
       "files": 148,
       "sizeMB": 1.1
     },
@@ -87,14 +87,14 @@
     },
     {
       "name": "images-tradepacks.zip",
-      "hash": "sha256:f397bb61bccbf66606790e5a01de4b3f68df836c592400a324a3cf3f76cc7766",
+      "hash": "sha256:f664abe26a9ba096a9dd3c8cccd410dd8e6c76bc24e3f84baa608213b1976873",
       "files": 83,
       "sizeMB": 0.2
     },
     {
       "name": "images-trophies.zip",
-      "hash": "sha256:025bc3376d35cfdf4c6f7d7977aebd3b6f8dfebbd31fd852e43aa503f4d1efee",
-      "files": 64,
+      "hash": "sha256:db1d13e799eea82fdba54aa343867f9c5a046899f0210f6fe967beebb1d9e4b2",
+      "files": 65,
       "sizeMB": 0.1
     },
     {
