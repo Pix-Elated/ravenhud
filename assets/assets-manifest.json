@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-17T23:57:44.332Z",
+  "generatedAt": "2026-02-19T23:54:14.106Z",
   "archives": [
     {
       "name": "images-cosmetics.zip",
@@ -51,15 +51,21 @@
     },
     {
       "name": "images-moas.zip",
-      "hash": "sha256:a2c5c52859f29b1b10bf7d86550fb85b16c1fa57e123b06fffec6f0b18917d94",
+      "hash": "sha256:344c98d6232673e8a954857354ed38380d6aa03283d0656e8176e9299edc70e8",
       "files": 116,
       "sizeMB": 0.2
     },
     {
-      "name": "images-munks.zip",
-      "hash": "sha256:b0b5b7c1b4949551d07a5a26678a7b4387ea21c8fc47d6189172e222f5f7b0c2",
-      "files": 383,
-      "sizeMB": 96.2
+      "name": "images-munks-part1.zip",
+      "hash": "sha256:c19888e1530bfe33f99879721c573c62bee679baa3d685e6674d65b635ad4dfc",
+      "files": 242,
+      "sizeMB": 61.2
+    },
+    {
+      "name": "images-munks-part2.zip",
+      "hash": "sha256:b1730fa42e8ae97c7dd0095779691afec69774ee3605794509c9facf493a091a",
+      "files": 242,
+      "sizeMB": 59.3
     },
     {
       "name": "images-ravencards.zip",
