@@ -1,0 +1,182 @@
+#!/bin/sh
+# Commit message format validator with body requirements (WARNING MODE)
+# Enforces Conventional Commits format AND human-readable body for feat/fix/perf
+
+COMMIT_MSG_FILE=$1
+commit_msg=$(cat "$COMMIT_MSG_FILE")
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+
+# Types that REQUIRE a body with human-readable explanation
+BODY_REQUIRED_TYPES="feat|fix|perf"
+
+# Minimum body length (characters, excluding whitespace)
+MIN_BODY_LENGTH=50
+
+# Enforcement mode: "warn" allows with warning (for static sites like ravenhud)
+ENFORCEMENT_MODE="warn"
+
+# ============================================================================
+# HELPER FUNCTIONS
+# ============================================================================
+
+# Extract the first line (subject)
+get_subject() {
+  echo "$commit_msg" | head -n 1
+}
+
+# Extract the body (everything after first blank line, excluding comments)
+get_body() {
+  echo "$commit_msg" | sed -n '/^$/,$ p' | tail -n +2 | grep -v '^#' | grep -v '^$' | tr -d '\r'
+}
+
+# Get commit type from subject (e.g., "feat" from "feat(scope): description")
+get_commit_type() {
+  get_subject | sed -n 's/^\([a-z]*\).*/\1/p'
+}
+
+# Count non-whitespace characters in body
+get_body_length() {
+  get_body | tr -d '[:space:]' | wc -c | tr -d ' '
+}
+
+# Check if this is an automated commit or git operation that should skip body validation
+should_skip_body_validation() {
+  subject=$(get_subject)
+
+  # === Automated commits ===
+
+  # Dependabot commits: chore(deps): ...
+  echo "$subject" | grep -qE '^chore\(deps' && return 0
+
+  # Merge commits
+  echo "$subject" | grep -qE '^Merge ' && return 0
+
+  # Version bump commits
+  echo "$subject" | grep -qE '^chore(\(.+\))?: (bump|release|version)' && return 0
+
+  # Release commits with version number
+  echo "$subject" | grep -qE 'v[0-9]+\.[0-9]+' && return 0
+
+  # GitHub Actions bot
+  [ "$GIT_AUTHOR_EMAIL" = "github-actions[bot]@users.noreply.github.com" ] && return 0
+  [ "$GIT_AUTHOR_EMAIL" = "41898282+github-actions[bot]@users.noreply.github.com" ] && return 0
+
+  # CI environment
+  [ "$CI" = "true" ] && return 0
+
+  # === Git operations (prevent breaking rebases) ===
+
+  # During rebase
+  [ -n "$GIT_REBASE_TODO" ] && return 0
+
+  # During cherry-pick
+  [ -n "$GIT_CHERRY_PICK_HELP" ] && return 0
+
+  # Interactive rebase
+  [ -n "$GIT_SEQUENCE_EDITOR" ] && return 0
+
+  # Rebase in progress (check for .git/rebase-merge or .git/rebase-apply)
+  [ -d ".git/rebase-merge" ] && return 0
+  [ -d ".git/rebase-apply" ] && return 0
+
+  return 1
+}
+
+# Check if type requires a body
+type_requires_body() {
+  commit_type=$(get_commit_type)
+  echo "$commit_type" | grep -qE "^($BODY_REQUIRED_TYPES)$"
+}
+
+# ============================================================================
+# VALIDATION
+# ============================================================================
+
+# 1. Validate Conventional Commits format (subject line)
+PATTERN="^(feat|fix|docs|style|refactor|test|chore|perf|ci|build)(\(.+\))?: .{1,}"
+
+if ! echo "$(get_subject)" | grep -qE "$PATTERN"; then
+  echo ""
+  echo "WARNING: Invalid commit message format!"
+  echo "========================================"
+  echo ""
+  echo "Expected: type(scope): description"
+  echo ""
+  echo "Valid types: feat, fix, docs, style, refactor, test, chore, perf, ci, build"
+  echo ""
+  echo "Examples:"
+  echo "  feat: add new download button"
+  echo "  fix: correct mobile layout issue"
+  echo "  docs: update installation guide"
+  echo ""
+  echo "Your subject: $(get_subject)"
+  echo ""
+  echo "See: CONTRIBUTING.md#commit-messages"
+  echo ""
+  echo "Proceeding anyway (warning mode)..."
+  echo ""
+  # Warning mode - don't block
+  exit 0
+fi
+
+# 2. Skip body validation for automated commits and git operations
+if should_skip_body_validation; then
+  exit 0
+fi
+
+# 3. Check if body is required for this commit type
+if type_requires_body; then
+  body=$(get_body)
+  body_length=$(get_body_length)
+  commit_type=$(get_commit_type)
+
+  # Check if body exists
+  if [ -z "$body" ]; then
+    echo ""
+    echo "WARNING: Commit body recommended for '$commit_type' commits!"
+    echo "============================================================"
+    echo ""
+    echo "Commits of type 'feat', 'fix', and 'perf' should have a human-readable"
+    echo "explanation in the commit body (minimum $MIN_BODY_LENGTH characters)."
+    echo ""
+    echo "Format:"
+    echo "  type(scope): short description"
+    echo ""
+    echo "  Explain what this change does for website visitors."
+    echo "  What can they now see or do?"
+    echo ""
+    echo "Example:"
+    echo "  feat: add animated demo GIFs"
+    echo ""
+    echo "  Visitors can now see the app in action before downloading."
+    echo "  Each feature card shows a looping preview of that feature."
+    echo ""
+    echo "Your message:"
+    echo "  $(get_subject)"
+    echo ""
+    echo "Proceeding anyway (warning mode)..."
+    echo ""
+    exit 0
+  fi
+
+  # Check body length
+  if [ "$body_length" -lt "$MIN_BODY_LENGTH" ]; then
+    echo ""
+    echo "WARNING: Commit body too short!"
+    echo "================================"
+    echo ""
+    echo "Body should be at least $MIN_BODY_LENGTH characters (yours: $body_length)."
+    echo ""
+    echo "Your body:"
+    echo "  $body"
+    echo ""
+    echo "Proceeding anyway (warning mode)..."
+    echo ""
+    exit 0
+  fi
+fi
+
+exit 0
