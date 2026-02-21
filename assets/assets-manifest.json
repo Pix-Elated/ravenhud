@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-02-21T05:31:20.993Z",
+  "generatedAt": "2026-02-21T05:43:49.103Z",
   "archives": [
     {
       "name": "images-cosmetics.zip",
-      "hash": "sha256:068d2c0077fd6fa7e4567e5819d6eb59d0072789062b2b169e5f907727aa888d",
-      "files": 504,
-      "sizeMB": 1.2
+      "hash": "sha256:10eb5f92ead9388ee5a0fb682722efcefd62e3f8c381fa2f71553ac514b454f2",
+      "files": 347,
+      "sizeMB": 0.7
     },
     {
       "name": "images-creatures.zip",
@@ -51,27 +51,27 @@
     },
     {
       "name": "images-moas.zip",
-      "hash": "sha256:77adf6de1a5d40448487834fe6802a20f700c9c24782fae5d96a15a098d7cf4e",
-      "files": 116,
+      "hash": "sha256:00574ddb333b14b0bf29f0a8317c5003ea57ef1800ec7d162a3fdb8328e88afd",
+      "files": 118,
       "sizeMB": 0.2
     },
     {
       "name": "images-munks-part1.zip",
-      "hash": "sha256:d465da6ffa07fbf69a9f1dea828991d6ff7b5ebd9efebb144d37aa85278115a5",
-      "files": 306,
-      "sizeMB": 76.6
+      "hash": "sha256:c30ab2690d29e3d836509413d2506b7503392a03a60d32dd6448bde38c9ab734",
+      "files": 282,
+      "sizeMB": 70.8
     },
     {
       "name": "images-munks-part2.zip",
-      "hash": "sha256:9df91e6843ba4770603f9d0bdf49da244db946787e34b7a4aab9d5fde64f0ff5",
-      "files": 306,
-      "sizeMB": 75.8
+      "hash": "sha256:7dcddf9f4589bc1b7e5ceaa253db08239ff7a909511150b897ac9594379f1022",
+      "files": 282,
+      "sizeMB": 70.1
     },
     {
       "name": "images-munks-part3.zip",
-      "hash": "sha256:caa4a73e798551f234efd16ca835bd18fca837ffc1e9e7290201acc4d265eeed",
-      "files": 305,
-      "sizeMB": 76.2
+      "hash": "sha256:1e85a8af67d1d5c05c5207027141c518321244d4587066bf08116f407e090cbd",
+      "files": 281,
+      "sizeMB": 70.3
     },
     {
       "name": "images-ravencards.zip",
