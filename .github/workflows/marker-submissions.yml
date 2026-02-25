@@ -1,0 +1,194 @@
+# Marker Submission Management
+# Auto-labels new map marker issues and handles /approve command
+
+name: Marker Submissions
+
+on:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+
+permissions:
+  issues: write
+
+jobs:
+  # ─── Auto-label new marker submissions ────────────────────────────────
+  auto-label:
+    if: >-
+      github.event_name == 'issues' &&
+      contains(github.event.issue.labels.*.name, 'map-markers')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Parse and label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const issueNumber = context.payload.issue.number;
+
+            // Extract JSON from the issue body
+            const jsonMatch = body.match(/```json\s*\n([\s\S]*?)\n```/);
+            if (!jsonMatch) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['needs-review', 'parse-error']
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: '⚠️ Could not find JSON data block in this submission. Please ensure the marker was exported from RavenHUD.'
+              });
+              return;
+            }
+
+            let markers;
+            try {
+              markers = JSON.parse(jsonMatch[1]);
+              if (!Array.isArray(markers)) throw new Error('Not an array');
+            } catch (e) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['needs-review', 'parse-error']
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: '⚠️ JSON data block is malformed. Please re-export from RavenHUD.'
+              });
+              return;
+            }
+
+            // Collect unique categories
+            const categories = [...new Set(markers.map(m => m.category).filter(Boolean))];
+            const labels = ['needs-review'];
+            for (const cat of categories) {
+              labels.push(`cat:${cat}`);
+            }
+
+            // Add floor labels if non-surface
+            const floors = [...new Set(markers.map(m => m.floor).filter(f => f && f !== 'surface'))];
+            for (const floor of floors) {
+              labels.push(`floor:${floor}`);
+            }
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              labels
+            });
+
+            const count = markers.length;
+            const catList = categories.map(c => `\`${c}\``).join(', ');
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: [
+                `✅ **Parsed ${count} marker(s)** in ${catList}`,
+                '',
+                'A maintainer will review this submission. To approve:',
+                '- Comment `/approve` to add the `approved` label',
+                '- Comment `/reject [reason]` to close with feedback'
+              ].join('\n')
+            });
+
+  # ─── Handle /approve and /reject commands ─────────────────────────────
+  approve-reject:
+    if: >-
+      github.event_name == 'issue_comment' &&
+      contains(github.event.issue.labels.*.name, 'map-markers') &&
+      (startsWith(github.event.comment.body, '/approve') || startsWith(github.event.comment.body, '/reject'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check permissions
+        id: check
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: perms } = await github.rest.repos.getCollaboratorPermissionLevel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              username: context.payload.comment.user.login
+            });
+            const allowed = ['admin', 'write'].includes(perms.permission);
+            core.setOutput('allowed', allowed ? 'true' : 'false');
+            core.setOutput('command', context.payload.comment.body.trim());
+
+      - name: Process command
+        if: steps.check.outputs.allowed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const command = `${{ steps.check.outputs.command }}`;
+            const issueNumber = context.payload.issue.number;
+
+            if (command.startsWith('/approve')) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['approved']
+              });
+
+              // Remove needs-review
+              try {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  name: 'needs-review'
+                });
+              } catch (e) {
+                // Label may not exist
+              }
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: '🎉 **Approved!** This marker will be included in the next data update.\n\nRun `node scripts/ingest-community-markers.js` to import.'
+              });
+            } else if (command.startsWith('/reject')) {
+              const reason = command.replace('/reject', '').trim() || 'No reason provided';
+
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['rejected']
+              });
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: `❌ **Rejected**: ${reason}`
+              });
+
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                state: 'closed'
+              });
+            }
+
+      - name: Unauthorized
+        if: steps.check.outputs.allowed != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.issue.number,
+              body: '⛔ Only maintainers can use `/approve` and `/reject` commands.'
+            });
