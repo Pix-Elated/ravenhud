@@ -1,5 +1,6 @@
 # Marker Submission Management
-# Auto-labels new map marker issues and handles /approve command
+# Auto-labels new map marker issues, processes embedded screenshots,
+# and handles /approve and /reject commands.
 
 name: Marker Submissions
 
@@ -11,6 +12,7 @@ on:
 
 permissions:
   issues: write
+  contents: write
 
 jobs:
   # ─── Auto-label new marker submissions ────────────────────────────────
@@ -20,7 +22,10 @@ jobs:
       contains(github.event.issue.labels.*.name, 'map-markers')
     runs-on: ubuntu-latest
     steps:
-      - name: Parse and label
+      - name: Checkout (for screenshot commits)
+        uses: actions/checkout@v4
+
+      - name: Parse, label, and process screenshot
         uses: actions/github-script@v7
         with:
           script: |
@@ -65,17 +70,35 @@ jobs:
               return;
             }
 
-            // Collect unique categories
+            // Collect unique categories and floors
             const categories = [...new Set(markers.map(m => m.category).filter(Boolean))];
             const labels = ['needs-review'];
             for (const cat of categories) {
               labels.push(`cat:${cat}`);
             }
-
-            // Add floor labels if non-surface
             const floors = [...new Set(markers.map(m => m.floor).filter(f => f && f !== 'surface'))];
             for (const floor of floors) {
               labels.push(`floor:${floor}`);
+            }
+
+            // Ensure labels exist before adding
+            for (const label of labels) {
+              try {
+                await github.rest.issues.getLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: label
+                });
+              } catch {
+                const isCategory = label.startsWith('cat:');
+                const isFloor = label.startsWith('floor:');
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  name: label,
+                  color: isCategory ? 'C2E0C6' : isFloor ? 'BFD4F2' : 'FBCA04'
+                });
+              }
             }
 
             await github.rest.issues.addLabels({
@@ -85,14 +108,61 @@ jobs:
               labels
             });
 
+            // ── Process embedded screenshot ─────────────────────────────
+            const ssMatch = body.match(/<!-- RHUD_SCREENSHOT:([A-Za-z0-9+/=]+) -->/);
+            let screenshotUrl = '';
+
+            if (ssMatch) {
+              try {
+                const b64 = ssMatch[1];
+                const filename = `issue-${issueNumber}.webp`;
+                const filePath = `screenshots/${filename}`;
+
+                // Upload via Contents API
+                await github.rest.repos.createOrUpdateFileContents({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  path: filePath,
+                  message: `chore: add screenshot for issue #${issueNumber}`,
+                  content: b64,
+                  branch: 'master'
+                });
+
+                screenshotUrl = `https://raw.githubusercontent.com/${context.repo.owner}/${context.repo.repo}/master/${filePath}`;
+
+                // Update issue body: replace hidden comment with visible image
+                const newBody = body.replace(
+                  /<!-- RHUD_SCREENSHOT:[A-Za-z0-9+/=]+ -->/,
+                  `![Screenshot](${screenshotUrl})`
+                );
+
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issueNumber,
+                  body: newBody
+                });
+
+                console.log(`Screenshot uploaded: ${screenshotUrl}`);
+              } catch (err) {
+                console.error('Failed to process screenshot:', err.message);
+              }
+            }
+
             const count = markers.length;
             const catList = categories.map(c => `\`${c}\``).join(', ');
+            const ssStatus = screenshotUrl
+              ? `\n📷 [Screenshot attached](${screenshotUrl})`
+              : ssMatch
+                ? '\n⚠️ Screenshot processing failed'
+                : '';
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issueNumber,
               body: [
-                `✅ **Parsed ${count} marker(s)** in ${catList}`,
+                `✅ **Parsed ${count} marker(s)** in ${catList}${ssStatus}`,
                 '',
                 'A maintainer will review this submission. To approve:',
                 '- Comment `/approve` to add the `approved` label',
@@ -138,7 +208,6 @@ jobs:
                 labels: ['approved']
               });
 
-              // Remove needs-review
               try {
                 await github.rest.issues.removeLabel({
                   owner: context.repo.owner,
