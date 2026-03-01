@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-02-27T01:10:19.920Z",
+  "generatedAt": "2026-03-01T15:12:38.695Z",
   "archives": [
     {
       "name": "images-cosmetics.zip",
-      "hash": "sha256:068d2c0077fd6fa7e4567e5819d6eb59d0072789062b2b169e5f907727aa888d",
-      "files": 504,
+      "hash": "sha256:1347366d66f0060685c74d1193a9282dc21fb9e08c6e61d93a075ba3a7d888f5",
+      "files": 505,
       "sizeMB": 1.2
     },
     {
@@ -51,13 +51,13 @@
     },
     {
       "name": "images-moas.zip",
-      "hash": "sha256:d9793fb75bbbd418f842d996ad6f9a020467562cab168ca7f7c5868864ef49db",
-      "files": 121,
+      "hash": "sha256:32ca4fc5a6a8484243ca31616e140baeec345516dc9175463bd28c25e47a491d",
+      "files": 123,
       "sizeMB": 0.2
     },
     {
       "name": "images-munks-part1.zip",
-      "hash": "sha256:baca8c9f22aa49ff04770269d881b90097a2ba52f9066df35dd872652cbc1bbd",
+      "hash": "sha256:7a31a0be5eb21a57a1853805fa7d91d0d979724cf47ab5aafc22ad24fedc638c",
       "files": 306,
       "sizeMB": 76.6
     },
@@ -117,9 +117,9 @@
     },
     {
       "name": "data.zip",
-      "hash": "sha256:f5e2723aad8c5be4c996f17f2fe2d8d26d91328c44d1e87d32f777c00e255bfd",
-      "files": 374,
-      "sizeMB": 4
+      "hash": "sha256:2754d83576665944ec8a987fb1f796ae5ca6b2c265b8d0609fd77692075382cb",
+      "files": 379,
+      "sizeMB": 4.1
     }
   ]
 }
