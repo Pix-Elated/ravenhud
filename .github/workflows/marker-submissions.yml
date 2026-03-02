@@ -111,41 +111,58 @@ jobs:
             });
 
             // ── Process embedded screenshot ─────────────────────────────
+            // Save one copy per marker ID (not per issue number)
             const ssMatch = body.match(/<!-- RHUD_SCREENSHOT:([A-Za-z0-9+/=]+) -->/);
             let screenshotUrl = '';
 
-            if (ssMatch) {
+            if (ssMatch && markers.length > 0) {
               try {
                 const b64 = ssMatch[1];
-                const filename = `issue-${issueNumber}.webp`;
-                const filePath = `screenshots/${filename}`;
+                let latestSha;
 
-                // Upload via Contents API
-                await github.rest.repos.createOrUpdateFileContents({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  path: filePath,
-                  message: `chore: add screenshot for issue #${issueNumber}`,
-                  content: b64,
-                  branch: 'master'
-                });
+                for (const m of markers) {
+                  if (!m.id) continue;
+                  const filePath = `screenshots/${m.id}.webp`;
 
-                screenshotUrl = `https://raw.githubusercontent.com/${context.repo.owner}/${context.repo.repo}/master/${filePath}`;
+                  // Get latest commit SHA to avoid conflicts between uploads
+                  if (!latestSha) {
+                    const { data: ref } = await github.rest.git.getRef({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      ref: 'heads/master'
+                    });
+                    latestSha = ref.object.sha;
+                  }
+
+                  const result = await github.rest.repos.createOrUpdateFileContents({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    path: filePath,
+                    message: `chore: add screenshot for ${m.name || m.id} (#${issueNumber})`,
+                    content: b64,
+                    branch: 'master'
+                  });
+                  latestSha = result.data.commit.sha;
+
+                  if (!screenshotUrl) {
+                    screenshotUrl = `https://raw.githubusercontent.com/${context.repo.owner}/${context.repo.repo}/master/${filePath}`;
+                  }
+                  console.log(`Screenshot uploaded: screenshots/${m.id}.webp`);
+                }
 
                 // Update issue body: replace hidden comment with visible image
-                const newBody = body.replace(
-                  /<!-- RHUD_SCREENSHOT:[A-Za-z0-9+/=]+ -->/,
-                  `![Screenshot](${screenshotUrl})`
-                );
-
-                await github.rest.issues.update({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: issueNumber,
-                  body: newBody
-                });
-
-                console.log(`Screenshot uploaded: ${screenshotUrl}`);
+                if (screenshotUrl) {
+                  const newBody = body.replace(
+                    /<!-- RHUD_SCREENSHOT:[A-Za-z0-9+/=]+ -->/,
+                    `![Screenshot](${screenshotUrl})`
+                  );
+                  await github.rest.issues.update({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: issueNumber,
+                    body: newBody
+                  });
+                }
               } catch (err) {
                 console.error('Failed to process screenshot:', err.message);
               }
@@ -298,6 +315,7 @@ jobs:
         with:
           script: |
             const fs = require('fs');
+            const path = require('path');
 
             // Icon mapping — must match app's marker asset filenames
             const ICONS = {
@@ -321,6 +339,11 @@ jobs:
               waypoint: 'respawn_shrine.webp'
             };
 
+            const screenshotsDir = path.join(process.env.GITHUB_WORKSPACE, 'screenshots');
+            const extractDir = '/tmp/data-extract';
+            const communitySSDir = path.join(extractDir, 'community-screenshots');
+            fs.mkdirSync(communitySSDir, { recursive: true });
+
             // Fetch all approved non-ingested issues
             const issues = await github.paginate(github.rest.issues.listForRepo, {
               owner: context.repo.owner,
@@ -338,11 +361,12 @@ jobs:
             }
 
             // Load existing markers from extracted data.zip
-            const markersPath = '/tmp/data-extract/worldmap-markers.json';
+            const markersPath = path.join(extractDir, 'worldmap-markers.json');
             const existing = JSON.parse(fs.readFileSync(markersPath, 'utf8'));
             const existingIds = new Set(existing.map(m => m.id));
 
             let totalAdded = 0;
+            let screenshotsCopied = 0;
             const processedIssues = [];
 
             for (const issue of toProcess) {
@@ -365,18 +389,43 @@ jobs:
                 continue;
               }
 
+              // Find screenshot: prefer per-marker ID naming, fall back to legacy issue-number naming
+              const legacySSPath = path.join(screenshotsDir, `issue-${issue.number}.webp`);
+              const hasLegacySS = fs.existsSync(legacySSPath);
+
               let added = 0;
+              let issueChanged = false;
               for (const m of markers) {
                 if (!m.id || !m.category || !m.name || m.x == null || m.y == null || !m.floor) {
                   console.warn(`#${issue.number}: marker missing required fields, skipping entry`);
                   continue;
                 }
+
+                // Check for marker-ID screenshot first, then fall back to issue-number
+                const markerSSPath = path.join(screenshotsDir, `${m.id}.webp`);
+                const ssSource = fs.existsSync(markerSSPath) ? markerSSPath : (hasLegacySS ? legacySSPath : null);
+
                 if (existingIds.has(m.id)) {
-                  console.log(`  Skipping duplicate: ${m.id} (${m.name})`);
+                  // Backfill screenshot for existing marker if missing
+                  if (ssSource) {
+                    const existingMarker = existing.find(e => e.id === m.id);
+                    if (existingMarker && !existingMarker.screenshot) {
+                      const dest = path.join(communitySSDir, `${m.id}.webp`);
+                      fs.copyFileSync(ssSource, dest);
+                      existingMarker.screenshot = `community-screenshots/${m.id}.webp`;
+                      screenshotsCopied++;
+                      issueChanged = true;
+                      console.log(`  Backfilled screenshot for ${m.id} (${m.name})`);
+                    } else {
+                      console.log(`  Skipping duplicate: ${m.id} (${m.name})`);
+                    }
+                  } else {
+                    console.log(`  Skipping duplicate: ${m.id} (${m.name})`);
+                  }
                   continue;
                 }
 
-                existing.push({
+                const marker = {
                   id: m.id,
                   source: 'base',
                   category: m.category,
@@ -390,32 +439,48 @@ jobs:
                   region: m.region || '',
                   trigger: '',
                   contributedBy: m.authorName || 'Community'
-                });
+                };
+
+                // Copy screenshot into data archive
+                if (ssSource) {
+                  const dest = path.join(communitySSDir, `${m.id}.webp`);
+                  fs.copyFileSync(ssSource, dest);
+                  marker.screenshot = `community-screenshots/${m.id}.webp`;
+                  screenshotsCopied++;
+                  console.log(`  Screenshot for ${m.id}`);
+                }
+
+                existing.push(marker);
                 existingIds.add(m.id);
                 added++;
+                issueChanged = true;
               }
 
-              if (added > 0) {
+              if (issueChanged) {
                 processedIssues.push(issue.number);
+              }
+              if (added > 0) {
                 totalAdded += added;
                 console.log(`#${issue.number}: added ${added} marker(s)`);
-              } else {
+              } else if (!issueChanged) {
                 console.log(`#${issue.number}: all markers already exist`);
               }
             }
 
-            if (totalAdded === 0) {
-              console.log('No new markers to add');
+            if (totalAdded === 0 && screenshotsCopied === 0) {
+              console.log('No new markers or screenshots to add');
               core.setOutput('changed', 'false');
               return;
             }
 
             // Write updated markers back
             fs.writeFileSync(markersPath, JSON.stringify(existing, null, 2) + '\n');
-            console.log(`Added ${totalAdded} new marker(s) (total: ${existing.length})`);
+            if (totalAdded > 0) console.log(`Added ${totalAdded} new marker(s) (total: ${existing.length})`);
+            if (screenshotsCopied > 0) console.log(`Copied ${screenshotsCopied} screenshot(s) into data archive`);
 
             core.setOutput('changed', 'true');
             core.setOutput('count', String(totalAdded));
+            core.setOutput('screenshots', String(screenshotsCopied));
             core.setOutput('issues', processedIssues.join(','));
 
       - name: Rebuild data.zip and update manifest
