@@ -1,14 +1,15 @@
 # Marker Submission Management
 # Auto-labels new map marker issues, processes embedded screenshots,
-# and handles /approve and /reject commands.
+# handles /approve and /reject commands, and auto-ingests approved markers.
 
 name: Marker Submissions
 
 on:
   issues:
-    types: [opened]
+    types: [opened, labeled]
   issue_comment:
     types: [created]
+  workflow_dispatch: # Manual ingest trigger
 
 permissions:
   issues: write
@@ -19,6 +20,7 @@ jobs:
   auto-label:
     if: >-
       github.event_name == 'issues' &&
+      github.event.action == 'opened' &&
       contains(github.event.issue.labels.*.name, 'map-markers')
     runs-on: ubuntu-latest
     steps:
@@ -177,6 +179,8 @@ jobs:
       contains(github.event.issue.labels.*.name, 'map-markers') &&
       (startsWith(github.event.comment.body, '/approve') || startsWith(github.event.comment.body, '/reject'))
     runs-on: ubuntu-latest
+    outputs:
+      approved: ${{ steps.process.outputs.approved }}
     steps:
       - name: Check permissions
         id: check
@@ -193,6 +197,7 @@ jobs:
             core.setOutput('command', context.payload.comment.body.trim());
 
       - name: Process command
+        id: process
         if: steps.check.outputs.allowed == 'true'
         uses: actions/github-script@v7
         with:
@@ -223,8 +228,10 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issueNumber,
-                body: '🎉 **Approved!** This marker will be included in the next data update.\n\nRun `node scripts/ingest-community-markers.js` to import.'
+                body: '🎉 **Approved!** Automatic ingestion has been triggered.'
               });
+
+              core.setOutput('approved', 'true');
             } else if (command.startsWith('/reject')) {
               const reason = command.replace('/reject', '').trim() || 'No reason provided';
 
@@ -261,3 +268,203 @@ jobs:
               issue_number: context.payload.issue.number,
               body: '⛔ Only maintainers can use `/approve` and `/reject` commands.'
             });
+
+  # ─── Auto-ingest approved markers into data.zip ─────────────────────
+  # Runs when:
+  #   1. /approve comment → approve-reject passes approved=true
+  #   2. Manual "approved" label added → labeled event
+  #   3. Manual workflow_dispatch
+  ingest:
+    needs: [approve-reject]
+    if: |
+      always() && !cancelled() && (
+        (needs.approve-reject.result == 'success' && needs.approve-reject.outputs.approved == 'true') ||
+        github.event_name == 'workflow_dispatch' ||
+        (github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'map-markers'))
+      )
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ingest-markers
+      cancel-in-progress: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract data.zip
+        run: mkdir -p /tmp/data-extract && unzip -o assets/data.zip -d /tmp/data-extract
+
+      - name: Ingest approved markers
+        id: ingest
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            // Icon mapping — must match app's marker asset filenames
+            const ICONS = {
+              bank: 'npc_bank.webp',
+              builder: 'npc_builder.webp',
+              cosmetic_npc: 'cosmetic.webp',
+              crafting_station: 'crafting_alchemy.webp',
+              creature_spawn: 'elitespawn.webp',
+              dynamic_event: 'dynamic_event.webp',
+              expedition: 'expedition.webp',
+              fishpost: 'npc_fishpost.webp',
+              market: 'market.webp',
+              moa_merchant: 'moa_merchant.webp',
+              quest: 'quest.webp',
+              rangers_outpost: 'rangers_company_outpost.webp',
+              respawn_shrine: 'respawn_shrine.webp',
+              seaport: 'seaport.webp',
+              tradepost: 'tradepost.webp',
+              vendor: 'vendors.webp',
+              warehouse: 'npc_warehouse.webp',
+              waypoint: 'respawn_shrine.webp'
+            };
+
+            // Fetch all approved non-ingested issues
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: 'map-markers,approved',
+              state: 'all',
+              per_page: 100
+            });
+
+            const toProcess = issues.filter(i => !i.labels.some(l => l.name === 'ingested'));
+            if (toProcess.length === 0) {
+              console.log('No new issues to ingest');
+              core.setOutput('changed', 'false');
+              return;
+            }
+
+            // Load existing markers from extracted data.zip
+            const markersPath = '/tmp/data-extract/worldmap-markers.json';
+            const existing = JSON.parse(fs.readFileSync(markersPath, 'utf8'));
+            const existingIds = new Set(existing.map(m => m.id));
+
+            let totalAdded = 0;
+            const processedIssues = [];
+
+            for (const issue of toProcess) {
+              const body = issue.body || '';
+              const jsonMatch = body.match(/```json\s*\n([\s\S]*?)\n```/);
+              if (!jsonMatch) {
+                console.warn(`#${issue.number}: no JSON block found, skipping`);
+                continue;
+              }
+
+              let markers;
+              try {
+                markers = JSON.parse(jsonMatch[1]);
+              } catch {
+                console.warn(`#${issue.number}: invalid JSON, skipping`);
+                continue;
+              }
+              if (!Array.isArray(markers)) {
+                console.warn(`#${issue.number}: JSON is not an array, skipping`);
+                continue;
+              }
+
+              let added = 0;
+              for (const m of markers) {
+                if (!m.id || !m.category || !m.name || m.x == null || m.y == null || !m.floor) {
+                  console.warn(`#${issue.number}: marker missing required fields, skipping entry`);
+                  continue;
+                }
+                if (existingIds.has(m.id)) {
+                  console.log(`  Skipping duplicate: ${m.id} (${m.name})`);
+                  continue;
+                }
+
+                existing.push({
+                  id: m.id,
+                  source: 'base',
+                  category: m.category,
+                  name: m.name,
+                  description: m.description || '',
+                  x: m.x,
+                  y: m.y,
+                  floor: m.floor,
+                  icon: ICONS[m.category] || '',
+                  label: m.name.replace(/\s*\(.*\)$/, ''),
+                  region: m.region || '',
+                  trigger: '',
+                  contributedBy: m.authorName || 'Community'
+                });
+                existingIds.add(m.id);
+                added++;
+              }
+
+              if (added > 0) {
+                processedIssues.push(issue.number);
+                totalAdded += added;
+                console.log(`#${issue.number}: added ${added} marker(s)`);
+              } else {
+                console.log(`#${issue.number}: all markers already exist`);
+              }
+            }
+
+            if (totalAdded === 0) {
+              console.log('No new markers to add');
+              core.setOutput('changed', 'false');
+              return;
+            }
+
+            // Write updated markers back
+            fs.writeFileSync(markersPath, JSON.stringify(existing, null, 2) + '\n');
+            console.log(`Added ${totalAdded} new marker(s) (total: ${existing.length})`);
+
+            core.setOutput('changed', 'true');
+            core.setOutput('count', String(totalAdded));
+            core.setOutput('issues', processedIssues.join(','));
+
+      - name: Rebuild data.zip and update manifest
+        if: steps.ingest.outputs.changed == 'true'
+        run: |
+          cd /tmp/data-extract && zip -r "$GITHUB_WORKSPACE/assets/data.zip" .
+          HASH=$(sha256sum "$GITHUB_WORKSPACE/assets/data.zip" | cut -d' ' -f1)
+          SIZE_BYTES=$(stat -c%s "$GITHUB_WORKSPACE/assets/data.zip")
+          SIZE_MB=$(echo "scale=1; $SIZE_BYTES / 1048576" | bc)
+          FILE_COUNT=$(unzip -l "$GITHUB_WORKSPACE/assets/data.zip" | tail -1 | awk '{print $2}')
+          jq \
+            --arg hash "sha256:$HASH" \
+            --argjson size "$SIZE_MB" \
+            --argjson files "$FILE_COUNT" \
+            --arg ts "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)" \
+            '(.archives[] | select(.name == "data.zip")) |= (.hash = $hash | .sizeMB = $size | .files = $files) | .generatedAt = $ts' \
+            assets/assets-manifest.json > /tmp/manifest.json
+          mv /tmp/manifest.json assets/assets-manifest.json
+
+      - name: Commit to master
+        if: steps.ingest.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/data.zip assets/assets-manifest.json
+          git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
+          git push origin master
+
+      - name: Label processed issues
+        if: steps.ingest.outputs.changed == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issues = '${{ steps.ingest.outputs.issues }}'.split(',');
+            for (const num of issues) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: parseInt(num),
+                labels: ['ingested']
+              });
+              try {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: parseInt(num),
+                  name: 'needs-review'
+                });
+              } catch (e) {
+                // Label may not exist
+              }
+            }
