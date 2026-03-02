@@ -422,10 +422,11 @@ jobs:
         if: steps.ingest.outputs.changed == 'true'
         run: |
           cd /tmp/data-extract && zip -r "$GITHUB_WORKSPACE/assets/data.zip" .
-          HASH=$(sha256sum "$GITHUB_WORKSPACE/assets/data.zip" | cut -d' ' -f1)
-          SIZE_BYTES=$(stat -c%s "$GITHUB_WORKSPACE/assets/data.zip")
+          cd "$GITHUB_WORKSPACE"
+          HASH=$(sha256sum assets/data.zip | cut -d' ' -f1)
+          SIZE_BYTES=$(stat -c%s assets/data.zip)
           SIZE_MB=$(echo "scale=1; $SIZE_BYTES / 1048576" | bc)
-          FILE_COUNT=$(unzip -l "$GITHUB_WORKSPACE/assets/data.zip" | tail -1 | awk '{print $2}')
+          FILE_COUNT=$(unzip -l assets/data.zip | tail -1 | awk '{print $2}')
           jq \
             --arg hash "sha256:$HASH" \
             --argjson size "$SIZE_MB" \
