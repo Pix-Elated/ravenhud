@@ -510,27 +510,41 @@ jobs:
           git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
           git push origin master
 
-      - name: Label processed issues
+      - name: Close and label processed issues
         if: steps.ingest.outputs.changed == 'true'
         uses: actions/github-script@v7
         with:
           script: |
             const issues = '${{ steps.ingest.outputs.issues }}'.split(',');
             for (const num of issues) {
+              const n = parseInt(num);
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: parseInt(num),
+                issue_number: n,
                 labels: ['ingested']
               });
               try {
                 await github.rest.issues.removeLabel({
                   owner: context.repo.owner,
                   repo: context.repo.repo,
-                  issue_number: parseInt(num),
+                  issue_number: n,
                   name: 'needs-review'
                 });
               } catch (e) {
                 // Label may not exist
               }
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: n,
+                state: 'closed',
+                state_reason: 'completed'
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: n,
+                body: '✅ Ingested into RavenHUD data. Thanks for contributing!'
+              });
             }
