@@ -1,0 +1,2293 @@
+{
+  "scrapedAt": "2026-01-07T03:44:21.448Z",
+  "source": "Local data",
+  "totalEvents": 125,
+  "events": [
+    {
+      "id": "the-shroom-shaman",
+      "name": "The Shroom Shaman",
+      "description": "The conditions are just right for a rare variety of mushrooms to spawn. A local shaman requires \n    help gathering them before the weather turns.",
+      "level": 7,
+      "area": "Glademire",
+      "hasGuide": true,
+      "experience": 13600,
+      "silver": 6300,
+      "rewards": []
+    },
+    {
+      "id": "thirsty-bandits",
+      "name": "Thirsty Bandits",
+      "description": "Everyone wants a taste of Jensen's wine, especially bandits... they'd just rather not pay for it.",
+      "level": 7,
+      "area": "Glademire",
+      "hasGuide": true,
+      "experience": 3400,
+      "silver": 2500,
+      "rewards": [
+        {
+          "name": "Grape",
+          "quantity": "2-10",
+          "imagePath": "assets/images/items/28831.webp"
+        },
+        {
+          "name": "Wine",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28882.webp"
+        },
+        {
+          "name": "Hookmask Insignia",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37632.webp"
+        },
+        {
+          "name": "Bizarre Mask",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37524.webp"
+        },
+        {
+          "name": "Dull Hookblade",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37484.webp"
+        },
+        {
+          "name": "Stolen Goods",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37569.webp"
+        },
+        {
+          "name": "Hookmask Camp Key",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39431.webp"
+        }
+      ]
+    },
+    {
+      "id": "flower-power",
+      "name": "Flower Power",
+      "description": "Driven into a frenzy by the sickly sweet scent of dead and decaying flowers, Poisonpetals \n    have sprouted to defend their territory.",
+      "level": 8,
+      "area": "Glademire",
+      "hasGuide": true,
+      "experience": 5800,
+      "silver": 1100,
+      "rewards": [
+        {
+          "name": "Lesser Poison Extract",
+          "quantity": "15",
+          "imagePath": "assets/images/items/37519.webp"
+        },
+        {
+          "name": "Deadly Poison Extract",
+          "quantity": "3",
+          "imagePath": "assets/images/items/37520.webp"
+        }
+      ]
+    },
+    {
+      "id": "a-mushroom-cut-in-half",
+      "name": "A Mushroom Cut in Half",
+      "description": "When a fungi's cut in half, a new one can be born from each part. Being continuously killed by \n    adventurers, sometimes the Ravenguard needs help putting them down.",
+      "level": 8,
+      "area": "Glademire",
+      "hasGuide": true,
+      "experience": 7900,
+      "silver": 5900,
+      "rewards": []
+    },
+    {
+      "id": "creepy-howls-under-the-moon",
+      "name": "Creepy Howls Under the Moon",
+      "description": "As the pale moonlight is shed upon the Mounds north of Ravencrest, the foxes respond \n    with a frightening howl.",
+      "level": 8,
+      "area": "Glademire",
+      "hasGuide": true,
+      "experience": 15000,
+      "silver": 6300,
+      "rewards": []
+    },
+    {
+      "id": "lit-beacons",
+      "name": "Lit Beacons",
+      "description": "Dwarves, Warhogs, and Goblins hate each other with a passion. When the war beacons are lit, \n    they all converge to fight over territory.",
+      "level": 13,
+      "area": "Rohna Woods",
+      "hasGuide": true,
+      "experience": 44200,
+      "silver": 4900,
+      "rewards": []
+    },
+    {
+      "id": "killer-bees",
+      "name": "Killer Bees",
+      "description": "Interrupted while gathering pollen, a hive of furious Honey Wasps are swarming and attacking nearby threats.",
+      "level": 15,
+      "area": "Rohna Woods",
+      "hasGuide": true,
+      "experience": 3400,
+      "silver": 530,
+      "rewards": [
+        {
+          "name": "Wild Honeycomb",
+          "quantity": "30",
+          "imagePath": "assets/images/items/37499.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-dark-lighthouse",
+      "name": "The Dark Lighthouse",
+      "description": "The coal basin at the top of the lighthouse is out. Gather oil from Zorians to re-light the basin.",
+      "level": 15,
+      "area": "Rohna Woods",
+      "hasGuide": true,
+      "experience": 6500,
+      "silver": 4100,
+      "rewards": []
+    },
+    {
+      "id": "hidden-grounds",
+      "name": "Hidden Grounds",
+      "description": "Varner Barsavi's research has uncovered an old and well-hidden hunting ground, but who knows \n    if the dungeon is still infested with spiders?",
+      "level": 16,
+      "area": "Rohna Woods",
+      "hasGuide": true,
+      "experience": 7000,
+      "silver": 6300,
+      "rewards": []
+    },
+    {
+      "id": "never-enough-furs",
+      "name": "Never Enough Furs",
+      "description": "A fur trader passing through Margrove wants help obtaining more pelts to sell in Ravencrest.",
+      "level": 16,
+      "area": "Rohna Woods",
+      "hasGuide": true,
+      "experience": 19600,
+      "silver": 0,
+      "rewards": []
+    },
+    {
+      "id": "in-the-spiders-web",
+      "name": "In the Spiders Web",
+      "description": "The weather is unusually warm in the Rohna Woods, and a cluster of spiders have emerged from the tunnels to feed.",
+      "level": 16,
+      "area": "Rohna Woods",
+      "hasGuide": true,
+      "experience": 10400,
+      "silver": 22800,
+      "rewards": []
+    },
+    {
+      "id": "souls-of-the-forest",
+      "name": "Souls of the Forest",
+      "description": "Sacred Rohna Undergrove, and Haunted Trunks have risen to drive out all intruders.",
+      "level": 18,
+      "area": "Rohna Woods",
+      "hasGuide": true,
+      "experience": 6300,
+      "silver": 4700,
+      "rewards": [
+        {
+          "name": "Dense Log",
+          "quantity": "1",
+          "imagePath": "assets/images/items/34371.webp"
+        },
+        {
+          "name": "Rough Plank",
+          "quantity": "5-10",
+          "imagePath": "assets/images/items/28744.webp"
+        }
+      ]
+    },
+    {
+      "id": "man-corrupted-grounds",
+      "name": "Man-Corrupted Grounds",
+      "description": "When travelers extract too much ores from Sporemine Swamp, haunted trunks appear in the \n    area to remind them the reason those grounds are haunted.",
+      "level": 18,
+      "area": "South Glademire",
+      "hasGuide": true,
+      "experience": 16300,
+      "silver": 7200,
+      "rewards": [
+        {
+          "name": "Rough Plank",
+          "quantity": "20",
+          "imagePath": "assets/images/items/28744.webp"
+        }
+      ]
+    },
+    {
+      "id": "trespassers-will-be-shot",
+      "name": "Trespassers Will Be Shot",
+      "description": "Strangers have gotten too close to a Rohna Brotherhood hideout, and bandits have appeared to ensure their location stays secret.",
+      "level": 18,
+      "area": "Rohna Woods",
+      "hasGuide": true,
+      "experience": 10000,
+      "silver": 4800,
+      "rewards": [
+        {
+          "name": "Coarse Thread",
+          "quantity": "5-10",
+          "imagePath": "assets/images/items/28971.webp"
+        }
+      ]
+    },
+    {
+      "id": "a-trolls-favorite-food",
+      "name": "A Troll's Favorite Food",
+      "description": "The starving denizens of Tarnag Mountain walked down to Riverend in search for a meal!",
+      "level": 20,
+      "area": "South Glademire",
+      "hasGuide": true,
+      "experience": 8100,
+      "silver": 6000,
+      "rewards": [
+        {
+          "name": "Simple Cloth",
+          "quantity": "2-10",
+          "imagePath": "assets/images/items/28966.webp"
+        }
+      ]
+    },
+    {
+      "id": "look-dont-touch",
+      "name": "Look Don't Touch",
+      "description": "The tropics of Sajecho are home to many type of flowers, \n    but be wary when choosing which ones to pick...",
+      "level": 21,
+      "area": "Sajecho Island",
+      "hasGuide": true,
+      "experience": 45000,
+      "silver": 15000,
+      "rewards": [
+        {
+          "name": "Poisonpetal Seeds",
+          "quantity": "1",
+          "imagePath": "assets/images/items/35441.webp"
+        }
+      ]
+    },
+    {
+      "id": "misty-waters",
+      "name": "Misty Waters",
+      "description": "On spooky nights, the wreckages of Dead Man's Shore emerge from the waters as revenant ships, searching for new souls to join their undead crew.",
+      "level": 22,
+      "area": "Sajecho Island",
+      "hasGuide": true,
+      "experience": 7000,
+      "silver": 5300,
+      "rewards": []
+    },
+    {
+      "id": "greedy-gliders",
+      "name": "Greedy Gliders",
+      "description": "The settlers of Sajecho Village don't have much, but that doesn't stop Goblin Gliders from trying to steal everything they own.",
+      "level": 23,
+      "area": "Sajecho Island",
+      "hasGuide": true,
+      "experience": 13800,
+      "silver": 5000,
+      "rewards": [
+        {
+          "name": "Protective Goggles",
+          "quantity": "50",
+          "imagePath": "assets/images/items/37564.webp"
+        },
+        {
+          "name": "Goblin Plunder",
+          "quantity": "10",
+          "imagePath": "assets/images/items/37556.webp"
+        }
+      ]
+    },
+    {
+      "id": "open-waters",
+      "name": "Open Waters",
+      "description": "Too many of their ships have been sunk beneath the waves, and a League of Splinters fleet has \n    appeared to regain control of the sea.",
+      "level": 24,
+      "area": "Harbor Island",
+      "hasGuide": true,
+      "experience": 8000,
+      "silver": 7500,
+      "rewards": [
+        {
+          "name": "Worn Jolly Roger",
+          "quantity": "10",
+          "imagePath": "assets/images/items/37611.webp"
+        },
+        {
+          "name": "Worn Ship Helm",
+          "quantity": "20",
+          "imagePath": "assets/images/items/37613.webp"
+        }
+      ]
+    },
+    {
+      "id": "a-usual-day-at-the-workshop",
+      "name": "A Usual Day at the Workshop",
+      "description": "Goblins never worry about consequences. An uncontrolled, destructive machine on the \n    loose in the workshop? A usual day like any other...",
+      "level": 24,
+      "area": "Sajecho Island",
+      "hasGuide": true,
+      "experience": 60000,
+      "silver": 7000,
+      "rewards": []
+    },
+    {
+      "id": "the-murmuring-tree",
+      "name": "The Murmuring Tree",
+      "description": "In the middle of the Crystal Fountains grows a red tree that blossoms with fruit during certain times of day, beckoning to those nearby...",
+      "level": 24,
+      "area": "South Glademire",
+      "hasGuide": true,
+      "experience": 9000,
+      "silver": 6800,
+      "rewards": []
+    },
+    {
+      "id": "possessed-by-resentment",
+      "name": "Possessed by Resentment",
+      "description": "When the living insist on disturbing the dead, their resentment can grow to a point where \n    it overtakes their whole being.",
+      "level": 28,
+      "area": "Harbor Island",
+      "hasGuide": true,
+      "experience": 17500,
+      "silver": 13100,
+      "rewards": [
+        {
+          "name": "Skull of Jealousy",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43679.webp"
+        }
+      ]
+    },
+    {
+      "id": "tower-of-the-everliving",
+      "name": "Tower of the Everliving",
+      "description": "Strange energies flow through this tower, what could have happened here?",
+      "level": 30,
+      "area": "Sajecho Island",
+      "hasGuide": true,
+      "experience": 60000,
+      "silver": 45000,
+      "rewards": []
+    },
+    {
+      "id": "piss-drunk-patrons",
+      "name": "Piss Drunk Patrons",
+      "description": "When the residents of Seabreeze get drunk, their inner pirates come out... \n    restore order to the streets!",
+      "level": 30,
+      "area": "Harbor Island",
+      "hasGuide": true,
+      "experience": 17500,
+      "silver": 0,
+      "rewards": [
+        {
+          "name": "Beer",
+          "quantity": "15",
+          "imagePath": "assets/images/items/28760.webp"
+        },
+        {
+          "name": "Whiskey",
+          "quantity": "5",
+          "imagePath": "assets/images/items/28761.webp"
+        },
+        {
+          "name": "Rum",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28883.webp"
+        }
+      ]
+    },
+    {
+      "id": "drunken-ritual",
+      "name": "Drunken Ritual",
+      "description": "After unlocking an intricate mechanism in the deepest parts of the Hookmask's hideout countless bandits appeared to protect their lair.",
+      "level": 30,
+      "area": "Glademire",
+      "hasGuide": true,
+      "experience": 8600,
+      "silver": 6400,
+      "rewards": [
+        {
+          "name": "Small Log",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28977.webp"
+        },
+        {
+          "name": "Copper Ore",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28944.webp"
+        },
+        {
+          "name": "Iron Ore",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28943.webp"
+        }
+      ]
+    },
+    {
+      "id": "swarming-spread",
+      "name": "Swarming Spread",
+      "description": "As the wurms at Sugarcane Plantation are repelled over and over, they spread through the isle's landscapes, searching for a new lair.",
+      "level": 31,
+      "area": "Harbor Island",
+      "hasGuide": true,
+      "experience": 13500,
+      "silver": 5300,
+      "rewards": [
+        {
+          "name": "Cotton",
+          "quantity": "15",
+          "imagePath": "assets/images/items/28879.webp"
+        },
+        {
+          "name": "Deadly Poison Extract",
+          "quantity": "15",
+          "imagePath": "assets/images/items/37520.webp"
+        }
+      ]
+    },
+    {
+      "id": "defiance-calls-for-aid",
+      "name": "Defiance Calls for Aid!",
+      "description": "The road between Bastion and Defiance is more dangerous than ever. Join up with the Ravenguard \n    to restore peace and safe travel once more!",
+      "level": 32,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": 44300,
+      "silver": 33200,
+      "rewards": []
+    },
+    {
+      "id": "masked-onslaught",
+      "name": "Masked Onslaught",
+      "description": "After unlocking an intricate mechanism in the deepest parts of the Hookmask's hideout \n    countless bandits appeared to protect their lair.",
+      "level": 33,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": 28300,
+      "silver": 21300,
+      "rewards": [
+        {
+          "name": "Stolen Goods",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37569.webp"
+        }
+      ]
+    },
+    {
+      "id": "an-escort-to-bastion",
+      "name": "An Escort to Bastion",
+      "description": "A local merchant, Tranter, is interested in hiring help to safely move his trade cargo to \n    the fortress of Defiance, in the center of Zephyr Vale.",
+      "level": 33,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": null,
+      "silver": null,
+      "rewards": [
+        {
+          "name": "Small Log",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28977.webp"
+        },
+        {
+          "name": "Spool of Hair",
+          "quantity": "1",
+          "imagePath": "assets/images/items/34475.webp"
+        },
+        {
+          "name": "Cotton",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28879.webp"
+        },
+        {
+          "name": "Potato",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28874.webp"
+        },
+        {
+          "name": "Copper Ore",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28944.webp"
+        }
+      ]
+    },
+    {
+      "id": "an-escort-to-defiance",
+      "name": "An Escort to Defiance",
+      "description": "A local merchant, Tranter, is interested in hiring help to safely move his trade cargo to \n    the fortress of Defiance, in the center of Zephyr Vale.",
+      "level": 33,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": null,
+      "silver": null,
+      "rewards": [
+        {
+          "name": "Small Log",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28977.webp"
+        },
+        {
+          "name": "Spool of Hair",
+          "quantity": "1",
+          "imagePath": "assets/images/items/34475.webp"
+        },
+        {
+          "name": "Cotton",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28879.webp"
+        },
+        {
+          "name": "Potato",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28874.webp"
+        },
+        {
+          "name": "Copper Ore",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28944.webp"
+        }
+      ]
+    },
+    {
+      "id": "ghost-of-the-old-mariner",
+      "name": "Ghost of the Old Mariner",
+      "description": "Everyone on Harbor Isle avoids the hut on Blood Mountain... as the urban legend goes, \n    the place is haunted by an angry ghost.",
+      "level": 33,
+      "area": "Harbor Island",
+      "hasGuide": true,
+      "experience": 35000,
+      "silver": 16200,
+      "rewards": []
+    },
+    {
+      "id": "just-a-drop",
+      "name": "Just a Drop",
+      "description": "An aspiring Hookmask alchemist is looking to outsource a special mission to anyone willing to accept.",
+      "level": 33,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": 24000,
+      "silver": 0,
+      "rewards": [
+        {
+          "name": "Stolen Goods",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37569.webp"
+        },
+        {
+          "name": "Wheat",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28881.webp"
+        },
+        {
+          "name": "Wool",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28425.webp"
+        }
+      ]
+    },
+    {
+      "id": "as-above-so-below",
+      "name": "As Above So Below",
+      "description": "A gravestone glows in the fading daylight, revealing a faint inscription carved into the moss-covered stone.",
+      "level": 33,
+      "area": "North Glademire",
+      "hasGuide": true,
+      "experience": 40000,
+      "silver": 5000,
+      "rewards": [
+        {
+          "name": "Bone Dust",
+          "quantity": "20",
+          "imagePath": "assets/images/items/37496.webp"
+        },
+        {
+          "name": "Crystalised Necromantic Energy",
+          "quantity": "5",
+          "imagePath": "assets/images/items/37494.webp"
+        }
+      ]
+    },
+    {
+      "id": "reaping-harvest",
+      "name": "Reaping Harvest",
+      "description": "The Mutant Wolves are getting out of hand. Speak to Jurgen von Thuring to participate and \n    play the role of the reaper. Cull the wolves and make the roads safe once more!",
+      "level": 34,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": 19400,
+      "silver": 14600,
+      "rewards": []
+    },
+    {
+      "id": "an-escort-to-truce",
+      "name": "An Escort to Truce",
+      "description": "Tranter is preparing to transport his goods to the town of Truce, on the Northern \n    frontier of Zephyr Vale, and is seeking protection on the route.",
+      "level": 35,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": 10000,
+      "silver": 6400,
+      "rewards": [
+        {
+          "name": "Small Log",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28977.webp"
+        }
+      ]
+    },
+    {
+      "id": "gritty-general",
+      "name": "Gritty General",
+      "description": "General Galien seems to be back in action after your last encounter with him, \n    aggressive and hungry for vengeance!",
+      "level": 35,
+      "area": "Harbor Island",
+      "hasGuide": true,
+      "experience": 2000,
+      "silver": 1500,
+      "rewards": [
+        {
+          "name": "General's Insignia",
+          "quantity": "1",
+          "imagePath": "assets/images/items/47618.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-astronomers-prediction",
+      "name": "The Astronomer's Prediction",
+      "description": "With his eyes trained towards the stars, Zalzibar has seen red streaks in the sky... a sure omen of things to come.",
+      "level": 35,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 20000,
+      "silver": 10700,
+      "rewards": []
+    },
+    {
+      "id": "hunters-under-the-sunheat",
+      "name": "Hunters Under the Sunheat",
+      "description": "The scorching rays are empowering Firerock Foxes to seize more territory.",
+      "level": 36,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 30000,
+      "silver": 5400,
+      "rewards": [
+        {
+          "name": "Fiery Essence",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37475.webp"
+        }
+      ]
+    },
+    {
+      "id": "raiders-of-the-wastes",
+      "name": "Raiders of the Wastes",
+      "description": "When the western trade routes through Hadarak are busy, Ghaz Raiders appear from the wastes \n    to pillage and kill.",
+      "level": 36,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 13000,
+      "silver": 3500,
+      "rewards": [
+        {
+          "name": "Cunning Handle",
+          "quantity": "1",
+          "imagePath": "assets/images/items/38265.webp"
+        }
+      ]
+    },
+    {
+      "id": "what-does-the-fox-say",
+      "name": "What Does the Fox Say",
+      "description": "Talking animals are said to hide within the C�nion Ventoso... they appear to lone hunters during certain times of the day.",
+      "level": 36,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 15400,
+      "silver": 5300,
+      "rewards": [
+        {
+          "name": "Sunrise Rock",
+          "quantity": "20",
+          "imagePath": "assets/images/items/37551.webp"
+        }
+      ]
+    },
+    {
+      "id": "turmoil-in-orkwatch",
+      "name": "Turmoil in Orkwatch",
+      "description": "Orkwatch is in chaos! The orcs are fighting amongst themselves to determine a new Warchief!",
+      "level": 36,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 20800,
+      "silver": 15600,
+      "rewards": []
+    },
+    {
+      "id": "a-sludging-mess",
+      "name": "A Sludging Mess",
+      "description": "Sometimes, the rot living under Tarmire erupts into the surface, bringing the undead with it.",
+      "level": 37,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 23000,
+      "silver": 17300,
+      "rewards": [
+        {
+          "name": "Living Black Ooze",
+          "quantity": "1",
+          "imagePath": "assets/images/items/47619.webp"
+        }
+      ]
+    },
+    {
+      "id": "windy-canyon-clash",
+      "name": "Windy Canyon Clash",
+      "description": "Tensions are high in Windy Canyon - Ghaz Raiders and Warhogs are about to clash over territory!",
+      "level": 37,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 35000,
+      "silver": 7000,
+      "rewards": [
+        {
+          "name": "Ghaz Plunder Sack",
+          "quantity": "100",
+          "imagePath": "assets/images/items/37557.webp"
+        },
+        {
+          "name": "Warhog Tusk",
+          "quantity": "25",
+          "imagePath": "assets/images/items/37574.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-bone-carver",
+      "name": "The Bone Carver",
+      "description": "In Windy Canyon, there's a note pinned to a palm tree advertising a bone carver who's willing to pay for Warhog Tusks.",
+      "level": 38,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 5000,
+      "silver": 0,
+      "rewards": []
+    },
+    {
+      "id": "dangerous-denizens",
+      "name": "Dangerous Denizens",
+      "description": "The shadows of the Tigerlilly Hills hide vicious predators... \n    Packs of chewacabras may appear at any time to ambush travellers.",
+      "level": 38,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 11300,
+      "silver": 8400,
+      "rewards": []
+    },
+    {
+      "id": "tax-collection",
+      "name": "Tax Collection",
+      "description": "The captain of Silvercliff hookmask camp is a hard one to meet. \n    However, whenever the bandits stack up enough sacks loot, he makes sure to come claim them himself.",
+      "level": 39,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": 17600,
+      "silver": 13200,
+      "rewards": [
+        {
+          "name": "Stolen Goods",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37569.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-blackscale-terror",
+      "name": "The Blackscale Terror",
+      "description": "From the depths of The Spine, the last of the Blackscale Dragons emerge \n    to protect its home from invaders.",
+      "level": 41,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 12000,
+      "silver": 9000,
+      "rewards": [
+        {
+          "name": "Fang of Myrdyr",
+          "quantity": "1",
+          "imagePath": "assets/images/items/47617.webp"
+        }
+      ]
+    },
+    {
+      "id": "she-sells-seashells",
+      "name": "She Sells Seashells",
+      "description": "",
+      "level": 42,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 23000,
+      "silver": 17200,
+      "rewards": [
+        {
+          "name": "Tribal Pearl Necklace",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43875.webp"
+        }
+      ]
+    },
+    {
+      "id": "overrun-hideout",
+      "name": "Overrun Hideout",
+      "description": "An old Ghaz Raider hideout lies within these ruins... If found, are you capable of handling the secrets it holds inside?",
+      "level": 42,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 1600,
+      "silver": 1200,
+      "rewards": [
+        {
+          "name": "Overgrown Gazer Gland",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39427.webp"
+        }
+      ]
+    },
+    {
+      "id": "amphibious-assassins",
+      "name": "Amphibious Assassins",
+      "description": "Too many toads have been killed above Dras Narda, and the toads have launched a sneak attack!",
+      "level": 43,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 8100,
+      "silver": 6100,
+      "rewards": [
+        {
+          "name": "Old Toad's Amulet",
+          "quantity": "1",
+          "imagePath": "assets/images/items/35439.webp"
+        }
+      ]
+    },
+    {
+      "id": "when-the-eastern-wind-blows",
+      "name": "When the Eastern Wind Blows",
+      "description": "A strong windblow takes the five contenders away to a small off-shore isle, \n    where a spirit manifests in the form of a lady made of wind.",
+      "level": 45,
+      "area": "Zephyr Vale",
+      "hasGuide": true,
+      "experience": 15000,
+      "silver": 11300,
+      "rewards": [
+        {
+          "name": "Life Thread",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43669.webp"
+        }
+      ]
+    },
+    {
+      "id": "foreigners-plague",
+      "name": "Foreigner's Plague",
+      "description": "From time to time, illnesses from the mainland affect Vikkar Bay and its residents. \n    To prevent them from spreading, Lewett needs help brewing a cure.",
+      "level": 46,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 10000,
+      "silver": 7500,
+      "rewards": []
+    },
+    {
+      "id": "ancestral-feud",
+      "name": "Ancestral Feud",
+      "description": "Rivers of crimson flow through the gruesome architecture installed under the ruins. But the fountain\n    isn't the only thing that awakens...\n    \n    The blood flows vividly in the ruined fountain, spreading its filth through the whole graveyard...",
+      "level": 46,
+      "area": "Forsaken Mountains",
+      "hasGuide": false,
+      "experience": 17500,
+      "silver": 13100,
+      "rewards": [
+        {
+          "name": "Moon Ruby",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45226.webp"
+        }
+      ]
+    },
+    {
+      "id": "reel-big-fish",
+      "name": "Reel Big Fish",
+      "description": "",
+      "level": 47,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 30000,
+      "silver": 0,
+      "rewards": [
+        {
+          "name": "Fishing Experience ",
+          "quantity": "30",
+          "imagePath": "assets/images/items/28888.webp"
+        },
+        {
+          "name": "Shiny Zorian Scale",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43677.webp"
+        }
+      ]
+    },
+    {
+      "id": "toxicity",
+      "name": "Toxicity",
+      "description": "From time to time, enormous quantities of poison are crafted by the rats of Crohollow Bog. \n    If left unchecked, this could mean a massacre of the people who still stand their ground in the region.",
+      "level": 48,
+      "area": "Crowhollow Bog",
+      "hasGuide": true,
+      "experience": 8000,
+      "silver": 6000,
+      "rewards": [
+        {
+          "name": "Human Effigy",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39285.webp"
+        },
+        {
+          "name": "Crow Mask",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39282.webp"
+        }
+      ]
+    },
+    {
+      "id": "night-sacrifice",
+      "name": "Night Sacrifice",
+      "description": "Every night, a kaiman seer emerges from hiding to sacrifice victims captured in the jungles of Gilead.",
+      "level": 48,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 13600,
+      "silver": 0,
+      "rewards": [
+        {
+          "name": "Kaiman Teeth",
+          "quantity": "24",
+          "imagePath": "assets/images/items/37621.webp"
+        },
+        {
+          "name": "Ritualistic Necklace",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37645.webp"
+        }
+      ]
+    },
+    {
+      "id": "living-tale",
+      "name": "Living Tale",
+      "description": "One of Hogula's legends speaks of a giant tortoise, capable of swallowing a \n    grown person in a single bite...",
+      "level": 48,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 40000,
+      "silver": 5300,
+      "rewards": [
+        {
+          "name": "Emerald Amulet",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39432.webp"
+        },
+        {
+          "name": "Curved Twin Fang",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45216.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-hoarders-stash",
+      "name": "The Hoarder's Stash",
+      "description": "The kaimans jump out from their hiding spots to defend their stolen goods!",
+      "level": 48,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 42000,
+      "silver": 10200,
+      "rewards": [
+        {
+          "name": "Poisonpetal Seeds",
+          "quantity": "1",
+          "imagePath": "assets/images/items/35441.webp"
+        }
+      ]
+    },
+    {
+      "id": "praise-the-sun",
+      "name": "Praise the Sun",
+      "description": "Saurians love the early hours of warm sunlight and don't appreciate when their \n    sunbathing gets disturbed...",
+      "level": 48,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 15000,
+      "silver": 0,
+      "rewards": [
+        {
+          "name": "Reptilian Tail",
+          "quantity": "10",
+          "imagePath": "assets/images/items/37582.webp"
+        },
+        {
+          "name": "Reptilian Scale",
+          "quantity": "20",
+          "imagePath": "assets/images/items/37587.webp"
+        }
+      ]
+    },
+    {
+      "id": "starving-crawlers",
+      "name": "Starving Crawlers",
+      "description": "As they're running out of food, spiders usually travel back to the surface and hide \n    amidst the white blanket of snow, waiting for the right time to ambush unaware preys.",
+      "level": 48,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 35000,
+      "silver": 4500,
+      "rewards": [
+        {
+          "name": "Nevermelting Ice",
+          "quantity": "15",
+          "imagePath": "assets/images/items/37521.webp"
+        }
+      ]
+    },
+    {
+      "id": "fishy-secrets",
+      "name": "Fishy Secrets",
+      "description": "Zorians don't tolerate intruders near their nests, they have younglings and \n    hard-earned spoils to protect!",
+      "level": 49,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 50000,
+      "silver": 5500,
+      "rewards": [
+        {
+          "name": "Shell Fragment",
+          "quantity": "10",
+          "imagePath": "assets/images/items/37479.webp"
+        },
+        {
+          "name": "Reflective Carapace",
+          "quantity": "1",
+          "imagePath": "assets/images/items/36901.webp"
+        }
+      ]
+    },
+    {
+      "id": "extremist-naturalists",
+      "name": "Extremist Naturalists",
+      "description": "Taking refuge in a cavern deep below Gilead, these extremist naturalists are figuring \n    out a way to help nature reclaim the land.",
+      "level": 50,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 20000,
+      "silver": 2700,
+      "rewards": [
+        {
+          "name": "Nightmare Extract",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45221.webp"
+        }
+      ]
+    },
+    {
+      "id": "picky-eaters",
+      "name": "Picky Eaters",
+      "description": "A school of rare sturgeons are lured to the surface by the bait. Prepare your rod and get ready to fish!",
+      "level": 50,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 15000,
+      "silver": 0,
+      "rewards": [
+        {
+          "name": "Fishing Experience ",
+          "quantity": "10",
+          "imagePath": "assets/images/items/28888.webp"
+        }
+      ]
+    },
+    {
+      "id": "chain-reaction",
+      "name": "Chain Reaction",
+      "description": "When a Crow Matriarch falls, the corrupted ecosystem of Crowhollow Bog reacts just like a \n    body trying to exterminate an alien organism, sending its thralls to retaliate upon the people of Woodhaven.",
+      "level": 50,
+      "area": "Crowhollow Bog",
+      "hasGuide": true,
+      "experience": 5700,
+      "silver": 4300,
+      "rewards": [
+        {
+          "name": "Human Effigy",
+          "quantity": "20",
+          "imagePath": "assets/images/items/39285.webp"
+        },
+        {
+          "name": "Crow Mask",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39282.webp"
+        }
+      ]
+    },
+    {
+      "id": "tool-appropriation",
+      "name": "Tool Appropriation",
+      "description": "The damage caused by the Winterborn Alliance is already done... might as well take what's left behind.",
+      "level": 50,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 20000,
+      "silver": 5000,
+      "rewards": [
+        {
+          "name": "Climbing Gear",
+          "quantity": "1",
+          "imagePath": "assets/images/items/38561.webp"
+        },
+        {
+          "name": "Spiced Rum",
+          "quantity": "1",
+          "imagePath": "assets/images/items/35401.webp"
+        },
+        {
+          "name": "Cobalt Ore",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28942.webp"
+        },
+        {
+          "name": "Stone",
+          "quantity": "2",
+          "imagePath": "assets/images/items/28946.webp"
+        },
+        {
+          "name": "Igneous Ice Shard",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37528.webp"
+        }
+      ]
+    },
+    {
+      "id": "raiders-reunion",
+      "name": "Raiders' Reunion",
+      "description": "To trade and share the spoils of their raiding, the Ghaz gather at at an ancient city, \n    abandoned by their mysterious previous inhabitants and forgotten by time.",
+      "level": 50,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 31700,
+      "silver": 23800,
+      "rewards": [
+        {
+          "name": "Baari's Insignia",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39220.webp"
+        },
+        {
+          "name": "Saveena's Insignia",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39221.webp"
+        },
+        {
+          "name": "Voohra's Insignia",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39222.webp"
+        },
+        {
+          "name": "Mark of the One",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43688.webp"
+        }
+      ]
+    },
+    {
+      "id": "aggressive-preservation",
+      "name": "Aggressive Preservation",
+      "description": "Zorians emerge from the depths, attacking anything that dares come near the fishing spot.",
+      "level": 50,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 10000,
+      "silver": 0,
+      "rewards": [
+        {
+          "name": "Zorian Frozen Whiskers",
+          "quantity": "2",
+          "imagePath": "assets/images/items/38282.webp"
+        },
+        {
+          "name": "Frost Ward",
+          "quantity": "1",
+          "imagePath": "assets/images/items/38560.webp"
+        }
+      ]
+    },
+    {
+      "id": "humanity-lost",
+      "name": "Humanity Lost",
+      "description": "The knowledge of blood magic is kept secret amongst the elder vampires, and playing with \n    it irresponsibly may lead a soul to their darkest secrets.",
+      "level": 50,
+      "area": "Forsaken Mountains",
+      "hasGuide": true,
+      "experience": 75000,
+      "silver": 12000,
+      "rewards": [
+        {
+          "name": "Reaper's Blade Fragment",
+          "quantity": "1",
+          "imagePath": "assets/images/items/38550.webp"
+        },
+        {
+          "name": "Wraith Dust",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37504.webp"
+        },
+        {
+          "name": "Skull of Hatred",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43678.webp"
+        }
+      ]
+    },
+    {
+      "id": "a-bad-hookup",
+      "name": "A Bad Hookup",
+      "description": "The muddy waters of Crowhollow Bog are said to shelter countless oddities - from rare \n    fish schools to mutated abominations. In some places of the world, fishing isn't a sport.",
+      "level": 50,
+      "area": "Crowhollow Bog",
+      "hasGuide": true,
+      "experience": 5000,
+      "silver": 3800,
+      "rewards": []
+    },
+    {
+      "id": "horn-of-rage",
+      "name": "Horn of Rage",
+      "description": "Minotaurs are one of the most aggressive creatures found in the land, some specimens are so hostile, \n    they have to be isolated from the rest of their kind.",
+      "level": 50,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 7600,
+      "silver": 5800,
+      "rewards": [
+        {
+          "name": "Angerhorn Impaler",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39218.webp"
+        },
+        {
+          "name": "Courage's Hold",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43656.webp"
+        }
+      ]
+    },
+    {
+      "id": "frolls-over-the-bridge",
+      "name": "Frolls over the Bridge",
+      "description": "What could the frolls be plotting so far from their lairs? \n    Sticking around to find out doesn't seem like a great idea...",
+      "level": 51,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 7000,
+      "silver": 3000,
+      "rewards": []
+    },
+    {
+      "id": "a-muddy-catch",
+      "name": "A Muddy Catch",
+      "description": "Fishermen bold enough to venture into Crowhollow Bog speaks of a very rare fish capable of \n    living in the swamp's muddy and corrupt waters.",
+      "level": 52,
+      "area": "Crowhollow Bog",
+      "hasGuide": true,
+      "experience": 300,
+      "silver": 0,
+      "rewards": []
+    },
+    {
+      "id": "risky-business",
+      "name": "Risky Business",
+      "description": "When mined, the glowing purple rock in the middle of the room begins to release a strange smell.",
+      "level": 52,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 25000,
+      "silver": 3800,
+      "rewards": [
+        {
+          "name": "Mining Experience",
+          "quantity": "10",
+          "imagePath": "assets/images/items/34735.webp"
+        },
+        {
+          "name": "Purple Ore",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45227.webp"
+        }
+      ]
+    },
+    {
+      "id": "fear-the-reaper",
+      "name": "Fear the Reaper",
+      "description": "Strange lights can be seen glowing up the swamp during moonless nights. Some say it's \n    the work of wretched hags coming out of their lairs to harvest the souls of those lost within the bog.",
+      "level": 52,
+      "area": "Crowhollow Bog",
+      "hasGuide": true,
+      "experience": 23400,
+      "silver": 17600,
+      "rewards": [
+        {
+          "name": "Grim Bone Dust",
+          "quantity": "8",
+          "imagePath": "assets/images/items/45420.webp"
+        }
+      ]
+    },
+    {
+      "id": "magical-pheromones",
+      "name": "Magical Pheromones",
+      "description": "Female blizzard beasts only choose the fittest and most fertile of mates, \n    and cannot resist the smell of a potent male.",
+      "level": 52,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 15500,
+      "silver": 2000,
+      "rewards": [
+        {
+          "name": "Oversized Flea",
+          "quantity": "1",
+          "imagePath": "assets/images/items/38283.webp"
+        }
+      ]
+    },
+    {
+      "id": "sealed-amidst-the-fire",
+      "name": "Sealed Amidst the Fire",
+      "description": "Deep into the bowels of the land, a scorching magic rune corrupts the land, turning rivers into\n     lava and ground into ashes.",
+      "level": 54,
+      "area": "Fields of Despair",
+      "hasGuide": false,
+      "experience": 7600,
+      "silver": 5700,
+      "rewards": [
+        {
+          "name": "Greater Demon Eye",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43658.webp"
+        }
+      ]
+    },
+    {
+      "id": "orcultist-society",
+      "name": "Orcultist Society",
+      "description": "After Gilbert crafted a bone-made totem, Orcs have been gathering in the underground of Orkrev \n    to perform their traditional rituals. Better stop the ritual before we know what it is for.",
+      "level": 55,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 12000,
+      "silver": 9000,
+      "rewards": [
+        {
+          "name": "Orkrev Amulet",
+          "quantity": "8",
+          "imagePath": "assets/images/items/39482.webp"
+        }
+      ]
+    },
+    {
+      "id": "shackled-memories",
+      "name": "Shackled Memories",
+      "description": "Forever chained to the remnants of their settlement, the tormented spirits of Rumalos rise in anger and pain.",
+      "level": 55,
+      "area": "Gilead Island",
+      "hasGuide": true,
+      "experience": 23800,
+      "silver": 14800,
+      "rewards": [
+        {
+          "name": "Spirit Shackles",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43707.webp"
+        }
+      ]
+    },
+    {
+      "id": "children-of-the-damned",
+      "name": "Children of the Damned",
+      "description": "Skorn cultists aren't a people to mess with... When enough of their own fall dead into the field, \n    they come out of their den seeking for Vengeance.",
+      "level": 56,
+      "area": "Fields of Despair",
+      "hasGuide": true,
+      "experience": 25600,
+      "silver": 19200,
+      "rewards": [
+        {
+          "name": "Idol of Skorn",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45218.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-husk-of-skorn",
+      "name": "The Husk of Skorn",
+      "description": "Consumed by the evil spirits he once controlled, now Skorn's but a vessel\n    condemned to serve the castle's new lord for eternity.",
+      "level": 56,
+      "area": "Fields of Despair",
+      "hasGuide": false,
+      "experience": 36000,
+      "silver": 26300,
+      "rewards": [
+        {
+          "name": "Trapped Demon Soul",
+          "quantity": "1",
+          "imagePath": "assets/images/items/53200.webp"
+        }
+      ]
+    },
+    {
+      "id": "daughters-of-slaughter-i",
+      "name": "Daughters of Slaughter I",
+      "description": "The most insidious among the Crowmaidens are under the direct influence of the Voice of the Bog.\n    They are protected like the vital organs of a body, and they can't be reached without sacrifice.",
+      "level": 58,
+      "area": "Crowhollow Bog",
+      "hasGuide": false,
+      "experience": 21000,
+      "silver": 15800,
+      "rewards": [
+        {
+          "name": "Crow Mask",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39282.webp"
+        },
+        {
+          "name": "Idol of Gluttony",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39286.webp"
+        }
+      ]
+    },
+    {
+      "id": "daughters-of-slaughter-ii",
+      "name": "Daughters of Slaughter II",
+      "description": "The most insidious among the Crowmaidens are under the direct influence of the Voice of the Bog.\n    They are protected like the vital organs of a body, and they can't be reached without sacrifice.",
+      "level": 58,
+      "area": "Crowhollow Bog",
+      "hasGuide": false,
+      "experience": 25200,
+      "silver": 18900,
+      "rewards": [
+        {
+          "name": "Crow Mask",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39282.webp"
+        },
+        {
+          "name": "Ghostlamp",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39284.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-corvine-bride",
+      "name": "The Corvine Bride",
+      "description": "A myth to some and a reality to the ones unlucky enough to come across her, the oldest of the \n    Crowmaidens is an unimaginably powerful hag, capable of controlling the bog as if it was one her insidious children.",
+      "level": 58,
+      "area": "Crowhollow Bog",
+      "hasGuide": false,
+      "experience": 29000,
+      "silver": 21800,
+      "rewards": [
+        {
+          "name": "Crow Mask",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39282.webp"
+        },
+        {
+          "name": "Eldritch Crow Mask",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39283.webp"
+        },
+        {
+          "name": "Accursed Bridal Veil",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45211.webp"
+        }
+      ]
+    },
+    {
+      "id": "daughters-of-slaughter-iii",
+      "name": "Daughters of Slaughter III",
+      "description": "The most insidious among the Crowmaidens are under the direct influence of the Voice of the Bog.\n    They are protected like the vital organs of a body, and they can't be reached without sacrifice.",
+      "level": 58,
+      "area": "Crowhollow Bog",
+      "hasGuide": false,
+      "experience": 21000,
+      "silver": 15800,
+      "rewards": [
+        {
+          "name": "Crow Mask",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39282.webp"
+        },
+        {
+          "name": "The Grim Smile",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39288.webp"
+        }
+      ]
+    },
+    {
+      "id": "downright-mayhem",
+      "name": "Downright Mayhem",
+      "description": "The creatures roaming the Granite Wilds have become unnaturally enraged! \n    Deal with the crazed beasts before they cause greater harm!",
+      "level": 59,
+      "area": "Elder Coast",
+      "hasGuide": true,
+      "experience": 60000,
+      "silver": 45000,
+      "rewards": [
+        {
+          "name": "Rough Gem",
+          "quantity": "1",
+          "imagePath": "assets/images/items/46187.webp"
+        },
+        {
+          "name": "Flamerock Bind",
+          "quantity": "1",
+          "imagePath": "assets/images/items/48010.webp"
+        },
+        {
+          "name": "Stone",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28946.webp"
+        },
+        {
+          "name": "Copper Ore",
+          "quantity": "2",
+          "imagePath": "assets/images/items/28944.webp"
+        },
+        {
+          "name": "Iron Ore",
+          "quantity": "1",
+          "imagePath": "assets/images/items/28943.webp"
+        },
+        {
+          "name": "Salt",
+          "quantity": "1",
+          "imagePath": "assets/images/items/33551.webp"
+        },
+        {
+          "name": "Coal",
+          "quantity": "2",
+          "imagePath": "assets/images/items/28941.webp"
+        },
+        {
+          "name": "Gem",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45227.webp"
+        }
+      ]
+    },
+    {
+      "id": "lady-of-the-snow",
+      "name": "Lady of the Snow",
+      "description": "Deep in the heart of Glaceforde, a maiden as old as the White Blight still lives in despair, \n    collecting Igneous Ice shards in an attempt to protect herself from her inevitable death.",
+      "level": 60,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 35000,
+      "silver": 25000,
+      "rewards": [
+        {
+          "name": "Deadly Poison Extract",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37520.webp"
+        },
+        {
+          "name": "Ice Shards",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37508.webp"
+        },
+        {
+          "name": "Igneous Ice Shard",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37528.webp"
+        }
+      ]
+    },
+    {
+      "id": "survival-of-the-fittest",
+      "name": "Survival of the Fittest",
+      "description": "The Frost Steppes allow only the most prepared to thrive, \n    and the yornish folk understand that best..",
+      "level": 61,
+      "area": "Frost Steppes",
+      "hasGuide": true,
+      "experience": 5200,
+      "silver": 3900,
+      "rewards": [
+        {
+          "name": "Vial of Tainted Blood",
+          "quantity": "1",
+          "imagePath": "assets/images/items/47050.webp"
+        }
+      ]
+    },
+    {
+      "id": "parching-gaze",
+      "name": "Parching Gaze",
+      "description": "The scorching hot sands of the desert are not the only force actively drying the live of the region.",
+      "level": 65,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 2300,
+      "silver": 1700,
+      "rewards": [
+        {
+          "name": "Otherworldly Brain",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43677.webp"
+        }
+      ]
+    },
+    {
+      "id": "shadows-from-our-past",
+      "name": "Shadows From Our Past",
+      "description": "",
+      "level": 67,
+      "area": "Elder Coast",
+      "hasGuide": true,
+      "experience": 58000,
+      "silver": 43500,
+      "rewards": [
+        {
+          "name": "Reflective Husk",
+          "quantity": "1",
+          "imagePath": "assets/images/items/40276.webp"
+        },
+        {
+          "name": "Shadow Stem",
+          "quantity": "1",
+          "imagePath": "assets/images/items/40337.webp"
+        },
+        {
+          "name": "Dusk Dust",
+          "quantity": "1",
+          "imagePath": "assets/images/items/40351.webp"
+        },
+        {
+          "name": "Shadow Essence",
+          "quantity": "1",
+          "imagePath": "assets/images/cooking.webp"
+        }
+      ]
+    },
+    {
+      "id": "keepers-of-the-lamp",
+      "name": "Keepers of the Lamp",
+      "description": "When the sacred lamps spread around Castle Thergard are lit again, agonizing souls spawn back \n    into the material world, trying to get rid of the suffering.",
+      "level": 73,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 27800,
+      "silver": 20900,
+      "rewards": [
+        {
+          "name": "Wraith Dust",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37504.webp"
+        },
+        {
+          "name": "Wraith Chains",
+          "quantity": "3",
+          "imagePath": "assets/images/items/37458.webp"
+        },
+        {
+          "name": "Skull of Sorrow",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43680.webp"
+        }
+      ]
+    },
+    {
+      "id": "trench-warfare",
+      "name": "Trench Warfare",
+      "description": "Casualties are piling up in the Riftsand trenches, and neither side seems to gain an advantage. \n    However, there is a way to make a difference. Join the fray and help turn the tide of the war.",
+      "level": 73,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 6000,
+      "silver": 3800,
+      "rewards": [
+        {
+          "name": "Condensed Energy",
+          "quantity": "0-20",
+          "imagePath": "assets/images/items/41410.webp"
+        },
+        {
+          "name": "Nightshatter",
+          "quantity": "0-20",
+          "imagePath": "assets/images/items/41413.webp"
+        }
+      ]
+    },
+    {
+      "id": "clash-of-the-elements",
+      "name": "Clash of the Elements",
+      "description": "The Djinns have been trying to find new ways to expand their powers and restore their \n    once-vast empire, and they might be able to do so with their new weapon.",
+      "level": 73,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 28500,
+      "silver": 21400,
+      "rewards": [
+        {
+          "name": "Sandscar Talisman",
+          "quantity": "1",
+          "imagePath": "assets/images/items/44456.webp"
+        }
+      ]
+    },
+    {
+      "id": "tainted-breed",
+      "name": "Tainted Breed",
+      "description": "The Slithering Hills, home to a big nest of Venomfang Drakes, was one of the least corrupted landscapes of the Blotch. Something has changed, though...",
+      "level": 73,
+      "area": "The Blotch",
+      "hasGuide": true,
+      "experience": 15000,
+      "silver": 11300,
+      "rewards": [
+        {
+          "name": "Venomfang Egg",
+          "quantity": "1",
+          "imagePath": "assets/images/items/41387.webp"
+        },
+        {
+          "name": "Eldritch Vestige",
+          "quantity": "1-2",
+          "imagePath": "assets/images/items/39550.webp"
+        },
+        {
+          "name": "Corrupted Drake Fangs",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45215.webp"
+        }
+      ]
+    },
+    {
+      "id": "ice-cold-enemies",
+      "name": "Ice Cold Enemies",
+      "description": "Amidst the white veil of a storm, the lumbering shapes of frolls can be seen massing towards the entrance of the Deadbane Halls...",
+      "level": 73,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 121500,
+      "silver": 9100,
+      "rewards": [
+        {
+          "name": "Frozen Heart",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37491.webp"
+        },
+        {
+          "name": "Magnificent Tusks",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45219.webp"
+        }
+      ]
+    },
+    {
+      "id": "warforged-weapon",
+      "name": "Warforged Weapon",
+      "description": "The Djinns have been trying to find new ways to expand their powers and restore their \n    once-vast empire, and they might be able to do so with their new weapon.",
+      "level": 73,
+      "area": "Hadarak Desert",
+      "hasGuide": true,
+      "experience": 27600,
+      "silver": 20700,
+      "rewards": [
+        {
+          "name": "Relic of Quorras",
+          "quantity": "1",
+          "imagePath": "assets/images/items/44455.webp"
+        },
+        {
+          "name": "Elemental Engine",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45217.webp"
+        }
+      ]
+    },
+    {
+      "id": "unweaving-magic",
+      "name": "Unweaving Magic",
+      "description": "Magic emanates from every corner of the Temple of Quorras, and if someone understands how to read its\n    blueprints, one may harness this power in the palm of their hands.",
+      "level": 73,
+      "area": "Hadarak Desert",
+      "hasGuide": false,
+      "experience": 21000,
+      "silver": 15800,
+      "rewards": []
+    },
+    {
+      "id": "a-dance-with-ghosts",
+      "name": "A Dance with Ghosts",
+      "description": "As time passed, many have lost their lives to the nightmarish events that took place at The Blotch: \n    and many have stayed there. Angry spirits will always be on the prowl to feast on the souls of the good.",
+      "level": 73,
+      "area": "The Blotch",
+      "hasGuide": true,
+      "experience": 32300,
+      "silver": 24200,
+      "rewards": [
+        {
+          "name": "Eldritch Vestige",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39550.webp"
+        }
+      ]
+    },
+    {
+      "id": "scales-of-corruption",
+      "name": "Scales of Corruption",
+      "description": "Deep down the muddy and forsaken Slithering Hills, a deadly and completely corrupted \n    creature prowls in the darkness while trying to replicate itself.",
+      "level": 73,
+      "area": "South Glademire",
+      "hasGuide": true,
+      "experience": 28800,
+      "silver": 21600,
+      "rewards": [
+        {
+          "name": "Corrupted Fang",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39549.webp"
+        },
+        {
+          "name": "Eldritch Vestige",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39550.webp"
+        }
+      ]
+    },
+    {
+      "id": "blood-bowl",
+      "name": "Blood Bowl",
+      "description": "A bloody battle arena in Yorn'omaala calls all present to battle for supremacy.",
+      "level": 73,
+      "area": "Frost Steppes",
+      "hasGuide": false,
+      "experience": 90000,
+      "silver": 15000,
+      "rewards": [
+        {
+          "name": "Vial Of Tainted Blood",
+          "quantity": "1",
+          "imagePath": "assets/images/items/47050.webp"
+        },
+        {
+          "name": "Winterwool",
+          "quantity": "1",
+          "imagePath": "assets/images/cooking.webp"
+        },
+        {
+          "name": "Elemental Crystal",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45192.webp"
+        },
+        {
+          "name": "Enchanted Ancient Battleaxe",
+          "quantity": "1",
+          "imagePath": "assets/images/cooking.webp"
+        }
+      ]
+    },
+    {
+      "id": "undead-harvesting",
+      "name": "Undead Harvesting",
+      "description": "After waiting for enough frostrisen to fall into his trap, Malgrar's willing to pay good coin \n    for any brave adventurers to harvest Igneous Ice from their undead bodies.",
+      "level": 74,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 10000,
+      "silver": 1000,
+      "rewards": [
+        {
+          "name": "Frozen Heart",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37491.webp"
+        },
+        {
+          "name": "Ice Shards",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37508.webp"
+        },
+        {
+          "name": "Igneous Ice Shard",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37528.webp"
+        },
+        {
+          "name": "Ancient Crown Shards",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45213.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-whirlwind-general",
+      "name": "The Whirlwind General",
+      "description": "Tired of getting its defenses destroyed by raiders, Far'oro leaves his position at the camp to\n    punish whomever raises a weapon inside djinn territory.",
+      "level": 74,
+      "area": "Hadarak Desert",
+      "hasGuide": false,
+      "experience": 72000,
+      "silver": 7500,
+      "rewards": [
+        {
+          "name": "Immaterial Bangle",
+          "quantity": "1",
+          "imagePath": "assets/images/items/41412.webp"
+        },
+        {
+          "name": "Swirling Magical Orb",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45223.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-sandswept-sentinel",
+      "name": "The Sandswept Sentinel",
+      "description": "After a series of attacks to their supplies, Thinfang goes into the battlefield \n    to defend their kind.",
+      "level": 74,
+      "area": "Hadarak Desert",
+      "hasGuide": false,
+      "experience": 72000,
+      "silver": 7500,
+      "rewards": [
+        {
+          "name": "Dunewalker Cloak",
+          "quantity": "1",
+          "imagePath": "assets/images/items/41411.webp"
+        },
+        {
+          "name": "Alpha Jackal Skull",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45212.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-wizard-frozen-in-time",
+      "name": "The Wizard Frozen in Time",
+      "description": "At the top of Castle Thergard, a man holding the power of the White Blight rests within his tomb of stone and ice...",
+      "level": 74,
+      "area": "Glaceforde",
+      "hasGuide": true,
+      "experience": 16000,
+      "silver": 12000,
+      "rewards": [
+        {
+          "name": "Igneous Ice Shard",
+          "quantity": "1",
+          "imagePath": "assets/images/items/37528.webp"
+        },
+        {
+          "name": "Igneas Staff",
+          "quantity": "1",
+          "imagePath": "assets/images/items/43666.webp"
+        }
+      ]
+    },
+    {
+      "id": "the-caw-of-ylzogog",
+      "name": "The Caw of Ylzogog",
+      "description": "Something stirs at the defiled heart of The Blotch... something insidious and unspeakably grotesque. \n    When gazing into nothingness, one must take care not to be changed forever.",
+      "level": 75,
+      "area": "The Blotch",
+      "hasGuide": true,
+      "experience": 38600,
+      "silver": 28900,
+      "rewards": [
+        {
+          "name": "Crow Statue",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39521.webp"
+        },
+        {
+          "name": "Eldritch Ring",
+          "quantity": "1",
+          "imagePath": "assets/images/items/39522.webp"
+        },
+        {
+          "name": "Moving Eldritch Tentacle",
+          "quantity": "1",
+          "imagePath": "assets/images/items/45220.webp"
+        }
+      ]
+    },
+    {
+      "id": "prison-on-the-peak",
+      "name": "Prison on the Peak",
+      "description": "Deep down the muddy and forsaken Slithering Hills, a deadly and completely corrupted \n    creature prowls in the darkness while trying to replicate itself.",
+      "level": 77,
+      "area": "Frost Steppes",
+      "hasGuide": true,
+      "experience": 392000,
+      "silver": 26300,
+      "rewards": [
+        {
+          "name": "Bloodteeth Necklace",
+          "quantity": "8",
+          "imagePath": "assets/images/items/48008.webp"
+        },
+        {
+          "name": "Titan's Antler",
+          "quantity": "8",
+          "imagePath": "assets/images/items/48009.webp"
+        },
+        {
+          "name": "Bloodbeast Ring",
+          "quantity": "8",
+          "imagePath": "assets/images/items/48014.webp"
+        },
+        {
+          "name": "Ancient Bloodstone Core",
+          "quantity": "1",
+          "imagePath": "assets/images/items/53197.webp"
+        }
+      ]
+    },
+    {
+      "id": "up-from-the-deep",
+      "name": "Up From the Deep",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "no-rest-for-the-wicked",
+      "name": "No Rest for the Wicked",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "cuckoo-for-coconuts",
+      "name": "Cuckoo for Coconuts",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "goblins-attack",
+      "name": "Goblins Attack!",
+      "description": "",
+      "level": null,
+      "area": "Rohna Woods",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "mounted-vengeance",
+      "name": "Mounted Vengeance",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "a-bloody-reception",
+      "name": "A Bloody Reception",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "sealed-under-the-dark",
+      "name": "Sealed Under the Dark",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "in-the-spiders-web",
+      "name": "In The Spider's Web",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "in-the-eye-of-the-storm",
+      "name": "In the Eye of the Storm",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "twisted-hybridization",
+      "name": "Twisted Hybridization",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "the-champions-den",
+      "name": "The Champion's Den",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": true,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "the-elderwood-grotto",
+      "name": "The Elderwood Grotto",
+      "description": "",
+      "level": null,
+      "area": "Glademire",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "pieces-on-a-chessboard",
+      "name": "Pieces on a Chessboard",
+      "description": "",
+      "level": null,
+      "area": "Fields of Despair",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "forest-of-wrath",
+      "name": "Forest of Wrath",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "the-red-count",
+      "name": "The Red Count",
+      "description": "",
+      "level": null,
+      "area": "Forsaken Mountains",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "suffering-from-heartburn",
+      "name": "Suffering from Heartburn",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "the-woodland-wardens",
+      "name": "The Woodland Wardens",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": false,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "salt-water-pit",
+      "name": "Salt Water Pit",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": true,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "for-the-love-of-demons",
+      "name": "For the Love of Demons",
+      "description": "",
+      "level": null,
+      "area": "Glademire",
+      "hasGuide": true,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    },
+    {
+      "id": "the-hoarders-stash",
+      "name": "The Hoarders Stash",
+      "description": "",
+      "level": null,
+      "area": "",
+      "hasGuide": true,
+      "experience": null,
+      "silver": null,
+      "rewards": []
+    }
+  ]
+}

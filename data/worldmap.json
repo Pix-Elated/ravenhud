@@ -1,0 +1,2253 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-07",
+    "source": "Local data",
+    "description": "World map data for RavenQuest Companion (coordinates incomplete)",
+    "notes": [
+      "Marker coordinates are empty - need manual data entry",
+      "Contains map tile URLs and marker types"
+    ]
+  },
+  "regions": [],
+  "markers": [
+    {
+      "name": "POIsCityExpeditionsRangers OutpostsWaypointsCraftingCrafting StationsMaterials - Tier 3Materials - Tier 4Materials - Tier 5Materials - Tier 6CosmeticsCosmetic NPCsMaterialsEventsDynamic EventsElite SpawnsQuestsTradingSeaportsTradepostsWarehouses",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "POIsCityExpeditionsRangers OutpostsWaypointsCraftingCrafting StationsMaterials - Tier 3Materials - Tier 4Materials - Tier 5Materials - Tier 6CosmeticsCosmetic NPCsMaterialsEventsDynamic EventsElite SpawnsQuestsTradingSeaportsTradepostsWarehouses",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "POIs",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "City",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Expeditions",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Rangers Outposts",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Waypoints",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Crafting",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Crafting Stations",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Materials - Tier 3",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Materials - Tier 4",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Materials - Tier 5",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Materials - Tier 6",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Cosmetics",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Cosmetic NPCs",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Materials",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Events",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Dynamic Events",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Elite Spawns",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Quests",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Trading",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Seaports",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Tradeposts",
+      "x": "",
+      "y": ""
+    },
+    {
+      "name": "Warehouses",
+      "x": "",
+      "y": ""
+    }
+  ],
+  "images": [
+    {
+      "alt": "World map",
+      "src": "assets/images/menu/worldmap.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/16/17.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/16/16.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/15/17.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/17/17.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/16/18.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/15/16.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/17/16.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/15/18.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/17/18.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/14/17.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/18/17.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/14/16.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/18/16.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/14/18.png"
+    },
+    {
+      "alt": "",
+      "src": "assets/images/worldmap/world/5/18/18.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/vendors.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_fishpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_fishpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_fishpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_fishpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_fishpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_builder.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_builder.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_builder.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_builder.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_bank.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/market.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/feed_the_munk.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/community_land.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/compass_highlight_1.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/moa_merchant.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/aether_echoes.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/munk_carnival.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/cosmetic.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_blacksmithing.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_cooking.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_carpentry.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_weaving.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_alchemy.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_alchemy.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_alchemy.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_alchemy.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_alchemy.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_alchemy.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/crafting_alchemy.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/dynamic_event_down.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/elitespawn.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/elitespawn.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/elitespawn.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/elitespawn.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/elitespawn.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/expedition.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/expedition.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/expedition.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/expedition.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/expedition.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/expedition.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/expedition.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sea_cured_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sea_cured_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sea_cured_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sea_cured_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sea_cured_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sea_cured_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ripper_fang.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ripper_fang.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ripper_fang.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ripper_fang.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ripper_fang.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ripper_fang.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ripper_fang.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ripper_fang.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_shell_fragment.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_shell_fragment.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_shell_fragment.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_shell_fragment.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_shell_fragment.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_shell_fragment.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_shell_fragment.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_shell_fragment.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_thin_blade.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_thin_blade.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_thin_blade.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_thin_blade.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_thin_blade.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_thin_blade.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_thin_blade.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_metallic_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_kaiman_scale.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_kaiman_scale.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_kaiman_scale.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_kaiman_scale.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_rough_steel_plate.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_rough_steel_plate.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_rough_steel_plate.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_rough_steel_plate.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_rough_steel_plate.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_rough_steel_plate.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_rough_steel_plate.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_rough_steel_plate.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ambersprite_shard.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cunning_handle.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cunning_handle.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cunning_handle.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cunning_handle.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cunning_handle.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cunning_handle.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_string.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_string.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_string.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_string.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_string.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_string.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_string.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_string.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_internal_padding.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_internal_padding.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_internal_padding.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_internal_padding.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_internal_padding.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_internal_padding.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_phantasmagorical_cloth.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_phantasmagorical_cloth.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_phantasmagorical_cloth.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_phantasmagorical_cloth.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_phantasmagorical_cloth.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ancient_metallic_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ancient_metallic_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ancient_metallic_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ancient_metallic_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ancient_metallic_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cutting_edge_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cutting_edge_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_cutting_edge_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_heavy_metal_chunks.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_heavy_metal_chunks.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_twisted_blades.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_twisted_blades.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_twisted_blades.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_twisted_blades.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_twisted_blades.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_enervating_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_enervating_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_enervating_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_enervating_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_enervating_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_enervating_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_enervating_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_enervating_core.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_greenweave_bolt.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_greenweave_bolt.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_composite_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_composite_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_composite_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_composite_leather.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_hardwood.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_hardwood.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_hardwood.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_hardwood.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_hardwood.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_hardwood.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ancient_ingot.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ancient_ingot.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_ancient_ingot.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_draconic_hide.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_draconic_hide.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_draconic_hide.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_draconic_hide.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_draconic_hide.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_draconic_hide.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sharp_edges.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sharp_edges.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sharp_edges.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_reflective_husk.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_reflective_husk.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_reflective_husk.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_reflective_husk.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_reflective_husk.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_winterwool.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_winterwool.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_winterwool.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_winterwool.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_winterwool.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_mystical_crystal.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_mystical_crystal.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_mystical_crystal.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_mystical_crystal.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_mystical_crystal.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_joint.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_joint.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_joint.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_joint.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_joint.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_sturdy_joint.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_supernatural_threads.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_supernatural_threads.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_supernatural_threads.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_supernatural_threads.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_supernatural_threads.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_polished_plate_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_polished_plate_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_polished_plate_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_polished_plate_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_polished_plate_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_polished_plate_scrap.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_crude_runed_tip.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_crude_runed_tip.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_crude_runed_tip.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_crude_runed_tip.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_crude_runed_tip.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/material_crude_runed_tip.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/rangers_company_outpost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/seaport.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/tradepost.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/npc_warehouse.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/respawn_shrine.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    },
+    {
+      "alt": "Marker",
+      "src": "assets/images/worldmap/markers/quest.png"
+    }
+  ]
+}

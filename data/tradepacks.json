@@ -1,0 +1,1611 @@
+{
+  "metadata": {
+    "source": "Scraped game data",
+    "lastUpdated": "2026-01-07",
+    "notes": [
+      "Tradepacks are deliverable goods for the trading system",
+      "Intermediates are crafted materials used in tradepack recipes",
+      "Some intermediate recipes may have circular references that need verification",
+      "total_cost values are in silver"
+    ]
+  },
+  "category": "tradepacks",
+  "tradepacks": [
+    {
+      "id": "aged_meat",
+      "name": "Aged Meat",
+      "materials": [
+        {
+          "quantity": 75,
+          "item": "Beef"
+        },
+        {
+          "quantity": 10,
+          "item": "Salt"
+        },
+        {
+          "quantity": 208,
+          "item": "Garlic"
+        }
+      ],
+      "total_cost": 21061,
+      "imagePath": "assets/images/tradepacks/aged-meat.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "bakers_basics",
+      "name": "Bakers Basics",
+      "materials": [
+        {
+          "quantity": 97,
+          "item": "Milk"
+        },
+        {
+          "quantity": 240,
+          "item": "Egg"
+        },
+        {
+          "quantity": 230,
+          "item": "Ground Flour"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/bakers-basics.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "barbecue_specialty",
+      "name": "Barbecue Specialty",
+      "materials": [
+        {
+          "quantity": 68,
+          "item": "Beef"
+        },
+        {
+          "quantity": 26,
+          "item": "Chicken"
+        },
+        {
+          "quantity": 42,
+          "item": "Coal"
+        },
+        {
+          "quantity": 100,
+          "item": "Honey"
+        }
+      ],
+      "total_cost": 22450,
+      "imagePath": "assets/images/tradepacks/barbecue-specialty.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "basic_rations",
+      "name": "Basic Rations",
+      "materials": [
+        {
+          "quantity": 316,
+          "item": "Wheat"
+        },
+        {
+          "quantity": 110,
+          "item": "Corn"
+        },
+        {
+          "quantity": 35,
+          "item": "Apple"
+        },
+        {
+          "quantity": 25,
+          "item": "Shank"
+        }
+      ],
+      "total_cost": 30711,
+      "imagePath": "assets/images/tradepacks/basic-rations.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "berry_basket",
+      "name": "Berry Basket",
+      "materials": [
+        {
+          "quantity": 200,
+          "item": "Strawberry"
+        },
+        {
+          "quantity": 445,
+          "item": "Blueberry"
+        },
+        {
+          "quantity": 30,
+          "item": "Moonberry"
+        },
+        {
+          "quantity": 100,
+          "item": "Sunberry"
+        }
+      ],
+      "total_cost": 36370,
+      "imagePath": "assets/images/tradepacks/berry-basket.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "bittersweet_delights",
+      "name": "Bittersweet Delights",
+      "materials": [
+        {
+          "quantity": 65,
+          "item": "Cherry"
+        },
+        {
+          "quantity": 140,
+          "item": "Ambar Dust"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/bittersweet-delights.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "brined_shank",
+      "name": "Brined Shank",
+      "materials": [
+        {
+          "quantity": 70,
+          "item": "Shank"
+        },
+        {
+          "quantity": 14,
+          "item": "Salt"
+        },
+        {
+          "quantity": 165,
+          "item": "Pepper"
+        }
+      ],
+      "total_cost": 29410,
+      "imagePath": "assets/images/tradepacks/brined-shank.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "building_materials",
+      "name": "Building Materials",
+      "materials": [
+        {
+          "quantity": 240,
+          "item": "Stone"
+        },
+        {
+          "quantity": 185,
+          "item": "Small Log"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/building-materials.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "butchers_bundle",
+      "name": "Butchers Bundle",
+      "materials": [
+        {
+          "quantity": 68,
+          "item": "Hide"
+        },
+        {
+          "quantity": 38,
+          "item": "Chicken"
+        },
+        {
+          "quantity": 90,
+          "item": "Beef"
+        },
+        {
+          "quantity": 30,
+          "item": "Shank"
+        },
+        {
+          "quantity": 5,
+          "item": "Cheese"
+        }
+      ],
+      "total_cost": 23360
+    },
+    {
+      "id": "campfire_roast",
+      "name": "Campfire Roast",
+      "materials": [
+        {
+          "quantity": 220,
+          "item": "Stone"
+        },
+        {
+          "quantity": 68,
+          "item": "Chicken"
+        },
+        {
+          "quantity": 155,
+          "item": "Potato"
+        },
+        {
+          "quantity": 120,
+          "item": "Small Log"
+        }
+      ],
+      "total_cost": 19680,
+      "imagePath": "assets/images/tradepacks/campfire-roast.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "cavedweller_findings",
+      "name": "Cavedweller Findings",
+      "materials": [
+        {
+          "quantity": 110,
+          "item": "Cobalt Ore"
+        },
+        {
+          "quantity": 148,
+          "item": "Stone"
+        },
+        {
+          "quantity": 120,
+          "item": "Glowing Spores"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/cavedweller-findings.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "crafting_basics",
+      "name": "Crafting Basics",
+      "materials": [
+        {
+          "quantity": 140,
+          "item": "Copper Ore"
+        },
+        {
+          "quantity": 55,
+          "item": "Hide"
+        },
+        {
+          "quantity": 200,
+          "item": "Small Log"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/crafting-basics.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "crisp_produce",
+      "name": "Crisp Produce",
+      "materials": [
+        {
+          "quantity": 55,
+          "item": "Apple"
+        },
+        {
+          "quantity": 55,
+          "item": "Broccoli"
+        },
+        {
+          "quantity": 133,
+          "item": "Pea"
+        },
+        {
+          "quantity": 133,
+          "item": "Bean"
+        }
+      ],
+      "total_cost": 30236,
+      "imagePath": "assets/images/tradepacks/crisp-produce.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "dairy_delivery",
+      "name": "Dairy Delivery",
+      "materials": [
+        {
+          "quantity": 80,
+          "item": "Milk"
+        },
+        {
+          "quantity": 22,
+          "item": "Cheese"
+        },
+        {
+          "quantity": 246,
+          "item": "Egg"
+        }
+      ],
+      "total_cost": 31836,
+      "imagePath": "assets/images/tradepacks/dairy-delivery.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "elemental_sprout",
+      "name": "Elemental Sprout",
+      "materials": [
+        {
+          "quantity": 125,
+          "item": "Crystal Leaf"
+        }
+      ],
+      "total_cost": 888375,
+      "imagePath": "assets/images/tradepacks/elemental-sprout.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "exotic_fruits",
+      "name": "Exotic Fruits",
+      "materials": [
+        {
+          "quantity": 52,
+          "item": "Watermelon"
+        },
+        {
+          "quantity": 70,
+          "item": "Sunberry"
+        },
+        {
+          "quantity": 62,
+          "item": "Moonberry"
+        }
+      ],
+      "total_cost": 39504,
+      "imagePath": "assets/images/tradepacks/exotic-fruits.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "exotic_spices",
+      "name": "Exotic Spices",
+      "materials": [
+        {
+          "quantity": 60,
+          "item": "Sunberry"
+        },
+        {
+          "quantity": 100,
+          "item": "Flaming Spores"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/exotic-spices.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "fried_chicken",
+      "name": "Fried Chicken",
+      "materials": [
+        {
+          "quantity": 75,
+          "item": "Chicken"
+        },
+        {
+          "quantity": 80,
+          "item": "Onion"
+        },
+        {
+          "quantity": 120,
+          "item": "Garlic"
+        },
+        {
+          "quantity": 95,
+          "item": "Ground Flour"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/fried-chicken.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "fruit_basket",
+      "name": "Fruit Basket",
+      "materials": [
+        {
+          "quantity": 136,
+          "item": "Grape"
+        },
+        {
+          "quantity": 30,
+          "item": "Watermelon"
+        },
+        {
+          "quantity": 45,
+          "item": "Cherry"
+        }
+      ],
+      "total_cost": 31122,
+      "imagePath": "assets/images/tradepacks/fruit-basket.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "general_spices",
+      "name": "General Spices",
+      "materials": [
+        {
+          "quantity": 148,
+          "item": "Garlic"
+        },
+        {
+          "quantity": 105,
+          "item": "Onion"
+        },
+        {
+          "quantity": 118,
+          "item": "Pepper"
+        },
+        {
+          "quantity": 13,
+          "item": "Salt"
+        }
+      ],
+      "total_cost": 28411,
+      "imagePath": "assets/images/tradepacks/general-spices.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "glaceforde_explorers_kit",
+      "name": "Glaceforde Explorers Kit",
+      "materials": [
+        {
+          "quantity": 106,
+          "item": "Wool"
+        },
+        {
+          "quantity": 110,
+          "item": "Small Log"
+        },
+        {
+          "quantity": 100,
+          "item": "Coal"
+        },
+        {
+          "quantity": 20,
+          "item": "Cotton"
+        }
+      ],
+      "total_cost": 26610,
+      "imagePath": "assets/images/tradepacks/glaceforde-explorers-kit.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "hardy_roots",
+      "name": "Hardy Roots",
+      "materials": [
+        {
+          "quantity": 286,
+          "item": "Carrot"
+        },
+        {
+          "quantity": 65,
+          "item": "Purple Roots"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/hardy-roots.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "juicers_box",
+      "name": "Juicers Box",
+      "materials": [
+        {
+          "quantity": 64,
+          "item": "Apple"
+        },
+        {
+          "quantity": 162,
+          "item": "Strawberry"
+        },
+        {
+          "quantity": 26,
+          "item": "Cherry"
+        },
+        {
+          "quantity": 12,
+          "item": "Banana"
+        },
+        {
+          "quantity": 145,
+          "item": "Egg"
+        },
+        {
+          "quantity": 35,
+          "item": "Cheese"
+        },
+        {
+          "quantity": 148,
+          "item": "Pepper"
+        }
+      ],
+      "total_cost": 36090,
+      "imagePath": "assets/images/tradepacks/juicers-box.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "kindling_kit",
+      "name": "Kindling Kit",
+      "materials": [
+        {
+          "quantity": 175,
+          "item": "Small Log"
+        },
+        {
+          "quantity": 124,
+          "item": "Coal"
+        },
+        {
+          "quantity": 70,
+          "item": "Cotton"
+        }
+      ],
+      "total_cost": 14805,
+      "imagePath": "assets/images/tradepacks/kindling-kit.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "lush_fibers",
+      "name": "Lush Fibers",
+      "materials": [
+        {
+          "quantity": 110,
+          "item": "Wool"
+        },
+        {
+          "quantity": 300,
+          "item": "Emerald Spores"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/lush-fibers.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "margrove_ale_ingredients",
+      "name": "Margrove Ale Ingredients",
+      "materials": [
+        {
+          "quantity": 400,
+          "item": "Wheat"
+        },
+        {
+          "quantity": 12,
+          "item": "Acorn"
+        },
+        {
+          "quantity": 45,
+          "item": "Pumpkin"
+        }
+      ],
+      "total_cost": 34308,
+      "imagePath": "assets/images/tradepacks/margrove-ale-ingredients.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "moisture_aging",
+      "name": "Moisture Aging",
+      "materials": [
+        {
+          "quantity": 400,
+          "item": "Juicy Roots"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/moisture-aging.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "necrobane_kit",
+      "name": "Necrobane Kit",
+      "materials": [
+        {
+          "quantity": 250,
+          "item": "Bloody Bud"
+        }
+      ],
+      "total_cost": 141250,
+      "imagePath": "assets/images/tradepacks/necrobane-kit.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "noble_delicacies",
+      "name": "Noble Delicacies",
+      "materials": [
+        {
+          "quantity": 175,
+          "item": "Moonberry"
+        },
+        {
+          "quantity": 15,
+          "item": "Acorn"
+        },
+        {
+          "quantity": 70,
+          "item": "Pepper"
+        }
+      ],
+      "total_cost": 37410,
+      "imagePath": "assets/images/tradepacks/noble-delicacies.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "ocean_stimulants",
+      "name": "Ocean Stimulants",
+      "materials": [
+        {
+          "quantity": 380,
+          "item": "Fungal Dust"
+        }
+      ],
+      "total_cost": null
+    },
+    {
+      "id": "pickled_vegetables",
+      "name": "Pickled Vegetables",
+      "materials": [
+        {
+          "quantity": 238,
+          "item": "Cabbage"
+        },
+        {
+          "quantity": 300,
+          "item": "Carrot"
+        },
+        {
+          "quantity": 12,
+          "item": "Salt"
+        }
+      ],
+      "total_cost": 25536,
+      "imagePath": "assets/images/tradepacks/pickled-vegetables.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "pie_making_kit",
+      "name": "Pie Making Kit",
+      "materials": [
+        {
+          "quantity": 56,
+          "item": "Apple"
+        },
+        {
+          "quantity": 65,
+          "item": "Sunberry"
+        },
+        {
+          "quantity": 25,
+          "item": "Cherry"
+        },
+        {
+          "quantity": 60,
+          "item": "Ground Flour"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/pie-making-kit.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "pirates_anesthetic",
+      "name": "Pirates Anesthetic",
+      "materials": [
+        {
+          "quantity": 245,
+          "item": "Numbing Thorns"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/pirates-anesthetic.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "ravencrest_finest_wears",
+      "name": "Ravencrest Finest Wears",
+      "materials": [
+        {
+          "quantity": 125,
+          "item": "Cotton"
+        },
+        {
+          "quantity": 78,
+          "item": "Wool"
+        },
+        {
+          "quantity": 50,
+          "item": "Hide"
+        }
+      ],
+      "total_cost": 29290,
+      "imagePath": "assets/images/tradepacks/ravencrest-finest-wears.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "ravencrest_greens",
+      "name": "Ravencrest Greens",
+      "materials": [
+        {
+          "quantity": 128,
+          "item": "Broccoli"
+        },
+        {
+          "quantity": 112,
+          "item": "Pea"
+        },
+        {
+          "quantity": 160,
+          "item": "Cabbage"
+        }
+      ],
+      "total_cost": 34368,
+      "imagePath": "assets/images/tradepacks/ravencrest-greens.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "rohna_smoked_ham",
+      "name": "Rohna Smoked Ham",
+      "materials": [
+        {
+          "quantity": 40,
+          "item": "Shank"
+        },
+        {
+          "quantity": 30,
+          "item": "Acorn"
+        },
+        {
+          "quantity": 92,
+          "item": "Pea"
+        },
+        {
+          "quantity": 8,
+          "item": "Salt"
+        },
+        {
+          "quantity": 260,
+          "item": "Carrot"
+        },
+        {
+          "quantity": 20,
+          "item": "Orange"
+        },
+        {
+          "quantity": 155,
+          "item": "Bean"
+        },
+        {
+          "quantity": 535,
+          "item": "Blueberry"
+        }
+      ],
+      "total_cost": 30875,
+      "imagePath": "assets/images/tradepacks/rohna-smoked-ham.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "sajecho_fruit_basket",
+      "name": "Sajecho Fruit Basket",
+      "materials": [
+        {
+          "quantity": 40,
+          "item": "Banana"
+        },
+        {
+          "quantity": 20,
+          "item": "Watermelon"
+        },
+        {
+          "quantity": 34,
+          "item": "Orange"
+        },
+        {
+          "quantity": 94,
+          "item": "Grape"
+        },
+        {
+          "quantity": 15,
+          "item": "Salt"
+        },
+        {
+          "quantity": 150,
+          "item": "Onion"
+        },
+        {
+          "quantity": 55,
+          "item": "Pepper"
+        }
+      ],
+      "total_cost": 22880,
+      "imagePath": "assets/images/tradepacks/sajecho-fruit-basket.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "seabreeze_rum",
+      "name": "Seabreeze Rum",
+      "materials": [
+        {
+          "quantity": 200,
+          "item": "Corn"
+        },
+        {
+          "quantity": 65,
+          "item": "Cabbage"
+        },
+        {
+          "quantity": 30,
+          "item": "Banana"
+        },
+        {
+          "quantity": 212,
+          "item": "Blueberry"
+        },
+        {
+          "quantity": 190,
+          "item": "Shadow Stem"
+        }
+      ],
+      "total_cost": 31706,
+      "imagePath": "assets/images/tradepacks/seabreeze-rum.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "shepherds_feast",
+      "name": "Shepherds Feast",
+      "materials": [
+        {
+          "quantity": 132,
+          "item": "Mindbender"
+        },
+        {
+          "quantity": 20,
+          "item": "Feather"
+        },
+        {
+          "quantity": 200,
+          "item": "Corn"
+        },
+        {
+          "quantity": 650,
+          "item": "Potato"
+        },
+        {
+          "quantity": 56,
+          "item": "Shank"
+        }
+      ],
+      "total_cost": 34648
+    },
+    {
+      "id": "slums_provisions",
+      "name": "Slums Provisions",
+      "materials": [
+        {
+          "quantity": 200,
+          "item": "Small Log"
+        },
+        {
+          "quantity": 65,
+          "item": "Shank"
+        },
+        {
+          "quantity": 690,
+          "item": "Potato"
+        }
+      ],
+      "total_cost": 32800,
+      "imagePath": "assets/images/tradepacks/slums-provisions.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "sombershade_toppings",
+      "name": "Sombershade Toppings",
+      "materials": [
+        {
+          "quantity": 110,
+          "item": "Dread Bloom"
+        }
+      ],
+      "total_cost": 84040,
+      "imagePath": "assets/images/tradepacks/sombershade-toppings.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "spiced_pumpkin_pie",
+      "name": "Spiced Pumpkin Pie",
+      "materials": [
+        {
+          "quantity": 60,
+          "item": "Pumpkin"
+        },
+        {
+          "quantity": 60,
+          "item": "Milk"
+        },
+        {
+          "quantity": 110,
+          "item": "Ground Flour"
+        }
+      ],
+      "total_cost": 106030
+    },
+    {
+      "id": "sweet_honeys",
+      "name": "Sweet Honeys",
+      "materials": [
+        {
+          "quantity": 80,
+          "item": "Honey"
+        }
+      ],
+      "total_cost": 53860
+    },
+    {
+      "id": "strawberry_cakes",
+      "name": "Strawberry Cakes",
+      "materials": [
+        {
+          "quantity": 186,
+          "item": "Ground Flour"
+        },
+        {
+          "quantity": 32,
+          "item": "Milk"
+        },
+        {
+          "quantity": 400,
+          "item": "Strawberry"
+        },
+        {
+          "quantity": 120,
+          "item": "Honey"
+        }
+      ],
+      "total_cost": 62620,
+      "imagePath": "assets/images/tradepacks/strawberry-cakes.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "vegetable_stew",
+      "name": "Vegetable Stew",
+      "materials": [
+        {
+          "quantity": 55,
+          "item": "Broccoli"
+        },
+        {
+          "quantity": 55,
+          "item": "Pumpkin"
+        },
+        {
+          "quantity": 215,
+          "item": "Bean"
+        },
+        {
+          "quantity": 250,
+          "item": "Potato"
+        },
+        {
+          "quantity": 300,
+          "item": "Lizard's Delight"
+        },
+        {
+          "quantity": 140,
+          "item": "Crystal Cap"
+        }
+      ],
+      "total_cost": 36535,
+      "imagePath": "assets/images/tradepacks/vegetable-stew.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "winemakers_kit",
+      "name": "Winemakers Kit",
+      "materials": [
+        {
+          "quantity": 200,
+          "item": "Grape"
+        },
+        {
+          "quantity": 385,
+          "item": "Blueberry"
+        },
+        {
+          "quantity": 92,
+          "item": "Moonberry"
+        }
+      ],
+      "total_cost": 33474,
+      "imagePath": "assets/images/tradepacks/winemakers-kit.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "yornish_seasonings",
+      "name": "Yornish Seasonings",
+      "materials": [
+        {
+          "quantity": 100,
+          "item": "Twisted Flower"
+        }
+      ],
+      "total_cost": 513000,
+      "imagePath": "assets/images/tradepacks/yornish-seasonings.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "dry_stem_feast",
+      "name": "Dry Stem Feast",
+      "materials": [
+        {
+          "quantity": 50,
+          "item": "Shank"
+        },
+        {
+          "quantity": 43,
+          "item": "Onion"
+        }
+      ],
+      "total_cost": 78325
+    },
+    {
+      "id": "bloody_bud_bundle",
+      "name": "Bloody Bud Bundle",
+      "materials": [
+        {
+          "quantity": 275,
+          "item": "Brightday"
+        },
+        {
+          "quantity": 48,
+          "item": "Feather"
+        }
+      ],
+      "total_cost": 65901
+    },
+    {
+      "id": "juicy_roots_pack",
+      "name": "Juicy Roots Pack",
+      "materials": [
+        {
+          "quantity": 25,
+          "item": "Feather"
+        }
+      ],
+      "total_cost": 74280
+    },
+    {
+      "id": "juicy_stem_bundle",
+      "name": "Juicy Stem Bundle",
+      "materials": [
+        {
+          "quantity": 120,
+          "item": "Toxic Stem"
+        }
+      ],
+      "total_cost": 96775
+    },
+    {
+      "id": "yornish_salt",
+      "name": "Yornish Salt",
+      "materials": [
+        {
+          "quantity": 14,
+          "item": "Salt"
+        }
+      ],
+      "total_cost": 73875
+    },
+    {
+      "id": "widows_box",
+      "name": "Widow's Box",
+      "materials": [
+        {
+          "quantity": 300,
+          "item": "Lizard's Delight"
+        },
+        {
+          "quantity": 140,
+          "item": "Crystal Cap"
+        },
+        {
+          "quantity": 155,
+          "item": "Wailing Leaf"
+        }
+      ],
+      "total_cost": 889275,
+      "imagePath": "assets/images/tradepacks/widows-box.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "seers_support_pack",
+      "name": "Seer's Support Pack",
+      "materials": [
+        {
+          "quantity": 380,
+          "item": "Shadow Stem"
+        },
+        {
+          "quantity": 132,
+          "item": "Mindbender"
+        },
+        {
+          "quantity": 20,
+          "item": "Feather"
+        }
+      ],
+      "total_cost": 2036896,
+      "imagePath": "assets/images/tradepacks/seers-support-pack.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "poisoners_kit",
+      "name": "Poisoner's Kit",
+      "materials": [
+        {
+          "quantity": 120,
+          "item": "Toxic Stem"
+        },
+        {
+          "quantity": 240,
+          "item": "Thin Roots"
+        },
+        {
+          "quantity": 150,
+          "item": "Hagthorn"
+        },
+        {
+          "quantity": 150,
+          "item": "Thorny Roots"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/poisoners-kit.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "sailors_remedy",
+      "name": "Sailor's Remedy",
+      "materials": [
+        {
+          "quantity": 260,
+          "item": "Carrot"
+        },
+        {
+          "quantity": 20,
+          "item": "Orange"
+        },
+        {
+          "quantity": 155,
+          "item": "Bean"
+        },
+        {
+          "quantity": 535,
+          "item": "Blueberry"
+        }
+      ],
+      "total_cost": 30855,
+      "imagePath": "assets/images/tradepacks/sailors-remedy.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "sajechos_spices",
+      "name": "Sajecho's Spices",
+      "materials": [
+        {
+          "quantity": 15,
+          "item": "Salt"
+        },
+        {
+          "quantity": 20,
+          "item": "Orange"
+        },
+        {
+          "quantity": 150,
+          "item": "Onion"
+        },
+        {
+          "quantity": 55,
+          "item": "Pepper"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/sajechos-spices.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "settlers_rations",
+      "name": "Settler's Rations",
+      "materials": [
+        {
+          "quantity": 200,
+          "item": "Corn"
+        },
+        {
+          "quantity": 650,
+          "item": "Potato"
+        },
+        {
+          "quantity": 56,
+          "item": "Shank"
+        }
+      ],
+      "total_cost": 31536,
+      "imagePath": "assets/images/tradepacks/settlers-rations.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "sombreshades_pie",
+      "name": "Sombreshade's Pie",
+      "materials": [
+        {
+          "quantity": 60,
+          "item": "Pumpkin"
+        },
+        {
+          "quantity": 60,
+          "item": "Milk"
+        },
+        {
+          "quantity": 110,
+          "item": "Ground Flour"
+        },
+        {
+          "quantity": 80,
+          "item": "Honey"
+        }
+      ],
+      "total_cost": null,
+      "imagePath": "assets/images/tradepacks/sombreshades-pie.webp",
+      "topProfit": 52323,
+      "destinations": []
+    },
+    {
+      "id": "butchers_box",
+      "name": "Butcher's Box",
+      "imagePath": "assets/images/tradepacks/butchers-box.webp",
+      "topProfit": 52323,
+      "destinations": [],
+      "materials": [],
+      "total_cost": null
+    },
+    {
+      "id": "kabbars_omelets",
+      "name": "Kabbar's Omelets",
+      "imagePath": "assets/images/tradepacks/kabbars-omelets.webp",
+      "topProfit": 52323,
+      "destinations": [],
+      "materials": [],
+      "total_cost": null
+    },
+    {
+      "id": "oceanic_stimulants",
+      "name": "Oceanic Stimulants",
+      "imagePath": "assets/images/tradepacks/oceanic-stimulants.webp",
+      "topProfit": 52323,
+      "destinations": [],
+      "materials": [],
+      "total_cost": null
+    }
+  ],
+  "intermediates": [
+    {
+      "id": "ambar_dust",
+      "name": "Ambar Dust",
+      "materials": [
+        {
+          "quantity": 180,
+          "item": "Green Cap"
+        }
+      ]
+    },
+    {
+      "id": "green_cap",
+      "name": "Green Cap",
+      "materials": [
+        {
+          "quantity": 105,
+          "item": "Thin Roots"
+        }
+      ]
+    },
+    {
+      "id": "glowing_spores",
+      "name": "Glowing Spores",
+      "materials": [
+        {
+          "quantity": 120,
+          "item": "Thorny Roots"
+        }
+      ]
+    },
+    {
+      "id": "crystal_leaf",
+      "name": "Crystal Leaf",
+      "materials": [
+        {
+          "quantity": 120,
+          "item": "Rocky Cap"
+        }
+      ]
+    },
+    {
+      "id": "rocky_cap",
+      "name": "Rocky Cap",
+      "materials": [
+        {
+          "quantity": 90,
+          "item": "Fire Cap"
+        }
+      ]
+    },
+    {
+      "id": "flaming_spores",
+      "name": "Flaming Spores",
+      "materials": [
+        {
+          "quantity": 150,
+          "item": "Chest Warmer"
+        }
+      ]
+    },
+    {
+      "id": "chest_warmer",
+      "name": "Chest Warmer",
+      "materials": [
+        {
+          "quantity": 92,
+          "item": "Juicy Roots"
+        }
+      ]
+    },
+    {
+      "id": "purple_roots",
+      "name": "Purple Roots",
+      "materials": [
+        {
+          "quantity": 175,
+          "item": "Cold Roots"
+        }
+      ]
+    },
+    {
+      "id": "cold_roots",
+      "name": "Cold Roots",
+      "materials": [
+        {
+          "quantity": 375,
+          "item": "Thin Roots"
+        }
+      ]
+    },
+    {
+      "id": "emerald_spores",
+      "name": "Emerald Spores",
+      "materials": [
+        {
+          "quantity": 285,
+          "item": "Juicy Roots"
+        }
+      ]
+    },
+    {
+      "id": "juicy_roots",
+      "name": "Juicy Roots",
+      "materials": [
+        {
+          "quantity": 170,
+          "item": "Dry Stem"
+        }
+      ]
+    },
+    {
+      "id": "bloody_bud",
+      "name": "Bloody Bud",
+      "materials": [
+        {
+          "quantity": 275,
+          "item": "Brightday"
+        },
+        {
+          "quantity": 48,
+          "item": "Feather"
+        }
+      ]
+    },
+    {
+      "id": "fungal_dust",
+      "name": "Fungal Dust",
+      "materials": [
+        {
+          "quantity": 290,
+          "item": "Pirate's Bliss"
+        },
+        {
+          "quantity": 160,
+          "item": "Tin Ore"
+        }
+      ]
+    },
+    {
+      "id": "numbing_thorns",
+      "name": "Numbing Thorns",
+      "materials": [
+        {
+          "quantity": 280,
+          "item": "Pirate's Cap"
+        },
+        {
+          "quantity": 280,
+          "item": "Juicy Stem"
+        }
+      ]
+    },
+    {
+      "id": "juicy_stem",
+      "name": "Juicy Stem",
+      "materials": [
+        {
+          "quantity": 120,
+          "item": "Toxic Stem"
+        }
+      ]
+    },
+    {
+      "id": "toxic_stem",
+      "name": "Toxic Stem",
+      "materials": [
+        {
+          "quantity": 240,
+          "item": "Thin Roots"
+        }
+      ]
+    },
+    {
+      "id": "thin_roots",
+      "name": "Thin Roots",
+      "materials": [
+        {
+          "quantity": 150,
+          "item": "Hagthorn"
+        },
+        {
+          "quantity": 150,
+          "item": "Thorny Roots"
+        }
+      ]
+    },
+    {
+      "id": "shadow_stem",
+      "name": "Shadow Stem",
+      "materials": [],
+      "note": "Base material - gathered from herbalism, not crafted"
+    },
+    {
+      "id": "dread_bloom",
+      "name": "Dread Bloom",
+      "materials": [
+        {
+          "quantity": 170,
+          "item": "Dusk Dust"
+        }
+      ]
+    },
+    {
+      "id": "dusk_dust",
+      "name": "Dusk Dust",
+      "materials": [
+        {
+          "quantity": 240,
+          "item": "Thorny Roots"
+        }
+      ]
+    },
+    {
+      "id": "thorny_roots",
+      "name": "Thorny Roots",
+      "materials": [
+        {
+          "quantity": 220,
+          "item": "Fungal Dust"
+        }
+      ]
+    },
+    {
+      "id": "crystal_cap",
+      "name": "Crystal Cap",
+      "materials": [
+        {
+          "quantity": 155,
+          "item": "Wailing Leaf"
+        }
+      ]
+    },
+    {
+      "id": "twisted_flower",
+      "name": "Twisted Flower",
+      "materials": [
+        {
+          "quantity": 185,
+          "item": "Withered Stem"
+        }
+      ]
+    },
+    {
+      "id": "withered_stem",
+      "name": "Withered Stem",
+      "materials": [
+        {
+          "quantity": 500,
+          "item": "Fungal Dust"
+        }
+      ]
+    },
+    {
+      "id": "ground_flour",
+      "name": "Ground Flour",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Wheat"
+        }
+      ],
+      "note": "Crafted from wheat - exact ratio needs verification"
+    },
+    {
+      "id": "dry_stem",
+      "name": "Dry Stem",
+      "materials": [],
+      "note": "Base herbalism resource - no crafting recipe"
+    }
+  ],
+  "tradepackCount": 62,
+  "intermediateCount": 26
+}

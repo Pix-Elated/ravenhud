@@ -1,0 +1,935 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-14",
+    "itemCount": 67,
+    "description": "Trophy collection data for RavenQuest Companion"
+  },
+  "items": [
+    {
+      "id": "arachnid_trophy",
+      "name": "Arachnid Trophy",
+      "creature": "Spiders",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Arthropods",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Precision",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "chainwraith_trophy",
+      "name": "Chainwraith Trophy",
+      "creature": "Chainwraiths",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Undeads",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Wisdom",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "crowmaiden_trophy",
+      "name": "Crowmaiden Trophy",
+      "creature": "Crowmaidens",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humanoids",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Spell Power",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "demon_trophy",
+      "name": "Demon Trophy",
+      "creature": "Demons",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Outsiders",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Impact",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "direhorn_drake_trophy",
+      "name": "Direhorn Drake Trophy",
+      "creature": "Direhorn Drakes",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Draconics",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Dexterity",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "djinn_trophy",
+      "name": "Djinn Trophy",
+      "creature": "Djinns",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Outsiders",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Intelligence",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "dwarf_trophy",
+      "name": "Dwarf Trophy",
+      "creature": "Dwarves",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Weapon Defense",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "elf_trophy",
+      "name": "Elf Trophy",
+      "creature": "Elves",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Dexterity",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "emberscale_drake_trophy",
+      "name": "Emberscale Drake Trophy",
+      "creature": "Emberscale Drakes",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Draconics",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Vitality",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "fox_trophy",
+      "name": "Fox Trophy",
+      "creature": "Foxes",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Beasts",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Haste",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "froll_trophy",
+      "name": "Froll Trophy",
+      "creature": "Frolls",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humanoids",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Max Health",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "frostbound_drake_trophy",
+      "name": "Frostbound Drake Trophy",
+      "creature": "Frostbound Drakes",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Draconics",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Weapon Power",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "frostrisen_trophy",
+      "name": "Frostrisen Trophy",
+      "creature": "Frostrisens",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Undeads",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Max Mana",
+          "value": "6%"
+        }
+      ]
+    },
+    {
+      "id": "fungi_trophy",
+      "name": "Fungi Trophy",
+      "creature": "Fungi",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Naturals",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Healing Power",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "gazer_trophy",
+      "name": "Gazer Trophy",
+      "creature": "Gazers",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Outsiders",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Mana Regeneration",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "ghaz_trophy",
+      "name": "Ghaz Trophy",
+      "creature": "Ghaz",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Dexterity",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "goblin_trophy",
+      "name": "Goblin Trophy",
+      "creature": "Goblins",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Goblinoids",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Intelligence",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "hookmask_trophy",
+      "name": "Hookmask Trophy",
+      "creature": "Hookmasks",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Healing Power",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "iceforge_dwarf_trophy",
+      "name": "Iceforge Dwarf Trophy",
+      "creature": "Iceforge Dwarves",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Might",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "jackal_trophy",
+      "name": "Jackal Trophy",
+      "creature": "Jackals",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Beasts",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Spell Defense",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "kaiman_trophy",
+      "name": "Kaiman Trophy",
+      "creature": "Kaimans",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Reptiles",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Precision",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "mindslave_trophy",
+      "name": "Mindslave Trophy",
+      "creature": "Mindslaves",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Max Mana",
+          "value": "6%"
+        }
+      ]
+    },
+    {
+      "id": "minotaur_trophy",
+      "name": "Minotaur Trophy",
+      "creature": "Minotaurs",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humanoids",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Might",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "morningstar_trophy",
+      "name": "Morningstar Trophy",
+      "creature": "Morningstars",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Haste",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "orc_trophy",
+      "name": "Orc Trophy",
+      "creature": "Orcs",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humanoids",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Weapon Power",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "pirate_trophy",
+      "name": "Pirate Trophy",
+      "creature": "Pirates",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Wisdom",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "pummeldillos_trophy",
+      "name": "Pummeldillos Trophy",
+      "creature": "Pummeldillos",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Reptiles",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Weapon Defense",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "rat_trophy",
+      "name": "Rat Trophy",
+      "creature": "Rats",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humanoids",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Dexterity",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "rohna_brotherhood_trophy",
+      "name": "Rohna Brotherhood Trophy",
+      "creature": "Rohna Brotherhoods",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Impact",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "saltdusk_trophy",
+      "name": "Saltdusk Trophy",
+      "creature": "Saltdusks",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Vitality",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "saurian_trophy",
+      "name": "Saurian Trophy",
+      "creature": "Saurians",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Reptiles",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Intelligence",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "shark_trophy",
+      "name": "Shark Trophy",
+      "creature": "Sharks",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Aquatics",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Might",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "skeleton_trophy",
+      "name": "Skeleton Trophy",
+      "creature": "Skeletons",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Undeads",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Max Health",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "skorn_trophy",
+      "name": "Skorn Trophy",
+      "creature": "Skorns",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Spell Power",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "spellslayer_drake_trophy",
+      "name": "Spellslayer Drake Trophy",
+      "creature": "Spellslayer Drakes",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Draconics",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Spell Defense",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "sporewalker_trophy",
+      "name": "Sporewalker Trophy",
+      "creature": "Sporewalkers",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Mutants",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Max Mana",
+          "value": "6%"
+        }
+      ]
+    },
+    {
+      "id": "toad_trophy",
+      "name": "Toad Trophy",
+      "creature": "Toads",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Amphibians",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Max Health",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "tortoise_trophy",
+      "name": "Tortoise Trophy",
+      "creature": "Tortoises",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Reptiles",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Vitality",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "troll_trophy",
+      "name": "Troll Trophy",
+      "creature": "Trolls",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Giants",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Health Regeneration",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "trunk_trophy",
+      "name": "Trunk Trophy",
+      "creature": "Trunks",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Naturals",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Mana Regeneration",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "vampire_trophy",
+      "name": "Vampire Trophy",
+      "creature": "Vampires",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Undeads",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Intelligence",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "venomfang_drake_trophy",
+      "name": "Venomfang Drake Trophy",
+      "creature": "Venomfangs",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Reptiles",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Health Regeneration",
+          "value": "4%"
+        }
+      ]
+    },
+    {
+      "id": "warhog_trophy",
+      "name": "Warhog Trophy",
+      "creature": "Warhogs",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humanoids",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Might",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "winterborn_trophy",
+      "name": "Winterborn Trophy",
+      "creature": "Winterborn",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Humans",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Wisdom",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "yeti_trophy",
+      "name": "Yeti Trophy",
+      "creature": "Yetis",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Giants",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Vitality",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "zorian_trophy",
+      "name": "Zorian Trophy",
+      "creature": "Zorians",
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "category": "Aquatics",
+      "type": "Creature Trophies",
+      "bonuses": [
+        {
+          "stat": "Wisdom",
+          "value": "2%"
+        }
+      ]
+    },
+    {
+      "id": "shallow_sea_trophy",
+      "name": "Shallow Sea Trophy",
+      "bonuses": [
+        {
+          "stat": "Drop Rate (Ocean)",
+          "value": "+20% multiplicative"
+        }
+      ],
+      "creature": "Ocean",
+      "category": "Giant Jellyfish, Anglerfish, Sharks, Piranha Swarms",
+      "tiers": ["Base"],
+      "type": "Ocean Trophies"
+    },
+    {
+      "id": "deep_sea_trophy",
+      "name": "Deep Sea Trophy",
+      "bonuses": [
+        {
+          "stat": "Fishing Damage",
+          "value": "+10%"
+        }
+      ],
+      "creature": "Ocean",
+      "category": "Narwhals, Vampire Squids",
+      "tiers": ["Base"],
+      "type": "Ocean Trophies"
+    },
+    {
+      "id": "predator_trophy",
+      "name": "Predator Trophy",
+      "bonuses": [
+        {
+          "stat": "Ship Cannon Damage",
+          "value": "+10%"
+        }
+      ],
+      "creature": "Ocean",
+      "category": "Great White Sharks",
+      "tiers": ["Base"],
+      "type": "Ocean Trophies"
+    },
+    {
+      "id": "apex_predator_trophy",
+      "name": "Apex Predator Trophy",
+      "bonuses": [
+        {
+          "stat": "Spell Power",
+          "value": "+2%"
+        },
+        {
+          "stat": "Weapon Power",
+          "value": "+2%"
+        }
+      ],
+      "creature": "Ocean",
+      "category": "Orcas",
+      "tiers": ["Base"],
+      "type": "Ocean Trophies"
+    },
+    {
+      "id": "moa_carnival_trophy",
+      "name": "Moa Carnival Trophy",
+      "bonuses": [
+        {
+          "stat": "Gathering EXP",
+          "value": "6%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Carnival Trophies"
+    },
+    {
+      "id": "munk_carnival_trophy",
+      "name": "Munk Carnival Trophy",
+      "bonuses": [
+        {
+          "stat": "Crafting EXP",
+          "value": "6%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Carnival Trophies"
+    },
+    {
+      "id": "monument_to_wisdom",
+      "name": "Monument to Wisdom",
+      "bonuses": [
+        {
+          "stat": "Wisdom",
+          "value": "+3%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_intelligence",
+      "name": "Monument to Intelligence",
+      "bonuses": [
+        {
+          "stat": "Intelligence",
+          "value": "+3%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_greed",
+      "name": "Monument to Greed",
+      "bonuses": [
+        {
+          "stat": "Max Mana",
+          "value": "+6%"
+        },
+        {
+          "stat": "Mana Regeneration",
+          "value": "+4%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_dexterity",
+      "name": "Monument to Dexterity",
+      "bonuses": [
+        {
+          "stat": "Dexterity",
+          "value": "+3%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_grudges",
+      "name": "Monument to Grudges",
+      "bonuses": [
+        {
+          "stat": "Healing Power",
+          "value": "+4%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_might",
+      "name": "Monument to Might",
+      "bonuses": [
+        {
+          "stat": "Might",
+          "value": "+3%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_vitality",
+      "name": "Monument to Vitality",
+      "bonuses": [
+        {
+          "stat": "Vitality",
+          "value": "+3%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_envy",
+      "name": "Monument to Envy",
+      "bonuses": [
+        {
+          "stat": "Haste",
+          "value": "+4%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_tyranny",
+      "name": "Monument to Tyranny",
+      "bonuses": [
+        {
+          "stat": "Precision",
+          "value": "+3%"
+        },
+        {
+          "stat": "Impact",
+          "value": "+1%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_subjugation",
+      "name": "Monument to Subjugation",
+      "bonuses": [
+        {
+          "stat": "Spell Defense",
+          "value": "+4%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_supremacy",
+      "name": "Monument to Supremacy",
+      "bonuses": [
+        {
+          "stat": "Impact",
+          "value": "+3%"
+        },
+        {
+          "stat": "Precision",
+          "value": "+1%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_bloodlust",
+      "name": "Monument to Bloodlust",
+      "bonuses": [
+        {
+          "stat": "Max Health",
+          "value": "+4%"
+        },
+        {
+          "stat": "Health Regeneration",
+          "value": "+4%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_brutality",
+      "name": "Monument to Brutality",
+      "bonuses": [
+        {
+          "stat": "Weapon Power",
+          "value": "+4%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_desolation",
+      "name": "Monument to Desolation",
+      "bonuses": [
+        {
+          "stat": "Spell Power",
+          "value": "+4%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    },
+    {
+      "id": "monument_to_obsession",
+      "name": "Monument to Obsession",
+      "bonuses": [
+        {
+          "stat": "Weapon Defense",
+          "value": "+4%"
+        }
+      ],
+      "tiers": ["Base", "Golden", "Enchanted"],
+      "type": "Monuments"
+    }
+  ],
+  "count": 67
+}

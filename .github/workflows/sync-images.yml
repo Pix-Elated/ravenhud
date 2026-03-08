@@ -1,0 +1,184 @@
+name: Sync Images
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # 3 AM UTC daily
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Max images per adapter (0 = unlimited)'
+        required: false
+        default: '100'
+      adapters:
+        description: 'Comma-separated adapters to run (empty = all)'
+        required: false
+        default: ''
+      fix_existing:
+        description: 'Re-convert existing files that are not real WebP'
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: sync-images
+  cancel-in-progress: true
+
+jobs:
+  sync-images:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Install Playwright Chromium
+        run: npx playwright install chromium --with-deps
+
+      - name: Extract existing image archives
+        run: |
+          # Bulk image dirs are gitignored — extract committed archives so
+          # sync-images sees existing images and only downloads new ones.
+          for zip in assets/images-*.zip; do
+            [ ! -f "$zip" ] && continue
+            dir=$(basename "$zip" .zip | sed 's/^images-//' | sed 's/-part[0-9]*$//')
+            dest="assets/images/$dir"
+            mkdir -p "$dest"
+            unzip -qo "$zip" -d "$dest"
+            echo "Extracted $zip -> $dest/"
+          done
+
+      - name: Scrape blockchain metadata
+        run: |
+          SCRAPE_ARGS=""
+          if [ -n "${{ inputs.adapters }}" ]; then
+            SCRAPE_ARGS="--only=${{ inputs.adapters }}"
+          fi
+          echo "Running: node scripts/scrape-blockchain.js $SCRAPE_ARGS"
+          node scripts/scrape-blockchain.js $SCRAPE_ARGS
+
+      - name: Sync images
+        run: |
+          ARGS=""
+          LIMIT="${{ inputs.limit || '100' }}"
+          if [ "$LIMIT" != "0" ]; then
+            ARGS="$ARGS --limit=$LIMIT"
+          fi
+          if [ -n "${{ inputs.adapters }}" ]; then
+            ARGS="$ARGS --only=${{ inputs.adapters }}"
+          fi
+          if [ "${{ inputs.fix_existing }}" = "true" ]; then
+            ARGS="$ARGS --fix-existing"
+          fi
+          echo "Running: node scripts/sync-images/index.js $ARGS"
+          node scripts/sync-images/index.js $ARGS
+
+      - name: Rebuild image archives
+        run: |
+          # Rebuild image archives only — data.zip is managed by
+          # marker-submissions.yml and must not be overwritten.
+          node scripts/create-archives.js --images-only
+
+      - name: Check for changes
+        id: changes
+        run: |
+          # Count new images downloaded
+          NEW_IMAGES=0
+          if [ -f sync-images-result.json ]; then
+            NEW_IMAGES=$(node -e "console.log(require('./sync-images-result.json').downloaded)")
+          fi
+          echo "new_images=$NEW_IMAGES" >> $GITHUB_OUTPUT
+
+          # Check if archives or blockchain data changed
+          CHANGED=$(git status --porcelain assets/images-*.zip assets/assets-manifest.json data/blockchain/ \
+            | grep -v 'data/blockchain/manifest.json' \
+            | wc -l)
+          echo "count=$CHANGED" >> $GITHUB_OUTPUT
+
+          if [ "$NEW_IMAGES" -gt "0" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "$NEW_IMAGES new images downloaded, $CHANGED files changed"
+          elif [ "$CHANGED" -gt "0" ]; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "Metadata-only update ($CHANGED files changed, 0 new images) — skipping PR"
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No meaningful changes"
+          fi
+          git status --short assets/ data/blockchain/ | grep -v 'manifest.json' | head -20
+
+      - name: Create or update asset sync PR
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          NEW_IMAGES=${{ steps.changes.outputs.new_images }}
+
+          # Check for an existing open asset sync PR
+          EXISTING_PR=$(gh pr list --state open \
+            --json number,headRefName \
+            --jq '[.[] | select(.headRefName | startswith("chore/sync-images-"))][0]' \
+            2>/dev/null || echo "")
+
+          if [ -n "$EXISTING_PR" ] && [ "$EXISTING_PR" != "null" ]; then
+            # Update the existing PR branch
+            BRANCH=$(echo "$EXISTING_PR" | jq -r '.headRefName')
+            PR_NUM=$(echo "$EXISTING_PR" | jq -r '.number')
+            echo "Updating existing PR #$PR_NUM on branch $BRANCH"
+
+            git fetch origin "$BRANCH"
+            git checkout "$BRANCH"
+            git merge master --no-edit || true
+            git add -f assets/images-*.zip assets/assets-manifest.json
+            git add data/blockchain/
+            git commit -m "chore(assets): sync $NEW_IMAGES new assets $(date +%Y-%m-%d)" || {
+              echo "No new changes to commit"
+              exit 0
+            }
+            git push origin "$BRANCH"
+
+            # Update PR title with cumulative count
+            TOTAL=$(git log origin/master.."$BRANCH" --oneline \
+              | grep -oP 'sync \K[0-9]+' | paste -sd+ | bc)
+            gh pr edit "$PR_NUM" \
+              --title "chore(assets): sync $TOTAL new assets" \
+              --add-label "automated"
+            echo "Updated PR #$PR_NUM (total: $TOTAL new assets)"
+          else
+            # No existing PR — create a new one
+            BRANCH="chore/sync-images-$(date +%Y%m%d)"
+            TITLE="chore(assets): sync $NEW_IMAGES new assets"
+
+            git checkout -b "$BRANCH"
+            git add -f assets/images-*.zip assets/assets-manifest.json
+            git add data/blockchain/
+            git commit -m "$TITLE $(date +%Y-%m-%d)"
+            git push origin "$BRANCH"
+            gh pr create --base master --head "$BRANCH" \
+              --title "$TITLE" \
+              --body "$(cat <<PREOF
+## Summary
+- **New images:** $NEW_IMAGES
+- Automated nightly sync
+
+## Sources
+- RavenCards: Ravendawn CDN
+- Cosmetics: Immutable zkEVM blockchain metadata
+- Munks/Moas/Land: RavenQuest base_uri + Immutable zkEVM
+- Items/Materials/Trophies: Ravendawn game API
+
+Merge to publish — app downloads updated archives automatically.
+PREOF
+              )"
+            echo "Created new PR on branch $BRANCH"
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}

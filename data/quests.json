@@ -1,0 +1,755 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-07",
+    "source": "Local data",
+    "itemCount": 93,
+    "description": "Quest data for RavenQuest Companion"
+  },
+  "quests": [
+    {
+      "id": "dreams-and-reflections",
+      "name": "Dreams and Reflections",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 1,
+      "guide": "Botreks",
+      "experience": 0
+    },
+    {
+      "id": "a-new-reality",
+      "name": "A new Reality",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 1,
+      "guide": "Botreks",
+      "experience": 0
+    },
+    {
+      "id": "a-warm-welcome",
+      "name": "A Warm Welcome",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 1,
+      "guide": "Botreks",
+      "experience": 0
+    },
+    {
+      "id": "pest-control",
+      "name": "Pest Control",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 5,
+      "guide": "Botreks",
+      "experience": 1600
+    },
+    {
+      "id": "unpaid-dues",
+      "name": "Unpaid Dues",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 5,
+      "guide": "Botreks",
+      "experience": 1600
+    },
+    {
+      "id": "game-meat",
+      "name": "Game Meat",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 5,
+      "guide": "Botreks",
+      "experience": 1600
+    },
+    {
+      "id": "the-city-of-ravencrest",
+      "name": "The City of Ravencrest",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 6,
+      "guide": "Botreks",
+      "experience": 1600
+    },
+    {
+      "id": "mixed-bloodlines",
+      "name": "Mixed Bloodlines",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 6,
+      "guide": "Botreks",
+      "experience": 3300
+    },
+    {
+      "id": "running-out-of-stock",
+      "name": "Running Out Of Stock",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 7,
+      "guide": "Botreks",
+      "experience": 3300
+    },
+    {
+      "id": "crafting-for-a-reward",
+      "name": "Crafting for a Reward",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 7,
+      "guide": "Botreks",
+      "experience": 1700
+    },
+    {
+      "id": "bandit-breakdown",
+      "name": "Bandit Breakdown",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 7,
+      "guide": "Botreks",
+      "experience": 5000
+    },
+    {
+      "id": "cult-of-the-arrow",
+      "name": "Cult of the Arrow",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 8,
+      "guide": "Botreks",
+      "experience": 8000
+    },
+    {
+      "id": "mortal-enemies",
+      "name": "Mortal Enemies",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 9,
+      "guide": "Botreks",
+      "experience": 8000
+    },
+    {
+      "id": "the-perils-of-rohna-woods",
+      "name": "The Perils of Rohna Woods",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 10,
+      "guide": "Botreks",
+      "experience": 8000
+    },
+    {
+      "id": "the-lighthouse-keeper",
+      "name": "The Lighthouse Keeper",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 11,
+      "guide": "Botreks",
+      "experience": 1700
+    },
+    {
+      "id": "raiding-the-raiders",
+      "name": "Raiding the Raiders",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 12,
+      "guide": "Botreks",
+      "experience": 11000
+    },
+    {
+      "id": "a-merchant-and-his-bellyache",
+      "name": "A Merchant and His Bellyache",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 12,
+      "guide": "Botreks",
+      "experience": 6600
+    },
+    {
+      "id": "missing-in-action",
+      "name": "Missing in Action",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 13,
+      "guide": "Botreks",
+      "experience": 8000
+    },
+    {
+      "id": "the-best-antidote",
+      "name": "The Best Antidote",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 15,
+      "guide": "Botreks",
+      "experience": 5300
+    },
+    {
+      "id": "swamp-fever",
+      "name": "Swamp Fever",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 16,
+      "guide": "Botreks",
+      "experience": 8000
+    },
+    {
+      "id": "keepers-of-balance",
+      "name": "Keepers of Balance",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 15,
+      "guide": "Botreks",
+      "experience": 8000
+    },
+    {
+      "id": "the-rites-of-skorn",
+      "name": "The Rites of Skorn",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 14,
+      "guide": "Botreks",
+      "experience": 17000
+    },
+    {
+      "id": "the-tree-of-life",
+      "name": "The Tree of Life",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 17,
+      "guide": "Botreks",
+      "experience": 11000
+    },
+    {
+      "id": "the-mountain-king",
+      "name": "The Mountain King",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 17,
+      "guide": "Botreks",
+      "experience": 11000
+    },
+    {
+      "id": "the-reliant-shipwright",
+      "name": "The Reliant Shipwright",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 18,
+      "guide": "Botreks",
+      "experience": 6600
+    },
+    {
+      "id": "a-pirates-life",
+      "name": "A Pirate's Life",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 19,
+      "guide": "Botreks",
+      "experience": 8000
+    },
+    {
+      "id": "a-most-wondrous-cloak",
+      "name": "A Most Wondrous Cloak",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 20,
+      "guide": "Botreks",
+      "experience": 11000
+    },
+    {
+      "id": "a-goblin-obsession",
+      "name": "A Goblin Obsession",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 21,
+      "guide": "Botreks",
+      "experience": 25000
+    },
+    {
+      "id": "squatters-rights",
+      "name": "Squatter's Rights",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 22,
+      "guide": "Botreks",
+      "experience": 9200
+    },
+    {
+      "id": "the-disappearance-of-lord-shopan",
+      "name": "The Disappearance of Lord Shopan",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 23,
+      "guide": "Botreks",
+      "experience": 9600
+    },
+    {
+      "id": "chaotically-brilliant",
+      "name": "Chaotically Brilliant",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 23,
+      "guide": "Botreks",
+      "experience": 17000
+    },
+    {
+      "id": "the-ipsy-dipsy-spider",
+      "name": "The Ipsy Dipsy Spider",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 24,
+      "guide": "Botreks",
+      "experience": 9100
+    },
+    {
+      "id": "pirate-plunder-purge",
+      "name": "Pirate Plunder Purge",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 25,
+      "guide": "Botreks",
+      "experience": 14000
+    },
+    {
+      "id": "into-troubled-waters",
+      "name": "Into Troubled Waters",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 25,
+      "guide": "Botreks",
+      "experience": 4300
+    },
+    {
+      "id": "harans-contract",
+      "name": "Haran's Contract",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 25,
+      "guide": "Botreks",
+      "experience": 13000
+    },
+    {
+      "id": "high-class-hostages",
+      "name": "High Class Hostages",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 25,
+      "guide": "Botreks",
+      "experience": 19000
+    },
+    {
+      "id": "treacherous-night",
+      "name": "Treacherous Night",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 25,
+      "guide": "Botreks",
+      "experience": 14000
+    },
+    {
+      "id": "restoring-the-natural-balance",
+      "name": "Restoring the Natural Balance",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 26,
+      "guide": "Botreks",
+      "experience": 30000
+    },
+    {
+      "id": "the-cursed-crew",
+      "name": "The Cursed Crew",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 27,
+      "guide": "Botreks",
+      "experience": 9200
+    },
+    {
+      "id": "sugarcane-infestation",
+      "name": "Sugarcane Infestation",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 28,
+      "guide": "Botreks",
+      "experience": 7300
+    },
+    {
+      "id": "hunting-zedeno",
+      "name": "Hunting Zedeno",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 29,
+      "guide": "Botreks",
+      "experience": 12000
+    },
+    {
+      "id": "a-revenge-for-old-debts",
+      "name": "A Revenge For Old Debts",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 29,
+      "guide": "Botreks",
+      "experience": 34000
+    },
+    {
+      "id": "the-lighthouse-mystery",
+      "name": "The Lighthouse Mystery",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 30,
+      "guide": "Botreks",
+      "experience": 13000
+    },
+    {
+      "id": "reviving-the-glory-days",
+      "name": "Reviving The Glory Days",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 31,
+      "guide": "Botreks",
+      "experience": 22000
+    },
+    {
+      "id": "everlasting-freedom",
+      "name": "Everlasting Freedom",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 32,
+      "guide": "Botreks",
+      "experience": 12000
+    },
+    {
+      "id": "clean-waters",
+      "name": "Clean Waters",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 32,
+      "guide": "Botreks",
+      "experience": 8600
+    },
+    {
+      "id": "merchants-misfortune",
+      "name": "Merchant's Misfortune",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 33,
+      "guide": "Botreks",
+      "experience": 26000
+    },
+    {
+      "id": "the-long-road-home",
+      "name": "The Long Road Home",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 34,
+      "guide": "Botreks",
+      "experience": 9300
+    },
+    {
+      "id": "under-the-sands-of-time",
+      "name": "Under The Sands Of Time",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 35,
+      "guide": "Botreks",
+      "experience": 9300
+    },
+    {
+      "id": "ghaz-at-the-gates",
+      "name": "Ghaz At The Gates",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 36,
+      "guide": "Botreks",
+      "experience": 21000
+    },
+    {
+      "id": "trials-of-the-dunes",
+      "name": "Trials of the Dunes",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 36,
+      "guide": "Botreks",
+      "experience": 32000
+    },
+    {
+      "id": "tuskan-trashers",
+      "name": "Tuskan Trashers",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 37,
+      "guide": "Botreks",
+      "experience": 3000
+    },
+    {
+      "id": "the-scent-of-love",
+      "name": "The Scent of Love",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 38,
+      "guide": "Botreks",
+      "experience": 11000
+    },
+    {
+      "id": "bloodsport",
+      "name": "Bloodsport",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 38,
+      "guide": "Botreks",
+      "experience": 11000
+    },
+    {
+      "id": "feeding-the-troll",
+      "name": "Feeding the Troll",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 39,
+      "guide": "Botreks",
+      "experience": 23000
+    },
+    {
+      "id": "a-recipe-for-dissolution",
+      "name": "A Recipe for Dissolution",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 39,
+      "guide": "Botreks",
+      "experience": 49000
+    },
+    {
+      "id": "the-genies-game",
+      "name": "The Genie's Game",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 40,
+      "guide": "Botreks",
+      "experience": 51000
+    },
+    {
+      "id": "legend-of-the-dragonforge",
+      "name": "Legend Of The Dragonforge",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 41,
+      "guide": "Botreks",
+      "experience": 79000
+    },
+    {
+      "id": "into-the-rising-sun",
+      "name": "Into The Rising Sun",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 42,
+      "guide": "Botreks",
+      "experience": 53000
+    },
+    {
+      "id": "realm-of-the-red-council",
+      "name": "Realm of the Red Council",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 43,
+      "guide": "Botreks",
+      "experience": 27000
+    },
+    {
+      "id": "the-relics-of-whistler-lapland",
+      "name": "The Relics of Whistler Lapland",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 44,
+      "guide": "Botreks",
+      "experience": 14000
+    },
+    {
+      "id": "whistlers-relics-the-stake",
+      "name": "Whistler's Relics: The Stake",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 45,
+      "guide": "Botreks",
+      "experience": 21000
+    },
+    {
+      "id": "no-common-adventure",
+      "name": "No Common Adventure",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 45,
+      "guide": "Botreks",
+      "experience": 4600
+    },
+    {
+      "id": "whistlers-relics-the-ring",
+      "name": "Whistler's Relics: The Ring",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 46,
+      "guide": "Botreks",
+      "experience": 62000
+    },
+    {
+      "id": "banana-pirates",
+      "name": "Banana Pirates",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 46,
+      "guide": "Botreks",
+      "experience": 15000
+    },
+    {
+      "id": "hide-and-teeth",
+      "name": "Hide and Teeth",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 46,
+      "guide": "Botreks",
+      "experience": 15000
+    },
+    {
+      "id": "the-slayers-guild",
+      "name": "The Slayer's Guild",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 47,
+      "guide": "Botreks",
+      "experience": 30000
+    },
+    {
+      "id": "a-trappers-last-days",
+      "name": "A Trapper's Last Days",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 47,
+      "guide": "Botreks",
+      "experience": 23000
+    },
+    {
+      "id": "the-things-we-do-for-love",
+      "name": "The Things We Do For Love",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 47,
+      "guide": "Botreks",
+      "experience": 48000
+    },
+    {
+      "id": "welcome-to-the-bog",
+      "name": "Welcome to the Bog",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 48,
+      "guide": "Botreks",
+      "experience": 64000
+    },
+    {
+      "id": "treasures-from-the-past",
+      "name": "Treasures From The Past",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 48,
+      "guide": "Botreks",
+      "experience": 32000
+    },
+    {
+      "id": "the-guildmaster",
+      "name": "The Guildmaster",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 48,
+      "guide": "Botreks",
+      "experience": 23000
+    },
+    {
+      "id": "conditions-and-results",
+      "name": "Conditions And Results",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 49,
+      "guide": "Botreks",
+      "experience": 40000
+    },
+    {
+      "id": "creating-value",
+      "name": "Creating Value",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 49,
+      "guide": "Botreks",
+      "experience": 51000
+    },
+    {
+      "id": "working-conditions",
+      "name": "Working Conditions",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 50,
+      "guide": "Botreks",
+      "experience": 25000
+    },
+    {
+      "id": "yeti-more-to-kill",
+      "name": "Yeti More to Kill",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 50,
+      "guide": "Botreks",
+      "experience": 49000
+    },
+    {
+      "id": "lords-of-blood-part-i",
+      "name": "Lords of Blood: Part I",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 51,
+      "guide": "Botreks",
+      "experience": 34000
+    },
+    {
+      "id": "a-cold-burial",
+      "name": "A Cold Burial",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 52,
+      "guide": "Botreks",
+      "experience": 56000
+    },
+    {
+      "id": "lords-of-blood-part-ii",
+      "name": "Lords of Blood: Part II",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 52,
+      "guide": "Botreks",
+      "experience": 73000
+    },
+    {
+      "id": "raiders-of-the-wicked-seals",
+      "name": "Raiders of the Wicked Seals",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 54,
+      "guide": "Botreks",
+      "experience": 116000
+    },
+    {
+      "id": "shadows-and-dead-trees",
+      "name": "Shadows and Dead Trees",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 54,
+      "guide": "Botreks",
+      "experience": 28000
+    },
+    {
+      "id": "lords-of-blood-part-iii",
+      "name": "Lords of Blood: Part III",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 55,
+      "guide": "Botreks",
+      "experience": 100000
+    },
+    {
+      "id": "maymuns-contract",
+      "name": "Maymun's Contract",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 55,
+      "guide": "Botreks",
+      "experience": 35000
+    },
+    {
+      "id": "green-sabbath",
+      "name": "Green Sabbath",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 58,
+      "guide": "Botreks",
+      "experience": 128000
+    },
+    {
+      "id": "the-lost-expedition",
+      "name": "The Lost Expedition",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 65,
+      "guide": "Botreks",
+      "experience": 65000
+    },
+    {
+      "id": "missing-cargo",
+      "name": "Missing Cargo",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 68,
+      "guide": "Botreks",
+      "experience": 53000
+    },
+    {
+      "id": "under-the-halls-shadows",
+      "name": "Under the Halls' Shadows",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 71,
+      "guide": "Botreks",
+      "experience": 87000
+    },
+    {
+      "id": "a-feast-for-crows",
+      "name": "A Feast for Crows",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 73,
+      "guide": "Botreks",
+      "experience": 180000
+    },
+    {
+      "id": "riftsand-rivalry",
+      "name": "Riftsand Rivalry",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 73,
+      "guide": "Botreks",
+      "experience": 18000
+    },
+    {
+      "id": "rotten-roots-hollow-hearts",
+      "name": "Rotten Roots, Hollow Hearts",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 73,
+      "guide": "Botreks",
+      "experience": 116000
+    },
+    {
+      "id": "sands-of-conquest",
+      "name": "Sands of Conquest",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 73,
+      "guide": "Botreks",
+      "experience": 0
+    },
+    {
+      "id": "veil-of-scars",
+      "name": "Veil of Scars",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 73,
+      "guide": "Botreks",
+      "experience": 180000
+    },
+    {
+      "id": "a-tomb-of-stone-and-ice",
+      "name": "A Tomb of Stone and Ice",
+      "imageUrl": "assets/images/cooking.png",
+      "level": 75,
+      "guide": "Botreks",
+      "experience": 187000
+    }
+  ]
+}

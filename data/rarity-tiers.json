@@ -1,0 +1,9 @@
+{
+  "COMMON": { "name": "Common", "color": "#9CA3AF", "order": 0 },
+  "UNCOMMON": { "name": "Uncommon", "color": "#22C55E", "order": 1 },
+  "GRAND": { "name": "Grand", "color": "#3B82F6", "order": 2 },
+  "RARE": { "name": "Rare", "color": "#A855F7", "order": 3 },
+  "ARCANE": { "name": "Arcane", "color": "#EC4899", "order": 4 },
+  "MYTHIC": { "name": "Mythic", "color": "#F97316", "order": 5 },
+  "LEGENDARY": { "name": "Legendary", "color": "#EAB308", "order": 6 }
+}

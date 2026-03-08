@@ -4,140 +4,192 @@
     {
       "type": "character",
       "name": "Lightblue",
-      "discordId": "219992138757308416",
       "reason": "Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Knighter",
-      "discordId": "179684645225496577",
+      "reason": "Community abuse, Tone policing",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "179684645225496577",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Neos",
-      "discordId": "797950042903543849",
+      "reason": "Community abuse, Tone policing",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "797950042903543849",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Fluffydraakoz",
-      "discordId": "540195054329790475",
+      "reason": "Community abuse, Tone policing",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "540195054329790475",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Mari",
-      "discordId": "239153512762572800",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Silver",
-      "discordId": "800703594118250546",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "WillzeraGW",
-      "discordId": "964268911531003985",
+      "reason": "Community abuse, Tone policing",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "964268911531003985",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "LuizIbrahim",
-      "discordId": "359076187525480469",
+      "reason": "Community abuse, Tone policing",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "359076187525480469",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "BunnyMeow",
-      "discordId": "625322175049498624",
-      "reason": "Community abuse",
+      "reason": "Community abuse, Staff abuse",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "625322175049498624",
+      "reason": "Community abuse, Staff abuse",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Libosi",
-      "discordId": "280387842629435392",
+      "reason": "Community abuse, Tone policing",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "280387842629435392",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Vivs",
-      "discordId": "577206313084518421",
+      "reason": "Community abuse, Tone policing",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "577206313084518421",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Darma",
-      "discordId": "",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Vic",
-      "discordId": "",
       "reason": "Community abuse, Tone policing",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Volca",
-      "discordId": "328394041920192512",
+      "reason": "Unhinged behavior, Community abuse",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "328394041920192512",
       "reason": "Unhinged behavior, Community abuse",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Angeloshaggy",
-      "discordId": "",
       "reason": "Unhinged behavior, Community abuse",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "KingTom",
-      "discordId": "",
       "reason": "Unhinged behavior, Community abuse",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Yoen",
-      "discordId": "",
       "reason": "Unhinged behavior, Community abuse",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Maestro",
-      "discordId": "403043905064402944",
+      "reason": "Unhinged behavior, Community abuse",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "403043905064402944",
       "reason": "Unhinged behavior, Community abuse",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "Luis",
-      "discordId": "1135633664391266514",
+      "reason": "Unhinged behavior, Community abuse",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "1135633664391266514",
       "reason": "Unhinged behavior, Community abuse",
       "added": "2026-02-07"
     },
     {
       "type": "character",
       "name": "SimpleScientist",
-      "discordId": "459883990149496862",
+      "reason": "Unhinged behavior, Financial abuse of community",
+      "added": "2026-02-07"
+    },
+    {
+      "type": "discord",
+      "name": "459883990149496862",
       "reason": "Unhinged behavior, Financial abuse of community",
       "added": "2026-02-07"
     }

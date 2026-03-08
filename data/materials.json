@@ -1,0 +1,7065 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-02",
+    "itemCount": 1094,
+    "description": "Crafting materials and recipes for RavenQuest Companion"
+  },
+  "category": "materials",
+  "items": [
+    {
+      "id": "lesser_arcane_energy_tonic",
+      "name": "Lesser Arcane Energy Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 6,
+          "item": "Refreshing Leaf"
+        },
+        {
+          "quantity": 4,
+          "item": "Earthy Stem"
+        },
+        {
+          "quantity": 1,
+          "item": "Purified Alcohol"
+        }
+      ],
+      "exp": 187,
+      "progress": 50,
+      "quality": 100,
+      "durability": 4,
+      "level": 4,
+      "tax": 45
+    },
+    {
+      "id": "lesser_strengthening_tonic",
+      "name": "Lesser Strengthening Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Refreshing Leaf"
+        },
+        {
+          "quantity": 8,
+          "item": "Thin Roots"
+        },
+        {
+          "quantity": 1,
+          "item": "Purified Oil"
+        }
+      ],
+      "exp": 275,
+      "progress": 50,
+      "quality": 100,
+      "durability": 4,
+      "level": 5,
+      "tax": 66
+    },
+    {
+      "id": "lesser_enlightenment_tonic",
+      "name": "Lesser Enlightenment Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 6,
+          "item": "Cerulean Cap"
+        },
+        {
+          "quantity": 6,
+          "item": "Refreshing Leaf"
+        },
+        {
+          "quantity": 1,
+          "item": "Purified Alcohol"
+        }
+      ],
+      "exp": 243,
+      "progress": 50,
+      "quality": 100,
+      "durability": 5,
+      "level": 6,
+      "tax": 59
+    },
+    {
+      "id": "lesser_rejuvenation_tonic",
+      "name": "Lesser Rejuvenation Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Toadchew"
+        },
+        {
+          "quantity": 12,
+          "item": "Fungal Dust"
+        },
+        {
+          "quantity": 1,
+          "item": "Purified Oil"
+        }
+      ],
+      "exp": 375,
+      "progress": 75,
+      "quality": 125,
+      "durability": 5,
+      "level": 7,
+      "tax": 90
+    },
+    {
+      "id": "lesser_wellspring_tonic",
+      "name": "Lesser Wellspring Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Cerulean Cap"
+        },
+        {
+          "quantity": 6,
+          "item": "Fungal Dust"
+        },
+        {
+          "quantity": 1,
+          "item": "Purified Alcohol"
+        }
+      ],
+      "exp": 281,
+      "progress": 95,
+      "quality": 145,
+      "durability": 5,
+      "level": 8,
+      "tax": 68
+    },
+    {
+      "id": "lesser_mountainheart_tonic",
+      "name": "Lesser Mountainheart Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Pirate's Bliss"
+        },
+        {
+          "quantity": 6,
+          "item": "Refreshing Leaf"
+        },
+        {
+          "quantity": 1,
+          "item": "Purified Oil"
+        }
+      ],
+      "exp": 437,
+      "progress": 95,
+      "quality": 145,
+      "durability": 5,
+      "level": 9,
+      "tax": 105
+    },
+    {
+      "id": "lesser_arcana_tonic",
+      "name": "Lesser Arcana Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Juicy Stem"
+        },
+        {
+          "quantity": 6,
+          "item": "Emerald Spores"
+        },
+        {
+          "quantity": 1,
+          "item": "Purified Alcohol"
+        }
+      ],
+      "exp": 362,
+      "progress": 125,
+      "quality": 175,
+      "durability": 5,
+      "level": 11,
+      "tax": 87
+    },
+    {
+      "id": "lesser_champions_tonic",
+      "name": "Lesser Champion's Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Brightday"
+        },
+        {
+          "quantity": 10,
+          "item": "Shimmering Spores"
+        },
+        {
+          "quantity": 1,
+          "item": "Purified Oil"
+        }
+      ],
+      "exp": 506,
+      "progress": 125,
+      "quality": 175,
+      "durability": 5,
+      "level": 14,
+      "tax": 122
+    },
+    {
+      "id": "arcane_energy_tonic",
+      "name": "Arcane Energy Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Lesser Arcane Energy Tonic"
+        },
+        {
+          "quantity": 14,
+          "item": "Emerald Spores"
+        },
+        {
+          "quantity": 14,
+          "item": "Earthy Stem"
+        },
+        {
+          "quantity": 1,
+          "item": "Acid"
+        }
+      ],
+      "exp": 625,
+      "progress": 150,
+      "quality": 200,
+      "durability": 5,
+      "level": 16,
+      "tax": 150
+    },
+    {
+      "id": "strengthening_tonic",
+      "name": "Strengthening Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Lesser Strengthening Tonic"
+        },
+        {
+          "quantity": 14,
+          "item": "Shimmering Spores"
+        },
+        {
+          "quantity": 12,
+          "item": "Earthy Stem"
+        },
+        {
+          "quantity": 1,
+          "item": "Alkali"
+        }
+      ],
+      "exp": 625,
+      "progress": 175,
+      "quality": 225,
+      "durability": 6,
+      "level": 17,
+      "tax": 150
+    },
+    {
+      "id": "enlightenment_tonic",
+      "name": "Enlightenment Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Lesser Enlightenment Tonic"
+        },
+        {
+          "quantity": 8,
+          "item": "Bloody Bud"
+        },
+        {
+          "quantity": 8,
+          "item": "Thorny Roots"
+        },
+        {
+          "quantity": 1,
+          "item": "Alkali"
+        }
+      ],
+      "exp": 700,
+      "progress": 175,
+      "quality": 225,
+      "durability": 6,
+      "level": 19,
+      "tax": 168
+    },
+    {
+      "id": "level_21_rejuvenation_tonic",
+      "name": "Level 21 Rejuvenation Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Lesser Rejuvenation Tonic"
+        },
+        {
+          "quantity": 16,
+          "item": "Juicy Roots"
+        },
+        {
+          "quantity": 12,
+          "item": "Green Cap"
+        },
+        {
+          "quantity": 1,
+          "item": "Alkali"
+        }
+      ],
+      "exp": 825,
+      "progress": 200,
+      "quality": 250,
+      "durability": 6,
+      "level": 21,
+      "tax": 198
+    },
+    {
+      "id": "level_22_wellspring_tonic",
+      "name": "Level 22 Wellspring Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Lesser Wellspring Tonic"
+        },
+        {
+          "quantity": 14,
+          "item": "Pirate's Cap"
+        },
+        {
+          "quantity": 8,
+          "item": "Thin Roots"
+        },
+        {
+          "quantity": 1,
+          "item": "Acid"
+        }
+      ],
+      "exp": 843,
+      "progress": 225,
+      "quality": 275,
+      "durability": 6,
+      "level": 22,
+      "tax": 203
+    },
+    {
+      "id": "level_24_mountainheart_tonic",
+      "name": "Level 24 Mountainheart Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Lesser Mountainheart Tonic"
+        },
+        {
+          "quantity": 16,
+          "item": "Juicy Roots"
+        },
+        {
+          "quantity": 14,
+          "item": "Emerald Spores"
+        },
+        {
+          "quantity": 1,
+          "item": "Alkali"
+        }
+      ],
+      "exp": 887,
+      "progress": 225,
+      "quality": 275,
+      "durability": 6,
+      "level": 24,
+      "tax": 213
+    },
+    {
+      "id": "level_27_arcana_tonic",
+      "name": "Level 27 Arcana Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Lesser Arcana Tonic"
+        },
+        {
+          "quantity": 24,
+          "item": "Brightday"
+        },
+        {
+          "quantity": 30,
+          "item": "Fungal Dust"
+        },
+        {
+          "quantity": 1,
+          "item": "Alkali"
+        }
+      ],
+      "exp": "Exp 1,250xp 3.54 /xp",
+      "progress": 250,
+      "quality": 300,
+      "durability": 7,
+      "level": 27,
+      "tax": 300
+    },
+    {
+      "id": "level_28_champions_tonic",
+      "name": "Level 28 Champion's Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Lesser Champion's Tonic"
+        },
+        {
+          "quantity": 20,
+          "item": "Toadchew"
+        },
+        {
+          "quantity": 26,
+          "item": "Juicy Stem"
+        },
+        {
+          "quantity": 1,
+          "item": "Acid"
+        }
+      ],
+      "exp": "Exp 1,312xp 3.64 /xp",
+      "progress": 250,
+      "quality": 300,
+      "durability": 7,
+      "level": 28,
+      "tax": 315
+    },
+    {
+      "id": "level_35_mana_surge_tonic",
+      "name": "Level 35 Mana Surge Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Wellspring Tonic"
+        },
+        {
+          "quantity": 4,
+          "item": "Bloody Bud"
+        },
+        {
+          "quantity": 12,
+          "item": "Dry Stem"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 1,350xp 2.81 /xp",
+      "progress": 325,
+      "quality": 300,
+      "durability": 7,
+      "level": 35,
+      "tax": 324
+    },
+    {
+      "id": "level_35_nimble_grace_tonic",
+      "name": "Level 35 Nimble Grace Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Champion's Tonic"
+        },
+        {
+          "quantity": 4,
+          "item": "Bloody Bud"
+        },
+        {
+          "quantity": 16,
+          "item": "Pirate's Bliss"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 1,500xp 2.77 /xp",
+      "progress": 400,
+      "quality": 350,
+      "durability": 8,
+      "level": 35,
+      "tax": 360
+    },
+    {
+      "id": "level_37_mighty_impact_tonic",
+      "name": "Level 37 Mighty Impact Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Champion's Tonic"
+        },
+        {
+          "quantity": 12,
+          "item": "Numbing Thorns"
+        },
+        {
+          "quantity": 16,
+          "item": "Juicy Stem"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 1,700xp 3.26 /xp",
+      "progress": 400,
+      "quality": 400,
+      "durability": 8,
+      "level": 37,
+      "tax": 408
+    },
+    {
+      "id": "level_41_precise_harmony_tonic",
+      "name": "Level 41 Precise Harmony Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Wellspring Tonic"
+        },
+        {
+          "quantity": 1,
+          "item": "Rejuvenation Tonic"
+        },
+        {
+          "quantity": 60,
+          "item": "Refreshing Leaf"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 1,700xp 2.28 /xp",
+      "progress": 425,
+      "quality": 500,
+      "durability": 8,
+      "level": 41,
+      "tax": 408
+    },
+    {
+      "id": "level_43_luminous_tonic",
+      "name": "Level 43 Luminous Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Enlightenment Tonic"
+        },
+        {
+          "quantity": 16,
+          "item": "Crystal Cap"
+        },
+        {
+          "quantity": 12,
+          "item": "Earthy Stem"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 1,700xp 2.26 /xp",
+      "progress": 425,
+      "quality": 605,
+      "durability": 8,
+      "level": 43,
+      "tax": 408
+    },
+    {
+      "id": "level_45_iron_will_tonic",
+      "name": "Level 45 Iron Will Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Strengthening Tonic"
+        },
+        {
+          "quantity": 16,
+          "item": "Glowing Spores"
+        },
+        {
+          "quantity": 6,
+          "item": "Chest Warmer"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 1,725xp 3.11 /xp",
+      "progress": 525,
+      "quality": 635,
+      "durability": 9,
+      "level": 45,
+      "tax": 414
+    },
+    {
+      "id": "level_48_profound_insight_tonic",
+      "name": "Level 48 Profound Insight Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Arcana Tonic"
+        },
+        {
+          "quantity": 1,
+          "item": "Rejuvenation Tonic"
+        },
+        {
+          "quantity": 24,
+          "item": "Lizard's Delight"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        },
+        {
+          "quantity": 14,
+          "item": "Chest Warmer"
+        }
+      ],
+      "exp": "Exp 2,537xp 1.97 /xp",
+      "progress": 525,
+      "quality": 720,
+      "durability": 9,
+      "level": 48,
+      "tax": 609
+    },
+    {
+      "id": "level_51_light_of_dawn_tonic",
+      "name": "Level 51 Light of Dawn Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Enlightenment Tonic"
+        },
+        {
+          "quantity": 16,
+          "item": "Glowing Spores"
+        },
+        {
+          "quantity": 10,
+          "item": "Hagthorn"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 2,362xp 1.87 /xp",
+      "progress": 525,
+      "quality": 750,
+      "durability": 9,
+      "level": 51,
+      "tax": 567
+    },
+    {
+      "id": "level_53_accurate_physique_tonic",
+      "name": "Level 53 Accurate Physique Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Strengthening Tonic"
+        },
+        {
+          "quantity": 20,
+          "item": "Cold Roots"
+        },
+        {
+          "quantity": 44,
+          "item": "Cerulean Cap"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 2,462xp 3.08 /xp",
+      "progress": 575,
+      "quality": 775,
+      "durability": 9,
+      "level": 53,
+      "tax": 591
+    },
+    {
+      "id": "level_55_arcane_mastery_tonic",
+      "name": "Level 55 Arcane Mastery Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Arcane Energy Tonic"
+        },
+        {
+          "quantity": 10,
+          "item": "Twisted Flower"
+        },
+        {
+          "quantity": 16,
+          "item": "Hagthorn"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 2,850xp 1.62 /xp",
+      "progress": 575,
+      "quality": 805,
+      "durability": 10,
+      "level": 55,
+      "tax": 684
+    },
+    {
+      "id": "level_57_dark_pact_tonic",
+      "name": "Level 57 Dark Pact Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Light of Dawn Tonic"
+        },
+        {
+          "quantity": 6,
+          "item": "Catalytic Solution"
+        },
+        {
+          "quantity": 20,
+          "item": "Bloody Chalice"
+        },
+        {
+          "quantity": 4,
+          "item": "Acid"
+        }
+      ],
+      "exp": "Exp 2,437xp 1.4 /xp",
+      "progress": 615,
+      "quality": 805,
+      "durability": 10,
+      "level": 57,
+      "tax": 585
+    },
+    {
+      "id": "level_59_chillguard_tonic",
+      "name": "Level 59 Chillguard Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Arcane Energy Tonic"
+        },
+        {
+          "quantity": 1,
+          "item": "Mountainheart Tonic"
+        },
+        {
+          "quantity": 20,
+          "item": "Dusk Dust"
+        },
+        {
+          "quantity": 20,
+          "item": "Cold Roots"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 3,750xp 3.45 /xp",
+      "progress": 615,
+      "quality": 835,
+      "durability": 10,
+      "level": 59,
+      "tax": 900
+    },
+    {
+      "id": "level_61_burning_aegis_tonic",
+      "name": "Level 61 Burning Aegis Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Arcana Tonic"
+        },
+        {
+          "quantity": 1,
+          "item": "Mountainheart Tonic"
+        },
+        {
+          "quantity": 16,
+          "item": "Dusk Dust"
+        },
+        {
+          "quantity": 18,
+          "item": "Fire Cap"
+        },
+        {
+          "quantity": 1,
+          "item": "Catalytic Solution"
+        }
+      ],
+      "exp": "Exp 4,200xp 2.73 /xp",
+      "progress": 615,
+      "quality": 865,
+      "durability": 10,
+      "level": 61,
+      "tax": 1
+    },
+    {
+      "id": "level_70_chefs_zeal_elixir",
+      "name": "Level 70 Chef's Zeal Elixir",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Core Catalyst"
+        },
+        {
+          "quantity": 1,
+          "item": "Strawberry Whiskey"
+        },
+        {
+          "quantity": 1,
+          "item": "Bittersweet Roast"
+        },
+        {
+          "quantity": 1,
+          "item": "Pie"
+        },
+        {
+          "quantity": 8,
+          "item": "Flaming Spores"
+        }
+      ],
+      "exp": "Exp 6,900xp 0.89 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 1
+    },
+    {
+      "id": "level_70_forgefire_elixir",
+      "name": "Level 70 Forgefire Elixir",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Core Catalyst"
+        },
+        {
+          "quantity": 1,
+          "item": "Cobalt Ingot"
+        },
+        {
+          "quantity": 1,
+          "item": "Dense Whetstone"
+        },
+        {
+          "quantity": 3,
+          "item": "Nail"
+        },
+        {
+          "quantity": 4,
+          "item": "Flaming Spores"
+        }
+      ],
+      "exp": "Exp 3,100xp 0.74 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 744
+    },
+    {
+      "id": "level_70_woodwhisper_elixir",
+      "name": "Level 70 Woodwhisper Elixir",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Core Catalyst"
+        },
+        {
+          "quantity": 1,
+          "item": "Sturdy Plank"
+        },
+        {
+          "quantity": 1,
+          "item": "Heavy Plank"
+        },
+        {
+          "quantity": 1,
+          "item": "Treated Plank"
+        },
+        {
+          "quantity": 8,
+          "item": "Flaming Spores"
+        }
+      ],
+      "exp": "Exp 6,000xp 1.94 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 1
+    },
+    {
+      "id": "level_70_threadmaster_elixir",
+      "name": "Level 70 Threadmaster Elixir",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Core Catalyst"
+        },
+        {
+          "quantity": 1,
+          "item": "Silk"
+        },
+        {
+          "quantity": 1,
+          "item": "Tanned Leather"
+        },
+        {
+          "quantity": 1,
+          "item": "Coarse Thread"
+        },
+        {
+          "quantity": 8,
+          "item": "Flaming Spores"
+        }
+      ],
+      "exp": "Exp 4,337xp 2.65 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 1
+    },
+    {
+      "id": "level_70_wealthbringers_tonic",
+      "name": "Level 70 Wealthbringer's Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 52,
+          "item": "Brightday"
+        },
+        {
+          "quantity": 40,
+          "item": "Ambar Dust"
+        },
+        {
+          "quantity": 1,
+          "item": "Core Essence"
+        }
+      ],
+      "exp": "Exp 4,800xp 2.68 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 1
+    },
+    {
+      "id": "level_70_tonic_of_forbidden_knowledge",
+      "name": "Level 70 Tonic of Forbidden Knowledge",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 20,
+          "item": "Purple Roots"
+        },
+        {
+          "quantity": 12,
+          "item": "Twisted Flower"
+        },
+        {
+          "quantity": 1,
+          "item": "Core Essence"
+        },
+        {
+          "quantity": 1,
+          "item": "Bizarre Grimoire"
+        }
+      ],
+      "exp": "Exp 4,700xp 2.67 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 1
+    },
+    {
+      "id": "level_70_purifying_tonic",
+      "name": "Level 70 Purifying Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 16,
+          "item": "Chest Warmer"
+        },
+        {
+          "quantity": 16,
+          "item": "Pirate's Bliss"
+        },
+        {
+          "quantity": 1,
+          "item": "Core Essence"
+        }
+      ],
+      "exp": "Exp 3,000xp 1.76 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 720
+    },
+    {
+      "id": "level_70_detoxifying_tonic",
+      "name": "Level 70 Detoxifying Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 30,
+          "item": "Shimmering Spores"
+        },
+        {
+          "quantity": 24,
+          "item": "Purple Roots"
+        },
+        {
+          "quantity": 1,
+          "item": "Core Essence"
+        }
+      ],
+      "exp": "Exp 4,650xp 2.89 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 1
+    },
+    {
+      "id": "level_70_swiftmoa_tonic",
+      "name": "Level 70 Swiftmoa Tonic",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 30,
+          "item": "Hagthorn"
+        },
+        {
+          "quantity": 48,
+          "item": "Refreshing Leaf"
+        },
+        {
+          "quantity": 1,
+          "item": "Core Essence"
+        }
+      ],
+      "exp": "Exp 4,625xp 0.66 /xp",
+      "progress": 800,
+      "quality": 0,
+      "durability": 10,
+      "level": 70,
+      "tax": 1
+    },
+    {
+      "id": "level_75_tonic_of_gold",
+      "name": "Level 75 Tonic of Gold",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Flaming Spores"
+        },
+        {
+          "quantity": 12,
+          "item": "Fire Cap"
+        },
+        {
+          "quantity": 6,
+          "item": "Purple Roots"
+        },
+        {
+          "quantity": 20,
+          "item": "Emerald Spores"
+        },
+        {
+          "quantity": 1,
+          "item": "Core Essence"
+        }
+      ],
+      "exp": "Exp 4,468xp 2.6 /xp",
+      "progress": 900,
+      "quality": 0,
+      "durability": 12,
+      "level": 75,
+      "tax": 1
+    },
+    {
+      "id": "level_73_tonic_of_undying",
+      "name": "Level 73 Tonic of Undying",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 28,
+          "item": "Glowing Spores"
+        },
+        {
+          "quantity": 8,
+          "item": "Rocky Cap"
+        },
+        {
+          "quantity": 8,
+          "item": "Hagthorn"
+        },
+        {
+          "quantity": 20,
+          "item": "Emerald Spores"
+        },
+        {
+          "quantity": 1,
+          "item": "Core Essence"
+        }
+      ],
+      "exp": "Exp 4,875xp 2.25 /xp",
+      "progress": 850,
+      "quality": 0,
+      "durability": 11,
+      "level": 73,
+      "tax": 1
+    },
+    {
+      "id": "level_71_tonic_of_savage_instinct",
+      "name": "Level 71 Tonic of Savage Instinct",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 20,
+          "item": "Shadow Stem"
+        },
+        {
+          "quantity": 12,
+          "item": "Wailing Leaf"
+        },
+        {
+          "quantity": 6,
+          "item": "Cold Roots"
+        },
+        {
+          "quantity": 20,
+          "item": "Emerald Spores"
+        },
+        {
+          "quantity": 1,
+          "item": "Core Essence"
+        }
+      ],
+      "exp": "Exp 4,862xp 2.44 /xp",
+      "progress": 850,
+      "quality": 0,
+      "durability": 11,
+      "level": 71,
+      "tax": 1
+    },
+    {
+      "id": "level_78_serendipity_draught",
+      "name": "Level 78 Serendipity Draught",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Wealthbringer's Tonic"
+        },
+        {
+          "quantity": 1,
+          "item": "Tonic of Forbidden Knowledge"
+        },
+        {
+          "quantity": 2,
+          "item": "Mixing Agent"
+        }
+      ],
+      "exp": "Exp 9,725xp 0.79 /xp",
+      "progress": 900,
+      "quality": 1380,
+      "durability": 12,
+      "level": 78,
+      "tax": 2
+    },
+    {
+      "id": "level_1_copper_ingot",
+      "name": "Level 1 Copper Ingot",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 5,
+          "item": "Copper Ore"
+        }
+      ],
+      "exp": 120,
+      "progress": 25,
+      "quality": 75,
+      "durability": 4,
+      "level": 1,
+      "tax": 29
+    },
+    {
+      "id": "level_20_iron_ingot",
+      "name": "Level 20 Iron Ingot",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 5,
+          "item": "Iron Ore"
+        }
+      ],
+      "exp": 200,
+      "progress": 175,
+      "quality": 175,
+      "durability": 7,
+      "level": 20,
+      "tax": 48
+    },
+    {
+      "id": "level_30_steel_ingot",
+      "name": "Level 30 Steel Ingot",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 5,
+          "item": "Iron Ore"
+        },
+        {
+          "quantity": 2,
+          "item": "Coal"
+        }
+      ],
+      "exp": 287,
+      "progress": 225,
+      "quality": 300,
+      "durability": 7,
+      "level": 30,
+      "tax": 69
+    },
+    {
+      "id": "level_50_cobalt_ingot",
+      "name": "Level 50 Cobalt Ingot",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 5,
+          "item": "Cobalt Ore"
+        },
+        {
+          "quantity": 3,
+          "item": "Coal"
+        }
+      ],
+      "exp": 412,
+      "progress": 450,
+      "quality": 550,
+      "durability": 8,
+      "level": 50,
+      "tax": 99
+    },
+    {
+      "id": "level_70_titanium_ingot",
+      "name": "Level 70 Titanium Ingot",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 5,
+          "item": "Titanium Ore"
+        },
+        {
+          "quantity": 4,
+          "item": "Coal"
+        }
+      ],
+      "exp": 650,
+      "progress": 550,
+      "quality": 800,
+      "durability": 9,
+      "level": 70,
+      "tax": 156
+    },
+    {
+      "id": "level_10_bronze_ingot",
+      "name": "Level 10 Bronze Ingot",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 2,
+          "item": "Copper Ore"
+        },
+        {
+          "quantity": 3,
+          "item": "Tin Ore"
+        }
+      ],
+      "exp": 165,
+      "progress": 150,
+      "quality": 150,
+      "durability": 7,
+      "level": 10,
+      "tax": 40
+    },
+    {
+      "id": "level_88_glimmery_ingot",
+      "name": "Level 88 Glimmery Ingot",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 6,
+          "item": "Titanium Ingot"
+        },
+        {
+          "quantity": 4,
+          "item": "Cobalt Ingot"
+        },
+        {
+          "quantity": 1,
+          "item": "Binding Aether"
+        }
+      ],
+      "exp": "Exp 2,000xp 0.24 /xp",
+      "progress": 610,
+      "quality": 900,
+      "durability": 10,
+      "level": 88,
+      "tax": 480
+    },
+    {
+      "id": "level_5_beer",
+      "name": "Level 5 Beer",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Wheat"
+        }
+      ],
+      "exp": 287,
+      "progress": 75,
+      "quality": 50,
+      "durability": 4,
+      "level": 5,
+      "tax": 69
+    },
+    {
+      "id": "level_20_wine",
+      "name": "Level 20 Wine",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Grape"
+        },
+        {
+          "quantity": 2,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": 750,
+      "progress": 200,
+      "quality": 125,
+      "durability": 7,
+      "level": 20,
+      "tax": 180
+    },
+    {
+      "id": "level_22_whiskey",
+      "name": "Level 22 Whiskey",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 12,
+          "item": "Corn"
+        },
+        {
+          "quantity": 1,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": 912,
+      "progress": 200,
+      "quality": 140,
+      "durability": 7,
+      "level": 22,
+      "tax": 219
+    },
+    {
+      "id": "level_1_vodka",
+      "name": "Level 1 Vodka",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 10,
+          "item": "Potato"
+        }
+      ],
+      "exp": 125,
+      "progress": 75,
+      "quality": 50,
+      "durability": 4,
+      "level": 1,
+      "tax": 30
+    },
+    {
+      "id": "level_32_rum",
+      "name": "Level 32 Rum",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 6,
+          "item": "Apple"
+        },
+        {
+          "quantity": 2,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": "Exp 1,662xp 0.84 /xp",
+      "progress": 250,
+      "quality": 175,
+      "durability": 7,
+      "level": 32,
+      "tax": 399
+    },
+    {
+      "id": "level_17_apple_cider",
+      "name": "Level 17 Apple Cider",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 2,
+          "item": "Apple"
+        },
+        {
+          "quantity": 4,
+          "item": "Wheat"
+        }
+      ],
+      "exp": 625,
+      "progress": 75,
+      "quality": 50,
+      "durability": 4,
+      "level": 17,
+      "tax": 150
+    },
+    {
+      "id": "level_40_blueberry_wine",
+      "name": "Level 40 Blueberry Wine",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 20,
+          "item": "Grape"
+        },
+        {
+          "quantity": 40,
+          "item": "Blueberry"
+        },
+        {
+          "quantity": 2,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": "Exp 2,406xp 1.14 /xp",
+      "progress": 350,
+      "quality": 225,
+      "durability": 7,
+      "level": 40,
+      "tax": 578
+    },
+    {
+      "id": "level_72_strawberry_whiskey",
+      "name": "Level 72 Strawberry Whiskey",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 48,
+          "item": "Corn"
+        },
+        {
+          "quantity": 70,
+          "item": "Strawberry"
+        },
+        {
+          "quantity": 7,
+          "item": "Brewer Yeast"
+        },
+        {
+          "quantity": 20,
+          "item": "Honey"
+        }
+      ],
+      "exp": "Exp 7,875xp 1.28 /xp",
+      "progress": 600,
+      "quality": 645,
+      "durability": 10,
+      "level": 72,
+      "tax": 1
+    },
+    {
+      "id": "level_57_banana_vodka",
+      "name": "Level 57 Banana Vodka",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 50,
+          "item": "Potato"
+        },
+        {
+          "quantity": 10,
+          "item": "Banana"
+        },
+        {
+          "quantity": 2,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": "Exp 4,087xp 1.04 /xp",
+      "progress": 550,
+      "quality": 570,
+      "durability": 9,
+      "level": 57,
+      "tax": 981
+    },
+    {
+      "id": "level_55_spiced_rum",
+      "name": "Level 55 Spiced Rum",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 12,
+          "item": "Apple"
+        },
+        {
+          "quantity": 12,
+          "item": "Pepper"
+        },
+        {
+          "quantity": 2,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": "Exp 3,900xp 1.02 /xp",
+      "progress": 550,
+      "quality": 570,
+      "durability": 9,
+      "level": 55,
+      "tax": 936
+    },
+    {
+      "id": "level_70_eclipse",
+      "name": "Level 70 Eclipse",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 26,
+          "item": "Moonberry"
+        },
+        {
+          "quantity": 26,
+          "item": "Sunberry"
+        },
+        {
+          "quantity": 4,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": "Exp 7,000xp 1.4 /xp",
+      "progress": 550,
+      "quality": 570,
+      "durability": 9,
+      "level": 70,
+      "tax": 1
+    },
+    {
+      "id": "level_10_landing_brandy",
+      "name": "Level 10 Landing Brandy",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 2,
+          "item": "Apple"
+        }
+      ],
+      "exp": 468,
+      "progress": 150,
+      "quality": 100,
+      "durability": 6,
+      "level": 10,
+      "tax": 113
+    },
+    {
+      "id": "level_30_orange_liqueur",
+      "name": "Level 30 Orange Liqueur",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 4,
+          "item": "Orange"
+        },
+        {
+          "quantity": 1,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": "Exp 1,875xp 0.95 /xp",
+      "progress": 225,
+      "quality": 150,
+      "durability": 7,
+      "level": 30,
+      "tax": 450
+    },
+    {
+      "id": "level_42_boozemelon",
+      "name": "Level 42 Boozemelon",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 6,
+          "item": "Watermelon"
+        },
+        {
+          "quantity": 2,
+          "item": "Pumpkin"
+        },
+        {
+          "quantity": 3,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": "Exp 2,550xp 1.32 /xp",
+      "progress": 375,
+      "quality": 430,
+      "durability": 7,
+      "level": 42,
+      "tax": 612
+    },
+    {
+      "id": "level_78_fermented_liquor",
+      "name": "Level 78 Fermented Liquor",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 1,
+          "item": "Herbal Alcohol"
+        },
+        {
+          "quantity": 10,
+          "item": "Watermelon"
+        },
+        {
+          "quantity": 5,
+          "item": "Brewer Yeast"
+        }
+      ],
+      "exp": "Exp 9,000xp 0.64 /xp",
+      "progress": 650,
+      "quality": 1170,
+      "durability": 10,
+      "level": 78,
+      "tax": 2
+    },
+    {
+      "id": "level_88_seabrew",
+      "name": "Level 88 Seabrew",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 2,
+          "item": "Herbal Alcohol"
+        },
+        {
+          "quantity": 3,
+          "item": "Luminous Sack"
+        },
+        {
+          "quantity": 6,
+          "item": "Orange"
+        }
+      ],
+      "exp": "Exp 12,500xp 0.4 /xp",
+      "progress": 775,
+      "quality": 1300,
+      "durability": 12,
+      "level": 88,
+      "tax": 3
+    },
+    {
+      "id": "level_1_rough_plank",
+      "name": "Level 1 Rough Plank",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 12,
+          "item": "Small Log"
+        }
+      ],
+      "exp": 220,
+      "progress": 25,
+      "quality": 75,
+      "durability": 4,
+      "level": 1,
+      "tax": 53
+    },
+    {
+      "id": "level_10_refined_plank",
+      "name": "Level 10 Refined Plank",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Heavy Log"
+        }
+      ],
+      "exp": 400,
+      "progress": 150,
+      "quality": 150,
+      "durability": 7,
+      "level": 10,
+      "tax": 96
+    },
+    {
+      "id": "level_25_treated_plank",
+      "name": "Level 25 Treated Plank",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 12,
+          "item": "Heavy Log"
+        },
+        {
+          "quantity": 2,
+          "item": "Oil"
+        }
+      ],
+      "exp": 687,
+      "progress": 225,
+      "quality": 200,
+      "durability": 7,
+      "level": 25,
+      "tax": 165
+    },
+    {
+      "id": "level_10_dense_plank",
+      "name": "Level 10 Dense Plank",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 8,
+          "item": "Dense Log"
+        }
+      ],
+      "exp": "Exp 1,062xp 0.24 /xp",
+      "progress": 100,
+      "quality": 100,
+      "durability": 4,
+      "level": 10,
+      "tax": 255
+    },
+    {
+      "id": "level_30_heavy_plank",
+      "name": "Level 30 Heavy Plank",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 16,
+          "item": "Dense Log"
+        },
+        {
+          "quantity": 2,
+          "item": "Oil"
+        }
+      ],
+      "exp": "Exp 2,225xp 0.68 /xp",
+      "progress": 250,
+      "quality": 300,
+      "durability": 6,
+      "level": 30,
+      "tax": 534
+    },
+    {
+      "id": "level_50_sturdy_plank",
+      "name": "Level 50 Sturdy Plank",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 10,
+          "item": "Sturdy Log"
+        },
+        {
+          "quantity": 4,
+          "item": "Oil"
+        }
+      ],
+      "exp": 818,
+      "progress": 450,
+      "quality": 550,
+      "durability": 8,
+      "level": 50,
+      "tax": 197
+    },
+    {
+      "id": "level_70_fine_plank",
+      "name": "Level 70 Fine Plank",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 12,
+          "item": "Fine Log"
+        },
+        {
+          "quantity": 6,
+          "item": "Oil"
+        }
+      ],
+      "exp": "Exp 1,200xp 5.08 /xp",
+      "progress": 550,
+      "quality": 800,
+      "durability": 9,
+      "level": 70,
+      "tax": 288
+    },
+    {
+      "id": "level_88_glimmery_plank",
+      "name": "Level 88 Glimmery Plank",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 3,
+          "item": "Fine Plank"
+        },
+        {
+          "quantity": 3,
+          "item": "Sturdy Plank"
+        },
+        {
+          "quantity": 1,
+          "item": "Binding Aether"
+        }
+      ],
+      "exp": "Exp 2,000xp 15.61 /xp",
+      "progress": 610,
+      "quality": 900,
+      "durability": 10,
+      "level": 88,
+      "tax": 480
+    },
+    {
+      "id": "level_1_coarse_leather",
+      "name": "Level 1 Coarse Leather",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 6,
+          "item": "Hide"
+        }
+      ],
+      "exp": 300,
+      "progress": 25,
+      "quality": 75,
+      "durability": 4,
+      "level": 1,
+      "tax": 72
+    },
+    {
+      "id": "level_10_craftmans_leather",
+      "name": "Level 10 Craftman's Leather",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 10,
+          "item": "Hide"
+        }
+      ],
+      "exp": 587,
+      "progress": 150,
+      "quality": 150,
+      "durability": 6,
+      "level": 10,
+      "tax": 141
+    },
+    {
+      "id": "level_30_tanned_leather",
+      "name": "Level 30 Tanned Leather",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 16,
+          "item": "Hide"
+        }
+      ],
+      "exp": 875,
+      "progress": 225,
+      "quality": 300,
+      "durability": 7,
+      "level": 30,
+      "tax": 210
+    },
+    {
+      "id": "level_50_merchants_leather",
+      "name": "Level 50 Merchant's Leather",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 20,
+          "item": "Hide"
+        }
+      ],
+      "exp": "Exp 1,168xp 2.3 /xp",
+      "progress": 450,
+      "quality": 550,
+      "durability": 8,
+      "level": 50,
+      "tax": 281
+    },
+    {
+      "id": "level_70_artisan_leather",
+      "name": "Level 70 Artisan Leather",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 26,
+          "item": "Hide"
+        }
+      ],
+      "exp": "Exp 1,475xp 2.36 /xp",
+      "progress": 550,
+      "quality": 800,
+      "durability": 9,
+      "level": 70,
+      "tax": 354
+    },
+    {
+      "id": "level_88_glimmery_leather",
+      "name": "Level 88 Glimmery Leather",
+      "category": "materials",
+      "materials": [
+        {
+          "quantity": 3,
+          "item": "Artisan Leather"
+        },
+        {
+          "quantity": 1,
+          "item": "Merchant's Leather"
+        },
+        {
+          "quantity": 1,
+          "item": "Binding Aether"
+        }
+      ],
+      "exp": "Exp 2,000xp 6.79 /xp",
+      "progress": 610,
+      "quality": 900,
+      "durability": 10,
+      "level": 88,
+      "tax": 480
+    },
+    {
+      "id": "lesser_arcane_energy_tonic_alchemy_lv_4",
+      "name": "Lesser Arcane Energy Tonic Alchemy - Lv 4",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_4",
+      "name": "Alchemy - Lv 4",
+      "category": "materials"
+    },
+    {
+      "id": "4_79_xp",
+      "name": "4.79 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_79",
+      "name": "4.79",
+      "category": "materials"
+    },
+    {
+      "id": "tax_45",
+      "name": "Tax 45",
+      "category": "materials"
+    },
+    {
+      "id": "45",
+      "name": "45",
+      "category": "materials"
+    },
+    {
+      "id": "895",
+      "name": "895",
+      "category": "materials"
+    },
+    {
+      "id": "298_unit",
+      "name": "298 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "298",
+      "name": "298",
+      "category": "materials"
+    },
+    {
+      "id": "arcane_energy_tonic_alchemy_lv_16",
+      "name": "Arcane Energy Tonic Alchemy - Lv 16",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_16",
+      "name": "Alchemy - Lv 16",
+      "category": "materials"
+    },
+    {
+      "id": "lesser_strengthening_tonic_alchemy_lv_5",
+      "name": "Lesser Strengthening Tonic Alchemy - Lv 5",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_5",
+      "name": "Alchemy - Lv 5",
+      "category": "materials"
+    },
+    {
+      "id": "4_51_xp",
+      "name": "4.51 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_51",
+      "name": "4.51",
+      "category": "materials"
+    },
+    {
+      "id": "tax_66",
+      "name": "Tax 66",
+      "category": "materials"
+    },
+    {
+      "id": "66",
+      "name": "66",
+      "category": "materials"
+    },
+    {
+      "id": "1_240",
+      "name": "1,240",
+      "category": "materials"
+    },
+    {
+      "id": "413_unit",
+      "name": "413 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "413",
+      "name": "413",
+      "category": "materials"
+    },
+    {
+      "id": "strengthening_tonic_alchemy_lv_17",
+      "name": "Strengthening Tonic Alchemy - Lv 17",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_17",
+      "name": "Alchemy - Lv 17",
+      "category": "materials"
+    },
+    {
+      "id": "lesser_enlightenment_tonic_alchemy_lv_6",
+      "name": "Lesser Enlightenment Tonic Alchemy - Lv 6",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_6",
+      "name": "Alchemy - Lv 6",
+      "category": "materials"
+    },
+    {
+      "id": "4_32_xp",
+      "name": "4.32 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_32",
+      "name": "4.32",
+      "category": "materials"
+    },
+    {
+      "id": "tax_59",
+      "name": "Tax 59",
+      "category": "materials"
+    },
+    {
+      "id": "59",
+      "name": "59",
+      "category": "materials"
+    },
+    {
+      "id": "1_049",
+      "name": "1,049",
+      "category": "materials"
+    },
+    {
+      "id": "350_unit",
+      "name": "350 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "350",
+      "name": "350",
+      "category": "materials"
+    },
+    {
+      "id": "enlightenment_tonic_alchemy_lv_19",
+      "name": "Enlightenment Tonic Alchemy - Lv 19",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_19",
+      "name": "Alchemy - Lv 19",
+      "category": "materials"
+    },
+    {
+      "id": "lesser_rejuvenation_tonic_alchemy_lv_7",
+      "name": "Lesser Rejuvenation Tonic Alchemy - Lv 7",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_7",
+      "name": "Alchemy - Lv 7",
+      "category": "materials"
+    },
+    {
+      "id": "4_35_xp",
+      "name": "4.35 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_35",
+      "name": "4.35",
+      "category": "materials"
+    },
+    {
+      "id": "tax_90",
+      "name": "Tax 90",
+      "category": "materials"
+    },
+    {
+      "id": "90",
+      "name": "90",
+      "category": "materials"
+    },
+    {
+      "id": "1_632",
+      "name": "1,632",
+      "category": "materials"
+    },
+    {
+      "id": "544_unit",
+      "name": "544 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "544",
+      "name": "544",
+      "category": "materials"
+    },
+    {
+      "id": "rejuvenation_tonic_alchemy_lv_21",
+      "name": "Rejuvenation Tonic Alchemy - Lv 21",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_21",
+      "name": "Alchemy - Lv 21",
+      "category": "materials"
+    },
+    {
+      "id": "lesser_wellspring_tonic_alchemy_lv_8",
+      "name": "Lesser Wellspring Tonic Alchemy - Lv 8",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_8",
+      "name": "Alchemy - Lv 8",
+      "category": "materials"
+    },
+    {
+      "id": "4_55_xp",
+      "name": "4.55 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_55",
+      "name": "4.55",
+      "category": "materials"
+    },
+    {
+      "id": "tax_68",
+      "name": "Tax 68",
+      "category": "materials"
+    },
+    {
+      "id": "68",
+      "name": "68",
+      "category": "materials"
+    },
+    {
+      "id": "1_278",
+      "name": "1,278",
+      "category": "materials"
+    },
+    {
+      "id": "426_unit",
+      "name": "426 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "426",
+      "name": "426",
+      "category": "materials"
+    },
+    {
+      "id": "wellspring_tonic_alchemy_lv_22",
+      "name": "Wellspring Tonic Alchemy - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_22",
+      "name": "Alchemy - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "lesser_mountainheart_tonic_alchemy_lv_9",
+      "name": "Lesser Mountainheart Tonic Alchemy - Lv 9",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_9",
+      "name": "Alchemy - Lv 9",
+      "category": "materials"
+    },
+    {
+      "id": "3_48_xp",
+      "name": "3.48 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_48",
+      "name": "3.48",
+      "category": "materials"
+    },
+    {
+      "id": "tax_105",
+      "name": "Tax 105",
+      "category": "materials"
+    },
+    {
+      "id": "105",
+      "name": "105",
+      "category": "materials"
+    },
+    {
+      "id": "1_519",
+      "name": "1,519",
+      "category": "materials"
+    },
+    {
+      "id": "506_unit",
+      "name": "506 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "506",
+      "name": "506",
+      "category": "materials"
+    },
+    {
+      "id": "mountainheart_tonic_alchemy_lv_24",
+      "name": "Mountainheart Tonic Alchemy - Lv 24",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_24",
+      "name": "Alchemy - Lv 24",
+      "category": "materials"
+    },
+    {
+      "id": "lesser_arcana_tonic_alchemy_lv_11",
+      "name": "Lesser Arcana Tonic Alchemy - Lv 11",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_11",
+      "name": "Alchemy - Lv 11",
+      "category": "materials"
+    },
+    {
+      "id": "4_38_xp",
+      "name": "4.38 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_38",
+      "name": "4.38",
+      "category": "materials"
+    },
+    {
+      "id": "tax_87",
+      "name": "Tax 87",
+      "category": "materials"
+    },
+    {
+      "id": "87",
+      "name": "87",
+      "category": "materials"
+    },
+    {
+      "id": "1_587",
+      "name": "1,587",
+      "category": "materials"
+    },
+    {
+      "id": "529_unit",
+      "name": "529 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "529",
+      "name": "529",
+      "category": "materials"
+    },
+    {
+      "id": "arcana_tonic_alchemy_lv_27",
+      "name": "Arcana Tonic Alchemy - Lv 27",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_27",
+      "name": "Alchemy - Lv 27",
+      "category": "materials"
+    },
+    {
+      "id": "lesser_champions_tonic_alchemy_lv_14",
+      "name": "Lesser Champion's Tonic Alchemy - Lv 14",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_14",
+      "name": "Alchemy - Lv 14",
+      "category": "materials"
+    },
+    {
+      "id": "4_1_xp",
+      "name": "4.1 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_1",
+      "name": "4.1",
+      "category": "materials"
+    },
+    {
+      "id": "tax_122",
+      "name": "Tax 122",
+      "category": "materials"
+    },
+    {
+      "id": "122",
+      "name": "122",
+      "category": "materials"
+    },
+    {
+      "id": "2_076",
+      "name": "2,076",
+      "category": "materials"
+    },
+    {
+      "id": "692_unit",
+      "name": "692 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "692",
+      "name": "692",
+      "category": "materials"
+    },
+    {
+      "id": "champions_tonic_alchemy_lv_28",
+      "name": "Champion's Tonic Alchemy - Lv 28",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_28",
+      "name": "Alchemy - Lv 28",
+      "category": "materials"
+    },
+    {
+      "id": "4_42_xp",
+      "name": "4.42 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_42",
+      "name": "4.42",
+      "category": "materials"
+    },
+    {
+      "id": "tax_150",
+      "name": "Tax 150",
+      "category": "materials"
+    },
+    {
+      "id": "150",
+      "name": "150",
+      "category": "materials"
+    },
+    {
+      "id": "2_762",
+      "name": "2,762",
+      "category": "materials"
+    },
+    {
+      "id": "921_unit",
+      "name": "921 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "921",
+      "name": "921",
+      "category": "materials"
+    },
+    {
+      "id": "arcane_mastery_tonic_alchemy_lv_55",
+      "name": "Arcane Mastery Tonic Alchemy - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_55",
+      "name": "Alchemy - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "chillguard_tonic_alchemy_lv_59",
+      "name": "Chillguard Tonic Alchemy - Lv 59",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_59",
+      "name": "Alchemy - Lv 59",
+      "category": "materials"
+    },
+    {
+      "id": "3_86_xp",
+      "name": "3.86 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_86",
+      "name": "3.86",
+      "category": "materials"
+    },
+    {
+      "id": "2_415",
+      "name": "2,415",
+      "category": "materials"
+    },
+    {
+      "id": "805_unit",
+      "name": "805 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "805",
+      "name": "805",
+      "category": "materials"
+    },
+    {
+      "id": "iron_will_tonic_alchemy_lv_45",
+      "name": "Iron Will Tonic Alchemy - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_45",
+      "name": "Alchemy - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "accurate_physique_tonic_alchemy_lv_53",
+      "name": "Accurate Physique Tonic Alchemy - Lv 53",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_53",
+      "name": "Alchemy - Lv 53",
+      "category": "materials"
+    },
+    {
+      "id": "3_28_xp",
+      "name": "3.28 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_28",
+      "name": "3.28",
+      "category": "materials"
+    },
+    {
+      "id": "tax_168",
+      "name": "Tax 168",
+      "category": "materials"
+    },
+    {
+      "id": "168",
+      "name": "168",
+      "category": "materials"
+    },
+    {
+      "id": "2_294",
+      "name": "2,294",
+      "category": "materials"
+    },
+    {
+      "id": "765_unit",
+      "name": "765 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "765",
+      "name": "765",
+      "category": "materials"
+    },
+    {
+      "id": "luminous_tonic_alchemy_lv_43",
+      "name": "Luminous Tonic Alchemy - Lv 43",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_43",
+      "name": "Alchemy - Lv 43",
+      "category": "materials"
+    },
+    {
+      "id": "light_of_dawn_tonic_alchemy_lv_51",
+      "name": "Light of Dawn Tonic Alchemy - Lv 51",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_51",
+      "name": "Alchemy - Lv 51",
+      "category": "materials"
+    },
+    {
+      "id": "3_64_xp",
+      "name": "3.64 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_64",
+      "name": "3.64",
+      "category": "materials"
+    },
+    {
+      "id": "tax_198",
+      "name": "Tax 198",
+      "category": "materials"
+    },
+    {
+      "id": "198",
+      "name": "198",
+      "category": "materials"
+    },
+    {
+      "id": "3_006",
+      "name": "3,006",
+      "category": "materials"
+    },
+    {
+      "id": "1_002_unit",
+      "name": "1,002 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_002",
+      "name": "1,002",
+      "category": "materials"
+    },
+    {
+      "id": "precise_harmony_tonic_alchemy_lv_41",
+      "name": "Precise Harmony Tonic Alchemy - Lv 41",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_41",
+      "name": "Alchemy - Lv 41",
+      "category": "materials"
+    },
+    {
+      "id": "profound_insight_tonic_alchemy_lv_48",
+      "name": "Profound Insight Tonic Alchemy - Lv 48",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_48",
+      "name": "Alchemy - Lv 48",
+      "category": "materials"
+    },
+    {
+      "id": "3_81_xp",
+      "name": "3.81 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_81",
+      "name": "3.81",
+      "category": "materials"
+    },
+    {
+      "id": "tax_203",
+      "name": "Tax 203",
+      "category": "materials"
+    },
+    {
+      "id": "203",
+      "name": "203",
+      "category": "materials"
+    },
+    {
+      "id": "3_213",
+      "name": "3,213",
+      "category": "materials"
+    },
+    {
+      "id": "1_071_unit",
+      "name": "1,071 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_071",
+      "name": "1,071",
+      "category": "materials"
+    },
+    {
+      "id": "mana_surge_tonic_alchemy_lv_35",
+      "name": "Mana Surge Tonic Alchemy - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_35",
+      "name": "Alchemy - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "3_76_xp",
+      "name": "3.76 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_76",
+      "name": "3.76",
+      "category": "materials"
+    },
+    {
+      "id": "tax_213",
+      "name": "Tax 213",
+      "category": "materials"
+    },
+    {
+      "id": "213",
+      "name": "213",
+      "category": "materials"
+    },
+    {
+      "id": "3_337",
+      "name": "3,337",
+      "category": "materials"
+    },
+    {
+      "id": "1_112_unit",
+      "name": "1,112 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_112",
+      "name": "1,112",
+      "category": "materials"
+    },
+    {
+      "id": "burning_aegis_tonic_alchemy_lv_61",
+      "name": "Burning Aegis Tonic Alchemy - Lv 61",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_61",
+      "name": "Alchemy - Lv 61",
+      "category": "materials"
+    },
+    {
+      "id": "3_54_xp",
+      "name": "3.54 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_54",
+      "name": "3.54",
+      "category": "materials"
+    },
+    {
+      "id": "tax_300",
+      "name": "Tax 300",
+      "category": "materials"
+    },
+    {
+      "id": "300",
+      "name": "300",
+      "category": "materials"
+    },
+    {
+      "id": "4_429",
+      "name": "4,429",
+      "category": "materials"
+    },
+    {
+      "id": "1_476_unit",
+      "name": "1,476 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_476",
+      "name": "1,476",
+      "category": "materials"
+    },
+    {
+      "id": "tax_315",
+      "name": "Tax 315",
+      "category": "materials"
+    },
+    {
+      "id": "315",
+      "name": "315",
+      "category": "materials"
+    },
+    {
+      "id": "4_781",
+      "name": "4,781",
+      "category": "materials"
+    },
+    {
+      "id": "1_594_unit",
+      "name": "1,594 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_594",
+      "name": "1,594",
+      "category": "materials"
+    },
+    {
+      "id": "nimble_grace_tonic_alchemy_lv_35",
+      "name": "Nimble Grace Tonic Alchemy - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "mighty_impact_tonic_alchemy_lv_37",
+      "name": "Mighty Impact Tonic Alchemy - Lv 37",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_37",
+      "name": "Alchemy - Lv 37",
+      "category": "materials"
+    },
+    {
+      "id": "2_81_xp",
+      "name": "2.81 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_81",
+      "name": "2.81",
+      "category": "materials"
+    },
+    {
+      "id": "tax_324",
+      "name": "Tax 324",
+      "category": "materials"
+    },
+    {
+      "id": "324",
+      "name": "324",
+      "category": "materials"
+    },
+    {
+      "id": "3_795",
+      "name": "3,795",
+      "category": "materials"
+    },
+    {
+      "id": "1_265_unit",
+      "name": "1,265 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_265",
+      "name": "1,265",
+      "category": "materials"
+    },
+    {
+      "id": "2_77_xp",
+      "name": "2.77 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_77",
+      "name": "2.77",
+      "category": "materials"
+    },
+    {
+      "id": "tax_360",
+      "name": "Tax 360",
+      "category": "materials"
+    },
+    {
+      "id": "360",
+      "name": "360",
+      "category": "materials"
+    },
+    {
+      "id": "4_154",
+      "name": "4,154",
+      "category": "materials"
+    },
+    {
+      "id": "1_385_unit",
+      "name": "1,385 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_385",
+      "name": "1,385",
+      "category": "materials"
+    },
+    {
+      "id": "3_26_xp",
+      "name": "3.26 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_26",
+      "name": "3.26",
+      "category": "materials"
+    },
+    {
+      "id": "tax_408",
+      "name": "Tax 408",
+      "category": "materials"
+    },
+    {
+      "id": "408",
+      "name": "408",
+      "category": "materials"
+    },
+    {
+      "id": "5_542",
+      "name": "5,542",
+      "category": "materials"
+    },
+    {
+      "id": "1_847_unit",
+      "name": "1,847 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_847",
+      "name": "1,847",
+      "category": "materials"
+    },
+    {
+      "id": "2_28_xp",
+      "name": "2.28 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_28",
+      "name": "2.28",
+      "category": "materials"
+    },
+    {
+      "id": "3_879",
+      "name": "3,879",
+      "category": "materials"
+    },
+    {
+      "id": "1_293_unit",
+      "name": "1,293 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_293",
+      "name": "1,293",
+      "category": "materials"
+    },
+    {
+      "id": "2_26_xp",
+      "name": "2.26 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_26",
+      "name": "2.26",
+      "category": "materials"
+    },
+    {
+      "id": "3_848",
+      "name": "3,848",
+      "category": "materials"
+    },
+    {
+      "id": "1_283_unit",
+      "name": "1,283 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_283",
+      "name": "1,283",
+      "category": "materials"
+    },
+    {
+      "id": "3_11_xp",
+      "name": "3.11 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_11",
+      "name": "3.11",
+      "category": "materials"
+    },
+    {
+      "id": "tax_414",
+      "name": "Tax 414",
+      "category": "materials"
+    },
+    {
+      "id": "414",
+      "name": "414",
+      "category": "materials"
+    },
+    {
+      "id": "5_364",
+      "name": "5,364",
+      "category": "materials"
+    },
+    {
+      "id": "1_788_unit",
+      "name": "1,788 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_788",
+      "name": "1,788",
+      "category": "materials"
+    },
+    {
+      "id": "1_97_xp",
+      "name": "1.97 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_97",
+      "name": "1.97",
+      "category": "materials"
+    },
+    {
+      "id": "tax_609",
+      "name": "Tax 609",
+      "category": "materials"
+    },
+    {
+      "id": "609",
+      "name": "609",
+      "category": "materials"
+    },
+    {
+      "id": "4_999",
+      "name": "4,999",
+      "category": "materials"
+    },
+    {
+      "id": "1_666_unit",
+      "name": "1,666 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_666",
+      "name": "1,666",
+      "category": "materials"
+    },
+    {
+      "id": "1_87_xp",
+      "name": "1.87 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_87",
+      "name": "1.87",
+      "category": "materials"
+    },
+    {
+      "id": "tax_567",
+      "name": "Tax 567",
+      "category": "materials"
+    },
+    {
+      "id": "567",
+      "name": "567",
+      "category": "materials"
+    },
+    {
+      "id": "4_407",
+      "name": "4,407",
+      "category": "materials"
+    },
+    {
+      "id": "1_469_unit",
+      "name": "1,469 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_469",
+      "name": "1,469",
+      "category": "materials"
+    },
+    {
+      "id": "dark_pact_tonic_alchemy_lv_57",
+      "name": "Dark Pact Tonic Alchemy - Lv 57",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_57",
+      "name": "Alchemy - Lv 57",
+      "category": "materials"
+    },
+    {
+      "id": "3_08_xp",
+      "name": "3.08 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_08",
+      "name": "3.08",
+      "category": "materials"
+    },
+    {
+      "id": "tax_591",
+      "name": "Tax 591",
+      "category": "materials"
+    },
+    {
+      "id": "591",
+      "name": "591",
+      "category": "materials"
+    },
+    {
+      "id": "7_591",
+      "name": "7,591",
+      "category": "materials"
+    },
+    {
+      "id": "2_530_unit",
+      "name": "2,530 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "2_530",
+      "name": "2,530",
+      "category": "materials"
+    },
+    {
+      "id": "1_62_xp",
+      "name": "1.62 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_62",
+      "name": "1.62",
+      "category": "materials"
+    },
+    {
+      "id": "tax_684",
+      "name": "Tax 684",
+      "category": "materials"
+    },
+    {
+      "id": "684",
+      "name": "684",
+      "category": "materials"
+    },
+    {
+      "id": "4_605",
+      "name": "4,605",
+      "category": "materials"
+    },
+    {
+      "id": "1_535_unit",
+      "name": "1,535 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_535",
+      "name": "1,535",
+      "category": "materials"
+    },
+    {
+      "id": "1_4_xp",
+      "name": "1.4 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_4",
+      "name": "1.4",
+      "category": "materials"
+    },
+    {
+      "id": "tax_585",
+      "name": "Tax 585",
+      "category": "materials"
+    },
+    {
+      "id": "585",
+      "name": "585",
+      "category": "materials"
+    },
+    {
+      "id": "3_401",
+      "name": "3,401",
+      "category": "materials"
+    },
+    {
+      "id": "1_134_unit",
+      "name": "1,134 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_134",
+      "name": "1,134",
+      "category": "materials"
+    },
+    {
+      "id": "3_45_xp",
+      "name": "3.45 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_45",
+      "name": "3.45",
+      "category": "materials"
+    },
+    {
+      "id": "tax_900",
+      "name": "Tax 900",
+      "category": "materials"
+    },
+    {
+      "id": "900",
+      "name": "900",
+      "category": "materials"
+    },
+    {
+      "id": "12_921",
+      "name": "12,921",
+      "category": "materials"
+    },
+    {
+      "id": "4_307_unit",
+      "name": "4,307 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "4_307",
+      "name": "4,307",
+      "category": "materials"
+    },
+    {
+      "id": "2_73_xp",
+      "name": "2.73 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_73",
+      "name": "2.73",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_008",
+      "name": "Tax 1,008",
+      "category": "materials"
+    },
+    {
+      "id": "1_008",
+      "name": "1,008",
+      "category": "materials"
+    },
+    {
+      "id": "11_448",
+      "name": "11,448",
+      "category": "materials"
+    },
+    {
+      "id": "3_816_unit",
+      "name": "3,816 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "3_816",
+      "name": "3,816",
+      "category": "materials"
+    },
+    {
+      "id": "chefs_zeal_elixir_alchemy_lv_70",
+      "name": "Chef's Zeal Elixir Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_70",
+      "name": "Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "0_89_xp",
+      "name": "0.89 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_89",
+      "name": "0.89",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_656",
+      "name": "Tax 1,656",
+      "category": "materials"
+    },
+    {
+      "id": "1_656",
+      "name": "1,656",
+      "category": "materials"
+    },
+    {
+      "id": "6_117",
+      "name": "6,117",
+      "category": "materials"
+    },
+    {
+      "id": "forgefire_elixir_alchemy_lv_70",
+      "name": "Forgefire Elixir Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "0_74_xp",
+      "name": "0.74 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_74",
+      "name": "0.74",
+      "category": "materials"
+    },
+    {
+      "id": "tax_744",
+      "name": "Tax 744",
+      "category": "materials"
+    },
+    {
+      "id": "744",
+      "name": "744",
+      "category": "materials"
+    },
+    {
+      "id": "2_304",
+      "name": "2,304",
+      "category": "materials"
+    },
+    {
+      "id": "woodwhisper_elixir_alchemy_lv_70",
+      "name": "Woodwhisper Elixir Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "1_94_xp",
+      "name": "1.94 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_94",
+      "name": "1.94",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_440",
+      "name": "Tax 1,440",
+      "category": "materials"
+    },
+    {
+      "id": "1_440",
+      "name": "1,440",
+      "category": "materials"
+    },
+    {
+      "id": "11_650",
+      "name": "11,650",
+      "category": "materials"
+    },
+    {
+      "id": "threadmaster_elixir_alchemy_lv_70",
+      "name": "Threadmaster Elixir Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "2_65_xp",
+      "name": "2.65 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_65",
+      "name": "2.65",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_041",
+      "name": "Tax 1,041",
+      "category": "materials"
+    },
+    {
+      "id": "1_041",
+      "name": "1,041",
+      "category": "materials"
+    },
+    {
+      "id": "11_485",
+      "name": "11,485",
+      "category": "materials"
+    },
+    {
+      "id": "wealthbringers_tonic_alchemy_lv_70",
+      "name": "Wealthbringer's Tonic Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "2_68_xp",
+      "name": "2.68 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_68",
+      "name": "2.68",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_152",
+      "name": "Tax 1,152",
+      "category": "materials"
+    },
+    {
+      "id": "1_152",
+      "name": "1,152",
+      "category": "materials"
+    },
+    {
+      "id": "12_852",
+      "name": "12,852",
+      "category": "materials"
+    },
+    {
+      "id": "serendipity_draught_alchemy_lv_78",
+      "name": "Serendipity Draught Alchemy - Lv 78",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_78",
+      "name": "Alchemy - Lv 78",
+      "category": "materials"
+    },
+    {
+      "id": "tonic_of_forbidden_knowledge_alchemy_lv_70",
+      "name": "Tonic of Forbidden Knowledge Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "2_67_xp",
+      "name": "2.67 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_67",
+      "name": "2.67",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_128",
+      "name": "Tax 1,128",
+      "category": "materials"
+    },
+    {
+      "id": "1_128",
+      "name": "1,128",
+      "category": "materials"
+    },
+    {
+      "id": "12_528",
+      "name": "12,528",
+      "category": "materials"
+    },
+    {
+      "id": "purifying_tonic_alchemy_lv_70",
+      "name": "Purifying Tonic Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "1_76_xp",
+      "name": "1.76 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_76",
+      "name": "1.76",
+      "category": "materials"
+    },
+    {
+      "id": "tax_720",
+      "name": "Tax 720",
+      "category": "materials"
+    },
+    {
+      "id": "720",
+      "name": "720",
+      "category": "materials"
+    },
+    {
+      "id": "5_280",
+      "name": "5,280",
+      "category": "materials"
+    },
+    {
+      "id": "detoxifying_tonic_alchemy_lv_70",
+      "name": "Detoxifying Tonic Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "2_89_xp",
+      "name": "2.89 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_89",
+      "name": "2.89",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_116",
+      "name": "Tax 1,116",
+      "category": "materials"
+    },
+    {
+      "id": "1_116",
+      "name": "1,116",
+      "category": "materials"
+    },
+    {
+      "id": "13_416",
+      "name": "13,416",
+      "category": "materials"
+    },
+    {
+      "id": "swiftmoa_tonic_alchemy_lv_70",
+      "name": "Swiftmoa Tonic Alchemy - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "0_66_xp",
+      "name": "0.66 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_66",
+      "name": "0.66",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_110",
+      "name": "Tax 1,110",
+      "category": "materials"
+    },
+    {
+      "id": "1_110",
+      "name": "1,110",
+      "category": "materials"
+    },
+    {
+      "id": "3_030",
+      "name": "3,030",
+      "category": "materials"
+    },
+    {
+      "id": "tonic_of_gold_alchemy_lv_75",
+      "name": "Tonic of Gold Alchemy - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_75",
+      "name": "Alchemy - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "2_6_xp",
+      "name": "2.6 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_6",
+      "name": "2.6",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_073",
+      "name": "Tax 1,073",
+      "category": "materials"
+    },
+    {
+      "id": "1_073",
+      "name": "1,073",
+      "category": "materials"
+    },
+    {
+      "id": "11_633",
+      "name": "11,633",
+      "category": "materials"
+    },
+    {
+      "id": "tonic_of_undying_alchemy_lv_73",
+      "name": "Tonic of Undying Alchemy - Lv 73",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_73",
+      "name": "Alchemy - Lv 73",
+      "category": "materials"
+    },
+    {
+      "id": "2_25_xp",
+      "name": "2.25 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_25",
+      "name": "2.25",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_170",
+      "name": "Tax 1,170",
+      "category": "materials"
+    },
+    {
+      "id": "1_170",
+      "name": "1,170",
+      "category": "materials"
+    },
+    {
+      "id": "10_990",
+      "name": "10,990",
+      "category": "materials"
+    },
+    {
+      "id": "tonic_of_savage_instinct_alchemy_lv_71",
+      "name": "Tonic of Savage Instinct Alchemy - Lv 71",
+      "category": "materials"
+    },
+    {
+      "id": "alchemy_lv_71",
+      "name": "Alchemy - Lv 71",
+      "category": "materials"
+    },
+    {
+      "id": "2_44_xp",
+      "name": "2.44 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_44",
+      "name": "2.44",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_167",
+      "name": "Tax 1,167",
+      "category": "materials"
+    },
+    {
+      "id": "1_167",
+      "name": "1,167",
+      "category": "materials"
+    },
+    {
+      "id": "11_883",
+      "name": "11,883",
+      "category": "materials"
+    },
+    {
+      "id": "0_79_xp",
+      "name": "0.79 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_79",
+      "name": "0.79",
+      "category": "materials"
+    },
+    {
+      "id": "tax_2_334",
+      "name": "Tax 2,334",
+      "category": "materials"
+    },
+    {
+      "id": "2_334",
+      "name": "2,334",
+      "category": "materials"
+    },
+    {
+      "id": "7_660",
+      "name": "7,660",
+      "category": "materials"
+    },
+    {
+      "id": "copper_ingot_blacksmithing_lv_1",
+      "name": "Copper Ingot Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_1",
+      "name": "Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "0_24_xp",
+      "name": "0.24 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_24",
+      "name": "0.24",
+      "category": "materials"
+    },
+    {
+      "id": "tax_29",
+      "name": "Tax 29",
+      "category": "materials"
+    },
+    {
+      "id": "29",
+      "name": "29",
+      "category": "materials"
+    },
+    {
+      "id": "solid_mace_blacksmithing_lv_1",
+      "name": "Solid Mace Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "rough_sword_blacksmithing_lv_1",
+      "name": "Rough Sword Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "wicked_axe_blacksmithing_lv_1",
+      "name": "Wicked Axe Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "serrated_dagger_blacksmithing_lv_1",
+      "name": "Serrated Dagger Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "rough_greataxe_blacksmithing_lv_1",
+      "name": "Rough Greataxe Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "burnished_greatsword_blacksmithing_lv_1",
+      "name": "Burnished Greatsword Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "skirmishers_blade_blacksmithing_lv_1",
+      "name": "Skirmisher's Blade Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "shipbuilding_mallet_blacksmithing_lv_1",
+      "name": "Shipbuilding Mallet Blacksmithing - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "nail_blacksmithing_lv_2",
+      "name": "Nail Blacksmithing - Lv 2",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_2",
+      "name": "Blacksmithing - Lv 2",
+      "category": "materials"
+    },
+    {
+      "id": "pliant_armor_blacksmithing_lv_3",
+      "name": "Pliant Armor Blacksmithing - Lv 3",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_3",
+      "name": "Blacksmithing - Lv 3",
+      "category": "materials"
+    },
+    {
+      "id": "common_plate_blacksmithing_lv_4",
+      "name": "Common Plate Blacksmithing - Lv 4",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_4",
+      "name": "Blacksmithing - Lv 4",
+      "category": "materials"
+    },
+    {
+      "id": "pliant_helmet_blacksmithing_lv_5",
+      "name": "Pliant Helmet Blacksmithing - Lv 5",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_5",
+      "name": "Blacksmithing - Lv 5",
+      "category": "materials"
+    },
+    {
+      "id": "copper_fishing_hook_blacksmithing_lv_7",
+      "name": "Copper Fishing Hook Blacksmithing - Lv 7",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_7",
+      "name": "Blacksmithing - Lv 7",
+      "category": "materials"
+    },
+    {
+      "id": "pliant_legs_blacksmithing_lv_7",
+      "name": "Pliant Legs Blacksmithing - Lv 7",
+      "category": "materials"
+    },
+    {
+      "id": "pliant_boots_blacksmithing_lv_9",
+      "name": "Pliant Boots Blacksmithing - Lv 9",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_9",
+      "name": "Blacksmithing - Lv 9",
+      "category": "materials"
+    },
+    {
+      "id": "basic_tools_blacksmithing_lv_10",
+      "name": "Basic Tools Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_10",
+      "name": "Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "basic_distilary_station_blacksmithing_lv_10",
+      "name": "Basic Distilary Station Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "sentinel_shield_carpentry_lv_10",
+      "name": "Sentinel Shield Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_10",
+      "name": "Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "simple_headgear_blacksmithing_lv_12",
+      "name": "Simple Headgear Blacksmithing - Lv 12",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_12",
+      "name": "Blacksmithing - Lv 12",
+      "category": "materials"
+    },
+    {
+      "id": "simple_saddle_weaving_lv_12",
+      "name": "Simple Saddle Weaving - Lv 12",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_12",
+      "name": "Weaving - Lv 12",
+      "category": "materials"
+    },
+    {
+      "id": "iron_ingot_blacksmithing_lv_20",
+      "name": "Iron Ingot Blacksmithing - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_20",
+      "name": "Blacksmithing - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "tax_48",
+      "name": "Tax 48",
+      "category": "materials"
+    },
+    {
+      "id": "48",
+      "name": "48",
+      "category": "materials"
+    },
+    {
+      "id": "stove_blacksmithing_lv_20",
+      "name": "Stove Blacksmithing - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "reinforced_plate_blacksmithing_lv_20",
+      "name": "Reinforced Plate Blacksmithing - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "iron_bar_blacksmithing_lv_20",
+      "name": "Iron Bar Blacksmithing - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "malleable_anvil_blacksmithing_lv_20",
+      "name": "Malleable Anvil Blacksmithing - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "work_bench_carpentry_lv_20",
+      "name": "Work Bench Carpentry - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_20",
+      "name": "Carpentry - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "complex_fishing_hook_blacksmithing_lv_22",
+      "name": "Complex Fishing Hook Blacksmithing - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_22",
+      "name": "Blacksmithing - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "composed_saddle_weaving_lv_24",
+      "name": "Composed Saddle Weaving - Lv 24",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_24",
+      "name": "Weaving - Lv 24",
+      "category": "materials"
+    },
+    {
+      "id": "lawbreakers_sword_blacksmithing_lv_25",
+      "name": "Lawbreaker's Sword Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_25",
+      "name": "Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "dread_axe_blacksmithing_lv_25",
+      "name": "Dread Axe Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "shieldbreakers_flail_blacksmithing_lv_25",
+      "name": "Shieldbreaker's Flail Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "ice_dagger_blacksmithing_lv_25",
+      "name": "Ice Dagger Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "savage_battle_axe_blacksmithing_lv_25",
+      "name": "Savage Battle Axe Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "heroic_greatsword_blacksmithing_lv_25",
+      "name": "Heroic Greatsword Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "punishers_gavel_blacksmithing_lv_25",
+      "name": "Punisher's Gavel Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "serpentine_blade_blacksmithing_lv_25",
+      "name": "Serpentine Blade Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "minor_shielding_kit_blacksmithing_lv_25",
+      "name": "Minor Shielding Kit Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "small_cannon_kit_blacksmithing_lv_25",
+      "name": "Small Cannon Kit Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "simple_ship_emblems_kit_blacksmithing_lv_25",
+      "name": "Simple Ship Emblems Kit Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "basic_water_pumps_kit_blacksmithing_lv_25",
+      "name": "Basic Water Pumps Kit Blacksmithing - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "defenders_bulwark_carpentry_lv_25",
+      "name": "Defender's Bulwark Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_25",
+      "name": "Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "harbinger_armor_blacksmithing_lv_28",
+      "name": "Harbinger Armor Blacksmithing - Lv 28",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_28",
+      "name": "Blacksmithing - Lv 28",
+      "category": "materials"
+    },
+    {
+      "id": "harbinger_helmet_blacksmithing_lv_31",
+      "name": "Harbinger Helmet Blacksmithing - Lv 31",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_31",
+      "name": "Blacksmithing - Lv 31",
+      "category": "materials"
+    },
+    {
+      "id": "harbinger_legs_blacksmithing_lv_34",
+      "name": "Harbinger Legs Blacksmithing - Lv 34",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_34",
+      "name": "Blacksmithing - Lv 34",
+      "category": "materials"
+    },
+    {
+      "id": "advanced_headgear_blacksmithing_lv_36",
+      "name": "Advanced Headgear Blacksmithing - Lv 36",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_36",
+      "name": "Blacksmithing - Lv 36",
+      "category": "materials"
+    },
+    {
+      "id": "advanced_saddle_weaving_lv_36",
+      "name": "Advanced Saddle Weaving - Lv 36",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_36",
+      "name": "Weaving - Lv 36",
+      "category": "materials"
+    },
+    {
+      "id": "harbinger_boots_blacksmithing_lv_37",
+      "name": "Harbinger Boots Blacksmithing - Lv 37",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_37",
+      "name": "Blacksmithing - Lv 37",
+      "category": "materials"
+    },
+    {
+      "id": "steel_ingot_blacksmithing_lv_30",
+      "name": "Steel Ingot Blacksmithing - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_30",
+      "name": "Blacksmithing - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "tax_69",
+      "name": "Tax 69",
+      "category": "materials"
+    },
+    {
+      "id": "69",
+      "name": "69",
+      "category": "materials"
+    },
+    {
+      "id": "forging_tools_blacksmithing_lv_30",
+      "name": "Forging Tools Blacksmithing - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "woodwork_tools_blacksmithing_lv_30",
+      "name": "Woodwork Tools Blacksmithing - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "anvil_blacksmithing_lv_30",
+      "name": "Anvil Blacksmithing - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "furnace_blacksmithing_lv_30",
+      "name": "Furnace Blacksmithing - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "bolt_blacksmithing_lv_30",
+      "name": "Bolt Blacksmithing - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "condensing_station_blacksmithing_lv_30",
+      "name": "Condensing Station Blacksmithing - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "small_tradepack_container_kit_carpentry_lv_35",
+      "name": "Small Tradepack Container Kit Carpentry - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_35",
+      "name": "Carpentry - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "small_ammunition_cabin_kit_carpentry_lv_35",
+      "name": "Small Ammunition Cabin Kit Carpentry - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "small_fishing_crane_kit_carpentry_lv_35",
+      "name": "Small Fishing Crane Kit Carpentry - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "small_maintenance_unit_kit_carpentry_lv_35",
+      "name": "Small Maintenance Unit Kit Carpentry - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "steel_fishing_hook_blacksmithing_lv_37",
+      "name": "Steel Fishing Hook Blacksmithing - Lv 37",
+      "category": "materials"
+    },
+    {
+      "id": "guardians_longsword_blacksmithing_lv_40",
+      "name": "Guardian's Longsword Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_40",
+      "name": "Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "stormcarver_axe_blacksmithing_lv_40",
+      "name": "Stormcarver Axe Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "ravenguard_morningstar_blacksmithing_lv_40",
+      "name": "Ravenguard Morningstar Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "heartstopper_dagger_blacksmithing_lv_40",
+      "name": "Heartstopper Dagger Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "hangmans_greataxe_blacksmithing_lv_40",
+      "name": "Hangman's Greataxe Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "bonebiter_greatsword_blacksmithing_lv_40",
+      "name": "Bonebiter Greatsword Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "lawgivers_warhammer_blacksmithing_lv_40",
+      "name": "Lawgiver's Warhammer Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "duelists_companion_blacksmithing_lv_40",
+      "name": "Duelist's Companion Blacksmithing - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "steelclad_bulwark_carpentry_lv_40",
+      "name": "Steelclad Bulwark Carpentry - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_40",
+      "name": "Carpentry - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "enforcer_armor_blacksmithing_lv_43",
+      "name": "Enforcer Armor Blacksmithing - Lv 43",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_43",
+      "name": "Blacksmithing - Lv 43",
+      "category": "materials"
+    },
+    {
+      "id": "sturdy_shielding_kit_blacksmithing_lv_45",
+      "name": "Sturdy Shielding Kit Blacksmithing - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_45",
+      "name": "Blacksmithing - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "steel_bar_blacksmithing_lv_45",
+      "name": "Steel Bar Blacksmithing - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "superior_work_bench_carpentry_lv_45",
+      "name": "Superior Work Bench Carpentry - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_45",
+      "name": "Carpentry - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "enforcer_helmet_blacksmithing_lv_46",
+      "name": "Enforcer Helmet Blacksmithing - Lv 46",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_46",
+      "name": "Blacksmithing - Lv 46",
+      "category": "materials"
+    },
+    {
+      "id": "artisan_headgear_blacksmithing_lv_48",
+      "name": "Artisan Headgear Blacksmithing - Lv 48",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_48",
+      "name": "Blacksmithing - Lv 48",
+      "category": "materials"
+    },
+    {
+      "id": "artisan_saddle_weaving_lv_48",
+      "name": "Artisan Saddle Weaving - Lv 48",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_48",
+      "name": "Weaving - Lv 48",
+      "category": "materials"
+    },
+    {
+      "id": "enforcer_legs_blacksmithing_lv_49",
+      "name": "Enforcer Legs Blacksmithing - Lv 49",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_49",
+      "name": "Blacksmithing - Lv 49",
+      "category": "materials"
+    },
+    {
+      "id": "superior_forging_tools_blacksmithing_lv_50",
+      "name": "Superior Forging Tools Blacksmithing - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_50",
+      "name": "Blacksmithing - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "superior_stove_blacksmithing_lv_50",
+      "name": "Superior Stove Blacksmithing - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "shiny_ship_emblems_kit_blacksmithing_lv_50",
+      "name": "Shiny Ship Emblems Kit Blacksmithing - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "medium_cannon_kit_blacksmithing_lv_50",
+      "name": "Medium Cannon Kit Blacksmithing - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "armory_racks_blacksmithing_lv_50",
+      "name": "Armory Racks Blacksmithing - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "gear_maintenance_tools_blacksmithing_lv_50",
+      "name": "Gear Maintenance Tools Blacksmithing - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "enforcer_boots_blacksmithing_lv_52",
+      "name": "Enforcer Boots Blacksmithing - Lv 52",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_52",
+      "name": "Blacksmithing - Lv 52",
+      "category": "materials"
+    },
+    {
+      "id": "cobalt_ingot_blacksmithing_lv_50",
+      "name": "Cobalt Ingot Blacksmithing - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "tax_99",
+      "name": "Tax 99",
+      "category": "materials"
+    },
+    {
+      "id": "99",
+      "name": "99",
+      "category": "materials"
+    },
+    {
+      "id": "enhanced_water_pumps_kit_blacksmithing_lv_45",
+      "name": "Enhanced Water Pumps Kit Blacksmithing - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "cobalt_fishing_hook_blacksmithing_lv_52",
+      "name": "Cobalt Fishing Hook Blacksmithing - Lv 52",
+      "category": "materials"
+    },
+    {
+      "id": "crusaders_longsword_blacksmithing_lv_55",
+      "name": "Crusader's Longsword Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_55",
+      "name": "Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "hellblade_axe_blacksmithing_lv_55",
+      "name": "Hellblade Axe Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "enforcers_mace_blacksmithing_lv_55",
+      "name": "Enforcer's Mace Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "assassins_dagger_blacksmithing_lv_55",
+      "name": "Assassin's Dagger Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "orcish_battle_axe_blacksmithing_lv_55",
+      "name": "Orcish Battle Axe Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "samurais_daikatana_blacksmithing_lv_55",
+      "name": "Samurai's Daikatana Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "dwarven_warhammer_blacksmithing_lv_55",
+      "name": "Dwarven Warhammer Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "ornamented_saber_blacksmithing_lv_55",
+      "name": "Ornamented Saber Blacksmithing - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "kings_defender_carpentry_lv_55",
+      "name": "King's Defender Carpentry - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_55",
+      "name": "Carpentry - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "protectors_armor_blacksmithing_lv_58",
+      "name": "Protector's Armor Blacksmithing - Lv 58",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_58",
+      "name": "Blacksmithing - Lv 58",
+      "category": "materials"
+    },
+    {
+      "id": "superior_headgear_blacksmithing_lv_60",
+      "name": "Superior Headgear Blacksmithing - Lv 60",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_60",
+      "name": "Blacksmithing - Lv 60",
+      "category": "materials"
+    },
+    {
+      "id": "superior_saddle_weaving_lv_60",
+      "name": "Superior Saddle Weaving - Lv 60",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_60",
+      "name": "Weaving - Lv 60",
+      "category": "materials"
+    },
+    {
+      "id": "protectors_helmet_blacksmithing_lv_61",
+      "name": "Protector's Helmet Blacksmithing - Lv 61",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_61",
+      "name": "Blacksmithing - Lv 61",
+      "category": "materials"
+    },
+    {
+      "id": "protectors_legs_blacksmithing_lv_64",
+      "name": "Protector's Legs Blacksmithing - Lv 64",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_64",
+      "name": "Blacksmithing - Lv 64",
+      "category": "materials"
+    },
+    {
+      "id": "medium_tradepack_container_kit_carpentry_lv_65",
+      "name": "Medium Tradepack Container Kit Carpentry - Lv 65",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_65",
+      "name": "Carpentry - Lv 65",
+      "category": "materials"
+    },
+    {
+      "id": "medium_ammunition_cabin_kit_carpentry_lv_65",
+      "name": "Medium Ammunition Cabin Kit Carpentry - Lv 65",
+      "category": "materials"
+    },
+    {
+      "id": "medium_fishing_crane_kit_carpentry_lv_65",
+      "name": "Medium Fishing Crane Kit Carpentry - Lv 65",
+      "category": "materials"
+    },
+    {
+      "id": "medium_maintenance_unit_kit_carpentry_lv_65",
+      "name": "Medium Maintenance Unit Kit Carpentry - Lv 65",
+      "category": "materials"
+    },
+    {
+      "id": "protectors_boots_blacksmithing_lv_67",
+      "name": "Protector's Boots Blacksmithing - Lv 67",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_67",
+      "name": "Blacksmithing - Lv 67",
+      "category": "materials"
+    },
+    {
+      "id": "artisan_forging_tools_blacksmithing_lv_70",
+      "name": "Artisan Forging Tools Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_70",
+      "name": "Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "improved_woodwork_tools_blacksmithing_lv_70",
+      "name": "Improved Woodwork Tools Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "forgemaster_anvil_blacksmithing_lv_70",
+      "name": "Forgemaster Anvil Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "forge_blacksmithing_lv_70",
+      "name": "Forge Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "artisan_stove_blacksmithing_lv_70",
+      "name": "Artisan Stove Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "large_cannon_kit_blacksmithing_lv_70",
+      "name": "Large Cannon Kit Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "thief_tools_blacksmithing_lv_70",
+      "name": "Thief Tools Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "warmonger_tools_blacksmithing_lv_70",
+      "name": "Warmonger Tools Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "distilary_station_blacksmithing_lv_70",
+      "name": "Distilary Station Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "artisan_work_bench_carpentry_lv_70",
+      "name": "Artisan Work Bench Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_70",
+      "name": "Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "reinforced_shielding_kit_blacksmithing_lv_75",
+      "name": "Reinforced Shielding Kit Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_75",
+      "name": "Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "adorned_ship_emblems_kit_blacksmithing_lv_75",
+      "name": "Adorned Ship Emblems Kit Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "glimmery_ingot_blacksmithing_lv_88",
+      "name": "Glimmery Ingot Blacksmithing - Lv 88",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_88",
+      "name": "Blacksmithing - Lv 88",
+      "category": "materials"
+    },
+    {
+      "id": "titanium_ingot_blacksmithing_lv_70",
+      "name": "Titanium Ingot Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "tax_156",
+      "name": "Tax 156",
+      "category": "materials"
+    },
+    {
+      "id": "156",
+      "name": "156",
+      "category": "materials"
+    },
+    {
+      "id": "reinforced_racks_blacksmithing_lv_70",
+      "name": "Reinforced Racks Blacksmithing - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "titanium_fishing_hook_blacksmithing_lv_72",
+      "name": "Titanium Fishing Hook Blacksmithing - Lv 72",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_72",
+      "name": "Blacksmithing - Lv 72",
+      "category": "materials"
+    },
+    {
+      "id": "champions_longsword_blacksmithing_lv_75",
+      "name": "Champion's Longsword Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "dragonbane_axe_blacksmithing_lv_75",
+      "name": "Dragonbane Axe Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "skullbasher_mace_blacksmithing_lv_75",
+      "name": "Skullbasher Mace Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "ritual_dagger_blacksmithing_lv_75",
+      "name": "Ritual Dagger Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "scarlet_thorn_blacksmithing_lv_75",
+      "name": "Scarlet Thorn Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "nocturnal_greataxe_blacksmithing_lv_75",
+      "name": "Nocturnal Greataxe Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "magisters_greatsword_blacksmithing_lv_75",
+      "name": "Magister's Greatsword Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "soulwardens_hammer_blacksmithing_lv_75",
+      "name": "Soulwarden's Hammer Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "pressurized_water_pumps_kit_blacksmithing_lv_75",
+      "name": "Pressurized Water Pumps Kit Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "war_headgear_blacksmithing_lv_75",
+      "name": "War Headgear Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "explorer_headgear_blacksmithing_lv_75",
+      "name": "Explorer Headgear Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "professional_headgear_blacksmithing_lv_75",
+      "name": "Professional Headgear Blacksmithing - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "protectors_tower_shield_carpentry_lv_75",
+      "name": "Protector's Tower Shield Carpentry - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_75",
+      "name": "Carpentry - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "war_saddle_weaving_lv_75",
+      "name": "War Saddle Weaving - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_75",
+      "name": "Weaving - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "explorer_saddle_weaving_lv_75",
+      "name": "Explorer Saddle Weaving - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "professional_saddle_weaving_lv_75",
+      "name": "Professional Saddle Weaving - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "chivalry_armor_blacksmithing_lv_78",
+      "name": "Chivalry Armor Blacksmithing - Lv 78",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_78",
+      "name": "Blacksmithing - Lv 78",
+      "category": "materials"
+    },
+    {
+      "id": "chivalry_helmet_blacksmithing_lv_80",
+      "name": "Chivalry Helmet Blacksmithing - Lv 80",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_80",
+      "name": "Blacksmithing - Lv 80",
+      "category": "materials"
+    },
+    {
+      "id": "chivalry_legs_blacksmithing_lv_82",
+      "name": "Chivalry Legs Blacksmithing - Lv 82",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_82",
+      "name": "Blacksmithing - Lv 82",
+      "category": "materials"
+    },
+    {
+      "id": "chivalry_boots_blacksmithing_lv_84",
+      "name": "Chivalry Boots Blacksmithing - Lv 84",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_84",
+      "name": "Blacksmithing - Lv 84",
+      "category": "materials"
+    },
+    {
+      "id": "bronze_ingot_blacksmithing_lv_10",
+      "name": "Bronze Ingot Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "tax_40",
+      "name": "Tax 40",
+      "category": "materials"
+    },
+    {
+      "id": "40",
+      "name": "40",
+      "category": "materials"
+    },
+    {
+      "id": "wardens_sword_blacksmithing_lv_10",
+      "name": "Warden's Sword Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "marauders_axe_blacksmithing_lv_10",
+      "name": "Marauder's Axe Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "studded_flail_blacksmithing_lv_10",
+      "name": "Studded Flail Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "noble_dagger_blacksmithing_lv_10",
+      "name": "Noble Dagger Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "warriors_greataxe_blacksmithing_lv_10",
+      "name": "Warrior's Greataxe Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "valiant_greatsword_blacksmithing_lv_10",
+      "name": "Valiant Greatsword Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "crushing_hammer_blacksmithing_lv_10",
+      "name": "Crushing Hammer Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "swashbucklers_blade_blacksmithing_lv_10",
+      "name": "Swashbuckler's Blade Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "arcane_reflector_blacksmithing_lv_10",
+      "name": "Arcane Reflector Blacksmithing - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "small_hull_frame_carpentry_lv_10",
+      "name": "Small Hull Frame Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "small_cargo_hold_carpentry_lv_10",
+      "name": "Small Cargo Hold Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "small_gun_deck_carpentry_lv_10",
+      "name": "Small Gun Deck Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "small_fishing_storage_carpentry_lv_10",
+      "name": "Small Fishing Storage Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "mast_carpentry_lv_10",
+      "name": "Mast Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "crescent_armor_blacksmithing_lv_13",
+      "name": "Crescent Armor Blacksmithing - Lv 13",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_13",
+      "name": "Blacksmithing - Lv 13",
+      "category": "materials"
+    },
+    {
+      "id": "crescent_helmet_blacksmithing_lv_16",
+      "name": "Crescent Helmet Blacksmithing - Lv 16",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_16",
+      "name": "Blacksmithing - Lv 16",
+      "category": "materials"
+    },
+    {
+      "id": "crescent_legs_blacksmithing_lv_19",
+      "name": "Crescent Legs Blacksmithing - Lv 19",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_19",
+      "name": "Blacksmithing - Lv 19",
+      "category": "materials"
+    },
+    {
+      "id": "weak_racks_blacksmithing_lv_20",
+      "name": "Weak Racks Blacksmithing - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "malleable_screw_blacksmithing_lv_20",
+      "name": "Malleable Screw Blacksmithing - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "crescent_boots_blacksmithing_lv_22",
+      "name": "Crescent Boots Blacksmithing - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "composed_headgear_blacksmithing_lv_24",
+      "name": "Composed Headgear Blacksmithing - Lv 24",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_24",
+      "name": "Blacksmithing - Lv 24",
+      "category": "materials"
+    },
+    {
+      "id": "tax_480",
+      "name": "Tax 480",
+      "category": "materials"
+    },
+    {
+      "id": "480",
+      "name": "480",
+      "category": "materials"
+    },
+    {
+      "id": "warlords_longsword_blacksmithing_lv_90",
+      "name": "Warlord's Longsword Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_90",
+      "name": "Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "doomgem_axe_blacksmithing_lv_90",
+      "name": "Doomgem Axe Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "tyrants_mace_blacksmithing_lv_90",
+      "name": "Tyrant's Mace Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "soulstealers_blade_blacksmithing_lv_90",
+      "name": "Soulstealer's Blade Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "voidborne_blade_blacksmithing_lv_90",
+      "name": "Voidborne Blade Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "runic_greataxe_blacksmithing_lv_90",
+      "name": "Runic Greataxe Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "twilight_greatsword_blacksmithing_lv_90",
+      "name": "Twilight Greatsword Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "indomitable_hammer_blacksmithing_lv_90",
+      "name": "Indomitable Hammer Blacksmithing - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "cosmic_staff_carpentry_lv_90",
+      "name": "Cosmic Staff Carpentry - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_90",
+      "name": "Carpentry - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "lunar_sceptre_carpentry_lv_90",
+      "name": "Lunar Sceptre Carpentry - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "imperial_bulwark_carpentry_lv_90",
+      "name": "Imperial Bulwark Carpentry - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "indomitable_armor_blacksmithing_lv_93",
+      "name": "Indomitable Armor Blacksmithing - Lv 93",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_93",
+      "name": "Blacksmithing - Lv 93",
+      "category": "materials"
+    },
+    {
+      "id": "indomitable_helmet_blacksmithing_lv_96",
+      "name": "Indomitable Helmet Blacksmithing - Lv 96",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_96",
+      "name": "Blacksmithing - Lv 96",
+      "category": "materials"
+    },
+    {
+      "id": "indomitable_legs_blacksmithing_lv_99",
+      "name": "Indomitable Legs Blacksmithing - Lv 99",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_99",
+      "name": "Blacksmithing - Lv 99",
+      "category": "materials"
+    },
+    {
+      "id": "indomitable_boots_blacksmithing_lv_102",
+      "name": "Indomitable Boots Blacksmithing - Lv 102",
+      "category": "materials"
+    },
+    {
+      "id": "blacksmithing_lv_102",
+      "name": "Blacksmithing - Lv 102",
+      "category": "materials"
+    },
+    {
+      "id": "beer_cooking_lv_5",
+      "name": "Beer Cooking - Lv 5",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_5",
+      "name": "Cooking - Lv 5",
+      "category": "materials"
+    },
+    {
+      "id": "1_24_xp",
+      "name": "1.24 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_24",
+      "name": "1.24",
+      "category": "materials"
+    },
+    {
+      "id": "357",
+      "name": "357",
+      "category": "materials"
+    },
+    {
+      "id": "71_unit",
+      "name": "71 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "71",
+      "name": "71",
+      "category": "materials"
+    },
+    {
+      "id": "wine_cooking_lv_20",
+      "name": "Wine Cooking - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_20",
+      "name": "Cooking - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "1_01_xp",
+      "name": "1.01 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_01",
+      "name": "1.01",
+      "category": "materials"
+    },
+    {
+      "id": "tax_180",
+      "name": "Tax 180",
+      "category": "materials"
+    },
+    {
+      "id": "180",
+      "name": "180",
+      "category": "materials"
+    },
+    {
+      "id": "756",
+      "name": "756",
+      "category": "materials"
+    },
+    {
+      "id": "151_unit",
+      "name": "151 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "151",
+      "name": "151",
+      "category": "materials"
+    },
+    {
+      "id": "whiskey_cooking_lv_22",
+      "name": "Whiskey Cooking - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_22",
+      "name": "Cooking - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "tax_219",
+      "name": "Tax 219",
+      "category": "materials"
+    },
+    {
+      "id": "219",
+      "name": "219",
+      "category": "materials"
+    },
+    {
+      "id": "1_131",
+      "name": "1,131",
+      "category": "materials"
+    },
+    {
+      "id": "226_unit",
+      "name": "226 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "226",
+      "name": "226",
+      "category": "materials"
+    },
+    {
+      "id": "vodka_cooking_lv_1",
+      "name": "Vodka Cooking - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_1",
+      "name": "Cooking - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "1_2_xp",
+      "name": "1.2 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_2",
+      "name": "1.2",
+      "category": "materials"
+    },
+    {
+      "id": "tax_30",
+      "name": "Tax 30",
+      "category": "materials"
+    },
+    {
+      "id": "30",
+      "name": "30",
+      "category": "materials"
+    },
+    {
+      "id": "30_unit",
+      "name": "30 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "rum_cooking_lv_32",
+      "name": "Rum Cooking - Lv 32",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_32",
+      "name": "Cooking - Lv 32",
+      "category": "materials"
+    },
+    {
+      "id": "0_84_xp",
+      "name": "0.84 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_84",
+      "name": "0.84",
+      "category": "materials"
+    },
+    {
+      "id": "tax_399",
+      "name": "Tax 399",
+      "category": "materials"
+    },
+    {
+      "id": "399",
+      "name": "399",
+      "category": "materials"
+    },
+    {
+      "id": "1_389",
+      "name": "1,389",
+      "category": "materials"
+    },
+    {
+      "id": "278_unit",
+      "name": "278 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "278",
+      "name": "278",
+      "category": "materials"
+    },
+    {
+      "id": "apple_cider_cooking_lv_17",
+      "name": "Apple Cider Cooking - Lv 17",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_17",
+      "name": "Cooking - Lv 17",
+      "category": "materials"
+    },
+    {
+      "id": "1_xp",
+      "name": "1 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1",
+      "name": "1",
+      "category": "materials"
+    },
+    {
+      "id": "624",
+      "name": "624",
+      "category": "materials"
+    },
+    {
+      "id": "125_unit",
+      "name": "125 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "125",
+      "name": "125",
+      "category": "materials"
+    },
+    {
+      "id": "blueberry_wine_cooking_lv_40",
+      "name": "Blueberry Wine Cooking - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_40",
+      "name": "Cooking - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "1_14_xp",
+      "name": "1.14 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_14",
+      "name": "1.14",
+      "category": "materials"
+    },
+    {
+      "id": "tax_578",
+      "name": "Tax 578",
+      "category": "materials"
+    },
+    {
+      "id": "578",
+      "name": "578",
+      "category": "materials"
+    },
+    {
+      "id": "2_738",
+      "name": "2,738",
+      "category": "materials"
+    },
+    {
+      "id": "548_unit",
+      "name": "548 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "548",
+      "name": "548",
+      "category": "materials"
+    },
+    {
+      "id": "strawberry_whiskey_cooking_lv_72",
+      "name": "Strawberry Whiskey Cooking - Lv 72",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_72",
+      "name": "Cooking - Lv 72",
+      "category": "materials"
+    },
+    {
+      "id": "1_28_xp",
+      "name": "1.28 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_28",
+      "name": "1.28",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_890",
+      "name": "Tax 1,890",
+      "category": "materials"
+    },
+    {
+      "id": "1_890",
+      "name": "1,890",
+      "category": "materials"
+    },
+    {
+      "id": "10_118",
+      "name": "10,118",
+      "category": "materials"
+    },
+    {
+      "id": "2_024_unit",
+      "name": "2,024 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "2_024",
+      "name": "2,024",
+      "category": "materials"
+    },
+    {
+      "id": "banana_vodka_cooking_lv_57",
+      "name": "Banana Vodka Cooking - Lv 57",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_57",
+      "name": "Cooking - Lv 57",
+      "category": "materials"
+    },
+    {
+      "id": "1_04_xp",
+      "name": "1.04 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_04",
+      "name": "1.04",
+      "category": "materials"
+    },
+    {
+      "id": "tax_981",
+      "name": "Tax 981",
+      "category": "materials"
+    },
+    {
+      "id": "981",
+      "name": "981",
+      "category": "materials"
+    },
+    {
+      "id": "4_251",
+      "name": "4,251",
+      "category": "materials"
+    },
+    {
+      "id": "850_unit",
+      "name": "850 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "850",
+      "name": "850",
+      "category": "materials"
+    },
+    {
+      "id": "spiced_rum_cooking_lv_55",
+      "name": "Spiced Rum Cooking - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_55",
+      "name": "Cooking - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "1_02_xp",
+      "name": "1.02 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_02",
+      "name": "1.02",
+      "category": "materials"
+    },
+    {
+      "id": "tax_936",
+      "name": "Tax 936",
+      "category": "materials"
+    },
+    {
+      "id": "936",
+      "name": "936",
+      "category": "materials"
+    },
+    {
+      "id": "3_996",
+      "name": "3,996",
+      "category": "materials"
+    },
+    {
+      "id": "799_unit",
+      "name": "799 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "799",
+      "name": "799",
+      "category": "materials"
+    },
+    {
+      "id": "eclipse_cooking_lv_70",
+      "name": "Eclipse Cooking - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_70",
+      "name": "Cooking - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "tax_1_680",
+      "name": "Tax 1,680",
+      "category": "materials"
+    },
+    {
+      "id": "1_680",
+      "name": "1,680",
+      "category": "materials"
+    },
+    {
+      "id": "9_792",
+      "name": "9,792",
+      "category": "materials"
+    },
+    {
+      "id": "1_958_unit",
+      "name": "1,958 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_958",
+      "name": "1,958",
+      "category": "materials"
+    },
+    {
+      "id": "landing_brandy_cooking_lv_10",
+      "name": "Landing Brandy Cooking - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_10",
+      "name": "Cooking - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "0_95_xp",
+      "name": "0.95 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_95",
+      "name": "0.95",
+      "category": "materials"
+    },
+    {
+      "id": "tax_113",
+      "name": "Tax 113",
+      "category": "materials"
+    },
+    {
+      "id": "113",
+      "name": "113",
+      "category": "materials"
+    },
+    {
+      "id": "443",
+      "name": "443",
+      "category": "materials"
+    },
+    {
+      "id": "89_unit",
+      "name": "89 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "89",
+      "name": "89",
+      "category": "materials"
+    },
+    {
+      "id": "orange_liqueur_cooking_lv_30",
+      "name": "Orange Liqueur Cooking - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_30",
+      "name": "Cooking - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "tax_450",
+      "name": "Tax 450",
+      "category": "materials"
+    },
+    {
+      "id": "450",
+      "name": "450",
+      "category": "materials"
+    },
+    {
+      "id": "1_786",
+      "name": "1,786",
+      "category": "materials"
+    },
+    {
+      "id": "357_unit",
+      "name": "357 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "boozemelon_cooking_lv_42",
+      "name": "Boozemelon Cooking - Lv 42",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_42",
+      "name": "Cooking - Lv 42",
+      "category": "materials"
+    },
+    {
+      "id": "1_32_xp",
+      "name": "1.32 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "1_32",
+      "name": "1.32",
+      "category": "materials"
+    },
+    {
+      "id": "tax_612",
+      "name": "Tax 612",
+      "category": "materials"
+    },
+    {
+      "id": "612",
+      "name": "612",
+      "category": "materials"
+    },
+    {
+      "id": "3_372",
+      "name": "3,372",
+      "category": "materials"
+    },
+    {
+      "id": "674_unit",
+      "name": "674 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "674",
+      "name": "674",
+      "category": "materials"
+    },
+    {
+      "id": "fermented_liquor_cooking_lv_78",
+      "name": "Fermented Liquor Cooking - Lv 78",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_78",
+      "name": "Cooking - Lv 78",
+      "category": "materials"
+    },
+    {
+      "id": "0_64_xp",
+      "name": "0.64 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_64",
+      "name": "0.64",
+      "category": "materials"
+    },
+    {
+      "id": "tax_2_160",
+      "name": "Tax 2,160",
+      "category": "materials"
+    },
+    {
+      "id": "2_160",
+      "name": "2,160",
+      "category": "materials"
+    },
+    {
+      "id": "5_760",
+      "name": "5,760",
+      "category": "materials"
+    },
+    {
+      "id": "1_152_unit",
+      "name": "1,152 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "seabrew_cooking_lv_88",
+      "name": "Seabrew Cooking - Lv 88",
+      "category": "materials"
+    },
+    {
+      "id": "cooking_lv_88",
+      "name": "Cooking - Lv 88",
+      "category": "materials"
+    },
+    {
+      "id": "0_4_xp",
+      "name": "0.4 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_4",
+      "name": "0.4",
+      "category": "materials"
+    },
+    {
+      "id": "tax_3_000",
+      "name": "Tax 3,000",
+      "category": "materials"
+    },
+    {
+      "id": "3_000",
+      "name": "3,000",
+      "category": "materials"
+    },
+    {
+      "id": "5_004",
+      "name": "5,004",
+      "category": "materials"
+    },
+    {
+      "id": "1_001_unit",
+      "name": "1,001 /unit",
+      "category": "materials"
+    },
+    {
+      "id": "1_001",
+      "name": "1,001",
+      "category": "materials"
+    },
+    {
+      "id": "rough_plank_carpentry_lv_1",
+      "name": "Rough Plank Carpentry - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_1",
+      "name": "Carpentry - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "3_24_xp",
+      "name": "3.24 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "3_24",
+      "name": "3.24",
+      "category": "materials"
+    },
+    {
+      "id": "tax_53",
+      "name": "Tax 53",
+      "category": "materials"
+    },
+    {
+      "id": "53",
+      "name": "53",
+      "category": "materials"
+    },
+    {
+      "id": "713",
+      "name": "713",
+      "category": "materials"
+    },
+    {
+      "id": "oakwood_bow_carpentry_lv_1",
+      "name": "Oakwood Bow Carpentry - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "mystic_staff_carpentry_lv_1",
+      "name": "Mystic Staff Carpentry - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "knotted_sceptre_carpentry_lv_1",
+      "name": "Knotted Sceptre Carpentry - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "wooden_buckler_carpentry_lv_1",
+      "name": "Wooden Buckler Carpentry - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "wooden_bulwark_carpentry_lv_1",
+      "name": "Wooden Bulwark Carpentry - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "fishing_stick_carpentry_lv_3",
+      "name": "Fishing Stick Carpentry - Lv 3",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_3",
+      "name": "Carpentry - Lv 3",
+      "category": "materials"
+    },
+    {
+      "id": "handguard_carpentry_lv_3",
+      "name": "Handguard Carpentry - Lv 3",
+      "category": "materials"
+    },
+    {
+      "id": "common_wheel_carpentry_lv_9",
+      "name": "Common Wheel Carpentry - Lv 9",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_9",
+      "name": "Carpentry - Lv 9",
+      "category": "materials"
+    },
+    {
+      "id": "vipers_bow_carpentry_lv_10",
+      "name": "Viper's Bow Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "warlock_staff_carpentry_lv_10",
+      "name": "Warlock Staff Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "tribal_sceptre_carpentry_lv_10",
+      "name": "Tribal Sceptre Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "small_wagon_container_carpentry_lv_10",
+      "name": "Small Wagon Container Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "weak_table_carpentry_lv_10",
+      "name": "Weak Table Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "frail_loom_carpentry_lv_10",
+      "name": "Frail Loom Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "sturdy_buckler_carpentry_lv_10",
+      "name": "Sturdy Buckler Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "basic_stabilizer_carpentry_lv_10",
+      "name": "Basic Stabilizer Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "fishing_rod_carpentry_lv_18",
+      "name": "Fishing Rod Carpentry - Lv 18",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_18",
+      "name": "Carpentry - Lv 18",
+      "category": "materials"
+    },
+    {
+      "id": "refined_plank_carpentry_lv_10",
+      "name": "Refined Plank Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "tax_96",
+      "name": "Tax 96",
+      "category": "materials"
+    },
+    {
+      "id": "96",
+      "name": "96",
+      "category": "materials"
+    },
+    {
+      "id": "1_296",
+      "name": "1,296",
+      "category": "materials"
+    },
+    {
+      "id": "chair_carpentry_lv_20",
+      "name": "Chair Carpentry - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "simple_bed_carpentry_lv_20",
+      "name": "Simple Bed Carpentry - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "storage_container_carpentry_lv_20",
+      "name": "Storage Container Carpentry - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "wooden_arch_carpentry_lv_20",
+      "name": "Wooden Arch Carpentry - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "black_ash_bow_carpentry_lv_25",
+      "name": "Black Ash Bow Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "cultist_staff_carpentry_lv_25",
+      "name": "Cultist Staff Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "serpent_sceptre_carpentry_lv_25",
+      "name": "Serpent Sceptre Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "marauders_shield_carpentry_lv_25",
+      "name": "Marauder's Shield Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "wall_reinforcement_carpentry_lv_25",
+      "name": "Wall Reinforcement Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "swift_wheel_carpentry_lv_26",
+      "name": "Swift Wheel Carpentry - Lv 26",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_26",
+      "name": "Carpentry - Lv 26",
+      "category": "materials"
+    },
+    {
+      "id": "common_wagon_container_carpentry_lv_27",
+      "name": "Common Wagon Container Carpentry - Lv 27",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_27",
+      "name": "Carpentry - Lv 27",
+      "category": "materials"
+    },
+    {
+      "id": "craftmans_fishing_rod_carpentry_lv_28",
+      "name": "Craftman's Fishing Rod Carpentry - Lv 28",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_28",
+      "name": "Carpentry - Lv 28",
+      "category": "materials"
+    },
+    {
+      "id": "treated_plank_carpentry_lv_25",
+      "name": "Treated Plank Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "4_28_xp",
+      "name": "4.28 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "4_28",
+      "name": "4.28",
+      "category": "materials"
+    },
+    {
+      "id": "tax_165",
+      "name": "Tax 165",
+      "category": "materials"
+    },
+    {
+      "id": "165",
+      "name": "165",
+      "category": "materials"
+    },
+    {
+      "id": "2_941",
+      "name": "2,941",
+      "category": "materials"
+    },
+    {
+      "id": "medium_hull_frame_carpentry_lv_25",
+      "name": "Medium Hull Frame Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "medium_cargo_hold_carpentry_lv_25",
+      "name": "Medium Cargo Hold Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "medium_fishing_storage_carpentry_lv_25",
+      "name": "Medium Fishing Storage Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "medium_gun_deck_carpentry_lv_25",
+      "name": "Medium Gun Deck Carpentry - Lv 25",
+      "category": "materials"
+    },
+    {
+      "id": "simple_loom_carpentry_lv_30",
+      "name": "Simple Loom Carpentry - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_30",
+      "name": "Carpentry - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "protective_charm_carpentry_lv_30",
+      "name": "Protective Charm Carpentry - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "energy_stabilizer_carpentry_lv_30",
+      "name": "Energy Stabilizer Carpentry - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "bullseye_bow_carpentry_lv_40",
+      "name": "Bullseye Bow Carpentry - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "celestial_staff_carpentry_lv_40",
+      "name": "Celestial Staff Carpentry - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "crystal_sceptre_carpentry_lv_40",
+      "name": "Crystal Sceptre Carpentry - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "rune_shield_carpentry_lv_40",
+      "name": "Rune Shield Carpentry - Lv 40",
+      "category": "materials"
+    },
+    {
+      "id": "sturdy_wheel_carpentry_lv_41",
+      "name": "Sturdy Wheel Carpentry - Lv 41",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_41",
+      "name": "Carpentry - Lv 41",
+      "category": "materials"
+    },
+    {
+      "id": "medium_wagon_container_carpentry_lv_42",
+      "name": "Medium Wagon Container Carpentry - Lv 42",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_42",
+      "name": "Carpentry - Lv 42",
+      "category": "materials"
+    },
+    {
+      "id": "sailors_fishing_rod_carpentry_lv_43",
+      "name": "Sailor's Fishing Rod Carpentry - Lv 43",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_43",
+      "name": "Carpentry - Lv 43",
+      "category": "materials"
+    },
+    {
+      "id": "square_table_carpentry_lv_45",
+      "name": "Square Table Carpentry - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "cabinet_carpentry_lv_45",
+      "name": "Cabinet Carpentry - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "comfortable_bed_carpentry_lv_45",
+      "name": "Comfortable Bed Carpentry - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "supple_wooden_arch_carpentry_lv_45",
+      "name": "Supple Wooden Arch Carpentry - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "dense_plank_carpentry_lv_10",
+      "name": "Dense Plank Carpentry - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "tax_255",
+      "name": "Tax 255",
+      "category": "materials"
+    },
+    {
+      "id": "255",
+      "name": "255",
+      "category": "materials"
+    },
+    {
+      "id": "rough_handguard_carpentry_lv_18",
+      "name": "Rough Handguard Carpentry - Lv 18",
+      "category": "materials"
+    },
+    {
+      "id": "herb_mixing_table_carpentry_lv_20",
+      "name": "Herb Mixing Table Carpentry - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "supply_locker_carpentry_lv_20",
+      "name": "Supply Locker Carpentry - Lv 20",
+      "category": "materials"
+    },
+    {
+      "id": "heavy_handguard_carpentry_lv_33",
+      "name": "Heavy Handguard Carpentry - Lv 33",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_33",
+      "name": "Carpentry - Lv 33",
+      "category": "materials"
+    },
+    {
+      "id": "preparation_table_carpentry_lv_50",
+      "name": "Preparation Table Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_50",
+      "name": "Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "reinforced_locker_carpentry_lv_50",
+      "name": "Reinforced Locker Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "mystic_tools_carpentry_lv_50",
+      "name": "Mystic Tools Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "alchemists_table_carpentry_lv_70",
+      "name": "Alchemist's Table Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "arcanist_tools_carpentry_lv_70",
+      "name": "Arcanist Tools Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "heavy_plank_carpentry_lv_30",
+      "name": "Heavy Plank Carpentry - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "0_68_xp",
+      "name": "0.68 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "0_68",
+      "name": "0.68",
+      "category": "materials"
+    },
+    {
+      "id": "tax_534",
+      "name": "Tax 534",
+      "category": "materials"
+    },
+    {
+      "id": "534",
+      "name": "534",
+      "category": "materials"
+    },
+    {
+      "id": "1_510",
+      "name": "1,510",
+      "category": "materials"
+    },
+    {
+      "id": "trim_handguard_carpentry_lv_48",
+      "name": "Trim Handguard Carpentry - Lv 48",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_48",
+      "name": "Carpentry - Lv 48",
+      "category": "materials"
+    },
+    {
+      "id": "reinforced_wheel_carpentry_lv_59",
+      "name": "Reinforced Wheel Carpentry - Lv 59",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_59",
+      "name": "Carpentry - Lv 59",
+      "category": "materials"
+    },
+    {
+      "id": "noble_handguard_carpentry_lv_70",
+      "name": "Noble Handguard Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "radiant_handguard_carpentry_lv_80",
+      "name": "Radiant Handguard Carpentry - Lv 80",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_80",
+      "name": "Carpentry - Lv 80",
+      "category": "materials"
+    },
+    {
+      "id": "sturdy_plank_carpentry_lv_50",
+      "name": "Sturdy Plank Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "5_07_xp",
+      "name": "5.07 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "5_07",
+      "name": "5.07",
+      "category": "materials"
+    },
+    {
+      "id": "tax_197",
+      "name": "Tax 197",
+      "category": "materials"
+    },
+    {
+      "id": "197",
+      "name": "197",
+      "category": "materials"
+    },
+    {
+      "id": "4_149",
+      "name": "4,149",
+      "category": "materials"
+    },
+    {
+      "id": "large_hull_frame_carpentry_lv_50",
+      "name": "Large Hull Frame Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "large_cargo_hold_carpentry_lv_50",
+      "name": "Large Cargo Hold Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "large_gun_deck_carpentry_lv_50",
+      "name": "Large Gun Deck Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "large_fishing_storage_carpentry_lv_50",
+      "name": "Large Fishing Storage Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "sturdy_container_carpentry_lv_50",
+      "name": "Sturdy Container Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "warding_charm_carpentry_lv_50",
+      "name": "Warding Charm Carpentry - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "predator_bow_carpentry_lv_55",
+      "name": "Predator Bow Carpentry - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "lightshard_staff_carpentry_lv_55",
+      "name": "Lightshard Staff Carpentry - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "celestial_sceptre_carpentry_lv_55",
+      "name": "Celestial Sceptre Carpentry - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "ravenguards_shield_carpentry_lv_55",
+      "name": "Ravenguard's Shield Carpentry - Lv 55",
+      "category": "materials"
+    },
+    {
+      "id": "artisan_fishing_rod_carpentry_lv_58",
+      "name": "Artisan Fishing Rod Carpentry - Lv 58",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_58",
+      "name": "Carpentry - Lv 58",
+      "category": "materials"
+    },
+    {
+      "id": "large_wagon_container_carpentry_lv_60",
+      "name": "Large Wagon Container Carpentry - Lv 60",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_60",
+      "name": "Carpentry - Lv 60",
+      "category": "materials"
+    },
+    {
+      "id": "armoires_carpentry_lv_70",
+      "name": "Armoires Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "sturdy_square_table_carpentry_lv_70",
+      "name": "Sturdy Square Table Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "loom_carpentry_lv_70",
+      "name": "Loom Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "fireplace_carpentry_lv_70",
+      "name": "Fireplace Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "luxury_bed_carpentry_lv_70",
+      "name": "Luxury Bed Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "glimmery_plank_carpentry_lv_88",
+      "name": "Glimmery Plank Carpentry - Lv 88",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_88",
+      "name": "Carpentry - Lv 88",
+      "category": "materials"
+    },
+    {
+      "id": "fine_plank_carpentry_lv_70",
+      "name": "Fine Plank Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "5_08_xp",
+      "name": "5.08 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "5_08",
+      "name": "5.08",
+      "category": "materials"
+    },
+    {
+      "id": "tax_288",
+      "name": "Tax 288",
+      "category": "materials"
+    },
+    {
+      "id": "288",
+      "name": "288",
+      "category": "materials"
+    },
+    {
+      "id": "6_096",
+      "name": "6,096",
+      "category": "materials"
+    },
+    {
+      "id": "spellbound_charm_carpentry_lv_70",
+      "name": "Spellbound Charm Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "arcane_stabilizer_carpentry_lv_70",
+      "name": "Arcane Stabilizer Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "wall_fortification_carpentry_lv_70",
+      "name": "Wall Fortification Carpentry - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "lightwood_angler_carpentry_lv_72",
+      "name": "Lightwood Angler Carpentry - Lv 72",
+      "category": "materials"
+    },
+    {
+      "id": "carpentry_lv_72",
+      "name": "Carpentry - Lv 72",
+      "category": "materials"
+    },
+    {
+      "id": "marksman_bow_carpentry_lv_75",
+      "name": "Marksman Bow Carpentry - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "necromancers_staff_carpentry_lv_75",
+      "name": "Necromancer's Staff Carpentry - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "crowbone_sceptre_carpentry_lv_75",
+      "name": "Crowbone Sceptre Carpentry - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "nocturnal_shield_carpentry_lv_75",
+      "name": "Nocturnal Shield Carpentry - Lv 75",
+      "category": "materials"
+    },
+    {
+      "id": "15_61_xp",
+      "name": "15.61 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "15_61",
+      "name": "15.61",
+      "category": "materials"
+    },
+    {
+      "id": "31_215",
+      "name": "31,215",
+      "category": "materials"
+    },
+    {
+      "id": "arclight_bow_carpentry_lv_90",
+      "name": "Arclight Bow Carpentry - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "void_buckler_carpentry_lv_90",
+      "name": "Void Buckler Carpentry - Lv 90",
+      "category": "materials"
+    },
+    {
+      "id": "coarse_leather_weaving_lv_1",
+      "name": "Coarse Leather Weaving - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_1",
+      "name": "Weaving - Lv 1",
+      "category": "materials"
+    },
+    {
+      "id": "2_64_xp",
+      "name": "2.64 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_64",
+      "name": "2.64",
+      "category": "materials"
+    },
+    {
+      "id": "tax_72",
+      "name": "Tax 72",
+      "category": "materials"
+    },
+    {
+      "id": "72",
+      "name": "72",
+      "category": "materials"
+    },
+    {
+      "id": "792",
+      "name": "792",
+      "category": "materials"
+    },
+    {
+      "id": "hide_armor_weaving_lv_3",
+      "name": "Hide Armor Weaving - Lv 3",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_3",
+      "name": "Weaving - Lv 3",
+      "category": "materials"
+    },
+    {
+      "id": "hide_helmet_weaving_lv_5",
+      "name": "Hide Helmet Weaving - Lv 5",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_5",
+      "name": "Weaving - Lv 5",
+      "category": "materials"
+    },
+    {
+      "id": "hide_legs_weaving_lv_7",
+      "name": "Hide Legs Weaving - Lv 7",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_7",
+      "name": "Weaving - Lv 7",
+      "category": "materials"
+    },
+    {
+      "id": "hide_boots_weaving_lv_9",
+      "name": "Hide Boots Weaving - Lv 9",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_9",
+      "name": "Weaving - Lv 9",
+      "category": "materials"
+    },
+    {
+      "id": "cheap_rug_weaving_lv_10",
+      "name": "Cheap Rug Weaving - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_10",
+      "name": "Weaving - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "nomad_armor_weaving_lv_13",
+      "name": "Nomad Armor Weaving - Lv 13",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_13",
+      "name": "Weaving - Lv 13",
+      "category": "materials"
+    },
+    {
+      "id": "small_sail_kit_weaving_lv_15",
+      "name": "Small Sail Kit Weaving - Lv 15",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_15",
+      "name": "Weaving - Lv 15",
+      "category": "materials"
+    },
+    {
+      "id": "nomad_helmet_weaving_lv_16",
+      "name": "Nomad Helmet Weaving - Lv 16",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_16",
+      "name": "Weaving - Lv 16",
+      "category": "materials"
+    },
+    {
+      "id": "nomad_legs_weaving_lv_19",
+      "name": "Nomad Legs Weaving - Lv 19",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_19",
+      "name": "Weaving - Lv 19",
+      "category": "materials"
+    },
+    {
+      "id": "nomad_boots_weaving_lv_22",
+      "name": "Nomad Boots Weaving - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_22",
+      "name": "Weaving - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "craftmans_leather_weaving_lv_10",
+      "name": "Craftman's Leather Weaving - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "tax_141",
+      "name": "Tax 141",
+      "category": "materials"
+    },
+    {
+      "id": "141",
+      "name": "141",
+      "category": "materials"
+    },
+    {
+      "id": "1_341",
+      "name": "1,341",
+      "category": "materials"
+    },
+    {
+      "id": "workshop_assistant_boots_weaving_lv_10",
+      "name": "Workshop Assistant Boots Weaving - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "apprentice_anvil_boots_weaving_lv_10",
+      "name": "Apprentice Anvil Boots Weaving - Lv 10",
+      "category": "materials"
+    },
+    {
+      "id": "workshop_assistant_legs_weaving_lv_13",
+      "name": "Workshop Assistant Legs Weaving - Lv 13",
+      "category": "materials"
+    },
+    {
+      "id": "apprentice_anvil_legs_weaving_lv_13",
+      "name": "Apprentice Anvil Legs Weaving - Lv 13",
+      "category": "materials"
+    },
+    {
+      "id": "workshop_assistant_armor_weaving_lv_16",
+      "name": "Workshop Assistant Armor Weaving - Lv 16",
+      "category": "materials"
+    },
+    {
+      "id": "apprentice_anvil_armor_weaving_lv_16",
+      "name": "Apprentice Anvil Armor Weaving - Lv 16",
+      "category": "materials"
+    },
+    {
+      "id": "workshop_assistant_helmet_weaving_lv_19",
+      "name": "Workshop Assistant Helmet Weaving - Lv 19",
+      "category": "materials"
+    },
+    {
+      "id": "apprentice_anvil_helmet_weaving_lv_19",
+      "name": "Apprentice Anvil Helmet Weaving - Lv 19",
+      "category": "materials"
+    },
+    {
+      "id": "workshop_assistant_gloves_weaving_lv_22",
+      "name": "Workshop Assistant Gloves Weaving - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "apprentice_anvil_bracers_weaving_lv_22",
+      "name": "Apprentice Anvil Bracers Weaving - Lv 22",
+      "category": "materials"
+    },
+    {
+      "id": "bruisers_armor_weaving_lv_28",
+      "name": "Bruiser's Armor Weaving - Lv 28",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_28",
+      "name": "Weaving - Lv 28",
+      "category": "materials"
+    },
+    {
+      "id": "bruisers_helmet_weaving_lv_31",
+      "name": "Bruiser's Helmet Weaving - Lv 31",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_31",
+      "name": "Weaving - Lv 31",
+      "category": "materials"
+    },
+    {
+      "id": "bruisers_legs_weaving_lv_34",
+      "name": "Bruiser's Legs Weaving - Lv 34",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_34",
+      "name": "Weaving - Lv 34",
+      "category": "materials"
+    },
+    {
+      "id": "bruisers_boots_weaving_lv_37",
+      "name": "Bruiser's Boots Weaving - Lv 37",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_37",
+      "name": "Weaving - Lv 37",
+      "category": "materials"
+    },
+    {
+      "id": "tanned_leather_weaving_lv_30",
+      "name": "Tanned Leather Weaving - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_30",
+      "name": "Weaving - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "2_43_xp",
+      "name": "2.43 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_43",
+      "name": "2.43",
+      "category": "materials"
+    },
+    {
+      "id": "tax_210",
+      "name": "Tax 210",
+      "category": "materials"
+    },
+    {
+      "id": "210",
+      "name": "210",
+      "category": "materials"
+    },
+    {
+      "id": "2_130",
+      "name": "2,130",
+      "category": "materials"
+    },
+    {
+      "id": "woodworker_boots_weaving_lv_30",
+      "name": "Woodworker Boots Weaving - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "silversmith_boots_weaving_lv_30",
+      "name": "Silversmith Boots Weaving - Lv 30",
+      "category": "materials"
+    },
+    {
+      "id": "woodworker_legs_weaving_lv_33",
+      "name": "Woodworker Legs Weaving - Lv 33",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_33",
+      "name": "Weaving - Lv 33",
+      "category": "materials"
+    },
+    {
+      "id": "silversmith_legs_weaving_lv_33",
+      "name": "Silversmith Legs Weaving - Lv 33",
+      "category": "materials"
+    },
+    {
+      "id": "medium_sail_kit_weaving_lv_35",
+      "name": "Medium Sail Kit Weaving - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_35",
+      "name": "Weaving - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "small_fishing_nets_kit_weaving_lv_35",
+      "name": "Small Fishing Nets Kit Weaving - Lv 35",
+      "category": "materials"
+    },
+    {
+      "id": "woodworker_armor_weaving_lv_36",
+      "name": "Woodworker Armor Weaving - Lv 36",
+      "category": "materials"
+    },
+    {
+      "id": "silversmith_armor_weaving_lv_36",
+      "name": "Silversmith Armor Weaving - Lv 36",
+      "category": "materials"
+    },
+    {
+      "id": "woodworker_helmet_weaving_lv_39",
+      "name": "Woodworker Helmet Weaving - Lv 39",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_39",
+      "name": "Weaving - Lv 39",
+      "category": "materials"
+    },
+    {
+      "id": "silversmith_helmet_weaving_lv_39",
+      "name": "Silversmith Helmet Weaving - Lv 39",
+      "category": "materials"
+    },
+    {
+      "id": "woodworker_gloves_weaving_lv_42",
+      "name": "Woodworker Gloves Weaving - Lv 42",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_42",
+      "name": "Weaving - Lv 42",
+      "category": "materials"
+    },
+    {
+      "id": "silversmith_bracers_weaving_lv_42",
+      "name": "Silversmith Bracers Weaving - Lv 42",
+      "category": "materials"
+    },
+    {
+      "id": "outlaw_armor_weaving_lv_43",
+      "name": "Outlaw Armor Weaving - Lv 43",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_43",
+      "name": "Weaving - Lv 43",
+      "category": "materials"
+    },
+    {
+      "id": "outlaw_helmet_weaving_lv_46",
+      "name": "Outlaw Helmet Weaving - Lv 46",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_46",
+      "name": "Weaving - Lv 46",
+      "category": "materials"
+    },
+    {
+      "id": "outlaw_legs_weaving_lv_49",
+      "name": "Outlaw Legs Weaving - Lv 49",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_49",
+      "name": "Weaving - Lv 49",
+      "category": "materials"
+    },
+    {
+      "id": "outlaw_boots_weaving_lv_52",
+      "name": "Outlaw Boots Weaving - Lv 52",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_52",
+      "name": "Weaving - Lv 52",
+      "category": "materials"
+    },
+    {
+      "id": "merchants_leather_weaving_lv_50",
+      "name": "Merchant's Leather Weaving - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_50",
+      "name": "Weaving - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "2_3_xp",
+      "name": "2.3 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_3",
+      "name": "2.3",
+      "category": "materials"
+    },
+    {
+      "id": "tax_281",
+      "name": "Tax 281",
+      "category": "materials"
+    },
+    {
+      "id": "281",
+      "name": "281",
+      "category": "materials"
+    },
+    {
+      "id": "2_681",
+      "name": "2,681",
+      "category": "materials"
+    },
+    {
+      "id": "medium_fishing_nets_kit_weaving_lv_45",
+      "name": "Medium Fishing Nets Kit Weaving - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_45",
+      "name": "Weaving - Lv 45",
+      "category": "materials"
+    },
+    {
+      "id": "master_mason_boots_weaving_lv_50",
+      "name": "Master Mason Boots Weaving - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "forgemaster_boots_weaving_lv_50",
+      "name": "Forgemaster Boots Weaving - Lv 50",
+      "category": "materials"
+    },
+    {
+      "id": "master_mason_legs_weaving_lv_53",
+      "name": "Master Mason Legs Weaving - Lv 53",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_53",
+      "name": "Weaving - Lv 53",
+      "category": "materials"
+    },
+    {
+      "id": "forgemaster_legs_weaving_lv_53",
+      "name": "Forgemaster Legs Weaving - Lv 53",
+      "category": "materials"
+    },
+    {
+      "id": "master_mason_armor_weaving_lv_56",
+      "name": "Master Mason Armor Weaving - Lv 56",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_56",
+      "name": "Weaving - Lv 56",
+      "category": "materials"
+    },
+    {
+      "id": "forgemaster_armor_weaving_lv_56",
+      "name": "Forgemaster Armor Weaving - Lv 56",
+      "category": "materials"
+    },
+    {
+      "id": "studded_armor_weaving_lv_58",
+      "name": "Studded Armor Weaving - Lv 58",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_58",
+      "name": "Weaving - Lv 58",
+      "category": "materials"
+    },
+    {
+      "id": "master_mason_helmet_weaving_lv_59",
+      "name": "Master Mason Helmet Weaving - Lv 59",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_59",
+      "name": "Weaving - Lv 59",
+      "category": "materials"
+    },
+    {
+      "id": "forgemaster_helmet_weaving_lv_59",
+      "name": "Forgemaster Helmet Weaving - Lv 59",
+      "category": "materials"
+    },
+    {
+      "id": "studded_helmet_weaving_lv_61",
+      "name": "Studded Helmet Weaving - Lv 61",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_61",
+      "name": "Weaving - Lv 61",
+      "category": "materials"
+    },
+    {
+      "id": "master_mason_gloves_weaving_lv_62",
+      "name": "Master Mason Gloves Weaving - Lv 62",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_62",
+      "name": "Weaving - Lv 62",
+      "category": "materials"
+    },
+    {
+      "id": "forgemaster_bracers_weaving_lv_62",
+      "name": "Forgemaster Bracers Weaving - Lv 62",
+      "category": "materials"
+    },
+    {
+      "id": "studded_legs_weaving_lv_64",
+      "name": "Studded Legs Weaving - Lv 64",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_64",
+      "name": "Weaving - Lv 64",
+      "category": "materials"
+    },
+    {
+      "id": "studded_boots_weaving_lv_67",
+      "name": "Studded Boots Weaving - Lv 67",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_67",
+      "name": "Weaving - Lv 67",
+      "category": "materials"
+    },
+    {
+      "id": "large_sail_kit_weaving_lv_70",
+      "name": "Large Sail Kit Weaving - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_70",
+      "name": "Weaving - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "glimmery_leather_weaving_lv_88",
+      "name": "Glimmery Leather Weaving - Lv 88",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_88",
+      "name": "Weaving - Lv 88",
+      "category": "materials"
+    },
+    {
+      "id": "artisan_leather_weaving_lv_70",
+      "name": "Artisan Leather Weaving - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "2_36_xp",
+      "name": "2.36 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "2_36",
+      "name": "2.36",
+      "category": "materials"
+    },
+    {
+      "id": "tax_354",
+      "name": "Tax 354",
+      "category": "materials"
+    },
+    {
+      "id": "354",
+      "name": "354",
+      "category": "materials"
+    },
+    {
+      "id": "3_474",
+      "name": "3,474",
+      "category": "materials"
+    },
+    {
+      "id": "large_fishing_nets_kit_weaving_lv_70",
+      "name": "Large Fishing Nets Kit Weaving - Lv 70",
+      "category": "materials"
+    },
+    {
+      "id": "guerrila_armor_weaving_lv_78",
+      "name": "Guerrila Armor Weaving - Lv 78",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_78",
+      "name": "Weaving - Lv 78",
+      "category": "materials"
+    },
+    {
+      "id": "guerrila_helmet_weaving_lv_81",
+      "name": "Guerrila Helmet Weaving - Lv 81",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_81",
+      "name": "Weaving - Lv 81",
+      "category": "materials"
+    },
+    {
+      "id": "guerrila_legs_weaving_lv_84",
+      "name": "Guerrila Legs Weaving - Lv 84",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_84",
+      "name": "Weaving - Lv 84",
+      "category": "materials"
+    },
+    {
+      "id": "guerrila_boots_weaving_lv_87",
+      "name": "Guerrila Boots Weaving - Lv 87",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_87",
+      "name": "Weaving - Lv 87",
+      "category": "materials"
+    },
+    {
+      "id": "6_79_xp",
+      "name": "6.79 /xp",
+      "category": "materials"
+    },
+    {
+      "id": "6_79",
+      "name": "6.79",
+      "category": "materials"
+    },
+    {
+      "id": "13_583",
+      "name": "13,583",
+      "category": "materials"
+    },
+    {
+      "id": "inquisitor_armor_weaving_lv_93",
+      "name": "Inquisitor Armor Weaving - Lv 93",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_93",
+      "name": "Weaving - Lv 93",
+      "category": "materials"
+    },
+    {
+      "id": "inquisitor_helmet_weaving_lv_96",
+      "name": "Inquisitor Helmet Weaving - Lv 96",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_96",
+      "name": "Weaving - Lv 96",
+      "category": "materials"
+    },
+    {
+      "id": "inquisitor_legs_weaving_lv_99",
+      "name": "Inquisitor Legs Weaving - Lv 99",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_99",
+      "name": "Weaving - Lv 99",
+      "category": "materials"
+    },
+    {
+      "id": "inquisitor_boots_weaving_lv_102",
+      "name": "Inquisitor Boots Weaving - Lv 102",
+      "category": "materials"
+    },
+    {
+      "id": "weaving_lv_102",
+      "name": "Weaving - Lv 102",
+      "category": "materials"
+    }
+  ]
+}
