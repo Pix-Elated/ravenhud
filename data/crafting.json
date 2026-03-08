@@ -1,0 +1,7393 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-01-07",
+    "source": "Local data",
+    "itemCount": 819,
+    "description": "Crafting recipes for RavenQuest Companion",
+    "categories": ["alchemy", "blacksmithing", "carpentry", "cooking", "weaving"]
+  },
+  "recipes": {
+    "alchemy": [
+      {
+        "id": "lesser-arcane-energy-tonic",
+        "name": "Lesser Arcane Energy Tonic",
+        "imageUrl": "assets/images/items/40844.png",
+        "amount": 3,
+        "level": 4,
+        "experience": 187,
+        "cost": 0
+      },
+      {
+        "id": "lesser-strengthening-tonic",
+        "name": "Lesser Strengthening Tonic",
+        "imageUrl": "assets/images/items/40850.png",
+        "amount": 3,
+        "level": 5,
+        "experience": 275,
+        "cost": 0
+      },
+      {
+        "id": "lesser-enlightenment-tonic",
+        "name": "Lesser Enlightenment Tonic",
+        "imageUrl": "assets/images/items/40847.png",
+        "amount": 3,
+        "level": 6,
+        "experience": 243,
+        "cost": 0
+      },
+      {
+        "id": "lesser-rejuvenation-tonic",
+        "name": "Lesser Rejuvenation Tonic",
+        "imageUrl": "assets/images/items/40849.png",
+        "amount": 3,
+        "level": 7,
+        "experience": 375,
+        "cost": 0
+      },
+      {
+        "id": "lesser-wellspring-tonic",
+        "name": "Lesser Wellspring Tonic",
+        "imageUrl": "assets/images/items/40845.png",
+        "amount": 3,
+        "level": 8,
+        "experience": 281,
+        "cost": 0
+      },
+      {
+        "id": "lesser-mountainheart-tonic",
+        "name": "Lesser Mountainheart Tonic",
+        "imageUrl": "assets/images/items/40848.png",
+        "amount": 3,
+        "level": 9,
+        "experience": 437,
+        "cost": 0
+      },
+      {
+        "id": "lesser-arcana-tonic",
+        "name": "Lesser Arcana Tonic",
+        "imageUrl": "assets/images/items/40846.png",
+        "amount": 3,
+        "level": 11,
+        "experience": 362,
+        "cost": 0
+      },
+      {
+        "id": "lesser-champions-tonic",
+        "name": "Lesser Champion's Tonic",
+        "imageUrl": "assets/images/items/40851.png",
+        "amount": 3,
+        "level": 14,
+        "experience": 506,
+        "cost": 0
+      },
+      {
+        "id": "arcane-energy-tonic",
+        "name": "Arcane Energy Tonic",
+        "imageUrl": "assets/images/items/40858.png",
+        "amount": 3,
+        "level": 16,
+        "experience": 625,
+        "cost": 0
+      },
+      {
+        "id": "strengthening-tonic",
+        "name": "Strengthening Tonic",
+        "imageUrl": "assets/images/items/40861.png",
+        "amount": 3,
+        "level": 17,
+        "experience": 625,
+        "cost": 0
+      },
+      {
+        "id": "enlightenment-tonic",
+        "name": "Enlightenment Tonic",
+        "imageUrl": "assets/images/items/40856.png",
+        "amount": 3,
+        "level": 19,
+        "experience": 700,
+        "cost": 0
+      },
+      {
+        "id": "rejuvenation-tonic",
+        "name": "Rejuvenation Tonic",
+        "imageUrl": "assets/images/items/40862.png",
+        "amount": 3,
+        "level": 21,
+        "experience": 825,
+        "cost": 0
+      },
+      {
+        "id": "wellspring-tonic",
+        "name": "Wellspring Tonic",
+        "imageUrl": "assets/images/items/40853.png",
+        "amount": 3,
+        "level": 22,
+        "experience": 843,
+        "cost": 0
+      },
+      {
+        "id": "mountainheart-tonic",
+        "name": "Mountainheart Tonic",
+        "imageUrl": "assets/images/items/40854.png",
+        "amount": 3,
+        "level": 24,
+        "experience": 887,
+        "cost": 0
+      },
+      {
+        "id": "arcana-tonic",
+        "name": "Arcana Tonic",
+        "imageUrl": "assets/images/items/40857.png",
+        "amount": 3,
+        "level": 27,
+        "experience": 1250,
+        "cost": 0
+      },
+      {
+        "id": "champions-tonic",
+        "name": "Champion's Tonic",
+        "imageUrl": "assets/images/items/40855.png",
+        "amount": 3,
+        "level": 28,
+        "experience": 1312,
+        "cost": 0
+      },
+      {
+        "id": "mana-surge-tonic",
+        "name": "Mana Surge Tonic",
+        "imageUrl": "assets/images/items/49654.png",
+        "amount": 3,
+        "level": 35,
+        "experience": 1350,
+        "cost": 0
+      },
+      {
+        "id": "nimble-grace-tonic",
+        "name": "Nimble Grace Tonic",
+        "imageUrl": "assets/images/items/49656.png",
+        "amount": 3,
+        "level": 35,
+        "experience": 1500,
+        "cost": 0
+      },
+      {
+        "id": "mighty-impact-tonic",
+        "name": "Mighty Impact Tonic",
+        "imageUrl": "assets/images/items/49655.png",
+        "amount": 3,
+        "level": 37,
+        "experience": 1700,
+        "cost": 0
+      },
+      {
+        "id": "precise-harmony-tonic",
+        "name": "Precise Harmony Tonic",
+        "imageUrl": "assets/images/items/49657.png",
+        "amount": 3,
+        "level": 41,
+        "experience": 1700,
+        "cost": 0
+      },
+      {
+        "id": "luminous-tonic",
+        "name": "Luminous Tonic",
+        "imageUrl": "assets/images/items/49653.png",
+        "amount": 3,
+        "level": 43,
+        "experience": 1700,
+        "cost": 0
+      },
+      {
+        "id": "iron-will-tonic",
+        "name": "Iron Will Tonic",
+        "imageUrl": "assets/images/items/49651.png",
+        "amount": 3,
+        "level": 45,
+        "experience": 1725,
+        "cost": 0
+      },
+      {
+        "id": "profound-insight-tonic",
+        "name": "Profound Insight Tonic",
+        "imageUrl": "assets/images/items/49658.png",
+        "amount": 3,
+        "level": 48,
+        "experience": 2537,
+        "cost": 0
+      },
+      {
+        "id": "light-of-dawn-tonic",
+        "name": "Light of Dawn Tonic",
+        "imageUrl": "assets/images/items/49652.png",
+        "amount": 3,
+        "level": 51,
+        "experience": 2362,
+        "cost": 0
+      },
+      {
+        "id": "accurate-physique-tonic",
+        "name": "Accurate Physique Tonic",
+        "imageUrl": "assets/images/items/49659.png",
+        "amount": 3,
+        "level": 53,
+        "experience": 2462,
+        "cost": 0
+      },
+      {
+        "id": "arcane-mastery-tonic",
+        "name": "Arcane Mastery Tonic",
+        "imageUrl": "assets/images/items/49647.png",
+        "amount": 3,
+        "level": 55,
+        "experience": 2850,
+        "cost": 0
+      },
+      {
+        "id": "dark-pact-tonic",
+        "name": "Dark Pact Tonic",
+        "imageUrl": "assets/images/items/49650.png",
+        "amount": 3,
+        "level": 57,
+        "experience": 2437,
+        "cost": 0
+      },
+      {
+        "id": "chillguard-tonic",
+        "name": "Chillguard Tonic",
+        "imageUrl": "assets/images/items/49649.png",
+        "amount": 3,
+        "level": 59,
+        "experience": 3750,
+        "cost": 0
+      },
+      {
+        "id": "burning-aegis-tonic",
+        "name": "Burning Aegis Tonic",
+        "imageUrl": "assets/images/items/49648.png",
+        "amount": 3,
+        "level": 61,
+        "experience": 4200,
+        "cost": 0
+      },
+      {
+        "id": "chefs-zeal-elixir",
+        "name": "Chef's Zeal Elixir",
+        "imageUrl": "assets/images/items/49660.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 6900,
+        "cost": 0
+      },
+      {
+        "id": "forgefire-elixir",
+        "name": "Forgefire Elixir",
+        "imageUrl": "assets/images/items/49662.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 3100,
+        "cost": 0
+      },
+      {
+        "id": "woodwhisper-elixir",
+        "name": "Woodwhisper Elixir",
+        "imageUrl": "assets/images/items/49664.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 6000,
+        "cost": 0
+      },
+      {
+        "id": "threadmaster-elixir",
+        "name": "Threadmaster Elixir",
+        "imageUrl": "assets/images/items/49663.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 4337,
+        "cost": 0
+      },
+      {
+        "id": "wealthbringers-tonic",
+        "name": "Wealthbringer's Tonic",
+        "imageUrl": "assets/images/items/40877.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 4800,
+        "cost": 0
+      },
+      {
+        "id": "tonic-of-forbidden-knowledge",
+        "name": "Tonic of Forbidden Knowledge",
+        "imageUrl": "assets/images/items/49679.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "purifying-tonic",
+        "name": "Purifying Tonic",
+        "imageUrl": "assets/images/items/40878.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 3000,
+        "cost": 0
+      },
+      {
+        "id": "detoxifying-tonic",
+        "name": "Detoxifying Tonic",
+        "imageUrl": "assets/images/items/40873.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 4650,
+        "cost": 0
+      },
+      {
+        "id": "swiftmoa-tonic",
+        "name": "Swiftmoa Tonic",
+        "imageUrl": "assets/images/items/40875.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 4625,
+        "cost": 0
+      },
+      {
+        "id": "tonic-of-gold",
+        "name": "Tonic of Gold",
+        "imageUrl": "assets/images/items/40874.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 4468,
+        "cost": 0
+      },
+      {
+        "id": "tonic-of-undying",
+        "name": "Tonic of Undying",
+        "imageUrl": "assets/images/items/49680.png",
+        "amount": 1,
+        "level": 73,
+        "experience": 4875,
+        "cost": 0
+      },
+      {
+        "id": "tonic-of-savage-instinct",
+        "name": "Tonic of Savage Instinct",
+        "imageUrl": "assets/images/items/40879.png",
+        "amount": 1,
+        "level": 71,
+        "experience": 4862,
+        "cost": 0
+      },
+      {
+        "id": "serendipity-draught",
+        "name": "Serendipity Draught",
+        "imageUrl": "assets/images/items/50427.png",
+        "amount": 1,
+        "level": 78,
+        "experience": 9725,
+        "cost": 0
+      },
+      {
+        "id": "thin-dissolvent",
+        "name": "Thin Dissolvent",
+        "imageUrl": "assets/images/items/53316.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "sharp-dissolvent",
+        "name": "Sharp Dissolvent",
+        "imageUrl": "assets/images/items/53317.png",
+        "amount": 3,
+        "level": 60,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "reactive-dissolvent",
+        "name": "Reactive Dissolvent",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 70,
+        "experience": 3518,
+        "cost": 0
+      },
+      {
+        "id": "distilled-dissolvent",
+        "name": "Distilled Dissolvent",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 80,
+        "experience": 6250,
+        "cost": 0
+      },
+      {
+        "id": "pure-dissolvent",
+        "name": "Pure Dissolvent",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 90,
+        "experience": 10000,
+        "cost": 0
+      },
+      {
+        "id": "purified-oil",
+        "name": "Purified Oil",
+        "imageUrl": "assets/images/items/49645.png",
+        "amount": 4,
+        "level": 1,
+        "experience": 137,
+        "cost": 0
+      },
+      {
+        "id": "purified-alcohol",
+        "name": "Purified Alcohol",
+        "imageUrl": "assets/images/items/49644.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 137,
+        "cost": 0
+      },
+      {
+        "id": "acid",
+        "name": "Acid",
+        "imageUrl": "assets/images/items/49641.png",
+        "amount": 4,
+        "level": 4,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "alkali",
+        "name": "Alkali",
+        "imageUrl": "assets/images/items/40835.png",
+        "amount": 4,
+        "level": 5,
+        "experience": 175,
+        "cost": 0
+      },
+      {
+        "id": "poison-base",
+        "name": "Poison Base",
+        "imageUrl": "assets/images/items/40838.png",
+        "amount": 3,
+        "level": 25,
+        "experience": 400,
+        "cost": 0
+      },
+      {
+        "id": "catalytic-solution",
+        "name": "Catalytic Solution",
+        "imageUrl": "assets/images/items/49642.png",
+        "amount": 2,
+        "level": 35,
+        "experience": 450,
+        "cost": 0
+      },
+      {
+        "id": "potent-poison-base",
+        "name": "Potent Poison Base",
+        "imageUrl": "assets/images/items/40839.png",
+        "amount": 3,
+        "level": 59,
+        "experience": 681,
+        "cost": 0
+      },
+      {
+        "id": "resonating-fluid",
+        "name": "Resonating Fluid",
+        "imageUrl": "assets/images/items/49646.png",
+        "amount": 2,
+        "level": 60,
+        "experience": 1375,
+        "cost": 0
+      },
+      {
+        "id": "ethereal-solvent",
+        "name": "Ethereal Solvent",
+        "imageUrl": "assets/images/items/49643.png",
+        "amount": 2,
+        "level": 60,
+        "experience": 1593,
+        "cost": 0
+      },
+      {
+        "id": "core-catalyst",
+        "name": "Core Catalyst",
+        "imageUrl": "assets/images/items/49661.png",
+        "amount": 2,
+        "level": 68,
+        "experience": 2893,
+        "cost": 0
+      },
+      {
+        "id": "prime-extract",
+        "name": "Prime Extract",
+        "imageUrl": "assets/images/items/49673.png",
+        "amount": 2,
+        "level": 68,
+        "experience": 2837,
+        "cost": 0
+      },
+      {
+        "id": "core-essence",
+        "name": "Core Essence",
+        "imageUrl": "assets/images/items/49678.png",
+        "amount": 2,
+        "level": 68,
+        "experience": 2675,
+        "cost": 0
+      },
+      {
+        "id": "purified-alcohol",
+        "name": "Purified Alcohol",
+        "imageUrl": "assets/images/items/49644.png",
+        "amount": 7,
+        "level": 30,
+        "experience": 950,
+        "cost": 0
+      },
+      {
+        "id": "purified-alcohol",
+        "name": "Purified Alcohol",
+        "imageUrl": "assets/images/items/49644.png",
+        "amount": 18,
+        "level": 65,
+        "experience": 2375,
+        "cost": 0
+      },
+      {
+        "id": "immunizer-base",
+        "name": "Immunizer Base",
+        "imageUrl": "assets/images/items/40897.png",
+        "amount": 3,
+        "level": 20,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "potent-immunizer-base",
+        "name": "Potent immunizer Base",
+        "imageUrl": "assets/images/items/40898.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 2843,
+        "cost": 0
+      },
+      {
+        "id": "mixing-agent",
+        "name": "Mixing Agent",
+        "imageUrl": "assets/images/items/50435.png",
+        "amount": 3,
+        "level": 40,
+        "experience": 700,
+        "cost": 0
+      },
+      {
+        "id": "mixing-agent",
+        "name": "Mixing Agent",
+        "imageUrl": "assets/images/items/50435.png",
+        "amount": 3,
+        "level": 40,
+        "experience": 668,
+        "cost": 0
+      },
+      {
+        "id": "purified-oil",
+        "name": "Purified Oil",
+        "imageUrl": "assets/images/items/49645.png",
+        "amount": 24,
+        "level": 5,
+        "experience": 822,
+        "cost": 0
+      },
+      {
+        "id": "crude-powder",
+        "name": "Crude Powder",
+        "imageUrl": "assets/images/items/52677.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 587,
+        "cost": 0
+      },
+      {
+        "id": "tempered-powder",
+        "name": "Tempered Powder",
+        "imageUrl": "assets/images/items/52678.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 875,
+        "cost": 0
+      },
+      {
+        "id": "volatile-powder",
+        "name": "Volatile Powder",
+        "imageUrl": "assets/images/items/52679.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 1168,
+        "cost": 0
+      },
+      {
+        "id": "arcane-powder",
+        "name": "Arcane Powder",
+        "imageUrl": "assets/images/items/52680.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 1475,
+        "cost": 0
+      },
+      {
+        "id": "glimmery-powder",
+        "name": "Glimmery Powder",
+        "imageUrl": "assets/images/items/52681.png",
+        "amount": 1,
+        "level": 88,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "radiant-powder",
+        "name": "radiant powder",
+        "imageUrl": "assets/images/items/55329.png",
+        "amount": 1,
+        "level": 98,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "mating-essence",
+        "name": "Mating Essence",
+        "imageUrl": "assets/images/items/38163.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 3000,
+        "cost": 0
+      },
+      {
+        "id": "unstable-breeding-concoction",
+        "name": "Unstable Breeding Concoction",
+        "imageUrl": "assets/images/items/38166.png",
+        "amount": 1,
+        "level": 58,
+        "experience": 4750,
+        "cost": 0
+      },
+      {
+        "id": "exotic-vitamin",
+        "name": "Exotic Vitamin",
+        "imageUrl": "assets/images/items/38164.png",
+        "amount": 1,
+        "level": 69,
+        "experience": 6575,
+        "cost": 0
+      },
+      {
+        "id": "superior-moa-remedy",
+        "name": "Superior Moa Remedy",
+        "imageUrl": "assets/images/items/50721.png",
+        "amount": 3,
+        "level": 20,
+        "experience": 350,
+        "cost": 0
+      },
+      {
+        "id": "rustic-moa-balm",
+        "name": "Rustic Moa Balm",
+        "imageUrl": "assets/images/items/50722.png",
+        "amount": 3,
+        "level": 30,
+        "experience": 725,
+        "cost": 0
+      },
+      {
+        "id": "refined-moa-treatment",
+        "name": "Refined Moa Treatment",
+        "imageUrl": "assets/images/items/50723.png",
+        "amount": 3,
+        "level": 40,
+        "experience": 825,
+        "cost": 0
+      },
+      {
+        "id": "strong-moa-panacea",
+        "name": "Strong Moa Panacea",
+        "imageUrl": "assets/images/items/50724.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 1375,
+        "cost": 0
+      },
+      {
+        "id": "mystical-moa-remedy",
+        "name": "Mystical Moa Remedy",
+        "imageUrl": "assets/images/items/50725.png",
+        "amount": 3,
+        "level": 60,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "moas-bliss",
+        "name": "Moa's Bliss",
+        "imageUrl": "assets/images/items/50726.png",
+        "amount": 3,
+        "level": 75,
+        "experience": 3750,
+        "cost": 0
+      },
+      {
+        "id": "lingering-agony-poison",
+        "name": "Lingering Agony Poison",
+        "imageUrl": "assets/images/items/49694.png",
+        "amount": 3,
+        "level": 26,
+        "experience": 662,
+        "cost": 0
+      },
+      {
+        "id": "enfeebling-strike-poison",
+        "name": "Enfeebling Strike Poison",
+        "imageUrl": "assets/images/items/49693.png",
+        "amount": 3,
+        "level": 29,
+        "experience": 800,
+        "cost": 0
+      },
+      {
+        "id": "mind-numbing-poison",
+        "name": "Mind Numbing Poison",
+        "imageUrl": "assets/images/items/49696.png",
+        "amount": 3,
+        "level": 41,
+        "experience": 1100,
+        "cost": 0
+      },
+      {
+        "id": "crippling-chill-poison",
+        "name": "Crippling Chill Poison",
+        "imageUrl": "assets/images/items/49690.png",
+        "amount": 3,
+        "level": 44,
+        "experience": 1325,
+        "cost": 0
+      },
+      {
+        "id": "mana-siphon-poison",
+        "name": "Mana Siphon Poison",
+        "imageUrl": "assets/images/items/49695.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 1550,
+        "cost": 0
+      },
+      {
+        "id": "decaying-touch-poison",
+        "name": "Decaying Touch Poison",
+        "imageUrl": "assets/images/items/49691.png",
+        "amount": 3,
+        "level": 56,
+        "experience": 2275,
+        "cost": 0
+      },
+      {
+        "id": "divine-disruption-poison",
+        "name": "Divine Disruption Poison",
+        "imageUrl": "assets/images/items/49692.png",
+        "amount": 3,
+        "level": 62,
+        "experience": 2812,
+        "cost": 0
+      },
+      {
+        "id": "bloodfrenzy-poison",
+        "name": "Bloodfrenzy Poison",
+        "imageUrl": "assets/images/items/49689.png",
+        "amount": 3,
+        "level": 65,
+        "experience": 3312,
+        "cost": 0
+      },
+      {
+        "id": "hexing-oil",
+        "name": "Hexing Oil",
+        "imageUrl": "assets/images/items/49684.png",
+        "amount": 3,
+        "level": 25,
+        "experience": 662,
+        "cost": 0
+      },
+      {
+        "id": "crimson-fatigue-oil",
+        "name": "Crimson Fatigue Oil",
+        "imageUrl": "assets/images/items/49683.png",
+        "amount": 3,
+        "level": 30,
+        "experience": 800,
+        "cost": 0
+      },
+      {
+        "id": "arcane-weakness-oil",
+        "name": "Arcane Weakness Oil",
+        "imageUrl": "assets/images/items/49681.png",
+        "amount": 3,
+        "level": 40,
+        "experience": 1100,
+        "cost": 0
+      },
+      {
+        "id": "temporal-disruption-oil",
+        "name": "Temporal Disruption Oil",
+        "imageUrl": "assets/images/items/49688.png",
+        "amount": 3,
+        "level": 46,
+        "experience": 1425,
+        "cost": 0
+      },
+      {
+        "id": "mana-drain-oil",
+        "name": "Mana Drain Oil",
+        "imageUrl": "assets/images/items/49685.png",
+        "amount": 3,
+        "level": 51,
+        "experience": 1725,
+        "cost": 0
+      },
+      {
+        "id": "corrosive-oil",
+        "name": "Corrosive Oil",
+        "imageUrl": "assets/images/items/49682.png",
+        "amount": 3,
+        "level": 55,
+        "experience": 2143,
+        "cost": 0
+      },
+      {
+        "id": "necrotic-oil",
+        "name": "Necrotic Oil",
+        "imageUrl": "assets/images/items/49686.png",
+        "amount": 3,
+        "level": 63,
+        "experience": 3000,
+        "cost": 0
+      },
+      {
+        "id": "rapid-fire-oil",
+        "name": "Rapid Fire Oil",
+        "imageUrl": "assets/images/items/49687.png",
+        "amount": 3,
+        "level": 66,
+        "experience": 3312,
+        "cost": 0
+      },
+      {
+        "id": "frollbane-hunting-oil",
+        "name": "Frollbane Hunting Oil",
+        "imageUrl": "assets/images/items/49670.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "jackals-special-hunting-oil",
+        "name": "Jackal's Special Hunting Oil",
+        "imageUrl": "assets/images/items/49672.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "demonbane-hunting-oil",
+        "name": "Demonbane Hunting Oil",
+        "imageUrl": "assets/images/items/49666.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "hag-hunting-oil",
+        "name": "Hag Hunting Oil",
+        "imageUrl": "assets/images/items/49671.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "silkspinners-hunting-oil",
+        "name": "Silkspinner's Hunting Oil",
+        "imageUrl": "assets/images/items/49674.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "emberwing-hunting-oil",
+        "name": "Emberwing Hunting Oil",
+        "imageUrl": "assets/images/items/49668.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "spellwing-hunting-oil",
+        "name": "Spellwing Hunting Oil",
+        "imageUrl": "assets/images/items/49675.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "chillwing-hunting-oil",
+        "name": "Chillwing Hunting Oil",
+        "imageUrl": "assets/images/items/49665.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "venomwing-hunting-oil",
+        "name": "Venomwing Hunting Oil",
+        "imageUrl": "assets/images/items/49677.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "eyerend-hunting-oil",
+        "name": "Eyerend Hunting Oil",
+        "imageUrl": "assets/images/items/49669.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "djinns-gift-hunting-oil",
+        "name": "Djinn's Gift Hunting Oil",
+        "imageUrl": "assets/images/items/49667.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "sporewalkers-hunting-oil",
+        "name": "Sporewalker's Hunting Oil",
+        "imageUrl": "assets/images/items/49676.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "brinebiter-oil",
+        "name": "Brinebiter Oil",
+        "imageUrl": "assets/images/items/50438.png",
+        "amount": 1,
+        "level": 82,
+        "experience": 4450,
+        "cost": 0
+      },
+      {
+        "id": "lesser-health-potion",
+        "name": "Lesser Health Potion",
+        "imageUrl": "assets/images/items/40881.png",
+        "amount": 10,
+        "level": 2,
+        "experience": 143,
+        "cost": 0
+      },
+      {
+        "id": "lesser-mana-potion",
+        "name": "Lesser Mana Potion",
+        "imageUrl": "assets/images/items/40882.png",
+        "amount": 10,
+        "level": 3,
+        "experience": 143,
+        "cost": 0
+      },
+      {
+        "id": "intermediate-health-potion",
+        "name": "Intermediate Health Potion",
+        "imageUrl": "assets/images/items/40883.png",
+        "amount": 10,
+        "level": 10,
+        "experience": 290,
+        "cost": 0
+      },
+      {
+        "id": "intermediate-mana-potion",
+        "name": "Intermediate Mana Potion",
+        "imageUrl": "assets/images/items/40884.png",
+        "amount": 10,
+        "level": 12,
+        "experience": 290,
+        "cost": 0
+      },
+      {
+        "id": "greater-health-potion",
+        "name": "Greater Health Potion",
+        "imageUrl": "assets/images/items/40885.png",
+        "amount": 10,
+        "level": 20,
+        "experience": 675,
+        "cost": 0
+      },
+      {
+        "id": "greater-mana-potion",
+        "name": "Greater Mana Potion",
+        "imageUrl": "assets/images/items/40886.png",
+        "amount": 10,
+        "level": 23,
+        "experience": 675,
+        "cost": 0
+      },
+      {
+        "id": "major-health-potion",
+        "name": "Major Health Potion",
+        "imageUrl": "assets/images/items/40887.png",
+        "amount": 10,
+        "level": 31,
+        "experience": 1150,
+        "cost": 0
+      },
+      {
+        "id": "major-mana-potion",
+        "name": "Major Mana Potion",
+        "imageUrl": "assets/images/items/40888.png",
+        "amount": 10,
+        "level": 32,
+        "experience": 1150,
+        "cost": 0
+      },
+      {
+        "id": "supreme-health-potion",
+        "name": "Supreme Health Potion",
+        "imageUrl": "assets/images/items/40889.png",
+        "amount": 10,
+        "level": 42,
+        "experience": 1550,
+        "cost": 0
+      },
+      {
+        "id": "supreme-mana-potion",
+        "name": "Supreme Mana Potion",
+        "imageUrl": "assets/images/items/40890.png",
+        "amount": 10,
+        "level": 45,
+        "experience": 1550,
+        "cost": 0
+      },
+      {
+        "id": "eternal-health-potion",
+        "name": "Eternal Health Potion",
+        "imageUrl": "assets/images/items/40911.png",
+        "amount": 10,
+        "level": 60,
+        "experience": 2400,
+        "cost": 0
+      },
+      {
+        "id": "eternal-mana-potion",
+        "name": "Eternal Mana Potion",
+        "imageUrl": "assets/images/items/40912.png",
+        "amount": 10,
+        "level": 63,
+        "experience": 2400,
+        "cost": 0
+      },
+      {
+        "id": "transcendent-health-potion",
+        "name": "Transcendent Health Potion",
+        "imageUrl": "assets/images/items/40913.png",
+        "amount": 10,
+        "level": 70,
+        "experience": 3750,
+        "cost": 0
+      },
+      {
+        "id": "transcendent-mana-potion",
+        "name": "Transcendent Mana Potion",
+        "imageUrl": "assets/images/items/40914.png",
+        "amount": 10,
+        "level": 70,
+        "experience": 3750,
+        "cost": 0
+      },
+      {
+        "id": "major-mixed-potion",
+        "name": "Major Mixed Potion",
+        "imageUrl": "assets/images/items/50449.png",
+        "amount": 10,
+        "level": 42,
+        "experience": 800,
+        "cost": 0
+      },
+      {
+        "id": "supreme-mixed-potion",
+        "name": "Supreme Mixed Potion",
+        "imageUrl": "assets/images/items/50452.png",
+        "amount": 10,
+        "level": 55,
+        "experience": 1150,
+        "cost": 0
+      },
+      {
+        "id": "eternal-mixed-potion",
+        "name": "Eternal Mixed Potion",
+        "imageUrl": "assets/images/items/50455.png",
+        "amount": 10,
+        "level": 73,
+        "experience": 1750,
+        "cost": 0
+      },
+      {
+        "id": "transcendent-mixed-potion",
+        "name": "Transcendent Mixed Potion",
+        "imageUrl": "assets/images/items/50457.png",
+        "amount": 10,
+        "level": 80,
+        "experience": 2812,
+        "cost": 0
+      },
+      {
+        "id": "ebonbark-bracer",
+        "name": "Ebonbark Bracer",
+        "imageUrl": "assets/images/items/52523.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 375,
+        "cost": 0
+      },
+      {
+        "id": "blazing-bracer",
+        "name": "Blazing Bracer",
+        "imageUrl": "assets/images/items/52524.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 930,
+        "cost": 0
+      },
+      {
+        "id": "grimplate-bracer",
+        "name": "Grimplate Bracer",
+        "imageUrl": "assets/images/items/52525.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "ghostoak-bracer",
+        "name": "Ghostoak Bracer",
+        "imageUrl": "assets/images/items/52526.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 7687,
+        "cost": 0
+      },
+      {
+        "id": "radiant-bracer",
+        "name": "Radiant Bracer",
+        "imageUrl": "assets/images/items/52527.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 13956,
+        "cost": 0
+      },
+      {
+        "id": "hellforged-bracer",
+        "name": "Hellforged Bracer",
+        "imageUrl": "assets/images/items/52528.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 20075,
+        "cost": 0
+      },
+      {
+        "id": "eversoul-bracer",
+        "name": "Eversoul Bracer",
+        "imageUrl": "assets/images/items/52529.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 40000,
+        "cost": 0
+      },
+      {
+        "id": "outlaw-flintlock",
+        "name": "Outlaw Flintlock",
+        "imageUrl": "assets/images/items/52507.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 375,
+        "cost": 0
+      },
+      {
+        "id": "pirate-pistol",
+        "name": "Pirate Pistol",
+        "imageUrl": "assets/images/items/52508.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 930,
+        "cost": 0
+      },
+      {
+        "id": "arcflint-shooter",
+        "name": "Arcflint Shooter",
+        "imageUrl": "assets/images/items/52509.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "voltrune-revolver",
+        "name": "Voltrune Revolver",
+        "imageUrl": "assets/images/items/52510.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 7687,
+        "cost": 0
+      },
+      {
+        "id": "sovereign-flintlock",
+        "name": "Sovereign Flintlock",
+        "imageUrl": "assets/images/items/52511.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 13956,
+        "cost": 0
+      },
+      {
+        "id": "dawnforged-revolver",
+        "name": "Dawnforged Revolver",
+        "imageUrl": "assets/images/items/52512.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 20075,
+        "cost": 0
+      },
+      {
+        "id": "saintbreaker-pistol",
+        "name": "Saintbreaker Pistol",
+        "imageUrl": "assets/images/items/52513.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 40000,
+        "cost": 0
+      },
+      {
+        "id": "dockhand-boomstick",
+        "name": "Dockhand Boomstick",
+        "imageUrl": "assets/images/items/52515.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "saltiron-scattergun",
+        "name": "Saltiron Scattergun",
+        "imageUrl": "assets/images/items/52516.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1860,
+        "cost": 0
+      },
+      {
+        "id": "tempest-coilgun",
+        "name": "Tempest Coilgun",
+        "imageUrl": "assets/images/items/52517.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 5500,
+        "cost": 0
+      },
+      {
+        "id": "irongullet-blaster",
+        "name": "Irongullet Blaster",
+        "imageUrl": "assets/images/items/52518.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 15375,
+        "cost": 0
+      },
+      {
+        "id": "purified-blunderbuss",
+        "name": "Purified Blunderbuss",
+        "imageUrl": "assets/images/items/52519.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 27912,
+        "cost": 0
+      },
+      {
+        "id": "dominion-boomstick",
+        "name": "Dominion Boomstick",
+        "imageUrl": "assets/images/items/52520.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 40150,
+        "cost": 0
+      },
+      {
+        "id": "titansoul-cannon",
+        "name": "Titansoul Cannon",
+        "imageUrl": "assets/images/items/52521.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 80000,
+        "cost": 0
+      },
+      {
+        "id": "sunwarden-bracer",
+        "name": "Sunwarden Bracer",
+        "imageUrl": "assets/images/items/55356.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "peacemaker-revolver",
+        "name": "Peacemaker Revolver",
+        "imageUrl": "assets/images/items/55357.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "lightbearer-cannon",
+        "name": "Lightbearer Cannon",
+        "imageUrl": "assets/images/items/55358.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 125000,
+        "cost": 0
+      }
+    ],
+    "blacksmithing": [
+      {
+        "id": "crescent-armor",
+        "name": "Crescent Armor",
+        "imageUrl": "assets/images/items/28687.png",
+        "amount": 1,
+        "level": 13,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "crescent-helmet",
+        "name": "Crescent Helmet",
+        "imageUrl": "assets/images/items/28688.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "crescent-legs",
+        "name": "Crescent Legs",
+        "imageUrl": "assets/images/items/28691.png",
+        "amount": 1,
+        "level": 19,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "crescent-boots",
+        "name": "Crescent Boots",
+        "imageUrl": "assets/images/items/28695.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "harbinger-armor",
+        "name": "Harbinger Armor",
+        "imageUrl": "assets/images/items/28696.png",
+        "amount": 1,
+        "level": 28,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "harbinger-helmet",
+        "name": "Harbinger Helmet",
+        "imageUrl": "assets/images/items/28702.png",
+        "amount": 1,
+        "level": 31,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "harbinger-legs",
+        "name": "Harbinger Legs",
+        "imageUrl": "assets/images/items/28703.png",
+        "amount": 1,
+        "level": 34,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "harbinger-boots",
+        "name": "Harbinger Boots",
+        "imageUrl": "assets/images/items/28699.png",
+        "amount": 1,
+        "level": 37,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "enforcer-armor",
+        "name": "Enforcer Armor",
+        "imageUrl": "assets/images/items/28705.png",
+        "amount": 1,
+        "level": 43,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "enforcer-helmet",
+        "name": "Enforcer Helmet",
+        "imageUrl": "assets/images/items/28711.png",
+        "amount": 1,
+        "level": 46,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "enforcer-legs",
+        "name": "Enforcer Legs",
+        "imageUrl": "assets/images/items/28712.png",
+        "amount": 1,
+        "level": 49,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "enforcer-boots",
+        "name": "Enforcer Boots",
+        "imageUrl": "assets/images/items/28708.png",
+        "amount": 1,
+        "level": 52,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "protectors-armor",
+        "name": "Protector's Armor",
+        "imageUrl": "assets/images/items/28714.png",
+        "amount": 1,
+        "level": 58,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "protectors-helmet",
+        "name": "Protector's Helmet",
+        "imageUrl": "assets/images/items/28720.png",
+        "amount": 1,
+        "level": 61,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "protectors-legs",
+        "name": "Protector's Legs",
+        "imageUrl": "assets/images/items/28721.png",
+        "amount": 1,
+        "level": 64,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "protectors-boots",
+        "name": "Protector's Boots",
+        "imageUrl": "assets/images/items/28717.png",
+        "amount": 1,
+        "level": 67,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "chivalry-armor",
+        "name": "Chivalry Armor",
+        "imageUrl": "assets/images/items/37143.png",
+        "amount": 1,
+        "level": 78,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "chivalry-helmet",
+        "name": "Chivalry Helmet",
+        "imageUrl": "assets/images/items/37146.png",
+        "amount": 1,
+        "level": 80,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "chivalry-legs",
+        "name": "Chivalry Legs",
+        "imageUrl": "assets/images/items/37145.png",
+        "amount": 1,
+        "level": 82,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "chivalry-boots",
+        "name": "Chivalry Boots",
+        "imageUrl": "assets/images/items/37144.png",
+        "amount": 1,
+        "level": 84,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "pliant-armor",
+        "name": "Pliant Armor",
+        "imageUrl": "assets/images/items/28678.png",
+        "amount": 1,
+        "level": 3,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "pliant-helmet",
+        "name": "Pliant Helmet",
+        "imageUrl": "assets/images/items/28684.png",
+        "amount": 1,
+        "level": 5,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "pliant-legs",
+        "name": "Pliant Legs",
+        "imageUrl": "assets/images/items/28685.png",
+        "amount": 1,
+        "level": 7,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "pliant-boots",
+        "name": "Pliant Boots",
+        "imageUrl": "assets/images/items/28681.png",
+        "amount": 1,
+        "level": 9,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "indomitable-armor",
+        "name": "Indomitable Armor",
+        "imageUrl": "assets/images/items/48530.png",
+        "amount": 1,
+        "level": 93,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "indomitable-helmet",
+        "name": "Indomitable Helmet",
+        "imageUrl": "assets/images/items/48532.png",
+        "amount": 1,
+        "level": 96,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "indomitable-legs",
+        "name": "Indomitable Legs",
+        "imageUrl": "assets/images/items/48533.png",
+        "amount": 1,
+        "level": 99,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "indomitable-boots",
+        "name": "Indomitable Boots",
+        "imageUrl": "assets/images/items/48531.png",
+        "amount": 1,
+        "level": 102,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "valorous-armor",
+        "name": "Valorous Armor",
+        "imageUrl": "assets/images/items/55330.png",
+        "amount": 1,
+        "level": 103,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "valorous-helmet",
+        "name": "Valorous Helmet",
+        "imageUrl": "assets/images/items/55331.png",
+        "amount": 1,
+        "level": 104,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "valorous-legs",
+        "name": "Valorous Legs",
+        "imageUrl": "assets/images/items/55332.png",
+        "amount": 1,
+        "level": 105,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "valorous-boots",
+        "name": "Valorous Boots",
+        "imageUrl": "assets/images/items/55333.png",
+        "amount": 1,
+        "level": 106,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "basic-field-tools",
+        "name": "Basic Field Tools",
+        "imageUrl": "assets/images/items/53321.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "sturdy-field-tools",
+        "name": "Sturdy Field Tools",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 60,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "balanced-field-tools",
+        "name": "Balanced Field Tools",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 70,
+        "experience": 3518,
+        "cost": 0
+      },
+      {
+        "id": "polished-field-tools",
+        "name": "Polished Field Tools",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 80,
+        "experience": 6250,
+        "cost": 0
+      },
+      {
+        "id": "refined-field-tools",
+        "name": "Refined Field Tools",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 90,
+        "experience": 10000,
+        "cost": 0
+      },
+      {
+        "id": "copper-fishing-hook",
+        "name": "copper fishing hook",
+        "imageUrl": "assets/images/items/28888.png",
+        "amount": 1,
+        "level": 7,
+        "experience": 500,
+        "cost": 0
+      },
+      {
+        "id": "complex-fishing-hook",
+        "name": "complex fishing hook",
+        "imageUrl": "assets/images/items/28886.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 1200,
+        "cost": 0
+      },
+      {
+        "id": "steel-fishing-hook",
+        "name": "steel fishing hook",
+        "imageUrl": "assets/images/items/28884.png",
+        "amount": 1,
+        "level": 37,
+        "experience": 2875,
+        "cost": 0
+      },
+      {
+        "id": "cobalt-fishing-hook",
+        "name": "cobalt fishing hook",
+        "imageUrl": "assets/images/items/28887.png",
+        "amount": 1,
+        "level": 52,
+        "experience": 5362,
+        "cost": 0
+      },
+      {
+        "id": "titanium-fishing-hook",
+        "name": "titanium fishing hook",
+        "imageUrl": "assets/images/items/28885.png",
+        "amount": 1,
+        "level": 72,
+        "experience": 9750,
+        "cost": 0
+      },
+      {
+        "id": "forging-tools",
+        "name": "Forging Tools",
+        "imageUrl": "assets/images/items/37234.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 30625,
+        "cost": 0
+      },
+      {
+        "id": "superior-forging-tools",
+        "name": "Superior Forging Tools",
+        "imageUrl": "assets/images/items/37285.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 57500,
+        "cost": 0
+      },
+      {
+        "id": "artisan-forging-tools",
+        "name": "Artisan Forging Tools",
+        "imageUrl": "assets/images/items/37220.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 84362,
+        "cost": 0
+      },
+      {
+        "id": "woodwork-tools",
+        "name": "Woodwork Tools",
+        "imageUrl": "assets/images/items/37289.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 25000,
+        "cost": 0
+      },
+      {
+        "id": "improved-woodwork-tools",
+        "name": "Improved Woodwork Tools",
+        "imageUrl": "assets/images/items/37236.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 60000,
+        "cost": 0
+      },
+      {
+        "id": "anvil",
+        "name": "Anvil",
+        "imageUrl": "assets/images/items/37217.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 23025,
+        "cost": 0
+      },
+      {
+        "id": "forgemaster-anvil",
+        "name": "Forgemaster Anvil",
+        "imageUrl": "assets/images/items/37233.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 53750,
+        "cost": 0
+      },
+      {
+        "id": "furnace",
+        "name": "Furnace",
+        "imageUrl": "assets/images/items/37235.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 6875,
+        "cost": 0
+      },
+      {
+        "id": "forge",
+        "name": "Forge",
+        "imageUrl": "assets/images/items/37232.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 22125,
+        "cost": 0
+      },
+      {
+        "id": "stove",
+        "name": "Stove",
+        "imageUrl": "assets/images/items/37281.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 17500,
+        "cost": 0
+      },
+      {
+        "id": "superior-stove",
+        "name": "Superior Stove",
+        "imageUrl": "assets/images/items/37286.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 80618,
+        "cost": 0
+      },
+      {
+        "id": "artisan-stove",
+        "name": "Artisan Stove",
+        "imageUrl": "assets/images/items/37221.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 102500,
+        "cost": 0
+      },
+      {
+        "id": "stone-block",
+        "name": "Stone Block",
+        "imageUrl": "assets/images/items/41850.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 100,
+        "cost": 0
+      },
+      {
+        "id": "dense-block",
+        "name": "Dense Block",
+        "imageUrl": "assets/images/items/41846.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 230,
+        "cost": 0
+      },
+      {
+        "id": "royal-ornaments",
+        "name": "Royal Ornaments",
+        "imageUrl": "assets/images/items/41849.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 6000,
+        "cost": 0
+      },
+      {
+        "id": "malleable-anvil",
+        "name": "Malleable Anvil",
+        "imageUrl": "assets/images/items/42778.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 6350,
+        "cost": 0
+      },
+      {
+        "id": "basic-tools",
+        "name": "Basic Tools",
+        "imageUrl": "assets/images/items/42784.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 2375,
+        "cost": 0
+      },
+      {
+        "id": "weak-racks",
+        "name": "Weak Racks",
+        "imageUrl": "assets/images/items/47288.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 1225,
+        "cost": 0
+      },
+      {
+        "id": "armory-racks",
+        "name": "Armory Racks",
+        "imageUrl": "assets/images/items/47276.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 3375,
+        "cost": 0
+      },
+      {
+        "id": "reinforced-racks",
+        "name": "Reinforced Racks",
+        "imageUrl": "assets/images/items/47281.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 9383,
+        "cost": 0
+      },
+      {
+        "id": "gear-maintenance-tools",
+        "name": "Gear Maintenance Tools",
+        "imageUrl": "assets/images/items/47279.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 21875,
+        "cost": 0
+      },
+      {
+        "id": "thief-tools",
+        "name": "Thief Tools",
+        "imageUrl": "assets/images/items/47283.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "warmonger-tools",
+        "name": "Warmonger Tools",
+        "imageUrl": "assets/images/items/47287.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "basic-distilary-station",
+        "name": "Basic Distilary Station",
+        "imageUrl": "assets/images/items/49795.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 2200,
+        "cost": 0
+      },
+      {
+        "id": "condensing-station",
+        "name": "Condensing Station",
+        "imageUrl": "assets/images/items/49796.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 12187,
+        "cost": 0
+      },
+      {
+        "id": "distilary-station",
+        "name": "Distilary Station",
+        "imageUrl": "assets/images/items/49798.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 30312,
+        "cost": 0
+      },
+      {
+        "id": "metallic-reinforcement",
+        "name": "Metallic Reinforcement",
+        "imageUrl": "assets/images/items/49804.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 6450,
+        "cost": 0
+      },
+      {
+        "id": "metallic-barrier",
+        "name": "Metallic Barrier",
+        "imageUrl": "assets/images/items/49802.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 14750,
+        "cost": 0
+      },
+      {
+        "id": "metallic-fortification",
+        "name": "Metallic Fortification",
+        "imageUrl": "assets/images/items/49803.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 32500,
+        "cost": 0
+      },
+      {
+        "id": "pathfinders-gear",
+        "name": "Pathfinder's Gear",
+        "imageUrl": "assets/images/items/49809.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 5125,
+        "cost": 0
+      },
+      {
+        "id": "pioneers-gear",
+        "name": "Pioneer's Gear",
+        "imageUrl": "assets/images/items/49810.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 12625,
+        "cost": 0
+      },
+      {
+        "id": "conquerors-gear",
+        "name": "Conqueror's Gear",
+        "imageUrl": "assets/images/items/49797.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 31250,
+        "cost": 0
+      },
+      {
+        "id": "copper-ingot",
+        "name": "copper ingot",
+        "imageUrl": "assets/images/items/28726.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 120,
+        "cost": 0
+      },
+      {
+        "id": "iron-ingot",
+        "name": "iron ingot",
+        "imageUrl": "assets/images/items/28723.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 200,
+        "cost": 0
+      },
+      {
+        "id": "steel-ingot",
+        "name": "steel ingot",
+        "imageUrl": "assets/images/items/28724.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 287,
+        "cost": 0
+      },
+      {
+        "id": "cobalt-ingot",
+        "name": "cobalt ingot",
+        "imageUrl": "assets/images/items/28725.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 412,
+        "cost": 0
+      },
+      {
+        "id": "titanium-ingot",
+        "name": "titanium ingot",
+        "imageUrl": "assets/images/items/28727.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 650,
+        "cost": 0
+      },
+      {
+        "id": "bronze-ingot",
+        "name": "bronze ingot",
+        "imageUrl": "assets/images/items/49614.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 165,
+        "cost": 0
+      },
+      {
+        "id": "glimmery-ingot",
+        "name": "glimmery ingot",
+        "imageUrl": "assets/images/items/48522.png",
+        "amount": 1,
+        "level": 88,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "radiant-ingot",
+        "name": "radiant ingot",
+        "imageUrl": "assets/images/items/55325.png",
+        "amount": 1,
+        "level": 98,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "reinforced-plate",
+        "name": "reinforced plate",
+        "imageUrl": "assets/images/items/28740.png",
+        "amount": 2,
+        "level": 20,
+        "experience": 3187,
+        "cost": 0
+      },
+      {
+        "id": "nail",
+        "name": "nail",
+        "imageUrl": "assets/images/items/28734.png",
+        "amount": 1,
+        "level": 2,
+        "experience": 40,
+        "cost": 0
+      },
+      {
+        "id": "iron-bar",
+        "name": "iron bar",
+        "imageUrl": "assets/images/items/28737.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 200,
+        "cost": 0
+      },
+      {
+        "id": "bolt",
+        "name": "Bolt",
+        "imageUrl": "assets/images/items/40282.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 97,
+        "cost": 0
+      },
+      {
+        "id": "steel-bar",
+        "name": "Steel Bar",
+        "imageUrl": "assets/images/items/40284.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 187,
+        "cost": 0
+      },
+      {
+        "id": "common-plate",
+        "name": "Common Plate",
+        "imageUrl": "assets/images/items/40283.png",
+        "amount": 1,
+        "level": 4,
+        "experience": 1250,
+        "cost": 0
+      },
+      {
+        "id": "malleable-screw",
+        "name": "malleable screw",
+        "imageUrl": "assets/images/items/49616.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 55,
+        "cost": 0
+      },
+      {
+        "id": "arcane-reflector",
+        "name": "arcane reflector",
+        "imageUrl": "assets/images/items/49613.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 275,
+        "cost": 0
+      },
+      {
+        "id": "gemstone-dust",
+        "name": "Gemstone Dust",
+        "imageUrl": "assets/images/items/49799.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1000,
+        "cost": 0
+      },
+      {
+        "id": "gemstone-dust",
+        "name": "Gemstone Dust",
+        "imageUrl": "assets/images/items/49799.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1000,
+        "cost": 0
+      },
+      {
+        "id": "gemstone-dust",
+        "name": "Gemstone Dust",
+        "imageUrl": "assets/images/items/49799.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1000,
+        "cost": 0
+      },
+      {
+        "id": "gemstone-dust",
+        "name": "Gemstone Dust",
+        "imageUrl": "assets/images/items/49799.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1000,
+        "cost": 0
+      },
+      {
+        "id": "gemstone-dust",
+        "name": "Gemstone Dust",
+        "imageUrl": "assets/images/items/49799.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1000,
+        "cost": 0
+      },
+      {
+        "id": "gemstone-dust",
+        "name": "Gemstone Dust",
+        "imageUrl": "assets/images/items/49799.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1000,
+        "cost": 0
+      },
+      {
+        "id": "simple-headgear",
+        "name": "Simple Headgear",
+        "imageUrl": "assets/images/items/43238.png",
+        "amount": 1,
+        "level": 12,
+        "experience": 2400,
+        "cost": 0
+      },
+      {
+        "id": "composed-headgear",
+        "name": "Composed Headgear",
+        "imageUrl": "assets/images/items/43239.png",
+        "amount": 1,
+        "level": 24,
+        "experience": 4375,
+        "cost": 0
+      },
+      {
+        "id": "advanced-headgear",
+        "name": "Advanced Headgear",
+        "imageUrl": "assets/images/items/43240.png",
+        "amount": 1,
+        "level": 36,
+        "experience": 7712,
+        "cost": 0
+      },
+      {
+        "id": "artisan-headgear",
+        "name": "Artisan Headgear",
+        "imageUrl": "assets/images/items/43241.png",
+        "amount": 1,
+        "level": 48,
+        "experience": 22062,
+        "cost": 0
+      },
+      {
+        "id": "superior-headgear",
+        "name": "Superior Headgear",
+        "imageUrl": "assets/images/items/43242.png",
+        "amount": 1,
+        "level": 60,
+        "experience": 30181,
+        "cost": 0
+      },
+      {
+        "id": "war-headgear",
+        "name": "War Headgear",
+        "imageUrl": "assets/images/items/43243.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 60700,
+        "cost": 0
+      },
+      {
+        "id": "explorer-headgear",
+        "name": "Explorer Headgear",
+        "imageUrl": "assets/images/items/43244.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 60700,
+        "cost": 0
+      },
+      {
+        "id": "professional-headgear",
+        "name": "Professional Headgear",
+        "imageUrl": "assets/images/items/43245.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 60700,
+        "cost": 0
+      },
+      {
+        "id": "minor-shielding-kit",
+        "name": "Minor Shielding Kit",
+        "imageUrl": "assets/images/items/37260.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 46250,
+        "cost": 0
+      },
+      {
+        "id": "sturdy-shielding-kit",
+        "name": "Sturdy Shielding Kit",
+        "imageUrl": "assets/images/items/37282.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 181250,
+        "cost": 0
+      },
+      {
+        "id": "reinforced-shielding-kit",
+        "name": "Reinforced Shielding Kit",
+        "imageUrl": "assets/images/items/37263.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 300000,
+        "cost": 0
+      },
+      {
+        "id": "small-cannon-kit",
+        "name": "Small Cannon Kit",
+        "imageUrl": "assets/images/items/37266.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 19087,
+        "cost": 0
+      },
+      {
+        "id": "simple-ship-emblems-kit",
+        "name": "Simple Ship Emblems Kit",
+        "imageUrl": "assets/images/items/37268.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 25375,
+        "cost": 0
+      },
+      {
+        "id": "shiny-ship-emblems-kit",
+        "name": "Shiny Ship Emblems Kit",
+        "imageUrl": "assets/images/items/37265.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 62625,
+        "cost": 0
+      },
+      {
+        "id": "adorned-ship-emblems-kit",
+        "name": "Adorned Ship Emblems Kit",
+        "imageUrl": "assets/images/items/37218.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 70500,
+        "cost": 0
+      },
+      {
+        "id": "basic-water-pumps-kit",
+        "name": "Basic Water Pumps Kit",
+        "imageUrl": "assets/images/items/37223.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 25000,
+        "cost": 0
+      },
+      {
+        "id": "enhanced-water-pumps-kit",
+        "name": "Enhanced Water Pumps Kit",
+        "imageUrl": "assets/images/items/37230.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "pressurized-water-pumps-kit",
+        "name": "Pressurized Water Pumps Kit",
+        "imageUrl": "assets/images/items/37261.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 136250,
+        "cost": 0
+      },
+      {
+        "id": "medium-cannon-kit",
+        "name": "Medium Cannon Kit",
+        "imageUrl": "assets/images/items/43637.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 52750,
+        "cost": 0
+      },
+      {
+        "id": "large-cannon-kit",
+        "name": "Large Cannon Kit",
+        "imageUrl": "assets/images/items/43636.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 123750,
+        "cost": 0
+      },
+      {
+        "id": "wardens-sword",
+        "name": "Warden's Sword",
+        "imageUrl": "assets/images/items/29060.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 930,
+        "cost": 0
+      },
+      {
+        "id": "marauders-axe",
+        "name": "Marauder's Axe",
+        "imageUrl": "assets/images/items/28993.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 930,
+        "cost": 0
+      },
+      {
+        "id": "studded-flail",
+        "name": "Studded Flail",
+        "imageUrl": "assets/images/items/29005.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 930,
+        "cost": 0
+      },
+      {
+        "id": "noble-dagger",
+        "name": "Noble Dagger",
+        "imageUrl": "assets/images/items/29011.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 930,
+        "cost": 0
+      },
+      {
+        "id": "warriors-greataxe",
+        "name": "Warrior's Greataxe",
+        "imageUrl": "assets/images/items/28980.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1860,
+        "cost": 0
+      },
+      {
+        "id": "valiant-greatsword",
+        "name": "Valiant Greatsword",
+        "imageUrl": "assets/images/items/28986.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1860,
+        "cost": 0
+      },
+      {
+        "id": "crushing-hammer",
+        "name": "Crushing Hammer",
+        "imageUrl": "assets/images/items/29017.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1860,
+        "cost": 0
+      },
+      {
+        "id": "lawbreakers-sword",
+        "name": "Lawbreaker's Sword",
+        "imageUrl": "assets/images/items/29061.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "dread-axe",
+        "name": "Dread Axe",
+        "imageUrl": "assets/images/items/28994.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "shieldbreakers-flail",
+        "name": "Shieldbreaker's Flail",
+        "imageUrl": "assets/images/items/29006.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "ice-dagger",
+        "name": "Ice Dagger",
+        "imageUrl": "assets/images/items/29012.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "savage-battle-axe",
+        "name": "Savage Battle Axe",
+        "imageUrl": "assets/images/items/28981.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 5500,
+        "cost": 0
+      },
+      {
+        "id": "heroic-greatsword",
+        "name": "Heroic Greatsword",
+        "imageUrl": "assets/images/items/28987.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 5500,
+        "cost": 0
+      },
+      {
+        "id": "punishers-gavel",
+        "name": "Punisher's Gavel",
+        "imageUrl": "assets/images/items/29018.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 5500,
+        "cost": 0
+      },
+      {
+        "id": "guardians-longsword",
+        "name": "Guardian's Longsword",
+        "imageUrl": "assets/images/items/29062.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 7687,
+        "cost": 0
+      },
+      {
+        "id": "stormcarver-axe",
+        "name": "Stormcarver Axe",
+        "imageUrl": "assets/images/items/28995.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 7687,
+        "cost": 0
+      },
+      {
+        "id": "ravenguard-morningstar",
+        "name": "Ravenguard Morningstar",
+        "imageUrl": "assets/images/items/29007.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 7687,
+        "cost": 0
+      },
+      {
+        "id": "heartstopper-dagger",
+        "name": "Heartstopper Dagger",
+        "imageUrl": "assets/images/items/29013.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 7687,
+        "cost": 0
+      },
+      {
+        "id": "hangmans-greataxe",
+        "name": "Hangman's Greataxe",
+        "imageUrl": "assets/images/items/28982.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 15375,
+        "cost": 0
+      },
+      {
+        "id": "bonebiter-greatsword",
+        "name": "Bonebiter Greatsword",
+        "imageUrl": "assets/images/items/28988.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 15375,
+        "cost": 0
+      },
+      {
+        "id": "lawgivers-warhammer",
+        "name": "Lawgiver's Warhammer",
+        "imageUrl": "assets/images/items/29019.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 15375,
+        "cost": 0
+      },
+      {
+        "id": "crusaders-longsword",
+        "name": "Crusader's Longsword",
+        "imageUrl": "assets/images/items/29063.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 13956,
+        "cost": 0
+      },
+      {
+        "id": "hellblade-axe",
+        "name": "Hellblade Axe",
+        "imageUrl": "assets/images/items/28996.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 13956,
+        "cost": 0
+      },
+      {
+        "id": "enforcers-mace",
+        "name": "Enforcer's Mace",
+        "imageUrl": "assets/images/items/29008.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 13956,
+        "cost": 0
+      },
+      {
+        "id": "assassins-dagger",
+        "name": "Assassin's Dagger",
+        "imageUrl": "assets/images/items/29014.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 13956,
+        "cost": 0
+      },
+      {
+        "id": "orcish-battle-axe",
+        "name": "Orcish Battle Axe",
+        "imageUrl": "assets/images/items/28983.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 27912,
+        "cost": 0
+      },
+      {
+        "id": "samurais-daikatana",
+        "name": "Samurai's Daikatana",
+        "imageUrl": "assets/images/items/28989.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 27912,
+        "cost": 0
+      },
+      {
+        "id": "dwarven-warhammer",
+        "name": "Dwarven Warhammer",
+        "imageUrl": "assets/images/items/29020.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 27912,
+        "cost": 0
+      },
+      {
+        "id": "swashbucklers-blade",
+        "name": "Swashbuckler's Blade",
+        "imageUrl": "assets/images/items/37108.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1860,
+        "cost": 0
+      },
+      {
+        "id": "serpentine-blade",
+        "name": "Serpentine Blade",
+        "imageUrl": "assets/images/items/37109.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 5500,
+        "cost": 0
+      },
+      {
+        "id": "duelists-companion",
+        "name": "Duelist's Companion",
+        "imageUrl": "assets/images/items/37110.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 15375,
+        "cost": 0
+      },
+      {
+        "id": "ornamented-saber",
+        "name": "Ornamented Saber",
+        "imageUrl": "assets/images/items/37111.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 27912,
+        "cost": 0
+      },
+      {
+        "id": "champions-longsword",
+        "name": "Champion's Longsword",
+        "imageUrl": "assets/images/items/37158.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 20075,
+        "cost": 0
+      },
+      {
+        "id": "dragonbane-axe",
+        "name": "Dragonbane Axe",
+        "imageUrl": "assets/images/items/37154.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 20075,
+        "cost": 0
+      },
+      {
+        "id": "skullbasher-mace",
+        "name": "Skullbasher Mace",
+        "imageUrl": "assets/images/items/37156.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 20075,
+        "cost": 0
+      },
+      {
+        "id": "ritual-dagger",
+        "name": "Ritual Dagger",
+        "imageUrl": "assets/images/items/37151.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 20075,
+        "cost": 0
+      },
+      {
+        "id": "scarlet-thorn",
+        "name": "Scarlet Thorn",
+        "imageUrl": "assets/images/items/37112.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 40150,
+        "cost": 0
+      },
+      {
+        "id": "nocturnal-greataxe",
+        "name": "Nocturnal Greataxe",
+        "imageUrl": "assets/images/items/37148.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 40150,
+        "cost": 0
+      },
+      {
+        "id": "magisters-greatsword",
+        "name": "Magister's Greatsword",
+        "imageUrl": "assets/images/items/37153.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 40150,
+        "cost": 0
+      },
+      {
+        "id": "soulwardens-hammer",
+        "name": "Soulwarden's Hammer",
+        "imageUrl": "assets/images/items/37152.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 40150,
+        "cost": 0
+      },
+      {
+        "id": "solid-mace",
+        "name": "Solid Mace",
+        "imageUrl": "assets/images/items/29004.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 375,
+        "cost": 0
+      },
+      {
+        "id": "rough-sword",
+        "name": "Rough Sword",
+        "imageUrl": "assets/images/items/29059.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 375,
+        "cost": 0
+      },
+      {
+        "id": "wicked-axe",
+        "name": "Wicked Axe",
+        "imageUrl": "assets/images/items/28992.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 375,
+        "cost": 0
+      },
+      {
+        "id": "serrated-dagger",
+        "name": "Serrated Dagger",
+        "imageUrl": "assets/images/items/29010.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 375,
+        "cost": 0
+      },
+      {
+        "id": "rough-greataxe",
+        "name": "Rough Greataxe",
+        "imageUrl": "assets/images/items/28978.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "burnished-greatsword",
+        "name": "Burnished Greatsword",
+        "imageUrl": "assets/images/items/28985.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "skirmishers-blade",
+        "name": "Skirmisher's Blade",
+        "imageUrl": "assets/images/items/37107.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "shipbuilding-mallet",
+        "name": "Shipbuilding Mallet",
+        "imageUrl": "assets/images/items/29016.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "warlords-longsword",
+        "name": "Warlord's Longsword",
+        "imageUrl": "assets/images/items/48550.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 40000,
+        "cost": 0
+      },
+      {
+        "id": "doomgem-axe",
+        "name": "Doomgem Axe",
+        "imageUrl": "assets/images/items/48540.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 40000,
+        "cost": 0
+      },
+      {
+        "id": "tyrants-mace",
+        "name": "Tyrant's Mace",
+        "imageUrl": "assets/images/items/48547.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 40000,
+        "cost": 0
+      },
+      {
+        "id": "soulstealers-blade",
+        "name": "Soulstealer's Blade",
+        "imageUrl": "assets/images/items/48545.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 40000,
+        "cost": 0
+      },
+      {
+        "id": "voidborne-blade",
+        "name": "Voidborne Blade",
+        "imageUrl": "assets/images/items/48549.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 80000,
+        "cost": 0
+      },
+      {
+        "id": "runic-greataxe",
+        "name": "Runic Greataxe",
+        "imageUrl": "assets/images/items/48544.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 80000,
+        "cost": 0
+      },
+      {
+        "id": "twilight-greatsword",
+        "name": "Twilight Greatsword",
+        "imageUrl": "assets/images/items/48546.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 80000,
+        "cost": 0
+      },
+      {
+        "id": "indomitable-hammer",
+        "name": "Indomitable Hammer",
+        "imageUrl": "assets/images/items/48542.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 80000,
+        "cost": 0
+      },
+      {
+        "id": "paragon-sword",
+        "name": "Paragon Sword",
+        "imageUrl": "assets/images/items/55342.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "dawnbreaker-axe",
+        "name": "Dawnbreaker Axe",
+        "imageUrl": "assets/images/items/55343.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "judicators-mace",
+        "name": "Judicator's Mace",
+        "imageUrl": "assets/images/items/55344.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "assailants-edge",
+        "name": "Assailant's Edge",
+        "imageUrl": "assets/images/items/55345.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "gilded-blade",
+        "name": "Gilded Blade",
+        "imageUrl": "assets/images/items/55346.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 125000,
+        "cost": 0
+      },
+      {
+        "id": "ravagers-greataxe",
+        "name": "Ravager's Greataxe",
+        "imageUrl": "assets/images/items/55347.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 125000,
+        "cost": 0
+      },
+      {
+        "id": "conquerors-greatsword",
+        "name": "Conqueror's Greatsword",
+        "imageUrl": "assets/images/items/55348.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 125000,
+        "cost": 0
+      },
+      {
+        "id": "justiciar-hammer",
+        "name": "Justiciar Hammer",
+        "imageUrl": "assets/images/items/55349.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 125000,
+        "cost": 0
+      },
+      {
+        "id": "whetstone",
+        "name": "whetstone",
+        "imageUrl": "assets/images/items/28426.png",
+        "amount": 5,
+        "level": 3,
+        "experience": 150,
+        "cost": 0
+      },
+      {
+        "id": "coarse-whetstone",
+        "name": "coarse whetstone",
+        "imageUrl": "assets/images/items/28427.png",
+        "amount": 5,
+        "level": 18,
+        "experience": 425,
+        "cost": 0
+      },
+      {
+        "id": "heavy-whetstone",
+        "name": "Heavy Whetstone",
+        "imageUrl": "assets/images/items/35437.png",
+        "amount": 5,
+        "level": 33,
+        "experience": 862,
+        "cost": 0
+      },
+      {
+        "id": "solid-whetstone",
+        "name": "Solid Whetstone",
+        "imageUrl": "assets/images/items/35438.png",
+        "amount": 5,
+        "level": 48,
+        "experience": 2243,
+        "cost": 0
+      },
+      {
+        "id": "dense-whetstone",
+        "name": "dense whetstone",
+        "imageUrl": "assets/images/items/28428.png",
+        "amount": 5,
+        "level": 70,
+        "experience": 3518,
+        "cost": 0
+      },
+      {
+        "id": "titansharp-whetstone",
+        "name": "Titansharp Whetstone",
+        "imageUrl": "assets/images/items/50458.png",
+        "amount": 5,
+        "level": 80,
+        "experience": 5000,
+        "cost": 0
+      }
+    ],
+    "carpentry": [
+      {
+        "id": "simple-wooden-joinery",
+        "name": "Simple Wooden Joinery",
+        "imageUrl": "assets/images/items/53326.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "reinforced-wooden-joinery",
+        "name": "Reinforced Wooden Joinery",
+        "imageUrl": "assets/images/items/53327.png",
+        "amount": 3,
+        "level": 60,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "precise-wooden-joinery",
+        "name": "Precise Wooden Joinery",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 70,
+        "experience": 3518,
+        "cost": 0
+      },
+      {
+        "id": "elaborate-wooden-joinery",
+        "name": "Elaborate Wooden Joinery",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 80,
+        "experience": 6250,
+        "cost": 0
+      },
+      {
+        "id": "intricate-wooden-joinery",
+        "name": "Intricate Wooden Joinery",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 90,
+        "experience": 10000,
+        "cost": 0
+      },
+      {
+        "id": "fishing-stick",
+        "name": "fishing stick",
+        "imageUrl": "assets/images/items/28896.png",
+        "amount": 1,
+        "level": 3,
+        "experience": 520,
+        "cost": 0
+      },
+      {
+        "id": "fishing-rod",
+        "name": "fishing rod",
+        "imageUrl": "assets/images/items/28898.png",
+        "amount": 1,
+        "level": 18,
+        "experience": 1037,
+        "cost": 0
+      },
+      {
+        "id": "craftmans-fishing-rod",
+        "name": "craftman's fishing rod",
+        "imageUrl": "assets/images/items/28895.png",
+        "amount": 1,
+        "level": 28,
+        "experience": 2962,
+        "cost": 0
+      },
+      {
+        "id": "sailors-fishing-rod",
+        "name": "sailor's fishing rod",
+        "imageUrl": "assets/images/items/28899.png",
+        "amount": 1,
+        "level": 43,
+        "experience": 6437,
+        "cost": 0
+      },
+      {
+        "id": "artisan-fishing-rod",
+        "name": "artisan fishing rod",
+        "imageUrl": "assets/images/items/28900.png",
+        "amount": 1,
+        "level": 58,
+        "experience": 22212,
+        "cost": 0
+      },
+      {
+        "id": "lightwood-angler",
+        "name": "lightwood angler",
+        "imageUrl": "assets/images/items/28897.png",
+        "amount": 1,
+        "level": 72,
+        "experience": 35600,
+        "cost": 0
+      },
+      {
+        "id": "handguard",
+        "name": "Handguard",
+        "imageUrl": "assets/images/items/50443.png",
+        "amount": 1,
+        "level": 3,
+        "experience": 437,
+        "cost": 0
+      },
+      {
+        "id": "rough-handguard",
+        "name": "Rough Handguard",
+        "imageUrl": "assets/images/items/50445.png",
+        "amount": 1,
+        "level": 18,
+        "experience": 2312,
+        "cost": 0
+      },
+      {
+        "id": "heavy-handguard",
+        "name": "Heavy Handguard",
+        "imageUrl": "assets/images/items/50447.png",
+        "amount": 1,
+        "level": 33,
+        "experience": 3375,
+        "cost": 0
+      },
+      {
+        "id": "trim-handguard",
+        "name": "Trim Handguard",
+        "imageUrl": "assets/images/items/50450.png",
+        "amount": 1,
+        "level": 48,
+        "experience": 6950,
+        "cost": 0
+      },
+      {
+        "id": "noble-handguard",
+        "name": "Noble Handguard",
+        "imageUrl": "assets/images/items/50453.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 9175,
+        "cost": 0
+      },
+      {
+        "id": "radiant-handguard",
+        "name": "Radiant Handguard",
+        "imageUrl": "assets/images/items/50456.png",
+        "amount": 1,
+        "level": 80,
+        "experience": 12650,
+        "cost": 0
+      },
+      {
+        "id": "armoires",
+        "name": "Armoires",
+        "imageUrl": "assets/images/items/37219.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 8675,
+        "cost": 0
+      },
+      {
+        "id": "square-table",
+        "name": "Square Table",
+        "imageUrl": "assets/images/items/37279.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 14137,
+        "cost": 0
+      },
+      {
+        "id": "sturdy-square-table",
+        "name": "Sturdy Square Table",
+        "imageUrl": "assets/images/items/37283.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 20956,
+        "cost": 0
+      },
+      {
+        "id": "cabinet",
+        "name": "Cabinet",
+        "imageUrl": "assets/images/items/37224.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 2100,
+        "cost": 0
+      },
+      {
+        "id": "loom",
+        "name": "Loom",
+        "imageUrl": "assets/images/items/37244.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 12393,
+        "cost": 0
+      },
+      {
+        "id": "chair",
+        "name": "Chair",
+        "imageUrl": "assets/images/items/37227.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 3275,
+        "cost": 0
+      },
+      {
+        "id": "simple-bed",
+        "name": "Simple Bed",
+        "imageUrl": "assets/images/items/37267.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 11500,
+        "cost": 0
+      },
+      {
+        "id": "comfortable-bed",
+        "name": "Comfortable Bed",
+        "imageUrl": "assets/images/items/37228.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 32000,
+        "cost": 0
+      },
+      {
+        "id": "storage-container",
+        "name": "Storage Container",
+        "imageUrl": "assets/images/items/37280.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 3437,
+        "cost": 0
+      },
+      {
+        "id": "work-bench",
+        "name": "Work Bench",
+        "imageUrl": "assets/images/items/37290.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 10625,
+        "cost": 0
+      },
+      {
+        "id": "superior-work-bench",
+        "name": "Superior Work Bench",
+        "imageUrl": "assets/images/items/37287.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 21768,
+        "cost": 0
+      },
+      {
+        "id": "artisan-work-bench",
+        "name": "Artisan Work Bench",
+        "imageUrl": "assets/images/items/37222.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 64343,
+        "cost": 0
+      },
+      {
+        "id": "fireplace",
+        "name": "Fireplace",
+        "imageUrl": "assets/images/items/37231.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 15112,
+        "cost": 0
+      },
+      {
+        "id": "luxury-bed",
+        "name": "Luxury Bed",
+        "imageUrl": "assets/images/items/37245.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 65943,
+        "cost": 0
+      },
+      {
+        "id": "weak-table",
+        "name": "Weak Table",
+        "imageUrl": "assets/images/items/42777.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1837,
+        "cost": 0
+      },
+      {
+        "id": "sturdy-container",
+        "name": "Sturdy Container",
+        "imageUrl": "assets/images/items/42782.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 19737,
+        "cost": 0
+      },
+      {
+        "id": "frail-loom",
+        "name": "Frail Loom",
+        "imageUrl": "assets/images/items/42781.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 4000,
+        "cost": 0
+      },
+      {
+        "id": "simple-loom",
+        "name": "Simple Loom",
+        "imageUrl": "assets/images/items/42783.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 11250,
+        "cost": 0
+      },
+      {
+        "id": "protective-charm",
+        "name": "Protective Charm",
+        "imageUrl": "assets/images/items/47280.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 1387,
+        "cost": 0
+      },
+      {
+        "id": "warding-charm",
+        "name": "Warding Charm",
+        "imageUrl": "assets/images/items/47286.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 4300,
+        "cost": 0
+      },
+      {
+        "id": "spellbound-charm",
+        "name": "Spellbound Charm",
+        "imageUrl": "assets/images/items/47282.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 6587,
+        "cost": 0
+      },
+      {
+        "id": "basic-stabilizer",
+        "name": "Basic Stabilizer",
+        "imageUrl": "assets/images/items/47277.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1462,
+        "cost": 0
+      },
+      {
+        "id": "energy-stabilizer",
+        "name": "Energy Stabilizer",
+        "imageUrl": "assets/images/items/47278.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 4200,
+        "cost": 0
+      },
+      {
+        "id": "arcane-stabilizer",
+        "name": "Arcane Stabilizer",
+        "imageUrl": "assets/images/items/47275.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 6587,
+        "cost": 0
+      },
+      {
+        "id": "wall-reinforcement",
+        "name": "Wall Reinforcement",
+        "imageUrl": "assets/images/items/47285.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 1387,
+        "cost": 0
+      },
+      {
+        "id": "wall-fortification",
+        "name": "Wall Fortification",
+        "imageUrl": "assets/images/items/47284.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 7300,
+        "cost": 0
+      },
+      {
+        "id": "herb-mixing-table",
+        "name": "Herb Mixing Table",
+        "imageUrl": "assets/images/items/49800.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 8837,
+        "cost": 0
+      },
+      {
+        "id": "preparation-table",
+        "name": "Preparation Table",
+        "imageUrl": "assets/images/items/49813.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 26150,
+        "cost": 0
+      },
+      {
+        "id": "alchemists-table",
+        "name": "Alchemist's Table",
+        "imageUrl": "assets/images/items/49792.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 62912,
+        "cost": 0
+      },
+      {
+        "id": "supply-locker",
+        "name": "Supply Locker",
+        "imageUrl": "assets/images/items/49815.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 4187,
+        "cost": 0
+      },
+      {
+        "id": "reinforced-locker",
+        "name": "Reinforced Locker",
+        "imageUrl": "assets/images/items/49812.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 22887,
+        "cost": 0
+      },
+      {
+        "id": "mystic-reinforcement",
+        "name": "Mystic Reinforcement",
+        "imageUrl": "assets/images/items/49805.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 8325,
+        "cost": 0
+      },
+      {
+        "id": "mystic-barrier",
+        "name": "Mystic Barrier",
+        "imageUrl": "assets/images/items/49808.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 19700,
+        "cost": 0
+      },
+      {
+        "id": "mystic-fortification",
+        "name": "Mystic Fortification",
+        "imageUrl": "assets/images/items/49806.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 54875,
+        "cost": 0
+      },
+      {
+        "id": "mystic-tools",
+        "name": "Mystic Tools",
+        "imageUrl": "assets/images/items/49807.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 16012,
+        "cost": 0
+      },
+      {
+        "id": "arcanist-tools",
+        "name": "Arcanist Tools",
+        "imageUrl": "assets/images/items/49794.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 35450,
+        "cost": 0
+      },
+      {
+        "id": "magical-accoutrements",
+        "name": "Magical Accoutrements",
+        "imageUrl": "assets/images/items/49801.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 5625,
+        "cost": 0
+      },
+      {
+        "id": "spellcasters-accoutrements",
+        "name": "Spellcaster's Accoutrements",
+        "imageUrl": "assets/images/items/49814.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 15975,
+        "cost": 0
+      },
+      {
+        "id": "arcane-accoutrements",
+        "name": "Arcane Accoutrements",
+        "imageUrl": "assets/images/items/49793.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 29125,
+        "cost": 0
+      },
+      {
+        "id": "rough-plank",
+        "name": "rough plank",
+        "imageUrl": "assets/images/items/28744.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 220,
+        "cost": 0
+      },
+      {
+        "id": "refined-plank",
+        "name": "refined plank",
+        "imageUrl": "assets/images/items/28743.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 400,
+        "cost": 0
+      },
+      {
+        "id": "treated-plank",
+        "name": "treated plank",
+        "imageUrl": "assets/images/items/28745.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 687,
+        "cost": 0
+      },
+      {
+        "id": "dense-plank",
+        "name": "Dense Plank",
+        "imageUrl": "assets/images/items/41847.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1062,
+        "cost": 0
+      },
+      {
+        "id": "heavy-plank",
+        "name": "Heavy Plank",
+        "imageUrl": "assets/images/items/41848.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 2225,
+        "cost": 0
+      },
+      {
+        "id": "sturdy-plank",
+        "name": "Sturdy Plank",
+        "imageUrl": "assets/images/items/45506.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 818,
+        "cost": 0
+      },
+      {
+        "id": "fine-plank",
+        "name": "Fine Plank",
+        "imageUrl": "assets/images/items/45503.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 1200,
+        "cost": 0
+      },
+      {
+        "id": "glimmery-plank",
+        "name": "glimmery plank",
+        "imageUrl": "assets/images/items/48524.png",
+        "amount": 1,
+        "level": 88,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "radiant-plank",
+        "name": "radiant plank",
+        "imageUrl": "assets/images/items/55327.png",
+        "amount": 1,
+        "level": 98,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "small-hull-frame",
+        "name": "Small Hull Frame",
+        "imageUrl": "assets/images/items/37275.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 12625,
+        "cost": 0
+      },
+      {
+        "id": "small-cargo-hold",
+        "name": "Small Cargo Hold",
+        "imageUrl": "assets/images/items/37270.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 7900,
+        "cost": 0
+      },
+      {
+        "id": "small-gun-deck",
+        "name": "Small Gun Deck",
+        "imageUrl": "assets/images/items/37274.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 7900,
+        "cost": 0
+      },
+      {
+        "id": "small-fishing-storage",
+        "name": "Small Fishing Storage",
+        "imageUrl": "assets/images/items/37273.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 7900,
+        "cost": 0
+      },
+      {
+        "id": "medium-hull-frame",
+        "name": "Medium Hull Frame",
+        "imageUrl": "assets/images/items/37256.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 92325,
+        "cost": 0
+      },
+      {
+        "id": "medium-cargo-hold",
+        "name": "Medium Cargo Hold",
+        "imageUrl": "assets/images/items/37251.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 46500,
+        "cost": 0
+      },
+      {
+        "id": "medium-fishing-storage",
+        "name": "Medium Fishing Storage",
+        "imageUrl": "assets/images/items/37254.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 46912,
+        "cost": 0
+      },
+      {
+        "id": "medium-gun-deck",
+        "name": "Medium Gun Deck",
+        "imageUrl": "assets/images/items/37255.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 46912,
+        "cost": 0
+      },
+      {
+        "id": "large-hull-frame",
+        "name": "Large Hull Frame",
+        "imageUrl": "assets/images/items/37241.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 284450,
+        "cost": 0
+      },
+      {
+        "id": "large-cargo-hold",
+        "name": "Large Cargo Hold",
+        "imageUrl": "assets/images/items/37237.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 140000,
+        "cost": 0
+      },
+      {
+        "id": "large-gun-deck",
+        "name": "Large Gun Deck",
+        "imageUrl": "assets/images/items/37240.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 140000,
+        "cost": 0
+      },
+      {
+        "id": "large-fishing-storage",
+        "name": "Large Fishing Storage",
+        "imageUrl": "assets/images/items/37239.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 140000,
+        "cost": 0
+      },
+      {
+        "id": "mast",
+        "name": "Mast",
+        "imageUrl": "assets/images/items/37249.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 6025,
+        "cost": 0
+      },
+      {
+        "id": "large-fishing-crane-kit",
+        "name": "Large Fishing Crane Kit",
+        "imageUrl": "assets/images/items/52968.png",
+        "amount": 1,
+        "level": 85,
+        "experience": 208250,
+        "cost": 0
+      },
+      {
+        "id": "large-tradepack-container-kit",
+        "name": "Large Tradepack Container Kit",
+        "imageUrl": "assets/images/items/52972.png",
+        "amount": 1,
+        "level": 85,
+        "experience": 208250,
+        "cost": 0
+      },
+      {
+        "id": "large-ammunition-cabin-kit",
+        "name": "Large Ammunition Cabin Kit",
+        "imageUrl": "assets/images/items/52966.png",
+        "amount": 1,
+        "level": 85,
+        "experience": 208250,
+        "cost": 0
+      },
+      {
+        "id": "large-maintenance-unit-kit",
+        "name": "Large Maintenance Unit Kit",
+        "imageUrl": "assets/images/items/52971.png",
+        "amount": 1,
+        "level": 85,
+        "experience": 208250,
+        "cost": 0
+      },
+      {
+        "id": "small-tradepack-container-kit",
+        "name": "Small Tradepack Container Kit",
+        "imageUrl": "assets/images/items/37277.png",
+        "amount": 1,
+        "level": 35,
+        "experience": 32500,
+        "cost": 0
+      },
+      {
+        "id": "small-ammunition-cabin-kit",
+        "name": "Small Ammunition Cabin Kit",
+        "imageUrl": "assets/images/items/37269.png",
+        "amount": 1,
+        "level": 35,
+        "experience": 32500,
+        "cost": 0
+      },
+      {
+        "id": "small-fishing-crane-kit",
+        "name": "Small Fishing Crane Kit",
+        "imageUrl": "assets/images/items/37271.png",
+        "amount": 1,
+        "level": 35,
+        "experience": 32500,
+        "cost": 0
+      },
+      {
+        "id": "medium-tradepack-container-kit",
+        "name": "Medium Tradepack Container Kit",
+        "imageUrl": "assets/images/items/37258.png",
+        "amount": 1,
+        "level": 65,
+        "experience": 100000,
+        "cost": 0
+      },
+      {
+        "id": "medium-ammunition-cabin-kit",
+        "name": "Medium Ammunition Cabin Kit",
+        "imageUrl": "assets/images/items/37250.png",
+        "amount": 1,
+        "level": 65,
+        "experience": 100000,
+        "cost": 0
+      },
+      {
+        "id": "medium-fishing-crane-kit",
+        "name": "Medium Fishing Crane Kit",
+        "imageUrl": "assets/images/items/37252.png",
+        "amount": 1,
+        "level": 65,
+        "experience": 100000,
+        "cost": 0
+      },
+      {
+        "id": "small-maintenance-unit-kit",
+        "name": "Small Maintenance Unit Kit",
+        "imageUrl": "assets/images/items/43638.png",
+        "amount": 1,
+        "level": 35,
+        "experience": 32500,
+        "cost": 0
+      },
+      {
+        "id": "medium-maintenance-unit-kit",
+        "name": "Medium Maintenance Unit Kit",
+        "imageUrl": "assets/images/items/43635.png",
+        "amount": 1,
+        "level": 65,
+        "experience": 100000,
+        "cost": 0
+      },
+      {
+        "id": "common-wheel",
+        "name": "Common Wheel",
+        "imageUrl": "assets/images/items/37229.png",
+        "amount": 1,
+        "level": 9,
+        "experience": 950,
+        "cost": 0
+      },
+      {
+        "id": "sturdy-wheel",
+        "name": "Sturdy Wheel",
+        "imageUrl": "assets/images/items/37284.png",
+        "amount": 1,
+        "level": 41,
+        "experience": 11500,
+        "cost": 0
+      },
+      {
+        "id": "reinforced-wheel",
+        "name": "Reinforced Wheel",
+        "imageUrl": "assets/images/items/37264.png",
+        "amount": 1,
+        "level": 59,
+        "experience": 21581,
+        "cost": 0
+      },
+      {
+        "id": "small-wagon-container",
+        "name": "Small Wagon Container",
+        "imageUrl": "assets/images/items/37278.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 5300,
+        "cost": 0
+      },
+      {
+        "id": "medium-wagon-container",
+        "name": "Medium Wagon Container",
+        "imageUrl": "assets/images/items/37259.png",
+        "amount": 1,
+        "level": 42,
+        "experience": 30687,
+        "cost": 0
+      },
+      {
+        "id": "large-wagon-container",
+        "name": "Large Wagon Container",
+        "imageUrl": "assets/images/items/37243.png",
+        "amount": 1,
+        "level": 60,
+        "experience": 78343,
+        "cost": 0
+      },
+      {
+        "id": "wooden-arch",
+        "name": "Wooden Arch",
+        "imageUrl": "assets/images/items/40286.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 2437,
+        "cost": 0
+      },
+      {
+        "id": "supple-wooden-arch",
+        "name": "Supple Wooden Arch",
+        "imageUrl": "assets/images/items/40285.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 4312,
+        "cost": 0
+      },
+      {
+        "id": "swift-wheel",
+        "name": "Swift Wheel",
+        "imageUrl": "assets/images/items/40492.png",
+        "amount": 1,
+        "level": 26,
+        "experience": 2850,
+        "cost": 0
+      },
+      {
+        "id": "common-wagon-container",
+        "name": "Common Wagon Container",
+        "imageUrl": "assets/images/items/40491.png",
+        "amount": 1,
+        "level": 27,
+        "experience": 13750,
+        "cost": 0
+      },
+      {
+        "id": "voyager-wheel",
+        "name": "Voyager Wheel",
+        "imageUrl": "assets/images/items/50767.png",
+        "amount": 1,
+        "level": 74,
+        "experience": 31250,
+        "cost": 0
+      },
+      {
+        "id": "voyager-wagon-container",
+        "name": "Voyager Wagon Container",
+        "imageUrl": "assets/images/items/50766.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 95938,
+        "cost": 0
+      },
+      {
+        "id": "vipers-bow",
+        "name": "Viper's Bow",
+        "imageUrl": "assets/images/items/28999.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1925,
+        "cost": 0
+      },
+      {
+        "id": "warlock-staff",
+        "name": "Warlock Staff",
+        "imageUrl": "assets/images/items/29051.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 1925,
+        "cost": 0
+      },
+      {
+        "id": "tribal-sceptre",
+        "name": "Tribal Sceptre",
+        "imageUrl": "assets/images/items/33991.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 962,
+        "cost": 0
+      },
+      {
+        "id": "black-ash-bow",
+        "name": "Black Ash Bow",
+        "imageUrl": "assets/images/items/29000.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 6937,
+        "cost": 0
+      },
+      {
+        "id": "cultist-staff",
+        "name": "Cultist Staff",
+        "imageUrl": "assets/images/items/29052.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 6937,
+        "cost": 0
+      },
+      {
+        "id": "serpent-sceptre",
+        "name": "Serpent Sceptre",
+        "imageUrl": "assets/images/items/33992.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 3468,
+        "cost": 0
+      },
+      {
+        "id": "bullseye-bow",
+        "name": "Bullseye Bow",
+        "imageUrl": "assets/images/items/29001.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 18750,
+        "cost": 0
+      },
+      {
+        "id": "celestial-staff",
+        "name": "Celestial Staff",
+        "imageUrl": "assets/images/items/29053.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 18750,
+        "cost": 0
+      },
+      {
+        "id": "crystal-sceptre",
+        "name": "Crystal Sceptre",
+        "imageUrl": "assets/images/items/33993.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 9375,
+        "cost": 0
+      },
+      {
+        "id": "predator-bow",
+        "name": "Predator Bow",
+        "imageUrl": "assets/images/items/29002.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 42500,
+        "cost": 0
+      },
+      {
+        "id": "lightshard-staff",
+        "name": "Lightshard Staff",
+        "imageUrl": "assets/images/items/29054.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 42500,
+        "cost": 0
+      },
+      {
+        "id": "celestial-sceptre",
+        "name": "Celestial Sceptre",
+        "imageUrl": "assets/images/items/33994.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 21250,
+        "cost": 0
+      },
+      {
+        "id": "marksman-bow",
+        "name": "Marksman Bow",
+        "imageUrl": "assets/images/items/37155.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 60875,
+        "cost": 0
+      },
+      {
+        "id": "necromancers-staff",
+        "name": "Necromancer's Staff",
+        "imageUrl": "assets/images/items/37150.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 60875,
+        "cost": 0
+      },
+      {
+        "id": "crowbone-sceptre",
+        "name": "Crowbone Sceptre",
+        "imageUrl": "assets/images/items/37157.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 30437,
+        "cost": 0
+      },
+      {
+        "id": "oakwood-bow",
+        "name": "Oakwood Bow",
+        "imageUrl": "assets/images/items/28998.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 962,
+        "cost": 0
+      },
+      {
+        "id": "mystic-staff",
+        "name": "Mystic Staff",
+        "imageUrl": "assets/images/items/29050.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 962,
+        "cost": 0
+      },
+      {
+        "id": "knotted-sceptre",
+        "name": "Knotted Sceptre",
+        "imageUrl": "assets/images/items/33990.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 481,
+        "cost": 0
+      },
+      {
+        "id": "wooden-buckler",
+        "name": "Wooden Buckler",
+        "imageUrl": "assets/images/items/29028.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 481,
+        "cost": 0
+      },
+      {
+        "id": "sturdy-buckler",
+        "name": "Sturdy Buckler",
+        "imageUrl": "assets/images/items/29029.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 962,
+        "cost": 0
+      },
+      {
+        "id": "marauders-shield",
+        "name": "Marauder's Shield",
+        "imageUrl": "assets/images/items/29030.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 3468,
+        "cost": 0
+      },
+      {
+        "id": "rune-shield",
+        "name": "Rune Shield",
+        "imageUrl": "assets/images/items/29031.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 9375,
+        "cost": 0
+      },
+      {
+        "id": "ravenguards-shield",
+        "name": "Ravenguard's Shield",
+        "imageUrl": "assets/images/items/29032.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 21250,
+        "cost": 0
+      },
+      {
+        "id": "nocturnal-shield",
+        "name": "Nocturnal Shield",
+        "imageUrl": "assets/images/items/37149.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 30437,
+        "cost": 0
+      },
+      {
+        "id": "wooden-bulwark",
+        "name": "Wooden Bulwark",
+        "imageUrl": "assets/images/items/46241.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 481,
+        "cost": 0
+      },
+      {
+        "id": "sentinel-shield",
+        "name": "Sentinel Shield",
+        "imageUrl": "assets/images/items/46242.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 962,
+        "cost": 0
+      },
+      {
+        "id": "defenders-bulwark",
+        "name": "Defender's Bulwark",
+        "imageUrl": "assets/images/items/46243.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 3468,
+        "cost": 0
+      },
+      {
+        "id": "steelclad-bulwark",
+        "name": "Steelclad Bulwark",
+        "imageUrl": "assets/images/items/46244.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 9375,
+        "cost": 0
+      },
+      {
+        "id": "kings-defender",
+        "name": "King's Defender",
+        "imageUrl": "assets/images/items/46245.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 21250,
+        "cost": 0
+      },
+      {
+        "id": "protectors-tower-shield",
+        "name": "Protector's Tower Shield",
+        "imageUrl": "assets/images/items/46246.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 30437,
+        "cost": 0
+      },
+      {
+        "id": "arclight-bow",
+        "name": "Arclight Bow",
+        "imageUrl": "assets/images/items/48538.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 80000,
+        "cost": 0
+      },
+      {
+        "id": "cosmic-staff",
+        "name": "Cosmic Staff",
+        "imageUrl": "assets/images/items/48539.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 78200,
+        "cost": 0
+      },
+      {
+        "id": "lunar-sceptre",
+        "name": "Lunar Sceptre",
+        "imageUrl": "assets/images/items/48543.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 39100,
+        "cost": 0
+      },
+      {
+        "id": "void-buckler",
+        "name": "Void Buckler",
+        "imageUrl": "assets/images/items/48548.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 39100,
+        "cost": 0
+      },
+      {
+        "id": "imperial-bulwark",
+        "name": "Imperial Bulwark",
+        "imageUrl": "assets/images/items/48541.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 39100,
+        "cost": 0
+      },
+      {
+        "id": "driftwood-totem",
+        "name": "Driftwood Totem",
+        "imageUrl": "assets/images/items/52531.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 481,
+        "cost": 0
+      },
+      {
+        "id": "windspirit-fetish",
+        "name": "Windspirit Fetish",
+        "imageUrl": "assets/images/items/52532.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 962,
+        "cost": 0
+      },
+      {
+        "id": "stoneclaw-idol",
+        "name": "Stoneclaw Idol",
+        "imageUrl": "assets/images/items/52533.png",
+        "amount": 1,
+        "level": 25,
+        "experience": 3468,
+        "cost": 0
+      },
+      {
+        "id": "skychant-totem",
+        "name": "Skychant Totem",
+        "imageUrl": "assets/images/items/52534.png",
+        "amount": 1,
+        "level": 40,
+        "experience": 9375,
+        "cost": 0
+      },
+      {
+        "id": "veilpiercer-idol",
+        "name": "Veilpiercer Idol",
+        "imageUrl": "assets/images/items/52535.png",
+        "amount": 1,
+        "level": 55,
+        "experience": 21250,
+        "cost": 0
+      },
+      {
+        "id": "deathdealer-totem",
+        "name": "Deathdealer Totem",
+        "imageUrl": "assets/images/items/52536.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 30437,
+        "cost": 0
+      },
+      {
+        "id": "lifebringer-totem",
+        "name": "Lifebringer Totem",
+        "imageUrl": "assets/images/items/52537.png",
+        "amount": 1,
+        "level": 90,
+        "experience": 39100,
+        "cost": 0
+      },
+      {
+        "id": "lightcaller-bow",
+        "name": "Lightcaller Bow",
+        "imageUrl": "assets/images/items/55350.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 125000,
+        "cost": 0
+      },
+      {
+        "id": "overseers-staff",
+        "name": "Overseer's Staff",
+        "imageUrl": "assets/images/items/55351.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 125000,
+        "cost": 0
+      },
+      {
+        "id": "dawnbound-sceptre",
+        "name": "Dawnbound Sceptre",
+        "imageUrl": "assets/images/items/55352.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "suncrest-shield",
+        "name": "Suncrest Shield",
+        "imageUrl": "assets/images/items/55353.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "radiant-bulwark",
+        "name": "Radiant Bulwark",
+        "imageUrl": "assets/images/items/55354.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      },
+      {
+        "id": "lightward-totem",
+        "name": "Lightward Totem",
+        "imageUrl": "assets/images/items/55355.png",
+        "amount": 1,
+        "level": 100,
+        "experience": 62500,
+        "cost": 0
+      }
+    ],
+    "cooking": [
+      {
+        "id": "bun",
+        "name": "Bun",
+        "imageUrl": "assets/images/items/28754.png",
+        "amount": 5,
+        "level": 20,
+        "experience": 850,
+        "cost": 0
+      },
+      {
+        "id": "scone",
+        "name": "Scone",
+        "imageUrl": "assets/images/items/28759.png",
+        "amount": 5,
+        "level": 25,
+        "experience": 1350,
+        "cost": 0
+      },
+      {
+        "id": "muffin",
+        "name": "Muffin",
+        "imageUrl": "assets/images/items/28765.png",
+        "amount": 5,
+        "level": 35,
+        "experience": 1968,
+        "cost": 0
+      },
+      {
+        "id": "croissant",
+        "name": "Croissant",
+        "imageUrl": "assets/images/items/28756.png",
+        "amount": 5,
+        "level": 50,
+        "experience": 3325,
+        "cost": 0
+      },
+      {
+        "id": "danish",
+        "name": "Danish",
+        "imageUrl": "assets/images/items/28757.png",
+        "amount": 5,
+        "level": 70,
+        "experience": 6950,
+        "cost": 0
+      },
+      {
+        "id": "cookies",
+        "name": "Cookies",
+        "imageUrl": "assets/images/items/28766.png",
+        "amount": 5,
+        "level": 22,
+        "experience": 1462,
+        "cost": 0
+      },
+      {
+        "id": "deluxe-cookies",
+        "name": "Deluxe Cookies",
+        "imageUrl": "assets/images/items/28764.png",
+        "amount": 5,
+        "level": 27,
+        "experience": 1287,
+        "cost": 0
+      },
+      {
+        "id": "cake",
+        "name": "Cake",
+        "imageUrl": "assets/images/items/28755.png",
+        "amount": 5,
+        "level": 37,
+        "experience": 2250,
+        "cost": 0
+      },
+      {
+        "id": "deluxe-cake",
+        "name": "Deluxe Cake",
+        "imageUrl": "assets/images/items/28758.png",
+        "amount": 5,
+        "level": 52,
+        "experience": 3825,
+        "cost": 0
+      },
+      {
+        "id": "pie",
+        "name": "Pie",
+        "imageUrl": "assets/images/items/28753.png",
+        "amount": 5,
+        "level": 72,
+        "experience": 8050,
+        "cost": 0
+      },
+      {
+        "id": "corn-on-a-cob",
+        "name": "Corn on a Cob",
+        "imageUrl": "assets/images/items/42110.png",
+        "amount": 5,
+        "level": 3,
+        "experience": 250,
+        "cost": 0
+      },
+      {
+        "id": "glademire-crackers",
+        "name": "Glademire Crackers",
+        "imageUrl": "assets/images/items/42748.png",
+        "amount": 5,
+        "level": 15,
+        "experience": 531,
+        "cost": 0
+      },
+      {
+        "id": "cornbread",
+        "name": "Cornbread",
+        "imageUrl": "assets/images/items/42111.png",
+        "amount": 5,
+        "level": 26,
+        "experience": 1500,
+        "cost": 0
+      },
+      {
+        "id": "loaf-bread",
+        "name": "Loaf Bread",
+        "imageUrl": "assets/images/items/42113.png",
+        "amount": 5,
+        "level": 21,
+        "experience": 900,
+        "cost": 0
+      },
+      {
+        "id": "potato-bread",
+        "name": "Potato Bread",
+        "imageUrl": "assets/images/items/42117.png",
+        "amount": 5,
+        "level": 4,
+        "experience": 281,
+        "cost": 0
+      },
+      {
+        "id": "rohna-crackers",
+        "name": "Rohna Crackers",
+        "imageUrl": "assets/images/items/42119.png",
+        "amount": 5,
+        "level": 14,
+        "experience": 537,
+        "cost": 0
+      },
+      {
+        "id": "rye-bread",
+        "name": "Rye Bread",
+        "imageUrl": "assets/images/items/42120.png",
+        "amount": 5,
+        "level": 71,
+        "experience": 7437,
+        "cost": 0
+      },
+      {
+        "id": "sajecho-hardtack",
+        "name": "Sajecho Hardtack",
+        "imageUrl": "assets/images/items/42121.png",
+        "amount": 5,
+        "level": 13,
+        "experience": 400,
+        "cost": 0
+      },
+      {
+        "id": "sourdought-bagel",
+        "name": "Sourdought Bagel",
+        "imageUrl": "assets/images/items/42125.png",
+        "amount": 5,
+        "level": 51,
+        "experience": 3387,
+        "cost": 0
+      },
+      {
+        "id": "bagel",
+        "name": "Bagel",
+        "imageUrl": "assets/images/items/42104.png",
+        "amount": 5,
+        "level": 36,
+        "experience": 1706,
+        "cost": 0
+      },
+      {
+        "id": "baked-potatoes",
+        "name": "Baked Potatoes",
+        "imageUrl": "assets/images/items/42105.png",
+        "amount": 5,
+        "level": 2,
+        "experience": 175,
+        "cost": 0
+      },
+      {
+        "id": "sunshine-muffin",
+        "name": "Sunshine Muffin",
+        "imageUrl": "assets/images/items/50441.png",
+        "amount": 5,
+        "level": 77,
+        "experience": 12250,
+        "cost": 0
+      },
+      {
+        "id": "luxury-pie",
+        "name": "Luxury Pie",
+        "imageUrl": "assets/images/items/50434.png",
+        "amount": 5,
+        "level": 79,
+        "experience": 12250,
+        "cost": 0
+      },
+      {
+        "id": "posh-croissant",
+        "name": "Posh Croissant",
+        "imageUrl": "assets/images/items/50437.png",
+        "amount": 5,
+        "level": 80,
+        "experience": 12000,
+        "cost": 0
+      },
+      {
+        "id": "softcrust-bun",
+        "name": "Softcrust Bun",
+        "imageUrl": "assets/images/items/50440.png",
+        "amount": 5,
+        "level": 82,
+        "experience": 12875,
+        "cost": 0
+      },
+      {
+        "id": "caramel-biscuit",
+        "name": "Caramel Biscuit",
+        "imageUrl": "assets/images/items/50429.png",
+        "amount": 5,
+        "level": 84,
+        "experience": 12875,
+        "cost": 0
+      },
+      {
+        "id": "peacemaker-bread",
+        "name": "Peacemaker Bread",
+        "imageUrl": "assets/images/items/50436.png",
+        "amount": 5,
+        "level": 85,
+        "experience": 12287,
+        "cost": 0
+      },
+      {
+        "id": "blubberbread",
+        "name": "Blubberbread",
+        "imageUrl": "assets/images/items/50428.png",
+        "amount": 5,
+        "level": 90,
+        "experience": 25000,
+        "cost": 0
+      },
+      {
+        "id": "beer",
+        "name": "Beer",
+        "imageUrl": "assets/images/items/28760.png",
+        "amount": 5,
+        "level": 5,
+        "experience": 287,
+        "cost": 0
+      },
+      {
+        "id": "wine",
+        "name": "Wine",
+        "imageUrl": "assets/images/items/28882.png",
+        "amount": 5,
+        "level": 20,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "whiskey",
+        "name": "Whiskey",
+        "imageUrl": "assets/images/items/28761.png",
+        "amount": 5,
+        "level": 22,
+        "experience": 912,
+        "cost": 0
+      },
+      {
+        "id": "vodka",
+        "name": "Vodka",
+        "imageUrl": "assets/images/items/28767.png",
+        "amount": 5,
+        "level": 1,
+        "experience": 125,
+        "cost": 0
+      },
+      {
+        "id": "rum",
+        "name": "Rum",
+        "imageUrl": "assets/images/items/28883.png",
+        "amount": 5,
+        "level": 32,
+        "experience": 1662,
+        "cost": 0
+      },
+      {
+        "id": "apple-cider",
+        "name": "Apple Cider",
+        "imageUrl": "assets/images/items/35397.png",
+        "amount": 5,
+        "level": 17,
+        "experience": 625,
+        "cost": 0
+      },
+      {
+        "id": "blueberry-wine",
+        "name": "Blueberry Wine",
+        "imageUrl": "assets/images/items/35400.png",
+        "amount": 5,
+        "level": 40,
+        "experience": 2406,
+        "cost": 0
+      },
+      {
+        "id": "strawberry-whiskey",
+        "name": "Strawberry Whiskey",
+        "imageUrl": "assets/images/items/35399.png",
+        "amount": 5,
+        "level": 72,
+        "experience": 7875,
+        "cost": 0
+      },
+      {
+        "id": "banana-vodka",
+        "name": "Banana Vodka",
+        "imageUrl": "assets/images/items/35398.png",
+        "amount": 5,
+        "level": 57,
+        "experience": 4087,
+        "cost": 0
+      },
+      {
+        "id": "spiced-rum",
+        "name": "Spiced Rum",
+        "imageUrl": "assets/images/items/35401.png",
+        "amount": 5,
+        "level": 55,
+        "experience": 3900,
+        "cost": 0
+      },
+      {
+        "id": "eclipse",
+        "name": "Eclipse",
+        "imageUrl": "assets/images/items/42723.png",
+        "amount": 5,
+        "level": 70,
+        "experience": 7000,
+        "cost": 0
+      },
+      {
+        "id": "landing-brandy",
+        "name": "Landing Brandy",
+        "imageUrl": "assets/images/items/42724.png",
+        "amount": 5,
+        "level": 10,
+        "experience": 468,
+        "cost": 0
+      },
+      {
+        "id": "orange-liqueur",
+        "name": "Orange Liqueur",
+        "imageUrl": "assets/images/items/42721.png",
+        "amount": 5,
+        "level": 30,
+        "experience": 1875,
+        "cost": 0
+      },
+      {
+        "id": "boozemelon",
+        "name": "Boozemelon",
+        "imageUrl": "assets/images/items/42722.png",
+        "amount": 5,
+        "level": 42,
+        "experience": 2550,
+        "cost": 0
+      },
+      {
+        "id": "fermented-liquor",
+        "name": "Fermented Liquor",
+        "imageUrl": "assets/images/items/50431.png",
+        "amount": 5,
+        "level": 78,
+        "experience": 9000,
+        "cost": 0
+      },
+      {
+        "id": "seabrew",
+        "name": "Seabrew",
+        "imageUrl": "assets/images/items/50439.png",
+        "amount": 5,
+        "level": 88,
+        "experience": 12500,
+        "cost": 0
+      },
+      {
+        "id": "concentrated-salt-grains",
+        "name": "Concentrated Salt Grains",
+        "imageUrl": "assets/images/items/53331.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "concentrated-salt-clumps",
+        "name": "Concentrated Salt Clumps",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 60,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "concentrated-salt-chunks",
+        "name": "Concentrated Salt Chunks",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 70,
+        "experience": 3518,
+        "cost": 0
+      },
+      {
+        "id": "concentrated-salt-rocks",
+        "name": "Concentrated Salt Rocks",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 80,
+        "experience": 6250,
+        "cost": 0
+      },
+      {
+        "id": "concentrated-salt-crystals",
+        "name": "Concentrated Salt Crystals",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 90,
+        "experience": 10000,
+        "cost": 0
+      },
+      {
+        "id": "gummy-wriggler",
+        "name": "Gummy Wriggler",
+        "imageUrl": "assets/images/items/47951.png",
+        "amount": 50,
+        "level": 12,
+        "experience": 637,
+        "cost": 0
+      },
+      {
+        "id": "gelatinous-pupa",
+        "name": "Gelatinous Pupa",
+        "imageUrl": "assets/images/items/47952.png",
+        "amount": 50,
+        "level": 23,
+        "experience": 2050,
+        "cost": 0
+      },
+      {
+        "id": "plump-jellygrub",
+        "name": "Plump Jellygrub",
+        "imageUrl": "assets/images/items/47954.png",
+        "amount": 50,
+        "level": 40,
+        "experience": 3043,
+        "cost": 0
+      },
+      {
+        "id": "blobby-beetle",
+        "name": "Blobby Beetle",
+        "imageUrl": "assets/images/items/47956.png",
+        "amount": 50,
+        "level": 61,
+        "experience": 4100,
+        "cost": 0
+      },
+      {
+        "id": "chewy-jellyworm",
+        "name": "Chewy Jellyworm",
+        "imageUrl": "assets/images/items/47958.png",
+        "amount": 50,
+        "level": 75,
+        "experience": 4375,
+        "cost": 0
+      },
+      {
+        "id": "shrimp-bait",
+        "name": "Shrimp Bait",
+        "imageUrl": "assets/images/items/49336.png",
+        "amount": 50,
+        "level": 13,
+        "experience": 587,
+        "cost": 0
+      },
+      {
+        "id": "catfish-bait",
+        "name": "Catfish Bait",
+        "imageUrl": "assets/images/items/49331.png",
+        "amount": 50,
+        "level": 18,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "tench-fish-bait",
+        "name": "Tench Fish Bait",
+        "imageUrl": "assets/images/items/49339.png",
+        "amount": 50,
+        "level": 23,
+        "experience": 1175,
+        "cost": 0
+      },
+      {
+        "id": "rainbow-fish-bait",
+        "name": "Rainbow Fish Bait",
+        "imageUrl": "assets/images/items/49333.png",
+        "amount": 50,
+        "level": 28,
+        "experience": 1400,
+        "cost": 0
+      },
+      {
+        "id": "scale-fish-bait",
+        "name": "Scale Fish Bait",
+        "imageUrl": "assets/images/items/49335.png",
+        "amount": 50,
+        "level": 32,
+        "experience": 1762,
+        "cost": 0
+      },
+      {
+        "id": "princess-fish-bait",
+        "name": "Princess Fish Bait",
+        "imageUrl": "assets/images/items/49332.png",
+        "amount": 50,
+        "level": 37,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "sky-fish-bait",
+        "name": "Sky Fish Bait",
+        "imageUrl": "assets/images/items/49337.png",
+        "amount": 50,
+        "level": 47,
+        "experience": 2375,
+        "cost": 0
+      },
+      {
+        "id": "star-fish-bait",
+        "name": "Star Fish Bait",
+        "imageUrl": "assets/images/items/49338.png",
+        "amount": 50,
+        "level": 57,
+        "experience": 2625,
+        "cost": 0
+      },
+      {
+        "id": "rainbow-flounder-bait",
+        "name": "Rainbow Flounder Bait",
+        "imageUrl": "assets/images/items/49334.png",
+        "amount": 50,
+        "level": 67,
+        "experience": 3125,
+        "cost": 0
+      },
+      {
+        "id": "tiger-shark-bait",
+        "name": "Tiger Shark Bait",
+        "imageUrl": "assets/images/items/49340.png",
+        "amount": 50,
+        "level": 77,
+        "experience": 4500,
+        "cost": 0
+      },
+      {
+        "id": "ground-flour",
+        "name": "Ground Flour",
+        "imageUrl": "assets/images/items/33553.png",
+        "amount": 20,
+        "level": 10,
+        "experience": 900,
+        "cost": 0
+      },
+      {
+        "id": "ground-flour",
+        "name": "Ground Flour",
+        "imageUrl": "assets/images/items/33553.png",
+        "amount": 10,
+        "level": 10,
+        "experience": 450,
+        "cost": 0
+      },
+      {
+        "id": "oil",
+        "name": "Oil",
+        "imageUrl": "assets/images/items/34899.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 131,
+        "cost": 0
+      },
+      {
+        "id": "spiced-oil",
+        "name": "Spiced Oil",
+        "imageUrl": "assets/images/items/34900.png",
+        "amount": 1,
+        "level": 62,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "butter",
+        "name": "Butter",
+        "imageUrl": "assets/images/items/42749.png",
+        "amount": 2,
+        "level": 15,
+        "experience": 531,
+        "cost": 0
+      },
+      {
+        "id": "rich-flour",
+        "name": "Rich Flour",
+        "imageUrl": "assets/images/items/42118.png",
+        "amount": 20,
+        "level": 45,
+        "experience": 3000,
+        "cost": 0
+      },
+      {
+        "id": "gourmet-seasoning",
+        "name": "Gourmet Seasoning",
+        "imageUrl": "assets/images/items/42112.png",
+        "amount": 5,
+        "level": 25,
+        "experience": 750,
+        "cost": 0
+      },
+      {
+        "id": "seafood-seasoning",
+        "name": "Seafood Seasoning",
+        "imageUrl": "assets/images/items/42123.png",
+        "amount": 5,
+        "level": 5,
+        "experience": 150,
+        "cost": 0
+      },
+      {
+        "id": "spicy-seasoning",
+        "name": "Spicy Seasoning",
+        "imageUrl": "assets/images/items/42126.png",
+        "amount": 5,
+        "level": 65,
+        "experience": 4375,
+        "cost": 0
+      },
+      {
+        "id": "brewer-yeast",
+        "name": "Brewer Yeast",
+        "imageUrl": "assets/images/items/42107.png",
+        "amount": 5,
+        "level": 20,
+        "experience": 625,
+        "cost": 0
+      },
+      {
+        "id": "basic-seasoning",
+        "name": "Basic Seasoning",
+        "imageUrl": "assets/images/items/42106.png",
+        "amount": 5,
+        "level": 5,
+        "experience": 215,
+        "cost": 0
+      },
+      {
+        "id": "collagen",
+        "name": "Collagen",
+        "imageUrl": "assets/images/items/47960.png",
+        "amount": 1,
+        "level": 11,
+        "experience": 587,
+        "cost": 0
+      },
+      {
+        "id": "concentrated-collagen",
+        "name": "Concentrated Collagen",
+        "imageUrl": "assets/images/items/47959.png",
+        "amount": 1,
+        "level": 39,
+        "experience": 1712,
+        "cost": 0
+      },
+      {
+        "id": "fermented-potato-pulp",
+        "name": "Fermented Potato Pulp",
+        "imageUrl": "assets/images/items/49945.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 137,
+        "cost": 0
+      },
+      {
+        "id": "fermented-corn-pulp",
+        "name": "Fermented Corn Pulp",
+        "imageUrl": "assets/images/items/49944.png",
+        "amount": 1,
+        "level": 35,
+        "experience": 812,
+        "cost": 0
+      },
+      {
+        "id": "fermented-wheat-pulp",
+        "name": "Fermented Wheat Pulp",
+        "imageUrl": "assets/images/items/49946.png",
+        "amount": 1,
+        "level": 65,
+        "experience": 1712,
+        "cost": 0
+      },
+      {
+        "id": "vegetable-broth",
+        "name": "Vegetable Broth",
+        "imageUrl": "assets/images/items/51699.png",
+        "amount": 5,
+        "level": 75,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "puff-pastry",
+        "name": "Puff Pastry",
+        "imageUrl": "assets/images/items/51698.png",
+        "amount": 5,
+        "level": 75,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "herbal-alcohol",
+        "name": "Herbal Alcohol",
+        "imageUrl": "assets/images/items/51697.png",
+        "amount": 5,
+        "level": 75,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "settlers-stew",
+        "name": "Settler's Stew",
+        "imageUrl": "assets/images/items/34866.png",
+        "amount": 5,
+        "level": 37,
+        "experience": 2175,
+        "cost": 0
+      },
+      {
+        "id": "sailors-seastew",
+        "name": "Sailor's Seastew",
+        "imageUrl": "assets/images/items/34865.png",
+        "amount": 5,
+        "level": 69,
+        "experience": 5168,
+        "cost": 0
+      },
+      {
+        "id": "roasted-chicken-and-veggies",
+        "name": "Roasted Chicken and Veggies",
+        "imageUrl": "assets/images/items/34861.png",
+        "amount": 5,
+        "level": 23,
+        "experience": 1200,
+        "cost": 0
+      },
+      {
+        "id": "firered-chicken-kebab",
+        "name": "Firered Chicken Kebab",
+        "imageUrl": "assets/images/items/34857.png",
+        "amount": 5,
+        "level": 66,
+        "experience": 5387,
+        "cost": 0
+      },
+      {
+        "id": "charred-meat-kebab",
+        "name": "Charred Meat Kebab",
+        "imageUrl": "assets/images/items/34849.png",
+        "amount": 5,
+        "level": 22,
+        "experience": 1000,
+        "cost": 0
+      },
+      {
+        "id": "lyderian-chopped-tenderloin",
+        "name": "Lyderian Chopped Tenderloin",
+        "imageUrl": "assets/images/items/34859.png",
+        "amount": 5,
+        "level": 67,
+        "experience": 5562,
+        "cost": 0
+      },
+      {
+        "id": "smoked-sausage",
+        "name": "Smoked Sausage",
+        "imageUrl": "assets/images/items/34869.png",
+        "amount": 5,
+        "level": 21,
+        "experience": 856,
+        "cost": 0
+      },
+      {
+        "id": "acornchar-sausage",
+        "name": "Acornchar Sausage",
+        "imageUrl": "assets/images/items/34847.png",
+        "amount": 5,
+        "level": 53,
+        "experience": 3325,
+        "cost": 0
+      },
+      {
+        "id": "rum-downslider",
+        "name": "Rum Downslider",
+        "imageUrl": "assets/images/items/34864.png",
+        "amount": 5,
+        "level": 35,
+        "experience": 1200,
+        "cost": 0
+      },
+      {
+        "id": "freshfish-roll",
+        "name": "Freshfish Roll",
+        "imageUrl": "assets/images/items/34853.png",
+        "amount": 5,
+        "level": 54,
+        "experience": 2675,
+        "cost": 0
+      },
+      {
+        "id": "fillet-lucien",
+        "name": "Fillet Lucien",
+        "imageUrl": "assets/images/items/34852.png",
+        "amount": 5,
+        "level": 39,
+        "experience": 2525,
+        "cost": 0
+      },
+      {
+        "id": "rohna-roasted-ham",
+        "name": "Rohna Roasted Ham",
+        "imageUrl": "assets/images/items/34862.png",
+        "amount": 5,
+        "level": 68,
+        "experience": 6000,
+        "cost": 0
+      },
+      {
+        "id": "ravendawnian-porridge",
+        "name": "Ravendawnian Porridge",
+        "imageUrl": "assets/images/items/34860.png",
+        "amount": 5,
+        "level": 24,
+        "experience": 1287,
+        "cost": 0
+      },
+      {
+        "id": "sweetened-beans",
+        "name": "Sweetened Beans",
+        "imageUrl": "assets/images/items/34870.png",
+        "amount": 5,
+        "level": 65,
+        "experience": 5125,
+        "cost": 0
+      },
+      {
+        "id": "fruit-pancakes",
+        "name": "Fruit Pancakes",
+        "imageUrl": "assets/images/items/34855.png",
+        "amount": 5,
+        "level": 20,
+        "experience": 931,
+        "cost": 0
+      },
+      {
+        "id": "luciens-waffles",
+        "name": "Lucien's Waffles",
+        "imageUrl": "assets/images/items/34858.png",
+        "amount": 5,
+        "level": 52,
+        "experience": 3718,
+        "cost": 0
+      },
+      {
+        "id": "dwarven-purple-shank",
+        "name": "Dwarven Purple Shank",
+        "imageUrl": "assets/images/items/34851.png",
+        "amount": 5,
+        "level": 38,
+        "experience": 2475,
+        "cost": 0
+      },
+      {
+        "id": "bittersweet-roast",
+        "name": "Bittersweet Roast",
+        "imageUrl": "assets/images/items/34848.png",
+        "amount": 5,
+        "level": 70,
+        "experience": 7125,
+        "cost": 0
+      },
+      {
+        "id": "shaked-fruitmilk",
+        "name": "Shaked Fruitmilk",
+        "imageUrl": "assets/images/items/34868.png",
+        "amount": 5,
+        "level": 36,
+        "experience": 2087,
+        "cost": 0
+      },
+      {
+        "id": "frozen-sweet-berries",
+        "name": "Frozen Sweet Berries",
+        "imageUrl": "assets/images/items/34854.png",
+        "amount": 5,
+        "level": 51,
+        "experience": 3600,
+        "cost": 0
+      },
+      {
+        "id": "iced-fruitmilk",
+        "name": "Iced Fruitmilk",
+        "imageUrl": "assets/images/items/34856.png",
+        "amount": 5,
+        "level": 75,
+        "experience": 8750,
+        "cost": 0
+      },
+      {
+        "id": "shanks-n-mash",
+        "name": "Shanks n' Mash",
+        "imageUrl": "assets/images/items/35402.png",
+        "amount": 5,
+        "level": 75,
+        "experience": 8900,
+        "cost": 0
+      },
+      {
+        "id": "corn-chowder",
+        "name": "Corn Chowder",
+        "imageUrl": "assets/images/items/42109.png",
+        "amount": 5,
+        "level": 8,
+        "experience": 412,
+        "cost": 0
+      },
+      {
+        "id": "corn-salad",
+        "name": "Corn Salad",
+        "imageUrl": "assets/images/items/42128.png",
+        "amount": 5,
+        "level": 8,
+        "experience": 412,
+        "cost": 0
+      },
+      {
+        "id": "lyderian-fries",
+        "name": "Lyderian Fries",
+        "imageUrl": "assets/images/items/42114.png",
+        "amount": 5,
+        "level": 18,
+        "experience": 725,
+        "cost": 0
+      },
+      {
+        "id": "mashed-potatoes",
+        "name": "Mashed Potatoes",
+        "imageUrl": "assets/images/items/42115.png",
+        "amount": 5,
+        "level": 8,
+        "experience": 381,
+        "cost": 0
+      },
+      {
+        "id": "omelet",
+        "name": "Omelet",
+        "imageUrl": "assets/images/items/42116.png",
+        "amount": 5,
+        "level": 18,
+        "experience": 737,
+        "cost": 0
+      },
+      {
+        "id": "scrambled-eggs",
+        "name": "Scrambled Eggs",
+        "imageUrl": "assets/images/items/42122.png",
+        "amount": 5,
+        "level": 8,
+        "experience": 400,
+        "cost": 0
+      },
+      {
+        "id": "silky-scrambled-eggs",
+        "name": "Silky Scrambled Eggs",
+        "imageUrl": "assets/images/items/42124.png",
+        "amount": 5,
+        "level": 18,
+        "experience": 743,
+        "cost": 0
+      },
+      {
+        "id": "steamed-carrots",
+        "name": "Steamed Carrots",
+        "imageUrl": "assets/images/items/42127.png",
+        "amount": 5,
+        "level": 18,
+        "experience": 675,
+        "cost": 0
+      },
+      {
+        "id": "blueberry-pie",
+        "name": "Blueberry Pie",
+        "imageUrl": "assets/images/items/42725.png",
+        "amount": 5,
+        "level": 50,
+        "experience": 3300,
+        "cost": 0
+      },
+      {
+        "id": "carrot-soup",
+        "name": "Carrot Soup",
+        "imageUrl": "assets/images/items/42108.png",
+        "amount": 5,
+        "level": 18,
+        "experience": 775,
+        "cost": 0
+      },
+      {
+        "id": "apple-puree",
+        "name": "Apple Puree",
+        "imageUrl": "assets/images/items/42103.png",
+        "amount": 5,
+        "level": 8,
+        "experience": 468,
+        "cost": 0
+      },
+      {
+        "id": "exotic-stew",
+        "name": "Exotic Stew",
+        "imageUrl": "assets/images/items/50430.png",
+        "amount": 5,
+        "level": 81,
+        "experience": 33625,
+        "cost": 0
+      },
+      {
+        "id": "squidink-soup",
+        "name": "Squidink Soup",
+        "imageUrl": "assets/images/items/50433.png",
+        "amount": 5,
+        "level": 86,
+        "experience": 12500,
+        "cost": 0
+      },
+      {
+        "id": "glacehearth-broth",
+        "name": "Glacehearth Broth",
+        "imageUrl": "assets/images/items/50432.png",
+        "amount": 5,
+        "level": 92,
+        "experience": 22500,
+        "cost": 0
+      },
+      {
+        "id": "basic-animal-feed",
+        "name": "Basic Animal Feed",
+        "imageUrl": "assets/images/items/34896.png",
+        "amount": 3,
+        "level": 20,
+        "experience": 887,
+        "cost": 0
+      },
+      {
+        "id": "complex-animal-feed",
+        "name": "Complex Animal Feed",
+        "imageUrl": "assets/images/items/34897.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 2175,
+        "cost": 0
+      },
+      {
+        "id": "superior-ration",
+        "name": "Superior Ration",
+        "imageUrl": "assets/images/items/50715.png",
+        "amount": 5,
+        "level": 20,
+        "experience": 887,
+        "cost": 0
+      },
+      {
+        "id": "rustic-ration",
+        "name": "Rustic Ration",
+        "imageUrl": "assets/images/items/50716.png",
+        "amount": 5,
+        "level": 30,
+        "experience": 1825,
+        "cost": 0
+      },
+      {
+        "id": "gourmet-ration",
+        "name": "Gourmet Ration",
+        "imageUrl": "assets/images/items/50717.png",
+        "amount": 5,
+        "level": 40,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "seafood-extravaganza",
+        "name": "Seafood Extravaganza",
+        "imageUrl": "assets/images/items/50718.png",
+        "amount": 5,
+        "level": 50,
+        "experience": 3275,
+        "cost": 0
+      },
+      {
+        "id": "uncanny-ration",
+        "name": "Uncanny Ration",
+        "imageUrl": "assets/images/items/50719.png",
+        "amount": 5,
+        "level": 60,
+        "experience": 4937,
+        "cost": 0
+      },
+      {
+        "id": "moas-delight",
+        "name": "Moa's Delight",
+        "imageUrl": "assets/images/items/50720.png",
+        "amount": 5,
+        "level": 75,
+        "experience": 7050,
+        "cost": 0
+      }
+    ],
+    "weaving": [
+      {
+        "id": "vipers-armor",
+        "name": "Viper's Armor",
+        "imageUrl": "assets/images/items/28598.png",
+        "amount": 1,
+        "level": 13,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "vipers-helmet",
+        "name": "Viper's Helmet",
+        "imageUrl": "assets/images/items/28604.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "vipers-legs",
+        "name": "Viper's Legs",
+        "imageUrl": "assets/images/items/28605.png",
+        "amount": 1,
+        "level": 19,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "vipers-boots",
+        "name": "Viper's Boots",
+        "imageUrl": "assets/images/items/28601.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "profane-armor",
+        "name": "Profane Armor",
+        "imageUrl": "assets/images/items/28607.png",
+        "amount": 1,
+        "level": 28,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "profane-helmet",
+        "name": "Profane Helmet",
+        "imageUrl": "assets/images/items/28613.png",
+        "amount": 1,
+        "level": 31,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "profane-legs",
+        "name": "Profane Legs",
+        "imageUrl": "assets/images/items/28614.png",
+        "amount": 1,
+        "level": 34,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "profane-boots",
+        "name": "Profane Boots",
+        "imageUrl": "assets/images/items/28610.png",
+        "amount": 1,
+        "level": 37,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "celestial-armor",
+        "name": "Celestial Armor",
+        "imageUrl": "assets/images/items/28616.png",
+        "amount": 1,
+        "level": 43,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "celestial-helmet",
+        "name": "Celestial Helmet",
+        "imageUrl": "assets/images/items/28622.png",
+        "amount": 1,
+        "level": 46,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "celestial-legs",
+        "name": "Celestial Legs",
+        "imageUrl": "assets/images/items/28623.png",
+        "amount": 1,
+        "level": 49,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "celestial-boots",
+        "name": "Celestial Boots",
+        "imageUrl": "assets/images/items/28619.png",
+        "amount": 1,
+        "level": 52,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "mystic-armor",
+        "name": "Mystic Armor",
+        "imageUrl": "assets/images/items/28632.png",
+        "amount": 1,
+        "level": 58,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "mystic-helmet",
+        "name": "Mystic Helmet",
+        "imageUrl": "assets/images/items/28633.png",
+        "amount": 1,
+        "level": 61,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "mystic-legs",
+        "name": "Mystic Legs",
+        "imageUrl": "assets/images/items/28631.png",
+        "amount": 1,
+        "level": 64,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "mystic-boots",
+        "name": "Mystic Boots",
+        "imageUrl": "assets/images/items/28625.png",
+        "amount": 1,
+        "level": 67,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "nomad-armor",
+        "name": "Nomad Armor",
+        "imageUrl": "assets/images/items/28643.png",
+        "amount": 1,
+        "level": 13,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "nomad-helmet",
+        "name": "Nomad Helmet",
+        "imageUrl": "assets/images/items/28649.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "nomad-legs",
+        "name": "Nomad Legs",
+        "imageUrl": "assets/images/items/28650.png",
+        "amount": 1,
+        "level": 19,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "nomad-boots",
+        "name": "Nomad Boots",
+        "imageUrl": "assets/images/items/28646.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 600,
+        "cost": 0
+      },
+      {
+        "id": "bruisers-armor",
+        "name": "Bruiser's Armor",
+        "imageUrl": "assets/images/items/28652.png",
+        "amount": 1,
+        "level": 28,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "bruisers-helmet",
+        "name": "Bruiser's Helmet",
+        "imageUrl": "assets/images/items/28658.png",
+        "amount": 1,
+        "level": 31,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "bruisers-legs",
+        "name": "Bruiser's Legs",
+        "imageUrl": "assets/images/items/28659.png",
+        "amount": 1,
+        "level": 34,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "bruisers-boots",
+        "name": "Bruiser's Boots",
+        "imageUrl": "assets/images/items/28655.png",
+        "amount": 1,
+        "level": 37,
+        "experience": 2937,
+        "cost": 0
+      },
+      {
+        "id": "outlaw-armor",
+        "name": "Outlaw Armor",
+        "imageUrl": "assets/images/items/28661.png",
+        "amount": 1,
+        "level": 43,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "outlaw-helmet",
+        "name": "Outlaw Helmet",
+        "imageUrl": "assets/images/items/28667.png",
+        "amount": 1,
+        "level": 46,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "outlaw-legs",
+        "name": "Outlaw Legs",
+        "imageUrl": "assets/images/items/28668.png",
+        "amount": 1,
+        "level": 49,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "outlaw-boots",
+        "name": "Outlaw Boots",
+        "imageUrl": "assets/images/items/28664.png",
+        "amount": 1,
+        "level": 52,
+        "experience": 5250,
+        "cost": 0
+      },
+      {
+        "id": "studded-armor",
+        "name": "Studded Armor",
+        "imageUrl": "assets/images/items/28670.png",
+        "amount": 1,
+        "level": 58,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "studded-helmet",
+        "name": "Studded Helmet",
+        "imageUrl": "assets/images/items/28677.png",
+        "amount": 1,
+        "level": 61,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "studded-legs",
+        "name": "Studded Legs",
+        "imageUrl": "assets/images/items/28675.png",
+        "amount": 1,
+        "level": 64,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "studded-boots",
+        "name": "Studded Boots",
+        "imageUrl": "assets/images/items/28672.png",
+        "amount": 1,
+        "level": 67,
+        "experience": 11687,
+        "cost": 0
+      },
+      {
+        "id": "warlock-armor",
+        "name": "Warlock Armor",
+        "imageUrl": "assets/images/items/37126.png",
+        "amount": 1,
+        "level": 78,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "warlock-helmet",
+        "name": "Warlock Helmet",
+        "imageUrl": "assets/images/items/37132.png",
+        "amount": 1,
+        "level": 80,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "warlock-legs",
+        "name": "Warlock Legs",
+        "imageUrl": "assets/images/items/37133.png",
+        "amount": 1,
+        "level": 82,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "warlock-boots",
+        "name": "Warlock Boots",
+        "imageUrl": "assets/images/items/37147.png",
+        "amount": 1,
+        "level": 84,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "guerrila-armor",
+        "name": "Guerrila Armor",
+        "imageUrl": "assets/images/items/37139.png",
+        "amount": 1,
+        "level": 78,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "guerrila-helmet",
+        "name": "Guerrila Helmet",
+        "imageUrl": "assets/images/items/37141.png",
+        "amount": 1,
+        "level": 80,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "guerrila-legs",
+        "name": "Guerrila Legs",
+        "imageUrl": "assets/images/items/37142.png",
+        "amount": 1,
+        "level": 82,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "guerrila-boots",
+        "name": "Guerrila Boots",
+        "imageUrl": "assets/images/items/37140.png",
+        "amount": 1,
+        "level": 84,
+        "experience": 16250,
+        "cost": 0
+      },
+      {
+        "id": "shadecloth-armor",
+        "name": "Shadecloth Armor",
+        "imageUrl": "assets/images/items/28589.png",
+        "amount": 1,
+        "level": 3,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "shadecloth-helmet",
+        "name": "Shadecloth Helmet",
+        "imageUrl": "assets/images/items/28595.png",
+        "amount": 1,
+        "level": 5,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "shadecloth-legs",
+        "name": "Shadecloth Legs",
+        "imageUrl": "assets/images/items/28596.png",
+        "amount": 1,
+        "level": 7,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "shadecloth-boots",
+        "name": "Shadecloth Boots",
+        "imageUrl": "assets/images/items/28592.png",
+        "amount": 1,
+        "level": 9,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "hide-armor",
+        "name": "Hide Armor",
+        "imageUrl": "assets/images/items/28634.png",
+        "amount": 1,
+        "level": 3,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "hide-helmet",
+        "name": "Hide Helmet",
+        "imageUrl": "assets/images/items/28640.png",
+        "amount": 1,
+        "level": 5,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "hide-legs",
+        "name": "Hide Legs",
+        "imageUrl": "assets/images/items/28641.png",
+        "amount": 1,
+        "level": 7,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "hide-boots",
+        "name": "Hide Boots",
+        "imageUrl": "assets/images/items/28637.png",
+        "amount": 1,
+        "level": 9,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "ethereal-armor",
+        "name": "Ethereal Armor",
+        "imageUrl": "assets/images/items/48526.png",
+        "amount": 1,
+        "level": 93,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "ethereal-helmet",
+        "name": "Ethereal Helmet",
+        "imageUrl": "assets/images/items/48528.png",
+        "amount": 1,
+        "level": 96,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "ethereal-legs",
+        "name": "Ethereal Legs",
+        "imageUrl": "assets/images/items/48529.png",
+        "amount": 1,
+        "level": 99,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "ethereal-boots",
+        "name": "Ethereal Boots",
+        "imageUrl": "assets/images/items/48527.png",
+        "amount": 1,
+        "level": 102,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "inquisitor-armor",
+        "name": "Inquisitor Armor",
+        "imageUrl": "assets/images/items/48534.png",
+        "amount": 1,
+        "level": 93,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "inquisitor-helmet",
+        "name": "Inquisitor Helmet",
+        "imageUrl": "assets/images/items/48536.png",
+        "amount": 1,
+        "level": 96,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "inquisitor-legs",
+        "name": "Inquisitor Legs",
+        "imageUrl": "assets/images/items/48537.png",
+        "amount": 1,
+        "level": 99,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "inquisitor-boots",
+        "name": "Inquisitor Boots",
+        "imageUrl": "assets/images/items/48535.png",
+        "amount": 1,
+        "level": 102,
+        "experience": 22000,
+        "cost": 0
+      },
+      {
+        "id": "archlight-armor",
+        "name": "Archlight Armor",
+        "imageUrl": "assets/images/items/55334.png",
+        "amount": 1,
+        "level": 103,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "archlight-helmet",
+        "name": "Archlight Helmet",
+        "imageUrl": "assets/images/items/55335.png",
+        "amount": 1,
+        "level": 104,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "archlight-legs",
+        "name": "Archlight Legs",
+        "imageUrl": "assets/images/items/55336.png",
+        "amount": 1,
+        "level": 105,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "archlight-boots",
+        "name": "Archlight Boots",
+        "imageUrl": "assets/images/items/55337.png",
+        "amount": 1,
+        "level": 106,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "sentinel-armor",
+        "name": "Sentinel Armor",
+        "imageUrl": "assets/images/items/55338.png",
+        "amount": 1,
+        "level": 103,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "sentinel-helmet",
+        "name": "Sentinel Helmet",
+        "imageUrl": "assets/images/items/55339.png",
+        "amount": 1,
+        "level": 104,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "sentinel-legs",
+        "name": "Sentinel Legs",
+        "imageUrl": "assets/images/items/55340.png",
+        "amount": 1,
+        "level": 105,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "sentinel-boots",
+        "name": "Sentinel Boots",
+        "imageUrl": "assets/images/items/55341.png",
+        "amount": 1,
+        "level": 106,
+        "experience": 30000,
+        "cost": 0
+      },
+      {
+        "id": "charm",
+        "name": "Charm",
+        "imageUrl": "assets/images/items/50442.png",
+        "amount": 5,
+        "level": 3,
+        "experience": 150,
+        "cost": 0
+      },
+      {
+        "id": "simple-charm",
+        "name": "Simple Charm",
+        "imageUrl": "assets/images/items/50444.png",
+        "amount": 5,
+        "level": 18,
+        "experience": 425,
+        "cost": 0
+      },
+      {
+        "id": "fine-charm",
+        "name": "Fine Charm",
+        "imageUrl": "assets/images/items/50446.png",
+        "amount": 5,
+        "level": 33,
+        "experience": 862,
+        "cost": 0
+      },
+      {
+        "id": "glint-charm",
+        "name": "Glint Charm",
+        "imageUrl": "assets/images/items/50448.png",
+        "amount": 5,
+        "level": 48,
+        "experience": 2243,
+        "cost": 0
+      },
+      {
+        "id": "blossom-charm",
+        "name": "Blossom Charm",
+        "imageUrl": "assets/images/items/50451.png",
+        "amount": 5,
+        "level": 70,
+        "experience": 3518,
+        "cost": 0
+      },
+      {
+        "id": "sunbreaker-charm",
+        "name": "Sunbreaker Charm",
+        "imageUrl": "assets/images/items/50454.png",
+        "amount": 5,
+        "level": 80,
+        "experience": 5000,
+        "cost": 0
+      },
+      {
+        "id": "simple-cloth",
+        "name": "simple cloth",
+        "imageUrl": "assets/images/items/28966.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "craftmans-cloth",
+        "name": "craftman's cloth",
+        "imageUrl": "assets/images/items/28963.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 587,
+        "cost": 0
+      },
+      {
+        "id": "silk",
+        "name": "silk",
+        "imageUrl": "assets/images/items/28965.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 875,
+        "cost": 0
+      },
+      {
+        "id": "merchants-cloth",
+        "name": "merchant's cloth",
+        "imageUrl": "assets/images/items/28964.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 1168,
+        "cost": 0
+      },
+      {
+        "id": "artisan-cloth",
+        "name": "artisan cloth",
+        "imageUrl": "assets/images/items/28962.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 1475,
+        "cost": 0
+      },
+      {
+        "id": "simple-cloth",
+        "name": "simple cloth",
+        "imageUrl": "assets/images/items/28966.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "craftmans-cloth",
+        "name": "craftman's cloth",
+        "imageUrl": "assets/images/items/28963.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 587,
+        "cost": 0
+      },
+      {
+        "id": "silk",
+        "name": "silk",
+        "imageUrl": "assets/images/items/28965.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 875,
+        "cost": 0
+      },
+      {
+        "id": "merchants-cloth",
+        "name": "merchant's cloth",
+        "imageUrl": "assets/images/items/28964.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 1168,
+        "cost": 0
+      },
+      {
+        "id": "artisan-cloth",
+        "name": "artisan cloth",
+        "imageUrl": "assets/images/items/28962.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 1475,
+        "cost": 0
+      },
+      {
+        "id": "glimmery-cloth",
+        "name": "glimmery cloth",
+        "imageUrl": "assets/images/items/48521.png",
+        "amount": 1,
+        "level": 88,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "radiant-cloth",
+        "name": "radiant cloth",
+        "imageUrl": "assets/images/items/55324.png",
+        "amount": 1,
+        "level": 98,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "fry-cook-bracers",
+        "name": "Fry Cook Bracers",
+        "imageUrl": "assets/images/items/35188.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 9400,
+        "cost": 0
+      },
+      {
+        "id": "fry-cook-helmet",
+        "name": "Fry Cook Helmet",
+        "imageUrl": "assets/images/items/35189.png",
+        "amount": 1,
+        "level": 19,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "fry-cook-armor",
+        "name": "Fry Cook Armor",
+        "imageUrl": "assets/images/items/35186.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "fry-cook-legs",
+        "name": "Fry Cook Legs",
+        "imageUrl": "assets/images/items/35190.png",
+        "amount": 1,
+        "level": 13,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "fry-cook-boots",
+        "name": "Fry Cook Boots",
+        "imageUrl": "assets/images/items/35187.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "sous-chef-bracers",
+        "name": "Sous Chef Bracers",
+        "imageUrl": "assets/images/items/35193.png",
+        "amount": 1,
+        "level": 42,
+        "experience": 18375,
+        "cost": 0
+      },
+      {
+        "id": "sous-chef-helmet",
+        "name": "Sous Chef Helmet",
+        "imageUrl": "assets/images/items/35194.png",
+        "amount": 1,
+        "level": 39,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "sous-chef-armor",
+        "name": "Sous Chef Armor",
+        "imageUrl": "assets/images/items/35191.png",
+        "amount": 1,
+        "level": 36,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "sous-chef-legs",
+        "name": "Sous Chef Legs",
+        "imageUrl": "assets/images/items/35195.png",
+        "amount": 1,
+        "level": 33,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "sous-chef-boots",
+        "name": "Sous Chef Boots",
+        "imageUrl": "assets/images/items/35192.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "master-of-cuisine-bracers",
+        "name": "Master of Cuisine Bracers",
+        "imageUrl": "assets/images/items/35198.png",
+        "amount": 1,
+        "level": 62,
+        "experience": 37500,
+        "cost": 0
+      },
+      {
+        "id": "master-of-cuisine-helmet",
+        "name": "Master of Cuisine Helmet",
+        "imageUrl": "assets/images/items/35199.png",
+        "amount": 1,
+        "level": 59,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-of-cuisine-armor",
+        "name": "Master of Cuisine Armor",
+        "imageUrl": "assets/images/items/35196.png",
+        "amount": 1,
+        "level": 56,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-of-cuisine-legs",
+        "name": "Master of Cuisine Legs",
+        "imageUrl": "assets/images/items/35200.png",
+        "amount": 1,
+        "level": 53,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-of-cuisine-boots",
+        "name": "Master of Cuisine Boots",
+        "imageUrl": "assets/images/items/35197.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "loom-apprentice-gloves",
+        "name": "Loom Apprentice Gloves",
+        "imageUrl": "assets/images/items/35203.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 9400,
+        "cost": 0
+      },
+      {
+        "id": "loom-apprentice-helmet",
+        "name": "Loom Apprentice Helmet",
+        "imageUrl": "assets/images/items/35204.png",
+        "amount": 1,
+        "level": 19,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "loom-apprentice-armor",
+        "name": "Loom Apprentice Armor",
+        "imageUrl": "assets/images/items/35201.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "loom-apprentice-legs",
+        "name": "Loom Apprentice Legs",
+        "imageUrl": "assets/images/items/35205.png",
+        "amount": 1,
+        "level": 13,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "loom-apprentice-boots",
+        "name": "Loom Apprentice Boots",
+        "imageUrl": "assets/images/items/35202.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "threadspinner-gloves",
+        "name": "Threadspinner Gloves",
+        "imageUrl": "assets/images/items/35208.png",
+        "amount": 1,
+        "level": 42,
+        "experience": 18375,
+        "cost": 0
+      },
+      {
+        "id": "threadspinner-helmet",
+        "name": "Threadspinner Helmet",
+        "imageUrl": "assets/images/items/35209.png",
+        "amount": 1,
+        "level": 39,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "threadspinner-armor",
+        "name": "Threadspinner Armor",
+        "imageUrl": "assets/images/items/35206.png",
+        "amount": 1,
+        "level": 36,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "threadspinner-legs",
+        "name": "Threadspinner Legs",
+        "imageUrl": "assets/images/items/35210.png",
+        "amount": 1,
+        "level": 33,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "threadspinner-boots",
+        "name": "Threadspinner Boots",
+        "imageUrl": "assets/images/items/35207.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "master-tailor-bracers",
+        "name": "Master Tailor Bracers",
+        "imageUrl": "assets/images/items/35213.png",
+        "amount": 1,
+        "level": 62,
+        "experience": 37500,
+        "cost": 0
+      },
+      {
+        "id": "master-tailor-helmet",
+        "name": "Master Tailor Helmet",
+        "imageUrl": "assets/images/items/35214.png",
+        "amount": 1,
+        "level": 59,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-tailor-armor",
+        "name": "Master Tailor Armor",
+        "imageUrl": "assets/images/items/35211.png",
+        "amount": 1,
+        "level": 56,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-tailor-legs",
+        "name": "Master Tailor Legs",
+        "imageUrl": "assets/images/items/35215.png",
+        "amount": 1,
+        "level": 53,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-tailor-boots",
+        "name": "Master Tailor Boots",
+        "imageUrl": "assets/images/items/35212.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "workshop-assistant-gloves",
+        "name": "Workshop Assistant Gloves",
+        "imageUrl": "assets/images/items/35173.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 9400,
+        "cost": 0
+      },
+      {
+        "id": "workshop-assistant-helmet",
+        "name": "Workshop Assistant Helmet",
+        "imageUrl": "assets/images/items/35174.png",
+        "amount": 1,
+        "level": 19,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "workshop-assistant-armor",
+        "name": "Workshop Assistant Armor",
+        "imageUrl": "assets/images/items/35171.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "workshop-assistant-legs",
+        "name": "Workshop Assistant Legs",
+        "imageUrl": "assets/images/items/35175.png",
+        "amount": 1,
+        "level": 13,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "workshop-assistant-boots",
+        "name": "Workshop Assistant Boots",
+        "imageUrl": "assets/images/items/35172.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "woodworker-gloves",
+        "name": "Woodworker Gloves",
+        "imageUrl": "assets/images/items/35178.png",
+        "amount": 1,
+        "level": 42,
+        "experience": 18375,
+        "cost": 0
+      },
+      {
+        "id": "woodworker-helmet",
+        "name": "Woodworker Helmet",
+        "imageUrl": "assets/images/items/35179.png",
+        "amount": 1,
+        "level": 39,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "woodworker-armor",
+        "name": "Woodworker Armor",
+        "imageUrl": "assets/images/items/35176.png",
+        "amount": 1,
+        "level": 36,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "woodworker-legs",
+        "name": "Woodworker Legs",
+        "imageUrl": "assets/images/items/35180.png",
+        "amount": 1,
+        "level": 33,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "woodworker-boots",
+        "name": "Woodworker Boots",
+        "imageUrl": "assets/images/items/35177.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "master-mason-gloves",
+        "name": "Master Mason Gloves",
+        "imageUrl": "assets/images/items/35183.png",
+        "amount": 1,
+        "level": 62,
+        "experience": 37500,
+        "cost": 0
+      },
+      {
+        "id": "master-mason-helmet",
+        "name": "Master Mason Helmet",
+        "imageUrl": "assets/images/items/35184.png",
+        "amount": 1,
+        "level": 59,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-mason-armor",
+        "name": "Master Mason Armor",
+        "imageUrl": "assets/images/items/35181.png",
+        "amount": 1,
+        "level": 56,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-mason-legs",
+        "name": "Master Mason Legs",
+        "imageUrl": "assets/images/items/35185.png",
+        "amount": 1,
+        "level": 53,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "master-mason-boots",
+        "name": "Master Mason Boots",
+        "imageUrl": "assets/images/items/35182.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "apprentice-anvil-bracers",
+        "name": "Apprentice Anvil Bracers",
+        "imageUrl": "assets/images/items/35158.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 9400,
+        "cost": 0
+      },
+      {
+        "id": "apprentice-anvil-helmet",
+        "name": "Apprentice Anvil Helmet",
+        "imageUrl": "assets/images/items/35159.png",
+        "amount": 1,
+        "level": 19,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "apprentice-anvil-armor",
+        "name": "Apprentice Anvil Armor",
+        "imageUrl": "assets/images/items/35156.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "apprentice-anvil-legs",
+        "name": "Apprentice Anvil Legs",
+        "imageUrl": "assets/images/items/35160.png",
+        "amount": 1,
+        "level": 13,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "apprentice-anvil-boots",
+        "name": "Apprentice Anvil Boots",
+        "imageUrl": "assets/images/items/35157.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "silversmith-bracers",
+        "name": "Silversmith Bracers",
+        "imageUrl": "assets/images/items/35163.png",
+        "amount": 1,
+        "level": 42,
+        "experience": 18375,
+        "cost": 0
+      },
+      {
+        "id": "silversmith-helmet",
+        "name": "Silversmith Helmet",
+        "imageUrl": "assets/images/items/35164.png",
+        "amount": 1,
+        "level": 39,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "silversmith-armor",
+        "name": "Silversmith Armor",
+        "imageUrl": "assets/images/items/35161.png",
+        "amount": 1,
+        "level": 36,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "silversmith-legs",
+        "name": "Silversmith Legs",
+        "imageUrl": "assets/images/items/35165.png",
+        "amount": 1,
+        "level": 33,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "silversmith-boots",
+        "name": "Silversmith Boots",
+        "imageUrl": "assets/images/items/35162.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "forgemaster-bracers",
+        "name": "Forgemaster Bracers",
+        "imageUrl": "assets/images/items/35168.png",
+        "amount": 1,
+        "level": 62,
+        "experience": 37500,
+        "cost": 0
+      },
+      {
+        "id": "forgemaster-helmet",
+        "name": "Forgemaster Helmet",
+        "imageUrl": "assets/images/items/35169.png",
+        "amount": 1,
+        "level": 59,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "forgemaster-armor",
+        "name": "Forgemaster Armor",
+        "imageUrl": "assets/images/items/35166.png",
+        "amount": 1,
+        "level": 56,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "forgemaster-legs",
+        "name": "Forgemaster Legs",
+        "imageUrl": "assets/images/items/35170.png",
+        "amount": 1,
+        "level": 53,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "forgemaster-boots",
+        "name": "Forgemaster Boots",
+        "imageUrl": "assets/images/items/35167.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "herb-mixer-boots",
+        "name": "Herb Mixer Boots",
+        "imageUrl": "assets/images/items/49588.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "herb-mixer-legs",
+        "name": "Herb Mixer Legs",
+        "imageUrl": "assets/images/items/49591.png",
+        "amount": 1,
+        "level": 13,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "herb-mixer-tunic",
+        "name": "Herb Mixer Tunic",
+        "imageUrl": "assets/images/items/49592.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "herb-mixer-coif",
+        "name": "Herb Mixer Coif",
+        "imageUrl": "assets/images/items/49590.png",
+        "amount": 1,
+        "level": 19,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "herb-mixer-gloves",
+        "name": "Herb Mixer Gloves",
+        "imageUrl": "assets/images/items/49589.png",
+        "amount": 1,
+        "level": 22,
+        "experience": 9400,
+        "cost": 0
+      },
+      {
+        "id": "alchemy-adept-boots",
+        "name": "Alchemy Adept Boots",
+        "imageUrl": "assets/images/items/49593.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "alchemy-adept-legs",
+        "name": "Alchemy Adept Legs",
+        "imageUrl": "assets/images/items/49596.png",
+        "amount": 1,
+        "level": 33,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "alchemy-adept-tunic",
+        "name": "Alchemy Adept Tunic",
+        "imageUrl": "assets/images/items/49597.png",
+        "amount": 1,
+        "level": 36,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "alchemy-adept-coif",
+        "name": "Alchemy Adept Coif",
+        "imageUrl": "assets/images/items/49595.png",
+        "amount": 1,
+        "level": 39,
+        "experience": 9625,
+        "cost": 0
+      },
+      {
+        "id": "alchemy-adept-gloves",
+        "name": "Alchemy Adept Gloves",
+        "imageUrl": "assets/images/items/49594.png",
+        "amount": 1,
+        "level": 42,
+        "experience": 18375,
+        "cost": 0
+      },
+      {
+        "id": "brewmaster-boots",
+        "name": "Brewmaster Boots",
+        "imageUrl": "assets/images/items/49598.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "brewmaster-legs",
+        "name": "Brewmaster Legs",
+        "imageUrl": "assets/images/items/49601.png",
+        "amount": 1,
+        "level": 53,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "brewmaster-tunic",
+        "name": "Brewmaster Tunic",
+        "imageUrl": "assets/images/items/49602.png",
+        "amount": 1,
+        "level": 56,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "brewmaster-coif",
+        "name": "Brewmaster Coif",
+        "imageUrl": "assets/images/items/49600.png",
+        "amount": 1,
+        "level": 59,
+        "experience": 18700,
+        "cost": 0
+      },
+      {
+        "id": "brewmaster-gloves",
+        "name": "Brewmaster Gloves",
+        "imageUrl": "assets/images/items/49599.png",
+        "amount": 1,
+        "level": 62,
+        "experience": 37500,
+        "cost": 0
+      },
+      {
+        "id": "loose-wadding",
+        "name": "Loose Wadding",
+        "imageUrl": "assets/images/items/53336.png",
+        "amount": 3,
+        "level": 50,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "compact-wadding",
+        "name": "Compact Wadding",
+        "imageUrl": "assets/images/items/53337.png",
+        "amount": 3,
+        "level": 60,
+        "experience": 2500,
+        "cost": 0
+      },
+      {
+        "id": "padded-wadding",
+        "name": "Padded Wadding",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 70,
+        "experience": 3518,
+        "cost": 0
+      },
+      {
+        "id": "plush-wadding",
+        "name": "Plush Wadding",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 80,
+        "experience": 6250,
+        "cost": 0
+      },
+      {
+        "id": "luxury-wadding",
+        "name": "Luxury Wadding",
+        "imageUrl": "assets/images/cooking.png",
+        "amount": 3,
+        "level": 90,
+        "experience": 10000,
+        "cost": 0
+      },
+      {
+        "id": "flappy-lure",
+        "name": "Flappy Lure",
+        "imageUrl": "assets/images/items/48023.png",
+        "amount": 50,
+        "level": 17,
+        "experience": 1800,
+        "cost": 0
+      },
+      {
+        "id": "leafy-drifter",
+        "name": "Leafy Drifter",
+        "imageUrl": "assets/images/items/47953.png",
+        "amount": 50,
+        "level": 30,
+        "experience": 3250,
+        "cost": 0
+      },
+      {
+        "id": "verdant-buoy",
+        "name": "Verdant Buoy",
+        "imageUrl": "assets/images/items/47955.png",
+        "amount": 50,
+        "level": 50,
+        "experience": 4906,
+        "cost": 0
+      },
+      {
+        "id": "ruby-charmer",
+        "name": "Ruby Charmer",
+        "imageUrl": "assets/images/items/47957.png",
+        "amount": 50,
+        "level": 68,
+        "experience": 6343,
+        "cost": 0
+      },
+      {
+        "id": "thread-spool",
+        "name": "Thread Spool",
+        "imageUrl": "assets/images/items/37288.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 4700,
+        "cost": 0
+      },
+      {
+        "id": "luxury-thread-spool",
+        "name": "Luxury Thread Spool",
+        "imageUrl": "assets/images/items/37248.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 29218,
+        "cost": 0
+      },
+      {
+        "id": "cloth-roll",
+        "name": "Cloth Roll",
+        "imageUrl": "assets/images/items/37226.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 11750,
+        "cost": 0
+      },
+      {
+        "id": "refined-cloth-roll",
+        "name": "Refined Cloth Roll",
+        "imageUrl": "assets/images/items/37262.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 23375,
+        "cost": 0
+      },
+      {
+        "id": "luxury-cloth-roll",
+        "name": "Luxury Cloth Roll",
+        "imageUrl": "assets/images/items/37247.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 51625,
+        "cost": 0
+      },
+      {
+        "id": "carpet",
+        "name": "Carpet",
+        "imageUrl": "assets/images/items/37225.png",
+        "amount": 1,
+        "level": 20,
+        "experience": 8812,
+        "cost": 0
+      },
+      {
+        "id": "luxury-carpet",
+        "name": "Luxury Carpet",
+        "imageUrl": "assets/images/items/37246.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 35062,
+        "cost": 0
+      },
+      {
+        "id": "cheap-rug",
+        "name": "Cheap Rug",
+        "imageUrl": "assets/images/items/42780.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 2400,
+        "cost": 0
+      },
+      {
+        "id": "refined-covering",
+        "name": "Refined Covering",
+        "imageUrl": "assets/images/items/49811.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 36125,
+        "cost": 0
+      },
+      {
+        "id": "buoyant-plume",
+        "name": "Buoyant Plume",
+        "imageUrl": "assets/images/items/48042.png",
+        "amount": 1,
+        "level": 16,
+        "experience": 1212,
+        "cost": 0
+      },
+      {
+        "id": "coarse-leather",
+        "name": "Coarse Leather",
+        "imageUrl": "assets/images/items/35432.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "craftmans-leather",
+        "name": "Craftman's Leather",
+        "imageUrl": "assets/images/items/35433.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 587,
+        "cost": 0
+      },
+      {
+        "id": "tanned-leather",
+        "name": "Tanned Leather",
+        "imageUrl": "assets/images/items/35434.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 875,
+        "cost": 0
+      },
+      {
+        "id": "merchants-leather",
+        "name": "Merchant's Leather",
+        "imageUrl": "assets/images/items/35435.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 1168,
+        "cost": 0
+      },
+      {
+        "id": "artisan-leather",
+        "name": "Artisan Leather",
+        "imageUrl": "assets/images/items/35436.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 1475,
+        "cost": 0
+      },
+      {
+        "id": "glimmery-leather",
+        "name": "glimmery leather",
+        "imageUrl": "assets/images/items/48523.png",
+        "amount": 1,
+        "level": 88,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "radiant-leather",
+        "name": "radiant leather",
+        "imageUrl": "assets/images/items/55326.png",
+        "amount": 1,
+        "level": 98,
+        "experience": 2750,
+        "cost": 0
+      },
+      {
+        "id": "simple-saddle",
+        "name": "Simple Saddle",
+        "imageUrl": "assets/images/items/43246.png",
+        "amount": 1,
+        "level": 12,
+        "experience": 3475,
+        "cost": 0
+      },
+      {
+        "id": "composed-saddle",
+        "name": "Composed Saddle",
+        "imageUrl": "assets/images/items/43247.png",
+        "amount": 1,
+        "level": 24,
+        "experience": 4900,
+        "cost": 0
+      },
+      {
+        "id": "advanced-saddle",
+        "name": "Advanced Saddle",
+        "imageUrl": "assets/images/items/43248.png",
+        "amount": 1,
+        "level": 36,
+        "experience": 13750,
+        "cost": 0
+      },
+      {
+        "id": "artisan-saddle",
+        "name": "Artisan Saddle",
+        "imageUrl": "assets/images/items/43249.png",
+        "amount": 1,
+        "level": 48,
+        "experience": 25325,
+        "cost": 0
+      },
+      {
+        "id": "superior-saddle",
+        "name": "Superior Saddle",
+        "imageUrl": "assets/images/items/43250.png",
+        "amount": 1,
+        "level": 60,
+        "experience": 31900,
+        "cost": 0
+      },
+      {
+        "id": "war-saddle",
+        "name": "War Saddle",
+        "imageUrl": "assets/images/items/43251.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 70250,
+        "cost": 0
+      },
+      {
+        "id": "explorer-saddle",
+        "name": "Explorer Saddle",
+        "imageUrl": "assets/images/items/43252.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 70250,
+        "cost": 0
+      },
+      {
+        "id": "professional-saddle",
+        "name": "Professional Saddle",
+        "imageUrl": "assets/images/items/43253.png",
+        "amount": 1,
+        "level": 75,
+        "experience": 70250,
+        "cost": 0
+      },
+      {
+        "id": "small-sail-kit",
+        "name": "Small Sail Kit",
+        "imageUrl": "assets/images/items/37276.png",
+        "amount": 1,
+        "level": 15,
+        "experience": 49500,
+        "cost": 0
+      },
+      {
+        "id": "medium-sail-kit",
+        "name": "Medium Sail Kit",
+        "imageUrl": "assets/images/items/37257.png",
+        "amount": 1,
+        "level": 35,
+        "experience": 233250,
+        "cost": 0
+      },
+      {
+        "id": "large-sail-kit",
+        "name": "Large Sail Kit",
+        "imageUrl": "assets/images/items/37242.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 484500,
+        "cost": 0
+      },
+      {
+        "id": "small-fishing-nets-kit",
+        "name": "Small Fishing Nets Kit",
+        "imageUrl": "assets/images/items/37272.png",
+        "amount": 1,
+        "level": 35,
+        "experience": 35000,
+        "cost": 0
+      },
+      {
+        "id": "medium-fishing-nets-kit",
+        "name": "Medium Fishing Nets Kit",
+        "imageUrl": "assets/images/items/37253.png",
+        "amount": 1,
+        "level": 45,
+        "experience": 146000,
+        "cost": 0
+      },
+      {
+        "id": "large-fishing-nets-kit",
+        "name": "Large Fishing Nets Kit",
+        "imageUrl": "assets/images/items/37238.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 485250,
+        "cost": 0
+      },
+      {
+        "id": "coarse-thread",
+        "name": "coarse thread",
+        "imageUrl": "assets/images/items/28971.png",
+        "amount": 1,
+        "level": 1,
+        "experience": 300,
+        "cost": 0
+      },
+      {
+        "id": "craftmans-thread",
+        "name": "craftman's thread",
+        "imageUrl": "assets/images/items/28972.png",
+        "amount": 1,
+        "level": 10,
+        "experience": 587,
+        "cost": 0
+      },
+      {
+        "id": "fine-thread",
+        "name": "fine thread",
+        "imageUrl": "assets/images/items/28973.png",
+        "amount": 1,
+        "level": 30,
+        "experience": 875,
+        "cost": 0
+      },
+      {
+        "id": "merchants-thread",
+        "name": "merchant's thread",
+        "imageUrl": "assets/images/items/28969.png",
+        "amount": 1,
+        "level": 50,
+        "experience": 1168,
+        "cost": 0
+      },
+      {
+        "id": "artisan-thread",
+        "name": "artisan thread",
+        "imageUrl": "assets/images/items/28970.png",
+        "amount": 1,
+        "level": 70,
+        "experience": 1475,
+        "cost": 0
+      },
+      {
+        "id": "glimmery-thread",
+        "name": "glimmery thread",
+        "imageUrl": "assets/images/items/48525.png",
+        "amount": 1,
+        "level": 88,
+        "experience": 2000,
+        "cost": 0
+      },
+      {
+        "id": "radiant-thread",
+        "name": "radiant thread",
+        "imageUrl": "assets/images/items/55328.png",
+        "amount": 1,
+        "level": 98,
+        "experience": 2750,
+        "cost": 0
+      }
+    ]
+  }
+}

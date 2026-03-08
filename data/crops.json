@@ -1,0 +1,3514 @@
+{
+  "metadata": {
+    "version": "2.1.0",
+    "description": "Crop growth data for land optimization in RavenQuest Companion",
+    "lastUpdated": "2026-02-01",
+    "notes": "Schema v2.1: Added professionXP (renamed from experience) and legacyXP fields. Experience and detailed yields to be filled manually from in-game data.",
+    "schema": {
+      "gathering": "Repeatable harvest data (time, professionXP, legacyXP, yields)",
+      "butchering": "One-time harvest data for animals (time, professionXP, legacyXP, yields)",
+      "legacy": "growthTime and yields fields kept for backward compatibility"
+    },
+    "itemCount": 167,
+    "lastApiSync": "2026-02-01T04:29:22.133Z"
+  },
+  "categories": {
+    "farming": {
+      "description": "Grain and vegetable crops",
+      "icon": ""
+    },
+    "herbalism": {
+      "description": "Herbs and alchemical plants",
+      "icon": ""
+    },
+    "husbandry": {
+      "description": "Animal products and livestock",
+      "icon": ""
+    },
+    "woodcutting": {
+      "description": "Trees and wood products",
+      "icon": ""
+    },
+    "breeding": {
+      "description": "Mount breeding and exotic animals",
+      "icon": ""
+    }
+  },
+  "items": [
+    {
+      "id": "acorn_tree",
+      "name": "Acorn Tree",
+      "category": "farming",
+      "level": 47,
+      "growthTime": "2D",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Acorn",
+          "min": 6,
+          "max": 12,
+          "avg": 9
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🌰",
+      "gathering": {
+        "time": "48H",
+        "yields": [],
+        "timeMinutes": 2880,
+        "professionXP": 9504,
+        "legacyXP": null
+      },
+      "plantingCost": 14400
+    },
+    {
+      "id": "apple_tree",
+      "name": "Apple Tree",
+      "category": "farming",
+      "level": 7,
+      "growthTime": "7H 30m",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Apple",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🍎",
+      "gathering": {
+        "time": "7.5H",
+        "yields": [],
+        "timeMinutes": 450,
+        "professionXP": 2226,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 450,
+      "plantingCost": 2220
+    },
+    {
+      "id": "banana_tree",
+      "name": "Banana Tree",
+      "category": "farming",
+      "level": 32,
+      "growthTime": "1D",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Banana",
+          "min": 6,
+          "max": 12,
+          "avg": 9
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🍌",
+      "gathering": {
+        "time": "24H",
+        "yields": [],
+        "timeMinutes": 1440,
+        "professionXP": 6042,
+        "legacyXP": null
+      },
+      "plantingCost": 7200
+    },
+    {
+      "id": "beans",
+      "name": "Beans",
+      "category": "farming",
+      "level": 30,
+      "growthTime": "15H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Bean",
+          "min": 9,
+          "max": 15,
+          "avg": 12
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🫘",
+      "gathering": {
+        "time": "15H",
+        "yields": [],
+        "timeMinutes": 900,
+        "professionXP": 1034,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 900,
+      "plantingCost": 564
+    },
+    {
+      "id": "blueberries",
+      "name": "Blueberries",
+      "category": "farming",
+      "level": 17,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Blueberry",
+          "min": 9,
+          "max": 15,
+          "avg": 12
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🫐",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 452,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 216
+    },
+    {
+      "id": "broccoli",
+      "name": "Broccoli",
+      "category": "farming",
+      "level": 50,
+      "growthTime": "15H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Broccoli",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        }
+      ],
+      "icon": "🥦",
+      "gathering": {
+        "time": "15H",
+        "yields": [],
+        "timeMinutes": 900,
+        "professionXP": 1034,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 900,
+      "plantingCost": 564
+    },
+    {
+      "id": "cabbages",
+      "name": "Cabbages",
+      "category": "farming",
+      "level": 20,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Cabbage",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🥬",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 452,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 216
+    },
+    {
+      "id": "carrots",
+      "name": "Carrots",
+      "category": "farming",
+      "level": 10,
+      "growthTime": "2H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Carrot",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🥕",
+      "gathering": {
+        "time": "2H",
+        "yields": [],
+        "timeMinutes": 120,
+        "professionXP": 158,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 120,
+      "plantingCost": 84
+    },
+    {
+      "id": "cherries",
+      "name": "Cherries",
+      "category": "farming",
+      "level": 21,
+      "growthTime": "21H",
+      "gatheringMultiplier": 3,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Cherry",
+          "min": 6,
+          "max": 12,
+          "avg": 9
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🍒",
+      "gathering": {
+        "time": "21H",
+        "yields": [],
+        "timeMinutes": 1260,
+        "professionXP": 5448,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 1260,
+      "plantingCost": 6300
+    },
+    {
+      "id": "corn",
+      "name": "Corn",
+      "category": "farming",
+      "level": 3,
+      "growthTime": "15H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Corn",
+          "min": 6,
+          "max": 9,
+          "avg": 7.5
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🌽",
+      "gathering": {
+        "time": "15H",
+        "yields": [],
+        "timeMinutes": 900,
+        "professionXP": 1034,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 900,
+      "plantingCost": 564
+    },
+    {
+      "id": "cotton_tree",
+      "name": "Cotton Tree",
+      "category": "farming",
+      "level": 1,
+      "growthTime": "5H 30m",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Cotton",
+          "min": 4,
+          "max": 8,
+          "avg": 6
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "☁️",
+      "gathering": {
+        "time": "5.5H",
+        "yields": [],
+        "timeMinutes": 330,
+        "professionXP": 1378,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 330,
+      "plantingCost": 1320
+    },
+    {
+      "id": "garlic",
+      "name": "Garlic",
+      "category": "farming",
+      "level": 45,
+      "growthTime": "18H 40m",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Garlic",
+          "min": 6,
+          "max": 12,
+          "avg": 9
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🧄",
+      "gathering": {
+        "time": "18H 40m",
+        "yields": [],
+        "timeMinutes": 1120,
+        "professionXP": 1120,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 1120,
+      "plantingCost": 600
+    },
+    {
+      "id": "grapes",
+      "name": "Grapes",
+      "category": "farming",
+      "level": 15,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Grape",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🍇",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 452,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 216
+    },
+    {
+      "id": "moonberry",
+      "name": "Moonberry",
+      "category": "farming",
+      "level": 42,
+      "growthTime": "21H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Moonberry",
+          "min": 3,
+          "max": 9,
+          "avg": 6
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🌙",
+      "gathering": {
+        "time": "21H",
+        "yields": [],
+        "timeMinutes": 1260,
+        "professionXP": 1362,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 1260,
+      "plantingCost": 792
+    },
+    {
+      "id": "onions",
+      "name": "Onions",
+      "category": "farming",
+      "level": 25,
+      "growthTime": "9H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Onion",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🧅",
+      "gathering": {
+        "time": "9H",
+        "yields": [],
+        "timeMinutes": 540,
+        "professionXP": 658,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 540,
+      "plantingCost": 336
+    },
+    {
+      "id": "orange_tree",
+      "name": "Orange Tree",
+      "category": "farming",
+      "level": 22,
+      "growthTime": "15H",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Orange",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🍊",
+      "gathering": {
+        "time": "15H",
+        "yields": [],
+        "timeMinutes": 900,
+        "professionXP": 4132,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 900,
+      "plantingCost": 4500
+    },
+    {
+      "id": "peas",
+      "name": "Peas",
+      "category": "farming",
+      "level": 40,
+      "growthTime": "19H 30m",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Pea",
+          "min": 9,
+          "max": 15,
+          "avg": 12
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🫛",
+      "gathering": {
+        "time": "19.5H",
+        "yields": [],
+        "timeMinutes": 1170,
+        "professionXP": 1284,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 1170,
+      "plantingCost": 720
+    },
+    {
+      "id": "peppers",
+      "name": "Peppers",
+      "category": "farming",
+      "level": 21,
+      "growthTime": "1D 4H 30m",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Pepper",
+          "min": 9,
+          "max": 15,
+          "avg": 12
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🌶️",
+      "gathering": {
+        "time": "28.5H",
+        "yields": [],
+        "timeMinutes": 1710,
+        "professionXP": 1714,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 270,
+      "plantingCost": 1080
+    },
+    {
+      "id": "potatoes",
+      "name": "Potatoes",
+      "category": "farming",
+      "level": 1,
+      "growthTime": "1H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Potato",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🥔",
+      "gathering": {
+        "time": "1H",
+        "yields": [],
+        "timeMinutes": 60,
+        "professionXP": 80,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 60,
+      "plantingCost": 36
+    },
+    {
+      "id": "pumpkin",
+      "name": "Pumpkin",
+      "category": "farming",
+      "level": 35,
+      "growthTime": "1D",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Pumpkin",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🎃",
+      "gathering": {
+        "time": "24H",
+        "yields": [],
+        "timeMinutes": 1440,
+        "professionXP": 1510,
+        "legacyXP": null
+      },
+      "plantingCost": 900
+    },
+    {
+      "id": "strawberries",
+      "name": "Strawberries",
+      "category": "farming",
+      "level": 27,
+      "growthTime": "7H 30m",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Strawberry",
+          "min": 6,
+          "max": 12,
+          "avg": 9
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🍓",
+      "gathering": {
+        "time": "7.5H",
+        "yields": [],
+        "timeMinutes": 450,
+        "professionXP": 558,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 450,
+      "plantingCost": 288
+    },
+    {
+      "id": "sunberries",
+      "name": "Sunberries",
+      "category": "farming",
+      "level": 52,
+      "growthTime": "1D 6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Sunberry",
+          "min": 3,
+          "max": 9,
+          "avg": 6
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "☀️",
+      "gathering": {
+        "time": "30H",
+        "yields": [],
+        "timeMinutes": 1800,
+        "professionXP": 1778,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 1080
+    },
+    {
+      "id": "watermelon",
+      "name": "Watermelon",
+      "category": "farming",
+      "level": 37,
+      "growthTime": "1D 6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Watermelon",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🍉",
+      "gathering": {
+        "time": "30H",
+        "yields": [],
+        "timeMinutes": 1800,
+        "professionXP": 1778,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 1080
+    },
+    {
+      "id": "wheat",
+      "name": "Wheat",
+      "category": "farming",
+      "level": 5,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Wheat",
+          "min": 3,
+          "max": 9,
+          "avg": 6
+        },
+        {
+          "resource": "Three-Leaf Clover",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 30000
+        }
+      ],
+      "icon": "🌾",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 452,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 216
+    },
+    {
+      "id": "bloodthorn",
+      "name": "Bloodthorn",
+      "category": "herbalism",
+      "level": 14,
+      "growthTime": "16H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Bloody Bud",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Numbing Thorns",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🩸",
+      "gathering": {
+        "time": "16H",
+        "yields": [],
+        "timeMinutes": 960,
+        "professionXP": 1268,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 960,
+      "plantingCost": 650
+    },
+    {
+      "id": "bogbush",
+      "name": "Bogbush",
+      "category": "herbalism",
+      "level": 3,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Toadchew",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Thorny Roots",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🌱",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 476,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 240
+    },
+    {
+      "id": "brightday",
+      "name": "Brightday",
+      "category": "herbalism",
+      "level": 10,
+      "growthTime": "8H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Brightday",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Juicy Roots",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🌻",
+      "gathering": {
+        "time": "8H",
+        "yields": [],
+        "timeMinutes": 480,
+        "professionXP": 632,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 480,
+      "plantingCost": 325
+    },
+    {
+      "id": "cerulean_mushroom",
+      "name": "Cerulean Mushroom",
+      "category": "herbalism",
+      "level": 4,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Cerulean Cap",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Fungal Dust",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "🔵",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 476,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 225
+    },
+    {
+      "id": "chest_warmer",
+      "name": "Chest Warmer",
+      "category": "herbalism",
+      "level": 22,
+      "growthTime": "20H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Chest Warmer",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Cold Roots",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "❤️",
+      "gathering": {
+        "time": "20H",
+        "yields": [],
+        "timeMinutes": 1200,
+        "professionXP": 1584,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 1200,
+      "plantingCost": 800
+    },
+    {
+      "id": "crystal_mushroom",
+      "name": "Crystal Mushroom",
+      "category": "herbalism",
+      "level": 29,
+      "growthTime": "20H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Crystal Cap",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Glowing Spores",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "✨",
+      "gathering": {
+        "time": "20H",
+        "yields": [],
+        "timeMinutes": 1200,
+        "professionXP": 1584,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 1200,
+      "plantingCost": 800
+    },
+    {
+      "id": "crystal_plant",
+      "name": "Crystal Plant",
+      "category": "herbalism",
+      "level": 58,
+      "growthTime": "1D 6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Crystal Leaf",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Cold Roots",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "💎",
+      "gathering": {
+        "time": "30H",
+        "yields": [],
+        "timeMinutes": 1800,
+        "professionXP": 2376,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 1500
+    },
+    {
+      "id": "dread_bloom",
+      "name": "Dread Bloom",
+      "category": "herbalism",
+      "level": 18,
+      "growthTime": "1D",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Dread Bloom",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Numbing Thorns",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "💀",
+      "gathering": {
+        "time": "24H",
+        "yields": [],
+        "timeMinutes": 1440,
+        "professionXP": 1900,
+        "legacyXP": null
+      },
+      "plantingCost": 900
+    },
+    {
+      "id": "dry_mushroom",
+      "name": "Dry Mushroom",
+      "category": "herbalism",
+      "level": 19,
+      "growthTime": "16H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Dry Stem",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Ambar Dust",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🏜️",
+      "gathering": {
+        "time": "16H",
+        "yields": [],
+        "timeMinutes": 960,
+        "professionXP": 1268,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 960,
+      "plantingCost": 650
+    },
+    {
+      "id": "earthy_mushroom",
+      "name": "Earthy Mushroom",
+      "category": "herbalism",
+      "level": 2,
+      "growthTime": "2H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Earthy Stem",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Fungal Dust",
+          "min": 1,
+          "max": 3,
+          "avg": 2
+        }
+      ],
+      "icon": "🍄",
+      "gathering": {
+        "time": "2H",
+        "yields": [],
+        "timeMinutes": 120,
+        "professionXP": 160,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 120,
+      "plantingCost": 80
+    },
+    {
+      "id": "flaming_mushroom",
+      "name": "Flaming Mushroom",
+      "category": "herbalism",
+      "level": 49,
+      "growthTime": "1D 8H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Fire Cap",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Flaming Spores",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🔥",
+      "gathering": {
+        "time": "32H",
+        "yields": [],
+        "timeMinutes": 1920,
+        "professionXP": 2536,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 480,
+      "plantingCost": 1300
+    },
+    {
+      "id": "green_mushroom",
+      "name": "Green Mushroom",
+      "category": "herbalism",
+      "level": 7,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Green Cap",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Emerald Spores",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🟢",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 476,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 250
+    },
+    {
+      "id": "juicy_mushroom",
+      "name": "Juicy Mushroom",
+      "category": "herbalism",
+      "level": 11,
+      "growthTime": "8H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Juicy Stem",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Shimmering Spores",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "💧",
+      "gathering": {
+        "time": "8H",
+        "yields": [],
+        "timeMinutes": 480,
+        "professionXP": 632,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 480,
+      "plantingCost": 325
+    },
+    {
+      "id": "mindbender",
+      "name": "Mindbender",
+      "category": "herbalism",
+      "level": 38,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Mindbender",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Thin Roots",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "🧠",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 478,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 250
+    },
+    {
+      "id": "rocky_mushroom",
+      "name": "Rocky Mushroom",
+      "category": "herbalism",
+      "level": 59,
+      "growthTime": "1D",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Rocky Cap",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Ambar Dust",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "🪨",
+      "gathering": {
+        "time": "24H",
+        "yields": [],
+        "timeMinutes": 1440,
+        "professionXP": 1900,
+        "legacyXP": null
+      },
+      "plantingCost": 600
+    },
+    {
+      "id": "rohna_mint",
+      "name": "Rohna Mint",
+      "category": "herbalism",
+      "level": 1,
+      "growthTime": "2H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Refreshing Leaf",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Thin Roots",
+          "min": 1,
+          "max": 3,
+          "avg": 2
+        }
+      ],
+      "icon": "🌿",
+      "gathering": {
+        "time": "2H",
+        "yields": [],
+        "timeMinutes": 120,
+        "professionXP": 160,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 120,
+      "plantingCost": 80
+    },
+    {
+      "id": "shadow_mushroom",
+      "name": "Shadow Mushroom",
+      "category": "herbalism",
+      "level": 34,
+      "growthTime": "1D 2H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Shadow Stem",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Dusk Dust",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🌑",
+      "gathering": {
+        "time": "26H",
+        "yields": [],
+        "timeMinutes": 1560,
+        "professionXP": 2060,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 120,
+      "plantingCost": 1050
+    },
+    {
+      "id": "toxic_mushroom",
+      "name": "Toxic Mushroom",
+      "category": "herbalism",
+      "level": 23,
+      "growthTime": "1D 6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Toxic Stem",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Glowing Spores",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "☠️",
+      "gathering": {
+        "time": "30H",
+        "yields": [],
+        "timeMinutes": 1800,
+        "professionXP": 2376,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 1150
+    },
+    {
+      "id": "twisted_flower",
+      "name": "Twisted Flower",
+      "category": "herbalism",
+      "level": 48,
+      "growthTime": "1D 8H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Twisted Flower",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Purple Roots",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🌸",
+      "gathering": {
+        "time": "32H",
+        "yields": [],
+        "timeMinutes": 1920,
+        "professionXP": 2536,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 480,
+      "plantingCost": 1300
+    },
+    {
+      "id": "wailing_leaf",
+      "name": "Wailing Leaf",
+      "category": "herbalism",
+      "level": 33,
+      "growthTime": "1D 2H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Wailing Leaf",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        },
+        {
+          "resource": "Hagthorn",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        }
+      ],
+      "icon": "🍃",
+      "gathering": {
+        "time": "26H",
+        "yields": [],
+        "timeMinutes": 1560,
+        "professionXP": 2060,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 120,
+      "plantingCost": 1050
+    },
+    {
+      "id": "withered_mushroom",
+      "name": "Withered Mushroom",
+      "category": "herbalism",
+      "level": 39,
+      "growthTime": "9H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Withered Stem",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Emerald Spores",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "🥀",
+      "gathering": {
+        "time": "9H",
+        "yields": [],
+        "timeMinutes": 540,
+        "professionXP": 712,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 540,
+      "plantingCost": 350
+    },
+    {
+      "id": "pirates_bliss",
+      "name": "Pirate's Bliss",
+      "category": "herbalism",
+      "level": 6,
+      "growthTime": "12H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Pirate's Bliss",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Juicy Roots",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "🏴‍☠️",
+      "gathering": {
+        "time": "12H",
+        "yields": [],
+        "timeMinutes": 720,
+        "professionXP": 952,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 720,
+      "plantingCost": 450
+    },
+    {
+      "id": "pirates_fungi",
+      "name": "Pirate's Fungi",
+      "category": "herbalism",
+      "level": 15,
+      "growthTime": "12H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Pirate's Cap",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Shimmering Spores",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "🍄",
+      "gathering": {
+        "time": "12H",
+        "yields": [],
+        "timeMinutes": 720,
+        "professionXP": 952,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 720,
+      "plantingCost": 450
+    },
+    {
+      "id": "lizards_delight",
+      "name": "Lizard's Delight",
+      "category": "herbalism",
+      "level": 28,
+      "growthTime": "9H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Lizard's Delight",
+          "min": 3,
+          "max": 6,
+          "avg": 4.5
+        },
+        {
+          "resource": "Thorny Roots",
+          "min": 6,
+          "max": 8,
+          "avg": 7
+        }
+      ],
+      "icon": "🦎",
+      "gathering": {
+        "time": "9H",
+        "yields": [],
+        "timeMinutes": 540,
+        "professionXP": 712,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 540,
+      "plantingCost": 500
+    },
+    {
+      "id": "bee_hive",
+      "name": "Bee Hive",
+      "category": "husbandry",
+      "level": 21,
+      "growthTime": "1D 20H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Honey",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        }
+      ],
+      "icon": "🐝",
+      "gathering": {
+        "time": "44H",
+        "yields": [],
+        "timeMinutes": 2640,
+        "professionXP": 3344,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 1200,
+      "plantingCost": 2100
+    },
+    {
+      "id": "cheese_barrel",
+      "name": "Cheese Barrel",
+      "category": "husbandry",
+      "level": 21,
+      "growthTime": "1D 6H",
+      "gatheringMultiplier": 1,
+      "size": "1x1",
+      "width": 1,
+      "height": 1,
+      "yields": [
+        {
+          "resource": "Cheese",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        }
+      ],
+      "icon": "🧀",
+      "gathering": {
+        "time": "30H",
+        "yields": [],
+        "timeMinutes": 1800,
+        "professionXP": 2280,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 1380
+    },
+    {
+      "id": "medium_chicken_pen",
+      "name": "Medium Chicken Pen",
+      "category": "husbandry",
+      "level": 35,
+      "growthTime": "1H 30m",
+      "gatheringMultiplier": 3,
+      "size": "3x3",
+      "width": 3,
+      "height": 3,
+      "yields": [
+        {
+          "resource": "Egg",
+          "min": 9,
+          "max": 14,
+          "avg": 11.5
+        },
+        {
+          "resource": "Chicken",
+          "min": 7,
+          "max": 12,
+          "avg": 9.5
+        },
+        {
+          "resource": "Fertilizer",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 4500
+        }
+      ],
+      "icon": "🐔",
+      "gathering": {
+        "time": "1.5H",
+        "yields": [],
+        "timeMinutes": 90,
+        "professionXP": 1254,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "3H",
+        "yields": [],
+        "professionXP": 4324,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 90,
+      "plantingCost": 1200
+    },
+    {
+      "id": "medium_cow_pen",
+      "name": "Medium Cow Pen",
+      "category": "husbandry",
+      "level": 55,
+      "growthTime": "5H",
+      "gatheringMultiplier": 3,
+      "size": "3x3",
+      "width": 3,
+      "height": 3,
+      "yields": [
+        {
+          "resource": "Milk",
+          "min": 8,
+          "max": 11,
+          "avg": 9.5
+        },
+        {
+          "resource": "Beef",
+          "min": 15,
+          "max": 22,
+          "avg": 18.5
+        },
+        {
+          "resource": "Hide",
+          "min": 14,
+          "max": 21,
+          "avg": 17.5
+        }
+      ],
+      "icon": "🐄",
+      "gathering": {
+        "time": "5H",
+        "yields": [],
+        "timeMinutes": 300,
+        "professionXP": 4000,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "10H",
+        "yields": [],
+        "professionXP": 4500,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 300,
+      "plantingCost": 3120
+    },
+    {
+      "id": "medium_goat_pen",
+      "name": "Medium Goat Pen",
+      "category": "husbandry",
+      "level": 40,
+      "growthTime": "2H",
+      "gatheringMultiplier": 3,
+      "size": "3x3",
+      "width": 3,
+      "height": 3,
+      "yields": [
+        {
+          "resource": "Milk",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        },
+        {
+          "resource": "Wool",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        },
+        {
+          "resource": "Shank",
+          "min": 8,
+          "max": 14,
+          "avg": 11
+        },
+        {
+          "resource": "Fertilizer",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 4500
+        }
+      ],
+      "icon": "🐐",
+      "gathering": {
+        "time": "2H",
+        "yields": [],
+        "timeMinutes": 120,
+        "professionXP": 1658,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "4H",
+        "yields": [],
+        "professionXP": 2947,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 120,
+      "plantingCost": 2160
+    },
+    {
+      "id": "medium_hare_pen",
+      "name": "Medium Hare Pen",
+      "category": "husbandry",
+      "level": 30,
+      "growthTime": "1H 30m",
+      "gatheringMultiplier": 3,
+      "size": "3x3",
+      "width": 3,
+      "height": 3,
+      "yields": [
+        {
+          "resource": "Spool Of Hair",
+          "min": 9,
+          "max": 14,
+          "avg": 11.5
+        },
+        {
+          "resource": "Chicken",
+          "min": 7,
+          "max": 12,
+          "avg": 9.5
+        },
+        {
+          "resource": "Fertilizer",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 4500
+        }
+      ],
+      "icon": "🐰",
+      "gathering": {
+        "time": "1.5H",
+        "yields": [],
+        "timeMinutes": 90,
+        "professionXP": 1254,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "3H",
+        "yields": [],
+        "professionXP": 2369,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 90,
+      "plantingCost": 1200
+    },
+    {
+      "id": "medium_pig_pen",
+      "name": "Medium Pig Pen",
+      "category": "husbandry",
+      "level": 30,
+      "growthTime": "4H",
+      "gatheringMultiplier": null,
+      "size": "3x3",
+      "width": 3,
+      "height": 3,
+      "yields": [
+        {
+          "resource": "Shank",
+          "min": 6,
+          "max": 9,
+          "avg": 7.5
+        },
+        {
+          "resource": "Hide",
+          "min": 6,
+          "max": 9,
+          "avg": 7.5
+        }
+      ],
+      "icon": "🐷",
+      "butchering": {
+        "time": "4H",
+        "yields": [],
+        "professionXP": 4571,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 240,
+      "plantingCost": 1200,
+      "gathering": {
+        "timeMinutes": 240,
+        "professionXP": 4976
+      }
+    },
+    {
+      "id": "medium_sheep_pen",
+      "name": "Medium Sheep Pen",
+      "category": "husbandry",
+      "level": 50,
+      "growthTime": "3H",
+      "gatheringMultiplier": 3,
+      "size": "3x3",
+      "width": 3,
+      "height": 3,
+      "yields": [
+        {
+          "resource": "Wool",
+          "min": 8,
+          "max": 11,
+          "avg": 9.5
+        },
+        {
+          "resource": "Shank",
+          "min": 18,
+          "max": 27,
+          "avg": 22.5
+        },
+        {
+          "resource": "Fertilizer",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 4500
+        }
+      ],
+      "icon": "🐑",
+      "gathering": {
+        "time": "3H",
+        "yields": [],
+        "timeMinutes": 180,
+        "professionXP": 2466,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "6H",
+        "yields": [],
+        "professionXP": 1479,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 180,
+      "plantingCost": 3120
+    },
+    {
+      "id": "medium_turkey_pen",
+      "name": "Medium Turkey Pen",
+      "category": "husbandry",
+      "level": 45,
+      "growthTime": "6H",
+      "gatheringMultiplier": null,
+      "size": "3x3",
+      "width": 3,
+      "height": 3,
+      "yields": [
+        {
+          "resource": "Chicken",
+          "min": 9,
+          "max": 13,
+          "avg": 11
+        },
+        {
+          "resource": "Feather",
+          "min": 5,
+          "max": 8,
+          "avg": 6.5
+        }
+      ],
+      "icon": "🦃",
+      "gathering": {
+        "time": null,
+        "yields": [],
+        "professionXP": 7400,
+        "legacyXP": null,
+        "timeMinutes": 360
+      },
+      "butchering": {
+        "time": "6H",
+        "yields": [],
+        "professionXP": 2233,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 1560
+    },
+    {
+      "id": "small_chicken_pen",
+      "name": "Small Chicken Pen",
+      "category": "husbandry",
+      "level": 5,
+      "growthTime": "1H 30m",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Egg",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        },
+        {
+          "resource": "Chicken",
+          "min": 3,
+          "max": 5,
+          "avg": 4
+        },
+        {
+          "resource": "Fertilizer",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 4500
+        }
+      ],
+      "icon": "🐔",
+      "gathering": {
+        "time": "1.5H",
+        "yields": [],
+        "timeMinutes": 90,
+        "professionXP": 627,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "3H",
+        "yields": [],
+        "professionXP": 4381,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 90,
+      "plantingCost": 600
+    },
+    {
+      "id": "small_cow_pen",
+      "name": "Small Cow Pen",
+      "category": "husbandry",
+      "level": 25,
+      "growthTime": "5H",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Milk",
+          "min": 3,
+          "max": 5,
+          "avg": 4
+        },
+        {
+          "resource": "Beef",
+          "min": 6,
+          "max": 11,
+          "avg": 8.5
+        },
+        {
+          "resource": "Hide",
+          "min": 6,
+          "max": 9,
+          "avg": 7.5
+        }
+      ],
+      "icon": "🐄",
+      "gathering": {
+        "time": "5H",
+        "yields": [],
+        "timeMinutes": 300,
+        "professionXP": 2000,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "10H",
+        "yields": [],
+        "professionXP": 4775,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 300,
+      "plantingCost": 1560
+    },
+    {
+      "id": "small_goat_pen",
+      "name": "Small Goat Pen",
+      "category": "husbandry",
+      "level": 10,
+      "growthTime": "2H",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Milk",
+          "min": 2,
+          "max": 3,
+          "avg": 2.5
+        },
+        {
+          "resource": "Wool",
+          "min": 1,
+          "max": 1,
+          "avg": 1
+        },
+        {
+          "resource": "Shank",
+          "min": 4,
+          "max": 7,
+          "avg": 5.5
+        },
+        {
+          "resource": "Fertilizer",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 4500
+        }
+      ],
+      "icon": "🐐",
+      "gathering": {
+        "time": "2H",
+        "yields": [],
+        "timeMinutes": 120,
+        "professionXP": 829,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "4H",
+        "yields": [],
+        "professionXP": 1686,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 120,
+      "plantingCost": 1080
+    },
+    {
+      "id": "small_hare_pen",
+      "name": "Small Hare Pen",
+      "category": "husbandry",
+      "level": 1,
+      "growthTime": "1H 30m",
+      "gatheringMultiplier": null,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Chicken",
+          "min": 3,
+          "max": 5,
+          "avg": 4
+        },
+        {
+          "resource": "Spool Of Hair",
+          "min": 4,
+          "max": 6,
+          "avg": 5
+        },
+        {
+          "resource": "Fertilizer",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 4500
+        }
+      ],
+      "icon": "🐰",
+      "gathering": {
+        "time": "1.5H",
+        "yields": [],
+        "timeMinutes": 90,
+        "professionXP": 627,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "3H",
+        "yields": [],
+        "professionXP": 2404,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 180,
+      "plantingCost": 600
+    },
+    {
+      "id": "small_pig_pen",
+      "name": "Small Pig Pen",
+      "category": "husbandry",
+      "level": 1,
+      "growthTime": "4H",
+      "gatheringMultiplier": null,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Shank",
+          "min": 3,
+          "max": 4,
+          "avg": 3.5
+        },
+        {
+          "resource": "Hide",
+          "min": 2,
+          "max": 4,
+          "avg": 3
+        }
+      ],
+      "icon": "🐷",
+      "butchering": {
+        "time": "4H",
+        "yields": [],
+        "professionXP": 3451,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 240,
+      "plantingCost": 600,
+      "gathering": {
+        "timeMinutes": 240,
+        "professionXP": 2488
+      }
+    },
+    {
+      "id": "small_sheep_pen",
+      "name": "Small Sheep Pen",
+      "category": "husbandry",
+      "level": 20,
+      "growthTime": "3H",
+      "gatheringMultiplier": 3,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Wool",
+          "min": 3,
+          "max": 5,
+          "avg": 4
+        },
+        {
+          "resource": "Shank",
+          "min": 8,
+          "max": 12,
+          "avg": 10
+        },
+        {
+          "resource": "Fertilizer",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 4500
+        }
+      ],
+      "icon": "🐑",
+      "gathering": {
+        "time": "3H",
+        "yields": [],
+        "timeMinutes": 180,
+        "professionXP": 1233,
+        "legacyXP": null
+      },
+      "butchering": {
+        "time": "6H",
+        "yields": [],
+        "professionXP": 1545,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 180,
+      "plantingCost": 1560
+    },
+    {
+      "id": "small_turkey_pen",
+      "name": "Small Turkey Pen",
+      "category": "husbandry",
+      "level": 15,
+      "growthTime": "6H",
+      "gatheringMultiplier": null,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Chicken",
+          "min": 3,
+          "max": 5,
+          "avg": 4
+        },
+        {
+          "resource": "Feather",
+          "min": 2,
+          "max": 5,
+          "avg": 3.5
+        }
+      ],
+      "icon": "🦃",
+      "gathering": {
+        "time": null,
+        "yields": [],
+        "professionXP": 3700,
+        "legacyXP": null,
+        "timeMinutes": 360
+      },
+      "butchering": {
+        "time": "6H",
+        "yields": [],
+        "professionXP": 4124,
+        "legacyXP": 10
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 780
+    },
+    {
+      "id": "fir_tree",
+      "name": "Fir Tree",
+      "category": "woodcutting",
+      "level": 5,
+      "growthTime": "8H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Small Log",
+          "min": 10,
+          "max": 34,
+          "avg": 22
+        },
+        {
+          "resource": "Dense Log",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 65000
+        }
+      ],
+      "icon": "🎄",
+      "gathering": {
+        "time": "8H",
+        "yields": [],
+        "timeMinutes": 480,
+        "professionXP": 2500,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 480,
+      "plantingCost": 1200
+    },
+    {
+      "id": "juniper_tree",
+      "name": "Juniper Tree",
+      "category": "woodcutting",
+      "level": 1,
+      "growthTime": "2H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Small Log",
+          "min": 2,
+          "max": 9,
+          "avg": 5.5
+        },
+        {
+          "resource": "Dense Log",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 65000
+        }
+      ],
+      "icon": "🌲",
+      "gathering": {
+        "time": "2H",
+        "yields": [],
+        "timeMinutes": 120,
+        "professionXP": 636,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 120,
+      "plantingCost": 300
+    },
+    {
+      "id": "oak_tree",
+      "name": "Oak Tree",
+      "category": "woodcutting",
+      "level": 20,
+      "growthTime": "1D",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Heavy Log",
+          "min": 16,
+          "max": 32,
+          "avg": 24
+        },
+        {
+          "resource": "Dense Log",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 65000
+        }
+      ],
+      "icon": "🌳",
+      "gathering": {
+        "time": "24H",
+        "yields": [],
+        "timeMinutes": 1440,
+        "professionXP": 7140,
+        "legacyXP": null
+      },
+      "plantingCost": 3600
+    },
+    {
+      "id": "palm_tree",
+      "name": "Palm Tree",
+      "category": "woodcutting",
+      "level": 10,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Heavy Log",
+          "min": 4,
+          "max": 8,
+          "avg": 6
+        },
+        {
+          "resource": "Dense Log",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 65000
+        }
+      ],
+      "icon": "🌴",
+      "gathering": {
+        "time": "6H",
+        "yields": [],
+        "timeMinutes": 360,
+        "professionXP": 1888,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 360,
+      "plantingCost": 900
+    },
+    {
+      "id": "wildleaf_tree",
+      "name": "Wildleaf Tree",
+      "category": "woodcutting",
+      "level": 35,
+      "growthTime": "16H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Sturdy Log",
+          "min": 8,
+          "max": 16,
+          "avg": 12
+        },
+        {
+          "resource": "Dense Log",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 65000
+        }
+      ],
+      "icon": "🍀",
+      "gathering": {
+        "time": "16H",
+        "yields": [],
+        "timeMinutes": 960,
+        "professionXP": 4880,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 960,
+      "plantingCost": 2400
+    },
+    {
+      "id": "willow_tree",
+      "name": "Willow Tree",
+      "category": "woodcutting",
+      "level": 50,
+      "growthTime": "12H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Fine Log",
+          "min": 5,
+          "max": 10,
+          "avg": 7.5
+        },
+        {
+          "resource": "Dense Log",
+          "min": 0,
+          "max": 1,
+          "avg": 0.5,
+          "rare": true,
+          "chance": 0.05,
+          "unitCost": 65000
+        }
+      ],
+      "icon": "🪻",
+      "gathering": {
+        "time": "12H",
+        "yields": [],
+        "timeMinutes": 720,
+        "professionXP": 3700,
+        "legacyXP": null
+      },
+      "growthTimeMinutes": 720,
+      "plantingCost": 1800
+    },
+    {
+      "id": "moa_breeding_pen",
+      "name": "Moa Breeding Pen",
+      "category": "breeding",
+      "level": 1,
+      "growthTime": null,
+      "gatheringMultiplier": 1,
+      "size": "4x4",
+      "width": 4,
+      "height": 4,
+      "yields": [],
+      "icon": "🦅",
+      "gathering": {
+        "time": null,
+        "yields": [],
+        "professionXP": 2128,
+        "legacyXP": null
+      },
+      "plantingCost": 300
+    },
+    {
+      "id": "rohna_mint_bush",
+      "name": "Rohna Mint Bush",
+      "category": "herbalism",
+      "level": 6,
+      "growthTime": "2H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Refreshing Leaf",
+          "min": 8,
+          "max": 16,
+          "avg": 12
+        },
+        {
+          "resource": "Thin Roots",
+          "min": 4,
+          "max": 12,
+          "avg": 8
+        }
+      ],
+      "icon": "🌿",
+      "gathering": {
+        "timeMinutes": 120,
+        "professionXP": 256,
+        "legacyXP": null
+      },
+      "plantingCost": 360
+    },
+    {
+      "id": "earthy_mushroom_colony",
+      "name": "Earthy Mushroom Colony",
+      "category": "herbalism",
+      "level": 7,
+      "growthTime": "2H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Earthy Stem",
+          "min": 8,
+          "max": 16,
+          "avg": 12
+        },
+        {
+          "resource": "Fungal Dust",
+          "min": 4,
+          "max": 12,
+          "avg": 8
+        }
+      ],
+      "icon": "🍄",
+      "gathering": {
+        "timeMinutes": 120,
+        "professionXP": 256,
+        "legacyXP": null
+      },
+      "plantingCost": 360
+    },
+    {
+      "id": "bogbush_bramble",
+      "name": "Bogbush Bramble",
+      "category": "herbalism",
+      "level": 8,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Toadchew",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Thorny Roots",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🌱",
+      "gathering": {
+        "timeMinutes": 360,
+        "professionXP": 762,
+        "legacyXP": null
+      },
+      "plantingCost": 1080
+    },
+    {
+      "id": "cerulean_mushroom_bloom",
+      "name": "Cerulean Mushroom Bloom",
+      "category": "herbalism",
+      "level": 9,
+      "growthTime": "4H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Cerulean Cap",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Fungal Dust",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "🔵",
+      "gathering": {
+        "timeMinutes": 240,
+        "professionXP": 762,
+        "legacyXP": null
+      },
+      "plantingCost": 1010
+    },
+    {
+      "id": "pirate_s_bliss_shrub",
+      "name": "Pirate's Bliss Shrub",
+      "category": "herbalism",
+      "level": 11,
+      "growthTime": "8H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Pirate's Bliss",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Juicy Roots",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "🏴‍☠️",
+      "gathering": {
+        "timeMinutes": 480,
+        "professionXP": 1523,
+        "legacyXP": null
+      },
+      "plantingCost": 2020
+    },
+    {
+      "id": "green_mushroom_cluster",
+      "name": "Green Mushroom Cluster",
+      "category": "herbalism",
+      "level": 12,
+      "growthTime": "4H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Green Cap",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Emerald Spores",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🟢",
+      "gathering": {
+        "timeMinutes": 240,
+        "professionXP": 762,
+        "legacyXP": null
+      },
+      "plantingCost": 1120
+    },
+    {
+      "id": "brightday_glade",
+      "name": "Brightday Glade",
+      "category": "herbalism",
+      "level": 15,
+      "growthTime": "5H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Brightday",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Juicy Roots",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🌻",
+      "gathering": {
+        "timeMinutes": 300,
+        "professionXP": 1011,
+        "legacyXP": null
+      },
+      "plantingCost": 1460
+    },
+    {
+      "id": "juicy_mushroom_colony",
+      "name": "Juicy Mushroom Colony",
+      "category": "herbalism",
+      "level": 16,
+      "growthTime": "5H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Juicy Stem",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Shimmering Spores",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "💧",
+      "gathering": {
+        "timeMinutes": 300,
+        "professionXP": 1011,
+        "legacyXP": null
+      },
+      "plantingCost": 1460
+    },
+    {
+      "id": "bloodthorn_sprawl",
+      "name": "Bloodthorn Sprawl",
+      "category": "herbalism",
+      "level": 19,
+      "growthTime": "10H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Bloody Bud",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Numbing Thorns",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🩸",
+      "gathering": {
+        "timeMinutes": 600,
+        "professionXP": 2029,
+        "legacyXP": null
+      },
+      "plantingCost": 2915
+    },
+    {
+      "id": "pirate_s_fungi_sprawl",
+      "name": "Pirate's Fungi Sprawl",
+      "category": "herbalism",
+      "level": 20,
+      "growthTime": "8H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Pirate's Cap",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Shimmering Spores",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "🍄",
+      "gathering": {
+        "timeMinutes": 480,
+        "professionXP": 1523,
+        "legacyXP": null
+      },
+      "plantingCost": 2020
+    },
+    {
+      "id": "dread_bloom_thicket",
+      "name": "Dread Bloom Thicket",
+      "category": "herbalism",
+      "level": 23,
+      "growthTime": "12H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Dread Bloom",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Numbing Thorns",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "💀",
+      "gathering": {
+        "timeMinutes": 720,
+        "professionXP": 3040,
+        "legacyXP": null
+      },
+      "plantingCost": 4035
+    },
+    {
+      "id": "dry_mushroom_bed",
+      "name": "Dry Mushroom Bed",
+      "category": "herbalism",
+      "level": 24,
+      "growthTime": "10H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Dry Stem",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Ambar Dust",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🏜️",
+      "gathering": {
+        "timeMinutes": 600,
+        "professionXP": 2029,
+        "legacyXP": null
+      },
+      "plantingCost": 2915
+    },
+    {
+      "id": "chest_warmer_bush",
+      "name": "Chest Warmer Bush",
+      "category": "herbalism",
+      "level": 27,
+      "growthTime": "11H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Chest Warmer",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Cold Roots",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "❤️",
+      "gathering": {
+        "timeMinutes": 660,
+        "professionXP": 2534,
+        "legacyXP": null
+      },
+      "plantingCost": 3585
+    },
+    {
+      "id": "toxic_mushroom_cluster",
+      "name": "Toxic Mushroom Cluster",
+      "category": "herbalism",
+      "level": 28,
+      "growthTime": "13.666666666666666H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Toxic Stem",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Glowing Spores",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "☠️",
+      "gathering": {
+        "timeMinutes": 820,
+        "professionXP": 3802,
+        "legacyXP": null
+      },
+      "plantingCost": 5155
+    },
+    {
+      "id": "lizard_s_delight_cluster",
+      "name": "Lizard's Delight Cluster",
+      "category": "herbalism",
+      "level": 33,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Lizard's Delight",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Thorny Roots",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "🦎",
+      "gathering": {
+        "timeMinutes": 360,
+        "professionXP": 1139,
+        "legacyXP": null
+      },
+      "plantingCost": 2240
+    },
+    {
+      "id": "crystal_mushroom_bed",
+      "name": "Crystal Mushroom Bed",
+      "category": "herbalism",
+      "level": 34,
+      "growthTime": "11H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Crystal Cap",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Glowing Spores",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "✨",
+      "gathering": {
+        "timeMinutes": 660,
+        "professionXP": 2534,
+        "legacyXP": null
+      },
+      "plantingCost": 3585
+    },
+    {
+      "id": "wailing_leaf_bush",
+      "name": "Wailing Leaf Bush",
+      "category": "herbalism",
+      "level": 38,
+      "growthTime": "13H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Wailing Leaf",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Hagthorn",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🍃",
+      "gathering": {
+        "timeMinutes": 780,
+        "professionXP": 3296,
+        "legacyXP": null
+      },
+      "plantingCost": 4705
+    },
+    {
+      "id": "shadow_mushroom_colony",
+      "name": "Shadow Mushroom Colony",
+      "category": "herbalism",
+      "level": 39,
+      "growthTime": "13H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Shadow Stem",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Dusk Dust",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🌑",
+      "gathering": {
+        "timeMinutes": 780,
+        "professionXP": 3296,
+        "legacyXP": null
+      },
+      "plantingCost": 4705
+    },
+    {
+      "id": "mindbender_thicket",
+      "name": "Mindbender Thicket",
+      "category": "herbalism",
+      "level": 43,
+      "growthTime": "4H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Mindbender",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Thin Roots",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "🧠",
+      "gathering": {
+        "timeMinutes": 240,
+        "professionXP": 762,
+        "legacyXP": null
+      },
+      "plantingCost": 1120
+    },
+    {
+      "id": "withered_mushroom_sprawl",
+      "name": "Withered Mushroom Sprawl",
+      "category": "herbalism",
+      "level": 44,
+      "growthTime": "6H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Withered Stem",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Emerald Spores",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "🥀",
+      "gathering": {
+        "timeMinutes": 360,
+        "professionXP": 1139,
+        "legacyXP": null
+      },
+      "plantingCost": 1570
+    },
+    {
+      "id": "twisted_flower_cluster",
+      "name": "Twisted Flower Cluster",
+      "category": "herbalism",
+      "level": 53,
+      "growthTime": "14H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Twisted Flower",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Purple Roots",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🌸",
+      "gathering": {
+        "timeMinutes": 840,
+        "professionXP": 4058,
+        "legacyXP": null
+      },
+      "plantingCost": 5825
+    },
+    {
+      "id": "flaming_mushroom_bed",
+      "name": "Flaming Mushroom Bed",
+      "category": "herbalism",
+      "level": 54,
+      "growthTime": "14H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Fire Cap",
+          "min": 20,
+          "max": 32,
+          "avg": 26
+        },
+        {
+          "resource": "Flaming Spores",
+          "min": 16,
+          "max": 24,
+          "avg": 20
+        }
+      ],
+      "icon": "🔥",
+      "gathering": {
+        "timeMinutes": 840,
+        "professionXP": 4058,
+        "legacyXP": null
+      },
+      "plantingCost": 5825
+    },
+    {
+      "id": "crystal_plant_sprawl",
+      "name": "Crystal Plant Sprawl",
+      "category": "herbalism",
+      "level": 63,
+      "growthTime": "13.666666666666666H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Crystal Leaf",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Cold Roots",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "💎",
+      "gathering": {
+        "timeMinutes": 820,
+        "professionXP": 3802,
+        "legacyXP": null
+      },
+      "plantingCost": 6720
+    },
+    {
+      "id": "rocky_mushroom_cluster",
+      "name": "Rocky Mushroom Cluster",
+      "category": "herbalism",
+      "level": 64,
+      "growthTime": "12H",
+      "gatheringMultiplier": 1,
+      "size": "2x2",
+      "width": 2,
+      "height": 2,
+      "yields": [
+        {
+          "resource": "Rocky Cap",
+          "min": 12,
+          "max": 24,
+          "avg": 18
+        },
+        {
+          "resource": "Ambar Dust",
+          "min": 24,
+          "max": 32,
+          "avg": 28
+        }
+      ],
+      "icon": "🪨",
+      "gathering": {
+        "timeMinutes": 720,
+        "professionXP": 3040,
+        "legacyXP": null
+      },
+      "plantingCost": 2690
+    }
+  ]
+}

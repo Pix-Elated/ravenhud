@@ -1,0 +1,320 @@
+[
+  {
+    "name": "Barnsley",
+    "x": 3951,
+    "y": 2378,
+    "floor": "surface"
+  },
+  {
+    "name": "Bastion",
+    "x": 5136,
+    "y": 2857,
+    "floor": "surface"
+  },
+  {
+    "name": "Coldreach Isle",
+    "x": 1815,
+    "y": 1722,
+    "floor": "surface"
+  },
+  {
+    "name": "Crowhollow Bog",
+    "x": 5354,
+    "y": 2162,
+    "floor": "surface"
+  },
+  {
+    "name": "Darzuac",
+    "x": 4949,
+    "y": 3776,
+    "floor": "surface"
+  },
+  {
+    "name": "Defiance",
+    "x": 5542,
+    "y": 2839,
+    "floor": "surface"
+  },
+  {
+    "name": "Dras Ashar",
+    "x": 6521,
+    "y": 3748,
+    "floor": "surface"
+  },
+  {
+    "name": "Dras Marna",
+    "x": 4209,
+    "y": 3260,
+    "floor": "surface"
+  },
+  {
+    "name": "Dras Mashum",
+    "x": 3717,
+    "y": 4115,
+    "floor": "surface"
+  },
+  {
+    "name": "Dras Narda",
+    "x": 4580,
+    "y": 3410,
+    "floor": "surface"
+  },
+  {
+    "name": "Eelsnout",
+    "x": 2798,
+    "y": 2885,
+    "floor": "surface"
+  },
+  {
+    "name": "Elder Coast",
+    "x": 4171,
+    "y": 1459,
+    "floor": "surface"
+  },
+  {
+    "name": "Envoy's Rest",
+    "x": 4443,
+    "y": 1668,
+    "floor": "surface"
+  },
+  {
+    "name": "Fangwatch",
+    "x": 4836,
+    "y": 2087,
+    "floor": "surface"
+  },
+  {
+    "name": "Far Naddod",
+    "x": 3090,
+    "y": 620,
+    "floor": "surface"
+  },
+  {
+    "name": "Fields of Despair",
+    "x": 5484,
+    "y": 1470,
+    "floor": "surface"
+  },
+  {
+    "name": "Forsaken Mountains",
+    "x": 4710,
+    "y": 2004,
+    "floor": "surface"
+  },
+  {
+    "name": "Forsaken Wharf",
+    "x": 5632,
+    "y": 1630,
+    "floor": "surface"
+  },
+  {
+    "name": "Frost Steppes",
+    "x": 4984,
+    "y": 872,
+    "floor": "surface"
+  },
+  {
+    "name": "Gilead",
+    "x": 2560,
+    "y": 4107,
+    "floor": "surface"
+  },
+  {
+    "name": "Gilead Island",
+    "x": 2276,
+    "y": 3648,
+    "floor": "surface"
+  },
+  {
+    "name": "Glaceforde",
+    "x": 2752,
+    "y": 890,
+    "floor": "surface"
+  },
+  {
+    "name": "Glademire",
+    "x": 4482,
+    "y": 2372,
+    "floor": "surface"
+  },
+  {
+    "name": "Glademire Fort",
+    "x": 4542,
+    "y": 2464,
+    "floor": "surface"
+  },
+  {
+    "name": "Hadarak Desert",
+    "x": 4816,
+    "y": 3416,
+    "floor": "surface"
+  },
+  {
+    "name": "Harbor Island",
+    "x": 2095,
+    "y": 2400,
+    "floor": "surface"
+  },
+  {
+    "name": "Hidden Grotto",
+    "x": 7771,
+    "y": 1743,
+    "floor": "surface"
+  },
+  {
+    "name": "Hogula",
+    "x": 2425,
+    "y": 3363,
+    "floor": "surface"
+  },
+  {
+    "name": "Hook's End",
+    "x": 2060,
+    "y": 2156,
+    "floor": "surface"
+  },
+  {
+    "name": "Kari'vir",
+    "x": 5784,
+    "y": 674,
+    "floor": "surface"
+  },
+  {
+    "name": "Margrove",
+    "x": 3707,
+    "y": 2130,
+    "floor": "surface"
+  },
+  {
+    "name": "Newvik",
+    "x": 2500,
+    "y": 956,
+    "floor": "surface"
+  },
+  {
+    "name": "Orca Bay",
+    "x": 3264,
+    "y": 2974,
+    "floor": "surface"
+  },
+  {
+    "name": "Ostera",
+    "x": 7416,
+    "y": 1736,
+    "floor": "surface"
+  },
+  {
+    "name": "Port Roatuga",
+    "x": 2337,
+    "y": 2553,
+    "floor": "surface"
+  },
+  {
+    "name": "Ravencrest",
+    "x": 4119,
+    "y": 2666,
+    "floor": "surface"
+  },
+  {
+    "name": "Riverend Post",
+    "x": 4850,
+    "y": 2694,
+    "floor": "surface"
+  },
+  {
+    "name": "Rohna Woods",
+    "x": 3904,
+    "y": 2090,
+    "floor": "surface"
+  },
+  {
+    "name": "Rook's Nest",
+    "x": 6967,
+    "y": 2730,
+    "floor": "surface"
+  },
+  {
+    "name": "Rumalos",
+    "x": 1861,
+    "y": 3593,
+    "floor": "surface"
+  },
+  {
+    "name": "Saint Alsek",
+    "x": 2151,
+    "y": 757,
+    "floor": "surface"
+  },
+  {
+    "name": "Sajecho Island",
+    "x": 3193,
+    "y": 2712,
+    "floor": "surface"
+  },
+  {
+    "name": "Sajecho Village",
+    "x": 3399,
+    "y": 2549,
+    "floor": "surface"
+  },
+  {
+    "name": "Seabreeze",
+    "x": 1804,
+    "y": 2652,
+    "floor": "surface"
+  },
+  {
+    "name": "Sunspire Isle",
+    "x": 3480,
+    "y": 4053,
+    "floor": "surface"
+  },
+  {
+    "name": "Tarmire",
+    "x": 3794,
+    "y": 3393,
+    "floor": "surface"
+  },
+  {
+    "name": "The Blotch",
+    "x": 5900,
+    "y": 1894,
+    "floor": "surface"
+  },
+  {
+    "name": "Thornveil Isle",
+    "x": 3107,
+    "y": 1886,
+    "floor": "surface"
+  },
+  {
+    "name": "Truce",
+    "x": 5394,
+    "y": 2555,
+    "floor": "surface"
+  },
+  {
+    "name": "Vikkar Bay",
+    "x": 3115,
+    "y": 1112,
+    "floor": "surface"
+  },
+  {
+    "name": "Wolfhold",
+    "x": 2292,
+    "y": 1237,
+    "floor": "surface"
+  },
+  {
+    "name": "Woodhaven",
+    "x": 5270,
+    "y": 2297,
+    "floor": "surface"
+  },
+  {
+    "name": "Zephyr Vale",
+    "x": 5692,
+    "y": 2560,
+    "floor": "surface"
+  }
+]

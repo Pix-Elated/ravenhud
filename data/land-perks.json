@@ -1,0 +1,242 @@
+{
+  "ANGLERS_PROVINCE": {
+    "name": "Angler's Province",
+    "description": "Increase Fishing XP",
+    "category": "gathering",
+    "values": {
+      "COMMON": 4,
+      "UNCOMMON": 5,
+      "GRAND": 6,
+      "RARE": 7,
+      "ARCANE": 8,
+      "MYTHIC": 9,
+      "LEGENDARY": 10
+    },
+    "unit": "%"
+  },
+  "FOREST_FIELDS": {
+    "name": "Forest Fields",
+    "description": "Increase Woodcutting XP in Open World",
+    "category": "gathering",
+    "values": {
+      "COMMON": 4,
+      "UNCOMMON": 5,
+      "GRAND": 6,
+      "RARE": 7,
+      "ARCANE": 8,
+      "MYTHIC": 9,
+      "LEGENDARY": 10
+    },
+    "unit": "%"
+  },
+  "HERB_FIELDS": {
+    "name": "Herb Fields",
+    "description": "Increase Herbalism XP in Open World",
+    "category": "gathering",
+    "values": {
+      "COMMON": 4,
+      "UNCOMMON": 5,
+      "GRAND": 6,
+      "RARE": 7,
+      "ARCANE": 8,
+      "MYTHIC": 9,
+      "LEGENDARY": 10
+    },
+    "unit": "%"
+  },
+  "ORE_FIELDS": {
+    "name": "Ore Fields",
+    "description": "Increase Mining XP in Open World",
+    "category": "gathering",
+    "values": {
+      "COMMON": 4,
+      "UNCOMMON": 5,
+      "GRAND": 6,
+      "RARE": 7,
+      "ARCANE": 8,
+      "MYTHIC": 9,
+      "LEGENDARY": 10
+    },
+    "unit": "%"
+  },
+  "CROP_BOON": {
+    "name": "Crop Boon",
+    "description": "Chance to increase Farming material quality by one tier",
+    "category": "boon",
+    "values": {
+      "COMMON": 2,
+      "UNCOMMON": 2.5,
+      "GRAND": 3,
+      "RARE": 3.5,
+      "ARCANE": 4,
+      "MYTHIC": 4.5,
+      "LEGENDARY": 5
+    },
+    "unit": "%"
+  },
+  "FLORAL_BOON": {
+    "name": "Floral Boon",
+    "description": "Chance to increase Herbalism material quality by one tier",
+    "category": "boon",
+    "values": {
+      "COMMON": 2,
+      "UNCOMMON": 2.5,
+      "GRAND": 3,
+      "RARE": 3.5,
+      "ARCANE": 4,
+      "MYTHIC": 4.5,
+      "LEGENDARY": 5
+    },
+    "unit": "%"
+  },
+  "LIVESTOCK_BOON": {
+    "name": "Livestock Boon",
+    "description": "Chance to increase Husbandry material quality by one tier",
+    "category": "boon",
+    "values": {
+      "COMMON": 2,
+      "UNCOMMON": 2.5,
+      "GRAND": 3,
+      "RARE": 3.5,
+      "ARCANE": 4,
+      "MYTHIC": 4.5,
+      "LEGENDARY": 5
+    },
+    "unit": "%"
+  },
+  "TIMBER_BOON": {
+    "name": "Timber Boon",
+    "description": "Chance to increase Woodcutting material quality by one tier",
+    "category": "boon",
+    "values": {
+      "COMMON": 2,
+      "UNCOMMON": 2.5,
+      "GRAND": 3,
+      "RARE": 3.5,
+      "ARCANE": 4,
+      "MYTHIC": 4.5,
+      "LEGENDARY": 5
+    },
+    "unit": "%"
+  },
+  "FISHING_PONDS": {
+    "name": "Fishing Ponds",
+    "description": "Increase Fish weight",
+    "category": "special",
+    "values": {
+      "COMMON": 5,
+      "UNCOMMON": 6.25,
+      "GRAND": 7.5,
+      "RARE": 8.75,
+      "ARCANE": 10,
+      "MYTHIC": 11.25,
+      "LEGENDARY": 12.5
+    },
+    "unit": "%"
+  },
+  "MIXING_GROUNDS": {
+    "name": "Mixing Grounds",
+    "description": "Increase Alchemy labor efficiency",
+    "category": "crafting",
+    "values": {
+      "COMMON": 1,
+      "UNCOMMON": 1.25,
+      "GRAND": 1.5,
+      "RARE": 1.75,
+      "ARCANE": 2,
+      "MYTHIC": 2.25,
+      "LEGENDARY": 2.5
+    },
+    "unit": " labor/level"
+  },
+  "SAWING_GROUNDS": {
+    "name": "Sawing Grounds",
+    "description": "Increase Carpentry labor efficiency",
+    "category": "crafting",
+    "values": {
+      "COMMON": 1,
+      "UNCOMMON": 1.25,
+      "GRAND": 1.5,
+      "RARE": 1.75,
+      "ARCANE": 2,
+      "MYTHIC": 2.25,
+      "LEGENDARY": 2.5
+    },
+    "unit": " labor/level"
+  },
+  "SEASONING_GROUNDS": {
+    "name": "Seasoning Grounds",
+    "description": "Increase Cooking labor efficiency",
+    "category": "crafting",
+    "values": {
+      "COMMON": 1,
+      "UNCOMMON": 1.25,
+      "GRAND": 1.5,
+      "RARE": 1.75,
+      "ARCANE": 2,
+      "MYTHIC": 2.25,
+      "LEGENDARY": 2.5
+    },
+    "unit": " labor/level"
+  },
+  "SMITHING_GROUNDS": {
+    "name": "Smithing Grounds",
+    "description": "Increase Blacksmithing labor efficiency",
+    "category": "crafting",
+    "values": {
+      "COMMON": 1,
+      "UNCOMMON": 1.25,
+      "GRAND": 1.5,
+      "RARE": 1.75,
+      "ARCANE": 2,
+      "MYTHIC": 2.25,
+      "LEGENDARY": 2.5
+    },
+    "unit": " labor/level"
+  },
+  "THREADING_GROUNDS": {
+    "name": "Threading Grounds",
+    "description": "Increase Weaving labor efficiency",
+    "category": "crafting",
+    "values": {
+      "COMMON": 1,
+      "UNCOMMON": 1.25,
+      "GRAND": 1.5,
+      "RARE": 1.75,
+      "ARCANE": 2,
+      "MYTHIC": 2.25,
+      "LEGENDARY": 2.5
+    },
+    "unit": " labor/level"
+  },
+  "PROSPEROUS_LAND": {
+    "name": "Prosperous Land",
+    "description": "Increase Silver dropped from creatures",
+    "category": "combat",
+    "values": {
+      "COMMON": 3,
+      "UNCOMMON": 3.75,
+      "GRAND": 4.5,
+      "RARE": 5.25,
+      "ARCANE": 6,
+      "MYTHIC": 6.75,
+      "LEGENDARY": 7.5
+    },
+    "unit": "%"
+  },
+  "TREASURE_TROVES": {
+    "name": "Treasure Troves",
+    "description": "Increase drop rate from creatures",
+    "category": "combat",
+    "values": {
+      "COMMON": 1,
+      "UNCOMMON": 1.25,
+      "GRAND": 1.5,
+      "RARE": 1.75,
+      "ARCANE": 2,
+      "MYTHIC": 2.25,
+      "LEGENDARY": 2.5
+    },
+    "unit": "%"
+  }
+}

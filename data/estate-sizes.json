@@ -1,0 +1,7 @@
+{
+  "SMALL": { "name": "Small", "grid": "10x10", "tiles": 100, "multiplier": 1 },
+  "MEDIUM": { "name": "Medium", "grid": "12x12", "tiles": 144, "multiplier": 2 },
+  "LARGE": { "name": "Large", "grid": "15x15", "tiles": 225, "multiplier": 4 },
+  "STRONGHOLD": { "name": "Stronghold", "grid": "22x22", "tiles": 484, "multiplier": 8 },
+  "FORT": { "name": "Fort", "grid": "30x30", "tiles": 900, "multiplier": 20 }
+}

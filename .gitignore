@@ -1,6 +1,24 @@
 # Ignore build outputs
 dist/
+
+# Archives are force-added (git add -f) since they're large binary files.
+# This prevents accidental commits of random zips while allowing explicit adds.
 *.zip
+
+# Bulk image directories (extracted from archives by CI, not committed)
+assets/images/
+
+# Node
+node_modules/
+
+# Data caches (transient, not committed)
+data/.api-cache/
+data/temp/
+data/scraped/
+data/ULTIMATE*
+
+# Sync output
+sync-images-result.json
 
 # OS files
 .DS_Store

@@ -1,0 +1,23 @@
+{
+  "name": "ravenhud-assets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Asset management pipeline for RavenHUD",
+  "scripts": {
+    "sync-images": "node scripts/sync-images/index.js",
+    "scrape-blockchain": "node scripts/scrape-blockchain.js",
+    "scrape-worldmap": "node scripts/scrape-worldmap-markers.js",
+    "scrape-creatures": "node scripts/scrape-creatures.js",
+    "sync-api-data": "node scripts/sync-api-data.js",
+    "create-archives": "node scripts/create-archives.js",
+    "download-tiles": "node scripts/download-worldmap-tiles.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "sharp": "^0.34.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "playwright": "^1.57.0"
+  }
+}
