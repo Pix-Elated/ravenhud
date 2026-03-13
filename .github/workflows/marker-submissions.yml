@@ -33,6 +33,13 @@ jobs:
           script: |
             const body = context.payload.issue.body || '';
             const issueNumber = context.payload.issue.number;
+            const issueAuthor = context.payload.issue.user.login;
+
+            // Trusted authors — submissions auto-approved without manual review
+            const TRUSTED_AUTHORS = ['Azurak'];
+            const isTrusted = TRUSTED_AUTHORS.some(
+              a => a.toLowerCase() === issueAuthor.toLowerCase()
+            );
 
             // Extract JSON from the issue body
             const jsonMatch = body.match(/```json\s*\n([\s\S]*?)\n```/);
@@ -74,7 +81,7 @@ jobs:
 
             // Collect unique categories and floors
             const categories = [...new Set(markers.map(m => m.category).filter(Boolean))];
-            const labels = ['needs-review'];
+            const labels = [isTrusted ? 'approved' : 'needs-review'];
             for (const cat of categories) {
               labels.push(`cat:${cat}`);
             }
@@ -176,17 +183,25 @@ jobs:
                 ? '\n⚠️ Screenshot processing failed'
                 : '';
 
+            const commentBody = isTrusted
+              ? [
+                  `✅ **Parsed ${count} marker(s)** in ${catList}${ssStatus}`,
+                  '',
+                  `🌟 **Auto-approved** — trusted contributor @${issueAuthor}. Ingestion will run automatically.`
+                ].join('\n')
+              : [
+                  `✅ **Parsed ${count} marker(s)** in ${catList}${ssStatus}`,
+                  '',
+                  'A maintainer will review this submission. To approve:',
+                  '- Comment `/approve` to add the `approved` label',
+                  '- Comment `/reject [reason]` to close with feedback'
+                ].join('\n');
+
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: issueNumber,
-              body: [
-                `✅ **Parsed ${count} marker(s)** in ${catList}${ssStatus}`,
-                '',
-                'A maintainer will review this submission. To approve:',
-                '- Comment `/approve` to add the `approved` label',
-                '- Comment `/reject [reason]` to close with feedback'
-              ].join('\n')
+              body: commentBody
             });
 
   # ─── Handle /approve and /reject commands ─────────────────────────────
