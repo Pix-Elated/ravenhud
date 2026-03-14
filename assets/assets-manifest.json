@@ -1,6 +1,12 @@
 {
-  "generatedAt": "2026-03-13T03:03:43.000Z",
+  "generatedAt": "2026-03-14T05:07:43.995Z",
   "archives": [
+    {
+      "name": "data.zip",
+      "hash": "sha256:7203fb3bdc1e9e12939d3e57dcb76a763f172aca99df708112f29f653709c8ed",
+      "files": 380,
+      "sizeMB": 4.2
+    },
     {
       "name": "images-cosmetics.zip",
       "hash": "sha256:1347366d66f0060685c74d1193a9282dc21fb9e08c6e61d93a075ba3a7d888f5",
@@ -114,12 +120,6 @@
       "hash": "sha256:35c70c1e73f2d1afa98939efc97f1c8e204c82ee703ea31211d74a859a833fb1",
       "files": 11766,
       "sizeMB": 12.5
-    },
-    {
-      "name": "data.zip",
-      "hash": "sha256:d07ee244e4d6225530f1f7455953db186c9127a191525b598be2ebcc9a440f66",
-      "files": 472,
-      "sizeMB": 5.5
     }
   ]
 }

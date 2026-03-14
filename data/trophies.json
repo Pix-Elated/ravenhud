@@ -772,7 +772,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Greed"
     },
     {
       "id": "monument_to_dexterity",
@@ -796,7 +797,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Grudges"
     },
     {
       "id": "monument_to_might",
@@ -832,7 +834,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Envy"
     },
     {
       "id": "monument_to_tyranny",
@@ -848,7 +851,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Tyranny"
     },
     {
       "id": "monument_to_subjugation",
@@ -860,7 +864,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Subjugation"
     },
     {
       "id": "monument_to_supremacy",
@@ -876,7 +881,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Supremacy"
     },
     {
       "id": "monument_to_bloodlust",
@@ -892,7 +898,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Bloodlust"
     },
     {
       "id": "monument_to_brutality",
@@ -904,7 +911,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Brutality"
     },
     {
       "id": "monument_to_desolation",
@@ -916,7 +924,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Desolation"
     },
     {
       "id": "monument_to_obsession",
@@ -928,7 +937,8 @@
         }
       ],
       "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "type": "Monuments",
+      "creature": "Echo of Obsession"
     }
   ],
   "count": 67

@@ -169,10 +169,10 @@
   "LARGE_COMMUNITY": {
     "name": "Large Community Land",
     "width": 14,
-    "height": 13,
+    "height": 14,
     "shape": "stepped",
     "hasHouse": false,
-    "tileCount": 130,
+    "tileCount": 137,
     "tiles": [
       { "x": 0, "y": 0 },
       { "x": 1, "y": 0 },
@@ -303,7 +303,14 @@
       { "x": 10, "y": 12 },
       { "x": 11, "y": 12 },
       { "x": 12, "y": 12 },
-      { "x": 13, "y": 12 }
+      { "x": 13, "y": 12 },
+      { "x": 7, "y": 13 },
+      { "x": 8, "y": 13 },
+      { "x": 9, "y": 13 },
+      { "x": 10, "y": 13 },
+      { "x": 11, "y": 13 },
+      { "x": 12, "y": 13 },
+      { "x": 13, "y": 13 }
     ]
   },
   "NFT_SMALL": {
