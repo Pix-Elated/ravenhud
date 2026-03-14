@@ -33,13 +33,6 @@ jobs:
           script: |
             const body = context.payload.issue.body || '';
             const issueNumber = context.payload.issue.number;
-            const issueAuthor = context.payload.issue.user.login;
-
-            // Trusted authors — submissions auto-approved without manual review
-            const TRUSTED_AUTHORS = ['Azurak'];
-            const isTrusted = TRUSTED_AUTHORS.some(
-              a => a.toLowerCase() === issueAuthor.toLowerCase()
-            );
 
             // Extract JSON from the issue body
             const jsonMatch = body.match(/```json\s*\n([\s\S]*?)\n```/);
@@ -78,6 +71,14 @@ jobs:
               });
               return;
             }
+
+            // Trusted authors — check authorName inside the JSON payload,
+            // NOT the GitHub issue author (issues are created via Corvid proxy)
+            const TRUSTED_AUTHORS = ['Azurak'];
+            const markerAuthor = markers[0]?.authorName || '';
+            const isTrusted = TRUSTED_AUTHORS.some(
+              a => a.toLowerCase() === markerAuthor.toLowerCase()
+            );
 
             // Collect unique categories and floors
             const categories = [...new Set(markers.map(m => m.category).filter(Boolean))];
