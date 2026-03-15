@@ -422,20 +422,37 @@ jobs:
                 const ssSource = fs.existsSync(markerSSPath) ? markerSSPath : (hasLegacySS ? legacySSPath : null);
 
                 if (existingIds.has(m.id)) {
-                  // Backfill screenshot for existing marker if missing
-                  if (ssSource) {
-                    const existingMarker = existing.find(e => e.id === m.id);
-                    if (existingMarker && !existingMarker.screenshot) {
-                      const dest = path.join(communitySSDir, `${m.id}.webp`);
-                      fs.copyFileSync(ssSource, dest);
-                      existingMarker.screenshot = `community-screenshots/${m.id}.webp`;
-                      screenshotsCopied++;
-                      issueChanged = true;
-                      console.log(`  Backfilled screenshot for ${m.id} (${m.name})`);
-                    } else {
-                      console.log(`  Skipping duplicate: ${m.id} (${m.name})`);
+                  const existingMarker = existing.find(e => e.id === m.id);
+
+                  // Correction: update existing marker fields in-place
+                  if (m.correction && existingMarker) {
+                    const fields = ['name', 'description', 'x', 'y', 'floor', 'region'];
+                    let updated = false;
+                    for (const f of fields) {
+                      if (m[f] != null && m[f] !== existingMarker[f]) {
+                        existingMarker[f] = m[f];
+                        updated = true;
+                      }
                     }
-                  } else {
+                    if (m.authorName) existingMarker.contributedBy = m.authorName;
+                    if (updated) {
+                      issueChanged = true;
+                      added++;
+                      console.log(`  Updated existing marker: ${m.id} (${m.name})`);
+                    } else {
+                      console.log(`  Correction has no changes: ${m.id} (${m.name})`);
+                    }
+                  }
+
+                  // Backfill screenshot for existing marker if missing
+                  if (ssSource && existingMarker && !existingMarker.screenshot) {
+                    const dest = path.join(communitySSDir, `${m.id}.webp`);
+                    fs.copyFileSync(ssSource, dest);
+                    existingMarker.screenshot = `community-screenshots/${m.id}.webp`;
+                    screenshotsCopied++;
+                    issueChanged = true;
+                    console.log(`  Backfilled screenshot for ${m.id} (${m.name})`);
+                  } else if (!m.correction) {
                     console.log(`  Skipping duplicate: ${m.id} (${m.name})`);
                   }
                   continue;
