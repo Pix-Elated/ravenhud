@@ -307,6 +307,12 @@ jobs:
   #   1. /approve comment → approve-reject passes approved=true
   #   2. Manual "approved" label added → labeled event
   #   3. Manual workflow_dispatch
+  #
+  # IMPORTANT: This job reads from data/worldmap-markers.json (the SOURCE
+  # file) and writes back to it. Then it rebuilds assets/data.zip from
+  # the data/ directory. Both the source file and the zip are committed.
+  # This prevents data loss when create-archives.js is run separately —
+  # it also reads from data/ so the markers stay in sync.
   ingest:
     needs: [approve-reject]
     if: |
@@ -318,12 +324,9 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: ingest-markers
-      cancel-in-progress: true
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
-
-      - name: Extract data.zip
-        run: mkdir -p /tmp/data-extract && unzip -o assets/data.zip -d /tmp/data-extract
 
       - name: Ingest approved markers
         id: ingest
@@ -335,30 +338,25 @@ jobs:
 
             // Icon mapping — must match app's marker asset filenames
             const ICONS = {
-              bank: 'npc_bank.webp',
-              builder: 'npc_builder.webp',
-              cosmetic_npc: 'cosmetic.webp',
-              crafting_station: 'crafting_alchemy.webp',
               creature_spawn: 'elitespawn.webp',
               dynamic_event: 'dynamic_event.webp',
               expedition: 'expedition.webp',
-              fishpost: 'npc_fishpost.webp',
-              market: 'market.webp',
-              moa_merchant: 'moa_merchant.webp',
-              quest: 'quest.webp',
-              rangers_outpost: 'rangers_company_outpost.webp',
-              respawn_shrine: 'respawn_shrine.webp',
-              seaport: 'seaport.webp',
-              tradepost: 'tradepost.webp',
-              vendor: 'vendors.webp',
-              warehouse: 'npc_warehouse.webp',
-              waypoint: 'respawn_shrine.webp'
+              npc_reputation: 'npc_reputation.webp'
+              // reputation_shiny uses emoji fallback — no icon file
             };
 
-            const screenshotsDir = path.join(process.env.GITHUB_WORKSPACE, 'screenshots');
-            const extractDir = '/tmp/data-extract';
-            const communitySSDir = path.join(extractDir, 'community-screenshots');
+            const workspace = process.env.GITHUB_WORKSPACE;
+            const screenshotsDir = path.join(workspace, 'screenshots');
+            const communitySSDir = path.join(workspace, 'data', 'community-screenshots');
             fs.mkdirSync(communitySSDir, { recursive: true });
+
+            // Read from SOURCE file (data/worldmap-markers.json), NOT from data.zip
+            const markersPath = path.join(workspace, 'data', 'worldmap-markers.json');
+            const existing = JSON.parse(fs.readFileSync(markersPath, 'utf8'));
+            const existingById = new Map(existing.map(m => [m.id, m]));
+
+            // Log pre-ingest state for audit
+            console.log(`Pre-ingest: ${existing.length} markers`);
 
             // Fetch all approved non-ingested issues
             const issues = await github.paginate(github.rest.issues.listForRepo, {
@@ -376,12 +374,8 @@ jobs:
               return;
             }
 
-            // Load existing markers from extracted data.zip
-            const markersPath = path.join(extractDir, 'worldmap-markers.json');
-            const existing = JSON.parse(fs.readFileSync(markersPath, 'utf8'));
-            const existingIds = new Set(existing.map(m => m.id));
-
             let totalAdded = 0;
+            let totalUpdated = 0;
             let screenshotsCopied = 0;
             const processedIssues = [];
 
@@ -405,11 +399,10 @@ jobs:
                 continue;
               }
 
-              // Find screenshot: prefer per-marker ID naming, fall back to legacy issue-number naming
+              // Find screenshot: prefer per-marker ID naming, fall back to legacy
               const legacySSPath = path.join(screenshotsDir, `issue-${issue.number}.webp`);
               const hasLegacySS = fs.existsSync(legacySSPath);
 
-              let added = 0;
               let issueChanged = false;
               for (const m of markers) {
                 if (!m.id || !m.category || !m.name || m.x == null || m.y == null || !m.floor) {
@@ -417,15 +410,13 @@ jobs:
                   continue;
                 }
 
-                // Check for marker-ID screenshot first, then fall back to issue-number
                 const markerSSPath = path.join(screenshotsDir, `${m.id}.webp`);
                 const ssSource = fs.existsSync(markerSSPath) ? markerSSPath : (hasLegacySS ? legacySSPath : null);
 
-                if (existingIds.has(m.id)) {
-                  const existingMarker = existing.find(e => e.id === m.id);
-
+                const existingMarker = existingById.get(m.id);
+                if (existingMarker) {
                   // Correction: update existing marker fields in-place
-                  if (m.correction && existingMarker) {
+                  if (m.correction) {
                     const fields = ['name', 'description', 'x', 'y', 'floor', 'region'];
                     let updated = false;
                     for (const f of fields) {
@@ -437,27 +428,26 @@ jobs:
                     if (m.authorName) existingMarker.contributedBy = m.authorName;
                     if (updated) {
                       issueChanged = true;
-                      added++;
-                      console.log(`  Updated existing marker: ${m.id} (${m.name})`);
-                    } else {
-                      console.log(`  Correction has no changes: ${m.id} (${m.name})`);
+                      totalUpdated++;
+                      console.log(`  Updated: ${m.id} (${m.name})`);
                     }
                   }
 
-                  // Backfill screenshot for existing marker if missing
-                  if (ssSource && existingMarker && !existingMarker.screenshot) {
+                  // Backfill screenshot if missing
+                  if (ssSource && !existingMarker.screenshot) {
                     const dest = path.join(communitySSDir, `${m.id}.webp`);
                     fs.copyFileSync(ssSource, dest);
                     existingMarker.screenshot = `community-screenshots/${m.id}.webp`;
                     screenshotsCopied++;
                     issueChanged = true;
-                    console.log(`  Backfilled screenshot for ${m.id} (${m.name})`);
+                    console.log(`  Screenshot backfill: ${m.id}`);
                   } else if (!m.correction) {
-                    console.log(`  Skipping duplicate: ${m.id} (${m.name})`);
+                    console.log(`  Duplicate skip: ${m.id}`);
                   }
                   continue;
                 }
 
+                // New marker
                 const marker = {
                   id: m.id,
                   source: 'base',
@@ -474,53 +464,50 @@ jobs:
                   contributedBy: m.authorName || 'Community'
                 };
 
-                // Copy screenshot into data archive
                 if (ssSource) {
                   const dest = path.join(communitySSDir, `${m.id}.webp`);
                   fs.copyFileSync(ssSource, dest);
                   marker.screenshot = `community-screenshots/${m.id}.webp`;
                   screenshotsCopied++;
-                  console.log(`  Screenshot for ${m.id}`);
                 }
 
                 existing.push(marker);
-                existingIds.add(m.id);
-                added++;
+                existingById.set(m.id, marker);
+                totalAdded++;
                 issueChanged = true;
               }
 
               if (issueChanged) {
                 processedIssues.push(issue.number);
               }
-              if (added > 0) {
-                totalAdded += added;
-                console.log(`#${issue.number}: added ${added} marker(s)`);
-              } else if (!issueChanged) {
-                console.log(`#${issue.number}: all markers already exist`);
-              }
             }
 
-            if (totalAdded === 0 && screenshotsCopied === 0) {
-              console.log('No new markers or screenshots to add');
+            if (totalAdded === 0 && totalUpdated === 0 && screenshotsCopied === 0) {
+              console.log('No changes to apply');
               core.setOutput('changed', 'false');
               return;
             }
 
-            // Write updated markers back
+            // Write back to SOURCE file (data/worldmap-markers.json)
             fs.writeFileSync(markersPath, JSON.stringify(existing, null, 2) + '\n');
-            if (totalAdded > 0) console.log(`Added ${totalAdded} new marker(s) (total: ${existing.length})`);
-            if (screenshotsCopied > 0) console.log(`Copied ${screenshotsCopied} screenshot(s) into data archive`);
+            console.log(`Post-ingest: ${existing.length} markers (+${totalAdded} new, ${totalUpdated} updated, ${screenshotsCopied} screenshots)`);
 
             core.setOutput('changed', 'true');
-            core.setOutput('count', String(totalAdded));
+            core.setOutput('count', String(totalAdded + totalUpdated));
             core.setOutput('screenshots', String(screenshotsCopied));
             core.setOutput('issues', processedIssues.join(','));
 
-      - name: Rebuild data.zip and update manifest
+      - name: Rebuild data.zip from source and update manifest
         if: steps.ingest.outputs.changed == 'true'
         run: |
-          cd /tmp/data-extract && zip -r "$GITHUB_WORKSPACE/assets/data.zip" .
+          # Rebuild data.zip from the data/ SOURCE directory (not /tmp/data-extract)
+          # This keeps data/ and assets/data.zip permanently in sync.
+          cd data
+          zip -r ../assets/data.zip . \
+            -x ".api-cache/*" "temp/*" "scripts/*" "blockchain/*" "scraped/*" "ULTIMATE*" "*.html"
           cd "$GITHUB_WORKSPACE"
+
+          # Update hash in assets-manifest.json
           HASH=$(sha256sum assets/data.zip | cut -d' ' -f1)
           SIZE_BYTES=$(stat -c%s assets/data.zip)
           SIZE_MB=$(echo "scale=1; $SIZE_BYTES / 1048576" | bc)
@@ -534,12 +521,14 @@ jobs:
             assets/assets-manifest.json > /tmp/manifest.json
           mv /tmp/manifest.json assets/assets-manifest.json
 
-      - name: Commit to master
+      - name: Commit source + zip + manifest
         if: steps.ingest.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/data.zip assets/assets-manifest.json
+          # Commit ALL three: source file, zip, and manifest
+          # This prevents divergence between data/ and assets/data.zip
+          git add data/worldmap-markers.json data/community-screenshots/ assets/data.zip assets/assets-manifest.json
           git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
           git push origin master
 
