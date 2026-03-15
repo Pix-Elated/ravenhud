@@ -8771,7 +8771,7 @@
     "description": "top right side inside crowmaiden cave",
     "authorName": "Azurak",
     "source": "community",
-    "icon": "reputation_shiny.webp"
+    "icon": ""
   },
   {
     "id": "c_50baa999",
@@ -8785,7 +8785,7 @@
     "description": "in spider cave 1 floor down",
     "authorName": "Azurak",
     "source": "community",
-    "icon": "reputation_shiny.webp"
+    "icon": ""
   },
   {
     "id": "c_6abecbec",
@@ -8799,6 +8799,6 @@
     "description": "just on the beach",
     "authorName": "Azurak",
     "source": "community",
-    "icon": "reputation_shiny.webp"
+    "icon": ""
   }
 ]
