@@ -782,6 +782,35 @@ function removePreviewMarker() {
 // Screenshot (paste from clipboard)
 // ---------------------------------------------------------------------------
 
+function compressToWebP(blob) {
+  return new Promise(function (resolve, reject) {
+    var img = new Image();
+    var objectUrl = URL.createObjectURL(blob);
+    img.onload = function () {
+      URL.revokeObjectURL(objectUrl);
+      var canvas = document.createElement('canvas');
+      // Cap at 1280px wide to keep size reasonable
+      var maxW = 1280;
+      var w = img.width;
+      var h = img.height;
+      if (w > maxW) {
+        h = Math.round(h * maxW / w);
+        w = maxW;
+      }
+      canvas.width = w;
+      canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      var dataUrl = canvas.toDataURL('image/webp', 0.8);
+      resolve(dataUrl);
+    };
+    img.onerror = function () {
+      URL.revokeObjectURL(objectUrl);
+      reject(new Error('Failed to load image'));
+    };
+    img.src = objectUrl;
+  });
+}
+
 function pasteScreenshot() {
   navigator.clipboard.read().then(function (items) {
     for (var item of items) {
@@ -790,13 +819,10 @@ function pasteScreenshot() {
       if (!imageType) continue;
 
       item.getType(imageType).then(function (blob) {
-        // Convert to base64
-        var reader = new FileReader();
-        reader.onload = function () {
-          pendingScreenshot = reader.result.split(',')[1]; // strip data:... prefix
-          showScreenshotPreview(reader.result);
-        };
-        reader.readAsDataURL(blob);
+        compressToWebP(blob).then(function (dataUrl) {
+          pendingScreenshot = dataUrl.split(',')[1]; // strip data:... prefix
+          showScreenshotPreview(dataUrl);
+        });
       });
       return;
     }
@@ -890,13 +916,14 @@ function submitToCorvid() {
     })
     .catch(function (err) {
       console.error('Submission error:', err);
-      btn.textContent = 'Error — try again';
+      var msg = (err && err.message) || 'Unknown error';
+      btn.textContent = msg.length > 40 ? 'Error — try again' : msg;
       btn.classList.add('btn-error');
       btn.disabled = false;
       setTimeout(function () {
         btn.textContent = originalText;
         btn.classList.remove('btn-error');
         validateForm();
-      }, 3000);
+      }, 4000);
     });
 }
