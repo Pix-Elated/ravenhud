@@ -232,6 +232,7 @@ async function init() {
   initDetailPanel();
   initModal();
   initAuth();
+  initContributions();
   updateAuthUI();
 
   try {
@@ -423,12 +424,23 @@ function showDetail(m) {
 }
 
 // ---------------------------------------------------------------------------
-// Lightbox (click-to-zoom screenshots)
+// Lightbox (click-to-zoom screenshots with zoom/pan)
 // ---------------------------------------------------------------------------
+
+var lbZoom = 1;
+var lbPanX = 0;
+var lbPanY = 0;
+var lbDragging = false;
+var lbDragStart = { x: 0, y: 0 };
+var lbPanStart = { x: 0, y: 0 };
 
 function openLightbox(imageUrl) {
   var overlay = document.getElementById('lightbox-overlay');
   var img = document.getElementById('lightbox-img');
+  lbZoom = 1;
+  lbPanX = 0;
+  lbPanY = 0;
+  img.style.transform = '';
   img.src = imageUrl;
   overlay.hidden = false;
 }
@@ -437,6 +449,99 @@ function closeLightbox() {
   var overlay = document.getElementById('lightbox-overlay');
   overlay.hidden = true;
   document.getElementById('lightbox-img').src = '';
+}
+
+function applyLightboxTransform() {
+  var img = document.getElementById('lightbox-img');
+  img.style.transform = 'translate(' + lbPanX + 'px, ' + lbPanY + 'px) scale(' + lbZoom + ')';
+}
+
+function initLightbox() {
+  var overlay = document.getElementById('lightbox-overlay');
+  var img = document.getElementById('lightbox-img');
+
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeLightbox();
+  });
+
+  // Scroll to zoom
+  overlay.addEventListener('wheel', function (e) {
+    e.preventDefault();
+    var delta = e.deltaY > 0 ? -0.15 : 0.15;
+    lbZoom = Math.max(0.5, Math.min(5, lbZoom + delta));
+    if (lbZoom <= 1) { lbPanX = 0; lbPanY = 0; }
+    applyLightboxTransform();
+  }, { passive: false });
+
+  // Drag to pan (when zoomed)
+  img.addEventListener('mousedown', function (e) {
+    if (lbZoom <= 1) return;
+    e.preventDefault();
+    lbDragging = true;
+    lbDragStart = { x: e.clientX, y: e.clientY };
+    lbPanStart = { x: lbPanX, y: lbPanY };
+    img.style.cursor = 'grabbing';
+  });
+
+  window.addEventListener('mousemove', function (e) {
+    if (!lbDragging) return;
+    lbPanX = lbPanStart.x + (e.clientX - lbDragStart.x);
+    lbPanY = lbPanStart.y + (e.clientY - lbDragStart.y);
+    applyLightboxTransform();
+  });
+
+  window.addEventListener('mouseup', function () {
+    if (!lbDragging) return;
+    lbDragging = false;
+    document.getElementById('lightbox-img').style.cursor = 'grab';
+  });
+
+  // Double-click to reset zoom
+  img.addEventListener('dblclick', function () {
+    lbZoom = 1;
+    lbPanX = 0;
+    lbPanY = 0;
+    applyLightboxTransform();
+  });
+
+  // Touch: pinch to zoom
+  var lastTouchDist = 0;
+  overlay.addEventListener('touchstart', function (e) {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      var dx = e.touches[0].clientX - e.touches[1].clientX;
+      var dy = e.touches[0].clientY - e.touches[1].clientY;
+      lastTouchDist = Math.sqrt(dx * dx + dy * dy);
+    } else if (e.touches.length === 1 && lbZoom > 1) {
+      lbDragging = true;
+      lbDragStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      lbPanStart = { x: lbPanX, y: lbPanY };
+    }
+  }, { passive: false });
+
+  overlay.addEventListener('touchmove', function (e) {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      var dx = e.touches[0].clientX - e.touches[1].clientX;
+      var dy = e.touches[0].clientY - e.touches[1].clientY;
+      var dist = Math.sqrt(dx * dx + dy * dy);
+      var scale = dist / lastTouchDist;
+      lbZoom = Math.max(0.5, Math.min(5, lbZoom * scale));
+      lastTouchDist = dist;
+      applyLightboxTransform();
+    } else if (e.touches.length === 1 && lbDragging) {
+      e.preventDefault();
+      lbPanX = lbPanStart.x + (e.touches[0].clientX - lbDragStart.x);
+      lbPanY = lbPanStart.y + (e.touches[0].clientY - lbDragStart.y);
+      applyLightboxTransform();
+    }
+  }, { passive: false });
+
+  overlay.addEventListener('touchend', function () {
+    lbDragging = false;
+    if (lbZoom <= 1) { lbPanX = 0; lbPanY = 0; applyLightboxTransform(); }
+  });
 }
 
 function initDetailPanel() {
@@ -451,12 +556,114 @@ function initDetailPanel() {
     }
   });
 
-  // Lightbox close handlers
-  var lbOverlay = document.getElementById('lightbox-overlay');
-  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-  lbOverlay.addEventListener('click', function (e) {
-    if (e.target === lbOverlay) closeLightbox();
+  initLightbox();
+}
+
+// ---------------------------------------------------------------------------
+// My Contributions & Leaderboard
+// ---------------------------------------------------------------------------
+
+function initContributions() {
+  document.getElementById('btn-my-contributions').addEventListener('click', showContributions);
+  document.getElementById('contributions-close').addEventListener('click', function () {
+    document.getElementById('contributions-modal').hidden = true;
   });
+  document.getElementById('btn-leaderboard').addEventListener('click', showLeaderboard);
+  document.getElementById('leaderboard-close').addEventListener('click', function () {
+    document.getElementById('leaderboard-modal').hidden = true;
+  });
+}
+
+function showContributions() {
+  var body = document.getElementById('contributions-body');
+
+  if (!discordUser) {
+    body.innerHTML = '<p class="info-modal-empty">Login with Discord to see your contributions.</p>';
+    document.getElementById('contributions-modal').hidden = false;
+    return;
+  }
+
+  // Find local edits
+  var edits = getLocalEdits();
+  var editIds = Object.keys(edits);
+
+  // Find markers contributed by this user (by name match or local edits)
+  var userName = (discordUser.globalName || discordUser.username).toLowerCase();
+  var contributions = allMarkers.filter(function (m) {
+    if (editIds.indexOf(m.id) >= 0) return true;
+    if (m.contributedBy && m.contributedBy.toLowerCase() === userName) return true;
+    return false;
+  });
+
+  if (contributions.length === 0) {
+    body.innerHTML = '<p class="info-modal-empty">No contributions yet. Submit or edit markers to see them here.</p>';
+  } else {
+    body.innerHTML = '';
+    contributions.sort(function (a, b) { return a.name.localeCompare(b.name); });
+    for (var m of contributions) {
+      var cat = CATEGORIES[m.category];
+      var item = document.createElement('div');
+      item.className = 'contrib-item';
+      var isEdit = editIds.indexOf(m.id) >= 0;
+      item.innerHTML =
+        '<span class="contrib-emoji">' + (cat ? cat.emoji : '') + '</span>' +
+        '<span class="contrib-name">' + m.name + '</span>' +
+        '<span class="contrib-status ' + (isEdit ? 'pending' : 'submitted') + '">' +
+        (isEdit ? 'Edited' : 'Submitted') + '</span>';
+      item.dataset.markerId = m.id;
+      item.dataset.x = m.x;
+      item.dataset.y = m.y;
+      item.addEventListener('click', function (e) {
+        document.getElementById('contributions-modal').hidden = true;
+        onMarkerItemClick(e);
+      });
+      body.appendChild(item);
+    }
+  }
+
+  // Update badge
+  var badge = document.getElementById('contrib-count');
+  if (contributions.length > 0) {
+    badge.textContent = contributions.length;
+    badge.hidden = false;
+  } else {
+    badge.hidden = true;
+  }
+
+  document.getElementById('contributions-modal').hidden = false;
+}
+
+function showLeaderboard() {
+  var body = document.getElementById('leaderboard-body');
+
+  // Count contributions by author
+  var counts = {};
+  for (var m of allMarkers) {
+    var author = m.contributedBy || '';
+    if (!author || author === 'Community') continue;
+    counts[author] = (counts[author] || 0) + 1;
+  }
+
+  var sorted = Object.entries(counts).sort(function (a, b) { return b[1] - a[1]; });
+
+  if (sorted.length === 0) {
+    body.innerHTML = '<p class="info-modal-empty">No contributors yet.</p>';
+  } else {
+    body.innerHTML = '';
+    for (var i = 0; i < sorted.length; i++) {
+      var row = document.createElement('div');
+      row.className = 'leaderboard-row';
+      var rank = i + 1;
+      var medal = rank === 1 ? '\uD83E\uDD47' : rank === 2 ? '\uD83E\uDD48' : rank === 3 ? '\uD83E\uDD49' : '';
+      row.innerHTML =
+        '<span class="leaderboard-rank">' + (medal || '#' + rank) + '</span>' +
+        '<span class="leaderboard-name">' + sorted[i][0] + '</span>' +
+        '<span class="leaderboard-count">' + sorted[i][1] + ' marker' + (sorted[i][1] > 1 ? 's' : '') + '</span>';
+      body.appendChild(row);
+    }
+  }
+
+  document.getElementById('leaderboard-modal').hidden = false;
 }
 
 // ---------------------------------------------------------------------------
@@ -512,14 +719,16 @@ function buildSidebar() {
       var catMeta = entry[1];
       var count = counts[catKey] || 0;
 
-      var row = document.createElement('label');
+      // Use div (not label) so checkbox clicks don't interfere with expand
+      var row = document.createElement('div');
       row.className = 'cat-row';
       row.innerHTML =
         '<input type="checkbox" data-category="' + catKey + '" ' +
         (visibility[catKey] ? 'checked' : '') + ' />' +
         '<span class="cat-emoji">' + catMeta.emoji + '</span>' +
         '<span class="cat-label">' + catMeta.label + '</span>' +
-        '<span class="cat-count">' + count + '</span>';
+        '<span class="cat-count">' + count + '</span>' +
+        (count > 0 ? '<span class="cat-arrow">\u25B6</span>' : '');
       body.appendChild(row);
 
       if (count > 0) {
@@ -531,7 +740,16 @@ function buildSidebar() {
         for (var marker of (markersByCategory[catKey] || [])) {
           var item = document.createElement('div');
           item.className = 'marker-item';
-          item.textContent = marker.name;
+          var nameSpan = document.createElement('span');
+          nameSpan.className = 'marker-item-name';
+          nameSpan.textContent = marker.name;
+          item.appendChild(nameSpan);
+          if (marker.region) {
+            var regionSpan = document.createElement('span');
+            regionSpan.className = 'marker-item-region';
+            regionSpan.textContent = marker.region;
+            item.appendChild(regionSpan);
+          }
           item.dataset.markerId = marker.id;
           item.dataset.x = marker.x;
           item.dataset.y = marker.y;
@@ -540,12 +758,19 @@ function buildSidebar() {
         }
         body.appendChild(list);
 
-        (function (listEl) {
-          row.addEventListener('click', function (e) {
+        (function (listEl, rowEl) {
+          rowEl.addEventListener('click', function (e) {
             if (e.target.type === 'checkbox') return;
-            listEl.style.display = listEl.style.display === 'none' ? 'block' : 'none';
+            var arrow = rowEl.querySelector('.cat-arrow');
+            if (listEl.style.display === 'none') {
+              listEl.style.display = 'block';
+              if (arrow) arrow.textContent = '\u25BC';
+            } else {
+              listEl.style.display = 'none';
+              if (arrow) arrow.textContent = '\u25B6';
+            }
           });
-        })(list);
+        })(list, row);
       }
     }
 
@@ -576,9 +801,14 @@ function buildSidebar() {
 }
 
 function onMarkerItemClick(e) {
-  var id = e.target.dataset.markerId;
-  var x = parseInt(e.target.dataset.x, 10);
-  var y = parseInt(e.target.dataset.y, 10);
+  // Walk up to find the element with data attributes (handles clicks on child spans)
+  var el = e.target;
+  while (el && !el.dataset.markerId) el = el.parentElement;
+  if (!el) return;
+
+  var id = el.dataset.markerId;
+  var x = parseInt(el.dataset.x, 10);
+  var y = parseInt(el.dataset.y, 10);
 
   var m = allMarkers.find(function (mk) { return mk.id === id; });
   if (m) showDetail(m);

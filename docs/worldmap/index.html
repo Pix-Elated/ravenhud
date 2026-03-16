@@ -53,6 +53,16 @@
         <!-- Stats -->
         <div class="sidebar-stats" id="sidebar-stats"></div>
       </div>
+
+      <!-- Bottom buttons -->
+      <div class="sidebar-actions">
+        <button class="btn-sidebar" id="btn-my-contributions">
+          My Contributions <span class="badge" id="contrib-count" hidden>0</span>
+        </button>
+        <button class="btn-sidebar" id="btn-leaderboard">
+          Contributor Leaderboard
+        </button>
+      </div>
     </aside>
 
     <!-- Map -->
@@ -129,6 +139,32 @@
     <div id="detail-screenshot"></div>
     <div class="detail-source" id="detail-source"></div>
     <button class="btn-suggest-edit" id="btn-suggest-edit">Suggest Edit</button>
+  </div>
+
+  <!-- My Contributions Modal -->
+  <div class="info-modal-overlay" id="contributions-modal" hidden>
+    <div class="info-modal">
+      <div class="info-modal-header">
+        <h3>My Contributions</h3>
+        <button class="modal-close" id="contributions-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="info-modal-body" id="contributions-body">
+        <p class="info-modal-empty">Login with Discord to see your contributions.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contributor Leaderboard Modal -->
+  <div class="info-modal-overlay" id="leaderboard-modal" hidden>
+    <div class="info-modal">
+      <div class="info-modal-header">
+        <h3>Contributor Leaderboard</h3>
+        <button class="modal-close" id="leaderboard-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="info-modal-body" id="leaderboard-body">
+        <p class="info-modal-empty">Loading...</p>
+      </div>
+    </div>
   </div>
 
   <!-- Screenshot Lightbox -->

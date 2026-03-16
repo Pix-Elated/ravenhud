@@ -277,26 +277,87 @@ body {
   border-radius: 8px;
 }
 
+.cat-arrow {
+  font-size: 9px;
+  color: var(--text-secondary);
+  margin-left: 4px;
+  transition: transform 0.15s;
+}
+
 /* Marker list under category */
 .marker-list {
-  max-height: 200px;
+  max-height: 240px;
   overflow-y: auto;
   margin: 2px 0 4px 28px;
 }
 
 .marker-item {
+  display: flex;
+  flex-direction: column;
   padding: 4px 8px;
   font-size: 12px;
   color: var(--text-secondary);
   cursor: pointer;
   border-radius: 3px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .marker-item:hover {
   background: var(--bg-tertiary);
   color: var(--text-primary);
+}
+
+.marker-item-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.marker-item-region {
+  font-size: 10px;
+  color: var(--text-secondary);
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Sidebar bottom buttons */
+.sidebar-actions {
+  padding: 8px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid var(--border-color);
+}
+
+.btn-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-sidebar:hover {
+  background: var(--bg-secondary);
+  border-color: var(--accent-primary);
+}
+
+.badge {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 10px;
+  min-width: 16px;
+  text-align: center;
 }
 
 /* Stats */
@@ -679,6 +740,131 @@ body {
 }
 
 /* ============================================================
+   Info Modals (Contributions, Leaderboard)
+   ============================================================ */
+.info-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-modal-overlay[hidden] {
+  display: none;
+}
+
+.info-modal {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  width: 420px;
+  max-width: 90vw;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.info-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-modal-header h3 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--accent-primary);
+}
+
+.info-modal-body {
+  padding: 12px 16px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.info-modal-empty {
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contrib-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.contrib-item:hover {
+  background: var(--bg-tertiary);
+}
+
+.contrib-item .contrib-emoji {
+  font-size: 16px;
+}
+
+.contrib-item .contrib-name {
+  flex: 1;
+  color: var(--text-primary);
+}
+
+.contrib-item .contrib-status {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 8px;
+}
+
+.contrib-status.pending {
+  background: #665500;
+  color: #ffcc00;
+}
+
+.contrib-status.submitted {
+  background: #335500;
+  color: #88cc44;
+}
+
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 13px;
+}
+
+.leaderboard-row:last-child {
+  border-bottom: none;
+}
+
+.leaderboard-rank {
+  font-weight: 700;
+  color: var(--accent-primary);
+  min-width: 24px;
+  text-align: center;
+}
+
+.leaderboard-name {
+  flex: 1;
+  color: var(--text-primary);
+}
+
+.leaderboard-count {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+/* ============================================================
    Lightbox
    ============================================================ */
 .lightbox-overlay {
@@ -701,8 +887,11 @@ body {
   max-height: 90vh;
   object-fit: contain;
   border-radius: 6px;
-  cursor: default;
+  cursor: grab;
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.6);
+  transition: transform 0.05s ease-out;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .lightbox-close {
