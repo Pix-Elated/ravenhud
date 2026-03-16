@@ -17,7 +17,7 @@ No typecheck needed -- this is vanilla HTML/CSS/JS.
 
 - **NEVER** commit to `master` directly for features -- create a branch and PR
 - **NEVER** break accessibility (WCAG AA contrast, keyboard nav, ARIA labels)
-- **NEVER** add external JavaScript libraries -- this site has zero dependencies
+- **NEVER** add CDN-loaded scripts -- vendored libraries in `docs/js/lib/` are OK when justified (e.g. Leaflet for the interactive map)
 - **NEVER** hardcode version numbers -- the site fetches from GitHub API dynamically
 
 ---
@@ -30,9 +30,11 @@ docs/                    # GitHub Pages root (auto-deploys)
 ├── css/style.css        # All styles (CSS custom properties)
 ├── js/
 │   ├── main.js          # Core functionality (release fetch, lightbox, etc.)
-│   └── i18n.js          # 13-language translation system
+│   ├── i18n.js          # 13-language translation system
+│   └── lib/             # Vendored libraries (Leaflet, etc.)
 ├── assets/              # Images, GIFs, videos
 ├── demo/                # Interactive demo page
+├── worldmap/            # Interactive community world map
 └── auth/discord/        # OAuth2 callback
 ```
 
