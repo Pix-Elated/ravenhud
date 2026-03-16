@@ -887,8 +887,11 @@ body {
   max-height: 90vh;
   object-fit: contain;
   border-radius: 6px;
-  cursor: default;
+  cursor: grab;
   box-shadow: 0 4px 32px rgba(0, 0, 0, 0.6);
+  transition: transform 0.05s ease-out;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .lightbox-close {

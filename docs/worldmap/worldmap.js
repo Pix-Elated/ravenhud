@@ -424,12 +424,23 @@ function showDetail(m) {
 }
 
 // ---------------------------------------------------------------------------
-// Lightbox (click-to-zoom screenshots)
+// Lightbox (click-to-zoom screenshots with zoom/pan)
 // ---------------------------------------------------------------------------
+
+var lbZoom = 1;
+var lbPanX = 0;
+var lbPanY = 0;
+var lbDragging = false;
+var lbDragStart = { x: 0, y: 0 };
+var lbPanStart = { x: 0, y: 0 };
 
 function openLightbox(imageUrl) {
   var overlay = document.getElementById('lightbox-overlay');
   var img = document.getElementById('lightbox-img');
+  lbZoom = 1;
+  lbPanX = 0;
+  lbPanY = 0;
+  img.style.transform = '';
   img.src = imageUrl;
   overlay.hidden = false;
 }
@@ -438,6 +449,99 @@ function closeLightbox() {
   var overlay = document.getElementById('lightbox-overlay');
   overlay.hidden = true;
   document.getElementById('lightbox-img').src = '';
+}
+
+function applyLightboxTransform() {
+  var img = document.getElementById('lightbox-img');
+  img.style.transform = 'translate(' + lbPanX + 'px, ' + lbPanY + 'px) scale(' + lbZoom + ')';
+}
+
+function initLightbox() {
+  var overlay = document.getElementById('lightbox-overlay');
+  var img = document.getElementById('lightbox-img');
+
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeLightbox();
+  });
+
+  // Scroll to zoom
+  overlay.addEventListener('wheel', function (e) {
+    e.preventDefault();
+    var delta = e.deltaY > 0 ? -0.15 : 0.15;
+    lbZoom = Math.max(0.5, Math.min(5, lbZoom + delta));
+    if (lbZoom <= 1) { lbPanX = 0; lbPanY = 0; }
+    applyLightboxTransform();
+  }, { passive: false });
+
+  // Drag to pan (when zoomed)
+  img.addEventListener('mousedown', function (e) {
+    if (lbZoom <= 1) return;
+    e.preventDefault();
+    lbDragging = true;
+    lbDragStart = { x: e.clientX, y: e.clientY };
+    lbPanStart = { x: lbPanX, y: lbPanY };
+    img.style.cursor = 'grabbing';
+  });
+
+  window.addEventListener('mousemove', function (e) {
+    if (!lbDragging) return;
+    lbPanX = lbPanStart.x + (e.clientX - lbDragStart.x);
+    lbPanY = lbPanStart.y + (e.clientY - lbDragStart.y);
+    applyLightboxTransform();
+  });
+
+  window.addEventListener('mouseup', function () {
+    if (!lbDragging) return;
+    lbDragging = false;
+    document.getElementById('lightbox-img').style.cursor = 'grab';
+  });
+
+  // Double-click to reset zoom
+  img.addEventListener('dblclick', function () {
+    lbZoom = 1;
+    lbPanX = 0;
+    lbPanY = 0;
+    applyLightboxTransform();
+  });
+
+  // Touch: pinch to zoom
+  var lastTouchDist = 0;
+  overlay.addEventListener('touchstart', function (e) {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      var dx = e.touches[0].clientX - e.touches[1].clientX;
+      var dy = e.touches[0].clientY - e.touches[1].clientY;
+      lastTouchDist = Math.sqrt(dx * dx + dy * dy);
+    } else if (e.touches.length === 1 && lbZoom > 1) {
+      lbDragging = true;
+      lbDragStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      lbPanStart = { x: lbPanX, y: lbPanY };
+    }
+  }, { passive: false });
+
+  overlay.addEventListener('touchmove', function (e) {
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      var dx = e.touches[0].clientX - e.touches[1].clientX;
+      var dy = e.touches[0].clientY - e.touches[1].clientY;
+      var dist = Math.sqrt(dx * dx + dy * dy);
+      var scale = dist / lastTouchDist;
+      lbZoom = Math.max(0.5, Math.min(5, lbZoom * scale));
+      lastTouchDist = dist;
+      applyLightboxTransform();
+    } else if (e.touches.length === 1 && lbDragging) {
+      e.preventDefault();
+      lbPanX = lbPanStart.x + (e.touches[0].clientX - lbDragStart.x);
+      lbPanY = lbPanStart.y + (e.touches[0].clientY - lbDragStart.y);
+      applyLightboxTransform();
+    }
+  }, { passive: false });
+
+  overlay.addEventListener('touchend', function () {
+    lbDragging = false;
+    if (lbZoom <= 1) { lbPanX = 0; lbPanY = 0; applyLightboxTransform(); }
+  });
 }
 
 function initDetailPanel() {
@@ -452,12 +556,7 @@ function initDetailPanel() {
     }
   });
 
-  // Lightbox close handlers
-  var lbOverlay = document.getElementById('lightbox-overlay');
-  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
-  lbOverlay.addEventListener('click', function (e) {
-    if (e.target === lbOverlay) closeLightbox();
-  });
+  initLightbox();
 }
 
 // ---------------------------------------------------------------------------
