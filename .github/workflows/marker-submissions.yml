@@ -74,15 +74,19 @@ jobs:
 
             // Trusted authors — check authorName inside the JSON payload,
             // NOT the GitHub issue author (issues are created via Corvid proxy)
-            const TRUSTED_AUTHORS = ['Azurak'];
+            const TRUSTED_AUTHORS = ['Azurak', 'Pixelated'];
             const markerAuthor = markers[0]?.authorName || '';
             const isTrusted = TRUSTED_AUTHORS.some(
               a => a.toLowerCase() === markerAuthor.toLowerCase()
             );
 
+            // Detect if this is an edit (correction) submission
+            const isEdit = markers.some(m => m.correction);
+
             // Collect unique categories and floors
             const categories = [...new Set(markers.map(m => m.category).filter(Boolean))];
             const labels = [isTrusted ? 'approved' : 'needs-review'];
+            if (isEdit) labels.push('edit');
             for (const cat of categories) {
               labels.push(`cat:${cat}`);
             }
@@ -177,6 +181,7 @@ jobs:
             }
 
             const count = markers.length;
+            const editTag = isEdit ? ' (edit)' : '';
             const catList = categories.map(c => `\`${c}\``).join(', ');
             const ssStatus = screenshotUrl
               ? `\n📷 [Screenshot attached](${screenshotUrl})`
@@ -186,12 +191,12 @@ jobs:
 
             const commentBody = isTrusted
               ? [
-                  `✅ **Parsed ${count} marker(s)** in ${catList}${ssStatus}`,
+                  `✅ **Parsed ${count} marker${editTag}** in ${catList}${ssStatus}`,
                   '',
-                  `🌟 **Auto-approved** — trusted contributor @${issueAuthor}. Ingestion will run automatically.`
+                  `🌟 **Auto-approved** — trusted contributor. Ingestion will run automatically.`
                 ].join('\n')
               : [
-                  `✅ **Parsed ${count} marker(s)** in ${catList}${ssStatus}`,
+                  `✅ **Parsed ${count} marker${editTag}** in ${catList}${ssStatus}`,
                   '',
                   'A maintainer will review this submission. To approve:',
                   '- Comment `/approve` to add the `approved` label',

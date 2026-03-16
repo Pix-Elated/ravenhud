@@ -43,7 +43,7 @@ var CATEGORIES = {
   expedition: { label: 'Expeditions', emoji: '\uD83E\uDDED', group: 'Exploration' },
   creature_spawn: { label: 'Elite Spawns', emoji: '\uD83D\uDC80', group: 'Exploration' },
   reputation_shiny: { label: 'Reputation (Shiny)', emoji: '\u2728', group: 'Reputation' },
-  npc_reputation: { label: 'Reputation (NPC)', emoji: '\uD83D\uDC64', group: 'Reputation' }
+  npc_reputation: { label: 'Reputation (NPC)', emoji: '\uD83D\uDCAC', group: 'Reputation' }
 };
 
 // Category groups for sidebar ordering
@@ -248,6 +248,9 @@ async function init() {
     visibility[key] = true;
   }
 
+  // Apply any locally-persisted edits before rendering
+  applyLocalEdits();
+
   buildSidebar();
   renderMarkers();
   updateStats();
@@ -404,6 +407,9 @@ function showDetail(m) {
     img.src = ssUrl;
     img.alt = m.name + ' screenshot';
     img.loading = 'lazy';
+    img.style.cursor = 'pointer';
+    img.title = 'Click to enlarge';
+    img.addEventListener('click', function () { openLightbox(ssUrl); });
     ssContainer.appendChild(img);
   }
 
@@ -416,6 +422,23 @@ function showDetail(m) {
   map.panTo(latlng);
 }
 
+// ---------------------------------------------------------------------------
+// Lightbox (click-to-zoom screenshots)
+// ---------------------------------------------------------------------------
+
+function openLightbox(imageUrl) {
+  var overlay = document.getElementById('lightbox-overlay');
+  var img = document.getElementById('lightbox-img');
+  img.src = imageUrl;
+  overlay.hidden = false;
+}
+
+function closeLightbox() {
+  var overlay = document.getElementById('lightbox-overlay');
+  overlay.hidden = true;
+  document.getElementById('lightbox-img').src = '';
+}
+
 function initDetailPanel() {
   document.getElementById('detail-close').addEventListener('click', function () {
     document.getElementById('detail-panel').hidden = true;
@@ -426,6 +449,13 @@ function initDetailPanel() {
     if (currentDetailMarker) {
       openModalForEdit(currentDetailMarker);
     }
+  });
+
+  // Lightbox close handlers
+  var lbOverlay = document.getElementById('lightbox-overlay');
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  lbOverlay.addEventListener('click', function (e) {
+    if (e.target === lbOverlay) closeLightbox();
   });
 }
 
@@ -789,8 +819,8 @@ function compressToWebP(blob) {
     img.onload = function () {
       URL.revokeObjectURL(objectUrl);
       var canvas = document.createElement('canvas');
-      // Cap at 1280px wide to keep size reasonable
-      var maxW = 1280;
+      // Match companion app: 600px wide, quality 0.55 — keeps base64 under GitHub limit
+      var maxW = 600;
       var w = img.width;
       var h = img.height;
       if (w > maxW) {
@@ -800,7 +830,7 @@ function compressToWebP(blob) {
       canvas.width = w;
       canvas.height = h;
       canvas.getContext('2d').drawImage(img, 0, 0, w, h);
-      var dataUrl = canvas.toDataURL('image/webp', 0.8);
+      var dataUrl = canvas.toDataURL('image/webp', 0.55);
       resolve(dataUrl);
     };
     img.onerror = function () {
@@ -865,6 +895,47 @@ function validateForm() {
   document.getElementById('btn-create-issue').disabled = !valid;
 }
 
+// ---------------------------------------------------------------------------
+// Local edit persistence (localStorage)
+// ---------------------------------------------------------------------------
+
+var LOCAL_EDITS_KEY = 'rhud_marker_edits';
+
+function getLocalEdits() {
+  try {
+    return JSON.parse(localStorage.getItem(LOCAL_EDITS_KEY) || '{}');
+  } catch (e) {
+    return {};
+  }
+}
+
+function saveLocalEdit(markerId, fields) {
+  var edits = getLocalEdits();
+  edits[markerId] = fields;
+  localStorage.setItem(LOCAL_EDITS_KEY, JSON.stringify(edits));
+}
+
+function applyLocalEdits() {
+  var edits = getLocalEdits();
+  var keys = Object.keys(edits);
+  if (keys.length === 0) return;
+
+  for (var m of allMarkers) {
+    if (edits[m.id]) {
+      var e = edits[m.id];
+      if (e.name) m.name = e.name;
+      if (e.x != null) m.x = e.x;
+      if (e.y != null) m.y = e.y;
+      if (e.description != null) m.description = e.description;
+      if (e.region != null) m.region = e.region;
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Submit / Edit
+// ---------------------------------------------------------------------------
+
 function submitToCorvid() {
   if (!discordUser || !submitCoords) return;
 
@@ -878,6 +949,8 @@ function submitToCorvid() {
   btn.disabled = true;
   btn.textContent = 'Submitting...';
 
+  var isEdit = modalMode === 'edit' && editingMarker;
+
   var markerPayload = {
     category: category,
     name: name,
@@ -888,12 +961,29 @@ function submitToCorvid() {
   if (description) markerPayload.description = description;
   if (region) markerPayload.region = region;
 
+  // For edits: include original ID and correction flag so ingestion updates in-place
+  if (isEdit) {
+    markerPayload.id = editingMarker.id;
+    markerPayload.correction = true;
+  }
+
   var body = {
     markers: [markerPayload],
     authorName: discordUser.globalName || discordUser.username,
     authorDiscordId: discordUser.id
   };
   if (pendingScreenshot) body.screenshot = pendingScreenshot;
+
+  // For edits: include original values so the issue can show what changed
+  if (isEdit) {
+    body.originalMarker = {
+      name: editingMarker.name,
+      x: editingMarker.x,
+      y: editingMarker.y,
+      description: editingMarker.description || '',
+      region: editingMarker.region || ''
+    };
+  }
 
   fetch(CORVID_API_URL + '/api/markers/submit', {
     method: 'POST',
@@ -909,6 +999,29 @@ function submitToCorvid() {
       if (result.ok && result.data.success) {
         btn.textContent = 'Submitted!';
         btn.classList.add('btn-success');
+
+        // Persist edit locally so the user sees their change immediately
+        if (isEdit) {
+          saveLocalEdit(editingMarker.id, {
+            name: name,
+            x: submitCoords.x,
+            y: submitCoords.y,
+            description: description,
+            region: region
+          });
+          // Apply to in-memory marker too
+          var m = allMarkers.find(function (mk) { return mk.id === editingMarker.id; });
+          if (m) {
+            m.name = name;
+            m.x = submitCoords.x;
+            m.y = submitCoords.y;
+            m.description = description;
+            m.region = region;
+          }
+          renderMarkers();
+          updateStats();
+        }
+
         setTimeout(function () { closeModal(); }, 1500);
       } else {
         throw new Error(result.data.error || 'Submission failed');
