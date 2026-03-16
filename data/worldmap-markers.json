@@ -1721,13 +1721,13 @@
   },
   {
     "id": "npc_reputation_4281_2722",
-    "name": "Anandine - Second Floor",
+    "name": "Anandine",
     "category": "npc_reputation",
     "x": 4281,
     "y": 2722,
     "floor": "surface",
     "region": "",
-    "description": "Gives 10 rep. Crafts Blessed Hood - 500 Trollkin Totems, 250 Wraith Dust, 2000 Gold",
+    "description": "Gives 10 rep. Second Floor. Crafts Blessed Hood - 500 Trollkin Totems, 250 Wraith Dust, 2000 Gold",
     "source": "base",
     "icon": "npc_reputation.webp"
   },
