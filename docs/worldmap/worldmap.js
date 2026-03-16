@@ -192,6 +192,7 @@ function updateAuthUI() {
   var userName = document.getElementById('discord-username');
   var submitBtn = document.getElementById('btn-submit');
   var editBtn = document.getElementById('btn-suggest-edit');
+  var deleteBtn = document.getElementById('btn-suggest-delete');
 
   if (discordUser) {
     loginBtn.style.display = 'none';
@@ -203,6 +204,10 @@ function updateAuthUI() {
       editBtn.disabled = false;
       editBtn.title = '';
     }
+    if (deleteBtn) {
+      deleteBtn.disabled = false;
+      deleteBtn.title = '';
+    }
   } else {
     loginBtn.style.display = '';
     userDisplay.style.display = 'none';
@@ -211,6 +216,10 @@ function updateAuthUI() {
     if (editBtn) {
       editBtn.disabled = true;
       editBtn.title = 'Login with Discord to submit';
+    }
+    if (deleteBtn) {
+      deleteBtn.disabled = true;
+      deleteBtn.title = 'Login with Discord to suggest deletion';
     }
   }
 }
@@ -361,6 +370,7 @@ function renderMarkers() {
         }).openTooltip();
       });
       mrk.on('click', function () {
+        setSelectedMarker(mrk);
         showDetail(mk);
       });
     })(m, marker);
@@ -375,6 +385,20 @@ function renderMarkers() {
 // ---------------------------------------------------------------------------
 
 var currentDetailMarker = null;
+var selectedLeafletMarker = null;
+
+function setSelectedMarker(leafletMarker) {
+  // Remove glow from previous selection
+  if (selectedLeafletMarker) {
+    var prevEl = selectedLeafletMarker.getElement();
+    if (prevEl) prevEl.classList.remove('marker-selected');
+  }
+  selectedLeafletMarker = leafletMarker;
+  if (leafletMarker) {
+    var el = leafletMarker.getElement();
+    if (el) el.classList.add('marker-selected');
+  }
+}
 
 function showDetail(m) {
   currentDetailMarker = m;
@@ -548,6 +572,7 @@ function initDetailPanel() {
   document.getElementById('detail-close').addEventListener('click', function () {
     document.getElementById('detail-panel').hidden = true;
     currentDetailMarker = null;
+    setSelectedMarker(null);
   });
 
   document.getElementById('btn-suggest-edit').addEventListener('click', function () {
@@ -556,7 +581,75 @@ function initDetailPanel() {
     }
   });
 
+  document.getElementById('btn-suggest-delete').addEventListener('click', function () {
+    if (!currentDetailMarker) return;
+    if (!discordUser) {
+      startDiscordLogin();
+      return;
+    }
+    suggestDeletion(currentDetailMarker);
+  });
+
   initLightbox();
+}
+
+function suggestDeletion(marker) {
+  var btn = document.getElementById('btn-suggest-delete');
+  var originalText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Submitting...';
+
+  var body = {
+    markers: [{
+      id: marker.id,
+      deletion: true,
+      category: marker.category,
+      name: marker.name,
+      x: marker.x,
+      y: marker.y,
+      floor: marker.floor || 'surface',
+      region: marker.region || '',
+      description: ''
+    }],
+    authorName: discordUser.globalName || discordUser.username,
+    authorDiscordId: discordUser.id
+  };
+
+  fetch(CORVID_API_URL + '/api/markers/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  })
+    .then(function (res) {
+      return res.json().then(function (data) {
+        return { ok: res.ok, data: data };
+      });
+    })
+    .then(function (result) {
+      if (result.ok && result.data.success) {
+        btn.textContent = 'Submitted!';
+        btn.style.color = 'var(--success)';
+        btn.style.borderColor = 'var(--success)';
+        setTimeout(function () {
+          btn.textContent = originalText;
+          btn.style.color = '';
+          btn.style.borderColor = '';
+          btn.disabled = false;
+        }, 3000);
+      } else {
+        throw new Error(result.data.error || 'Failed');
+      }
+    })
+    .catch(function (err) {
+      console.error('Deletion suggestion error:', err);
+      btn.textContent = 'Error — try again';
+      btn.style.color = 'var(--danger)';
+      setTimeout(function () {
+        btn.textContent = originalText;
+        btn.style.color = '';
+        btn.disabled = false;
+      }, 3000);
+    });
 }
 
 // ---------------------------------------------------------------------------
@@ -818,6 +911,7 @@ function onMarkerItemClick(e) {
 
   var lm = leafletMarkers.get(id);
   if (lm) {
+    setSelectedMarker(lm);
     clusterGroup.zoomToShowLayer(lm, function () {
       lm.openTooltip();
     });
