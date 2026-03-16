@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RavenHUD - Interactive World Map</title>
+  <meta name="description" content="Interactive community world map for RavenQuest. Browse markers, find NPCs, events, and contribute your own discoveries." />
+
+  <!-- Vendored Leaflet -->
+  <link rel="stylesheet" href="../js/lib/leaflet.css" />
+  <link rel="stylesheet" href="../js/lib/MarkerCluster.css" />
+  <link rel="stylesheet" href="../js/lib/MarkerCluster.Default.css" />
+
+  <link rel="stylesheet" href="worldmap.css" />
+  <link rel="icon" href="../assets/favicon.png" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="map-header">
+    <a href="../" class="header-brand">
+      <img src="../assets/logo.png" alt="RavenHUD" class="header-logo" />
+      <span class="header-title">World Map</span>
+    </a>
+    <div class="header-actions">
+      <button id="btn-discord-login" class="btn-discord" title="Login with Discord">Login with Discord</button>
+      <div id="discord-user-display" class="discord-user" style="display:none">
+        <span id="discord-username" class="discord-name"></span>
+        <button id="btn-discord-logout" class="btn-logout" title="Logout" aria-label="Logout">&times;</button>
+      </div>
+      <button id="btn-submit" class="btn-submit" title="Submit a marker">+ Submit Marker</button>
+      <a href="../" class="btn-back">Back to Site</a>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="map-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h2>Categories</h2>
+        <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle sidebar" aria-label="Toggle sidebar">◀</button>
+      </div>
+
+      <div class="sidebar-body" id="sidebar-body">
+        <!-- Search -->
+        <div class="search-box">
+          <input type="text" id="search-input" placeholder="Search markers..." aria-label="Search markers" />
+        </div>
+
+        <!-- Category groups will be built by JS -->
+        <div id="category-groups"></div>
+
+        <!-- Stats -->
+        <div class="sidebar-stats" id="sidebar-stats"></div>
+      </div>
+    </aside>
+
+    <!-- Map -->
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <!-- Marker Modal (Submit new / Suggest edit) -->
+  <div class="modal-overlay" id="marker-modal" hidden>
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="modal-title">Submit a Marker</h3>
+        <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-info" id="modal-info">
+          Click on the map to place your marker, then fill in the details below.
+          Submissions are created as GitHub Issues and reviewed before being added.
+        </p>
+
+        <label>Submitting as</label>
+        <div class="author-verified" id="submit-author-display"></div>
+
+        <label for="submit-category">Category <span class="required">*</span></label>
+        <select id="submit-category" required>
+          <option value="">-- Select --</option>
+          <option value="dynamic_event">Dynamic Event</option>
+          <option value="creature_spawn">Elite Spawn</option>
+          <option value="expedition">Expedition</option>
+          <option value="reputation_shiny">Reputation (Shiny)</option>
+          <option value="npc_reputation">Reputation (NPC)</option>
+        </select>
+
+        <label for="submit-name">Marker Name <span class="required">*</span></label>
+        <input type="text" id="submit-name" placeholder="e.g. Captain Hagan" required />
+
+        <label for="submit-description">Description</label>
+        <textarea id="submit-description" rows="3" placeholder="Optional details..."></textarea>
+
+        <label for="submit-region">Region</label>
+        <input type="text" id="submit-region" placeholder="e.g. Kingswood" />
+
+        <label>Position <span class="required">*</span></label>
+        <div class="coord-display" id="submit-coords">Click on the map to set position</div>
+
+        <label>Screenshot</label>
+        <div class="screenshot-area" id="screenshot-area">
+          <button type="button" class="btn-paste" id="btn-paste-screenshot">Paste from Clipboard</button>
+          <div id="screenshot-preview" class="screenshot-preview" hidden>
+            <img id="screenshot-preview-img" alt="Screenshot preview" />
+            <button type="button" class="btn-remove-screenshot" id="btn-remove-screenshot" aria-label="Remove">&times;</button>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button class="btn-primary" id="btn-create-issue" disabled>Create GitHub Issue</button>
+          <button class="btn-secondary" id="btn-cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Marker Detail Panel -->
+  <div class="detail-panel" id="detail-panel" hidden>
+    <button class="detail-close" id="detail-close" aria-label="Close">&times;</button>
+    <h3 id="detail-name"></h3>
+    <div class="detail-meta">
+      <span class="detail-category" id="detail-category"></span>
+      <span class="detail-coords" id="detail-coords"></span>
+    </div>
+    <div class="detail-region" id="detail-region"></div>
+    <p id="detail-description"></p>
+    <div id="detail-screenshot"></div>
+    <div class="detail-source" id="detail-source"></div>
+    <button class="btn-suggest-edit" id="btn-suggest-edit">Suggest Edit</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/lib/leaflet.js"></script>
+  <script src="../js/lib/leaflet-rastercoords.js"></script>
+  <script src="../js/lib/leaflet.markercluster.js"></script>
+  <script src="worldmap.js"></script>
+</body>
+</html>
