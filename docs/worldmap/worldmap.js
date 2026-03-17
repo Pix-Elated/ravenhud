@@ -52,6 +52,21 @@ var CATEGORIES = {
 // Category groups for sidebar ordering
 var GROUP_ORDER = ['Events', 'Exploration', 'Reputation'];
 
+/**
+ * POST to a Corvid API endpoint. Returns { ok, data } or throws.
+ */
+function fetchCorvidAPI(endpoint, body) {
+  return fetch(CORVID_API_URL + endpoint, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body)
+  }).then(function (res) {
+    return res.json().then(function (data) {
+      return { ok: res.ok, data: data };
+    });
+  });
+}
+
 // ---------------------------------------------------------------------------
 // State
 // ---------------------------------------------------------------------------
@@ -842,16 +857,7 @@ function suggestDeletion(marker) {
     authorDiscordId: discordUser.id
   };
 
-  fetch(CORVID_API_URL + '/api/markers/submit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
-  })
-    .then(function (res) {
-      return res.json().then(function (data) {
-        return { ok: res.ok, data: data };
-      });
-    })
+  fetchCorvidAPI('/api/markers/submit', body)
     .then(function (result) {
       if (result.ok && result.data.success) {
         btn.textContent = 'Submitted!';
@@ -1536,16 +1542,7 @@ function submitToCorvid() {
     };
   }
 
-  fetch(CORVID_API_URL + '/api/markers/submit', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
-  })
-    .then(function (res) {
-      return res.json().then(function (data) {
-        return { ok: res.ok, data: data };
-      });
-    })
+  fetchCorvidAPI('/api/markers/submit', body)
     .then(function (result) {
       if (result.ok && result.data.success) {
         btn.textContent = 'Submitted!';
