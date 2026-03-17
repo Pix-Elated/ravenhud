@@ -164,20 +164,17 @@ jobs:
             git push origin "$BRANCH"
             gh pr create --base master --head "$BRANCH" \
               --title "$TITLE" \
-              --body "$(cat <<PREOF
-## Summary
-- **New images:** $NEW_IMAGES
-- Automated nightly sync
+              --body "## Summary
+          - **New images:** $NEW_IMAGES
+          - Automated nightly sync
 
-## Sources
-- RavenCards: Ravendawn CDN
-- Cosmetics: Immutable zkEVM blockchain metadata
-- Munks/Moas/Land: RavenQuest base_uri + Immutable zkEVM
-- Items/Materials/Trophies: Ravendawn game API
+          ## Sources
+          - RavenCards: Ravendawn CDN
+          - Cosmetics: Immutable zkEVM blockchain metadata
+          - Munks/Moas/Land: RavenQuest base_uri + Immutable zkEVM
+          - Items/Materials/Trophies: Ravendawn game API
 
-Merge to publish — app downloads updated archives automatically.
-PREOF
-              )"
+          Merge to publish -- app downloads updated archives automatically."
             echo "Created new PR on branch $BRANCH"
           fi
         env:
