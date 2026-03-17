@@ -312,6 +312,14 @@ function showIdentityPrompt() {
       var name = charInput.value.trim();
       var guild = guildInput.value.trim();
       overlay.remove();
+      // Log identity to Corvid for moderation tracking
+      try {
+        fetch(CORVID_API_URL + '/api/bans/identity-log', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ characterName: name, guildTag: guild, timestamp: new Date().toISOString() })
+        }).catch(function () {});
+      } catch (e) { /* silent */ }
       resolve({ characterName: name, guildTag: guild });
     });
 
