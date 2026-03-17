@@ -155,7 +155,7 @@ function handleOAuthCallback() {
       if (!res.ok) throw new Error('User fetch failed: ' + res.status);
       return res.json();
     })
-    .then(function (user) {
+    .then(async function (user) {
       discordUser = {
         id: user.id,
         username: user.username,
@@ -163,6 +163,14 @@ function handleOAuthCallback() {
         avatar: user.avatar
       };
       localStorage.setItem('discord_user', JSON.stringify(discordUser));
+
+      // Check Discord ID against ban list immediately after login
+      var ban = await checkAllBans(null, null);
+      if (ban) {
+        showBanScreen(ban);
+        return false;
+      }
+
       updateAuthUI();
       return true;
     })
@@ -418,23 +426,11 @@ function updateAuthUI() {
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
-  loadSavedDiscordUser();
-
-  // Check for OAuth callback
-  await handleOAuthCallback();
-
-  // Check Discord ban first (if logged in)
-  var discordBan = await checkAllBans(null, null);
-  if (discordBan) {
-    showBanScreen(discordBan);
-    return;
-  }
-
-  // Identity prompt — ask for character name + guild tag (cached 7 days)
+  // Identity prompt FIRST — character name + guild tag (cached 7 days)
   var identity = getSavedIdentity();
   if (!identity) {
     identity = await showIdentityPrompt();
-    if (!identity) return; // shouldn't happen but guard
+    if (!identity) return;
     saveIdentity(identity.characterName, identity.guildTag);
   }
 
@@ -444,6 +440,19 @@ async function init() {
     localStorage.removeItem(IDENTITY_KEY);
     showBanScreen(identityBan);
     return;
+  }
+
+  // Discord login is separate — restore saved session and handle OAuth callback
+  loadSavedDiscordUser();
+  await handleOAuthCallback();
+
+  // If they just connected Discord, check Discord ID ban
+  if (discordUser) {
+    var discordBan = await checkAllBans(null, null);
+    if (discordBan) {
+      showBanScreen(discordBan);
+      return;
+    }
   }
 
   initMap();
