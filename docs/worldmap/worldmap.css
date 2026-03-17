@@ -931,3 +931,141 @@ body {
 .lightbox-close:hover {
   opacity: 1;
 }
+
+/* ============================================================
+   Ban Overlay — Hall of Shame
+   ============================================================ */
+
+#ban-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff41;
+  user-select: none;
+  cursor: not-allowed;
+}
+
+/* CRT scanlines */
+#ban-overlay::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.15) 2px,
+    rgba(0, 0, 0, 0.15) 4px
+  );
+  pointer-events: none;
+  z-index: 100001;
+}
+
+.ban-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 560px;
+  padding: 32px;
+  text-align: center;
+}
+
+.ban-raven {
+  font-size: 80px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 12px rgba(0, 255, 65, 0.6));
+}
+
+.ban-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff3333;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.7), 0 0 40px rgba(255, 0, 0, 0.3);
+  animation: ban-pulse 1.5s ease-in-out infinite;
+  letter-spacing: 8px;
+  margin-bottom: 6px;
+}
+
+@keyframes ban-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.03); }
+}
+
+.ban-subtitle {
+  font-size: 16px;
+  color: #00cc33;
+  margin-bottom: 28px;
+  text-shadow: 0 0 6px rgba(0, 204, 51, 0.5);
+  font-style: italic;
+}
+
+.ban-callout {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff3333;
+  padding: 10px 24px;
+  margin-bottom: 24px;
+}
+
+.ban-label {
+  font-size: 11px;
+  color: #ff6666;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.ban-name {
+  font-size: 20px;
+  color: #ff3333;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+.ban-reason {
+  font-size: 12px;
+  color: #ff9999;
+  margin-top: 4px;
+}
+
+.ban-message {
+  line-height: 1.6;
+  font-size: 13px;
+  color: #00cc33;
+}
+
+.ban-message p {
+  margin-bottom: 14px;
+}
+
+.ban-revoked {
+  color: #ff3333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ban-message ul {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+}
+
+.ban-message li {
+  margin-bottom: 6px;
+}
+
+.ban-message li::before {
+  content: '> ';
+  color: #00ff41;
+}
+
+.ban-footer {
+  margin-top: 28px;
+  font-size: 10px;
+  color: #006622;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}

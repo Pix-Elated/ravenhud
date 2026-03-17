@@ -17,6 +17,9 @@
 var DATA_URL =
   'https://raw.githubusercontent.com/Pix-Elated/ravenhud/master/data/worldmap-markers.json';
 
+var BAN_LIST_URL =
+  'https://raw.githubusercontent.com/Pix-Elated/ravenhud/master/data/hall-of-shame.json';
+
 var TILE_URL = 'https://assets.ravenquest.tools/map/{z}/{x}/{y}.png';
 
 var MAP_CONFIG = {
@@ -186,6 +189,78 @@ function logoutDiscord() {
   updateAuthUI();
 }
 
+// ---------------------------------------------------------------------------
+// Ban List
+// ---------------------------------------------------------------------------
+
+var banListCache = null;
+
+async function fetchBanList() {
+  if (banListCache) return banListCache;
+  try {
+    var res = await fetch(BAN_LIST_URL);
+    if (!res.ok) return [];
+    var data = await res.json();
+    banListCache = data.entries || [];
+    return banListCache;
+  } catch (e) {
+    console.warn('Failed to fetch ban list:', e);
+    return [];
+  }
+}
+
+async function checkBanStatus() {
+  if (!discordUser) return null;
+  var entries = await fetchBanList();
+  for (var i = 0; i < entries.length; i++) {
+    var entry = entries[i];
+    if (entry.type === 'discord' && entry.name.trim() === discordUser.id) {
+      return entry;
+    }
+  }
+  return null;
+}
+
+function showBanScreen(entry) {
+  // Remove any existing ban overlay
+  var existing = document.getElementById('ban-overlay');
+  if (existing) existing.remove();
+
+  var overlay = document.createElement('div');
+  overlay.id = 'ban-overlay';
+  overlay.innerHTML =
+    '<div class="ban-modal">' +
+    '<div class="ban-raven">&#x1F426;&#x200D;&#x2B1B;</div>' +
+    '<div class="ban-title">AH AH AH!</div>' +
+    '<div class="ban-subtitle">You didn\'t say the magic word...</div>' +
+    '<div class="ban-callout">' +
+    '<div class="ban-label">BANNED USER DETECTED</div>' +
+    '<div class="ban-name">' + escapeHtml(discordUser.globalName || discordUser.username) + '</div>' +
+    '<div class="ban-reason">Reason: ' + escapeHtml(entry.reason) + '</div>' +
+    '</div>' +
+    '<div class="ban-message">' +
+    '<p class="ban-revoked">Your access to RavenHUD has been revoked.</p>' +
+    '<p>You have two options:</p>' +
+    '<ul>' +
+    '<li>Directly apologize to the creator for what you have done, admit you are a loser with no real social skills, and promise to never do it again.</li>' +
+    '<li>Close this tab &mdash; you aren\'t welcome here</li>' +
+    '</ul>' +
+    '</div>' +
+    '<div class="ban-footer">Hall of Shame &bull; RavenHUD</div>' +
+    '</div>';
+
+  document.body.appendChild(overlay);
+
+  // Disable all interaction behind the overlay
+  logoutDiscord();
+}
+
+function escapeHtml(str) {
+  var div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
 function updateAuthUI() {
   var loginBtn = document.getElementById('btn-discord-login');
   var userDisplay = document.getElementById('discord-user-display');
@@ -235,6 +310,13 @@ async function init() {
 
   // Check for OAuth callback
   await handleOAuthCallback();
+
+  // Check ban status before anything else
+  var banEntry = await checkBanStatus();
+  if (banEntry) {
+    showBanScreen(banEntry);
+    return; // Don't initialize anything else
+  }
 
   initMap();
   initSidebar();
