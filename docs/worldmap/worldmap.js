@@ -190,10 +190,12 @@ function logoutDiscord() {
 }
 
 // ---------------------------------------------------------------------------
-// Ban List
+// Ban List & Identity
 // ---------------------------------------------------------------------------
 
 var banListCache = null;
+var IDENTITY_KEY = 'rhud_identity';
+var IDENTITY_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 
 async function fetchBanList() {
   if (banListCache) return banListCache;
@@ -209,16 +211,104 @@ async function fetchBanList() {
   }
 }
 
-async function checkBanStatus() {
-  if (!discordUser) return null;
+function getSavedIdentity() {
+  try {
+    var raw = localStorage.getItem(IDENTITY_KEY);
+    if (!raw) return null;
+    var identity = JSON.parse(raw);
+    if (Date.now() - identity.timestamp > IDENTITY_TTL_MS) {
+      localStorage.removeItem(IDENTITY_KEY);
+      return null;
+    }
+    return identity;
+  } catch (e) {
+    localStorage.removeItem(IDENTITY_KEY);
+    return null;
+  }
+}
+
+function saveIdentity(characterName, guildTag) {
+  localStorage.setItem(IDENTITY_KEY, JSON.stringify({
+    characterName: characterName,
+    guildTag: guildTag,
+    timestamp: Date.now()
+  }));
+}
+
+/**
+ * Check Discord ID, character name, and guild tag against the ban list.
+ * Returns the matching ban entry or null.
+ */
+async function checkAllBans(characterName, guildTag) {
   var entries = await fetchBanList();
+  var charLower = (characterName || '').trim().toLowerCase();
+  var guildLower = (guildTag || '').trim().toLowerCase();
+
   for (var i = 0; i < entries.length; i++) {
     var entry = entries[i];
-    if (entry.type === 'discord' && entry.name.trim() === discordUser.id) {
+    var entryLower = entry.name.trim().toLowerCase();
+
+    // Discord ID match
+    if (entry.type === 'discord' && discordUser && entry.name.trim() === discordUser.id) {
+      return entry;
+    }
+    // Character name match
+    if (entry.type === 'character' && charLower && charLower === entryLower) {
+      return entry;
+    }
+    // Guild tag match
+    if (entry.type === 'guild' && guildLower && guildLower === entryLower) {
       return entry;
     }
   }
   return null;
+}
+
+/**
+ * Show the identity prompt (blurred background). Returns a promise that
+ * resolves with { characterName, guildTag } or null if cancelled.
+ */
+function showIdentityPrompt() {
+  return new Promise(function (resolve) {
+    var overlay = document.createElement('div');
+    overlay.id = 'identity-overlay';
+    overlay.innerHTML =
+      '<div class="identity-modal">' +
+      '<div class="identity-title">Welcome to the RavenHUD World Map</div>' +
+      '<div class="identity-subtitle">Please identify yourself to continue</div>' +
+      '<label class="identity-label">Character Name</label>' +
+      '<input type="text" id="identity-char" class="identity-input" placeholder="Your in-game name" maxlength="30" />' +
+      '<label class="identity-label">Guild Tag</label>' +
+      '<input type="text" id="identity-guild" class="identity-input" placeholder="e.g. RH, GG, CT (leave blank if none)" maxlength="10" />' +
+      '<button id="identity-submit" class="identity-btn" disabled>Enter Map</button>' +
+      '</div>';
+
+    document.body.appendChild(overlay);
+
+    var charInput = document.getElementById('identity-char');
+    var guildInput = document.getElementById('identity-guild');
+    var submitBtn = document.getElementById('identity-submit');
+
+    charInput.addEventListener('input', function () {
+      submitBtn.disabled = !charInput.value.trim();
+    });
+
+    charInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && charInput.value.trim()) submitBtn.click();
+    });
+    guildInput.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && charInput.value.trim()) submitBtn.click();
+    });
+
+    submitBtn.addEventListener('click', function () {
+      var name = charInput.value.trim();
+      var guild = guildInput.value.trim();
+      overlay.remove();
+      resolve({ characterName: name, guildTag: guild });
+    });
+
+    charInput.focus();
+  });
 }
 
 function showBanScreen(entry) {
@@ -311,11 +401,27 @@ async function init() {
   // Check for OAuth callback
   await handleOAuthCallback();
 
-  // Check ban status before anything else
-  var banEntry = await checkBanStatus();
-  if (banEntry) {
-    showBanScreen(banEntry);
-    return; // Don't initialize anything else
+  // Check Discord ban first (if logged in)
+  var discordBan = await checkAllBans(null, null);
+  if (discordBan) {
+    showBanScreen(discordBan);
+    return;
+  }
+
+  // Identity prompt — ask for character name + guild tag (cached 7 days)
+  var identity = getSavedIdentity();
+  if (!identity) {
+    identity = await showIdentityPrompt();
+    if (!identity) return; // shouldn't happen but guard
+    saveIdentity(identity.characterName, identity.guildTag);
+  }
+
+  // Check character name + guild tag against ban list
+  var identityBan = await checkAllBans(identity.characterName, identity.guildTag);
+  if (identityBan) {
+    localStorage.removeItem(IDENTITY_KEY);
+    showBanScreen(identityBan);
+    return;
   }
 
   initMap();

@@ -192,6 +192,18 @@
       "name": "459883990149496862",
       "reason": "Unhinged behavior, Financial abuse of community",
       "added": "2026-02-07"
+    },
+    {
+      "type": "guild",
+      "name": "GG",
+      "reason": "Guild-wide ban",
+      "added": "2026-03-17"
+    },
+    {
+      "type": "guild",
+      "name": "CT",
+      "reason": "Guild-wide ban",
+      "added": "2026-03-17"
     }
   ]
 }
