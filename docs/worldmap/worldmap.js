@@ -347,7 +347,7 @@ function showBanScreen(entry) {
     '<div class="ban-subtitle">You didn\'t say the magic word...</div>' +
     '<div class="ban-callout">' +
     '<div class="ban-label">BANNED USER DETECTED</div>' +
-    '<div class="ban-name">' + escapeHtml(discordUser.globalName || discordUser.username) + '</div>' +
+    '<div class="ban-name">' + escapeHtml(entry.name) + '</div>' +
     '<div class="ban-reason">Reason: ' + escapeHtml(entry.reason) + '</div>' +
     '</div>' +
     '<div class="ban-message">' +
