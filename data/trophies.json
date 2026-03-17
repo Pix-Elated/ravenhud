@@ -10,7 +10,11 @@
       "id": "arachnid_trophy",
       "name": "Arachnid Trophy",
       "creature": "Spiders",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Arthropods",
       "type": "Creature Trophies",
       "bonuses": [
@@ -24,7 +28,11 @@
       "id": "chainwraith_trophy",
       "name": "Chainwraith Trophy",
       "creature": "Chainwraiths",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Undeads",
       "type": "Creature Trophies",
       "bonuses": [
@@ -38,7 +46,11 @@
       "id": "crowmaiden_trophy",
       "name": "Crowmaiden Trophy",
       "creature": "Crowmaidens",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humanoids",
       "type": "Creature Trophies",
       "bonuses": [
@@ -52,7 +64,11 @@
       "id": "demon_trophy",
       "name": "Demon Trophy",
       "creature": "Demons",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Outsiders",
       "type": "Creature Trophies",
       "bonuses": [
@@ -66,7 +82,11 @@
       "id": "direhorn_drake_trophy",
       "name": "Direhorn Drake Trophy",
       "creature": "Direhorn Drakes",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Draconics",
       "type": "Creature Trophies",
       "bonuses": [
@@ -80,7 +100,11 @@
       "id": "djinn_trophy",
       "name": "Djinn Trophy",
       "creature": "Djinns",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Outsiders",
       "type": "Creature Trophies",
       "bonuses": [
@@ -94,7 +118,11 @@
       "id": "dwarf_trophy",
       "name": "Dwarf Trophy",
       "creature": "Dwarves",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -108,7 +136,11 @@
       "id": "elf_trophy",
       "name": "Elf Trophy",
       "creature": "Elves",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -122,7 +154,11 @@
       "id": "emberscale_drake_trophy",
       "name": "Emberscale Drake Trophy",
       "creature": "Emberscale Drakes",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Draconics",
       "type": "Creature Trophies",
       "bonuses": [
@@ -136,7 +172,11 @@
       "id": "fox_trophy",
       "name": "Fox Trophy",
       "creature": "Foxes",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Beasts",
       "type": "Creature Trophies",
       "bonuses": [
@@ -150,7 +190,11 @@
       "id": "froll_trophy",
       "name": "Froll Trophy",
       "creature": "Frolls",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humanoids",
       "type": "Creature Trophies",
       "bonuses": [
@@ -164,7 +208,11 @@
       "id": "frostbound_drake_trophy",
       "name": "Frostbound Drake Trophy",
       "creature": "Frostbound Drakes",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Draconics",
       "type": "Creature Trophies",
       "bonuses": [
@@ -178,7 +226,11 @@
       "id": "frostrisen_trophy",
       "name": "Frostrisen Trophy",
       "creature": "Frostrisens",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Undeads",
       "type": "Creature Trophies",
       "bonuses": [
@@ -192,7 +244,11 @@
       "id": "fungi_trophy",
       "name": "Fungi Trophy",
       "creature": "Fungi",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Naturals",
       "type": "Creature Trophies",
       "bonuses": [
@@ -206,7 +262,11 @@
       "id": "gazer_trophy",
       "name": "Gazer Trophy",
       "creature": "Gazers",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Outsiders",
       "type": "Creature Trophies",
       "bonuses": [
@@ -220,7 +280,11 @@
       "id": "ghaz_trophy",
       "name": "Ghaz Trophy",
       "creature": "Ghaz",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -234,7 +298,11 @@
       "id": "goblin_trophy",
       "name": "Goblin Trophy",
       "creature": "Goblins",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Goblinoids",
       "type": "Creature Trophies",
       "bonuses": [
@@ -248,7 +316,11 @@
       "id": "hookmask_trophy",
       "name": "Hookmask Trophy",
       "creature": "Hookmasks",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -262,7 +334,11 @@
       "id": "iceforge_dwarf_trophy",
       "name": "Iceforge Dwarf Trophy",
       "creature": "Iceforge Dwarves",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -276,7 +352,11 @@
       "id": "jackal_trophy",
       "name": "Jackal Trophy",
       "creature": "Jackals",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Beasts",
       "type": "Creature Trophies",
       "bonuses": [
@@ -290,7 +370,11 @@
       "id": "kaiman_trophy",
       "name": "Kaiman Trophy",
       "creature": "Kaimans",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Reptiles",
       "type": "Creature Trophies",
       "bonuses": [
@@ -304,7 +388,11 @@
       "id": "mindslave_trophy",
       "name": "Mindslave Trophy",
       "creature": "Mindslaves",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -318,7 +406,11 @@
       "id": "minotaur_trophy",
       "name": "Minotaur Trophy",
       "creature": "Minotaurs",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humanoids",
       "type": "Creature Trophies",
       "bonuses": [
@@ -332,7 +424,11 @@
       "id": "morningstar_trophy",
       "name": "Morningstar Trophy",
       "creature": "Morningstars",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -346,7 +442,11 @@
       "id": "orc_trophy",
       "name": "Orc Trophy",
       "creature": "Orcs",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humanoids",
       "type": "Creature Trophies",
       "bonuses": [
@@ -360,7 +460,11 @@
       "id": "pirate_trophy",
       "name": "Pirate Trophy",
       "creature": "Pirates",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -374,7 +478,11 @@
       "id": "pummeldillos_trophy",
       "name": "Pummeldillos Trophy",
       "creature": "Pummeldillos",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Reptiles",
       "type": "Creature Trophies",
       "bonuses": [
@@ -388,7 +496,11 @@
       "id": "rat_trophy",
       "name": "Rat Trophy",
       "creature": "Rats",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humanoids",
       "type": "Creature Trophies",
       "bonuses": [
@@ -402,7 +514,11 @@
       "id": "rohna_brotherhood_trophy",
       "name": "Rohna Brotherhood Trophy",
       "creature": "Rohna Brotherhoods",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -416,7 +532,11 @@
       "id": "saltdusk_trophy",
       "name": "Saltdusk Trophy",
       "creature": "Saltdusks",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -430,7 +550,11 @@
       "id": "saurian_trophy",
       "name": "Saurian Trophy",
       "creature": "Saurians",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Reptiles",
       "type": "Creature Trophies",
       "bonuses": [
@@ -444,7 +568,11 @@
       "id": "shark_trophy",
       "name": "Shark Trophy",
       "creature": "Sharks",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Aquatics",
       "type": "Creature Trophies",
       "bonuses": [
@@ -458,7 +586,11 @@
       "id": "skeleton_trophy",
       "name": "Skeleton Trophy",
       "creature": "Skeletons",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Undeads",
       "type": "Creature Trophies",
       "bonuses": [
@@ -472,7 +604,11 @@
       "id": "skorn_trophy",
       "name": "Skorn Trophy",
       "creature": "Skorns",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -486,7 +622,11 @@
       "id": "spellslayer_drake_trophy",
       "name": "Spellslayer Drake Trophy",
       "creature": "Spellslayer Drakes",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Draconics",
       "type": "Creature Trophies",
       "bonuses": [
@@ -500,7 +640,11 @@
       "id": "sporewalker_trophy",
       "name": "Sporewalker Trophy",
       "creature": "Sporewalkers",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Mutants",
       "type": "Creature Trophies",
       "bonuses": [
@@ -514,7 +658,11 @@
       "id": "toad_trophy",
       "name": "Toad Trophy",
       "creature": "Toads",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Amphibians",
       "type": "Creature Trophies",
       "bonuses": [
@@ -528,7 +676,11 @@
       "id": "tortoise_trophy",
       "name": "Tortoise Trophy",
       "creature": "Tortoises",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Reptiles",
       "type": "Creature Trophies",
       "bonuses": [
@@ -542,7 +694,11 @@
       "id": "troll_trophy",
       "name": "Troll Trophy",
       "creature": "Trolls",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Giants",
       "type": "Creature Trophies",
       "bonuses": [
@@ -556,7 +712,11 @@
       "id": "trunk_trophy",
       "name": "Trunk Trophy",
       "creature": "Trunks",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Naturals",
       "type": "Creature Trophies",
       "bonuses": [
@@ -570,7 +730,11 @@
       "id": "vampire_trophy",
       "name": "Vampire Trophy",
       "creature": "Vampires",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Undeads",
       "type": "Creature Trophies",
       "bonuses": [
@@ -584,7 +748,11 @@
       "id": "venomfang_drake_trophy",
       "name": "Venomfang Drake Trophy",
       "creature": "Venomfangs",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Reptiles",
       "type": "Creature Trophies",
       "bonuses": [
@@ -598,7 +766,11 @@
       "id": "warhog_trophy",
       "name": "Warhog Trophy",
       "creature": "Warhogs",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humanoids",
       "type": "Creature Trophies",
       "bonuses": [
@@ -612,7 +784,11 @@
       "id": "winterborn_trophy",
       "name": "Winterborn Trophy",
       "creature": "Winterborn",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Humans",
       "type": "Creature Trophies",
       "bonuses": [
@@ -626,7 +802,11 @@
       "id": "yeti_trophy",
       "name": "Yeti Trophy",
       "creature": "Yetis",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Giants",
       "type": "Creature Trophies",
       "bonuses": [
@@ -640,7 +820,11 @@
       "id": "zorian_trophy",
       "name": "Zorian Trophy",
       "creature": "Zorians",
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "category": "Aquatics",
       "type": "Creature Trophies",
       "bonuses": [
@@ -661,7 +845,9 @@
       ],
       "creature": "Ocean",
       "category": "Giant Jellyfish, Anglerfish, Sharks, Piranha Swarms",
-      "tiers": ["Base"],
+      "tiers": [
+        "Base"
+      ],
       "type": "Ocean Trophies"
     },
     {
@@ -675,7 +861,9 @@
       ],
       "creature": "Ocean",
       "category": "Narwhals, Vampire Squids",
-      "tiers": ["Base"],
+      "tiers": [
+        "Base"
+      ],
       "type": "Ocean Trophies"
     },
     {
@@ -689,7 +877,9 @@
       ],
       "creature": "Ocean",
       "category": "Great White Sharks",
-      "tiers": ["Base"],
+      "tiers": [
+        "Base"
+      ],
       "type": "Ocean Trophies"
     },
     {
@@ -707,7 +897,9 @@
       ],
       "creature": "Ocean",
       "category": "Orcas",
-      "tiers": ["Base"],
+      "tiers": [
+        "Base"
+      ],
       "type": "Ocean Trophies"
     },
     {
@@ -719,7 +911,11 @@
           "value": "6%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Carnival Trophies"
     },
     {
@@ -731,7 +927,11 @@
           "value": "6%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Carnival Trophies"
     },
     {
@@ -743,8 +943,13 @@
           "value": "+3%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
+      "type": "Monuments",
+      "creature": "Aether Chests"
     },
     {
       "id": "monument_to_intelligence",
@@ -755,8 +960,13 @@
           "value": "+3%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
+      "type": "Monuments",
+      "creature": "Aether Chests"
     },
     {
       "id": "monument_to_greed",
@@ -771,7 +981,11 @@
           "value": "+4%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Greed"
     },
@@ -784,8 +998,13 @@
           "value": "+3%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
+      "type": "Monuments",
+      "creature": "Aether Chests"
     },
     {
       "id": "monument_to_grudges",
@@ -796,7 +1015,11 @@
           "value": "+4%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Grudges"
     },
@@ -809,8 +1032,13 @@
           "value": "+3%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
+      "type": "Monuments",
+      "creature": "Aether Chests"
     },
     {
       "id": "monument_to_vitality",
@@ -821,8 +1049,13 @@
           "value": "+3%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
-      "type": "Monuments"
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
+      "type": "Monuments",
+      "creature": "Aether Chests"
     },
     {
       "id": "monument_to_envy",
@@ -833,7 +1066,11 @@
           "value": "+4%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Envy"
     },
@@ -850,7 +1087,11 @@
           "value": "+1%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Tyranny"
     },
@@ -863,7 +1104,11 @@
           "value": "+4%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Subjugation"
     },
@@ -880,7 +1125,11 @@
           "value": "+1%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Supremacy"
     },
@@ -897,7 +1146,11 @@
           "value": "+4%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Bloodlust"
     },
@@ -910,7 +1163,11 @@
           "value": "+4%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Brutality"
     },
@@ -923,7 +1180,11 @@
           "value": "+4%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Desolation"
     },
@@ -936,7 +1197,11 @@
           "value": "+4%"
         }
       ],
-      "tiers": ["Base", "Golden", "Enchanted"],
+      "tiers": [
+        "Base",
+        "Golden",
+        "Enchanted"
+      ],
       "type": "Monuments",
       "creature": "Echo of Obsession"
     }
