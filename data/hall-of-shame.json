@@ -201,7 +201,19 @@
     },
     {
       "type": "guild",
+      "name": "Goated Guild",
+      "reason": "Guild-wide ban",
+      "added": "2026-03-17"
+    },
+    {
+      "type": "guild",
       "name": "CT",
+      "reason": "Guild-wide ban",
+      "added": "2026-03-17"
+    },
+    {
+      "type": "guild",
+      "name": "Cartel",
       "reason": "Guild-wide ban",
       "added": "2026-03-17"
     }

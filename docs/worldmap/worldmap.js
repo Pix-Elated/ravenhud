@@ -311,7 +311,29 @@ function showIdentityPrompt() {
   });
 }
 
+function reportBanTrigger(entry) {
+  // Fire-and-forget — report the banned user's info to Corvid for IP logging
+  try {
+    fetch(CORVID_API_URL + '/api/bans/report', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        matchedName: entry.name,
+        matchType: entry.type,
+        reason: entry.reason,
+        discordId: discordUser ? discordUser.id : null,
+        discordUsername: discordUser ? (discordUser.globalName || discordUser.username) : null,
+        identity: getSavedIdentity(),
+        timestamp: new Date().toISOString()
+      })
+    }).catch(function () { /* silent */ });
+  } catch (e) { /* silent */ }
+}
+
 function showBanScreen(entry) {
+  // Report to Corvid for IP logging
+  reportBanTrigger(entry);
+
   // Remove any existing ban overlay
   var existing = document.getElementById('ban-overlay');
   if (existing) existing.remove();
