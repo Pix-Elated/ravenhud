@@ -3,7 +3,7 @@
   "archives": [
     {
       "name": "data.zip",
-      "hash": "sha256:862e754790d198811fcffa47a56072d3f9c0a2aa354abf34113c33ad7e3ffd8e",
+      "hash": "sha256:d2623043799d9af66f10328beaa5ac0d21920e833d36cf8e2db2a8f15a36e380",
       "files": 485,
       "sizeMB": 5.8
     },
@@ -122,5 +122,5 @@
       "sizeMB": 12.5
     }
   ],
-  "data.zip": "d2623043799d9af66f10328beaa5ac0d21920e833d36cf8e2db2a8f15a36e380"
+  "data.zip": "sha256:d2623043799d9af66f10328beaa5ac0d21920e833d36cf8e2db2a8f15a36e380"
 }
