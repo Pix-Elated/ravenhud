@@ -319,7 +319,7 @@ function showIdentityPrompt() {
   });
 }
 
-function reportBanTrigger(entry) {
+function reportBanTrigger(entry, identity) {
   // Fire-and-forget — report the banned user's info to Corvid for IP logging
   try {
     fetch(CORVID_API_URL + '/api/bans/report', {
@@ -331,16 +331,16 @@ function reportBanTrigger(entry) {
         reason: entry.reason,
         discordId: discordUser ? discordUser.id : null,
         discordUsername: discordUser ? (discordUser.globalName || discordUser.username) : null,
-        identity: getSavedIdentity(),
+        identity: identity || getSavedIdentity(),
         timestamp: new Date().toISOString()
       })
     }).catch(function () { /* silent */ });
   } catch (e) { /* silent */ }
 }
 
-function showBanScreen(entry) {
+function showBanScreen(entry, identity) {
   // Report to Corvid for IP logging
-  reportBanTrigger(entry);
+  reportBanTrigger(entry, identity);
 
   // Remove any existing ban overlay
   var existing = document.getElementById('ban-overlay');
@@ -437,8 +437,8 @@ async function init() {
   // Check character name + guild tag against ban list
   var identityBan = await checkAllBans(identity.characterName, identity.guildTag);
   if (identityBan) {
+    showBanScreen(identityBan, identity);
     localStorage.removeItem(IDENTITY_KEY);
-    showBanScreen(identityBan);
     return;
   }
 
