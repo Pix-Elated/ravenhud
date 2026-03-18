@@ -443,7 +443,8 @@ document.addEventListener('DOMContentLoaded', init);
 async function init() {
   // Identity prompt FIRST — character name + guild tag (cached 7 days)
   var identity = getSavedIdentity();
-  if (!identity) {
+  if (!identity || !identity.characterName || !identity.characterName.trim()) {
+    localStorage.removeItem(IDENTITY_KEY);
     identity = await showIdentityPrompt();
     if (!identity) return;
     saveIdentity(identity.characterName, identity.guildTag);
