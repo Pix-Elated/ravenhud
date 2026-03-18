@@ -222,6 +222,12 @@
       "name": "IP Banned",
       "reason": "Community abuse",
       "added": "2026-03-18"
+    },
+    {
+      "type": "ip",
+      "name": "72.143.218.254",
+      "reason": "Community abuse",
+      "added": "2026-03-18"
     }
   ]
 }
