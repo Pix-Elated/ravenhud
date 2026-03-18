@@ -216,6 +216,12 @@
       "name": "Cartel",
       "reason": "Guild-wide ban",
       "added": "2026-03-17"
+    },
+    {
+      "type": "character",
+      "name": "IP Banned",
+      "reason": "Community abuse",
+      "added": "2026-03-18"
     }
   ]
 }
