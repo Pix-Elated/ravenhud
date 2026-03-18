@@ -327,14 +327,6 @@ function showIdentityPrompt() {
       var name = charInput.value.trim();
       var guild = guildInput.value.trim();
       overlay.remove();
-      // Log identity to Corvid for moderation tracking
-      try {
-        fetch(CORVID_API_URL + '/api/bans/identity-log', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ characterName: name, guildTag: guild, timestamp: new Date().toISOString() })
-        }).catch(function () {});
-      } catch (e) { /* silent */ }
       resolve({ characterName: name, guildTag: guild });
     });
 
@@ -456,6 +448,25 @@ async function init() {
     if (!identity) return;
     saveIdentity(identity.characterName, identity.guildTag);
   }
+
+  // Log identity to Corvid and check IP ban (server-side — client can't know its own IP)
+  try {
+    var logRes = await fetch(CORVID_API_URL + '/api/bans/identity-log', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        characterName: identity.characterName,
+        guildTag: identity.guildTag,
+        timestamp: new Date().toISOString()
+      })
+    });
+    var logData = await logRes.json();
+    if (logData.banned) {
+      showBanScreen({ type: 'ip', name: logData.matchedName, reason: logData.reason }, identity);
+      localStorage.removeItem(IDENTITY_KEY);
+      return;
+    }
+  } catch (e) { /* Fail-open: if Corvid is down, continue (char/guild bans still work client-side) */ }
 
   // Check character name + guild tag against ban list
   var identityBan = await checkAllBans(identity.characterName, identity.guildTag);
