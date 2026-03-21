@@ -216,6 +216,12 @@
       "name": "Cartel",
       "reason": "Guild-wide ban",
       "added": "2026-03-17"
+    },
+    {
+      "type": "ip",
+      "name": "177.102.215.215",
+      "reason": "False character name, fake guild. Join the discord and apologize.",
+      "added": "2026-03-21"
     }
   ]
 }
