@@ -222,6 +222,12 @@
       "name": "177.102.215.215",
       "reason": "False character name, fake guild. Join the discord and apologize.",
       "added": "2026-03-21"
+    },
+    {
+      "type": "ip",
+      "name": "58.187.231.50",
+      "reason": "Fake character name, fake guild. Join the discord to apologize.",
+      "added": "2026-03-21"
     }
   ]
 }
