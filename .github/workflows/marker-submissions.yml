@@ -23,11 +23,14 @@ jobs:
       github.event.action == 'opened' &&
       contains(github.event.issue.labels.*.name, 'map-markers')
     runs-on: ubuntu-latest
+    outputs:
+      auto_approved: ${{ steps.label.outputs.auto_approved }}
     steps:
       - name: Checkout (for screenshot commits)
         uses: actions/checkout@v4
 
       - name: Parse, label, and process screenshot
+        id: label
         uses: actions/github-script@v7
         with:
           script: |
@@ -79,6 +82,10 @@ jobs:
             const isTrusted = TRUSTED_AUTHORS.some(
               a => a.toLowerCase() === markerAuthor.toLowerCase()
             );
+
+            if (isTrusted) {
+              core.setOutput('auto_approved', 'true');
+            }
 
             // Detect if this is an edit (correction) submission
             const isEdit = markers.some(m => m.correction);
@@ -310,8 +317,9 @@ jobs:
   # ─── Auto-ingest approved markers into data.zip ─────────────────────
   # Runs when:
   #   1. /approve comment → approve-reject passes approved=true
-  #   2. Manual "approved" label added → labeled event
-  #   3. Manual workflow_dispatch
+  #   2. Trusted author auto-approved → auto-label passes auto_approved=true
+  #   3. Manual "approved" label added → labeled event
+  #   4. Manual workflow_dispatch
   #
   # IMPORTANT: This job reads from data/worldmap-markers.json (the SOURCE
   # file) and writes back to it. Then it rebuilds assets/data.zip from
@@ -319,10 +327,11 @@ jobs:
   # This prevents data loss when create-archives.js is run separately —
   # it also reads from data/ so the markers stay in sync.
   ingest:
-    needs: [approve-reject]
+    needs: [auto-label, approve-reject]
     if: |
       always() && !cancelled() && (
         (needs.approve-reject.result == 'success' && needs.approve-reject.outputs.approved == 'true') ||
+        (needs.auto-label.result == 'success' && needs.auto-label.outputs.auto_approved == 'true') ||
         github.event_name == 'workflow_dispatch' ||
         (github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'map-markers'))
       )
