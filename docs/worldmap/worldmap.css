@@ -517,6 +517,30 @@ body {
   font-style: italic;
 }
 
+/* Shiny checklist */
+.shiny-check-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  padding: 5px 10px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.shiny-check-label:hover {
+  border-color: var(--accent-gold, #c9a959);
+}
+.shiny-check-label input:checked + span {
+  color: #7cb342;
+}
+.marker-item.shiny-collected {
+  opacity: 0.5;
+}
+
 .detail-actions {
   display: flex;
   gap: 8px;
