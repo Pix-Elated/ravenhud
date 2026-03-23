@@ -756,10 +756,14 @@ function showDetail(m) {
       '<label class="shiny-check-label">' +
       '<input type="checkbox" ' + (isCollected ? 'checked' : '') + ' />' +
       '<span>' + (isCollected ? 'Collected' : 'Mark as Collected') + '</span>' +
+      '<span class="save-flash" style="display:none">Saved</span>' +
       '</label>';
     shinySection.querySelector('input').addEventListener('change', function () {
       var nowCollected = toggleShinyCollected(m.id);
       this.nextElementSibling.textContent = nowCollected ? 'Collected' : 'Mark as Collected';
+      var flash = shinySection.querySelector('.save-flash');
+      flash.style.display = '';
+      setTimeout(function () { flash.style.display = 'none'; }, 1500);
       renderMarkers();
       updateSidebar();
     });
