@@ -40,13 +40,13 @@ var DISCORD_SCOPES = 'identify';
 
 var GITHUB_REPO = 'Pix-Elated/ravenhud';
 
-// Category metadata — icon is always emoji, driven by category
+// Category metadata — uses game icon files when available, emoji as fallback
 var CATEGORIES = {
-  dynamic_event: { label: 'Dynamic Events', emoji: '\u26A1', group: 'Events' },
-  expedition: { label: 'Expeditions', emoji: '\uD83E\uDDED', group: 'Exploration' },
-  creature_spawn: { label: 'Elite Spawns', emoji: '\uD83D\uDC80', group: 'Exploration' },
-  reputation_shiny: { label: 'Reputation (Shiny)', emoji: '\u2728', group: 'Reputation' },
-  npc_reputation: { label: 'Reputation (NPC)', emoji: '\uD83D\uDCAC', group: 'Reputation' }
+  dynamic_event: { label: 'Dynamic Events', emoji: '\u26A1', icon: 'dynamic_event.webp', group: 'Events' },
+  expedition: { label: 'Expeditions', emoji: '\uD83E\uDDED', icon: 'expedition.webp', group: 'Exploration' },
+  creature_spawn: { label: 'Elite Spawns', emoji: '\uD83D\uDC80', icon: 'elitespawn.webp', group: 'Exploration' },
+  reputation_shiny: { label: 'Reputation (Shiny)', emoji: '\u2728', icon: null, group: 'Reputation' },
+  npc_reputation: { label: 'Reputation (NPC)', emoji: '\uD83D\uDCAC', icon: 'npc_reputation.webp', group: 'Reputation' }
 };
 
 // Category groups for sidebar ordering
@@ -83,6 +83,32 @@ var editingMarker = null; // marker being edited
 var discordUser = null; // { id, username, globalName, avatar }
 var previewMarker = null; // L.Marker for position preview
 var pendingScreenshot = null; // base64 webp string
+
+// Shiny collection checklist (persisted to localStorage)
+var SHINY_COLLECTED_KEY = 'rhud_shiny_collected';
+
+function getShinyCollected() {
+  try { return JSON.parse(localStorage.getItem(SHINY_COLLECTED_KEY) || '{}'); }
+  catch (e) { return {}; }
+}
+
+function toggleShinyCollected(markerId) {
+  var state = getShinyCollected();
+  if (state[markerId]) {
+    delete state[markerId];
+  } else {
+    state[markerId] = Date.now();
+  }
+  localStorage.setItem(SHINY_COLLECTED_KEY, JSON.stringify(state));
+  return !!state[markerId];
+}
+
+function getShinyProgress() {
+  var state = getShinyCollected();
+  var shinies = allMarkers.filter(function (m) { return m.category === 'reputation_shiny'; });
+  var collected = shinies.filter(function (m) { return state[m.id]; }).length;
+  return { collected: collected, total: shinies.length };
+}
 
 // ---------------------------------------------------------------------------
 // Discord OAuth2 PKCE
@@ -572,11 +598,30 @@ function initMap() {
 // ---------------------------------------------------------------------------
 
 function createMarkerIcon(category) {
+  // Collected shiny — dimmed checkmark
+  if (category === '_shiny_collected') {
+    return L.divIcon({
+      className: '',
+      html: '<span style="font-size:18px;opacity:0.35;filter:drop-shadow(0 0 2px rgba(0,0,0,0.7))">&#x2713;</span>',
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+  }
+
   var cat = CATEGORIES[category];
   if (!cat) {
     return L.divIcon({
       className: '',
       html: '<span style="font-size:18px;filter:drop-shadow(0 0 2px rgba(0,0,0,0.7))">\uD83D\uDCCD</span>',
+      iconSize: [24, 24],
+      iconAnchor: [12, 12]
+    });
+  }
+
+  // Use actual game icon when available
+  if (cat.icon) {
+    return L.icon({
+      iconUrl: 'markers/' + cat.icon,
       iconSize: [24, 24],
       iconAnchor: [12, 12]
     });
@@ -606,12 +651,16 @@ function renderMarkers() {
   clusterGroup.clearLayers();
   leafletMarkers.clear();
 
+  var shinyState = getShinyCollected();
   for (var m of allMarkers) {
     if (m.floor !== 'surface') continue;
     if (!visibility[m.category]) continue;
 
     var latlng = rc.unproject([m.x, m.y]);
-    var icon = getCachedIcon(m.category);
+    var isCollectedShiny = m.category === 'reputation_shiny' && shinyState[m.id];
+    var icon = isCollectedShiny
+      ? getCachedIcon('_shiny_collected')
+      : getCachedIcon(m.category);
     var marker = L.marker(latlng, { icon: icon });
 
     // Lazy tooltip
@@ -661,9 +710,12 @@ function showDetail(m) {
   document.getElementById('detail-coords').textContent = m.x + ', ' + m.y;
 
   var cat = CATEGORIES[m.category];
-  document.getElementById('detail-category').textContent = cat
-    ? cat.emoji + ' ' + cat.label
-    : m.category;
+  var detailCatEl = document.getElementById('detail-category');
+  if (cat && cat.icon) {
+    detailCatEl.innerHTML = '<img src="markers/' + cat.icon + '" width="16" height="16" style="vertical-align:text-bottom;margin-right:4px">' + cat.label;
+  } else {
+    detailCatEl.textContent = cat ? cat.emoji + ' ' + cat.label : m.category;
+  }
 
   var regionEl = document.getElementById('detail-region');
   if (m.region) {
@@ -694,6 +746,27 @@ function showDetail(m) {
 
   var source = document.getElementById('detail-source');
   source.textContent = m.source === 'base' ? 'Community verified' : 'Source: ' + m.source;
+
+  // Shiny collection toggle
+  var shinySection = document.getElementById('detail-shiny');
+  if (m.category === 'reputation_shiny') {
+    var collected = getShinyCollected();
+    var isCollected = !!collected[m.id];
+    shinySection.innerHTML =
+      '<label class="shiny-check-label">' +
+      '<input type="checkbox" ' + (isCollected ? 'checked' : '') + ' />' +
+      '<span>' + (isCollected ? 'Collected' : 'Mark as Collected') + '</span>' +
+      '</label>';
+    shinySection.querySelector('input').addEventListener('change', function () {
+      var nowCollected = toggleShinyCollected(m.id);
+      this.nextElementSibling.textContent = nowCollected ? 'Collected' : 'Mark as Collected';
+      renderMarkers();
+      updateSidebar();
+    });
+    shinySection.style.display = 'block';
+  } else {
+    shinySection.style.display = 'none';
+  }
 
   panel.hidden = false;
 
@@ -943,8 +1016,11 @@ function showContributions() {
       var item = document.createElement('div');
       item.className = 'contrib-item';
       var isEdit = editIds.indexOf(m.id) >= 0;
+      var catIcon = (cat && cat.icon)
+        ? '<img src="markers/' + cat.icon + '" width="16" height="16" style="vertical-align:text-bottom">'
+        : (cat ? cat.emoji : '');
       item.innerHTML =
-        '<span class="contrib-emoji">' + (cat ? cat.emoji : '') + '</span>' +
+        '<span class="contrib-emoji">' + catIcon + '</span>' +
         '<span class="contrib-name">' + m.name + '</span>' +
         '<span class="contrib-status ' + (isEdit ? 'pending' : 'submitted') + '">' +
         (isEdit ? 'Edited' : 'Submitted') + '</span>';
@@ -1020,6 +1096,8 @@ function initSidebar() {
   document.getElementById('search-input').addEventListener('input', onSearch);
 }
 
+var updateSidebar = function () { buildSidebar(); };
+
 function buildSidebar() {
   var container = document.getElementById('category-groups');
   container.innerHTML = '';
@@ -1063,9 +1141,9 @@ function buildSidebar() {
       row.innerHTML =
         '<input type="checkbox" data-category="' + catKey + '" ' +
         (visibility[catKey] ? 'checked' : '') + ' />' +
-        '<span class="cat-emoji">' + catMeta.emoji + '</span>' +
+        '<span class="cat-emoji">' + (catMeta.icon ? '<img src="markers/' + catMeta.icon + '" width="16" height="16" style="vertical-align:text-bottom">' : catMeta.emoji) + '</span>' +
         '<span class="cat-label">' + catMeta.label + '</span>' +
-        '<span class="cat-count">' + count + '</span>' +
+        '<span class="cat-count">' + (catKey === 'reputation_shiny' ? getShinyProgress().collected + '/' + count : count) + '</span>' +
         (count > 0 ? '<span class="cat-arrow">\u25B6</span>' : '');
       body.appendChild(row);
 
@@ -1075,12 +1153,14 @@ function buildSidebar() {
         list.id = 'list-' + catKey;
         list.style.display = 'none';
 
+        var shinyState = catKey === 'reputation_shiny' ? getShinyCollected() : {};
         for (var marker of (markersByCategory[catKey] || [])) {
           var item = document.createElement('div');
           item.className = 'marker-item';
+          if (shinyState[marker.id]) item.classList.add('shiny-collected');
           var nameSpan = document.createElement('span');
           nameSpan.className = 'marker-item-name';
-          nameSpan.textContent = marker.name;
+          nameSpan.textContent = (shinyState[marker.id] ? '\u2713 ' : '') + marker.name;
           item.appendChild(nameSpan);
           if (marker.region) {
             var regionSpan = document.createElement('span');
