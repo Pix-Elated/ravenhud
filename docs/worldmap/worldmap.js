@@ -103,11 +103,11 @@ function toggleShinyCollected(markerId) {
   return !!state[markerId];
 }
 
-function getShinyProgress() {
+function getRepProgress(category) {
   var state = getShinyCollected();
-  var shinies = allMarkers.filter(function (m) { return m.category === 'reputation_shiny'; });
-  var collected = shinies.filter(function (m) { return state[m.id]; }).length;
-  return { collected: collected, total: shinies.length };
+  var markers = allMarkers.filter(function (m) { return m.category === category; });
+  var collected = markers.filter(function (m) { return state[m.id]; }).length;
+  return { collected: collected, total: markers.length };
 }
 
 // ---------------------------------------------------------------------------
@@ -657,7 +657,7 @@ function renderMarkers() {
     if (!visibility[m.category]) continue;
 
     var latlng = rc.unproject([m.x, m.y]);
-    var isCollectedShiny = m.category === 'reputation_shiny' && shinyState[m.id];
+    var isCollectedShiny = (m.category === 'reputation_shiny' || m.category === 'npc_reputation') && shinyState[m.id];
     var icon = isCollectedShiny
       ? getCachedIcon('_shiny_collected')
       : getCachedIcon(m.category);
@@ -749,7 +749,7 @@ function showDetail(m) {
 
   // Shiny collection toggle
   var shinySection = document.getElementById('detail-shiny');
-  if (m.category === 'reputation_shiny') {
+  if (m.category === 'reputation_shiny' || m.category === 'npc_reputation') {
     var collected = getShinyCollected();
     var isCollected = !!collected[m.id];
     shinySection.innerHTML =
@@ -1143,7 +1143,7 @@ function buildSidebar() {
         (visibility[catKey] ? 'checked' : '') + ' />' +
         '<span class="cat-emoji">' + (catMeta.icon ? '<img src="markers/' + catMeta.icon + '" width="16" height="16" style="vertical-align:text-bottom">' : catMeta.emoji) + '</span>' +
         '<span class="cat-label">' + catMeta.label + '</span>' +
-        '<span class="cat-count">' + (catKey === 'reputation_shiny' ? getShinyProgress().collected + '/' + count : count) + '</span>' +
+        '<span class="cat-count">' + ((catKey === 'reputation_shiny' || catKey === 'npc_reputation') ? getRepProgress(catKey).collected + '/' + count : count) + '</span>' +
         (count > 0 ? '<span class="cat-arrow">\u25B6</span>' : '');
       body.appendChild(row);
 
@@ -1153,7 +1153,7 @@ function buildSidebar() {
         list.id = 'list-' + catKey;
         list.style.display = 'none';
 
-        var shinyState = catKey === 'reputation_shiny' ? getShinyCollected() : {};
+        var shinyState = (catKey === 'reputation_shiny' || catKey === 'npc_reputation') ? getShinyCollected() : {};
         for (var marker of (markersByCategory[catKey] || [])) {
           var item = document.createElement('div');
           item.className = 'marker-item';
