@@ -1522,14 +1522,15 @@
     "source": "base",
     "category": "dynamic_event",
     "name": "Undead Harvesting",
-    "description": "",
+    "description": "Rewards Melting Device. Collect 40+ shards from the spawning mobs to be rewarded by the NPC at the gate",
     "x": 3325,
     "y": 862,
     "floor": "surface",
     "icon": "dynamic_event_down.webp",
     "label": "",
     "region": "",
-    "trigger": ""
+    "trigger": "",
+    "contributedBy": "Pixelated"
   },
   {
     "id": "rg_dynamic_event_268",
@@ -4491,5 +4492,21 @@
     "trigger": "",
     "contributedBy": "Pixelated",
     "screenshot": "community-screenshots/npc_reputation_3236_2968.webp"
+  },
+  {
+    "id": "c_373a3d8b",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glaceforde Mleting Device Cave Shiny",
+    "description": "Requires Melting Device. Go down the stairs immediately east of Glaceforde",
+    "x": 3140,
+    "y": 3004,
+    "floor": "level1",
+    "icon": "",
+    "label": "Glaceforde Mleting Device Cave Shiny",
+    "region": "",
+    "trigger": "",
+    "contributedBy": "Pixelated",
+    "screenshot": "community-screenshots/c_373a3d8b.webp"
   }
 ]
