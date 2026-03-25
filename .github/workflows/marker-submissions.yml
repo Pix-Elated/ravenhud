@@ -544,7 +544,13 @@ jobs:
           # This prevents divergence between data/ and assets/data.zip
           git add data/worldmap-markers.json data/community-screenshots/ assets/data.zip assets/assets-manifest.json
           git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
-          git push origin master
+          # Pull-rebase before pushing to handle concurrent screenshot uploads
+          # or other commits that landed since checkout
+          for i in 1 2 3; do
+            git pull --rebase origin master && git push origin master && break
+            echo "Push attempt $i failed, retrying..."
+            sleep 2
+          done
 
       - name: Close and label processed issues
         if: steps.ingest.outputs.changed == 'true'
