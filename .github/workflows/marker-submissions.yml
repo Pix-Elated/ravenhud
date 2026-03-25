@@ -457,7 +457,6 @@ jobs:
                         updated = true;
                       }
                     }
-                    if (m.authorName) existingMarker.contributedBy = m.authorName;
                     if (updated) {
                       issueChanged = true;
                       totalUpdated++;
