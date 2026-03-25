@@ -413,6 +413,24 @@ jobs:
                 continue;
               }
 
+              // Detect screenshot-only issues (just attaching a screenshot to an existing marker)
+              const isScreenshotOnly = issue.labels.some(l => l.name === 'screenshot-only');
+
+              // Extract embedded base64 screenshot if per-marker file doesn't exist yet
+              // (handles issues created before auto-label extracted screenshots)
+              const b64Match = body.match(/<!-- RHUD_SCREENSHOT:([A-Za-z0-9+/=]+) -->/);
+              if (b64Match) {
+                const buf = Buffer.from(b64Match[1], 'base64');
+                for (const m of markers) {
+                  if (!m.id) continue;
+                  const ssPath = path.join(screenshotsDir, `${m.id}.webp`);
+                  if (!fs.existsSync(ssPath)) {
+                    fs.writeFileSync(ssPath, buf);
+                    console.log(`  Extracted embedded screenshot: ${m.id}`);
+                  }
+                }
+              }
+
               // Find screenshot: prefer per-marker ID naming, fall back to legacy
               const legacySSPath = path.join(screenshotsDir, `issue-${issue.number}.webp`);
               const hasLegacySS = fs.existsSync(legacySSPath);
@@ -447,15 +465,16 @@ jobs:
                     }
                   }
 
-                  // Backfill screenshot if missing
-                  if (ssSource && !existingMarker.screenshot) {
+                  // Add or update screenshot
+                  // Force update for screenshot-only issues, backfill if missing otherwise
+                  if (ssSource && (!existingMarker.screenshot || isScreenshotOnly)) {
                     const dest = path.join(communitySSDir, `${m.id}.webp`);
                     fs.copyFileSync(ssSource, dest);
                     existingMarker.screenshot = `community-screenshots/${m.id}.webp`;
                     screenshotsCopied++;
                     issueChanged = true;
-                    console.log(`  Screenshot backfill: ${m.id}`);
-                  } else if (!m.correction) {
+                    console.log(`  Screenshot ${isScreenshotOnly ? 'updated' : 'added'}: ${m.id}`);
+                  } else if (!m.correction && !isScreenshotOnly) {
                     console.log(`  Duplicate skip: ${m.id}`);
                   }
                   continue;
