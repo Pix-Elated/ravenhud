@@ -523,10 +523,12 @@ jobs:
 
                 // Proximity dedup for shiny markers — reject if too close to an existing one
                 if (m.category === 'reputation_shiny') {
-                  const DEDUP_RADIUS = 25; // tiles — real dupes are 2-23 apart, legit clusters are 30+
+                  const DEDUP_RADIUS = 12; // tiles — auto-reject obvious dupes, manually clean 12-25
+                  const submitter = (m.authorName || '').toLowerCase();
                   const nearbyDupe = existing.find(e =>
                     e.category === 'reputation_shiny' &&
                     e.floor === m.floor &&
+                    (e.contributedBy || '').toLowerCase() !== submitter && // same author = legit cluster
                     Math.sqrt(Math.pow(e.x - m.x, 2) + Math.pow(e.y - m.y, 2)) < DEDUP_RADIUS
                   );
                   if (nearbyDupe) {
