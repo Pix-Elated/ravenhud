@@ -523,7 +523,7 @@ jobs:
 
                 // Proximity dedup for shiny markers — reject if too close to an existing one
                 if (m.category === 'reputation_shiny') {
-                  const DEDUP_RADIUS = 10; // tiles — real dupes are 2-5 apart, legit nearby are 19+
+                  const DEDUP_RADIUS = 25; // tiles — real dupes are 2-23 apart, legit clusters are 30+
                   const nearbyDupe = existing.find(e =>
                     e.category === 'reputation_shiny' &&
                     e.floor === m.floor &&

@@ -5061,22 +5061,6 @@
     "screenshot": "community-screenshots/c_4acef5dd.webp"
   },
   {
-    "id": "c_e20d700e",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Glaceforde froll shiny",
-    "description": "have \"key\" for saint alesk shiny top west side of mountain",
-    "x": 2772,
-    "y": 741,
-    "floor": "surface",
-    "icon": "",
-    "label": "Glaceforde froll shiny",
-    "region": "Glaceforde",
-    "trigger": "",
-    "contributedBy": "Azurak",
-    "screenshot": "community-screenshots/c_e20d700e.webp"
-  },
-  {
     "id": "c_cd619e9b",
     "source": "base",
     "category": "reputation_shiny",
@@ -5107,22 +5091,6 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_82759972.webp"
-  },
-  {
-    "id": "c_30f9ef39",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Glaceforde fox shiny",
-    "description": "high peak",
-    "x": 2151,
-    "y": 1114,
-    "floor": "surface",
-    "icon": "",
-    "label": "Glaceforde fox shiny",
-    "region": "Wolfhold",
-    "trigger": "",
-    "contributedBy": "Azurak",
-    "screenshot": "community-screenshots/c_30f9ef39.webp"
   },
   {
     "id": "c_ff4f94ce",
@@ -5555,6 +5523,36 @@
     "icon": "",
     "label": "High level Frost drakes (lvl 75) shiny",
     "region": "Glaceforde drakes",
+    "trigger": "",
+    "contributedBy": "ThisDaniel"
+  },
+  {
+    "id": "c_c1469319",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Shiny chest with the missing book",
+    "description": "",
+    "x": 2780,
+    "y": 725,
+    "floor": "surface",
+    "icon": "",
+    "label": "Shiny chest with the missing book",
+    "region": "",
+    "trigger": "",
+    "contributedBy": "ThisDaniel"
+  },
+  {
+    "id": "c_c5972bfe",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Shiny on the fox mountain",
+    "description": "",
+    "x": 2140,
+    "y": 1134,
+    "floor": "surface",
+    "icon": "",
+    "label": "Shiny on the fox mountain",
+    "region": "",
     "trigger": "",
     "contributedBy": "ThisDaniel"
   }
