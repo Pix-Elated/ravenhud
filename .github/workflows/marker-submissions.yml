@@ -130,43 +130,81 @@ jobs:
             });
 
             // ── Process embedded screenshot ─────────────────────────────
-            // Save one copy per marker ID (not per issue number)
+            // Uses Git Trees API to batch all screenshots into one atomic commit.
+            // This avoids SHA conflicts when multiple issues are processed concurrently.
             const ssMatch = body.match(/<!-- RHUD_SCREENSHOT:([A-Za-z0-9+/=]+) -->/);
             let screenshotUrl = '';
 
             if (ssMatch && markers.length > 0) {
               try {
                 const b64 = ssMatch[1];
-                let latestSha;
+                const filePaths = [];
 
+                // Create blobs for each marker's screenshot
+                const treeEntries = [];
                 for (const m of markers) {
                   if (!m.id) continue;
                   const filePath = `screenshots/${m.id}.webp`;
+                  filePaths.push(filePath);
 
-                  // Get latest commit SHA to avoid conflicts between uploads
-                  if (!latestSha) {
-                    const { data: ref } = await github.rest.git.getRef({
-                      owner: context.repo.owner,
-                      repo: context.repo.repo,
-                      ref: 'heads/master'
-                    });
-                    latestSha = ref.object.sha;
-                  }
-
-                  const result = await github.rest.repos.createOrUpdateFileContents({
+                  const { data: blob } = await github.rest.git.createBlob({
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    path: filePath,
-                    message: `chore: add screenshot for ${m.name || m.id} (#${issueNumber})`,
                     content: b64,
-                    branch: 'master'
+                    encoding: 'base64'
                   });
-                  latestSha = result.data.commit.sha;
+                  treeEntries.push({
+                    path: filePath,
+                    mode: '100644',
+                    type: 'blob',
+                    sha: blob.sha
+                  });
+                }
 
-                  if (!screenshotUrl) {
-                    screenshotUrl = `https://raw.githubusercontent.com/${context.repo.owner}/${context.repo.repo}/master/${filePath}`;
-                  }
-                  console.log(`Screenshot uploaded: screenshots/${m.id}.webp`);
+                if (treeEntries.length > 0) {
+                  // Get current master HEAD
+                  const { data: ref } = await github.rest.git.getRef({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    ref: 'heads/master'
+                  });
+                  const baseSha = ref.object.sha;
+
+                  // Get the base tree
+                  const { data: baseCommit } = await github.rest.git.getCommit({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    commit_sha: baseSha
+                  });
+
+                  // Create new tree with screenshot files
+                  const { data: tree } = await github.rest.git.createTree({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    base_tree: baseCommit.tree.sha,
+                    tree: treeEntries
+                  });
+
+                  // Create commit
+                  const names = markers.filter(m => m.id).map(m => m.name || m.id).join(', ');
+                  const { data: commit } = await github.rest.git.createCommit({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    message: `chore: add screenshot for ${names} (#${issueNumber})`,
+                    tree: tree.sha,
+                    parents: [baseSha]
+                  });
+
+                  // Update master ref
+                  await github.rest.git.updateRef({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    ref: 'heads/master',
+                    sha: commit.sha
+                  });
+
+                  screenshotUrl = `https://raw.githubusercontent.com/${context.repo.owner}/${context.repo.repo}/master/${filePaths[0]}`;
+                  console.log(`Screenshots uploaded in single commit: ${filePaths.join(', ')}`);
                 }
 
                 // Update issue body: replace hidden comment with visible image
