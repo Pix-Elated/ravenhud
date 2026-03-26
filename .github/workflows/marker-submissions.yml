@@ -9,6 +9,8 @@ on:
     types: [opened, labeled]
   issue_comment:
     types: [created]
+  schedule:
+    - cron: '*/15 * * * *' # Every 15 minutes — free tier, minimal cost
   workflow_dispatch: # Manual ingest trigger
 
 permissions:
@@ -371,6 +373,7 @@ jobs:
         (needs.approve-reject.result == 'success' && needs.approve-reject.outputs.approved == 'true') ||
         (needs.auto-label.result == 'success' && needs.auto-label.outputs.auto_approved == 'true') ||
         github.event_name == 'workflow_dispatch' ||
+        github.event_name == 'schedule' ||
         (github.event_name == 'issues' && github.event.action == 'labeled' && github.event.label.name == 'approved' && contains(github.event.issue.labels.*.name, 'map-markers'))
       )
     runs-on: ubuntu-latest
