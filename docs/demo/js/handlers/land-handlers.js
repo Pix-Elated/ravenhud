@@ -95,10 +95,17 @@ async function getLandTypes() {
     };
 
     // Add house data if this land type has a house
+    // House tiles in JSON are relative to origin (0,0) — center them on the land
+    // (matches in-app buildLandTypes logic in land-handlers.ts)
     if (landData.hasHouse && houseData) {
-      result.houseTiles = houseData.tiles?.house || [];
-      result.houseDoorTiles = houseData.tiles?.door || [];
-      result.doorClearanceTiles = houseData.tiles?.clearance || [];
+      const houseWidth = houseData.width || 0;
+      const houseHeight = houseData.height || 0;
+      const offsetX = Math.floor((landData.width - houseWidth) / 2);
+      const offsetY = Math.floor((landData.height - houseHeight) / 2);
+
+      result.houseTiles = (houseData.tiles?.house || []).map(t => ({ x: t.x + offsetX, y: t.y + offsetY }));
+      result.houseDoorTiles = (houseData.tiles?.door || []).map(t => ({ x: t.x + offsetX, y: t.y + offsetY }));
+      result.doorClearanceTiles = (houseData.tiles?.clearance || []).map(t => ({ x: t.x + offsetX, y: t.y + offsetY }));
     }
 
     return result;
