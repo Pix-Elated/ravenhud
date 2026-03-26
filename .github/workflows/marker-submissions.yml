@@ -77,7 +77,7 @@ jobs:
 
             // Trusted authors — check authorName inside the JSON payload,
             // NOT the GitHub issue author (issues are created via Corvid proxy)
-            const TRUSTED_AUTHORS = ['Azurak', 'Kullion', 'Pixelated'];
+            const TRUSTED_AUTHORS = ['Azurak', 'Kullion', 'Pixelated', 'ThisDaniel'];
             const markerAuthor = markers[0]?.authorName || '';
             const isTrusted = TRUSTED_AUTHORS.some(
               a => a.toLowerCase() === markerAuthor.toLowerCase()
