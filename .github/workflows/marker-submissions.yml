@@ -392,6 +392,7 @@ jobs:
             let totalUpdated = 0;
             let screenshotsCopied = 0;
             const processedIssues = [];
+            const duplicateIssues = [];
 
             for (const issue of toProcess) {
               const body = issue.body || '';
@@ -479,6 +480,21 @@ jobs:
                   continue;
                 }
 
+                // Proximity dedup for shiny markers — reject if too close to an existing one
+                if (m.category === 'reputation_shiny') {
+                  const DEDUP_RADIUS = 10; // tiles — real dupes are 2-5 apart, legit nearby are 19+
+                  const nearbyDupe = existing.find(e =>
+                    e.category === 'reputation_shiny' &&
+                    e.floor === m.floor &&
+                    Math.sqrt(Math.pow(e.x - m.x, 2) + Math.pow(e.y - m.y, 2)) < DEDUP_RADIUS
+                  );
+                  if (nearbyDupe) {
+                    console.log(`  Proximity duplicate: ${m.id} is ${Math.round(Math.sqrt(Math.pow(nearbyDupe.x - m.x, 2) + Math.pow(nearbyDupe.y - m.y, 2)))} tiles from ${nearbyDupe.id} (${nearbyDupe.contributedBy || 'unknown'})`);
+                    duplicateIssues.push(issue.number);
+                    continue;
+                  }
+                }
+
                 // New marker
                 const marker = {
                   id: m.id,
@@ -528,6 +544,7 @@ jobs:
             core.setOutput('count', String(totalAdded + totalUpdated));
             core.setOutput('screenshots', String(screenshotsCopied));
             core.setOutput('issues', processedIssues.join(','));
+            core.setOutput('duplicates', duplicateIssues.join(','));
 
       - name: Rebuild data.zip from source and update manifest
         if: steps.ingest.outputs.changed == 'true'
@@ -606,5 +623,34 @@ jobs:
                 repo: context.repo.repo,
                 issue_number: n,
                 body: '✅ Ingested into RavenHUD data. Thanks for contributing!'
+              });
+            }
+
+      - name: Close duplicate proximity issues
+        if: steps.ingest.outputs.duplicates != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const dupes = '${{ steps.ingest.outputs.duplicates }}'.split(',').filter(Boolean);
+            for (const num of dupes) {
+              const n = parseInt(num);
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: n,
+                labels: ['duplicate']
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: n,
+                state: 'closed',
+                state_reason: 'not_planned'
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: n,
+                body: '🔄 Closed as duplicate — an existing shiny marker is already within 10 tiles of this location. The first submission is kept.'
               });
             }
