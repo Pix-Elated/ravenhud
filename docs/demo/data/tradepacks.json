@@ -1,16 +1,12 @@
 {
   "metadata": {
-    "version": "1.1.0",
-    "description": "Tradepack and intermediate item recipes for the trading system",
     "source": "Scraped game data",
-    "lastUpdated": "2026-01-08",
+    "lastUpdated": "2026-01-07",
     "notes": [
       "Tradepacks are deliverable goods for the trading system",
       "Intermediates are crafted materials used in tradepack recipes",
       "Some intermediate recipes may have circular references that need verification",
-      "total_cost values are in silver",
-      "topProfit is a placeholder value (52323) pending real calculation",
-      "destinations array is empty pending route data"
+      "total_cost values are in silver"
     ]
   },
   "category": "tradepacks",
@@ -33,7 +29,7 @@
         }
       ],
       "total_cost": 21061,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/aged-meat.png",
+      "imagePath": "assets/images/tradepacks/aged-meat.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -55,7 +51,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/bakers-basics.png",
+      "imagePath": "assets/images/tradepacks/bakers-basics.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -81,7 +77,7 @@
         }
       ],
       "total_cost": 22450,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/barbecue-specialty.png",
+      "imagePath": "assets/images/tradepacks/barbecue-specialty.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -107,7 +103,7 @@
         }
       ],
       "total_cost": 30711,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/basic-rations.png",
+      "imagePath": "assets/images/tradepacks/basic-rations.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -133,7 +129,7 @@
         }
       ],
       "total_cost": 36370,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/berry-basket.png",
+      "imagePath": "assets/images/tradepacks/berry-basket.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -151,7 +147,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/bittersweet-delights.png",
+      "imagePath": "assets/images/tradepacks/bittersweet-delights.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -173,7 +169,7 @@
         }
       ],
       "total_cost": 29410,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/brined-shank.png",
+      "imagePath": "assets/images/tradepacks/brined-shank.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -191,7 +187,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/building-materials.png",
+      "imagePath": "assets/images/tradepacks/building-materials.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -220,10 +216,7 @@
           "item": "Cheese"
         }
       ],
-      "total_cost": 23360,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/butchers-bundle.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 23360
     },
     {
       "id": "campfire_roast",
@@ -247,7 +240,7 @@
         }
       ],
       "total_cost": 19680,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/campfire-roast.png",
+      "imagePath": "assets/images/tradepacks/campfire-roast.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -269,7 +262,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/cavedweller-findings.png",
+      "imagePath": "assets/images/tradepacks/cavedweller-findings.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -291,7 +284,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/crafting-basics.png",
+      "imagePath": "assets/images/tradepacks/crafting-basics.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -317,7 +310,7 @@
         }
       ],
       "total_cost": 30236,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/crisp-produce.png",
+      "imagePath": "assets/images/tradepacks/crisp-produce.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -339,7 +332,7 @@
         }
       ],
       "total_cost": 31836,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/dairy-delivery.png",
+      "imagePath": "assets/images/tradepacks/dairy-delivery.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -353,7 +346,7 @@
         }
       ],
       "total_cost": 888375,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/elemental-sprout.png",
+      "imagePath": "assets/images/tradepacks/elemental-sprout.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -375,7 +368,7 @@
         }
       ],
       "total_cost": 39504,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/exotic-fruits.png",
+      "imagePath": "assets/images/tradepacks/exotic-fruits.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -393,7 +386,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/exotic-spices.png",
+      "imagePath": "assets/images/tradepacks/exotic-spices.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -419,7 +412,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/fried-chicken.png",
+      "imagePath": "assets/images/tradepacks/fried-chicken.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -441,7 +434,7 @@
         }
       ],
       "total_cost": 31122,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/fruit-basket.png",
+      "imagePath": "assets/images/tradepacks/fruit-basket.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -467,7 +460,7 @@
         }
       ],
       "total_cost": 28411,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/general-spices.png",
+      "imagePath": "assets/images/tradepacks/general-spices.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -493,7 +486,7 @@
         }
       ],
       "total_cost": 26610,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/glaceforde-explorers-kit.png",
+      "imagePath": "assets/images/tradepacks/glaceforde-explorers-kit.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -511,7 +504,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/hardy-roots.png",
+      "imagePath": "assets/images/tradepacks/hardy-roots.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -549,7 +542,7 @@
         }
       ],
       "total_cost": 36090,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/juicers-box.png",
+      "imagePath": "assets/images/tradepacks/juicers-box.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -571,7 +564,7 @@
         }
       ],
       "total_cost": 14805,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/kindling-kit.png",
+      "imagePath": "assets/images/tradepacks/kindling-kit.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -589,7 +582,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/lush-fibers.png",
+      "imagePath": "assets/images/tradepacks/lush-fibers.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -611,7 +604,7 @@
         }
       ],
       "total_cost": 34308,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/margrove-ale-ingredients.png",
+      "imagePath": "assets/images/tradepacks/margrove-ale-ingredients.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -625,7 +618,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/moisture-aging.png",
+      "imagePath": "assets/images/tradepacks/moisture-aging.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -639,7 +632,7 @@
         }
       ],
       "total_cost": 141250,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/necrobane-kit.png",
+      "imagePath": "assets/images/tradepacks/necrobane-kit.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -661,7 +654,7 @@
         }
       ],
       "total_cost": 37410,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/noble-delicacies.png",
+      "imagePath": "assets/images/tradepacks/noble-delicacies.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -674,10 +667,7 @@
           "item": "Fungal Dust"
         }
       ],
-      "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/ocean-stimulants.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": null
     },
     {
       "id": "pickled_vegetables",
@@ -697,7 +687,7 @@
         }
       ],
       "total_cost": 25536,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/pickled-vegetables.png",
+      "imagePath": "assets/images/tradepacks/pickled-vegetables.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -723,7 +713,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/pie-making-kit.png",
+      "imagePath": "assets/images/tradepacks/pie-making-kit.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -737,7 +727,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/pirates-anesthetic.png",
+      "imagePath": "assets/images/tradepacks/pirates-anesthetic.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -759,7 +749,7 @@
         }
       ],
       "total_cost": 29290,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/ravencrest-finest-wears.png",
+      "imagePath": "assets/images/tradepacks/ravencrest-finest-wears.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -781,7 +771,7 @@
         }
       ],
       "total_cost": 34368,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/ravencrest-greens.png",
+      "imagePath": "assets/images/tradepacks/ravencrest-greens.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -823,7 +813,7 @@
         }
       ],
       "total_cost": 30875,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/rohna-smoked-ham.png",
+      "imagePath": "assets/images/tradepacks/rohna-smoked-ham.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -861,7 +851,7 @@
         }
       ],
       "total_cost": 22880,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/sajecho-fruit-basket.png",
+      "imagePath": "assets/images/tradepacks/sajecho-fruit-basket.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -891,7 +881,7 @@
         }
       ],
       "total_cost": 31706,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/seabreeze-rum.png",
+      "imagePath": "assets/images/tradepacks/seabreeze-rum.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -920,10 +910,7 @@
           "item": "Shank"
         }
       ],
-      "total_cost": 34648,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/shepherds-feast.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 34648
     },
     {
       "id": "slums_provisions",
@@ -943,7 +930,7 @@
         }
       ],
       "total_cost": 32800,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/slums-provisions.png",
+      "imagePath": "assets/images/tradepacks/slums-provisions.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -957,7 +944,7 @@
         }
       ],
       "total_cost": 84040,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/sombershade-toppings.png",
+      "imagePath": "assets/images/tradepacks/sombershade-toppings.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -978,10 +965,7 @@
           "item": "Ground Flour"
         }
       ],
-      "total_cost": 106030,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/spiced-pumpkin-pie.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 106030
     },
     {
       "id": "sweet_honeys",
@@ -992,10 +976,7 @@
           "item": "Honey"
         }
       ],
-      "total_cost": 53860,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/sweet-honeys.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 53860
     },
     {
       "id": "strawberry_cakes",
@@ -1019,7 +1000,7 @@
         }
       ],
       "total_cost": 62620,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/strawberry-cakes.png",
+      "imagePath": "assets/images/tradepacks/strawberry-cakes.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1053,7 +1034,7 @@
         }
       ],
       "total_cost": 36535,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/vegetable-stew.png",
+      "imagePath": "assets/images/tradepacks/vegetable-stew.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1075,7 +1056,7 @@
         }
       ],
       "total_cost": 33474,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/winemakers-kit.png",
+      "imagePath": "assets/images/tradepacks/winemakers-kit.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1089,7 +1070,7 @@
         }
       ],
       "total_cost": 513000,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/yornish-seasonings.png",
+      "imagePath": "assets/images/tradepacks/yornish-seasonings.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1106,10 +1087,7 @@
           "item": "Onion"
         }
       ],
-      "total_cost": 78325,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/dry-stem-feast.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 78325
     },
     {
       "id": "bloody_bud_bundle",
@@ -1124,10 +1102,7 @@
           "item": "Feather"
         }
       ],
-      "total_cost": 65901,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/bloody-bud-bundle.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 65901
     },
     {
       "id": "juicy_roots_pack",
@@ -1138,10 +1113,7 @@
           "item": "Feather"
         }
       ],
-      "total_cost": 74280,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/juicy-roots-pack.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 74280
     },
     {
       "id": "juicy_stem_bundle",
@@ -1152,10 +1124,7 @@
           "item": "Toxic Stem"
         }
       ],
-      "total_cost": 96775,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/juicy-stem-bundle.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 96775
     },
     {
       "id": "yornish_salt",
@@ -1166,10 +1135,7 @@
           "item": "Salt"
         }
       ],
-      "total_cost": 73875,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/yornish-salt.png",
-      "topProfit": null,
-      "destinations": []
+      "total_cost": 73875
     },
     {
       "id": "widows_box",
@@ -1189,7 +1155,7 @@
         }
       ],
       "total_cost": 889275,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/widows-box.png",
+      "imagePath": "assets/images/tradepacks/widows-box.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1211,7 +1177,7 @@
         }
       ],
       "total_cost": 2036896,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/seers-support-pack.png",
+      "imagePath": "assets/images/tradepacks/seers-support-pack.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1237,7 +1203,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/poisoners-kit.png",
+      "imagePath": "assets/images/tradepacks/poisoners-kit.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1263,7 +1229,7 @@
         }
       ],
       "total_cost": 30855,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/sailors-remedy.png",
+      "imagePath": "assets/images/tradepacks/sailors-remedy.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1289,7 +1255,7 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/sajechos-spices.png",
+      "imagePath": "assets/images/tradepacks/sajechos-spices.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1311,7 +1277,7 @@
         }
       ],
       "total_cost": 31536,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/settlers-rations.png",
+      "imagePath": "assets/images/tradepacks/settlers-rations.webp",
       "topProfit": 52323,
       "destinations": []
     },
@@ -1337,14 +1303,14 @@
         }
       ],
       "total_cost": null,
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/sombreshades-pie.png",
+      "imagePath": "assets/images/tradepacks/sombreshades-pie.webp",
       "topProfit": 52323,
       "destinations": []
     },
     {
       "id": "butchers_box",
       "name": "Butcher's Box",
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/butchers-box.png",
+      "imagePath": "assets/images/tradepacks/butchers-box.webp",
       "topProfit": 52323,
       "destinations": [],
       "materials": [],
@@ -1353,8 +1319,17 @@
     {
       "id": "kabbars_omelets",
       "name": "Kabbar's Omelets",
-      "imageUrl": "https://api.ravenguardian.com/cdn/tradepacks/kabbars-omelets.png",
-      "topProfit": null,
+      "imagePath": "assets/images/tradepacks/kabbars-omelets.webp",
+      "topProfit": 52323,
+      "destinations": [],
+      "materials": [],
+      "total_cost": null
+    },
+    {
+      "id": "oceanic_stimulants",
+      "name": "Oceanic Stimulants",
+      "imagePath": "assets/images/tradepacks/oceanic-stimulants.webp",
+      "topProfit": 52323,
       "destinations": [],
       "materials": [],
       "total_cost": null
@@ -1631,6 +1606,6 @@
       "note": "Base herbalism resource - no crafting recipe"
     }
   ],
-  "tradepackCount": 61,
+  "tradepackCount": 62,
   "intermediateCount": 26
 }

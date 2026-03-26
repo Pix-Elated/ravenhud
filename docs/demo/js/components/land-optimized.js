@@ -279,70 +279,303 @@ class LandOptimized {
   }
 
   /**
-   * Render community land layouts (pre-computed brute-force results)
+   * Categorize layouts into predefined "best" categories for quick access.
+   * Matches the in-app ICategorizedLayouts logic from land.service.ts.
+   * If "Max X" equals "All X" (no fill room), Max is set to null to avoid duplicates.
    */
-  renderCommunityLayouts() {
-    const allLayouts = this.communityLayouts.layouts || [];
-    const totalCount = this.communityLayouts.totalConfigurations || allLayouts.length;
+  categorizeLayouts(layouts) {
+    if (!layouts || layouts.length === 0) {
+      return { all1x1: null, all2x2: null, max2x2: null, all3x3: null, max3x3: null, all4x4: null, max4x4: null };
+    }
 
-    // Convert to display format
-    const displayLayouts = allLayouts.map((layout, idx) =>
-      this.convertCommunityLayout(layout, idx)
-    );
+    const sameLayout = (a, b) => {
+      if (!a || !b) return false;
+      return (
+        (a.counts['4x4'] || 0) === (b.counts['4x4'] || 0) &&
+        (a.counts['3x3'] || 0) === (b.counts['3x3'] || 0) &&
+        (a.counts['2x2'] || 0) === (b.counts['2x2'] || 0) &&
+        (a.counts['1x1'] || 0) === (b.counts['1x1'] || 0)
+      );
+    };
 
-    // Show top 5 or all depending on state
-    const layoutsToShow = this.showingAllLayouts ? displayLayouts : displayLayouts.slice(0, 5);
-    const hasMore = !this.showingAllLayouts && displayLayouts.length > 5;
+    // All 1x1: Only 1x1 crops
+    const all1x1 = layouts.find(l =>
+      (l.counts['4x4'] || 0) === 0 && (l.counts['3x3'] || 0) === 0 &&
+      (l.counts['2x2'] || 0) === 0 && (l.counts['1x1'] || 0) > 0
+    ) || null;
 
-    this.container.innerHTML = `
-      <div class="optimized-panel">
-        <h3 class="optimized-header">Optimal Layouts</h3>
-        <p class="optimized-desc">
-          ${totalCount} possible configurations found.
-          ${this.showingAllLayouts ? 'Showing all layouts.' : 'Showing top 5 layouts.'}
-        </p>
-        <div class="optimized-layouts-list">
-          ${layoutsToShow.map((layout) => this.renderCommunityLayoutCard(layout)).join('')}
+    // All 2x2: Only 2x2 crops
+    const all2x2 = layouts.find(l =>
+      (l.counts['4x4'] || 0) === 0 && (l.counts['3x3'] || 0) === 0 &&
+      (l.counts['2x2'] || 0) > 0 && (l.counts['1x1'] || 0) === 0
+    ) || null;
+
+    // Max 2x2: Highest 2x2 count (with any 1x1 fill, no larger)
+    const max2x2Candidate = [...layouts]
+      .filter(l => (l.counts['4x4'] || 0) === 0 && (l.counts['3x3'] || 0) === 0)
+      .sort((a, b) => {
+        if ((b.counts['2x2'] || 0) !== (a.counts['2x2'] || 0)) return (b.counts['2x2'] || 0) - (a.counts['2x2'] || 0);
+        return (b.totalTiles || 0) - (a.totalTiles || 0);
+      })[0] || null;
+
+    // All 3x3: Only 3x3 crops
+    const all3x3 = layouts.find(l =>
+      (l.counts['4x4'] || 0) === 0 && (l.counts['3x3'] || 0) > 0 &&
+      (l.counts['2x2'] || 0) === 0 && (l.counts['1x1'] || 0) === 0
+    ) || null;
+
+    // Max 3x3: Highest 3x3 count (no 4x4)
+    const max3x3Candidate = [...layouts]
+      .filter(l => (l.counts['4x4'] || 0) === 0)
+      .sort((a, b) => {
+        if ((b.counts['3x3'] || 0) !== (a.counts['3x3'] || 0)) return (b.counts['3x3'] || 0) - (a.counts['3x3'] || 0);
+        if ((b.counts['2x2'] || 0) !== (a.counts['2x2'] || 0)) return (b.counts['2x2'] || 0) - (a.counts['2x2'] || 0);
+        return (b.counts['1x1'] || 0) - (a.counts['1x1'] || 0);
+      })[0] || null;
+
+    // All 4x4: Only 4x4 crops
+    const all4x4 = layouts.find(l =>
+      (l.counts['4x4'] || 0) > 0 && (l.counts['3x3'] || 0) === 0 &&
+      (l.counts['2x2'] || 0) === 0 && (l.counts['1x1'] || 0) === 0
+    ) || null;
+
+    // Max 4x4: Highest 4x4 count
+    const max4x4Candidate = [...layouts].sort((a, b) => {
+      if ((b.counts['4x4'] || 0) !== (a.counts['4x4'] || 0)) return (b.counts['4x4'] || 0) - (a.counts['4x4'] || 0);
+      if ((b.counts['3x3'] || 0) !== (a.counts['3x3'] || 0)) return (b.counts['3x3'] || 0) - (a.counts['3x3'] || 0);
+      if ((b.counts['2x2'] || 0) !== (a.counts['2x2'] || 0)) return (b.counts['2x2'] || 0) - (a.counts['2x2'] || 0);
+      return (b.counts['1x1'] || 0) - (a.counts['1x1'] || 0);
+    })[0] || null;
+
+    return {
+      all1x1,
+      all2x2,
+      max2x2: sameLayout(all2x2, max2x2Candidate) ? null : max2x2Candidate,
+      all3x3,
+      max3x3: sameLayout(all3x3, max3x3Candidate) ? null : max3x3Candidate,
+      all4x4,
+      max4x4: sameLayout(all4x4, max4x4Candidate) ? null : max4x4Candidate
+    };
+  }
+
+  /**
+   * Build the list of categorized layout cards for display
+   */
+  buildCategoryCards(categorized, availableTiles) {
+    const cardDefs = [
+      { key: 'all1x1', label: 'All 1x1', sizeClass: 'size-1' },
+      { key: 'all2x2', label: 'All 2x2', sizeClass: 'size-2' },
+      { key: 'max2x2', label: 'Max 2x2', sizeClass: 'size-2' },
+      { key: 'all3x3', label: 'All 3x3', sizeClass: 'size-3' },
+      { key: 'max3x3', label: 'Max 3x3', sizeClass: 'size-3' },
+      { key: 'all4x4', label: 'All 4x4', sizeClass: 'size-4' },
+      { key: 'max4x4', label: 'Max 4x4', sizeClass: 'size-4' }
+    ];
+
+    return cardDefs
+      .filter(def => categorized[def.key] !== null)
+      .map(def => ({ ...def, layout: categorized[def.key], availableTiles }));
+  }
+
+  /**
+   * Render a categorized layout card matching the in-app UI
+   */
+  renderCategorizedCard(card) {
+    const { layout, label, sizeClass, availableTiles } = card;
+    const counts = layout.counts || {};
+    const color = this.getCategoryColor(sizeClass);
+    const totalTiles = layout.totalTiles || 0;
+    const efficiency = availableTiles > 0 ? Math.round((totalTiles / availableTiles) * 100) : 0;
+    const itemCount = (counts['4x4'] || 0) + (counts['3x3'] || 0) + (counts['2x2'] || 0) + (counts['1x1'] || 0);
+
+    const countBadges = [];
+    if ((counts['4x4'] || 0) > 0) countBadges.push(`<span class="count-badge size-4">${counts['4x4']}x4x4</span>`);
+    if ((counts['3x3'] || 0) > 0) countBadges.push(`<span class="count-badge size-3">${counts['3x3']}x3x3</span>`);
+    if ((counts['2x2'] || 0) > 0) countBadges.push(`<span class="count-badge size-2">${counts['2x2']}x2x2</span>`);
+    if ((counts['1x1'] || 0) > 0) countBadges.push(`<span class="count-badge size-1">${counts['1x1']}x1x1</span>`);
+
+    // Render mini grid — reuse existing method with converted data
+    const displayLayout = this.convertLayoutForMiniGrid(layout);
+    const miniGrid = this.isCommunityLand ? this.renderMiniGrid(displayLayout) : this.renderNFTMiniGrid(displayLayout);
+
+    return `
+      <div class="optimal-layout-card" style="border-color: ${color.border}; background: ${color.bg};">
+        <div class="layout-card-header">
+          <div class="layout-category-label ${sizeClass}">${label}</div>
+          <div class="layout-counts">${countBadges.join('')}</div>
+          <div class="layout-stats-row">
+            <span class="layout-stat">${itemCount} items</span>
+            <span class="layout-stat">${totalTiles}/${availableTiles}</span>
+            <span class="layout-stat efficiency">${efficiency}%</span>
+          </div>
         </div>
-        ${
-          hasMore
-            ? `
-          <button class="optimized-explore-btn" id="explore-all-btn">
-            Explore All ${totalCount} Layouts
-          </button>
-        `
-            : ''
-        }
-        ${
-          this.showingAllLayouts && displayLayouts.length > 5
-            ? `
-          <button class="optimized-explore-btn optimized-collapse-btn" id="collapse-btn">
-            Show Top 5 Only
-          </button>
-        `
-            : ''
-        }
+        ${miniGrid}
       </div>
     `;
+  }
 
-    // Layout cards are display-only (not clickable)
-    // Only house position cards are clickable
+  /**
+   * Convert a raw layout to the format expected by mini-grid renderers
+   */
+  convertLayoutForMiniGrid(layout) {
+    const rawPlacements = layout.placements || [];
+    const placements = rawPlacements.map(p => ({
+      x: p.x,
+      y: p.y,
+      width: p.w || parseInt(p.size?.split('x')[0] || '1', 10),
+      height: p.h || parseInt(p.size?.split('x')[1] || '1', 10),
+      size: p.size
+    }));
 
-    // Add explore all button handler
-    const exploreBtn = this.container.querySelector('#explore-all-btn');
-    if (exploreBtn) {
-      exploreBtn.addEventListener('click', () => {
-        this.showingAllLayouts = true;
-        this.renderCommunityLayouts();
+    return {
+      ...layout,
+      placements,
+      housePosition: layout.housePosition || this.houseState.housePosition,
+      houseRotation: layout.houseRotation != null ? layout.houseRotation : this.houseState.houseRotation
+    };
+  }
+
+  /**
+   * Get color for a category size class
+   */
+  getCategoryColor(sizeClass) {
+    const colors = {
+      'size-1': { bg: 'rgba(251, 191, 36, 0.1)', border: 'rgba(251, 191, 36, 0.4)' },
+      'size-2': { bg: 'rgba(59, 130, 246, 0.1)', border: 'rgba(59, 130, 246, 0.4)' },
+      'size-3': { bg: 'rgba(168, 85, 247, 0.1)', border: 'rgba(168, 85, 247, 0.4)' },
+      'size-4': { bg: 'rgba(16, 185, 129, 0.1)', border: 'rgba(16, 185, 129, 0.4)' }
+    };
+    return colors[sizeClass] || colors['size-1'];
+  }
+
+  /**
+   * Open the layout explorer modal with all layouts
+   */
+  openLayoutExplorer(allLayouts, availableTiles) {
+    this.allExplorerLayouts = allLayouts;
+    this.explorerAvailableTiles = availableTiles;
+
+    const modal = document.getElementById('layoutExplorerModal');
+    if (!modal) return;
+    modal.style.display = 'flex';
+
+    // Wire up close button
+    const closeBtn = document.getElementById('closeExplorerBtn');
+    if (closeBtn) {
+      closeBtn.onclick = () => this.closeLayoutExplorer();
+    }
+
+    // Wire up backdrop click
+    modal.onclick = (e) => {
+      if (e.target === modal) this.closeLayoutExplorer();
+    };
+
+    // Wire up filter checkboxes
+    modal.querySelectorAll('.filter-checkbox input').forEach(cb => {
+      cb.onchange = () => this.renderExplorerLayouts();
+    });
+
+    // Reset filters
+    modal.querySelectorAll('.filter-checkbox input').forEach(cb => { cb.checked = false; });
+
+    this.renderExplorerLayouts();
+  }
+
+  closeLayoutExplorer() {
+    const modal = document.getElementById('layoutExplorerModal');
+    if (modal) modal.style.display = 'none';
+  }
+
+  /**
+   * Render layouts inside the explorer modal, respecting active filters
+   */
+  renderExplorerLayouts() {
+    const container = document.getElementById('explorerLayoutsList');
+    if (!container) return;
+
+    const modal = document.getElementById('layoutExplorerModal');
+    const activeFilters = [];
+    modal.querySelectorAll('.filter-checkbox input:checked').forEach(cb => {
+      activeFilters.push(cb.dataset.filter);
+    });
+
+    let layouts = this.allExplorerLayouts || [];
+
+    // Apply filters — show layouts that contain ANY of the checked sizes
+    if (activeFilters.length > 0) {
+      layouts = layouts.filter(l => {
+        return activeFilters.some(f => (l.counts[f] || 0) > 0);
       });
     }
 
-    // Add collapse button handler
-    const collapseBtn = this.container.querySelector('#collapse-btn');
-    if (collapseBtn) {
-      collapseBtn.addEventListener('click', () => {
-        this.showingAllLayouts = false;
-        this.renderCommunityLayouts();
+    if (layouts.length === 0) {
+      container.innerHTML = '<div class="no-results">No layouts match your filters</div>';
+      return;
+    }
+
+    const availTiles = this.explorerAvailableTiles || 0;
+    container.innerHTML = layouts.map(layout => {
+      const counts = layout.counts || {};
+      const totalTiles = layout.totalTiles || 0;
+      const efficiency = availTiles > 0 ? Math.round((totalTiles / availTiles) * 100) : 0;
+      const itemCount = (counts['4x4'] || 0) + (counts['3x3'] || 0) + (counts['2x2'] || 0) + (counts['1x1'] || 0);
+
+      const countBadges = [];
+      if ((counts['1x1'] || 0) > 0) countBadges.push(`<span class="count-badge size-1">${counts['1x1']}x1x1</span>`);
+      if ((counts['2x2'] || 0) > 0) countBadges.push(`<span class="count-badge size-2">${counts['2x2']}x2x2</span>`);
+      if ((counts['3x3'] || 0) > 0) countBadges.push(`<span class="count-badge size-3">${counts['3x3']}x3x3</span>`);
+      if ((counts['4x4'] || 0) > 0) countBadges.push(`<span class="count-badge size-4">${counts['4x4']}x4x4</span>`);
+
+      const displayLayout = this.convertLayoutForMiniGrid(layout);
+      const miniGrid = this.isCommunityLand ? this.renderMiniGrid(displayLayout) : this.renderNFTMiniGrid(displayLayout);
+
+      const primarySize = (counts['4x4'] || 0) > 0 ? 'size-4' : (counts['3x3'] || 0) > 0 ? 'size-3' : (counts['2x2'] || 0) > 0 ? 'size-2' : 'size-1';
+      const color = this.getCategoryColor(primarySize);
+
+      return `
+        <div class="optimal-layout-card" style="border-color: ${color.border}; background: ${color.bg};">
+          <div class="layout-counts">${countBadges.join('')}</div>
+          <div class="layout-stats-row">
+            <span class="layout-stat">${itemCount} items</span>
+            <span class="layout-stat">${totalTiles}/${availTiles} tiles</span>
+            <span class="layout-stat efficiency">${efficiency}%</span>
+          </div>
+          ${miniGrid}
+        </div>
+      `;
+    }).join('');
+  }
+
+  /**
+   * Render community land layouts using categorized strategy cards
+   */
+  renderCommunityLayouts() {
+    const allLayouts = this.communityLayouts.layouts || [];
+    const availableTiles = this.landData.tiles?.length || 0;
+
+    // Categorize layouts
+    const categorized = this.categorizeLayouts(allLayouts);
+    const cards = this.buildCategoryCards(categorized, availableTiles);
+
+    this.container.innerHTML = `
+      <div class="optimized-panel">
+        <h3 class="optimized-header">Suggested Layouts</h3>
+        <div class="layouts-list">
+          ${cards.map(card => this.renderCategorizedCard(card)).join('')}
+        </div>
+        ${allLayouts.length > 0 ? `
+          <button class="explore-more-btn" id="explore-more-btn">
+            Explore More Layouts (${allLayouts.length})
+          </button>
+        ` : ''}
+      </div>
+    `;
+
+    // Wire up explore button
+    const exploreBtn = this.container.querySelector('#explore-more-btn');
+    if (exploreBtn) {
+      exploreBtn.addEventListener('click', () => {
+        this.openLayoutExplorer(allLayouts, availableTiles);
       });
     }
   }
@@ -764,7 +997,8 @@ class LandOptimized {
   }
 
   /**
-   * Render NFT layouts filtered to match user's actual house position
+   * Render NFT layouts filtered to match user's actual house position,
+   * using categorized strategy cards matching the in-app UI
    */
   renderNFTLayoutsForHousePosition() {
     const allLayouts = this.nftLayouts?.layouts || [];
@@ -784,76 +1018,46 @@ class LandOptimized {
     });
 
     if (matchingLayouts.length === 0) {
-      // No pre-computed layouts for this position - fall back to dynamic
       this.container.innerHTML = `
         <div class="optimized-panel">
-          <h3 class="optimized-header">Optimal Crop Layouts</h3>
-          <p class="optimized-desc">
-            Your house is at (${userPos.x}, ${userPos.y}) with ${userRot}° rotation.
-            <br><small style="color: #F59E0B;">This position wasn't pre-computed. Generating layouts...</small>
+          <h3 class="optimized-header">Suggested Layouts</h3>
+          <p class="optimized-desc" style="color: #F59E0B;">
+            No pre-computed layouts for this position. Generating...
           </p>
         </div>
       `;
-      // Fall back to dynamic layout generation
       this.renderDynamicLayouts();
       return;
     }
 
-    // Convert to display format
-    const displayLayouts = matchingLayouts.map((layout, idx) => this.convertNFTLayout(layout, idx));
+    // Calculate available tiles (total - house)
+    const totalLandTiles = this.landData.tiles?.length || 0;
+    const blockedCount = this.blockedTiles.size;
+    const availableTiles = totalLandTiles - blockedCount;
 
-    // Show top 5 or all depending on state
-    const layoutsToShow = this.showingAllLayouts ? displayLayouts : displayLayouts.slice(0, 5);
-    const hasMore = !this.showingAllLayouts && displayLayouts.length > 5;
+    // Categorize and render
+    const categorized = this.categorizeLayouts(matchingLayouts);
+    const cards = this.buildCategoryCards(categorized, availableTiles);
 
     this.container.innerHTML = `
       <div class="optimized-panel">
-        <h3 class="optimized-header">Optimal Crop Layouts</h3>
-        <p class="optimized-desc">
-          ${matchingLayouts.length} layout${matchingLayouts.length !== 1 ? 's' : ''} for house at (${userPos.x}, ${userPos.y}) rot: ${userRot}°
-        </p>
-        <div class="optimized-layouts-list">
-          ${layoutsToShow.map((layout) => this.renderCropLayoutCard(layout)).join('')}
+        <h3 class="optimized-header">Suggested Layouts</h3>
+        <div class="layouts-list">
+          ${cards.map(card => this.renderCategorizedCard(card)).join('')}
         </div>
-        ${
-          hasMore
-            ? `
-          <button class="optimized-explore-btn" id="explore-all-btn">
-            Explore All ${matchingLayouts.length} Layouts
+        ${matchingLayouts.length > 0 ? `
+          <button class="explore-more-btn" id="explore-more-btn">
+            Explore More Layouts (${matchingLayouts.length})
           </button>
-        `
-            : ''
-        }
-        ${
-          this.showingAllLayouts && displayLayouts.length > 5
-            ? `
-          <button class="optimized-explore-btn optimized-collapse-btn" id="collapse-btn">
-            Show Top 5 Only
-          </button>
-        `
-            : ''
-        }
+        ` : ''}
       </div>
     `;
 
-    // Layout cards are display-only (not clickable)
-    // Only house position cards are clickable
-
-    // Add explore all button handler
-    const exploreBtn = this.container.querySelector('#explore-all-btn');
+    // Wire up explore button
+    const exploreBtn = this.container.querySelector('#explore-more-btn');
     if (exploreBtn) {
       exploreBtn.addEventListener('click', () => {
-        this.showingAllLayouts = true;
-        this.renderNFTLayoutsForHousePosition();
-      });
-    }
-
-    // Add collapse button handler
-    const collapseBtn = this.container.querySelector('#collapse-btn');
-    if (collapseBtn) {
-      collapseBtn.addEventListener('click', () => {
-        this.showingAllLayouts = false;
-        this.renderNFTLayoutsForHousePosition();
+        this.openLayoutExplorer(matchingLayouts, availableTiles);
       });
     }
   }

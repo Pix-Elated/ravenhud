@@ -196,77 +196,91 @@
       tabindex="0"
     >
       <div class="land-simulator">
-        <!-- Owned Lands Configuration -->
-        <div class="owned-lands-config">
-          <div class="config-header">
-            <h3>Your Owned Lands</h3>
-            <span class="total-tiles" id="totalOwnedTiles">0 tiles</span>
-          </div>
-
-          <div class="config-grid">
-            <!-- Community Lands (checkboxes, max 1 each) -->
-            <div class="land-config-section">
-              <h4>Community Lands <span class="hint">(1 each max)</span></h4>
-              <label class="land-checkbox">
-                <input type="checkbox" id="ownSmallCommunity">
-                <span class="land-info">
-                  <span class="name">Small Community</span>
-                  <span class="details">56 tiles • 1,120 Silver/day tax</span>
-                </span>
-              </label>
-              <label class="land-checkbox">
-                <input type="checkbox" id="ownMediumCommunity">
-                <span class="land-info">
-                  <span class="name">Medium Community</span>
-                  <span class="details">91 tiles • 31,200 Silver/day tax</span>
-                </span>
-              </label>
-              <label class="land-checkbox">
-                <input type="checkbox" id="ownLargeCommunity">
-                <span class="land-info">
-                  <span class="name">Large Community</span>
-                  <span class="details">130 tiles • 46,240 Silver/day tax</span>
-                </span>
-              </label>
+        <!-- Owned Lands Config Modal (shown on first visit) -->
+        <div id="ownedLandsModal" class="modal-backdrop" style="display: none;">
+          <div class="owned-lands-modal">
+            <div class="modal-header">
+              <h3>Configure Your Lands</h3>
+              <button class="modal-close" id="closeOwnedLandsBtn">&#x2715;</button>
             </div>
 
-            <!-- NFT Lands (number inputs, max 7 total combined) -->
-            <div class="land-config-section">
-              <h4>NFT Lands <span class="hint">(<span id="nftLandCount">0</span>/7 owned, no tax)</span></h4>
-              <div class="land-input-row">
-                <label for="ownNftSmall">Small (10x10)</label>
-                <div class="input-with-tiles">
-                  <input type="number" id="ownNftSmall" min="0" max="7" value="0" step="1" aria-describedby="nftSmallTiles">
-                  <span class="tile-count" id="nftSmallTiles">100 tiles each</span>
+            <div class="demo-disclaimer">
+              This is a <strong>demo preview</strong> and may be out of date compared to the desktop app.
+              Found a bug? Report it via <a href="https://discord.gg/ravenhud" target="_blank" rel="noopener">Discord</a> to <strong>Pixelated</strong>.
+            </div>
+
+            <div class="owned-lands-config">
+              <div class="config-grid">
+                <!-- Community Lands (checkboxes, max 1 each) -->
+                <div class="land-config-section">
+                  <h4>Community Lands <span class="hint">(1 each max)</span></h4>
+                  <label class="land-checkbox">
+                    <input type="checkbox" id="ownSmallCommunity">
+                    <span class="land-info">
+                      <span class="name">Small Community</span>
+                      <span class="details">56 tiles • 1,120 Silver/day tax</span>
+                    </span>
+                  </label>
+                  <label class="land-checkbox">
+                    <input type="checkbox" id="ownMediumCommunity">
+                    <span class="land-info">
+                      <span class="name">Medium Community</span>
+                      <span class="details">91 tiles • 31,200 Silver/day tax</span>
+                    </span>
+                  </label>
+                  <label class="land-checkbox">
+                    <input type="checkbox" id="ownLargeCommunity">
+                    <span class="land-info">
+                      <span class="name">Large Community</span>
+                      <span class="details">130 tiles • 46,240 Silver/day tax</span>
+                    </span>
+                  </label>
+                </div>
+
+                <!-- NFT Lands (number inputs, max 7 total combined) -->
+                <div class="land-config-section">
+                  <h4>NFT Lands <span class="hint">(<span id="nftLandCount">0</span>/7 owned, no tax)</span></h4>
+                  <div class="land-input-row">
+                    <label for="ownNftSmall">Small (10x10)</label>
+                    <div class="input-with-tiles">
+                      <input type="number" id="ownNftSmall" min="0" max="7" value="0" step="1" aria-describedby="nftSmallTiles">
+                      <span class="tile-count" id="nftSmallTiles">100 tiles each</span>
+                    </div>
+                  </div>
+                  <div class="land-input-row">
+                    <label for="ownNftMedium">Medium (12x12)</label>
+                    <div class="input-with-tiles">
+                      <input type="number" id="ownNftMedium" min="0" max="7" value="0" step="1" aria-describedby="nftMediumTiles">
+                      <span class="tile-count" id="nftMediumTiles">144 tiles each</span>
+                    </div>
+                  </div>
+                  <div class="land-input-row">
+                    <label for="ownNftLarge">Large (15x15)</label>
+                    <div class="input-with-tiles">
+                      <input type="number" id="ownNftLarge" min="0" max="7" value="0" step="1" aria-describedby="nftLargeTiles">
+                      <span class="tile-count" id="nftLargeTiles">225 tiles each</span>
+                    </div>
+                  </div>
+                  <div class="land-input-row">
+                    <label for="ownNftStronghold">Stronghold (22x22)</label>
+                    <div class="input-with-tiles">
+                      <input type="number" id="ownNftStronghold" min="0" max="7" value="0" step="1" aria-describedby="nftStrongholdTiles">
+                      <span class="tile-count" id="nftStrongholdTiles">484 tiles each</span>
+                    </div>
+                  </div>
+                  <div class="land-input-row">
+                    <label for="ownNftFort">Fort (30x30)</label>
+                    <div class="input-with-tiles">
+                      <input type="number" id="ownNftFort" min="0" max="7" value="0" step="1" aria-describedby="nftFortTiles">
+                      <span class="tile-count" id="nftFortTiles">900 tiles each</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="land-input-row">
-                <label for="ownNftMedium">Medium (12x12)</label>
-                <div class="input-with-tiles">
-                  <input type="number" id="ownNftMedium" min="0" max="7" value="0" step="1" aria-describedby="nftMediumTiles">
-                  <span class="tile-count" id="nftMediumTiles">144 tiles each</span>
-                </div>
-              </div>
-              <div class="land-input-row">
-                <label for="ownNftLarge">Large (15x15)</label>
-                <div class="input-with-tiles">
-                  <input type="number" id="ownNftLarge" min="0" max="7" value="0" step="1" aria-describedby="nftLargeTiles">
-                  <span class="tile-count" id="nftLargeTiles">225 tiles each</span>
-                </div>
-              </div>
-              <div class="land-input-row">
-                <label for="ownNftStronghold">Stronghold (22x22)</label>
-                <div class="input-with-tiles">
-                  <input type="number" id="ownNftStronghold" min="0" max="7" value="0" step="1" aria-describedby="nftStrongholdTiles">
-                  <span class="tile-count" id="nftStrongholdTiles">484 tiles each</span>
-                </div>
-              </div>
-              <div class="land-input-row">
-                <label for="ownNftFort">Fort (30x30)</label>
-                <div class="input-with-tiles">
-                  <input type="number" id="ownNftFort" min="0" max="7" value="0" step="1" aria-describedby="nftFortTiles">
-                  <span class="tile-count" id="nftFortTiles">900 tiles each</span>
-                </div>
+
+              <div class="config-footer">
+                <span class="total-tiles" id="totalOwnedTiles">0 tiles</span>
+                <button type="button" class="btn-save-lands" id="saveOwnedLandsBtn">Done</button>
               </div>
             </div>
           </div>
@@ -292,17 +306,39 @@
             </select>
           </div>
           <div class="control-actions">
+            <button type="button" id="configureLandsOpenBtn" class="btn-secondary btn-configure">Configure Lands</button>
             <button type="button" id="clearGridBtn" class="btn-secondary">Clear Grid</button>
           </div>
         </div>
 
         <div class="land-layout">
-          <div id="landSidebar" class="land-sidebar-container"></div>
+          <div class="land-sidebar-container">
+            <div id="landSidebar"></div>
+            <div id="landOptimized"></div>
+          </div>
           <div class="land-center-area">
             <div id="landGrid" class="land-grid-main"></div>
             <div id="landStats" class="land-stats-panel"></div>
           </div>
-          <div id="landOptimized" class="land-optimized-container"></div>
+        </div>
+        <!-- Layout Explorer Modal -->
+        <div id="layoutExplorerModal" class="modal-backdrop" style="display: none;">
+          <div class="layout-explorer-modal">
+            <div class="modal-header">
+              <h3>Explore Layouts</h3>
+              <button class="modal-close" id="closeExplorerBtn">&#x2715;</button>
+            </div>
+            <div class="modal-filters">
+              <span class="filter-label">Filter by crop size:</span>
+              <label class="filter-checkbox"><input type="checkbox" data-filter="1x1"><span class="checkbox-badge bg-1x1">1x1</span></label>
+              <label class="filter-checkbox"><input type="checkbox" data-filter="2x2"><span class="checkbox-badge bg-2x2">2x2</span></label>
+              <label class="filter-checkbox"><input type="checkbox" data-filter="3x3"><span class="checkbox-badge bg-3x3">3x3</span></label>
+              <label class="filter-checkbox"><input type="checkbox" data-filter="4x4"><span class="checkbox-badge bg-4x4">4x4</span></label>
+            </div>
+            <div class="modal-content">
+              <div id="explorerLayoutsList" class="explorer-layouts-list"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

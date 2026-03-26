@@ -83,14 +83,14 @@ function setupEventListeners() {
     clearGridBtn.addEventListener('click', handleClearGrid);
   }
 
-  // Ctrl+S to save current layout
+  // Ctrl+S to copy layout JSON
   document.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 's') {
-      // Only save if Land tab is active
       const landTab = document.getElementById('tab-land');
-      if (landTab?.classList.contains('active') && landSidebar) {
+      if (landTab?.classList.contains('active') && currentLandType && landGrid) {
         e.preventDefault();
-        landSidebar.saveCurrentLayout();
+        const btn = document.getElementById('copyJsonBtn');
+        if (btn) btn.click();
       }
     }
   });
@@ -117,6 +117,7 @@ async function handleLandTypeChange(e) {
   }
 
   currentLandType = landType;
+  cachedLandData = null; // Reset so stats bar re-fetches
 
   if (landGrid) {
     try {
@@ -145,7 +146,11 @@ async function handleLandTypeChange(e) {
  */
 function handleItemSelect(item) {
   if (landGrid) {
-    landGrid.setSelectedItem(item);
+    if (item) {
+      landGrid.setSelectedItem(item);
+    } else {
+      landGrid.selectedItem = null;
+    }
   }
 }
 
@@ -178,6 +183,15 @@ function handleHouseStateChange(state) {
     // Pass house position and rotation to optimized panel
     const houseState = landGrid.getHouseState();
     landOptimized.setHouseState(houseState.position, houseState.rotation);
+  }
+  // Update sidebar house state for palette enable/disable
+  if (landSidebar && landGrid) {
+    const houseState = landGrid.getHouseState();
+    landSidebar.setHouseState(houseState.position);
+  }
+  // Update stats bar with new house state
+  if (landGrid) {
+    updateStatsPanel(currentLandType, landGrid.getGrid ? landGrid.getGrid() : []);
   }
 }
 
@@ -290,111 +304,174 @@ function showToast(message, type = 'info') {
 }
 
 /**
- * Get color for efficiency percentage
+ * Get color for efficiency percentage (matches in-app thresholds)
  */
 function getEfficiencyColor(efficiency) {
-  if (efficiency >= 70) return '#10B981';
-  if (efficiency >= 50) return '#FBBF24';
-  return '#EF4444';
+  if (efficiency >= 90) return '#22c55e';
+  if (efficiency >= 70) return '#eab308';
+  return '#ef4444';
 }
 
+// Track cached land data for stats
+let cachedLandData = null;
+let jsonCopied = false;
+
 /**
- * Update the stats panel below the grid
+ * Update the stats bar below the grid (matches in-app UI)
  */
 async function updateStatsPanel(landType, grid) {
   if (!landStatsPanel) return;
 
-  // Hide panel if no land selected
   if (!landType) {
     landStatsPanel.style.display = 'none';
     return;
   }
 
-  landStatsPanel.style.display = 'block';
+  landStatsPanel.style.display = 'flex';
 
-  // Get land data for total tiles
-  let totalTiles = 0;
-  try {
-    const landTypes = await window.electronAPI.getLandTypes();
-    const landData = landTypes.find((l) => l.id === landType);
-    if (landData) {
-      totalTiles = landData.tiles?.length || 0;
+  // Get land data (cached)
+  if (!cachedLandData || cachedLandData.id !== landType) {
+    try {
+      const landTypes = await window.electronAPI.getLandTypes();
+      cachedLandData = landTypes.find((l) => l.id === landType) || null;
+    } catch (e) {
+      console.error('Failed to get land data for stats:', e);
     }
-  } catch (e) {
-    console.error('Failed to get land data for stats:', e);
   }
 
-  // Calculate stats from grid
+  const totalLandTiles = cachedLandData?.tiles?.length || 0;
+  const nftIds = ['NFT_SMALL', 'NFT_MEDIUM', 'NFT_LARGE', 'NFT_STRONGHOLD', 'NFT_FORT'];
+  const isNft = nftIds.includes(landType);
+
+  // Calculate blocked tiles from house
+  let blockedCount = 0;
+  let housePos = null;
+  let houseRot = 0;
+  if (isNft && landGrid) {
+    const houseState = landGrid.getHouseState();
+    housePos = houseState.position;
+    houseRot = houseState.rotation;
+    if (housePos && landOptimized) {
+      blockedCount = landOptimized.blockedTiles?.size || 0;
+    }
+  }
+
+  const availableTiles = totalLandTiles - blockedCount;
   const itemCount = grid.length;
   const tilesUsed = grid.reduce((sum, placed) => sum + placed.item.width * placed.item.height, 0);
-  const totalSilver = grid.reduce((sum, placed) => sum + (placed.item.silverCost || 0), 0);
-  const efficiency = totalTiles > 0 ? Math.round((tilesUsed / totalTiles) * 100) : 0;
+  const efficiency = availableTiles > 0 ? Math.round((tilesUsed / availableTiles) * 100) : 0;
 
-  // Group by size
-  const sizeBreakdown = {};
+  // Size breakdown text
+  const sizeCounts = {};
   grid.forEach((placed) => {
     const size = placed.item.size || `${placed.item.width}x${placed.item.height}`;
-    sizeBreakdown[size] = (sizeBreakdown[size] || 0) + 1;
+    sizeCounts[size] = (sizeCounts[size] || 0) + 1;
   });
-
-  const breakdownHtml = Object.entries(sizeBreakdown)
-    .map(([size, count]) => `<span class="stat-breakdown-item">${count}x ${size}</span>`)
-    .join('');
-
-  // Calculate total yields (aggregate by resource)
-  const yieldTotals = {};
-  grid.forEach((placed) => {
-    if (placed.item.yields && placed.item.yields.length > 0) {
-      placed.item.yields.forEach((y) => {
-        if (!yieldTotals[y.resource]) {
-          yieldTotals[y.resource] = { min: 0, max: 0, avg: 0 };
-        }
-        yieldTotals[y.resource].min += y.min;
-        yieldTotals[y.resource].max += y.max;
-        yieldTotals[y.resource].avg += y.avg;
-      });
-    }
+  const breakdownParts = [];
+  ['4x4', '3x3', '2x2', '1x1'].forEach(size => {
+    if (sizeCounts[size]) breakdownParts.push(`${sizeCounts[size]}x ${size}`);
   });
+  const breakdownText = breakdownParts.join(' + ');
 
-  // Build yields HTML
-  let yieldsHtml = '';
-  const yieldEntries = Object.entries(yieldTotals);
-  if (yieldEntries.length > 0) {
-    yieldsHtml = `
-      <div class="stats-yields">
-        <span class="yields-header">Expected Yields:</span>
-        ${yieldEntries
-          .map(
-            ([resource, totals]) =>
-              `<span class="yield-item"><strong>${resource}:</strong> ${totals.min}-${totals.max} (~${Math.round(totals.avg)})</span>`
-          )
-          .join('')}
-      </div>
-    `;
-  }
+  // House position HTML (NFT only)
+  const housePosHtml = isNft && housePos ? `
+    <div class="stat-item house-pos-stat">
+      <span class="stat-label">Position</span>
+      <span class="stat-value house-pos-value">${housePos.x},${housePos.y} <span class="house-rotation-badge">${houseRot}&deg;</span></span>
+    </div>
+  ` : '';
 
   landStatsPanel.innerHTML = `
-    <div class="stats-grid">
-      <div class="stat-item">
-        <span class="stat-label">Crops Planted</span>
-        <span class="stat-value">${itemCount}</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-label">Tiles Used</span>
-        <span class="stat-value">${tilesUsed} / ${totalTiles}</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-label">Efficiency</span>
-        <span class="stat-value" style="color: ${getEfficiencyColor(efficiency)};">${efficiency}%</span>
-      </div>
-      <div class="stat-item">
-        <span class="stat-label">Silver Cost</span>
-        <span class="stat-value" style="color: var(--color-gold);">${totalSilver.toLocaleString()}</span>
-      </div>
+    <button class="btn-copy-json ${jsonCopied ? 'copied' : ''}" id="copyJsonBtn" title="Copy layout configuration as JSON">
+      ${jsonCopied ? '&#10003; Copied!' : '&#128203; Copy JSON'}
+    </button>
+    ${housePosHtml}
+    <div class="stat-item">
+      <span class="stat-label">Items</span>
+      <span class="stat-value">${itemCount}</span>
     </div>
-    ${breakdownHtml ? `<div class="stats-breakdown">${breakdownHtml}</div>` : ''}
-    ${yieldsHtml}
+    <div class="stat-item">
+      <span class="stat-label">Tiles</span>
+      <span class="stat-value">${tilesUsed}/${availableTiles}</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Efficiency</span>
+      <span class="stat-value" style="color: ${getEfficiencyColor(efficiency)};">${efficiency}%</span>
+    </div>
+    ${breakdownText ? `
+      <div class="stat-item">
+        <span class="stat-label">Breakdown</span>
+        <span class="stat-value breakdown-text">${breakdownText}</span>
+      </div>
+    ` : ''}
   `;
+
+  // Wire up copy JSON button
+  const copyBtn = document.getElementById('copyJsonBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => copyLayoutJson(landType, grid, housePos, houseRot, tilesUsed, availableTiles, efficiency, breakdownText));
+  }
+}
+
+/**
+ * Copy layout configuration as JSON to clipboard
+ */
+async function copyLayoutJson(landType, grid, housePos, houseRot, tilesUsed, availableTiles, efficiency, breakdownText) {
+  const payload = {
+    land: {
+      type: landType,
+      name: cachedLandData?.name || landType,
+      width: cachedLandData?.width || 0,
+      height: cachedLandData?.height || 0,
+      hasHouse: cachedLandData?.hasHouse || false,
+      validTileCount: cachedLandData?.tiles?.length || 0
+    },
+    ...(housePos ? {
+      house: {
+        position: housePos,
+        rotation: houseRot
+      }
+    } : {}),
+    placements: grid.map(placed => ({
+      x: placed.x,
+      y: placed.y,
+      crop: {
+        id: placed.item.id || placed.item.size,
+        name: placed.item.name,
+        width: placed.item.width,
+        height: placed.item.height,
+        size: placed.item.size
+      }
+    })),
+    stats: {
+      itemCount: grid.length,
+      tilesUsed,
+      tilesAvailable: availableTiles,
+      efficiency,
+      sizeBreakdown: breakdownText
+    },
+    exportedAt: new Date().toISOString()
+  };
+
+  try {
+    await navigator.clipboard.writeText(JSON.stringify(payload, null, 2));
+    jsonCopied = true;
+    const btn = document.getElementById('copyJsonBtn');
+    if (btn) {
+      btn.classList.add('copied');
+      btn.innerHTML = '&#10003; Copied!';
+    }
+    setTimeout(() => {
+      jsonCopied = false;
+      const btn2 = document.getElementById('copyJsonBtn');
+      if (btn2) {
+        btn2.classList.remove('copied');
+        btn2.innerHTML = '&#128203; Copy JSON';
+      }
+    }, 2000);
+  } catch (e) {
+    showToast('Failed to copy to clipboard', 'error');
+  }
 }
 
 // ============================================
@@ -433,9 +510,61 @@ async function initOwnedLandsConfig() {
     updateNftLandCount();
     updateTotalOwnedTiles();
     setupOwnedLandsListeners();
+    setupOwnedLandsModal();
   } catch (error) {
     console.error('Error initializing owned lands config:', error);
   }
+}
+
+/**
+ * Setup owned lands modal — show on first visit, wire up open/close
+ */
+function setupOwnedLandsModal() {
+  const modal = document.getElementById('ownedLandsModal');
+  if (!modal) return;
+
+  // Close button
+  const closeBtn = document.getElementById('closeOwnedLandsBtn');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeOwnedLandsModal);
+  }
+
+  // "Done" button
+  const saveBtn = document.getElementById('saveOwnedLandsBtn');
+  if (saveBtn) {
+    saveBtn.addEventListener('click', closeOwnedLandsModal);
+  }
+
+  // Backdrop click
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeOwnedLandsModal();
+  });
+
+  // "Configure Lands" button in controls bar
+  const openBtn = document.getElementById('configureLandsOpenBtn');
+  if (openBtn) {
+    openBtn.addEventListener('click', openOwnedLandsModal);
+  }
+
+  // Show on first visit (check localStorage)
+  const hasVisited = localStorage.getItem('rhud_demo_visited');
+  if (!hasVisited) {
+    openOwnedLandsModal();
+  }
+}
+
+function openOwnedLandsModal() {
+  const modal = document.getElementById('ownedLandsModal');
+  if (modal) modal.style.display = 'flex';
+}
+
+function closeOwnedLandsModal() {
+  const modal = document.getElementById('ownedLandsModal');
+  if (modal) modal.style.display = 'none';
+  // Mark as visited so it doesn't auto-show again
+  localStorage.setItem('rhud_demo_visited', '1');
+  // Save lands on close
+  saveOwnedLands();
 }
 
 /**
