@@ -665,24 +665,35 @@ class LandOptimized {
   }
 
   /**
-   * Extract optimal house positions from pre-computed layouts
-   * Returns best positions for various optimization strategies
+   * Extract optimal house positions.
+   * Uses pre-computed bestPositions from index.json.gz when available (matches in-app).
+   * Falls back to scanning all layouts if index is missing.
    */
   extractOptimalHousePositions() {
+    // Prefer index bestPositions (authoritative, matches in-app exactly)
+    const bp = this.nftLayouts?.bestPositions;
+    if (bp) {
+      const bestFor = { '1x1': null, '2x2': null, '3x3': null, '4x4': null, maxTiles: null, balanced: null };
+      const convert = (entry) => entry ? {
+        counts: entry.counts,
+        totalTiles: entry.totalTiles || 0,
+        housePosition: { x: entry.x, y: entry.y },
+        houseRotation: entry.rotation || 0,
+        houseTiles: entry.houseTiles || []
+      } : null;
+      bestFor['1x1'] = convert(bp.best1x1);
+      bestFor['2x2'] = convert(bp.best2x2);
+      bestFor['3x3'] = convert(bp.best3x3);
+      bestFor['4x4'] = convert(bp.best4x4);
+      bestFor.maxTiles = convert(bp.bestTiles || bp.bestTotal);
+      return bestFor;
+    }
+
+    // Fallback: scan layouts
     const layouts = this.nftLayouts?.layouts || [];
     if (layouts.length === 0) return null;
 
-    // Find best house position for each optimization strategy
-    const bestFor = {
-      // Primary categories (shown by default)
-      '1x1': null,
-      '2x2': null,
-      '3x3': null,
-      '4x4': null,
-      // Additional categories (shown with "More" button)
-      maxTiles: null,
-      balanced: null
-    };
+    const bestFor = { '1x1': null, '2x2': null, '3x3': null, '4x4': null, maxTiles: null, balanced: null };
 
     layouts.forEach((layout) => {
       const counts = layout.counts || {};
@@ -690,46 +701,16 @@ class LandOptimized {
       const rot = layout.houseRotation;
       const totalTiles = layout.totalTiles || 0;
 
-      // Track best for 1x1 (most 1x1 items)
-      if (!bestFor['1x1'] || counts['1x1'] > bestFor['1x1'].counts['1x1']) {
-        if (counts['1x1'] > 0) {
-          bestFor['1x1'] = { ...layout, housePosition: pos, houseRotation: rot };
-        }
-      }
-
-      // Track best for 2x2 (most 2x2 items)
-      if (!bestFor['2x2'] || counts['2x2'] > bestFor['2x2'].counts['2x2']) {
-        if (counts['2x2'] > 0) {
-          bestFor['2x2'] = { ...layout, housePosition: pos, houseRotation: rot };
-        }
-      }
-
-      // Track best for 3x3 (most 3x3 items)
-      if (!bestFor['3x3'] || counts['3x3'] > bestFor['3x3'].counts['3x3']) {
-        if (counts['3x3'] > 0) {
-          bestFor['3x3'] = { ...layout, housePosition: pos, houseRotation: rot };
-        }
-      }
-
-      // Track best for 4x4 (most 4x4 items)
-      if (!bestFor['4x4'] || (counts['4x4'] || 0) > (bestFor['4x4'].counts['4x4'] || 0)) {
-        if ((counts['4x4'] || 0) > 0) {
-          bestFor['4x4'] = { ...layout, housePosition: pos, houseRotation: rot };
-        }
-      }
-
-      // Track best for maximum total tiles (highest production)
-      if (!bestFor.maxTiles || totalTiles > bestFor.maxTiles.totalTiles) {
+      if ((!bestFor['1x1'] || (counts['1x1']||0) > (bestFor['1x1'].counts['1x1']||0)) && (counts['1x1']||0) > 0)
+        bestFor['1x1'] = { ...layout, housePosition: pos, houseRotation: rot };
+      if ((!bestFor['2x2'] || (counts['2x2']||0) > (bestFor['2x2'].counts['2x2']||0)) && (counts['2x2']||0) > 0)
+        bestFor['2x2'] = { ...layout, housePosition: pos, houseRotation: rot };
+      if ((!bestFor['3x3'] || (counts['3x3']||0) > (bestFor['3x3'].counts['3x3']||0)) && (counts['3x3']||0) > 0)
+        bestFor['3x3'] = { ...layout, housePosition: pos, houseRotation: rot };
+      if ((!bestFor['4x4'] || (counts['4x4']||0) > (bestFor['4x4'].counts['4x4']||0)) && (counts['4x4']||0) > 0)
+        bestFor['4x4'] = { ...layout, housePosition: pos, houseRotation: rot };
+      if (!bestFor.maxTiles || totalTiles > bestFor.maxTiles.totalTiles)
         bestFor.maxTiles = { ...layout, housePosition: pos, houseRotation: rot };
-      }
-
-      // Track best for balanced mix (all 4 sizes present, prioritize total tiles)
-      const hasAllSizes = counts['1x1'] > 0 && counts['2x2'] > 0 && counts['3x3'] > 0 && (counts['4x4'] || 0) > 0;
-      if (hasAllSizes) {
-        if (!bestFor.balanced || totalTiles > bestFor.balanced.totalTiles) {
-          bestFor.balanced = { ...layout, housePosition: pos, houseRotation: rot };
-        }
-      }
     });
 
     return bestFor;
@@ -943,13 +924,17 @@ class LandOptimized {
     const maxGridWidth = 200;
     const cellSize = Math.max(14, Math.min(20, Math.floor(maxGridWidth / width)));
 
-    // Get house tiles at this position
+    // Use pre-computed houseTiles from index if available (already positioned+rotated)
     const houseTilesSet = new Set();
     const doorTilesSet = new Set();
-    const houseTiles = this.getHouseTilesAtPosition(layout.housePosition, layout.houseRotation);
-    houseTiles.house.forEach((t) => houseTilesSet.add(`${t.x},${t.y}`));
-    houseTiles.door.forEach((t) => doorTilesSet.add(`${t.x},${t.y}`));
-    houseTiles.clearance.forEach((t) => houseTilesSet.add(`${t.x},${t.y}`));
+    if (layout.houseTiles && layout.houseTiles.length > 0) {
+      layout.houseTiles.forEach((t) => houseTilesSet.add(`${t.x},${t.y}`));
+    } else {
+      const houseTiles = this.getHouseTilesAtPosition(layout.housePosition, layout.houseRotation);
+      houseTiles.house.forEach((t) => houseTilesSet.add(`${t.x},${t.y}`));
+      houseTiles.door.forEach((t) => doorTilesSet.add(`${t.x},${t.y}`));
+      houseTiles.clearance.forEach((t) => houseTilesSet.add(`${t.x},${t.y}`));
+    }
 
     const gridWidth = width * cellSize;
     const gridHeight = height * cellSize;
