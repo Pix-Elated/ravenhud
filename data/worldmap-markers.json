@@ -2609,21 +2609,6 @@
     "icon": "npc_reputation.webp"
   },
   {
-    "id": "c_8c243ed6",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Aspan Woods",
-    "description": "in cart",
-    "x": 4660,
-    "y": 2665,
-    "floor": "surface",
-    "icon": "",
-    "label": "Aspan Woods",
-    "region": "",
-    "trigger": "",
-    "contributedBy": "Kulion"
-  },
-  {
     "id": "c_ec6a595b",
     "source": "base",
     "category": "reputation_shiny",
@@ -3073,21 +3058,6 @@
     "icon": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_d06276e1.webp"
-  },
-  {
-    "id": "c_cca5603e",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Hadarak Oasis",
-    "description": "wood log",
-    "x": 4256,
-    "y": 2970,
-    "floor": "surface",
-    "icon": "",
-    "label": "Hadarak Oasis",
-    "region": "",
-    "trigger": "",
-    "contributedBy": "Kulion"
   },
   {
     "id": "c_309366b1",
