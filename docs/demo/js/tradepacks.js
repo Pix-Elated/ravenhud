@@ -14,9 +14,13 @@ let currentSimulationTradepack = null;
 /**
  * Get local icon path for a tradepack
  */
-function getTradepackIconUrl(id) {
-  // Demo uses placeholder
-  return `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><rect fill="%23665544" width="48" height="48" rx="8"/><text x="24" y="32" font-size="24" text-anchor="middle" fill="%23fff">📦</text></svg>`;
+function getTradepackIconUrl(tp) {
+  if (tp.imagePath) {
+    // imagePath is like "assets/images/tradepacks/aged-meat.webp" — use as-is
+    return tp.imagePath;
+  }
+  // Fallback: derive from id
+  return `assets/images/tradepacks/${tp.id.replace(/_/g, '-')}.webp`;
 }
 
 /**
@@ -182,7 +186,7 @@ function renderTradepackList() {
     <div class="tradepack-item ${selectedTradepack?.id === tp.id ? 'selected' : ''}"
          data-id="${tp.id}">
       <div class="tradepack-header">
-        <img class="tradepack-icon" src="${getTradepackIconUrl(tp.id)}" alt="${tp.name}" />
+        <img class="tradepack-icon" src="${getTradepackIconUrl(tp)}" alt="${tp.name}" onerror="this.style.display='none'" />
         <span class="tradepack-name">${tp.name}</span>
       </div>
       <div class="tradepack-materials">
