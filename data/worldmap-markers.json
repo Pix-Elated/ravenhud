@@ -5710,5 +5710,20 @@
     "region": "The Blotch",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_6e7c8fec",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Blotch log shiny",
+    "description": "",
+    "x": 5770,
+    "y": 1781,
+    "floor": "surface",
+    "icon": "",
+    "label": "Blotch log shiny",
+    "region": "The Blotch",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
