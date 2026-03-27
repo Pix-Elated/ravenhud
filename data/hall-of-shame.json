@@ -246,6 +246,12 @@
       "name": "Lunetta",
       "reason": "Ban evasion",
       "added": "2026-03-27"
+    },
+    {
+      "type": "ip",
+      "name": "201.172.58.254",
+      "reason": "Fake name, fake guild",
+      "added": "2026-03-27"
     }
   ]
 }
