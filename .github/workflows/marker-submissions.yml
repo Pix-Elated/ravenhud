@@ -538,11 +538,14 @@ jobs:
                   }
                 }
 
+                // Normalize legacy category keys
+                const category = m.category === 'reputation_npc' ? 'npc_reputation' : m.category;
+
                 // New marker
                 const marker = {
                   id: m.id,
                   source: 'base',
-                  category: m.category,
+                  category,
                   name: m.name,
                   description: m.description || '',
                   x: m.x,

@@ -5047,7 +5047,7 @@
   {
     "id": "c_4acef5dd",
     "source": "base",
-    "category": "reputation_npc",
+    "category": "npc_reputation",
     "name": "Frosthog",
     "description": "",
     "x": 2980,
@@ -5579,7 +5579,7 @@
   {
     "id": "c_d3954833",
     "source": "base",
-    "category": "reputation_npc",
+    "category": "npc_reputation",
     "name": "Mr. Vinlow",
     "description": "",
     "x": 4137,
@@ -5594,7 +5594,7 @@
   {
     "id": "c_bfe023b9",
     "source": "base",
-    "category": "reputation_npc",
+    "category": "npc_reputation",
     "name": "Nirolo",
     "description": "upstairs",
     "x": 4142,
@@ -5609,7 +5609,7 @@
   {
     "id": "c_f65f869d",
     "source": "base",
-    "category": "reputation_npc",
+    "category": "npc_reputation",
     "name": "Lorekeeper Havel",
     "description": "",
     "x": 4111,
@@ -5624,7 +5624,7 @@
   {
     "id": "c_44854130",
     "source": "base",
-    "category": "reputation_npc",
+    "category": "npc_reputation",
     "name": "King Eden",
     "description": "",
     "x": 4018,
