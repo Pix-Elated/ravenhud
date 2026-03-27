@@ -5555,5 +5555,20 @@
     "region": "",
     "trigger": "",
     "contributedBy": "ThisDaniel"
+  },
+  {
+    "id": "c_d3a442de",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glaceforde dwarf shiny",
+    "description": "check minimap in screen, inside dungeon",
+    "x": 2655,
+    "y": 882,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glaceforde dwarf shiny",
+    "region": "Glaceforde",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
