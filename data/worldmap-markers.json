@@ -5365,7 +5365,7 @@
     "id": "c_4124873f",
     "source": "base",
     "category": "reputation_shiny",
-    "name": "Shiny in the tree",
+    "name": "Blotch Shiny in the tree",
     "description": "",
     "x": 6051,
     "y": 1890,
@@ -5633,6 +5633,21 @@
     "icon": "",
     "label": "King Eden",
     "region": "Ravencrest",
+    "trigger": "",
+    "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_07f0cced",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Blotch house shiny",
+    "description": "coffin inside",
+    "x": 5961,
+    "y": 1799,
+    "floor": "surface",
+    "icon": "",
+    "label": "Blotch house shiny",
+    "region": "The Blotch",
     "trigger": "",
     "contributedBy": "Azurak"
   }
