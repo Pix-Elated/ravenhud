@@ -46,7 +46,7 @@ var CATEGORIES = {
   expedition: { label: 'Expeditions', emoji: '\uD83E\uDDED', icon: 'expedition.webp', group: 'Exploration' },
   creature_spawn: { label: 'Elite Spawns', emoji: '\uD83D\uDC80', icon: 'elitespawn.webp', group: 'Exploration' },
   reputation_shiny: { label: 'Reputation (Shiny)', emoji: '\u2728', icon: null, group: 'Reputation' },
-  npc_reputation: { label: 'Reputation (NPC)', emoji: '\uD83D\uDCAC', icon: 'npc_reputation.webp', group: 'Reputation' }
+  npc_reputation: { label: 'Reputation (NPC)', emoji: '\uD83D\uDC64', icon: 'npc_reputation.webp', group: 'Reputation' }
 };
 
 // Category groups for sidebar ordering
