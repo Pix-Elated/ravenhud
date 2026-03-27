@@ -5575,5 +5575,20 @@
     "region": "Glaceforde",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_d3954833",
+    "source": "base",
+    "category": "reputation_npc",
+    "name": "Mr. Vinlow",
+    "description": "",
+    "x": 4137,
+    "y": 2642,
+    "floor": "surface",
+    "icon": "",
+    "label": "Mr. Vinlow",
+    "region": "Ravencrest",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
