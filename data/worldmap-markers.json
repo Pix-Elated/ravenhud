@@ -5695,5 +5695,20 @@
     "region": "The Blotch",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_7ab2ae23",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Blotch spider cave shiny 2",
+    "description": "south eastern part of the cave",
+    "x": 5863,
+    "y": 1981,
+    "floor": "surface",
+    "icon": "",
+    "label": "Blotch spider cave shiny 2",
+    "region": "The Blotch",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
