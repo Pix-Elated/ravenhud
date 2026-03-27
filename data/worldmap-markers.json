@@ -5605,5 +5605,20 @@
     "region": "Ravencrest",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_f65f869d",
+    "source": "base",
+    "category": "reputation_npc",
+    "name": "Lorekeeper Havel",
+    "description": "",
+    "x": 4111,
+    "y": 2632,
+    "floor": "surface",
+    "icon": "",
+    "label": "Lorekeeper Havel",
+    "region": "Ravencrest",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
