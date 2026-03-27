@@ -551,7 +551,7 @@ jobs:
                   x: m.x,
                   y: m.y,
                   floor: m.floor,
-                  icon: ICONS[m.category] || '',
+                  icon: ICONS[category] || '',
                   label: m.name.replace(/\s*\(.*\)$/, ''),
                   region: m.region || '',
                   trigger: '',
