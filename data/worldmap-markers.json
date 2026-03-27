@@ -5741,5 +5741,20 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_1f53cd70.webp"
+  },
+  {
+    "id": "c_03b20269",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Ostera drake shiny",
+    "description": "east side stairs down for shiny",
+    "x": 7976,
+    "y": 2430,
+    "floor": "surface",
+    "icon": "",
+    "label": "Ostera drake shiny",
+    "region": "Hidden Grotto",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
