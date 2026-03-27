@@ -5665,5 +5665,20 @@
     "region": "The Blotch",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_c387ecc6",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Blotch tower shiny",
+    "description": "",
+    "x": 5852,
+    "y": 1973,
+    "floor": "surface",
+    "icon": "",
+    "label": "Blotch tower shiny",
+    "region": "The Blotch",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
