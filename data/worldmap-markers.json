@@ -5725,5 +5725,21 @@
     "region": "The Blotch",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_1f53cd70",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Blotch hag cave",
+    "description": "deep on south \"ruins\"",
+    "x": 5832,
+    "y": 1770,
+    "floor": "surface",
+    "icon": "",
+    "label": "Blotch hag cave",
+    "region": "The Blotch",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_1f53cd70.webp"
   }
 ]
