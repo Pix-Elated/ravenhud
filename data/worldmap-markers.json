@@ -5866,5 +5866,20 @@
     "region": "Glademire",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_040c49f7",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Hobbs",
+    "description": "",
+    "x": 6913,
+    "y": 1048,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Hobbs",
+    "region": "Ostera",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
