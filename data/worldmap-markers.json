@@ -5821,5 +5821,20 @@
     "region": "Kari'vir",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_77f5de9f",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Tristan ironwood",
+    "description": "",
+    "x": 5227,
+    "y": 1282,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Tristan ironwood",
+    "region": "Fields of Despair",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
