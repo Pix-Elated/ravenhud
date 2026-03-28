@@ -252,6 +252,12 @@
       "name": "201.172.58.254",
       "reason": "Fake name, fake guild",
       "added": "2026-03-27"
+    },
+    {
+      "type": "ip",
+      "name": "58.186.100.33",
+      "reason": "We don’t do that here. Fake name fake guild",
+      "added": "2026-03-28"
     }
   ]
 }
