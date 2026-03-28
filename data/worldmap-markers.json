@@ -5836,5 +5836,35 @@
     "region": "Fields of Despair",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_850bd577",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glademire drunken ritual shiny 2",
+    "description": "need 4 wine to start dynamic then can get to this shiny",
+    "x": 4269,
+    "y": 2415,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glademire drunken ritual shiny 2",
+    "region": "Glademire",
+    "trigger": "",
+    "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_0c3346dd",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glademire drunken ritual shiny",
+    "description": "need 4 wine to start drunken ritual event to get this one",
+    "x": 4266,
+    "y": 2405,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glademire drunken ritual shiny",
+    "region": "Glademire",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
