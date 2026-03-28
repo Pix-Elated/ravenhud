@@ -5806,5 +5806,20 @@
     "region": "Frost Steppes",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_9877bc84",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Matron Savala",
+    "description": "",
+    "x": 5785,
+    "y": 624,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Matron Savala",
+    "region": "Kari'vir",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
