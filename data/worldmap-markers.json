@@ -5791,5 +5791,20 @@
     "region": "Frost Steppes",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_dc94c7e1",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Frost steppes ito yami shiny",
+    "description": "down stairs on left side",
+    "x": 5248,
+    "y": 881,
+    "floor": "surface",
+    "icon": "",
+    "label": "Frost steppes ito yami shiny",
+    "region": "Frost Steppes",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
