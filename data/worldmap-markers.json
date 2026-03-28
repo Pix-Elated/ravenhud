@@ -5731,5 +5731,20 @@
     "region": "Elder Coast",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_e3147ef8",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Elder coast crowfell shiny",
+    "description": "west side of the island",
+    "x": 3730,
+    "y": 1441,
+    "floor": "surface",
+    "icon": "",
+    "label": "Elder coast crowfell shiny",
+    "region": "Elder Coast",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
