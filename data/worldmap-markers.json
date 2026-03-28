@@ -5746,5 +5746,20 @@
     "region": "Elder Coast",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_bc716fa4",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Elder coast fungi shiny",
+    "description": "from this dungeon head north west",
+    "x": 3874,
+    "y": 1395,
+    "floor": "surface",
+    "icon": "",
+    "label": "Elder coast fungi shiny",
+    "region": "Elder Coast",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
