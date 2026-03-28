@@ -5716,5 +5716,20 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_14287b33.webp"
+  },
+  {
+    "id": "c_b10bd9bc",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Elder coast poisonpetal shiny",
+    "description": "southern part of the cave",
+    "x": 4105,
+    "y": 1608,
+    "floor": "surface",
+    "icon": "",
+    "label": "Elder coast poisonpetal shiny",
+    "region": "Elder Coast",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
