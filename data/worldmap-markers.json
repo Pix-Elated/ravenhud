@@ -5761,5 +5761,20 @@
     "region": "Elder Coast",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_52b0f580",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glademire slum shiny",
+    "description": "",
+    "x": 4172,
+    "y": 2455,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glademire slum shiny",
+    "region": "Ravencrest",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
