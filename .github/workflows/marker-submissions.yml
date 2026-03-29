@@ -617,24 +617,27 @@ jobs:
           mv /tmp/manifest.json assets/assets-manifest.json
 
       - name: Commit source + zip + manifest
+        id: commit
         if: steps.ingest.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Commit ALL three: source file, zip, and manifest
-          # This prevents divergence between data/ and assets/data.zip
           git add data/worldmap-markers.json data/community-screenshots/ assets/data.zip assets/assets-manifest.json
           git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
-          # Pull-rebase before pushing to handle concurrent screenshot uploads
-          # or other commits that landed since checkout
-          for i in 1 2 3; do
-            git pull --rebase origin master && git push origin master && break
-            echo "Push attempt $i failed, retrying..."
-            sleep 2
+          # Retry push up to 5 times with increasing delay
+          for i in 1 2 3 4 5; do
+            if git pull --rebase origin master && git push origin master; then
+              echo "Push succeeded on attempt $i"
+              exit 0
+            fi
+            echo "Push attempt $i failed, retrying in $((i * 3))s..."
+            sleep $((i * 3))
           done
+          echo "::error::All 5 push attempts failed"
+          exit 1
 
       - name: Close and label processed issues
-        if: steps.ingest.outputs.changed == 'true'
+        if: steps.commit.outcome == 'success'
         uses: actions/github-script@v7
         with:
           script: |
@@ -673,7 +676,7 @@ jobs:
             }
 
       - name: Close duplicate proximity issues
-        if: steps.ingest.outputs.duplicates != ''
+        if: steps.commit.outcome == 'success' && steps.ingest.outputs.duplicates != ''
         uses: actions/github-script@v7
         with:
           script: |
