@@ -5730,7 +5730,8 @@
     "label": "Elder coast poisonpetal shiny",
     "region": "Elder Coast",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_b10bd9bc.webp"
   },
   {
     "id": "c_e3147ef8",
@@ -5745,7 +5746,8 @@
     "label": "Elder coast crowfell shiny",
     "region": "Elder Coast",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_e3147ef8.webp"
   },
   {
     "id": "c_bc716fa4",
@@ -5792,7 +5794,8 @@
     "label": "Karuxa",
     "region": "Frost Steppes",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_92db4139.webp"
   },
   {
     "id": "c_dc94c7e1",
@@ -5823,7 +5826,8 @@
     "label": "Matron Savala",
     "region": "Kari'vir",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_9877bc84.webp"
   },
   {
     "id": "c_77f5de9f",
@@ -5838,7 +5842,8 @@
     "label": "Tristan ironwood",
     "region": "Fields of Despair",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_77f5de9f.webp"
   },
   {
     "id": "c_850bd577",
@@ -5853,7 +5858,8 @@
     "label": "Glademire drunken ritual shiny 2",
     "region": "Glademire",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_850bd577.webp"
   },
   {
     "id": "c_0c3346dd",
@@ -5884,7 +5890,8 @@
     "label": "Hobbs",
     "region": "Ostera",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_040c49f7.webp"
   },
   {
     "id": "c_97e80b43",
@@ -5899,7 +5906,8 @@
     "label": "Sergeant Buster",
     "region": "Envoy's Rest",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_97e80b43.webp"
   },
   {
     "id": "c_9f4e66b2",
@@ -5914,6 +5922,87 @@
     "label": "Elder coast cart shiny",
     "region": "Envoy's Rest",
     "trigger": "",
-    "contributedBy": "Azurak"
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_9f4e66b2.webp"
+  },
+  {
+    "id": "c_03b20269",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Ostera drake shiny",
+    "description": "east side stairs down for shiny",
+    "x": 7976,
+    "y": 2430,
+    "floor": "surface",
+    "icon": "",
+    "label": "Ostera drake shiny",
+    "region": "Hidden Grotto",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_03b20269.webp"
+  },
+  {
+    "id": "c_1f53cd70",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Blotch hag cave",
+    "description": "deep on south \"ruins\"",
+    "x": 5832,
+    "y": 1770,
+    "floor": "surface",
+    "icon": "",
+    "label": "Blotch hag cave",
+    "region": "The Blotch",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_1f53cd70.webp"
+  },
+  {
+    "id": "c_6e7c8fec",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Blotch log shiny",
+    "description": "",
+    "x": 5770,
+    "y": 1781,
+    "floor": "surface",
+    "icon": "",
+    "label": "Blotch log shiny",
+    "region": "The Blotch",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_6e7c8fec.webp"
+  },
+  {
+    "id": "c_7ab2ae23",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Blotch spider cave shiny 2",
+    "description": "south eastern part of the cave",
+    "x": 5863,
+    "y": 1981,
+    "floor": "surface",
+    "icon": "",
+    "label": "Blotch spider cave shiny 2",
+    "region": "The Blotch",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_7ab2ae23.webp"
+  },
+  {
+    "id": "c_eed6eebd",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glaceforde dwarf shiny 2",
+    "description": "South side in underground dungeon",
+    "x": 3287,
+    "y": 871,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glaceforde dwarf shiny 2",
+    "region": "Vikkar Bay",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_eed6eebd.webp"
   }
 ]
