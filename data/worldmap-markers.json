@@ -5900,5 +5900,20 @@
     "region": "Envoy's Rest",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_9f4e66b2",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Elder coast cart shiny",
+    "description": "gotta climb tru mountains all the way to here",
+    "x": 4675,
+    "y": 1577,
+    "floor": "surface",
+    "icon": "",
+    "label": "Elder coast cart shiny",
+    "region": "Envoy's Rest",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
