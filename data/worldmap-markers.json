@@ -6192,5 +6192,20 @@
     "region": "Elder Coast",
     "trigger": "",
     "contributedBy": "Hironet11"
+  },
+  {
+    "id": "c_3c8ca24e",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Zyradan",
+    "description": "A place accessed from the underground of Thickbark Grove",
+    "x": 4187,
+    "y": 1779,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Zyradan",
+    "region": "Elder Coast",
+    "trigger": "",
+    "contributedBy": "Hironet11"
   }
 ]
