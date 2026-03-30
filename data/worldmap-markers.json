@@ -6222,5 +6222,20 @@
     "region": "Gilead",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_c658ead3",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glaceforde gazer shiny",
+    "description": "need melting device, south east in gazer cave",
+    "x": 3044,
+    "y": 1151,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glaceforde gazer shiny",
+    "region": "Vikkar Bay",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
