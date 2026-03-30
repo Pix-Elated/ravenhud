@@ -6207,5 +6207,20 @@
     "region": "Elder Coast",
     "trigger": "",
     "contributedBy": "Hironet11"
+  },
+  {
+    "id": "c_1a65320a",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Gilead lvl 80 saurian shiny",
+    "description": "need to lit brazier in regular cave to get in lvl 80 ones",
+    "x": 2591,
+    "y": 3816,
+    "floor": "surface",
+    "icon": "",
+    "label": "Gilead lvl 80 saurian shiny",
+    "region": "Gilead",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
