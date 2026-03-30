@@ -6237,5 +6237,20 @@
     "region": "Vikkar Bay",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_4cbe3a1d",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak ghaz shiny 3",
+    "description": "underground from building then southern parts",
+    "x": 5452,
+    "y": 3482,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak ghaz shiny 3",
+    "region": "Darzuac",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
