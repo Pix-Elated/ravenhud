@@ -6162,5 +6162,20 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_e307a13a.webp"
+  },
+  {
+    "id": "c_d67bac3c",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarak DRAS MARNA underground shiny",
+    "description": "If you have completed the quest, you can obtain it by using the door to the cave.",
+    "x": 4300,
+    "y": 3258,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarak DRAS MARNA underground shiny",
+    "region": "Hadarak Desert",
+    "trigger": "",
+    "contributedBy": "Hironet11"
   }
 ]
