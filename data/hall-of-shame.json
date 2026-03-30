@@ -258,6 +258,12 @@
       "name": "58.186.100.33",
       "reason": "We don’t do that here. Fake name fake guild",
       "added": "2026-03-28"
+    },
+    {
+      "type": "ip",
+      "name": "77.102.177.251",
+      "reason": "I highly doubt your character is named 'TestGuy'. Join the discord and prove otherwise",
+      "added": "2026-03-30"
     }
   ]
 }
