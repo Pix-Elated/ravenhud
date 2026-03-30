@@ -469,14 +469,17 @@ document.addEventListener('DOMContentLoaded', init);
 async function init() {
   // Identity prompt FIRST — character name + guild tag (cached 7 days)
   var identity = getSavedIdentity();
+  var isNewIdentity = false;
   if (!identity || !identity.characterName || !identity.characterName.trim()) {
     localStorage.removeItem(IDENTITY_KEY);
     identity = await showIdentityPrompt();
     if (!identity) return;
     saveIdentity(identity.characterName, identity.guildTag);
+    isNewIdentity = true;
   }
 
-  // Log identity to Corvid and check IP ban (server-side — client can't know its own IP)
+  // Log identity to Corvid — only on first visit or new identity, not every page load
+  // Always check IP ban though (server-side — client can't know its own IP)
   try {
     var logRes = await fetch(CORVID_API_URL + '/api/bans/identity-log', {
       method: 'POST',
@@ -484,7 +487,8 @@ async function init() {
       body: JSON.stringify({
         characterName: identity.characterName,
         guildTag: identity.guildTag,
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
+        isNewIdentity: isNewIdentity
       })
     });
     var logData = await logRes.json();
