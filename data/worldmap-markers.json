@@ -6146,5 +6146,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_6a746a8a.webp"
+  },
+  {
+    "id": "c_e307a13a",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Elder coast toadstool shiny",
+    "description": "deep inside mountains past dwarfen city and mossoliths",
+    "x": 4776,
+    "y": 1719,
+    "floor": "surface",
+    "icon": "",
+    "label": "Elder coast toadstool shiny",
+    "region": "Forsaken Mountains",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_e307a13a.webp"
   }
 ]
