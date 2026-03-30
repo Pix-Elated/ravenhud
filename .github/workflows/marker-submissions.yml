@@ -624,13 +624,38 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/worldmap-markers.json data/community-screenshots/ assets/data.zip assets/assets-manifest.json
           git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
-          # Retry push up to 5 times with increasing delay
+          # Retry push — if rebase conflicts on binary files, reset and rebuild
           for i in 1 2 3 4 5; do
-            if git pull --rebase origin master && git push origin master; then
-              echo "Push succeeded on attempt $i"
-              exit 0
+            if git pull --rebase origin master 2>&1; then
+              if git push origin master; then
+                echo "Push succeeded on attempt $i"
+                exit 0
+              fi
+            else
+              echo "Rebase conflict on attempt $i — rebuilding archive..."
+              git rebase --abort 2>/dev/null
+              git reset --hard origin/master
+              # Re-apply our data changes on top of latest master
+              git checkout HEAD@{1} -- data/worldmap-markers.json data/community-screenshots/
+              # Rebuild binary archives from the merged data
+              cd data && zip -r ../assets/data.zip . \
+                -x ".api-cache/*" "temp/*" "scripts/*" "blockchain/*" "scraped/*" "ULTIMATE*" "*.html"
+              cd "$GITHUB_WORKSPACE"
+              HASH=$(sha256sum assets/data.zip | cut -d' ' -f1)
+              SIZE_BYTES=$(stat -c%s assets/data.zip)
+              SIZE_MB=$(echo "scale=1; $SIZE_BYTES / 1048576" | bc)
+              FILE_COUNT=$(unzip -l assets/data.zip | tail -1 | awk '{print $2}')
+              jq \
+                --arg hash "sha256:$HASH" \
+                --argjson size "$SIZE_MB" \
+                --argjson files "$FILE_COUNT" \
+                --arg ts "$(date -u +%Y-%m-%dT%H:%M:%S.000Z)" \
+                '(.archives[] | select(.name == "data.zip")) |= (.hash = $hash | .sizeMB = $size | .files = $files) | .generatedAt = $ts' \
+                assets/assets-manifest.json > /tmp/manifest.json
+              mv /tmp/manifest.json assets/assets-manifest.json
+              git add data/worldmap-markers.json data/community-screenshots/ assets/data.zip assets/assets-manifest.json
+              git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
             fi
-            echo "Push attempt $i failed, retrying in $((i * 3))s..."
             sleep $((i * 3))
           done
           echo "::error::All 5 push attempts failed"
