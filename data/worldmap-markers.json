@@ -6177,5 +6177,20 @@
     "region": "Hadarak Desert",
     "trigger": "",
     "contributedBy": "Hironet11"
+  },
+  {
+    "id": "c_3e5146e7",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "ALLUIN",
+    "description": "ELLESSET",
+    "x": 4019,
+    "y": 1613,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "ALLUIN",
+    "region": "Elder Coast",
+    "trigger": "",
+    "contributedBy": "Hironet11"
   }
 ]
