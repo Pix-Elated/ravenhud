@@ -6019,5 +6019,20 @@
     "region": "Rumalos",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_7c8c5bd2",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Era",
+    "description": "upstairs of jensen house",
+    "x": 4342,
+    "y": 2514,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Era",
+    "region": "Glademire",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
