@@ -6004,5 +6004,20 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_eed6eebd.webp"
+  },
+  {
+    "id": "c_dbef6eb5",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Gilead rumalos shiny",
+    "description": "",
+    "x": 1905,
+    "y": 3560,
+    "floor": "surface",
+    "icon": "",
+    "label": "Gilead rumalos shiny",
+    "region": "Rumalos",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
