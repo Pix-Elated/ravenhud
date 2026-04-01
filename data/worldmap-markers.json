@@ -6298,5 +6298,20 @@
     "region": "Vikkar Bay",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_eabd8197",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak elite jackal shiny",
+    "description": "eastern side deeper in dungeon",
+    "x": 3666,
+    "y": 4404,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak elite jackal shiny",
+    "region": "Dras Mashum",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
