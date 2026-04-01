@@ -6283,5 +6283,20 @@
     "region": "Wolfhold",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_2d15e156",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glaceforde wraith shiny 2",
+    "description": "east side deep in basement",
+    "x": 3586,
+    "y": 1040,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glaceforde wraith shiny 2",
+    "region": "Vikkar Bay",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
