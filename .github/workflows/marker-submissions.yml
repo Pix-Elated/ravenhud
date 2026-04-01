@@ -382,6 +382,11 @@ jobs:
       cancel-in-progress: false
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Pull latest master (includes screenshots from auto-label)
+        run: git pull origin master
 
       - name: Ingest approved markers
         id: ingest
