@@ -6268,5 +6268,20 @@
     "region": "Vikkar Bay",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_80bd0abb",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glaceforde matchwood shiny",
+    "description": "dungeon under matchwood",
+    "x": 2699,
+    "y": 1413,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glaceforde matchwood shiny",
+    "region": "Wolfhold",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
