@@ -6253,5 +6253,20 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_4cbe3a1d.webp"
+  },
+  {
+    "id": "c_12dafc6c",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glaceforde wraith shiny",
+    "description": "deep in basement on north east area",
+    "x": 3581,
+    "y": 1025,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glaceforde wraith shiny",
+    "region": "Vikkar Bay",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
