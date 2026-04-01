@@ -6313,5 +6313,20 @@
     "region": "Dras Mashum",
     "trigger": "",
     "contributedBy": "Azurak"
+  },
+  {
+    "id": "c_6f874d82",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak fox cave shiny",
+    "description": "soutside deep inside",
+    "x": 4348,
+    "y": 3306,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak fox cave shiny",
+    "region": "Dras Marna",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
