@@ -6433,5 +6433,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_522e749a.webp"
+  },
+  {
+    "id": "c_29b506d5",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Forsaken greyspike shiny",
+    "description": "click bookshelf to get in",
+    "x": 4666,
+    "y": 1872,
+    "floor": "surface",
+    "icon": "",
+    "label": "Forsaken greyspike shiny",
+    "region": "Forsaken Mountains",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_29b506d5.webp"
   }
 ]
