@@ -2297,18 +2297,6 @@
     "icon": "npc_reputation.webp"
   },
   {
-    "id": "npc_reputation_4142_2623",
-    "name": "Nirolo",
-    "category": "npc_reputation",
-    "x": 4142,
-    "y": 2623,
-    "floor": "surface",
-    "region": "",
-    "description": "Gives 10 rep. Starseeker Hat - 500 Rat Fur Pelts and Brotherhood Cloaks",
-    "source": "base",
-    "icon": "npc_reputation.webp"
-  },
-  {
     "id": "npc_reputation_4125_2778",
     "name": "Noosh",
     "category": "npc_reputation",
@@ -3521,22 +3509,6 @@
     "icon": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_0083927b.webp"
-  },
-  {
-    "id": "c_e9621671",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Harbor pirate key",
-    "description": "",
-    "x": 2114,
-    "y": 2404,
-    "floor": "surface",
-    "icon": "",
-    "label": "Harbor pirate key",
-    "region": "Harbor Island",
-    "trigger": "",
-    "contributedBy": "Azurak",
-    "screenshot": "community-screenshots/c_e9621671.webp"
   },
   {
     "id": "c_cd3c138f",
@@ -5473,36 +5445,6 @@
     "trigger": "",
     "contributedBy": "ThisDaniel",
     "screenshot": "community-screenshots/c_9f7c4b24.webp"
-  },
-  {
-    "id": "c_9bafcf52",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Shiny in the house above the shrine",
-    "description": "to open it first u must fight a chest at frolls and get the missing book",
-    "x": 2173,
-    "y": 763,
-    "floor": "surface",
-    "icon": "",
-    "label": "Shiny in the house above the shrine",
-    "region": "",
-    "trigger": "",
-    "contributedBy": "ThisDaniel"
-  },
-  {
-    "id": "c_65c4ad3a",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Shiny flower in the zorian cave",
-    "description": "",
-    "x": 2393,
-    "y": 1350,
-    "floor": "surface",
-    "icon": "",
-    "label": "Shiny flower in the zorian cave",
-    "region": "",
-    "trigger": "",
-    "contributedBy": "ThisDaniel"
   },
   {
     "id": "c_ab576918",
