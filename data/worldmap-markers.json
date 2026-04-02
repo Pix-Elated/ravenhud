@@ -2591,7 +2591,8 @@
     "region": "",
     "description": "Gives 10 rep. Top Choice",
     "source": "base",
-    "icon": "npc_reputation.webp"
+    "icon": "npc_reputation.webp",
+    "screenshot": "community-screenshots/npc_reputation_3101_1057.webp"
   },
   {
     "id": "npc_reputation_3924_2335",
