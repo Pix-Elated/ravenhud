@@ -6303,5 +6303,21 @@
     "trigger": "",
     "contributedBy": "Pixelated",
     "screenshot": "community-screenshots/c_656a327a.webp"
+  },
+  {
+    "id": "c_7de134b8",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hidden Bookshelf Path",
+    "description": "Gives Icy Gem",
+    "x": 4743,
+    "y": 1879,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hidden Bookshelf Path",
+    "region": "",
+    "trigger": "",
+    "contributedBy": "Pixelated",
+    "screenshot": "community-screenshots/c_7de134b8.webp"
   }
 ]
