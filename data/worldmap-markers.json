@@ -1682,7 +1682,8 @@
     "region": "",
     "description": "Gives 10 rep",
     "source": "base",
-    "icon": "npc_reputation.webp"
+    "icon": "npc_reputation.webp",
+    "screenshot": "community-screenshots/npc_reputation_1846_2655.webp"
   },
   {
     "id": "npc_reputation_4031_2643",
@@ -1850,7 +1851,8 @@
     "region": "",
     "description": "Gives 10 rep",
     "source": "base",
-    "icon": "npc_reputation.webp"
+    "icon": "npc_reputation.webp",
+    "screenshot": "community-screenshots/npc_reputation_1848_2665.webp"
   },
   {
     "id": "npc_reputation_4237_2702",
