@@ -6417,5 +6417,37 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_687c3258.webp"
+  },
+  {
+    "id": "c_ba909583",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Bog 70+ rat shiny",
+    "description": "have key for another shiny deepest lvl on rats",
+    "x": 5515,
+    "y": 1940,
+    "floor": "surface",
+    "icon": "",
+    "label": "Bog 70+ rat shiny",
+    "region": "Crowhollow Bog",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_ba909583.webp"
+  },
+  {
+    "id": "c_522e749a",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Bog rat key shiny",
+    "description": "need key from 70+ rat shiny",
+    "x": 5551,
+    "y": 2045,
+    "floor": "surface",
+    "icon": "",
+    "label": "Bog rat key shiny",
+    "region": "Crowhollow Bog",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_522e749a.webp"
   }
 ]
