@@ -2558,7 +2558,8 @@
     "region": "",
     "description": "Gives 10 rep",
     "source": "base",
-    "icon": "npc_reputation.webp"
+    "icon": "npc_reputation.webp",
+    "screenshot": "community-screenshots/npc_reputation_1764_2614.webp"
   },
   {
     "id": "npc_reputation_4075_2570",
