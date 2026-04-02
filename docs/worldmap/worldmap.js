@@ -768,8 +768,36 @@ function showDetail(m) {
       var flash = shinySection.querySelector('.save-flash');
       flash.style.display = '';
       setTimeout(function () { flash.style.display = 'none'; }, 1500);
-      renderMarkers();
-      updateSidebar();
+
+      // Swap icon on the single marker instead of rebuilding all markers
+      var lm = leafletMarkers.get(m.id);
+      if (lm) {
+        var newIcon = nowCollected
+          ? getCachedIcon('_shiny_collected')
+          : getCachedIcon(m.category);
+        lm.setIcon(newIcon);
+      }
+
+      // Update sidebar item inline instead of rebuilding entire sidebar
+      var sidebarItem = document.querySelector('.marker-item[data-marker-id="' + m.id + '"]');
+      if (sidebarItem) {
+        var nameSpan = sidebarItem.querySelector('.marker-item-name');
+        if (nowCollected) {
+          sidebarItem.classList.add('shiny-collected');
+          nameSpan.textContent = '\u2713 ' + m.name;
+        } else {
+          sidebarItem.classList.remove('shiny-collected');
+          nameSpan.textContent = m.name;
+        }
+      }
+
+      // Update the progress counter in the category row
+      var progress = getRepProgress(m.category);
+      var catRow = document.querySelector('input[data-category="' + m.category + '"]');
+      if (catRow) {
+        var countSpan = catRow.parentElement.querySelector('.cat-count');
+        if (countSpan) countSpan.textContent = progress.collected + '/' + progress.total;
+      }
     });
     shinySection.style.display = 'block';
   } else {
