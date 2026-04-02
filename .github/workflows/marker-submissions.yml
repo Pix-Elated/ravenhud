@@ -619,10 +619,18 @@ jobs:
             console.log(`Post-ingest: ${existing.length} markers (+${totalAdded} new, ${totalUpdated} updated, ${totalDeleted} deleted, ${screenshotsCopied} screenshots)`);
 
             core.setOutput('changed', 'true');
-            core.setOutput('count', String(totalAdded + totalUpdated));
+            core.setOutput('count', String(totalAdded + totalUpdated + totalDeleted));
             core.setOutput('screenshots', String(screenshotsCopied));
             core.setOutput('issues', processedIssues.join(','));
             core.setOutput('duplicates', duplicateIssues.join(','));
+
+            // Build a descriptive summary for the commit message
+            const parts = [];
+            if (totalAdded) parts.push(`${totalAdded} added`);
+            if (totalUpdated) parts.push(`${totalUpdated} updated`);
+            if (totalDeleted) parts.push(`${totalDeleted} deleted`);
+            if (screenshotsCopied) parts.push(`${screenshotsCopied} screenshots`);
+            core.setOutput('summary', parts.join(', '));
 
       - name: Rebuild data.zip from source and update manifest
         if: steps.ingest.outputs.changed == 'true'
@@ -655,7 +663,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/worldmap-markers.json data/community-screenshots/ assets/data.zip assets/assets-manifest.json
-          git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
+          git commit -m "chore: ingest community markers (${{ steps.ingest.outputs.summary }})"
           # Retry push — if rebase conflicts on binary files, reset and rebuild
           for i in 1 2 3 4 5; do
             if git pull --rebase origin master 2>&1; then
@@ -686,7 +694,7 @@ jobs:
                 assets/assets-manifest.json > /tmp/manifest.json
               mv /tmp/manifest.json assets/assets-manifest.json
               git add data/worldmap-markers.json data/community-screenshots/ assets/data.zip assets/assets-manifest.json
-              git commit -m "chore: ingest ${{ steps.ingest.outputs.count }} community marker(s)"
+              git commit -m "chore: ingest community markers (${{ steps.ingest.outputs.summary }})"
             fi
             sleep $((i * 3))
           done
