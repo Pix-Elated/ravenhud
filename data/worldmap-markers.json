@@ -6341,5 +6341,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_6f874d82.webp"
+  },
+  {
+    "id": "c_656a327a",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Sajecho Dynamic Cave Shiny",
+    "description": "Only open when Look Don't Touch is active",
+    "x": 3359,
+    "y": 2438,
+    "floor": "surface",
+    "icon": "",
+    "label": "Sajecho Dynamic Cave Shiny",
+    "region": "",
+    "trigger": "",
+    "contributedBy": "Pixelated",
+    "screenshot": "community-screenshots/c_656a327a.webp"
   }
 ]
