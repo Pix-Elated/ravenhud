@@ -6307,22 +6307,6 @@
     "screenshot": "community-screenshots/c_6dbef35e.webp"
   },
   {
-    "id": "c_e20d700e",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Glaceforde froll shiny",
-    "description": "have \"key\" for saint alesk shiny top west side of mountain",
-    "x": 2772,
-    "y": 741,
-    "floor": "surface",
-    "icon": "",
-    "label": "Glaceforde froll shiny",
-    "region": "Glaceforde",
-    "trigger": "",
-    "contributedBy": "Azurak",
-    "screenshot": "community-screenshots/c_e20d700e.webp"
-  },
-  {
     "id": "c_77c97695",
     "source": "base",
     "category": "reputation_shiny",
