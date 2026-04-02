@@ -436,6 +436,7 @@ jobs:
 
             let totalAdded = 0;
             let totalUpdated = 0;
+            let totalDeleted = 0;
             let screenshotsCopied = 0;
             const processedIssues = [];
             const duplicateIssues = [];
@@ -462,6 +463,32 @@ jobs:
 
               // Detect screenshot-only issues (just attaching a screenshot to an existing marker)
               const isScreenshotOnly = issue.labels.some(l => l.name === 'screenshot-only');
+
+              // Handle deletion requests
+              const isDeletion = issue.labels.some(l => l.name === 'deletion') ||
+                markers.some(m => m.deletion);
+              if (isDeletion) {
+                let deleted = false;
+                for (const m of markers) {
+                  if (!m.id) continue;
+                  const idx = existing.findIndex(e => e.id === m.id);
+                  if (idx >= 0) {
+                    const removed = existing[idx];
+                    existing.splice(idx, 1);
+                    existingById.delete(m.id);
+                    totalDeleted++;
+                    deleted = true;
+                    console.log(`  Deleted: ${m.id} (${removed.name})`);
+                    // Remove screenshot file if it exists
+                    const ssPath = path.join(communitySSDir, `${m.id}.webp`);
+                    if (fs.existsSync(ssPath)) fs.unlinkSync(ssPath);
+                  } else {
+                    console.log(`  Delete skip (not found): ${m.id}`);
+                  }
+                }
+                if (deleted) processedIssues.push(issue.number);
+                continue;
+              }
 
               // Extract embedded base64 screenshot if per-marker file doesn't exist yet
               // (handles issues created before auto-label extracted screenshots)
@@ -581,7 +608,7 @@ jobs:
               }
             }
 
-            if (totalAdded === 0 && totalUpdated === 0 && screenshotsCopied === 0) {
+            if (totalAdded === 0 && totalUpdated === 0 && totalDeleted === 0 && screenshotsCopied === 0) {
               console.log('No changes to apply');
               core.setOutput('changed', 'false');
               return;
@@ -589,7 +616,7 @@ jobs:
 
             // Write back to SOURCE file (data/worldmap-markers.json)
             fs.writeFileSync(markersPath, JSON.stringify(existing, null, 2) + '\n');
-            console.log(`Post-ingest: ${existing.length} markers (+${totalAdded} new, ${totalUpdated} updated, ${screenshotsCopied} screenshots)`);
+            console.log(`Post-ingest: ${existing.length} markers (+${totalAdded} new, ${totalUpdated} updated, ${totalDeleted} deleted, ${screenshotsCopied} screenshots)`);
 
             core.setOutput('changed', 'true');
             core.setOutput('count', String(totalAdded + totalUpdated));
