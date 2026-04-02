@@ -1984,7 +1984,8 @@
     "region": "",
     "description": "Gives 10 rep. Top Choice Trapper Hood - 100 Winter Cloaks, 1000 Kaiman Teeth, 200 Pummeldillo Armor Wolfsfang Bow - 2000 Wolf Skulls, 1000 Shark Fins, 800 Frostbark Branches, 1000 Elemental Crystals",
     "source": "base",
-    "icon": "npc_reputation.webp"
+    "icon": "npc_reputation.webp",
+    "screenshot": "community-screenshots/npc_reputation_3107_1121.webp"
   },
   {
     "id": "npc_reputation_2132_724",
