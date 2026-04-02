@@ -6288,5 +6288,37 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_6dbef35e.webp"
+  },
+  {
+    "id": "c_77c97695",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak tar graveyard shiny",
+    "description": "deep in cave with skeletons north west",
+    "x": 3985,
+    "y": 3397,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak tar graveyard shiny",
+    "region": "Tarmire",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_77c97695.webp"
+  },
+  {
+    "id": "c_1ffe6762",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Beaty",
+    "description": "",
+    "x": 4233,
+    "y": 3311,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Beaty",
+    "region": "Dras Marna",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_1ffe6762.webp"
   }
 ]
