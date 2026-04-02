@@ -2189,7 +2189,8 @@
     "region": "",
     "description": "Gives 10 rep. Top Choice Enchanted Hat Swirling Magical Orb, 1000 Crow's Echo Crystals, 1500 Sunscorched Pelts, 1000 Drake Skulls, 1000 Vampiric Heirlooms, 100 Winter Cloak, 2000 spools of Spider Silk Trailblazer's Hat",
     "source": "base",
-    "icon": "npc_reputation.webp"
+    "icon": "npc_reputation.webp",
+    "screenshot": "community-screenshots/npc_reputation_3111_1109.webp"
   },
   {
     "id": "npc_reputation_5200_2837",
