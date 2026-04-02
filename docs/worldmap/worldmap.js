@@ -606,7 +606,7 @@ function createMarkerIcon(category) {
   if (category === '_shiny_collected') {
     return L.divIcon({
       className: '',
-      html: '<span style="font-size:18px;opacity:0.35;filter:drop-shadow(0 0 2px rgba(0,0,0,0.7))">&#x2713;</span>',
+      html: '<span style="font-size:18px;color:#4ade80;opacity:0.7;filter:drop-shadow(0 0 3px rgba(0,0,0,0.9))">&#x2714;</span>',
       iconSize: [24, 24],
       iconAnchor: [12, 12]
     });
