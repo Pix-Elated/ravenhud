@@ -2210,7 +2210,8 @@
     "region": "",
     "description": "Gives 10 rep. Royal Rapier - 75 Infamous Doubloons, 50 Perfect Pears",
     "source": "base",
-    "icon": "npc_reputation.webp"
+    "icon": "npc_reputation.webp",
+    "screenshot": "community-screenshots/npc_reputation_1830_2658.webp"
   },
   {
     "id": "npc_reputation_4108_2732",
