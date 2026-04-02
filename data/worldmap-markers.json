@@ -5348,21 +5348,6 @@
     "screenshot": "community-screenshots/c_788a2f56.webp"
   },
   {
-    "id": "c_2008d978",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Shiny in the cave with lady of the snow dynamic event",
-    "description": "",
-    "x": 2889,
-    "y": 987,
-    "floor": "surface",
-    "icon": "",
-    "label": "Shiny in the cave with lady of the snow dynamic event",
-    "region": "",
-    "trigger": "",
-    "contributedBy": "ThisDaniel"
-  },
-  {
     "id": "c_f9d3a953",
     "source": "base",
     "category": "reputation_shiny",
