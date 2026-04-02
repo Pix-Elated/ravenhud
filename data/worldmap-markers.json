@@ -6352,5 +6352,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_e4b9e8cc.webp"
+  },
+  {
+    "id": "c_fa474a2f",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak 80+ toad shiny",
+    "description": "southern parts at 80+ toads",
+    "x": 4525,
+    "y": 3013,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak 80+ toad shiny",
+    "region": "Dras Narda",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_fa474a2f.webp"
   }
 ]
