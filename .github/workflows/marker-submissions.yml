@@ -89,6 +89,31 @@ jobs:
               core.setOutput('auto_approved', 'true');
             }
 
+            // Auto-reject deletion requests from non-trusted users
+            const isDeletion = markers.some(m => m.deletion);
+            if (isDeletion && !isTrusted) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                labels: ['rejected', 'deletion']
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: '❌ **Auto-rejected** — deletion requests are only accepted from trusted contributors.'
+              });
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                state: 'closed',
+                state_reason: 'not_planned'
+              });
+              return;
+            }
+
             // Detect if this is an edit (correction) submission
             const isEdit = markers.some(m => m.correction);
 
