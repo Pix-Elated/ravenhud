@@ -6400,5 +6400,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_549644df.webp"
+  },
+  {
+    "id": "c_687c3258",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Zephyr hookmask 80+ shiny 2",
+    "description": "deepest lvl after dungeons",
+    "x": 5827,
+    "y": 2548,
+    "floor": "surface",
+    "icon": "",
+    "label": "Zephyr hookmask 80+ shiny 2",
+    "region": "Zephyr Vale",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_687c3258.webp"
   }
 ]
