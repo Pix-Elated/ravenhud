@@ -6449,5 +6449,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_29b506d5.webp"
+  },
+  {
+    "id": "c_c7008fad",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "SUN LI",
+    "description": "Tuskan Highlands",
+    "x": 4177,
+    "y": 3540,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "SUN LI",
+    "region": "Hadarak Desert",
+    "trigger": "",
+    "contributedBy": "Hironet11",
+    "screenshot": "community-screenshots/c_c7008fad.webp"
   }
 ]
