@@ -6481,5 +6481,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_0b0722a3.webp"
+  },
+  {
+    "id": "c_cefb4c0b",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Rohna high level zorian shiny",
+    "description": "deep south eastern part",
+    "x": 3838,
+    "y": 2320,
+    "floor": "surface",
+    "icon": "",
+    "label": "Rohna high level zorian shiny",
+    "region": "Barnsley",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_cefb4c0b.webp"
   }
 ]
