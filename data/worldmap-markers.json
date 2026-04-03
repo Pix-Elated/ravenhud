@@ -6497,5 +6497,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_cefb4c0b.webp"
+  },
+  {
+    "id": "c_7aedfe22",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Elder coast mossolith barrel shiny",
+    "description": "",
+    "x": 4500,
+    "y": 1661,
+    "floor": "surface",
+    "icon": "",
+    "label": "Elder coast mossolith barrel shiny",
+    "region": "Envoy's Rest",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_7aedfe22.webp"
   }
 ]
