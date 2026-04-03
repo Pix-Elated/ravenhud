@@ -6658,5 +6658,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_4effc2cb.webp"
+  },
+  {
+    "id": "c_8513f68a",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Despair skorn demon puzzle shiny",
+    "description": "need demon horn to open the chest",
+    "x": 6054,
+    "y": 1431,
+    "floor": "surface",
+    "icon": "",
+    "label": "Despair skorn demon puzzle shiny",
+    "region": "Forsaken Wharf",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_8513f68a.webp"
   }
 ]
