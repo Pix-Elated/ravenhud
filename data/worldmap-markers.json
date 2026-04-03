@@ -6545,5 +6545,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_19eee7e5.webp"
+  },
+  {
+    "id": "c_c0e7dcdb",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Forsaken the club shiny",
+    "description": "",
+    "x": 4634,
+    "y": 2066,
+    "floor": "surface",
+    "icon": "",
+    "label": "Forsaken the club shiny",
+    "region": "Forsaken Mountains",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_c0e7dcdb.webp"
   }
 ]
