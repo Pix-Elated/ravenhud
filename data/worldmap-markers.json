@@ -6625,5 +6625,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_cda0815f.webp"
+  },
+  {
+    "id": "c_9480094d",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak high lvl minotaur shiny",
+    "description": "deepest lvl on 80+ minos",
+    "x": 4236,
+    "y": 3121,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak high lvl minotaur shiny",
+    "region": "Dras Marna",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_9480094d.webp"
   }
 ]
