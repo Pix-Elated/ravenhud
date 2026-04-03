@@ -6593,5 +6593,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_07931f60.webp"
+  },
+  {
+    "id": "c_ccaded7b",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak jackal shiny 3",
+    "description": "go go tru underground where other shinies are too",
+    "x": 5940,
+    "y": 3499,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak jackal shiny 3",
+    "region": "Dras Ashar",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_ccaded7b.webp"
   }
 ]
