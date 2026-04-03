@@ -6513,5 +6513,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_7aedfe22.webp"
+  },
+  {
+    "id": "c_fc162cd4",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Elder coast dwarf shiny",
+    "description": "north west on dwarfs",
+    "x": 4501,
+    "y": 1649,
+    "floor": "surface",
+    "icon": "",
+    "label": "Elder coast dwarf shiny",
+    "region": "Envoy's Rest",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_fc162cd4.webp"
   }
 ]
