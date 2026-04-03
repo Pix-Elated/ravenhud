@@ -6577,5 +6577,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_f05bfbb3.webp"
+  },
+  {
+    "id": "c_07931f60",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak high level ghaz shiny",
+    "description": "underground guneons north east",
+    "x": 5462,
+    "y": 3484,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak high level ghaz shiny",
+    "region": "Darzuac",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_07931f60.webp"
   }
 ]
