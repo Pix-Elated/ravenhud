@@ -3347,7 +3347,7 @@
     "y": 3137,
     "floor": "surface",
     "region": "Dras Marna",
-    "description": "when inside keep going west then north",
+    "description": "when inside keep going west then north. Gives they key to open chest in Broken Blud",
     "source": "base",
     "icon": "",
     "contributedBy": "Azurak",
@@ -6642,5 +6642,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_9480094d.webp"
+  },
+  {
+    "id": "c_4effc2cb",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Despair skorn puzzle shiny",
+    "description": "",
+    "x": 6061,
+    "y": 1420,
+    "floor": "surface",
+    "icon": "",
+    "label": "Despair skorn puzzle shiny",
+    "region": "Forsaken Wharf",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_4effc2cb.webp"
   }
 ]
