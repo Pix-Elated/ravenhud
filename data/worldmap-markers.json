@@ -6609,5 +6609,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_ccaded7b.webp"
+  },
+  {
+    "id": "c_cda0815f",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Glademire lvl 80+ troll shiny",
+    "description": "deeper parts south east",
+    "x": 4993,
+    "y": 2540,
+    "floor": "surface",
+    "icon": "",
+    "label": "Glademire lvl 80+ troll shiny",
+    "region": "Riverend Post",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_cda0815f.webp"
   }
 ]
