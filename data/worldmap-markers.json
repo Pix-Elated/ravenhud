@@ -6529,5 +6529,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_fc162cd4.webp"
+  },
+  {
+    "id": "c_19eee7e5",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Elder coast magma fungi shiny",
+    "description": "south in room before heartburn dynamic",
+    "x": 4500,
+    "y": 1634,
+    "floor": "surface",
+    "icon": "",
+    "label": "Elder coast magma fungi shiny",
+    "region": "Envoy's Rest",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_19eee7e5.webp"
   }
 ]
