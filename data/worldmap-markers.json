@@ -4411,22 +4411,6 @@
     "screenshot": "community-screenshots/c_cc6e1d76.webp"
   },
   {
-    "id": "c_373a3d8b",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Glaceforde Mleting Device Cave Shiny",
-    "description": "Requires Melting Device. Go down the stairs immediately east of Glaceforde",
-    "x": 3140,
-    "y": 3004,
-    "floor": "surface",
-    "icon": "",
-    "label": "Glaceforde Mleting Device Cave Shiny",
-    "region": "",
-    "trigger": "",
-    "contributedBy": "Pixelated",
-    "screenshot": "community-screenshots/c_373a3d8b.webp"
-  },
-  {
     "id": "c_704acb58",
     "source": "base",
     "category": "reputation_shiny",
@@ -4969,22 +4953,6 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_8d12706a.webp"
-  },
-  {
-    "id": "c_60325925",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Frostdake Caves Melting Device Cave",
-    "description": "Requires melting device",
-    "x": 2446,
-    "y": 2439,
-    "floor": "surface",
-    "icon": "",
-    "label": "Frostdake Caves Melting Device Cave",
-    "region": "",
-    "trigger": "",
-    "contributedBy": "Pixelated",
-    "screenshot": "community-screenshots/c_60325925.webp"
   },
   {
     "id": "c_d6bf3e88",
