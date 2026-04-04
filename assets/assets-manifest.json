@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-04T01:46:57.232Z",
+  "generatedAt": "2026-04-04T14:17:54.000Z",
   "archives": [
     {
       "name": "images-worldmap.zip",
@@ -9,9 +9,9 @@
     },
     {
       "name": "data.zip",
-      "hash": "sha256:2b97e2c409a2737a6e2c856e0ed57ca85475b23a270efe95c781126ee79daf11",
-      "files": 656,
-      "sizeMB": 8.7
+      "hash": "sha256:7b8552db4a3f332b09d8324729d11441df3f797a9f5c1acc024e70a6993016bf",
+      "files": 657,
+      "sizeMB": 8.8
     }
   ]
 }

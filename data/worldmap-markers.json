@@ -6626,5 +6626,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_8513f68a.webp"
+  },
+  {
+    "id": "c_9241618b",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Anashi",
+    "description": "",
+    "x": 4089,
+    "y": 2799,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Anashi",
+    "region": "",
+    "trigger": "",
+    "contributedBy": "Pixelated",
+    "screenshot": "community-screenshots/c_9241618b.webp"
   }
 ]
