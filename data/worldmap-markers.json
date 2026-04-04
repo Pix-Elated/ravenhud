@@ -4411,22 +4411,6 @@
     "screenshot": "community-screenshots/c_cc6e1d76.webp"
   },
   {
-    "id": "c_704acb58",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Spider Melting Device Cave",
-    "description": "Requires melting device to access.",
-    "x": 2977,
-    "y": 2829,
-    "floor": "level3",
-    "icon": "",
-    "label": "Spider Melting Device Cave",
-    "region": "",
-    "trigger": "",
-    "contributedBy": "Pixelated",
-    "screenshot": "community-screenshots/c_704acb58.webp"
-  },
-  {
     "id": "c_0ec089b5",
     "source": "base",
     "category": "reputation_shiny",
