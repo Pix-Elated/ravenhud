@@ -247,7 +247,7 @@ function logoutDiscord() {
 
 var banListCache = null;
 var IDENTITY_KEY = 'rhud_identity';
-var IDENTITY_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
+var IDENTITY_TTL_MS = 90 * 24 * 60 * 60 * 1000; // 90 days
 
 async function fetchBanList() {
   if (banListCache) return banListCache;
