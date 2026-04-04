@@ -550,6 +550,11 @@ body {
 .marker-item.shiny-collected {
   opacity: 0.5;
 }
+.hide-collected-row {
+  border-top: 1px solid var(--bg-tertiary);
+  margin-top: 4px;
+  padding-top: 6px;
+}
 
 .detail-actions {
   display: flex;

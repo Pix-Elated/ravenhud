@@ -83,6 +83,7 @@ var editingMarker = null; // marker being edited
 var discordUser = null; // { id, username, globalName, avatar }
 var previewMarker = null; // L.Marker for position preview
 var pendingScreenshot = null; // base64 webp string
+var hideCollected = false; // Filter: hide collected shiny/NPC markers
 
 // Shiny collection checklist (persisted to localStorage)
 var SHINY_COLLECTED_KEY = 'rhud_shiny_collected';
@@ -105,7 +106,9 @@ function toggleShinyCollected(markerId) {
 
 function getRepProgress(category) {
   var state = getShinyCollected();
-  var markers = allMarkers.filter(function (m) { return m.category === category; });
+  var markers = allMarkers.filter(function (m) {
+    return m.category === category && m.floor === 'surface';
+  });
   var collected = markers.filter(function (m) { return state[m.id]; }).length;
   return { collected: collected, total: markers.length };
 }
@@ -661,7 +664,9 @@ function renderMarkers() {
     if (!visibility[m.category]) continue;
 
     var latlng = rc.unproject([m.x, m.y]);
-    var isCollectedShiny = (m.category === 'reputation_shiny' || m.category === 'npc_reputation') && shinyState[m.id];
+    var isTrackable = m.category === 'reputation_shiny' || m.category === 'npc_reputation';
+    var isCollectedShiny = isTrackable && shinyState[m.id];
+    if (hideCollected && isCollectedShiny) continue;
     var icon = isCollectedShiny
       ? getCachedIcon('_shiny_collected')
       : getCachedIcon(m.category);
@@ -785,10 +790,18 @@ function showDetail(m) {
         if (nowCollected) {
           sidebarItem.classList.add('shiny-collected');
           nameSpan.textContent = '\u2713 ' + m.name;
+          if (hideCollected) sidebarItem.style.display = 'none';
         } else {
           sidebarItem.classList.remove('shiny-collected');
+          sidebarItem.style.display = '';
           nameSpan.textContent = m.name;
         }
+      }
+
+      // Hide marker on map when filter is active
+      if (hideCollected && nowCollected && lm) {
+        clusterGroup.removeLayer(lm);
+        leafletMarkers.delete(m.id);
       }
 
       // Update the progress counter in the category row
@@ -1193,7 +1206,10 @@ function buildSidebar() {
         for (var marker of (markersByCategory[catKey] || [])) {
           var item = document.createElement('div');
           item.className = 'marker-item';
-          if (shinyState[marker.id]) item.classList.add('shiny-collected');
+          if (shinyState[marker.id]) {
+            item.classList.add('shiny-collected');
+            if (hideCollected) item.style.display = 'none';
+          }
           var nameSpan = document.createElement('span');
           nameSpan.className = 'marker-item-name';
           nameSpan.textContent = (shinyState[marker.id] ? '\u2713 ' : '') + marker.name;
@@ -1226,6 +1242,26 @@ function buildSidebar() {
           });
         })(list, row);
       }
+    }
+
+    // Add "Hide collected" toggle to the Reputation group
+    if (groupName === 'Reputation') {
+      var filterRow = document.createElement('div');
+      filterRow.className = 'cat-row hide-collected-row';
+      filterRow.innerHTML =
+        '<input type="checkbox" id="hide-collected-toggle" ' + (hideCollected ? 'checked' : '') + ' />' +
+        '<span class="cat-label" style="font-style:italic;opacity:0.8">Hide collected</span>';
+      body.appendChild(filterRow);
+      filterRow.querySelector('input').addEventListener('change', function (e) {
+        e.stopPropagation();
+        hideCollected = this.checked;
+        renderMarkers();
+        // Toggle visibility of collected items in sidebar
+        var items = document.querySelectorAll('.marker-item.shiny-collected');
+        for (var i = 0; i < items.length; i++) {
+          items[i].style.display = hideCollected ? 'none' : '';
+        }
+      });
     }
 
     group.appendChild(body);
