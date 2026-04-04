@@ -409,6 +409,7 @@ function showBanScreen(entry, identity) {
     '<li>Directly apologize to the creator for what you have done, admit you are a loser with no real social skills, and promise to never do it again.</li>' +
     '<li>Close this tab &mdash; you aren\'t welcome here</li>' +
     '</ul>' +
+    '<p><a href="https://discord.gg/6nNdvKV2nb" target="_blank" rel="noopener noreferrer" class="ban-discord-link">\uD83D\uDCAC Join the Discord to appeal</a></p>' +
     '</div>' +
     '<div class="ban-footer">Hall of Shame &bull; RavenHUD</div>' +
     '</div>';

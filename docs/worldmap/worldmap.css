@@ -1101,6 +1101,17 @@ body {
   color: #00ff41;
 }
 
+.ban-discord-link {
+  color: #5865f2;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.ban-discord-link:hover {
+  text-decoration: underline;
+  color: #7289da;
+}
+
 .ban-footer {
   margin-top: 28px;
   font-size: 10px;
