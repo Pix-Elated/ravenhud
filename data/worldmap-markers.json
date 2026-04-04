@@ -4863,7 +4863,7 @@
     "source": "base",
     "category": "reputation_shiny",
     "name": "Bog gazer shiny",
-    "description": "need 10/10 journal",
+    "description": "need 10/10 journal. Gives Demonic Right Horn",
     "x": 5017,
     "y": 2136,
     "floor": "surface",
