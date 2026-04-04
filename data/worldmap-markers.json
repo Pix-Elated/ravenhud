@@ -6642,5 +6642,20 @@
     "trigger": "",
     "contributedBy": "Pixelated",
     "screenshot": "community-screenshots/c_9241618b.webp"
+  },
+  {
+    "id": "c_dddadd2e",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Despair Drake Shiny",
+    "description": "",
+    "x": 5811,
+    "y": 1621,
+    "floor": "surface",
+    "icon": "",
+    "label": "Despair Drake Shiny",
+    "region": "Master Overlook",
+    "trigger": "",
+    "contributedBy": "DarkRyNo"
   }
 ]
