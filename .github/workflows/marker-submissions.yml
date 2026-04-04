@@ -573,7 +573,8 @@ jobs:
                     issueChanged = true;
                     console.log(`  Screenshot ${isScreenshotOnly ? 'updated' : 'added'}: ${m.id}`);
                   } else if (!m.correction && !isScreenshotOnly) {
-                    console.log(`  Duplicate skip: ${m.id}`);
+                    console.log(`  Duplicate skip (exact ID): ${m.id}`);
+                    duplicateIssues.push(issue.number);
                   }
                   continue;
                 }
@@ -636,6 +637,8 @@ jobs:
             if (totalAdded === 0 && totalUpdated === 0 && totalDeleted === 0 && screenshotsCopied === 0) {
               console.log('No changes to apply');
               core.setOutput('changed', 'false');
+              // Still output duplicates so they get closed even without data changes
+              core.setOutput('duplicates', duplicateIssues.join(','));
               return;
             }
 
@@ -765,8 +768,8 @@ jobs:
               });
             }
 
-      - name: Close duplicate proximity issues
-        if: steps.commit.outcome == 'success' && steps.ingest.outputs.duplicates != ''
+      - name: Close duplicate issues
+        if: steps.ingest.outputs.duplicates != ''
         uses: actions/github-script@v7
         with:
           script: |
