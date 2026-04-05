@@ -6723,5 +6723,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_982ee03c.webp"
+  },
+  {
+    "id": "c_f446adc3",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Ostera elite orc shiny",
+    "description": "underground",
+    "x": 7550,
+    "y": 1095,
+    "floor": "surface",
+    "icon": "",
+    "label": "Ostera elite orc shiny",
+    "region": "Ostera",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_f446adc3.webp"
   }
 ]
