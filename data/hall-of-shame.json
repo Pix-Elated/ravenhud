@@ -294,6 +294,12 @@
       "name": "Pixelated",
       "reason": "Auto-ban: ban evasion. Previously used: testchar, smoketestchar",
       "added": "2026-04-05"
+    },
+    {
+      "type": "character",
+      "name": "Kieran",
+      "reason": "Auto-ban: ban evasion. Previously used: testchar, smoketestchar, pixelated",
+      "added": "2026-04-05"
     }
   ]
 }
