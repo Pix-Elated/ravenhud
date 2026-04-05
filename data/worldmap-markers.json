@@ -6691,5 +6691,21 @@
     "trigger": "",
     "contributedBy": "Pixelated",
     "screenshot": "community-screenshots/c_a42f089c.webp"
+  },
+  {
+    "id": "c_1234197a",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak jaffar hill 80+ toads shiny 2",
+    "description": "north side of the caves",
+    "x": 4529,
+    "y": 3002,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak jaffar hill 80+ toads shiny 2",
+    "region": "Dras Marna",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_1234197a.webp"
   }
 ]
