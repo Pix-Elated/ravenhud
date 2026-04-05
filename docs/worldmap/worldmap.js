@@ -263,6 +263,12 @@ async function fetchBanList() {
   }
 }
 
+async function refreshBanList() {
+  // Forces a re-fetch, bypassing the in-memory cache
+  banListCache = null;
+  return fetchBanList();
+}
+
 function getSavedIdentity() {
   try {
     var raw = localStorage.getItem(IDENTITY_KEY);
@@ -328,6 +334,9 @@ function showIdentityPrompt() {
       '<div class="identity-modal">' +
       '<div class="identity-title">Welcome to the RavenHUD World Map</div>' +
       '<div class="identity-subtitle">Please identify yourself to continue</div>' +
+      '<div class="identity-warning">' +
+      '<strong>Warning:</strong> Entering random letters, intentionally misrepresenting your guild, or otherwise attempting to circumvent the integrity of this check will result in a ban.' +
+      '</div>' +
       '<label class="identity-label">Character Name</label>' +
       '<input type="text" id="identity-char" class="identity-input" placeholder="Your in-game name" maxlength="30" />' +
       '<label class="identity-label">Guild Tag</label>' +
@@ -424,6 +433,45 @@ function escapeHtml(str) {
   var div = document.createElement('div');
   div.textContent = str;
   return div.innerHTML;
+}
+
+// Periodic ban re-check — kicks users banned after they entered the map.
+// Without this, the ban list is only consulted at page load; a user banned
+// mid-session keeps access until they refresh.
+var BAN_RECHECK_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes, matches Corvid server cache TTL
+var banRecheckTimer = null;
+
+function startPeriodicBanCheck(identity) {
+  if (banRecheckTimer) clearInterval(banRecheckTimer);
+  banRecheckTimer = setInterval(async function () {
+    try {
+      // Force-refresh ban list from GitHub so new bans are picked up
+      await refreshBanList();
+
+      // Check character/guild/discord client-side
+      var ban = await checkAllBans(identity.characterName, identity.guildTag);
+      if (ban) {
+        clearInterval(banRecheckTimer);
+        showBanScreen(ban, identity);
+        localStorage.removeItem(IDENTITY_KEY);
+        return;
+      }
+
+      // Check IP ban via Corvid (server-side only — client can't see its own IP)
+      var res = await fetch(CORVID_API_URL + '/api/bans/ip-check', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+      if (res.ok) {
+        var data = await res.json();
+        if (data.banned) {
+          clearInterval(banRecheckTimer);
+          showBanScreen({ type: 'ip', name: data.matchedName, reason: data.reason }, identity);
+          localStorage.removeItem(IDENTITY_KEY);
+        }
+      }
+    } catch (e) { /* silent — transient failures shouldn't spam the console */ }
+  }, BAN_RECHECK_INTERVAL_MS);
 }
 
 function updateAuthUI() {
@@ -552,6 +600,8 @@ async function init() {
   buildSidebar();
   renderMarkers();
   updateStats();
+
+  startPeriodicBanCheck(identity);
 }
 
 function initAuth() {
