@@ -1,9 +1,117 @@
 {
-  "generatedAt": "2026-04-05T13:14:36.000Z",
+  "generatedAt": "2026-04-05T14:55:00.000Z",
   "archives": [
     {
+      "name": "images-cosmetics.zip",
+      "hash": "sha256:1347366d66f0060685c74d1193a9282dc21fb9e08c6e61d93a075ba3a7d888f5",
+      "files": 505,
+      "sizeMB": 1.2
+    },
+    {
+      "name": "images-creatures.zip",
+      "hash": "sha256:2adeed5b45931cd7c8091b710b30ac7b2ed8d947ae2730b19016f39e7aa3d346",
+      "files": 398,
+      "sizeMB": 0.7
+    },
+    {
+      "name": "images-currency.zip",
+      "hash": "sha256:907c0dad3ce4ab11fb23ef5b934d5f064b1d7ac843bd29dd75bf2ada250d388f",
+      "files": 1,
+      "sizeMB": 0
+    },
+    {
+      "name": "images-equipment.zip",
+      "hash": "sha256:4a6cfdaf425dcb4ce1780664fc74bbf872ee632ea2b9af1542ece84742482317",
+      "files": 269,
+      "sizeMB": 0.5
+    },
+    {
+      "name": "images-items.zip",
+      "hash": "sha256:eef832b689ed004c1939a740e5d44b268bfe6bdd6c3619c0831feec87b3ea6bf",
+      "files": 3051,
+      "sizeMB": 5.9
+    },
+    {
+      "name": "images-land.zip",
+      "hash": "sha256:9fd02590abdeee631a2557b8dbd22b57793e52714d0e52fe1edebb6939214024",
+      "files": 33,
+      "sizeMB": 0.5
+    },
+    {
+      "name": "images-materials.zip",
+      "hash": "sha256:5c09d81170e77d01d0c1a942dc78c89c321c4378eb6c6b30ad20e14ffea7105a",
+      "files": 690,
+      "sizeMB": 1.5
+    },
+    {
+      "name": "images-menu.zip",
+      "hash": "sha256:18accc12da2409b305da8eac28293efbecb3a1e507a445eb693a06b5d549f1dd",
+      "files": 1,
+      "sizeMB": 0
+    },
+    {
+      "name": "images-moas.zip",
+      "hash": "sha256:9eee2d811a1e79f687a91a4647b32f2bc1e98352b79efa6917a3b242307f44ec",
+      "files": 131,
+      "sizeMB": 0.2
+    },
+    {
+      "name": "images-munks-part1.zip",
+      "hash": "sha256:64aef1acbd8f82de6b8b38986913d21d89544317448da9da3b900583d102d7aa",
+      "files": 306,
+      "sizeMB": 76.6
+    },
+    {
+      "name": "images-munks-part2.zip",
+      "hash": "sha256:9df91e6843ba4770603f9d0bdf49da244db946787e34b7a4aab9d5fde64f0ff5",
+      "files": 306,
+      "sizeMB": 75.8
+    },
+    {
+      "name": "images-munks-part3.zip",
+      "hash": "sha256:caa4a73e798551f234efd16ca835bd18fca837ffc1e9e7290201acc4d265eeed",
+      "files": 305,
+      "sizeMB": 76.2
+    },
+    {
+      "name": "images-ravencards.zip",
+      "hash": "sha256:005477ebe2914d99db56789e57cd0ce993586b1b5a5c21282567fd868d0dbe3d",
+      "files": 243,
+      "sizeMB": 9.9
+    },
+    {
+      "name": "images-ravenguardian.zip",
+      "hash": "sha256:03f10b16358fb1bcf6cb0a6876ded565096509fb35ab0cbdfeeb4cdbfa48c913",
+      "files": 148,
+      "sizeMB": 1.1
+    },
+    {
+      "name": "images-spells.zip",
+      "hash": "sha256:e010c6a49b71310a66eb12e1f464e54b16af5ccde45ac2eaaa0310017013a359",
+      "files": 84,
+      "sizeMB": 0.2
+    },
+    {
+      "name": "images-tokens.zip",
+      "hash": "sha256:ea2c8b8963fc91c18c12324d0be8a1c926d4b1c309a9271ffb47caea2b4b22b6",
+      "files": 1,
+      "sizeMB": 0
+    },
+    {
+      "name": "images-tradepacks.zip",
+      "hash": "sha256:c3c960d019ec03f7d673704ec6f817c70134935cd9c05d1415aabe5e59bacce0",
+      "files": 83,
+      "sizeMB": 0.2
+    },
+    {
+      "name": "images-trophies.zip",
+      "hash": "sha256:72fe93b5d84843754550efb7b3fc234f5b48fe26e0164741880b4fe82eaff2d1",
+      "files": 65,
+      "sizeMB": 0.1
+    },
+    {
       "name": "images-worldmap.zip",
-      "hash": "sha256:fae6d7ce05314ec823da22068946bb11b124c2c3fe20faa68b4808a58be2e325",
+      "hash": "sha256:d6560cea5ebfc0397c1d3576f9626a970ad3a58e1c8d1184f2d6755d6f25d8ed",
       "files": 777,
       "sizeMB": 5.1
     },
