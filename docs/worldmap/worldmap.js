@@ -536,13 +536,37 @@ function showBanScreen(entry, identity) {
 
 var banBarkStopped = false;
 var banBarkCtx = null;
+var banBarkStarted = false;
 function startBanBark() {
   try {
     var AC = window.AudioContext || window.webkitAudioContext;
     if (!AC) return;
     banBarkCtx = new AC();
     banBarkStopped = false;
-    barkBurst();
+    banBarkStarted = false;
+
+    // Browsers block AudioContext before user gesture. Try to resume
+    // immediately (works if user already interacted), then hook every
+    // click/touch/keypress on the document to resume on first interaction.
+    function tryResume() {
+      if (banBarkStarted || banBarkStopped) return;
+      if (banBarkCtx.state === 'suspended') {
+        banBarkCtx.resume().then(function () {
+          if (!banBarkStarted) { banBarkStarted = true; barkBurst(); }
+        }).catch(function () { /* still blocked, wait for next gesture */ });
+      } else {
+        banBarkStarted = true;
+        barkBurst();
+      }
+    }
+
+    // Fire on any user interaction — covers click, tap, keyboard
+    document.addEventListener('click', tryResume, { once: false });
+    document.addEventListener('touchstart', tryResume, { once: false });
+    document.addEventListener('keydown', tryResume, { once: false });
+
+    // Also try immediately in case we already have gesture context
+    tryResume();
   } catch (e) { /* audio blocked, skip */ }
 }
 function barkBurst() {
