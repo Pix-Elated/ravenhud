@@ -6755,5 +6755,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_10b230db.webp"
+  },
+  {
+    "id": "c_2952b000",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Harbor pirate island key",
+    "description": "need harbor pirate key and journal done",
+    "x": 1879,
+    "y": 2908,
+    "floor": "surface",
+    "icon": "",
+    "label": "Harbor pirate island key",
+    "region": "Seabreeze",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_2952b000.webp"
   }
 ]
