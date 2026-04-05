@@ -6787,5 +6787,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_d925573d.webp"
+  },
+  {
+    "id": "c_45ecc71d",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Gilead pirate island shiny",
+    "description": "need gilead pirate key shiny and journal done",
+    "x": 2971,
+    "y": 3393,
+    "floor": "surface",
+    "icon": "",
+    "label": "Gilead pirate island shiny",
+    "region": "Orca Bay",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_45ecc71d.webp"
   }
 ]
