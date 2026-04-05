@@ -6739,5 +6739,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_f446adc3.webp"
+  },
+  {
+    "id": "c_10b230db",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Forsaken Humanity lost shiny",
+    "description": "must be during humanity lost dynamic event",
+    "x": 4834,
+    "y": 1916,
+    "floor": "surface",
+    "icon": "",
+    "label": "Forsaken Humanity lost shiny",
+    "region": "Forsaken Mountains",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_10b230db.webp"
   }
 ]
