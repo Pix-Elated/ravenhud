@@ -6675,5 +6675,21 @@
     "trigger": "",
     "contributedBy": "Pixelated",
     "screenshot": "community-screenshots/c_88bc8717.webp"
+  },
+  {
+    "id": "c_a42f089c",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Surard",
+    "description": "",
+    "x": 2335,
+    "y": 1231,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Surard",
+    "region": "",
+    "trigger": "",
+    "contributedBy": "Pixelated",
+    "screenshot": "community-screenshots/c_a42f089c.webp"
   }
 ]
