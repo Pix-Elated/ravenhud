@@ -1,3 +1,4 @@
+removed 2 entries
 {
   "version": 2,
   "entries": [
@@ -256,7 +257,7 @@
     {
       "type": "ip",
       "name": "58.186.100.33",
-      "reason": "We donâ€™t do that here. Fake name fake guild",
+      "reason": "We don\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2t do that here. Fake name fake guild",
       "added": "2026-03-28"
     },
     {
@@ -280,20 +281,8 @@
     {
       "type": "character",
       "name": "Insanix",
-      "reason": "Canâ€™t get around the GG ban by not giving the guild. Nice try.",
+      "reason": "Can\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2t get around the GG ban by not giving the guild. Nice try.",
       "added": "2026-04-04"
-    },
-    {
-      "type": "ip",
-      "name": "188.89.211.37",
-      "reason": "Nice try El Losero",
-      "added": "2026-04-05"
-    },
-    {
-      "type": "character",
-      "name": "Pixelated",
-      "reason": "Auto-ban: ban evasion. Previously used: testchar, smoketestchar",
-      "added": "2026-04-05"
     },
     {
       "type": "character",
