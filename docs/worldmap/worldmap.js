@@ -252,6 +252,77 @@ var banListCache = null;
 var IDENTITY_KEY = 'rhud_identity';
 var IDENTITY_TTL_MS = 90 * 24 * 60 * 60 * 1000; // 90 days
 
+// ---------------------------------------------------------------------------
+// Browser Fingerprint (UEBA)
+// ---------------------------------------------------------------------------
+
+// Combines stable browser/device signals into a single hash. Used by Corvid's
+// submission logger to cluster evasion attempts across cleared cookies + cache.
+// Each signal contributes entropy; together we get enough stability to link
+// repeated visits from the same browser/machine even after identity changes.
+// ~30-40 bits of entropy in aggregate. Not unique per user but discriminative
+// enough for the "same person lying about their name" detection use case.
+var fingerprintCache = null;
+
+async function computeFingerprint() {
+  if (fingerprintCache) return fingerprintCache;
+
+  var signals = [];
+  signals.push(navigator.userAgent || '');
+  signals.push(navigator.language || '');
+  signals.push(navigator.languages ? navigator.languages.join(',') : '');
+  signals.push(screen.width + 'x' + screen.height + 'x' + (screen.colorDepth || 0));
+  signals.push(String(window.devicePixelRatio || 1));
+  signals.push(Intl.DateTimeFormat().resolvedOptions().timeZone || '');
+  signals.push(String(navigator.hardwareConcurrency || 0));
+  signals.push(String(navigator.deviceMemory || 0));
+  signals.push(String(new Date().getTimezoneOffset()));
+
+  // Canvas fingerprint — text rendered to a canvas produces slightly different
+  // pixels on every GPU / driver / font stack combination.
+  try {
+    var canvas = document.createElement('canvas');
+    canvas.width = 240;
+    canvas.height = 60;
+    var ctx = canvas.getContext('2d');
+    ctx.textBaseline = 'top';
+    ctx.font = "14px 'Arial'";
+    ctx.fillStyle = '#f60';
+    ctx.fillRect(0, 0, 100, 20);
+    ctx.fillStyle = '#069';
+    ctx.fillText('RavenHUD fingerprint \uD83D\uDC26', 2, 15);
+    ctx.fillStyle = 'rgba(102, 204, 0, 0.7)';
+    ctx.fillText('RavenHUD fingerprint \uD83D\uDC26', 4, 17);
+    signals.push(canvas.toDataURL());
+  } catch (e) { /* canvas blocked, skip */ }
+
+  // WebGL renderer — GPU identification string, very stable
+  try {
+    var gl = document.createElement('canvas').getContext('webgl');
+    if (gl) {
+      var ext = gl.getExtension('WEBGL_debug_renderer_info');
+      if (ext) {
+        signals.push(gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) || '');
+        signals.push(gl.getParameter(ext.UNMASKED_VENDOR_WEBGL) || '');
+      }
+    }
+  } catch (e) { /* WebGL blocked, skip */ }
+
+  var combined = signals.join('||');
+  var buf = new TextEncoder().encode(combined);
+  try {
+    var hash = await crypto.subtle.digest('SHA-256', buf);
+    var hex = Array.from(new Uint8Array(hash))
+      .map(function (b) { return b.toString(16).padStart(2, '0'); })
+      .join('');
+    fingerprintCache = 'fp_' + hex.slice(0, 32);
+  } catch (e) {
+    // Fallback for browsers without SubtleCrypto (extremely old)
+    fingerprintCache = 'fp_fallback_' + combined.length;
+  }
+  return fingerprintCache;
+}
+
 async function fetchBanList() {
   if (banListCache) return banListCache;
   // Prefer Corvid (sub-100ms, in-memory cache) so SSE invalidations are
@@ -349,6 +420,11 @@ function showIdentityPrompt() {
       '<div class="identity-subtitle">Please identify yourself to continue</div>' +
       '<div class="identity-warning">' +
       '<strong>Warning:</strong> Entering random letters, intentionally misrepresenting your guild, or otherwise attempting to circumvent the integrity of this check will result in a ban.' +
+      '</div>' +
+      '<div class="identity-privacy">' +
+      'By continuing, you acknowledge that your IP address, browser/device fingerprint, ' +
+      'user-agent, character name, and guild tag are logged for ban-evasion detection and ' +
+      'abuse prevention (retained up to 90 days). No third-party tracking.' +
       '</div>' +
       '<label class="identity-label">Character Name</label>' +
       '<input type="text" id="identity-char" class="identity-input" placeholder="Your in-game name" maxlength="30" />' +
@@ -581,6 +657,10 @@ async function init() {
     isNewIdentity = true;
   }
 
+  // Compute the browser fingerprint up-front so we can send it with the
+  // identity log. Used by Corvid's /cluster admin command to detect evasion.
+  var fingerprint = await computeFingerprint();
+
   // Log identity to Corvid — only on first visit or new identity, not every page load
   // Always check IP ban though (server-side — client can't know its own IP)
   try {
@@ -591,7 +671,9 @@ async function init() {
         characterName: identity.characterName,
         guildTag: identity.guildTag,
         timestamp: new Date().toISOString(),
-        isNewIdentity: isNewIdentity
+        isNewIdentity: isNewIdentity,
+        fingerprint: fingerprint,
+        discordId: discordUser ? discordUser.id : undefined
       })
     });
     var logData = await logRes.json();
