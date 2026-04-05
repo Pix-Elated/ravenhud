@@ -17,7 +17,8 @@
 var DATA_URL =
   'https://raw.githubusercontent.com/Pix-Elated/ravenhud/master/data/worldmap-markers.json';
 
-var BAN_LIST_URL =
+var CORVID_BAN_LIST_URL = null; // set below after CORVID_API_URL is defined
+var BAN_LIST_FALLBACK_URL =
   'https://raw.githubusercontent.com/Pix-Elated/ravenhud/master/data/hall-of-shame.json';
 
 var TILE_URL = 'https://assets.ravenquest.tools/map/{z}/{x}/{y}.png';
@@ -33,6 +34,8 @@ var MAP_CONFIG = {
 
 var CORVID_API_URL =
   'https://corvid-discord.wonderfulfield-6f0ceab3.westus2.azurecontainerapps.io';
+CORVID_BAN_LIST_URL = CORVID_API_URL + '/api/bans/list';
+var BAN_STREAM_URL = CORVID_API_URL + '/api/bans/stream';
 
 var DISCORD_CLIENT_ID = '1469858215125717155';
 var DISCORD_REDIRECT_URI = window.location.origin + window.location.pathname;
@@ -251,11 +254,21 @@ var IDENTITY_TTL_MS = 90 * 24 * 60 * 60 * 1000; // 90 days
 
 async function fetchBanList() {
   if (banListCache) return banListCache;
+  // Prefer Corvid (sub-100ms, in-memory cache) so SSE invalidations are
+  // authoritative. Fall back to GitHub raw if Corvid is down.
   try {
-    var res = await fetch(BAN_LIST_URL);
-    if (!res.ok) return [];
-    var data = await res.json();
-    banListCache = data.entries || [];
+    var res = await fetch(CORVID_BAN_LIST_URL);
+    if (res.ok) {
+      var data = await res.json();
+      banListCache = data.entries || [];
+      return banListCache;
+    }
+  } catch (e) { /* fall through to GitHub raw */ }
+  try {
+    var res2 = await fetch(BAN_LIST_FALLBACK_URL);
+    if (!res2.ok) return [];
+    var data2 = await res2.json();
+    banListCache = data2.entries || [];
     return banListCache;
   } catch (e) {
     console.warn('Failed to fetch ban list:', e);
@@ -436,42 +449,80 @@ function escapeHtml(str) {
 }
 
 // Periodic ban re-check — kicks users banned after they entered the map.
-// Without this, the ban list is only consulted at page load; a user banned
-// mid-session keeps access until they refresh.
-var BAN_RECHECK_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes, matches Corvid server cache TTL
+// SSE provides ~1-2s propagation via /api/bans/stream below; this polling
+// stays as a safety net for SSE disconnects and IP-ban changes that aren't
+// triggered by ban-list commits (future: proxy-list refreshes).
+var BAN_RECHECK_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
 var banRecheckTimer = null;
+var banStreamSource = null;
+
+/**
+ * Re-fetch the ban list and re-evaluate the current identity. Kicks the
+ * user to the ban screen if now banned. Shared between SSE push handler
+ * and periodic safety-net poll so enforcement logic stays in one place.
+ */
+async function recheckBans(identity) {
+  // Force-refresh ban list so new bans are picked up
+  await refreshBanList();
+
+  // Check character/guild client-side
+  var ban = await checkAllBans(identity.characterName, identity.guildTag);
+  if (ban) {
+    stopBanWatcher();
+    showBanScreen(ban, identity);
+    localStorage.removeItem(IDENTITY_KEY);
+    return true;
+  }
+
+  // Check IP ban via Corvid (server-side only — client can't see its own IP)
+  try {
+    var res = await fetch(CORVID_API_URL + '/api/bans/ip-check', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' }
+    });
+    if (res.ok) {
+      var data = await res.json();
+      if (data.banned) {
+        stopBanWatcher();
+        showBanScreen({ type: 'ip', name: data.matchedName, reason: data.reason }, identity);
+        localStorage.removeItem(IDENTITY_KEY);
+        return true;
+      }
+    }
+  } catch (e) { /* fail-open */ }
+  return false;
+}
 
 function startPeriodicBanCheck(identity) {
   if (banRecheckTimer) clearInterval(banRecheckTimer);
-  banRecheckTimer = setInterval(async function () {
-    try {
-      // Force-refresh ban list from GitHub so new bans are picked up
-      await refreshBanList();
-
-      // Check character/guild/discord client-side
-      var ban = await checkAllBans(identity.characterName, identity.guildTag);
-      if (ban) {
-        clearInterval(banRecheckTimer);
-        showBanScreen(ban, identity);
-        localStorage.removeItem(IDENTITY_KEY);
-        return;
-      }
-
-      // Check IP ban via Corvid (server-side only — client can't see its own IP)
-      var res = await fetch(CORVID_API_URL + '/api/bans/ip-check', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' }
-      });
-      if (res.ok) {
-        var data = await res.json();
-        if (data.banned) {
-          clearInterval(banRecheckTimer);
-          showBanScreen({ type: 'ip', name: data.matchedName, reason: data.reason }, identity);
-          localStorage.removeItem(IDENTITY_KEY);
-        }
-      }
-    } catch (e) { /* silent — transient failures shouldn't spam the console */ }
+  banRecheckTimer = setInterval(function () {
+    recheckBans(identity).catch(function () { /* silent */ });
   }, BAN_RECHECK_INTERVAL_MS);
+}
+
+/**
+ * Open an SSE connection to Corvid and re-check bans whenever the server
+ * announces a ban-list change. EventSource auto-reconnects on drops.
+ * Target latency: ~1-2s from ban issue to kick.
+ */
+function startBanStreamSubscription(identity) {
+  if (typeof EventSource === 'undefined') return; // ancient browser
+  if (banStreamSource) banStreamSource.close();
+  try {
+    banStreamSource = new EventSource(BAN_STREAM_URL);
+    banStreamSource.addEventListener('ban-list-changed', function () {
+      recheckBans(identity).catch(function () { /* silent */ });
+    });
+    banStreamSource.addEventListener('error', function () {
+      // EventSource handles reconnect automatically; nothing to do here.
+      // Periodic poll still runs as a safety net.
+    });
+  } catch (e) { /* silent — periodic poll still covers us */ }
+}
+
+function stopBanWatcher() {
+  if (banRecheckTimer) { clearInterval(banRecheckTimer); banRecheckTimer = null; }
+  if (banStreamSource) { banStreamSource.close(); banStreamSource = null; }
 }
 
 function updateAuthUI() {
@@ -602,6 +653,7 @@ async function init() {
   updateStats();
 
   startPeriodicBanCheck(identity);
+  startBanStreamSubscription(identity);
 }
 
 function initAuth() {
