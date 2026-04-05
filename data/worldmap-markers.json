@@ -6707,5 +6707,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_1234197a.webp"
+  },
+  {
+    "id": "c_982ee03c",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Hadarrak ghaz table shiny",
+    "description": "top of the hill table there",
+    "x": 4584,
+    "y": 3232,
+    "floor": "surface",
+    "icon": "",
+    "label": "Hadarrak ghaz table shiny",
+    "region": "Dras Narda",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_982ee03c.webp"
   }
 ]
