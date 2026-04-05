@@ -288,6 +288,12 @@
       "name": "188.89.211.37",
       "reason": "Nice try El Losero",
       "added": "2026-04-05"
+    },
+    {
+      "type": "character",
+      "name": "Pixelated",
+      "reason": "Auto-ban: ban evasion. Previously used: testchar, smoketestchar",
+      "added": "2026-04-05"
     }
   ]
 }
