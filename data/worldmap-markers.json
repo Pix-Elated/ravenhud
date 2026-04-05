@@ -6659,5 +6659,21 @@
     "trigger": "",
     "contributedBy": "DarkRyNo",
     "screenshot": "community-screenshots/c_dddadd2e.webp"
+  },
+  {
+    "id": "c_88bc8717",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Jorda",
+    "description": "",
+    "x": 2329,
+    "y": 1234,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Jorda",
+    "region": "",
+    "trigger": "",
+    "contributedBy": "Pixelated",
+    "screenshot": "community-screenshots/c_88bc8717.webp"
   }
 ]
