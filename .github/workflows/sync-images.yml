@@ -178,4 +178,4 @@ jobs:
             echo "Created new PR on branch $BRANCH"
           fi
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.SYNC_PAT }}
