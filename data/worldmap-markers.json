@@ -566,7 +566,7 @@
     "source": "base",
     "category": "dynamic_event",
     "name": "Humanity Lost",
-    "description": "",
+    "description": "need 4 players to die for it to trigger",
     "x": 4827,
     "y": 1912,
     "floor": "surface",
