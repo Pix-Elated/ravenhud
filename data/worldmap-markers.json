@@ -6771,5 +6771,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_2952b000.webp"
+  },
+  {
+    "id": "c_d925573d",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Sajecho pirate island shiny",
+    "description": "need sajecho pirate key and journal done",
+    "x": 2862,
+    "y": 2264,
+    "floor": "surface",
+    "icon": "",
+    "label": "Sajecho pirate island shiny",
+    "region": "Thornveil Isle",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_d925573d.webp"
   }
 ]
