@@ -251,6 +251,7 @@ function logoutDiscord() {
 var banListCache = null;
 var IDENTITY_KEY = 'rhud_identity';
 var IDENTITY_TTL_MS = 90 * 24 * 60 * 60 * 1000; // 90 days
+var BAN_PERSIST_KEY = 'rhud_banned';
 
 // ---------------------------------------------------------------------------
 // Browser Fingerprint (UEBA)
@@ -484,6 +485,18 @@ function showBanScreen(entry, identity) {
   // Report to Corvid for IP logging
   reportBanTrigger(entry, identity);
 
+  // Persist the ban so refreshing / clearing cookies doesn't get them
+  // past the ban screen. They see the ban screen immediately on every
+  // future page load without ever reaching the identity prompt.
+  try {
+    localStorage.setItem(BAN_PERSIST_KEY, JSON.stringify({
+      name: entry.name,
+      reason: entry.reason,
+      type: entry.type,
+      ts: Date.now()
+    }));
+  } catch (e) { /* storage full or blocked, skip */ }
+
   // Remove any existing ban overlay
   var existing = document.getElementById('ban-overlay');
   if (existing) existing.remove();
@@ -516,6 +529,50 @@ function showBanScreen(entry, identity) {
 
   // Disable all interaction behind the overlay
   logoutDiscord();
+
+  // Bark at them. Continuously. Until they leave.
+  startBanBark();
+}
+
+var banBarkStopped = false;
+var banBarkCtx = null;
+function startBanBark() {
+  try {
+    var AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return;
+    banBarkCtx = new AC();
+    banBarkStopped = false;
+    barkBurst();
+  } catch (e) { /* audio blocked, skip */ }
+}
+function barkBurst() {
+  if (banBarkStopped || !banBarkCtx) return;
+  var now = banBarkCtx.currentTime;
+  for (var i = 0; i < 3; i++) barkWoof(banBarkCtx, now + i * 0.22);
+  setTimeout(barkBurst, 3 * 220 + 1200);
+}
+function barkWoof(ctx, when) {
+  var dur = 0.13;
+  var osc = ctx.createOscillator();
+  osc.type = 'sawtooth';
+  osc.frequency.setValueAtTime(240, when);
+  osc.frequency.exponentialRampToValueAtTime(110, when + dur);
+  var oscGain = ctx.createGain();
+  oscGain.gain.setValueAtTime(0, when);
+  oscGain.gain.linearRampToValueAtTime(0.35, when + 0.012);
+  oscGain.gain.exponentialRampToValueAtTime(0.001, when + dur);
+  osc.connect(oscGain).connect(ctx.destination);
+  osc.start(when); osc.stop(when + dur);
+  var buf = ctx.createBuffer(1, Math.floor(ctx.sampleRate * 0.04), ctx.sampleRate);
+  var data = buf.getChannelData(0);
+  for (var j = 0; j < data.length; j++) data[j] = Math.random() * 2 - 1;
+  var noise = ctx.createBufferSource(); noise.buffer = buf;
+  var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 1800; bp.Q.value = 1.2;
+  var noiseGain = ctx.createGain();
+  noiseGain.gain.setValueAtTime(0.25, when);
+  noiseGain.gain.exponentialRampToValueAtTime(0.001, when + 0.035);
+  noise.connect(bp).connect(noiseGain).connect(ctx.destination);
+  noise.start(when); noise.stop(when + 0.04);
 }
 
 function escapeHtml(str) {
@@ -646,6 +703,23 @@ function updateAuthUI() {
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
+  // Check for a persisted ban BEFORE anything else. If they were previously
+  // banned, show the ban screen immediately — no identity prompt, no map,
+  // no second chances. Clearing cookies/localStorage won't help because
+  // the server-side IP/fingerprint check will re-ban them anyway (and the
+  // SSE watcher will catch the rest).
+  try {
+    var persistedBan = localStorage.getItem(BAN_PERSIST_KEY);
+    if (persistedBan) {
+      var banData = JSON.parse(persistedBan);
+      showBanScreen(
+        { type: banData.type || 'character', name: banData.name || 'unknown', reason: banData.reason || 'Banned' },
+        null
+      );
+      return;
+    }
+  } catch (e) { /* corrupt data, let them through to server-side check */ }
+
   // Identity prompt FIRST — character name + guild tag (cached 7 days)
   var identity = getSavedIdentity();
   var isNewIdentity = false;
