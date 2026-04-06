@@ -1014,7 +1014,8 @@
     "icon": "dynamic_event_down.webp",
     "label": "",
     "region": "",
-    "trigger": ""
+    "trigger": "",
+    "screenshot": "community-screenshots/rg_dynamic_event_236.webp"
   },
   {
     "id": "rg_dynamic_event_237",
