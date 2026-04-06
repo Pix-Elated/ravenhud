@@ -192998,6 +192998,12 @@
         "timestamp": "2026-03-22T02:20:35.631469Z"
       },
       {
+        "tokenId": "1799",
+        "price": 13.16,
+        "currency": "USDC",
+        "timestamp": "2026-04-06T01:31:48.736076Z"
+      },
+      {
         "tokenId": "2146",
         "price": 0.88,
         "currency": "ERC20",
@@ -193044,12 +193050,6 @@
         "price": 4.39,
         "currency": "USDC",
         "timestamp": "2026-03-30T17:12:03.294242Z"
-      },
-      {
-        "tokenId": "2613",
-        "price": 0.07,
-        "currency": "USDC",
-        "timestamp": "2026-03-11T16:28:55.074641Z"
       },
       {
         "tokenId": "2652",

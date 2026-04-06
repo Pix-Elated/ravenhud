@@ -3919,12 +3919,6 @@
         "timestamp": "2026-04-03T21:17:04.55821Z"
       },
       {
-        "tokenId": "61006",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-03-31T12:58:09.369774Z"
-      },
-      {
         "tokenId": "78818",
         "price": 0.78,
         "currency": "USDC",
@@ -3941,6 +3935,12 @@
         "price": 0.5,
         "currency": "USDC",
         "timestamp": "2026-04-02T18:37:45.630405Z"
+      },
+      {
+        "tokenId": "86905",
+        "price": 0.02,
+        "currency": "USDC",
+        "timestamp": "2026-04-05T09:12:02.849265Z"
       },
       {
         "tokenId": "89115",
@@ -4027,12 +4027,6 @@
         "timestamp": "2026-04-03T05:20:34.678355Z"
       },
       {
-        "tokenId": "99730",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-03-31T17:26:41.292548Z"
-      },
-      {
         "tokenId": "100874",
         "price": 3.42,
         "currency": "USDC",
@@ -4043,6 +4037,12 @@
         "price": 0.07,
         "currency": "USDC",
         "timestamp": "2026-04-04T17:56:22.601402Z"
+      },
+      {
+        "tokenId": "101220",
+        "price": 0,
+        "currency": "QUEST",
+        "timestamp": "2026-04-06T02:57:28.560469Z"
       },
       {
         "tokenId": "101239",

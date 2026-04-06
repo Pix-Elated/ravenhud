@@ -7,6 +7,42 @@
   },
   "types": [
     {
+      "name": "Heartbound Traveler",
+      "nameNormalized": "heartbound_traveler",
+      "image": "https://cdn.ravenquest.io/assets/468-DBDYpVEX.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "wagon"
+        }
+      ]
+    },
+    {
+      "name": "Heartbound Voyager",
+      "nameNormalized": "heartbound_voyager",
+      "image": "https://cdn.ravenquest.io/assets/465-CfpFwWvc.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "ship"
+        }
+      ]
+    },
+    {
+      "name": "Sweet Valentine",
+      "nameNormalized": "sweet_valentine",
+      "image": "https://cdn.ravenquest.io/assets/467-B-NRFC3x.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "mount"
+        }
+      ]
+    },
+    {
       "name": "Merry Voyager",
       "nameNormalized": "merry_voyager",
       "image": "https://cdn.ravenquest.io/assets/461-CG5H3bJF.png",
@@ -27,18 +63,6 @@
         {
           "trait_type": "Type",
           "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Heartbound Traveler",
-      "nameNormalized": "heartbound_traveler",
-      "image": "https://cdn.ravenquest.io/assets/468-DBDYpVEX.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "wagon"
         }
       ]
     },
@@ -111,30 +135,6 @@
         {
           "trait_type": "Type",
           "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Heartbound Voyager",
-      "nameNormalized": "heartbound_voyager",
-      "image": "https://cdn.ravenquest.io/assets/465-CfpFwWvc.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "ship"
-        }
-      ]
-    },
-    {
-      "name": "Sweet Valentine",
-      "nameNormalized": "sweet_valentine",
-      "image": "https://cdn.ravenquest.io/assets/467-B-NRFC3x.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
         }
       ]
     },
@@ -1021,6 +1021,12 @@
         "timestamp": "2026-04-02T17:07:39.674123Z"
       },
       {
+        "tokenId": "14774",
+        "price": 9.3,
+        "currency": "USDC",
+        "timestamp": "2026-04-05T20:34:16.54172Z"
+      },
+      {
         "tokenId": "14832",
         "price": 1.45,
         "currency": "USDC",
@@ -1031,12 +1037,6 @@
         "price": 0.71,
         "currency": "USDC",
         "timestamp": "2026-04-03T15:15:24.593722Z"
-      },
-      {
-        "tokenId": "15023",
-        "price": 0.7,
-        "currency": "USDC",
-        "timestamp": "2026-03-31T17:16:59.226849Z"
       },
       {
         "tokenId": "15126",
