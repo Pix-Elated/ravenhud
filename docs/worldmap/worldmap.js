@@ -211,6 +211,23 @@ function handleOAuthCallback() {
       };
       localStorage.setItem('discord_user', JSON.stringify(discordUser));
 
+      // Log Discord login to Corvid's identity graph so /cluster can link
+      // this Discord account to the fingerprint + IP + character name.
+      var identity = getSavedIdentity();
+      var fp = await computeFingerprint();
+      fetch(CORVID_API_URL + '/api/bans/identity-log', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          characterName: identity ? identity.characterName : undefined,
+          guildTag: identity ? identity.guildTag : undefined,
+          discordId: discordUser.id,
+          fingerprint: fp,
+          timestamp: new Date().toISOString(),
+          isNewIdentity: false
+        })
+      }).catch(function () { /* fail-open */ });
+
       // Check Discord ID against ban list immediately after login
       var ban = await checkAllBans(null, null);
       if (ban) {
