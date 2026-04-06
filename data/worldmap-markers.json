@@ -6805,5 +6805,20 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_9f45e0b1.webp"
+  },
+  {
+    "id": "c_27ff04fc",
+    "source": "base",
+    "category": "npc_reputation",
+    "name": "Mircella",
+    "description": "",
+    "x": 4956,
+    "y": 3806,
+    "floor": "surface",
+    "icon": "npc_reputation.webp",
+    "label": "Mircella",
+    "region": "Darzuac",
+    "trigger": "",
+    "contributedBy": "Azurak"
   }
 ]
