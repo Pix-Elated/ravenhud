@@ -256,7 +256,7 @@
     {
       "type": "ip",
       "name": "58.186.100.33",
-      "reason": "We don\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2t do that here. Fake name fake guild",
+      "reason": "We donÃ¢â‚¬â„¢t do that here. Fake name fake guild",
       "added": "2026-03-28"
     },
     {
@@ -280,7 +280,7 @@
     {
       "type": "character",
       "name": "Insanix",
-      "reason": "Can\u00c3\u00a2\u00e2\u201a\u00ac\u00e2\u201e\u00a2t get around the GG ban by not giving the guild. Nice try.",
+      "reason": "CanÃ¢â‚¬â„¢t get around the GG ban by not giving the guild. Nice try.",
       "added": "2026-04-04"
     },
     {
@@ -288,6 +288,12 @@
       "name": "Kieran",
       "reason": "Auto-ban: ban evasion. Previously used: testchar, smoketestchar, pixelated",
       "added": "2026-04-05"
+    },
+    {
+      "type": "character",
+      "name": "Pixelated",
+      "reason": "Auto-ban: ban evasion. Previously used: testchar, smoketestchar, kieran",
+      "added": "2026-04-06"
     }
   ]
 }
