@@ -3017,23 +3017,6 @@
     "categoryLabel": "Reputation (Shiny)"
   },
   {
-    "id": "c_9f45e0b1",
-    "source": "base",
-    "category": "reputation_shiny",
-    "name": "Goblin dungeon shiny",
-    "description": "in the dungeon where u must blow up the entrance",
-    "x": 3548,
-    "y": 4286,
-    "floor": "level3",
-    "icon": "",
-    "label": "Goblin dungeon shiny",
-    "region": "Sajecho island",
-    "trigger": "",
-    "contributedBy": "Azurak",
-    "screenshot": "community-screenshots/c_9f45e0b1.webp",
-    "categoryLabel": "Reputation (Shiny)"
-  },
-  {
     "id": "c_ea967add",
     "source": "base",
     "category": "reputation_shiny",
@@ -6803,5 +6786,21 @@
     "trigger": "",
     "contributedBy": "Azurak",
     "screenshot": "community-screenshots/c_45ecc71d.webp"
+  },
+  {
+    "id": "c_9f45e0b1",
+    "source": "base",
+    "category": "reputation_shiny",
+    "name": "Goblin dungeon shiny",
+    "description": "in the dungeon where u must blow up the entrance",
+    "x": 3548,
+    "y": 4286,
+    "floor": "level3",
+    "icon": "",
+    "label": "Goblin dungeon shiny",
+    "region": "Sajecho island",
+    "trigger": "",
+    "contributedBy": "Azurak",
+    "screenshot": "community-screenshots/c_9f45e0b1.webp"
   }
 ]
