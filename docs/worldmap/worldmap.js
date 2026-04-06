@@ -534,69 +534,23 @@ function showBanScreen(entry, identity) {
   startBanBark();
 }
 
-var banBarkStopped = false;
-var banBarkCtx = null;
-var banBarkStarted = false;
+var banBarkAudio = null;
 function startBanBark() {
   try {
-    var AC = window.AudioContext || window.webkitAudioContext;
-    if (!AC) return;
-    banBarkCtx = new AC();
-    banBarkStopped = false;
-    banBarkStarted = false;
+    banBarkAudio = new Audio('ban-bark.mp3');
+    banBarkAudio.loop = true;
 
-    // Browsers block AudioContext before user gesture. Try to resume
-    // immediately (works if user already interacted), then hook every
-    // click/touch/keypress on the document to resume on first interaction.
-    function tryResume() {
-      if (banBarkStarted || banBarkStopped) return;
-      if (banBarkCtx.state === 'suspended') {
-        banBarkCtx.resume().then(function () {
-          if (!banBarkStarted) { banBarkStarted = true; barkBurst(); }
-        }).catch(function () { /* still blocked, wait for next gesture */ });
-      } else {
-        banBarkStarted = true;
-        barkBurst();
-      }
+    // Browsers block autoplay before user gesture. Try immediately, then
+    // hook every interaction to retry on first click/tap/key.
+    function tryPlay() {
+      if (!banBarkAudio || !banBarkAudio.paused) return;
+      banBarkAudio.play().catch(function () { /* still blocked */ });
     }
-
-    // Fire on any user interaction — covers click, tap, keyboard
-    document.addEventListener('click', tryResume, { once: false });
-    document.addEventListener('touchstart', tryResume, { once: false });
-    document.addEventListener('keydown', tryResume, { once: false });
-
-    // Also try immediately in case we already have gesture context
-    tryResume();
+    document.addEventListener('click', tryPlay, { once: false });
+    document.addEventListener('touchstart', tryPlay, { once: false });
+    document.addEventListener('keydown', tryPlay, { once: false });
+    tryPlay();
   } catch (e) { /* audio blocked, skip */ }
-}
-function barkBurst() {
-  if (banBarkStopped || !banBarkCtx) return;
-  var now = banBarkCtx.currentTime;
-  for (var i = 0; i < 3; i++) barkWoof(banBarkCtx, now + i * 0.22);
-  setTimeout(barkBurst, 3 * 220 + 1200);
-}
-function barkWoof(ctx, when) {
-  var dur = 0.13;
-  var osc = ctx.createOscillator();
-  osc.type = 'sawtooth';
-  osc.frequency.setValueAtTime(240, when);
-  osc.frequency.exponentialRampToValueAtTime(110, when + dur);
-  var oscGain = ctx.createGain();
-  oscGain.gain.setValueAtTime(0, when);
-  oscGain.gain.linearRampToValueAtTime(0.35, when + 0.012);
-  oscGain.gain.exponentialRampToValueAtTime(0.001, when + dur);
-  osc.connect(oscGain).connect(ctx.destination);
-  osc.start(when); osc.stop(when + dur);
-  var buf = ctx.createBuffer(1, Math.floor(ctx.sampleRate * 0.04), ctx.sampleRate);
-  var data = buf.getChannelData(0);
-  for (var j = 0; j < data.length; j++) data[j] = Math.random() * 2 - 1;
-  var noise = ctx.createBufferSource(); noise.buffer = buf;
-  var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = 1800; bp.Q.value = 1.2;
-  var noiseGain = ctx.createGain();
-  noiseGain.gain.setValueAtTime(0.25, when);
-  noiseGain.gain.exponentialRampToValueAtTime(0.001, when + 0.035);
-  noise.connect(bp).connect(noiseGain).connect(ctx.destination);
-  noise.start(when); noise.stop(when + 0.04);
 }
 
 function escapeHtml(str) {
