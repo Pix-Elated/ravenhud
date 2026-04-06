@@ -17,8 +17,7 @@
 var DATA_URL =
   'https://raw.githubusercontent.com/Pix-Elated/ravenhud/master/data/worldmap-markers.json';
 
-var CORVID_BAN_LIST_URL = null; // set below after CORVID_API_URL is defined
-var BAN_LIST_FALLBACK_URL =
+var BAN_LIST_URL =
   'https://raw.githubusercontent.com/Pix-Elated/ravenhud/master/data/hall-of-shame.json';
 
 var TILE_URL = 'https://assets.ravenquest.tools/map/{z}/{x}/{y}.png';
@@ -32,14 +31,8 @@ var MAP_CONFIG = {
   maxZoom: 7
 };
 
-var CORVID_API_URL =
-  'https://corvid-discord.wonderfulfield-6f0ceab3.westus2.azurecontainerapps.io';
-CORVID_BAN_LIST_URL = CORVID_API_URL + '/api/bans/list';
-var BAN_STREAM_URL = CORVID_API_URL + '/api/bans/stream';
-
-var DISCORD_CLIENT_ID = '1469858215125717155';
-var DISCORD_REDIRECT_URI = window.location.origin + window.location.pathname;
-var DISCORD_SCOPES = 'identify';
+// Submissions permanently disabled — Corvid API shut down
+var SUBMISSIONS_DISABLED_MSG = 'Due to the Goat Fucker Volca weaponizing moderation systems against the community, RavenHUD has ceased all development. No new marker submissions can be made. The map is provided as-is.';
 
 var GITHUB_REPO = 'Pix-Elated/ravenhud';
 
@@ -55,20 +48,6 @@ var CATEGORIES = {
 // Category groups for sidebar ordering
 var GROUP_ORDER = ['Events', 'Exploration', 'Reputation'];
 
-/**
- * POST to a Corvid API endpoint. Returns { ok, data } or throws.
- */
-function fetchCorvidAPI(endpoint, body) {
-  return fetch(CORVID_API_URL + endpoint, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(body)
-  }).then(function (res) {
-    return res.json().then(function (data) {
-      return { ok: res.ok, data: data };
-    });
-  });
-}
 
 // ---------------------------------------------------------------------------
 // State
@@ -83,7 +62,6 @@ var visibility = {};
 var submitCoords = null;
 var modalMode = 'submit'; // 'submit' or 'edit'
 var editingMarker = null; // marker being edited
-var discordUser = null; // { id, username, globalName, avatar }
 var previewMarker = null; // L.Marker for position preview
 var pendingScreenshot = null; // base64 webp string
 var hideCollected = false; // Filter: hide collected shiny/NPC markers
@@ -120,146 +98,6 @@ function getRepProgress(category) {
 // Discord OAuth2 PKCE
 // ---------------------------------------------------------------------------
 
-function generateRandomString(length) {
-  var arr = new Uint8Array(length);
-  crypto.getRandomValues(arr);
-  // base64url encode
-  return btoa(String.fromCharCode.apply(null, arr))
-    .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '')
-    .slice(0, length);
-}
-
-function createCodeChallenge(verifier) {
-  var encoder = new TextEncoder();
-  var data = encoder.encode(verifier);
-  return crypto.subtle.digest('SHA-256', data).then(function (hash) {
-    return btoa(String.fromCharCode.apply(null, new Uint8Array(hash)))
-      .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-  });
-}
-
-function startDiscordLogin() {
-  var state = generateRandomString(32);
-  var codeVerifier = generateRandomString(64);
-
-  // Store PKCE params for when Discord redirects back
-  sessionStorage.setItem('discord_state', state);
-  sessionStorage.setItem('discord_code_verifier', codeVerifier);
-
-  createCodeChallenge(codeVerifier).then(function (codeChallenge) {
-    var url = 'https://discord.com/oauth2/authorize' +
-      '?client_id=' + encodeURIComponent(DISCORD_CLIENT_ID) +
-      '&redirect_uri=' + encodeURIComponent(DISCORD_REDIRECT_URI) +
-      '&response_type=code' +
-      '&scope=' + encodeURIComponent(DISCORD_SCOPES) +
-      '&state=' + encodeURIComponent(state) +
-      '&code_challenge=' + encodeURIComponent(codeChallenge) +
-      '&code_challenge_method=S256';
-    window.location.href = url;
-  });
-}
-
-function handleOAuthCallback() {
-  var params = new URLSearchParams(window.location.search);
-  var code = params.get('code');
-  var state = params.get('state');
-
-  if (!code || !state) return Promise.resolve(false);
-
-  // Clean URL
-  window.history.replaceState({}, '', window.location.pathname);
-
-  var savedState = sessionStorage.getItem('discord_state');
-  var codeVerifier = sessionStorage.getItem('discord_code_verifier');
-  sessionStorage.removeItem('discord_state');
-  sessionStorage.removeItem('discord_code_verifier');
-
-  if (state !== savedState || !codeVerifier) {
-    console.error('Discord OAuth: state mismatch or missing verifier');
-    return Promise.resolve(false);
-  }
-
-  // Exchange code for token
-  return fetch('https://discord.com/api/oauth2/token', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: 'client_id=' + encodeURIComponent(DISCORD_CLIENT_ID) +
-      '&grant_type=authorization_code' +
-      '&code=' + encodeURIComponent(code) +
-      '&redirect_uri=' + encodeURIComponent(DISCORD_REDIRECT_URI) +
-      '&code_verifier=' + encodeURIComponent(codeVerifier)
-  })
-    .then(function (res) {
-      if (!res.ok) throw new Error('Token exchange failed: ' + res.status);
-      return res.json();
-    })
-    .then(function (data) {
-      return fetch('https://discord.com/api/users/@me', {
-        headers: { Authorization: 'Bearer ' + data.access_token }
-      });
-    })
-    .then(function (res) {
-      if (!res.ok) throw new Error('User fetch failed: ' + res.status);
-      return res.json();
-    })
-    .then(async function (user) {
-      discordUser = {
-        id: user.id,
-        username: user.username,
-        globalName: user.global_name || user.username,
-        avatar: user.avatar
-      };
-      localStorage.setItem('discord_user', JSON.stringify(discordUser));
-
-      // Log Discord login to Corvid's identity graph so /cluster can link
-      // this Discord account to the fingerprint + IP + character name.
-      var identity = getSavedIdentity();
-      var fp = await computeFingerprint();
-      fetch(CORVID_API_URL + '/api/bans/identity-log', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          characterName: identity ? identity.characterName : undefined,
-          guildTag: identity ? identity.guildTag : undefined,
-          discordId: discordUser.id,
-          fingerprint: fp,
-          timestamp: new Date().toISOString(),
-          isNewIdentity: false
-        })
-      }).catch(function () { /* fail-open */ });
-
-      // Check Discord ID against ban list immediately after login
-      var ban = await checkAllBans(null, null);
-      if (ban) {
-        showBanScreen(ban);
-        return false;
-      }
-
-      updateAuthUI();
-      return true;
-    })
-    .catch(function (err) {
-      console.error('Discord OAuth error:', err);
-      return false;
-    });
-}
-
-function loadSavedDiscordUser() {
-  try {
-    var saved = localStorage.getItem('discord_user');
-    if (saved) {
-      discordUser = JSON.parse(saved);
-    }
-  } catch (e) {
-    localStorage.removeItem('discord_user');
-  }
-}
-
-function logoutDiscord() {
-  discordUser = null;
-  localStorage.removeItem('discord_user');
-  updateAuthUI();
-}
 
 // ---------------------------------------------------------------------------
 // Ban List & Identity
@@ -280,84 +118,14 @@ var BAN_PERSIST_KEY = 'rhud_banned';
 // repeated visits from the same browser/machine even after identity changes.
 // ~30-40 bits of entropy in aggregate. Not unique per user but discriminative
 // enough for the "same person lying about their name" detection use case.
-var fingerprintCache = null;
-
-async function computeFingerprint() {
-  if (fingerprintCache) return fingerprintCache;
-
-  var signals = [];
-  signals.push(navigator.userAgent || '');
-  signals.push(navigator.language || '');
-  signals.push(navigator.languages ? navigator.languages.join(',') : '');
-  signals.push(screen.width + 'x' + screen.height + 'x' + (screen.colorDepth || 0));
-  signals.push(String(window.devicePixelRatio || 1));
-  signals.push(Intl.DateTimeFormat().resolvedOptions().timeZone || '');
-  signals.push(String(navigator.hardwareConcurrency || 0));
-  signals.push(String(navigator.deviceMemory || 0));
-  signals.push(String(new Date().getTimezoneOffset()));
-
-  // Canvas fingerprint — text rendered to a canvas produces slightly different
-  // pixels on every GPU / driver / font stack combination.
-  try {
-    var canvas = document.createElement('canvas');
-    canvas.width = 240;
-    canvas.height = 60;
-    var ctx = canvas.getContext('2d');
-    ctx.textBaseline = 'top';
-    ctx.font = "14px 'Arial'";
-    ctx.fillStyle = '#f60';
-    ctx.fillRect(0, 0, 100, 20);
-    ctx.fillStyle = '#069';
-    ctx.fillText('RavenHUD fingerprint \uD83D\uDC26', 2, 15);
-    ctx.fillStyle = 'rgba(102, 204, 0, 0.7)';
-    ctx.fillText('RavenHUD fingerprint \uD83D\uDC26', 4, 17);
-    signals.push(canvas.toDataURL());
-  } catch (e) { /* canvas blocked, skip */ }
-
-  // WebGL renderer — GPU identification string, very stable
-  try {
-    var gl = document.createElement('canvas').getContext('webgl');
-    if (gl) {
-      var ext = gl.getExtension('WEBGL_debug_renderer_info');
-      if (ext) {
-        signals.push(gl.getParameter(ext.UNMASKED_RENDERER_WEBGL) || '');
-        signals.push(gl.getParameter(ext.UNMASKED_VENDOR_WEBGL) || '');
-      }
-    }
-  } catch (e) { /* WebGL blocked, skip */ }
-
-  var combined = signals.join('||');
-  var buf = new TextEncoder().encode(combined);
-  try {
-    var hash = await crypto.subtle.digest('SHA-256', buf);
-    var hex = Array.from(new Uint8Array(hash))
-      .map(function (b) { return b.toString(16).padStart(2, '0'); })
-      .join('');
-    fingerprintCache = 'fp_' + hex.slice(0, 32);
-  } catch (e) {
-    // Fallback for browsers without SubtleCrypto (extremely old)
-    fingerprintCache = 'fp_fallback_' + combined.length;
-  }
-  return fingerprintCache;
-}
 
 async function fetchBanList() {
   if (banListCache) return banListCache;
-  // Prefer Corvid (sub-100ms, in-memory cache) so SSE invalidations are
-  // authoritative. Fall back to GitHub raw if Corvid is down.
   try {
-    var res = await fetch(CORVID_BAN_LIST_URL);
-    if (res.ok) {
-      var data = await res.json();
-      banListCache = data.entries || [];
-      return banListCache;
-    }
-  } catch (e) { /* fall through to GitHub raw */ }
-  try {
-    var res2 = await fetch(BAN_LIST_FALLBACK_URL);
-    if (!res2.ok) return [];
-    var data2 = await res2.json();
-    banListCache = data2.entries || [];
+    var res = await fetch(BAN_LIST_URL);
+    if (!res.ok) return [];
+    var data = await res.json();
+    banListCache = data.entries || [];
     return banListCache;
   } catch (e) {
     console.warn('Failed to fetch ban list:', e);
@@ -408,10 +176,6 @@ async function checkAllBans(characterName, guildTag) {
     var entry = entries[i];
     var entryLower = entry.name.trim().toLowerCase();
 
-    // Discord ID match
-    if (entry.type === 'discord' && discordUser && entry.name.trim() === discordUser.id) {
-      return entry;
-    }
     // Character name match
     if (entry.type === 'character' && charLower && charLower === entryLower) {
       return entry;
@@ -479,29 +243,8 @@ function showIdentityPrompt() {
   });
 }
 
-function reportBanTrigger(entry, identity) {
-  // Fire-and-forget — report the banned user's info to Corvid for IP logging
-  try {
-    fetch(CORVID_API_URL + '/api/bans/report', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        matchedName: entry.name,
-        matchType: entry.type,
-        reason: entry.reason,
-        discordId: discordUser ? discordUser.id : null,
-        discordUsername: discordUser ? (discordUser.globalName || discordUser.username) : null,
-        identity: identity || getSavedIdentity(),
-        timestamp: new Date().toISOString()
-      })
-    }).catch(function () { /* silent */ });
-  } catch (e) { /* silent */ }
-}
 
 function showBanScreen(entry, identity) {
-  // Report to Corvid for IP logging
-  reportBanTrigger(entry, identity);
-
   // Persist the ban so refreshing / clearing cookies doesn't get them
   // past the ban screen. They see the ban screen immediately on every
   // future page load without ever reaching the identity prompt.
@@ -544,8 +287,6 @@ function showBanScreen(entry, identity) {
 
   document.body.appendChild(overlay);
 
-  // Disable all interaction behind the overlay
-  logoutDiscord();
 
   // Bark at them. Continuously. Until they leave.
   startBanBark();
@@ -582,7 +323,6 @@ function escapeHtml(str) {
 // triggered by ban-list commits (future: proxy-list refreshes).
 var BAN_RECHECK_INTERVAL_MS = 5 * 60 * 1000; // 5 minutes
 var banRecheckTimer = null;
-var banStreamSource = null;
 
 /**
  * Re-fetch the ban list and re-evaluate the current identity. Kicks the
@@ -602,22 +342,6 @@ async function recheckBans(identity) {
     return true;
   }
 
-  // Check IP ban via Corvid (server-side only — client can't see its own IP)
-  try {
-    var res = await fetch(CORVID_API_URL + '/api/bans/ip-check', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' }
-    });
-    if (res.ok) {
-      var data = await res.json();
-      if (data.banned) {
-        stopBanWatcher();
-        showBanScreen({ type: 'ip', name: data.matchedName, reason: data.reason }, identity);
-        localStorage.removeItem(IDENTITY_KEY);
-        return true;
-      }
-    }
-  } catch (e) { /* fail-open */ }
   return false;
 }
 
@@ -628,68 +352,7 @@ function startPeriodicBanCheck(identity) {
   }, BAN_RECHECK_INTERVAL_MS);
 }
 
-/**
- * Open an SSE connection to Corvid and re-check bans whenever the server
- * announces a ban-list change. EventSource auto-reconnects on drops.
- * Target latency: ~1-2s from ban issue to kick.
- */
-function startBanStreamSubscription(identity) {
-  if (typeof EventSource === 'undefined') return; // ancient browser
-  if (banStreamSource) banStreamSource.close();
-  try {
-    banStreamSource = new EventSource(BAN_STREAM_URL);
-    banStreamSource.addEventListener('ban-list-changed', function () {
-      recheckBans(identity).catch(function () { /* silent */ });
-    });
-    banStreamSource.addEventListener('error', function () {
-      // EventSource handles reconnect automatically; nothing to do here.
-      // Periodic poll still runs as a safety net.
-    });
-  } catch (e) { /* silent — periodic poll still covers us */ }
-}
 
-function stopBanWatcher() {
-  if (banRecheckTimer) { clearInterval(banRecheckTimer); banRecheckTimer = null; }
-  if (banStreamSource) { banStreamSource.close(); banStreamSource = null; }
-}
-
-function updateAuthUI() {
-  var loginBtn = document.getElementById('btn-discord-login');
-  var userDisplay = document.getElementById('discord-user-display');
-  var userName = document.getElementById('discord-username');
-  var submitBtn = document.getElementById('btn-submit');
-  var editBtn = document.getElementById('btn-suggest-edit');
-  var deleteBtn = document.getElementById('btn-suggest-delete');
-
-  if (discordUser) {
-    loginBtn.style.display = 'none';
-    userDisplay.style.display = 'flex';
-    userName.textContent = discordUser.globalName || discordUser.username;
-    submitBtn.disabled = false;
-    submitBtn.title = 'Submit a marker';
-    if (editBtn) {
-      editBtn.disabled = false;
-      editBtn.title = '';
-    }
-    if (deleteBtn) {
-      deleteBtn.disabled = false;
-      deleteBtn.title = '';
-    }
-  } else {
-    loginBtn.style.display = '';
-    userDisplay.style.display = 'none';
-    submitBtn.disabled = true;
-    submitBtn.title = 'Login with Discord to submit';
-    if (editBtn) {
-      editBtn.disabled = true;
-      editBtn.title = 'Login with Discord to submit';
-    }
-    if (deleteBtn) {
-      deleteBtn.disabled = true;
-      deleteBtn.title = 'Login with Discord to suggest deletion';
-    }
-  }
-}
 
 // ---------------------------------------------------------------------------
 // Init
@@ -728,30 +391,7 @@ async function init() {
 
   // Compute the browser fingerprint up-front so we can send it with the
   // identity log. Used by Corvid's /cluster admin command to detect evasion.
-  var fingerprint = await computeFingerprint();
 
-  // Log identity to Corvid — only on first visit or new identity, not every page load
-  // Always check IP ban though (server-side — client can't know its own IP)
-  try {
-    var logRes = await fetch(CORVID_API_URL + '/api/bans/identity-log', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        characterName: identity.characterName,
-        guildTag: identity.guildTag,
-        timestamp: new Date().toISOString(),
-        isNewIdentity: isNewIdentity,
-        fingerprint: fingerprint,
-        discordId: discordUser ? discordUser.id : undefined
-      })
-    });
-    var logData = await logRes.json();
-    if (logData.banned) {
-      showBanScreen({ type: 'ip', name: logData.matchedName, reason: logData.reason }, identity);
-      localStorage.removeItem(IDENTITY_KEY);
-      return;
-    }
-  } catch (e) { /* Fail-open: if Corvid is down, continue (char/guild bans still work client-side) */ }
 
   // Check character name + guild tag against ban list
   var identityBan = await checkAllBans(identity.characterName, identity.guildTag);
@@ -761,26 +401,12 @@ async function init() {
     return;
   }
 
-  // Discord login is separate — restore saved session and handle OAuth callback
-  loadSavedDiscordUser();
-  await handleOAuthCallback();
-
-  // If they just connected Discord, check Discord ID ban
-  if (discordUser) {
-    var discordBan = await checkAllBans(null, null);
-    if (discordBan) {
-      showBanScreen(discordBan);
-      return;
-    }
-  }
 
   initMap();
   initSidebar();
   initDetailPanel();
   initModal();
-  initAuth();
   initContributions();
-  updateAuthUI();
 
   try {
     var res = await fetch(DATA_URL);
@@ -804,13 +430,8 @@ async function init() {
   updateStats();
 
   startPeriodicBanCheck(identity);
-  startBanStreamSubscription(identity);
 }
 
-function initAuth() {
-  document.getElementById('btn-discord-login').addEventListener('click', startDiscordLogin);
-  document.getElementById('btn-discord-logout').addEventListener('click', logoutDiscord);
-}
 
 // ---------------------------------------------------------------------------
 // Map
@@ -1213,10 +834,7 @@ function initDetailPanel() {
 
   document.getElementById('btn-suggest-delete').addEventListener('click', function () {
     if (!currentDetailMarker) return;
-    if (!discordUser) {
-      startDiscordLogin();
-      return;
-    }
+    alert(SUBMISSIONS_DISABLED_MSG); return;
     suggestDeletion(currentDetailMarker);
   });
 
@@ -1241,11 +859,11 @@ function suggestDeletion(marker) {
       region: marker.region || '',
       description: ''
     }],
-    authorName: discordUser.globalName || discordUser.username,
-    authorDiscordId: discordUser.id
+    authorName: '[DISABLED]',
+    authorDiscordId: '0'
   };
 
-  fetchCorvidAPI('/api/markers/submit', body)
+  Promise.reject(new Error('Submissions disabled'))
     .then(function (result) {
       if (result.ok && result.data.success) {
         btn.textContent = 'Submitted!';
@@ -1291,7 +909,7 @@ function initContributions() {
 function showContributions() {
   var body = document.getElementById('contributions-body');
 
-  if (!discordUser) {
+  if (true /* submissions disabled */) {
     body.innerHTML = '<p class="info-modal-empty">Login with Discord to see your contributions.</p>';
     document.getElementById('contributions-modal').hidden = false;
     return;
@@ -1302,7 +920,7 @@ function showContributions() {
   var editIds = Object.keys(edits);
 
   // Find markers contributed by this user (by name match or local edits)
-  var userName = (discordUser.globalName || discordUser.username).toLowerCase();
+  var userName = ('[DISABLED]').toLowerCase();
   var contributions = allMarkers.filter(function (m) {
     if (editIds.indexOf(m.id) >= 0) return true;
     if (m.contributedBy && m.contributedBy.toLowerCase() === userName) return true;
@@ -1628,9 +1246,9 @@ function initModal() {
   var btnCreate = document.getElementById('btn-create-issue');
 
   btnOpen.addEventListener('click', function () {
-    if (!discordUser) {
+    if (true /* submissions disabled */) {
       if (confirm('You need to login with Discord to submit markers. Login now?')) {
-        startDiscordLogin();
+        alert(SUBMISSIONS_DISABLED_MSG); return;
       }
       return;
     }
@@ -1682,7 +1300,7 @@ function openModalForSubmit() {
 
   // Show author as verified Discord name
   var authorEl = document.getElementById('submit-author-display');
-  authorEl.textContent = discordUser ? (discordUser.globalName || discordUser.username) : '';
+  authorEl.textContent = '[DISABLED]';
 
   updateCoordsDisplay();
   validateForm();
@@ -1690,9 +1308,9 @@ function openModalForSubmit() {
 }
 
 function openModalForEdit(m) {
-  if (!discordUser) {
+  if (true /* submissions disabled */) {
     if (confirm('You need to login with Discord to suggest edits. Login now?')) {
-      startDiscordLogin();
+      alert(SUBMISSIONS_DISABLED_MSG); return;
     }
     return;
   }
@@ -1723,7 +1341,7 @@ function openModalForEdit(m) {
   document.getElementById('btn-create-issue').textContent = 'Submit Edit';
 
   var authorEl = document.getElementById('submit-author-display');
-  authorEl.textContent = discordUser ? (discordUser.globalName || discordUser.username) : '';
+  authorEl.textContent = '[DISABLED]';
 
   updateCoordsDisplay();
   validateForm();
@@ -1866,7 +1484,7 @@ function updateCoordsDisplay() {
 function validateForm() {
   var category = document.getElementById('submit-category').value;
   var name = document.getElementById('submit-name').value.trim();
-  var valid = category && name && submitCoords && discordUser;
+  var valid = false; // submissions disabled
   document.getElementById('btn-create-issue').disabled = !valid;
 }
 
@@ -1912,7 +1530,7 @@ function applyLocalEdits() {
 // ---------------------------------------------------------------------------
 
 function submitToCorvid() {
-  if (!discordUser || !submitCoords) return;
+  if (true /* submissions disabled */) return;
 
   var category = document.getElementById('submit-category').value;
   var name = document.getElementById('submit-name').value.trim();
@@ -1944,8 +1562,8 @@ function submitToCorvid() {
 
   var body = {
     markers: [markerPayload],
-    authorName: discordUser.globalName || discordUser.username,
-    authorDiscordId: discordUser.id
+    authorName: '[DISABLED]',
+    authorDiscordId: '0'
   };
   if (pendingScreenshot) body.screenshot = pendingScreenshot;
 
@@ -1960,7 +1578,7 @@ function submitToCorvid() {
     };
   }
 
-  fetchCorvidAPI('/api/markers/submit', body)
+  Promise.reject(new Error('Submissions disabled'))
     .then(function (result) {
       if (result.ok && result.data.success) {
         btn.textContent = 'Submitted!';
