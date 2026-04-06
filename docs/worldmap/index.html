@@ -22,12 +22,7 @@
       <span class="header-title">World Map</span>
     </a>
     <div class="header-actions">
-      <button id="btn-discord-login" class="btn-discord" title="Login with Discord">Login with Discord</button>
-      <div id="discord-user-display" class="discord-user" style="display:none">
-        <span id="discord-username" class="discord-name"></span>
-        <button id="btn-discord-logout" class="btn-logout" title="Logout" aria-label="Logout">&times;</button>
-      </div>
-      <button id="btn-submit" class="btn-submit" title="Submit a marker">+ Submit Marker</button>
+      <button id="btn-submit" class="btn-submit" disabled title="Submissions permanently disabled — Corvid API shut down" style="opacity:0.5;cursor:not-allowed">Submissions Disabled</button>
       <a href="../" class="btn-back">Back to Site</a>
     </div>
   </header>
@@ -140,8 +135,8 @@
     <div id="detail-shiny" style="display:none"></div>
     <div class="detail-source" id="detail-source"></div>
     <div class="detail-actions">
-      <button class="btn-suggest-edit" id="btn-suggest-edit">Suggest Edit</button>
-      <button class="btn-suggest-delete" id="btn-suggest-delete">Suggest Deletion</button>
+      <button class="btn-suggest-edit" id="btn-suggest-edit" disabled title="Submissions permanently disabled" style="opacity:0.5;cursor:not-allowed">Suggest Edit</button>
+      <button class="btn-suggest-delete" id="btn-suggest-delete" disabled title="Submissions permanently disabled" style="opacity:0.5;cursor:not-allowed">Suggest Deletion</button>
     </div>
   </div>
 
@@ -153,7 +148,7 @@
         <button class="modal-close" id="contributions-close" aria-label="Close">&times;</button>
       </div>
       <div class="info-modal-body" id="contributions-body">
-        <p class="info-modal-empty">Login with Discord to see your contributions.</p>
+        <p class="info-modal-empty">Submissions have been permanently disabled.</p>
       </div>
     </div>
   </div>
