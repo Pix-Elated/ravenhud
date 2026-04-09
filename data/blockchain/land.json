@@ -5,7 +5,7 @@
     "chain": "imtbl-zkevm-mainnet",
     "type": "unique"
   },
-  "totalScanned": 3789,
+  "totalScanned": 3791,
   "sampleTokens": [
     {
       "tokenId": "1",
@@ -14180,7 +14180,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Prosperous Land"
+          "value": "Ore Fields"
         }
       ]
     },
@@ -110438,7 +110438,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Herb Fields"
+          "value": "Crop Boon"
         }
       ]
     },
@@ -144787,6 +144787,72 @@
           "value": "4342"
         }
       ]
+    },
+    {
+      "tokenId": "3790",
+      "name": "Medium Estate",
+      "nameNormalized": "medium_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-2-DzRG7dIZ.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Medium Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "false"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "false"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "tokenId": "3791",
+      "name": "Large Estate",
+      "nameNormalized": "large_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-3-C-sUidCf.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Large Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "true"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "6923"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4869"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Forest Fields"
+        }
+      ]
     }
   ],
   "attributeSummary": {
@@ -146532,6 +146598,7 @@
       "6918",
       "6920",
       "6922",
+      "6923",
       "6925",
       "6926",
       "6927",
@@ -148044,7 +148111,7 @@
     ]
   },
   "marketplace": {
-    "activeListings": 118,
+    "activeListings": 132,
     "floorPrice": 15788.6,
     "floorCurrency": "USDC",
     "recentSales": [
@@ -148073,12 +148140,6 @@
         "timestamp": "2026-03-20T20:57:43.508682Z"
       },
       {
-        "tokenId": "527",
-        "price": 100,
-        "currency": "USDC",
-        "timestamp": "2026-03-10T15:59:04.83729Z"
-      },
-      {
         "tokenId": "666",
         "price": 140.26,
         "currency": "USDC",
@@ -148091,12 +148152,6 @@
         "timestamp": "2026-03-27T02:52:20.44091Z"
       },
       {
-        "tokenId": "730",
-        "price": 62.28,
-        "currency": "USDC",
-        "timestamp": "2026-03-14T04:03:59.416065Z"
-      },
-      {
         "tokenId": "856",
         "price": 105.26,
         "currency": "USDC",
@@ -148107,6 +148162,12 @@
         "price": 37.51,
         "currency": "USDC",
         "timestamp": "2026-03-30T19:00:46.9723Z"
+      },
+      {
+        "tokenId": "929",
+        "price": 43.86,
+        "currency": "USDC",
+        "timestamp": "2026-04-06T20:06:50.513365Z"
       },
       {
         "tokenId": "930",
@@ -148139,12 +148200,6 @@
         "timestamp": "2026-03-21T05:51:37.621869Z"
       },
       {
-        "tokenId": "1169",
-        "price": 63.16,
-        "currency": "USDC",
-        "timestamp": "2026-03-11T18:39:30.816664Z"
-      },
-      {
         "tokenId": "1177",
         "price": 42.11,
         "currency": "USDC",
@@ -148155,6 +148210,12 @@
         "price": 41.23,
         "currency": "USDC",
         "timestamp": "2026-03-31T07:13:15.244392Z"
+      },
+      {
+        "tokenId": "1250",
+        "price": 92.11,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T02:49:36.103892Z"
       },
       {
         "tokenId": "1287",
@@ -148323,6 +148384,12 @@
         "price": 100.88,
         "currency": "USDC",
         "timestamp": "2026-03-14T22:12:49.427831Z"
+      },
+      {
+        "tokenId": "2855",
+        "price": 129.82,
+        "currency": "USDC",
+        "timestamp": "2026-04-06T18:11:10.612052Z"
       },
       {
         "tokenId": "2975",
