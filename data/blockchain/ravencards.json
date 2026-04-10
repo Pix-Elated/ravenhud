@@ -7,1894 +7,6 @@
   },
   "types": [
     {
-      "name": "Iceforge Stormgunner",
-      "nameNormalized": "iceforge_stormgunner",
-      "image": "https://cdn.ravenquest.io/assets/iceforge_stormgunner-BWy5s-ed.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Wind Arrow"
-        }
-      ]
-    },
-    {
-      "name": "Dwarf Warrior",
-      "nameNormalized": "dwarf_warrior",
-      "image": "https://cdn.ravenquest.io/assets/dwarf_warrior-B5IsIqN4.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Bladestorm"
-        }
-      ]
-    },
-    {
-      "name": "Troll",
-      "nameNormalized": "troll",
-      "image": "https://cdn.ravenquest.io/assets/troll-WVrXwBIa.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Brutal Strike"
-        }
-      ]
-    },
-    {
-      "name": "Piranha",
-      "nameNormalized": "piranha",
-      "image": "https://cdn.ravenquest.io/assets/piranha-CrvwZtRi.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "One With The Hive"
-        }
-      ]
-    },
-    {
-      "name": "Coldstone Cub",
-      "nameNormalized": "coldstone_cub",
-      "image": "https://cdn.ravenquest.io/assets/coldstone_cub-BOKG3Cs7.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Frost Shards"
-        }
-      ]
-    },
-    {
-      "name": "Thergardian Hero",
-      "nameNormalized": "thergardian_hero",
-      "image": "https://cdn.ravenquest.io/assets/thergardian_hero-Cwc6lP6f.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Exalted"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Avatar Of Decay"
-        }
-      ]
-    },
-    {
-      "name": "Goblin Bomber",
-      "nameNormalized": "goblin_bomber",
-      "image": "https://cdn.ravenquest.io/assets/goblin_bomber-mIkLP8BT.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Combustion"
-        }
-      ]
-    },
-    {
-      "name": "Astor Demon",
-      "nameNormalized": "astor_demon",
-      "image": "https://cdn.ravenquest.io/assets/astor_demon-BrOWIApI.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Meteor Strike"
-        }
-      ]
-    },
-    {
-      "name": "Shadowfox Ninetails",
-      "nameNormalized": "shadowfox_ninetails",
-      "image": "https://cdn.ravenquest.io/assets/shadowfox_ninetails-e_4jRh3G.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Teleport"
-        }
-      ]
-    },
-    {
-      "name": "Frostbound Drake",
-      "nameNormalized": "frostbound_drake",
-      "image": "https://cdn.ravenquest.io/assets/frostbound_drake-Baf2AJsd.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Coldblast"
-        }
-      ]
-    },
-    {
-      "name": "Iceshell Giant",
-      "nameNormalized": "iceshell_giant",
-      "image": "https://cdn.ravenquest.io/assets/iceshell_giant-C9bez77W.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Coldblast"
-        }
-      ]
-    },
-    {
-      "name": "Iceforge Frostcaller",
-      "nameNormalized": "iceforge_frostcaller",
-      "image": "https://cdn.ravenquest.io/assets/iceforge_frostcaller-B6xdoXzg.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Icestorm"
-        }
-      ]
-    },
-    {
-      "name": "Embercap Mushroom",
-      "nameNormalized": "embercap_mushroom",
-      "image": "https://cdn.ravenquest.io/assets/embercap_mushroom-DsCNL-AQ.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Mythic"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Illegal Munitions"
-        }
-      ]
-    },
-    {
-      "name": "Great White Shark",
-      "nameNormalized": "great_white_shark",
-      "image": "https://cdn.ravenquest.io/assets/great_white_shark-CWz5QuAB.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Legendary"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Illegal Munitions"
-        }
-      ]
-    },
-    {
-      "name": "Kaiman Seer",
-      "nameNormalized": "kaiman_seer",
-      "image": "https://cdn.ravenquest.io/assets/kaiman_seer-BSt59E7H.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Devotion"
-        }
-      ]
-    },
-    {
-      "name": "Iceforge Hallkeeper",
-      "nameNormalized": "iceforge_hallkeeper",
-      "image": "https://cdn.ravenquest.io/assets/iceforge_hallkeeper-BDgGwMuO.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Unbreakable"
-        }
-      ]
-    },
-    {
-      "name": "Jackal Moonblade",
-      "nameNormalized": "jackal_moonblade",
-      "image": "https://cdn.ravenquest.io/assets/jackal_moonblade-CRuFB9qK.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Spirit Shield"
-        }
-      ]
-    },
-    {
-      "name": "Skorn Initiate",
-      "nameNormalized": "skorn_initiate",
-      "image": "https://cdn.ravenquest.io/assets/skorn_initiate-DCGB8HBv.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shadow Kick"
-        }
-      ]
-    },
-    {
-      "name": "Hoghound Shaman",
-      "nameNormalized": "hoghound_shaman",
-      "image": "https://cdn.ravenquest.io/assets/hoghound_shaman-CTG0o8A1.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Arcane Pulse"
-        }
-      ]
-    },
-    {
-      "name": "Pirate Cannoneer",
-      "nameNormalized": "pirate_cannoneer",
-      "image": "https://cdn.ravenquest.io/assets/pirate_cannoneer-DN5pjDIw.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Concussive Shot"
-        }
-      ]
-    },
-    {
-      "name": "Toadstool Shaman",
-      "nameNormalized": "toadstool_shaman",
-      "image": "https://cdn.ravenquest.io/assets/toadstool_shaman-Bd3tmuv6.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Purify"
-        }
-      ]
-    },
-    {
-      "name": "Vile Wurm",
-      "nameNormalized": "vile_wurm",
-      "image": "https://cdn.ravenquest.io/assets/vile_wurm-DOsIFMqk.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Anti-Healing Venom"
-        }
-      ]
-    },
-    {
-      "name": "Bog Spider",
-      "nameNormalized": "bog_spider",
-      "image": "https://cdn.ravenquest.io/assets/bog_spider-CZUSYhyY.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Anti-Healing Venom"
-        }
-      ]
-    },
-    {
-      "name": "Hookmask Killer",
-      "nameNormalized": "hookmask_killer",
-      "image": "https://cdn.ravenquest.io/assets/hookmask_killer-Cs55flxu.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Crippling Dagger"
-        }
-      ]
-    },
-    {
-      "name": "Pirate Swashbuckler",
-      "nameNormalized": "pirate_swashbuckler",
-      "image": "https://cdn.ravenquest.io/assets/pirate_swashbuckler-DnSE_NAS.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Illusive"
-        }
-      ]
-    },
-    {
-      "name": "Kaiman Ambusher",
-      "nameNormalized": "kaiman_ambusher",
-      "image": "https://cdn.ravenquest.io/assets/kaiman_ambusher-MlEl6W56.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shieldbreak"
-        }
-      ]
-    },
-    {
-      "name": "Troll Knight",
-      "nameNormalized": "troll_knight",
-      "image": "https://cdn.ravenquest.io/assets/troll_knight-SCK5syUz.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Bladestorm"
-        }
-      ]
-    },
-    {
-      "name": "Troll Titan",
-      "nameNormalized": "troll_titan",
-      "image": "https://cdn.ravenquest.io/assets/troll_titan-DIyQM2Om.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Fissure"
-        }
-      ]
-    },
-    {
-      "name": "Zorian Hailbringer",
-      "nameNormalized": "zorian_hailbringer",
-      "image": "https://cdn.ravenquest.io/assets/zorian_hailbringer-BeO6s796.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Frostbolt"
-        }
-      ]
-    },
-    {
-      "name": "Twinhead Yeti",
-      "nameNormalized": "twinhead_yeti",
-      "image": "https://cdn.ravenquest.io/assets/twinhead_yeti-DNL0WjHG.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Earthquake"
-        }
-      ]
-    },
-    {
-      "name": "Toad Farseer",
-      "nameNormalized": "toad_farseer",
-      "image": "https://cdn.ravenquest.io/assets/toad_farseer-D12rgZ5x.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Air Aura"
-        }
-      ]
-    },
-    {
-      "name": "Goblin Tinker",
-      "nameNormalized": "goblin_tinker",
-      "image": "https://cdn.ravenquest.io/assets/goblin_tinker-DC450bxK.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Haste"
-        }
-      ]
-    },
-    {
-      "name": "Rat Scavenger",
-      "nameNormalized": "rat_scavenger",
-      "image": "https://cdn.ravenquest.io/assets/rat_scavenger-CvlWnrTy.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shadow Kick"
-        }
-      ]
-    },
-    {
-      "name": "Dwarf Commoner",
-      "nameNormalized": "dwarf_commoner",
-      "image": "https://cdn.ravenquest.io/assets/dwarf_commoner-ChZh0hjD.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Spirits Resolve"
-        }
-      ]
-    },
-    {
-      "name": "Winterborn Guardian",
-      "nameNormalized": "winterborn_guardian",
-      "image": "https://cdn.ravenquest.io/assets/winterborn_guardian-CnHDXYQj.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Smiting Smash"
-        }
-      ]
-    },
-    {
-      "name": "Pirate Freebooter",
-      "nameNormalized": "pirate_freebooter",
-      "image": "https://cdn.ravenquest.io/assets/pirate_freebooter-b1h_TFk2.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Revenge"
-        }
-      ]
-    },
-    {
-      "name": "Skorn Grandmaster",
-      "nameNormalized": "skorn_grandmaster",
-      "image": "https://cdn.ravenquest.io/assets/skorn_grandmaster-CQGYuUeD.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Magic Rupture"
-        }
-      ]
-    },
-    {
-      "name": "Harvester Hag",
-      "nameNormalized": "harvester_hag",
-      "image": "https://cdn.ravenquest.io/assets/harvester_hag-Ct4pzNtT.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Exalted"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shackles Of Pain"
-        }
-      ]
-    },
-    {
-      "name": "Contagious Sporewalker",
-      "nameNormalized": "contagious_sporewalker",
-      "image": "https://cdn.ravenquest.io/assets/contagious_sporewalker-B8uTVOEo.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Death Touch"
-        }
-      ]
-    },
-    {
-      "name": "Troll Warlock",
-      "nameNormalized": "troll_warlock",
-      "image": "https://cdn.ravenquest.io/assets/troll_warlock-BJOMLh3T.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Death Touch"
-        }
-      ]
-    },
-    {
-      "name": "Toad Enforcer",
-      "nameNormalized": "toad_enforcer",
-      "image": "https://cdn.ravenquest.io/assets/toad_enforcer-CELuKCyb.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Exalted"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Bull Rush"
-        }
-      ]
-    },
-    {
-      "name": "Ghaz Sandrider",
-      "nameNormalized": "ghaz_sandrider",
-      "image": "https://cdn.ravenquest.io/assets/ghaz_sandrider-CQBccQET.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Exalted"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Spiked Chains"
-        }
-      ]
-    },
-    {
-      "name": "Cave Spider",
-      "nameNormalized": "cave_spider",
-      "image": "https://cdn.ravenquest.io/assets/cave_spider-6chClv9Q.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shadowbind"
-        }
-      ]
-    },
-    {
-      "name": "Lavacap Mushroom",
-      "nameNormalized": "lavacap_mushroom",
-      "image": "https://cdn.ravenquest.io/assets/lavacap_mushroom-CTJ7Gc_e.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Blessed Earth"
-        }
-      ]
-    },
-    {
-      "name": "Mindslave Taskmaster",
-      "nameNormalized": "mindslave_taskmaster",
-      "image": "https://cdn.ravenquest.io/assets/mindslave_taskmaster-Dnzh8tI7.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Revenge"
-        }
-      ]
-    },
-    {
-      "name": "Hog Cultist",
-      "nameNormalized": "hog_cultist",
-      "image": "https://cdn.ravenquest.io/assets/hog_cultist-CwJigADl.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Legendary"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Curse"
-        }
-      ]
-    },
-    {
-      "name": "Froll Cryomancer",
-      "nameNormalized": "froll_cryomancer",
-      "image": "https://cdn.ravenquest.io/assets/froll_cryomancer-BhN7d9eF.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Mythic"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Frost Shards"
-        }
-      ]
-    },
-    {
-      "name": "Frostrisen Magus",
-      "nameNormalized": "frostrisen_magus",
-      "image": "https://cdn.ravenquest.io/assets/frostrisen_magus-DsWfTbNo.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Frost Lance"
-        }
-      ]
-    },
-    {
-      "name": "Morningstar Forester",
-      "nameNormalized": "morningstar_forester",
-      "image": "https://cdn.ravenquest.io/assets/morningstar_forester-Dsl4KI7o.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Legendary"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Pirate'S Ambrosia"
-        }
-      ]
-    },
-    {
-      "name": "Venomous Contraption",
-      "nameNormalized": "venomous_contraption",
-      "image": "https://cdn.ravenquest.io/assets/venomous_contraption-CR1jYFym.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Venomous Weapons"
-        }
-      ]
-    },
-    {
-      "name": "Forest Spider",
-      "nameNormalized": "forest_spider",
-      "image": "https://cdn.ravenquest.io/assets/forest_spider-jPnKpIqq.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Stalk"
-        }
-      ]
-    },
-    {
-      "name": "Troll Brawler",
-      "nameNormalized": "troll_brawler",
-      "image": "https://cdn.ravenquest.io/assets/troll_brawler-BxdvLjKu.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Pummel"
-        }
-      ]
-    },
-    {
-      "name": "Boar Runt",
-      "nameNormalized": "boar_runt",
-      "image": "https://cdn.ravenquest.io/assets/boar_runt-Dr69zXF-.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Bull Rush"
-        }
-      ]
-    },
-    {
-      "name": "Ghaz Archer",
-      "nameNormalized": "ghaz_archer",
-      "image": "https://cdn.ravenquest.io/assets/ghaz_archer-DxRN0bog.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Rain Of Arrows"
-        }
-      ]
-    },
-    {
-      "name": "Captain Boone",
-      "nameNormalized": "captain_boone",
-      "image": "https://cdn.ravenquest.io/assets/captain_boone-B3o6-lFc.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Disengage"
-        }
-      ]
-    },
-    {
-      "name": "Sunchaser Jackal",
-      "nameNormalized": "sunchaser_jackal",
-      "image": "https://cdn.ravenquest.io/assets/sunchaser_jackal-KkDsdgI5.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Smite"
-        }
-      ]
-    },
-    {
-      "name": "Vampire Necromancer",
-      "nameNormalized": "vampire_necromancer",
-      "image": "https://cdn.ravenquest.io/assets/vampire_necromancer-5z8yvGC-.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Leech"
-        }
-      ]
-    },
-    {
-      "name": "Manastorm Djinn",
-      "nameNormalized": "manastorm_djinn",
-      "image": "https://cdn.ravenquest.io/assets/manastorm_djinn-_oibe-FL.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Magic Rupture"
-        }
-      ]
-    },
-    {
-      "name": "Pearlshell Giant",
-      "nameNormalized": "pearlshell_giant",
-      "image": "https://cdn.ravenquest.io/assets/pearlshell_giant-Dks1JQ3Z.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Barrier"
-        }
-      ]
-    },
-    {
-      "name": "Elderwood Goliath",
-      "nameNormalized": "elderwood_goliath",
-      "image": "https://cdn.ravenquest.io/assets/elderwood_goliath-DCvJJ8BS.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Generous Influence"
-        }
-      ]
-    },
-    {
-      "name": "Toad",
-      "nameNormalized": "toad",
-      "image": "https://cdn.ravenquest.io/assets/toad-Do-LduYH.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Regenerate"
-        }
-      ]
-    },
-    {
-      "name": "Runegust Jackal",
-      "nameNormalized": "runegust_jackal",
-      "image": "https://cdn.ravenquest.io/assets/runegust_jackal-gg6kA5iV.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Air Aura"
-        }
-      ]
-    },
-    {
-      "name": "Saurian Skullmage",
-      "nameNormalized": "saurian_skullmage",
-      "image": "https://cdn.ravenquest.io/assets/saurian_skullmage-Bbrz-O4x.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Force Push"
-        }
-      ]
-    },
-    {
-      "name": "Doom Gazer",
-      "nameNormalized": "doom_gazer",
-      "image": "https://cdn.ravenquest.io/assets/doom_gazer-DSEzniYb.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Arcane Torrent"
-        }
-      ]
-    },
-    {
-      "name": "Black Wolf",
-      "nameNormalized": "black_wolf",
-      "image": "https://cdn.ravenquest.io/assets/black_wolf-QDDgDoyf.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Bristlehide"
-        }
-      ]
-    },
-    {
-      "name": "Skeleton Warrior",
-      "nameNormalized": "skeleton_warrior",
-      "image": "https://cdn.ravenquest.io/assets/skeleton_warrior-BKKYa1V4.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Living Roots Swarm"
-        }
-      ]
-    },
-    {
-      "name": "Crow Matriarch",
-      "nameNormalized": "crow_matriarch",
-      "image": "https://cdn.ravenquest.io/assets/crow_matriarch-CueQWBed.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Hex"
-        }
-      ]
-    },
-    {
-      "name": "Hog Saboteur",
-      "nameNormalized": "hog_saboteur",
-      "image": "https://cdn.ravenquest.io/assets/hog_saboteur-B1F77-gw.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Erupt"
-        }
-      ]
-    },
-    {
-      "name": "Flamelord Djinn",
-      "nameNormalized": "flamelord_djinn",
-      "image": "https://cdn.ravenquest.io/assets/flamelord_djinn-Bvj10oPz.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Flame Tornado"
-        }
-      ]
-    },
-    {
-      "name": "Tiger Bug Soldier",
-      "nameNormalized": "tiger_bug_soldier",
-      "image": "https://cdn.ravenquest.io/assets/tiger_bug_soldier-BjTufGG2.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Nature'S Strike"
-        }
-      ]
-    },
-    {
-      "name": "Molebear",
-      "nameNormalized": "molebear",
-      "image": "https://cdn.ravenquest.io/assets/molebear-BNedKP20.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Blooming Sapling"
-        }
-      ]
-    },
-    {
-      "name": "Serafine",
-      "nameNormalized": "serafine",
-      "image": "https://cdn.ravenquest.io/assets/serafine-vb-fX5X_.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Blooming Sapling"
-        }
-      ]
-    },
-    {
-      "name": "Blood Spawn",
-      "nameNormalized": "blood_spawn",
-      "image": "https://cdn.ravenquest.io/assets/blood_spawn-MY8SLH3W.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Target Practice"
-        }
-      ]
-    },
-    {
-      "name": "Blaze Spider",
-      "nameNormalized": "blaze_spider",
-      "image": "https://cdn.ravenquest.io/assets/blaze_spider-DR6P_Ahn.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Target Practice"
-        }
-      ]
-    },
-    {
-      "name": "Hossoc The Grievous",
-      "nameNormalized": "hossoc_the_grievous",
-      "image": "https://cdn.ravenquest.io/assets/hossoc_the_grievous-BARavwfz.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Quick Draw"
-        }
-      ]
-    },
-    {
-      "name": "Giant Jellyfish",
-      "nameNormalized": "giant_jellyfish",
-      "image": "https://cdn.ravenquest.io/assets/giant_jellyfish-CW8wg_nk.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Pirate'S Ambrosia"
-        }
-      ]
-    },
-    {
-      "name": "Poisonpetal Rotbloom",
-      "nameNormalized": "poisonpetal_rotbloom",
-      "image": "https://cdn.ravenquest.io/assets/poisonpetal_rotbloom-DbA3qqHE.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Smoke Screen"
-        }
-      ]
-    },
-    {
-      "name": "Mossback Giant",
-      "nameNormalized": "mossback_giant",
-      "image": "https://cdn.ravenquest.io/assets/mossback_giant-D6rglXm7.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Pirate'S Parry"
-        }
-      ]
-    },
-    {
-      "name": "Vermurat",
-      "nameNormalized": "vermurat",
-      "image": "https://cdn.ravenquest.io/assets/vermurat-Dkw86UDs.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Makeshift Grenade"
-        }
-      ]
-    },
-    {
-      "name": "Grey Wolf",
-      "nameNormalized": "grey_wolf",
-      "image": "https://cdn.ravenquest.io/assets/grey_wolf-CijMOTM2.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Haste"
-        }
-      ]
-    },
-    {
-      "name": "Brotherhood Sorcerer",
-      "nameNormalized": "brotherhood_sorcerer",
-      "image": "https://cdn.ravenquest.io/assets/brotherhood_sorcerer-qzyksMCn.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Wind Wall"
-        }
-      ]
-    },
-    {
-      "name": "Naturalist Mage",
-      "nameNormalized": "naturalist_mage",
-      "image": "https://cdn.ravenquest.io/assets/naturalist_mage-BLKMqDlq.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Cyclone"
-        }
-      ]
-    },
-    {
-      "name": "Skorn Deathblade",
-      "nameNormalized": "skorn_deathblade",
-      "image": "https://cdn.ravenquest.io/assets/skorn_deathblade-C7tCZfwY.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shadowbind"
-        }
-      ]
-    },
-    {
-      "name": "Skeleton Soldier",
-      "nameNormalized": "skeleton_soldier",
-      "image": "https://cdn.ravenquest.io/assets/skeleton_soldier-BY7emFV3.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Bash"
-        }
-      ]
-    },
-    {
-      "name": "Glutton Hag",
-      "nameNormalized": "glutton_hag",
-      "image": "https://cdn.ravenquest.io/assets/glutton_hag-TMIyeo9h.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Eternal Worms"
-        }
-      ]
-    },
-    {
-      "name": "Elf Bowman",
-      "nameNormalized": "elf_bowman",
-      "image": "https://cdn.ravenquest.io/assets/elf_bowman-CNBX_u2q.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Disengage"
-        }
-      ]
-    },
-    {
-      "name": "Rargum The Dread",
-      "nameNormalized": "rargum_the_dread",
-      "image": "https://cdn.ravenquest.io/assets/rargum_the_dread-CjnWYQm-.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Pummel"
-        }
-      ]
-    },
-    {
-      "name": "Hierophant Sigrid",
-      "nameNormalized": "hierophant_sigrid",
-      "image": "https://cdn.ravenquest.io/assets/hierophant_sigrid-DVdPwryC.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Devotion"
-        }
-      ]
-    },
-    {
-      "name": "Saltdusk Cutthroat",
-      "nameNormalized": "saltdusk_cutthroat",
-      "image": "https://cdn.ravenquest.io/assets/saltdusk_cutthroat-ujovcX2p.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Death Blossom"
-        }
-      ]
-    },
-    {
-      "name": "Shark Harpooner",
-      "nameNormalized": "shark_harpooner",
-      "image": "https://cdn.ravenquest.io/assets/shark_harpooner-CxwYY3Ix.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Fierce Leap"
-        }
-      ]
-    },
-    {
-      "name": "Saurian Monitor",
-      "nameNormalized": "saurian_monitor",
-      "image": "https://cdn.ravenquest.io/assets/saurian_monitor-ChUeP6nu.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Wind Arrow"
-        }
-      ]
-    },
-    {
-      "name": "Dwarf Warpriest",
-      "nameNormalized": "dwarf_warpriest",
-      "image": "https://cdn.ravenquest.io/assets/dwarf_warpriest-Co9U6s9C.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Holy Shackles"
-        }
-      ]
-    },
-    {
-      "name": "Chainwraith Haunt",
-      "nameNormalized": "chainwraith_haunt",
-      "image": "https://cdn.ravenquest.io/assets/chainwraith_haunt-54jf9vG0.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Fireball"
-        }
-      ]
-    },
-    {
-      "name": "Morningstar Bishop",
-      "nameNormalized": "morningstar_bishop",
-      "image": "https://cdn.ravenquest.io/assets/morningstar_bishop-DyA3Q5Or.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Dawn'S Light"
-        }
-      ]
-    },
-    {
-      "name": "Morningstar Flagellant",
-      "nameNormalized": "morningstar_flagellant",
-      "image": "https://cdn.ravenquest.io/assets/morningstar_flagellant-BkWcCiPB.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Holy Shackles"
-        }
-      ]
-    },
-    {
-      "name": "Emberscale Drake",
-      "nameNormalized": "emberscale_drake",
-      "image": "https://cdn.ravenquest.io/assets/emberscale_drake-D6R8KZzP.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Combustion"
-        }
-      ]
-    },
-    {
-      "name": "Wildfire Jackal",
-      "nameNormalized": "wildfire_jackal",
-      "image": "https://cdn.ravenquest.io/assets/wildfire_jackal-Csz93hm-.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Meteor Strike"
-        }
-      ]
-    },
-    {
-      "name": "Orca",
-      "nameNormalized": "orca",
-      "image": "https://cdn.ravenquest.io/assets/orca-xrIzS1gp.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Life Touch"
-        }
-      ]
-    },
-    {
-      "name": "Cragglehide",
-      "nameNormalized": "cragglehide",
-      "image": "https://cdn.ravenquest.io/assets/cragglehide-CsVELELT.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Bristlehide"
-        }
-      ]
-    },
-    {
-      "name": "Sand Spider",
-      "nameNormalized": "sand_spider",
-      "image": "https://cdn.ravenquest.io/assets/sand_spider-DSGFqOvL.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Thorn Wall"
-        }
-      ]
-    },
-    {
-      "name": "Mossback Colossus",
-      "nameNormalized": "mossback_colossus",
-      "image": "https://cdn.ravenquest.io/assets/mossback_colossus-BxpEQEFc.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Queen'S Charge"
-        }
-      ]
-    },
-    {
-      "name": "Thunderflow Jackal",
-      "nameNormalized": "thunderflow_jackal",
-      "image": "https://cdn.ravenquest.io/assets/thunderflow_jackal-8YUK7CQW.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Target Lock"
-        }
-      ]
-    },
-    {
-      "name": "High Elf Sniper",
-      "nameNormalized": "high_elf_sniper",
-      "image": "https://cdn.ravenquest.io/assets/high_elf_sniper-C4Rw9tV5.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Double Tap"
-        }
-      ]
-    },
-    {
-      "name": "Elf Paladin",
-      "nameNormalized": "elf_paladin",
-      "image": "https://cdn.ravenquest.io/assets/elf_paladin-DjEW4g_Y.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Living Roots Swarm"
-        }
-      ]
-    },
-    {
-      "name": "Hoghound Archer",
-      "nameNormalized": "hoghound_archer",
-      "image": "https://cdn.ravenquest.io/assets/hoghound_archer-Cb138X5n.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Quick Fire"
-        }
-      ]
-    },
-    {
-      "name": "Skeleton Veteran",
-      "nameNormalized": "skeleton_veteran",
-      "image": "https://cdn.ravenquest.io/assets/skeleton_veteran-9Dn6lE53.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Scatter Shot"
-        }
-      ]
-    },
-    {
-      "name": "Hell Gazer",
-      "nameNormalized": "hell_gazer",
-      "image": "https://cdn.ravenquest.io/assets/hell_gazer-CsWzif7A.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Mirror Image"
-        }
-      ]
-    },
-    {
-      "name": "Spikehorn Drake",
-      "nameNormalized": "spikehorn_drake",
-      "image": "https://cdn.ravenquest.io/assets/spikehorn_drake-CoLvib3S.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Double Tap"
-        }
-      ]
-    },
-    {
-      "name": "Bloodthirsty Kaiman",
-      "nameNormalized": "bloodthirsty_kaiman",
-      "image": "https://cdn.ravenquest.io/assets/bloodthirsty_kaiman-DGEvUm5F.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Holy Force"
-        }
-      ]
-    },
-    {
-      "name": "Boro'Gorom",
-      "nameNormalized": "boro_gorom",
-      "image": "https://cdn.ravenquest.io/assets/boro'gorom-Bi3vqL0B.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Healing Channel"
-        }
-      ]
-    },
-    {
-      "name": "Golden Guardian",
-      "nameNormalized": "golden_guardian",
-      "image": "https://cdn.ravenquest.io/assets/golden_guardian-B3-fLaJf.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Circle Of Light"
-        }
-      ]
-    },
-    {
-      "name": "Black Bear",
-      "nameNormalized": "black_bear",
-      "image": "https://cdn.ravenquest.io/assets/black_bear-Bfcblpwz.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Quick Draw"
-        }
-      ]
-    },
-    {
-      "name": "Orc Chieftain",
-      "nameNormalized": "orc_chieftain",
-      "image": "https://cdn.ravenquest.io/assets/orc_chieftain-M2mk4HbM.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Provoke"
-        }
-      ]
-    },
-    {
-      "name": "Polar Bear",
-      "nameNormalized": "polar_bear",
-      "image": "https://cdn.ravenquest.io/assets/polar_bear-BqPvCfH2.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Feasting Strike"
-        }
-      ]
-    },
-    {
-      "name": "Ronan'S Wraith",
-      "nameNormalized": "ronan_s_wraith",
-      "image": "https://cdn.ravenquest.io/assets/ronan's_wraith-B8hoC_Bk.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Multi-Target"
-        }
-      ]
-    },
-    {
-      "name": "Direhorn Drake",
-      "nameNormalized": "direhorn_drake",
-      "image": "https://cdn.ravenquest.io/assets/direhorn_drake-ydv8PDJN.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Unchained"
-        }
-      ]
-    },
-    {
-      "name": "Skeleton Archer",
-      "nameNormalized": "skeleton_archer",
-      "image": "https://cdn.ravenquest.io/assets/skeleton_archer-CE9mdY8q.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Spirit Rangers"
-        }
-      ]
-    },
-    {
-      "name": "Hookmask Slinger",
-      "nameNormalized": "hookmask_slinger",
-      "image": "https://cdn.ravenquest.io/assets/hookmask_slinger-CplJlyMh.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Venom Grenade"
-        }
-      ]
-    },
-    {
       "name": "Morningstar Judge",
       "nameNormalized": "morningstar_judge",
       "image": "https://cdn.ravenquest.io/assets/morningstar_judge-CRz81FdO.jpg",
@@ -1902,475 +14,11 @@
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Common"
+          "value": "Uncommon"
         },
         {
           "trait_type": "Spell",
           "value": "Blessed Earth"
-        }
-      ]
-    },
-    {
-      "name": "High Elf Sorcerer",
-      "nameNormalized": "high_elf_sorcerer",
-      "image": "https://cdn.ravenquest.io/assets/high_elf_sorcerer-CKgepD2j.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Solar Flare"
-        }
-      ]
-    },
-    {
-      "name": "Skeleton",
-      "nameNormalized": "skeleton",
-      "image": "https://cdn.ravenquest.io/assets/skeleton-BzuJh4s9.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Curse"
-        }
-      ]
-    },
-    {
-      "name": "Saltdusk Bloodmage",
-      "nameNormalized": "saltdusk_bloodmage",
-      "image": "https://cdn.ravenquest.io/assets/saltdusk_bloodmage-Cs9z5Zhh.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shackles Of Pain"
-        }
-      ]
-    },
-    {
-      "name": "Skeleton Deathweaver",
-      "nameNormalized": "skeleton_deathweaver",
-      "image": "https://cdn.ravenquest.io/assets/skeleton_deathweaver-DFDIPufB.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Smoke Screen"
-        }
-      ]
-    },
-    {
-      "name": "Spellslayer Drake",
-      "nameNormalized": "spellslayer_drake",
-      "image": "https://cdn.ravenquest.io/assets/spellslayer_drake-C6WB4_6U.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Dispel"
-        }
-      ]
-    },
-    {
-      "name": "Dusk Crawler",
-      "nameNormalized": "dusk_crawler",
-      "image": "https://cdn.ravenquest.io/assets/dusk_crawler-BQcYfc_A.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Avatar Of Decay"
-        }
-      ]
-    },
-    {
-      "name": "Hoglet",
-      "nameNormalized": "hoglet",
-      "image": "https://cdn.ravenquest.io/assets/hoglet-8bY3ffgF.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Spirits Resolve"
-        }
-      ]
-    },
-    {
-      "name": "Minotaur Champion",
-      "nameNormalized": "minotaur_champion",
-      "image": "https://cdn.ravenquest.io/assets/minotaur_champion-D_mpbu77.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Provoke"
-        }
-      ]
-    },
-    {
-      "name": "Warhog",
-      "nameNormalized": "warhog",
-      "image": "https://cdn.ravenquest.io/assets/warhog-DXoQyr3M.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Banner Of Protection"
-        }
-      ]
-    },
-    {
-      "name": "Skeleton Pikeman",
-      "nameNormalized": "skeleton_pikeman",
-      "image": "https://cdn.ravenquest.io/assets/skeleton_pikeman-BZsWAMdR.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Unbreakable"
-        }
-      ]
-    },
-    {
-      "name": "Hookmask Knave",
-      "nameNormalized": "hookmask_knave",
-      "image": "https://cdn.ravenquest.io/assets/hookmask_knave-DJErd8A4.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Stalk"
-        }
-      ]
-    },
-    {
-      "name": "Rat Burglar",
-      "nameNormalized": "rat_burglar",
-      "image": "https://cdn.ravenquest.io/assets/rat_burglar-BsCWwVsZ.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Sinister Plot"
-        }
-      ]
-    },
-    {
-      "name": "Brotherhood Tracker",
-      "nameNormalized": "brotherhood_tracker",
-      "image": "https://cdn.ravenquest.io/assets/brotherhood_tracker-uiEUhwIa.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Crippling Dagger"
-        }
-      ]
-    },
-    {
-      "name": "Toadstool Warrior",
-      "nameNormalized": "toadstool_warrior",
-      "image": "https://cdn.ravenquest.io/assets/toadstool_warrior-4Y-B8KrI.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Venomous Weapons"
-        }
-      ]
-    },
-    {
-      "name": "Skeleton Rotclub",
-      "nameNormalized": "skeleton_rotclub",
-      "image": "https://cdn.ravenquest.io/assets/skeleton_rotclub-Cq93YqS7.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shieldbreak"
-        }
-      ]
-    },
-    {
-      "name": "Hog Warlord",
-      "nameNormalized": "hog_warlord",
-      "image": "https://cdn.ravenquest.io/assets/hog_warlord-CnfHv6Wo.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Feasting Strike"
-        }
-      ]
-    },
-    {
-      "name": "Saltdusk Executioner",
-      "nameNormalized": "saltdusk_executioner",
-      "image": "https://cdn.ravenquest.io/assets/saltdusk_executioner-QacwI8PR.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Guillotine"
-        }
-      ]
-    },
-    {
-      "name": "Dwarf Legionnaire",
-      "nameNormalized": "dwarf_legionnaire",
-      "image": "https://cdn.ravenquest.io/assets/dwarf_legionnaire-CW8_hmiO.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Guillotine"
-        }
-      ]
-    },
-    {
-      "name": "Dire Bear",
-      "nameNormalized": "dire_bear",
-      "image": "https://cdn.ravenquest.io/assets/dire_bear-DRH01vT4.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Berserk"
-        }
-      ]
-    },
-    {
-      "name": "Dwarf Prospector",
-      "nameNormalized": "dwarf_prospector",
-      "image": "https://cdn.ravenquest.io/assets/dwarf_prospector-B_BWNMcs.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Fissure"
-        }
-      ]
-    },
-    {
-      "name": "Minotaur Duelist",
-      "nameNormalized": "minotaur_duelist",
-      "image": "https://cdn.ravenquest.io/assets/minotaur_duelist-DZUocLeo.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Fierce Leap"
-        }
-      ]
-    },
-    {
-      "name": "Zorian Shoreguard",
-      "nameNormalized": "zorian_shoreguard",
-      "image": "https://cdn.ravenquest.io/assets/zorian_shoreguard-BoXnof3K.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Bash"
-        }
-      ]
-    },
-    {
-      "name": "Kaiman Illusionist",
-      "nameNormalized": "kaiman_illusionist",
-      "image": "https://cdn.ravenquest.io/assets/kaiman_illusionist-xz5tFvzr.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Purify"
-        }
-      ]
-    },
-    {
-      "name": "Brotherhood Captain",
-      "nameNormalized": "brotherhood_captain",
-      "image": "https://cdn.ravenquest.io/assets/brotherhood_captain-DfeXfjWs.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Quick Fire"
-        }
-      ]
-    },
-    {
-      "name": "Frostrisen Shardshooter",
-      "nameNormalized": "frostrisen_shardshooter",
-      "image": "https://cdn.ravenquest.io/assets/frostrisen_shardshooter-BHOGSuNv.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Snaring Shot"
-        }
-      ]
-    },
-    {
-      "name": "Spearhog",
-      "nameNormalized": "spearhog",
-      "image": "https://cdn.ravenquest.io/assets/spearhog-CqmfEVJu.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Snaring Shot"
-        }
-      ]
-    },
-    {
-      "name": "Sandwatcher Jackal",
-      "nameNormalized": "sandwatcher_jackal",
-      "image": "https://cdn.ravenquest.io/assets/sandwatcher_jackal-hH9o2hcW.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Dawn Arrow"
-        }
-      ]
-    },
-    {
-      "name": "Winterborn Hunter",
-      "nameNormalized": "winterborn_hunter",
-      "image": "https://cdn.ravenquest.io/assets/winterborn_hunter-BsdegJIV.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Spirit Rangers"
-        }
-      ]
-    },
-    {
-      "name": "Phoenix",
-      "nameNormalized": "phoenix",
-      "image": "https://cdn.ravenquest.io/assets/phoenix-Dj5N_vRU.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Living Saint"
         }
       ]
     },
@@ -2391,226 +39,18 @@
       ]
     },
     {
-      "name": "Coal Contraption",
-      "nameNormalized": "coal_contraption",
-      "image": "https://cdn.ravenquest.io/assets/coal_contraption-C1Dl5s0b.jpg",
+      "name": "Troll",
+      "nameNormalized": "troll",
+      "image": "https://cdn.ravenquest.io/assets/troll-WVrXwBIa.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Grand"
+          "value": "Rare"
         },
         {
           "trait_type": "Spell",
-          "value": "Pyroblast"
-        }
-      ]
-    },
-    {
-      "name": "Skorn Warlock",
-      "nameNormalized": "skorn_warlock",
-      "image": "https://cdn.ravenquest.io/assets/skorn_warlock-JjO-mzFD.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Arcane Torrent"
-        }
-      ]
-    },
-    {
-      "name": "Shark Hydromancer",
-      "nameNormalized": "shark_hydromancer",
-      "image": "https://cdn.ravenquest.io/assets/shark_hydromancer-CkzV2RRL.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Typhoon"
-        }
-      ]
-    },
-    {
-      "name": "Warlock Ezanor",
-      "nameNormalized": "warlock_ezanor",
-      "image": "https://cdn.ravenquest.io/assets/warlock_ezanor-BXSVS60x.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Mirror Image"
-        }
-      ]
-    },
-    {
-      "name": "Sharpweed Trunk",
-      "nameNormalized": "sharpweed_trunk",
-      "image": "https://cdn.ravenquest.io/assets/sharpweed_trunk-nl6bqemH.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Party Recovery"
-        }
-      ]
-    },
-    {
-      "name": "Mysticap Mushroom",
-      "nameNormalized": "mysticap_mushroom",
-      "image": "https://cdn.ravenquest.io/assets/mistycap_mushroom-C6pgj6yo.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Windstrike Spirit"
-        }
-      ]
-    },
-    {
-      "name": "Morningstar Minuteman",
-      "nameNormalized": "morningstar_minuteman",
-      "image": "https://cdn.ravenquest.io/assets/morningstar_minuteman-K2D3TJj5.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Target Lock"
-        }
-      ]
-    },
-    {
-      "name": "Iceforge Hunter",
-      "nameNormalized": "iceforge_hunter",
-      "image": "https://cdn.ravenquest.io/assets/iceforge_hunter-DAjHOjsO.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Precision Shot"
-        }
-      ]
-    },
-    {
-      "name": "Widow Queen",
-      "nameNormalized": "widow_queen",
-      "image": "https://cdn.ravenquest.io/assets/widow_queen-BcKfhVvz.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Death Blossom"
-        }
-      ]
-    },
-    {
-      "name": "Yornish Frostbearer",
-      "nameNormalized": "yornish_frostbearer",
-      "image": "https://cdn.ravenquest.io/assets/yornish_frostbearer-DPM2xIyR.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Siphon"
-        }
-      ]
-    },
-    {
-      "name": "Pummeldillo Boxer",
-      "nameNormalized": "pummeldillo_boxer",
-      "image": "https://cdn.ravenquest.io/assets/pummeldillo_boxer-rAnavA3C.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Windstrike Spirit"
-        }
-      ]
-    },
-    {
-      "name": "Thousand-Eyes Trunk",
-      "nameNormalized": "thousand_eyes_trunk",
-      "image": "https://cdn.ravenquest.io/assets/thousand-eyes_trunk-BkAaZlQE.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Life Touch"
-        }
-      ]
-    },
-    {
-      "name": "Elderwood Ghostoak",
-      "nameNormalized": "elderwood_ghostoak",
-      "image": "https://cdn.ravenquest.io/assets/elderwood_ghostoak-ClzHrBm2.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Spore Spread"
-        }
-      ]
-    },
-    {
-      "name": "Morningstar Missionary",
-      "nameNormalized": "morningstar_missionary",
-      "image": "https://cdn.ravenquest.io/assets/morningstar_missionary-CBfh0WzS.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Solar Flare"
+          "value": "Brutal Strike"
         }
       ]
     },
@@ -2631,9 +71,25 @@
       ]
     },
     {
-      "name": "Asterion",
-      "nameNormalized": "asterion",
-      "image": "https://cdn.ravenquest.io/assets/asterion-B7Anhg8A.jpg",
+      "name": "Skeleton Veteran",
+      "nameNormalized": "skeleton_veteran",
+      "image": "https://cdn.ravenquest.io/assets/skeleton_veteran-9Dn6lE53.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Scatter Shot"
+        }
+      ]
+    },
+    {
+      "name": "Morningstar Smiter",
+      "nameNormalized": "morningstar_smiter",
+      "image": "https://cdn.ravenquest.io/assets/morningstar_smiter-BGnSpHiX.jpg",
       "description": null,
       "attributes": [
         {
@@ -2647,9 +103,9 @@
       ]
     },
     {
-      "name": "Icicle Gazer",
-      "nameNormalized": "icicle_gazer",
-      "image": "https://cdn.ravenquest.io/assets/icicle_gazer-CA1xeKuA.jpg",
+      "name": "Asterion",
+      "nameNormalized": "asterion",
+      "image": "https://cdn.ravenquest.io/assets/asterion-B7Anhg8A.jpg",
       "description": null,
       "attributes": [
         {
@@ -2658,199 +114,7 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Frostbolt"
-        }
-      ]
-    },
-    {
-      "name": "Orc Axe Tossa'",
-      "nameNormalized": "orc_axe_tossa",
-      "image": "https://cdn.ravenquest.io/assets/orc_axe_tossa'-BzlfJcBd.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Pirate'S Parry"
-        }
-      ]
-    },
-    {
-      "name": "Morningfox Cub",
-      "nameNormalized": "morningfox_cub",
-      "image": "https://cdn.ravenquest.io/assets/morningfox_cub-Bxznwtnu.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Safeguard"
-        }
-      ]
-    },
-    {
-      "name": "Naturalist Praiser",
-      "nameNormalized": "naturalist_praiser",
-      "image": "https://cdn.ravenquest.io/assets/naturalist_praiser-KB22sBw7.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Healing Air Sphere"
-        }
-      ]
-    },
-    {
-      "name": "Winterborn Shaman",
-      "nameNormalized": "winterborn_shaman",
-      "image": "https://cdn.ravenquest.io/assets/winterborn_shaman-Dcf32aTH.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Healing Air Sphere"
-        }
-      ]
-    },
-    {
-      "name": "Rubycap Mushroom",
-      "nameNormalized": "rubycap_mushroom",
-      "image": "https://cdn.ravenquest.io/assets/rubycap_mushroom-B0rzuC9e.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Leech"
-        }
-      ]
-    },
-    {
-      "name": "Draconic Crusader",
-      "nameNormalized": "draconic_crusader",
-      "image": "https://cdn.ravenquest.io/assets/draconic_crusader-0mF3WhPm.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Dragons Arrow"
-        }
-      ]
-    },
-    {
-      "name": "High Elf Champion",
-      "nameNormalized": "high_elf_champion",
-      "image": "https://cdn.ravenquest.io/assets/high_elf_champion-B6CYl5jI.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Smite"
-        }
-      ]
-    },
-    {
-      "name": "Animated Bones",
-      "nameNormalized": "animated_bones",
-      "image": "https://cdn.ravenquest.io/assets/animated_bones-CM1gJt1O.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Mend"
-        }
-      ]
-    },
-    {
-      "name": "Minotaur Arbalist",
-      "nameNormalized": "minotaur_arbalist",
-      "image": "https://cdn.ravenquest.io/assets/minotaur_arbalist-2t_RRj6a.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Dragons Arrow"
-        }
-      ]
-    },
-    {
-      "name": "Saltdusk Ritualist",
-      "nameNormalized": "saltdusk_ritualist",
-      "image": "https://cdn.ravenquest.io/assets/saltdusk_ritualist-DpcyEntE.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Eternal Worms"
-        }
-      ]
-    },
-    {
-      "name": "Emberglow Trunk",
-      "nameNormalized": "emberglow_trunk",
-      "image": "https://cdn.ravenquest.io/assets/emberglow_trunk-Qf-4Bbt4.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Erupt"
-        }
-      ]
-    },
-    {
-      "name": "Draconic Pyromancer",
-      "nameNormalized": "draconic_pyromancer",
-      "image": "https://cdn.ravenquest.io/assets/draconic_pyromancer-EkyroG8v.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Pyroblast"
+          "value": "Grappling Hook"
         }
       ]
     },
@@ -2871,9 +135,9 @@
       ]
     },
     {
-      "name": "Morningstar Hermit",
-      "nameNormalized": "morningstar_hermit",
-      "image": "https://cdn.ravenquest.io/assets/morningstar_hermit-C136tN2e.jpg",
+      "name": "Ronan'S Wraith",
+      "nameNormalized": "ronan_s_wraith",
+      "image": "https://cdn.ravenquest.io/assets/ronan's_wraith-B8hoC_Bk.jpg",
       "description": null,
       "attributes": [
         {
@@ -2882,14 +146,30 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Dawn Arrow"
+          "value": "Multi-Target"
         }
       ]
     },
     {
-      "name": "Troll Champion",
-      "nameNormalized": "troll_champion",
-      "image": "https://cdn.ravenquest.io/assets/troll_champion-UYkXd4wa.jpg",
+      "name": "Black Bear",
+      "nameNormalized": "black_bear",
+      "image": "https://cdn.ravenquest.io/assets/black_bear-Bfcblpwz.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Quick Draw"
+        }
+      ]
+    },
+    {
+      "name": "Morningstar Forester",
+      "nameNormalized": "morningstar_forester",
+      "image": "https://cdn.ravenquest.io/assets/morningstar_forester-Dsl4KI7o.jpg",
       "description": null,
       "attributes": [
         {
@@ -2898,151 +178,39 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Smiting Smash"
+          "value": "Pirate'S Ambrosia"
         }
       ]
     },
     {
-      "name": "Orc Nightstar",
-      "nameNormalized": "orc_nightstar",
-      "image": "https://cdn.ravenquest.io/assets/orc_nightstar-C7Pil-Z8.jpg",
+      "name": "Hossoc The Grievous",
+      "nameNormalized": "hossoc_the_grievous",
+      "image": "https://cdn.ravenquest.io/assets/hossoc_the_grievous-BARavwfz.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Common"
         },
         {
           "trait_type": "Spell",
-          "value": "Banner Of Protection"
+          "value": "Quick Draw"
         }
       ]
     },
     {
-      "name": "Toad Sentinel",
-      "nameNormalized": "toad_sentinel",
-      "image": "https://cdn.ravenquest.io/assets/toad_sentinel-BIYD5h-g.jpg",
+      "name": "Saurian Sungazer",
+      "nameNormalized": "saurian_sungazer",
+      "image": "https://cdn.ravenquest.io/assets/saurian_sungazer-DyqibYXO.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Uncommon"
         },
         {
           "trait_type": "Spell",
-          "value": "Safeguard"
-        }
-      ]
-    },
-    {
-      "name": "Brotherhood Swordsman",
-      "nameNormalized": "brotherhood_swordsman",
-      "image": "https://cdn.ravenquest.io/assets/brotherhood_swordsman-B3mLuCYc.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Quick Slash"
-        }
-      ]
-    },
-    {
-      "name": "Elf Assassin",
-      "nameNormalized": "elf_assassin",
-      "image": "https://cdn.ravenquest.io/assets/elf_assassin-BAh8LYRk.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Coup De Grace"
-        }
-      ]
-    },
-    {
-      "name": "Hobgoblin",
-      "nameNormalized": "hobgoblin",
-      "image": "https://cdn.ravenquest.io/assets/hobgoblin-ac9NXDfB.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shadowstrike"
-        }
-      ]
-    },
-    {
-      "name": "Skorn Acolyte",
-      "nameNormalized": "skorn_acolyte",
-      "image": "https://cdn.ravenquest.io/assets/skorn_acolyte-B_1-7Zky.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Sinister Plot"
-        }
-      ]
-    },
-    {
-      "name": "Goblin Berserker",
-      "nameNormalized": "goblin_berserker",
-      "image": "https://cdn.ravenquest.io/assets/goblin_berserker-BcFWjtBo.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Berserk"
-        }
-      ]
-    },
-    {
-      "name": "Poisonpetal Goliath",
-      "nameNormalized": "poisonpetal_goliath",
-      "image": "https://cdn.ravenquest.io/assets/poisonpetal_goliath-DdLghYMt.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Venom Grenade"
-        }
-      ]
-    },
-    {
-      "name": "Brotherhood Mender",
-      "nameNormalized": "brotherhood_mender",
-      "image": "https://cdn.ravenquest.io/assets/brotherhood_mender-D7TYbHT5.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Mend"
+          "value": "Holy Force"
         }
       ]
     },
@@ -3063,258 +231,146 @@
       ]
     },
     {
-      "name": "Morningfox Ninetails",
-      "nameNormalized": "morningfox_ninetails",
-      "image": "https://cdn.ravenquest.io/assets/morningfox_ninetails-DPQmCC0v.jpg",
+      "name": "Hoghound Archer",
+      "nameNormalized": "hoghound_archer",
+      "image": "https://cdn.ravenquest.io/assets/hoghound_archer-Cb138X5n.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Common"
         },
         {
           "trait_type": "Spell",
-          "value": "Circle Of Light"
+          "value": "Quick Fire"
         }
       ]
     },
     {
-      "name": "Saurian Sungazer",
-      "nameNormalized": "saurian_sungazer",
-      "image": "https://cdn.ravenquest.io/assets/saurian_sungazer-DyqibYXO.jpg",
+      "name": "Hoglet",
+      "nameNormalized": "hoglet",
+      "image": "https://cdn.ravenquest.io/assets/hoglet-8bY3ffgF.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Arcane"
         },
         {
           "trait_type": "Spell",
-          "value": "Holy Force"
+          "value": "Spirits Resolve"
         }
       ]
     },
     {
-      "name": "Bat",
-      "nameNormalized": "bat",
-      "image": "https://cdn.ravenquest.io/assets/bat-YLZHQFWJ.jpg",
+      "name": "Skeleton Soldier",
+      "nameNormalized": "skeleton_soldier",
+      "image": "https://cdn.ravenquest.io/assets/skeleton_soldier-BY7emFV3.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Common"
         },
         {
           "trait_type": "Spell",
-          "value": "Whirlwind"
+          "value": "Bash"
         }
       ]
     },
     {
-      "name": "Goblin Glider",
-      "nameNormalized": "goblin_glider",
-      "image": "https://cdn.ravenquest.io/assets/goblin_glider-DW97lMXe.jpg",
+      "name": "Zorian Shoreguard",
+      "nameNormalized": "zorian_shoreguard",
+      "image": "https://cdn.ravenquest.io/assets/zorian_shoreguard-BoXnof3K.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Common"
         },
         {
           "trait_type": "Spell",
-          "value": "Cyclone"
+          "value": "Bash"
         }
       ]
     },
     {
-      "name": "Many-Eyes Trunk",
-      "nameNormalized": "many_eyes_trunk",
-      "image": "https://cdn.ravenquest.io/assets/many-eyes_trunk-BWijYuRe.jpg",
+      "name": "Dwarf Commoner",
+      "nameNormalized": "dwarf_commoner",
+      "image": "https://cdn.ravenquest.io/assets/dwarf_commoner-ChZh0hjD.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Common"
         },
         {
           "trait_type": "Spell",
-          "value": "Barrier"
+          "value": "Spirits Resolve"
         }
       ]
     },
     {
-      "name": "Zorian Stormcaller",
-      "nameNormalized": "zorian_stormcaller",
-      "image": "https://cdn.ravenquest.io/assets/zorian_stormcaller-DKbCyZF1.jpg",
+      "name": "Troll Champion",
+      "nameNormalized": "troll_champion",
+      "image": "https://cdn.ravenquest.io/assets/troll_champion-UYkXd4wa.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Common"
         },
         {
           "trait_type": "Spell",
-          "value": "Typhoon"
+          "value": "Smiting Smash"
         }
       ]
     },
     {
-      "name": "Bone Gazer",
-      "nameNormalized": "bone_gazer",
-      "image": "https://cdn.ravenquest.io/assets/bone_gazer-DT0ywVJ8.jpg",
+      "name": "Winterborn Guardian",
+      "nameNormalized": "winterborn_guardian",
+      "image": "https://cdn.ravenquest.io/assets/winterborn_guardian-CnHDXYQj.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Common"
         },
         {
           "trait_type": "Spell",
-          "value": "Hex"
+          "value": "Smiting Smash"
         }
       ]
     },
     {
-      "name": "Goblin Pyro",
-      "nameNormalized": "goblin_pyro",
-      "image": "https://cdn.ravenquest.io/assets/goblin_pyro-Cqjbzkx0.jpg",
+      "name": "Orc Nightstar",
+      "nameNormalized": "orc_nightstar",
+      "image": "https://cdn.ravenquest.io/assets/orc_nightstar-C7Pil-Z8.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Grand"
         },
         {
           "trait_type": "Spell",
-          "value": "Flame Tornado"
+          "value": "Banner Of Protection"
         }
       ]
     },
     {
-      "name": "Snow Broodmother",
-      "nameNormalized": "snow_broodmother",
-      "image": "https://cdn.ravenquest.io/assets/snow_broodmother-G18YAkJA.jpg",
+      "name": "Warhog",
+      "nameNormalized": "warhog",
+      "image": "https://cdn.ravenquest.io/assets/warhog-DXoQyr3M.jpg",
       "description": null,
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Rare"
+          "value": "Common"
         },
         {
           "trait_type": "Spell",
-          "value": "Frost Lance"
-        }
-      ]
-    },
-    {
-      "name": "Blizzard Beast",
-      "nameNormalized": "blizzard_beast",
-      "image": "https://cdn.ravenquest.io/assets/blizzard_beast-3DDEb0Ms.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Icestorm"
-        }
-      ]
-    },
-    {
-      "name": "Orc Chanta'",
-      "nameNormalized": "orc_chanta",
-      "image": "https://cdn.ravenquest.io/assets/orc_chanta'-Bcr0R53r.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "One With The Hive"
-        }
-      ]
-    },
-    {
-      "name": "Petrified Trunk",
-      "nameNormalized": "petrified_trunk",
-      "image": "https://cdn.ravenquest.io/assets/petrified_trunk-LTWkPgDH.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Thorn Wall"
-        }
-      ]
-    },
-    {
-      "name": "Earthwarden",
-      "nameNormalized": "earthwarden",
-      "image": "https://cdn.ravenquest.io/assets/earthwarden-BjqnLM_q.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Avatar Of Rebirth"
-        }
-      ]
-    },
-    {
-      "name": "Elf Bladedancer",
-      "nameNormalized": "elf_bladedancer",
-      "image": "https://cdn.ravenquest.io/assets/elf_bladedancer-K2obOQTt.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Queen'S Charge"
-        }
-      ]
-    },
-    {
-      "name": "Ancient Warden",
-      "nameNormalized": "ancient_warden",
-      "image": "https://cdn.ravenquest.io/assets/ancient_warden-CgMCcyJB.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Avatar Of Rebirth"
-        }
-      ]
-    },
-    {
-      "name": "Mossolith",
-      "nameNormalized": "mossolith",
-      "image": "https://cdn.ravenquest.io/assets/mossolith-bngHlmGG.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Makeshift Grenade"
+          "value": "Banner Of Protection"
         }
       ]
     },
@@ -3326,11 +382,251 @@
       "attributes": [
         {
           "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Spirit Shield"
+        }
+      ]
+    },
+    {
+      "name": "Mindslave Taskmaster",
+      "nameNormalized": "mindslave_taskmaster",
+      "image": "https://cdn.ravenquest.io/assets/mindslave_taskmaster-Dnzh8tI7.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Revenge"
+        }
+      ]
+    },
+    {
+      "name": "Pirate Freebooter",
+      "nameNormalized": "pirate_freebooter",
+      "image": "https://cdn.ravenquest.io/assets/pirate_freebooter-b1h_TFk2.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Revenge"
+        }
+      ]
+    },
+    {
+      "name": "Minotaur Warden",
+      "nameNormalized": "minotaur_warden",
+      "image": "https://cdn.ravenquest.io/assets/minotaur_warden-BemVuKFM.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shield Throw"
+        }
+      ]
+    },
+    {
+      "name": "Saurian Scaleshield",
+      "nameNormalized": "saurian_scaleshield",
+      "image": "https://cdn.ravenquest.io/assets/saurian_scaleshield-Cv-e2xRV.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shield Throw"
+        }
+      ]
+    },
+    {
+      "name": "Lavacap Mushroom",
+      "nameNormalized": "lavacap_mushroom",
+      "image": "https://cdn.ravenquest.io/assets/lavacap_mushroom-CTJ7Gc_e.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Blessed Earth"
+        }
+      ]
+    },
+    {
+      "name": "Jackal Moonblade",
+      "nameNormalized": "jackal_moonblade",
+      "image": "https://cdn.ravenquest.io/assets/jackal_moonblade-CRuFB9qK.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
           "value": "Common"
         },
         {
           "trait_type": "Spell",
           "value": "Spirit Shield"
+        }
+      ]
+    },
+    {
+      "name": "Direhorn Drake",
+      "nameNormalized": "direhorn_drake",
+      "image": "https://cdn.ravenquest.io/assets/direhorn_drake-ydv8PDJN.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Unchained"
+        }
+      ]
+    },
+    {
+      "name": "Shark Goldfin",
+      "nameNormalized": "shark_goldfin",
+      "image": "https://cdn.ravenquest.io/assets/shark_goldfin-DXBRyLVP.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Unchained"
+        }
+      ]
+    },
+    {
+      "name": "Minotaur Champion",
+      "nameNormalized": "minotaur_champion",
+      "image": "https://cdn.ravenquest.io/assets/minotaur_champion-D_mpbu77.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Rare"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Provoke"
+        }
+      ]
+    },
+    {
+      "name": "Toad Sentinel",
+      "nameNormalized": "toad_sentinel",
+      "image": "https://cdn.ravenquest.io/assets/toad_sentinel-BIYD5h-g.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Safeguard"
+        }
+      ]
+    },
+    {
+      "name": "Iceforge Hallkeeper",
+      "nameNormalized": "iceforge_hallkeeper",
+      "image": "https://cdn.ravenquest.io/assets/iceforge_hallkeeper-BDgGwMuO.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Unbreakable"
+        }
+      ]
+    },
+    {
+      "name": "Orc Chieftain",
+      "nameNormalized": "orc_chieftain",
+      "image": "https://cdn.ravenquest.io/assets/orc_chieftain-M2mk4HbM.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Provoke"
+        }
+      ]
+    },
+    {
+      "name": "Skeleton Pikeman",
+      "nameNormalized": "skeleton_pikeman",
+      "image": "https://cdn.ravenquest.io/assets/skeleton_pikeman-BZsWAMdR.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Unbreakable"
+        }
+      ]
+    },
+    {
+      "name": "Morningfox Cub",
+      "nameNormalized": "morningfox_cub",
+      "image": "https://cdn.ravenquest.io/assets/morningfox_cub-Bxznwtnu.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Safeguard"
+        }
+      ]
+    },
+    {
+      "name": "Hobgoblin",
+      "nameNormalized": "hobgoblin",
+      "image": "https://cdn.ravenquest.io/assets/hobgoblin-ac9NXDfB.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shadowstrike"
         }
       ]
     },
@@ -3347,6 +643,38 @@
         {
           "trait_type": "Spell",
           "value": "Shadowstrike"
+        }
+      ]
+    },
+    {
+      "name": "Cave Spider",
+      "nameNormalized": "cave_spider",
+      "image": "https://cdn.ravenquest.io/assets/cave_spider-6chClv9Q.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shadowbind"
+        }
+      ]
+    },
+    {
+      "name": "Skorn Deathblade",
+      "nameNormalized": "skorn_deathblade",
+      "image": "https://cdn.ravenquest.io/assets/skorn_deathblade-C7tCZfwY.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shadowbind"
         }
       ]
     },
@@ -3383,9 +711,217 @@
       ]
     },
     {
-      "name": "Chainwraith Creep",
-      "nameNormalized": "chainwraith_creep",
-      "image": "https://cdn.ravenquest.io/assets/chainwrath_creep-DFootYp-.jpg",
+      "name": "Brotherhood Swordsman",
+      "nameNormalized": "brotherhood_swordsman",
+      "image": "https://cdn.ravenquest.io/assets/brotherhood_swordsman-B3mLuCYc.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Quick Slash"
+        }
+      ]
+    },
+    {
+      "name": "Elf Assassin",
+      "nameNormalized": "elf_assassin",
+      "image": "https://cdn.ravenquest.io/assets/elf_assassin-BAh8LYRk.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Coup De Grace"
+        }
+      ]
+    },
+    {
+      "name": "Vile Wurm",
+      "nameNormalized": "vile_wurm",
+      "image": "https://cdn.ravenquest.io/assets/vile_wurm-DOsIFMqk.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Anti-Healing Venom"
+        }
+      ]
+    },
+    {
+      "name": "Toadstool Warrior",
+      "nameNormalized": "toadstool_warrior",
+      "image": "https://cdn.ravenquest.io/assets/toadstool_warrior-4Y-B8KrI.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Venomous Weapons"
+        }
+      ]
+    },
+    {
+      "name": "Venomous Contraption",
+      "nameNormalized": "venomous_contraption",
+      "image": "https://cdn.ravenquest.io/assets/venomous_contraption-CR1jYFym.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Venomous Weapons"
+        }
+      ]
+    },
+    {
+      "name": "Forest Spider",
+      "nameNormalized": "forest_spider",
+      "image": "https://cdn.ravenquest.io/assets/forest_spider-jPnKpIqq.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Stalk"
+        }
+      ]
+    },
+    {
+      "name": "Hookmask Knave",
+      "nameNormalized": "hookmask_knave",
+      "image": "https://cdn.ravenquest.io/assets/hookmask_knave-DJErd8A4.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Stalk"
+        }
+      ]
+    },
+    {
+      "name": "Bog Spider",
+      "nameNormalized": "bog_spider",
+      "image": "https://cdn.ravenquest.io/assets/bog_spider-CZUSYhyY.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Anti-Healing Venom"
+        }
+      ]
+    },
+    {
+      "name": "Hookmask Killer",
+      "nameNormalized": "hookmask_killer",
+      "image": "https://cdn.ravenquest.io/assets/hookmask_killer-Cs55flxu.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Rare"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Crippling Dagger"
+        }
+      ]
+    },
+    {
+      "name": "Skorn Initiate",
+      "nameNormalized": "skorn_initiate",
+      "image": "https://cdn.ravenquest.io/assets/skorn_initiate-DCGB8HBv.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shadow Kick"
+        }
+      ]
+    },
+    {
+      "name": "Rat Scavenger",
+      "nameNormalized": "rat_scavenger",
+      "image": "https://cdn.ravenquest.io/assets/rat_scavenger-CvlWnrTy.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shadow Kick"
+        }
+      ]
+    },
+    {
+      "name": "Skorn Acolyte",
+      "nameNormalized": "skorn_acolyte",
+      "image": "https://cdn.ravenquest.io/assets/skorn_acolyte-B_1-7Zky.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Sinister Plot"
+        }
+      ]
+    },
+    {
+      "name": "Rat Burglar",
+      "nameNormalized": "rat_burglar",
+      "image": "https://cdn.ravenquest.io/assets/rat_burglar-BsCWwVsZ.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Sinister Plot"
+        }
+      ]
+    },
+    {
+      "name": "Pirate Swashbuckler",
+      "nameNormalized": "pirate_swashbuckler",
+      "image": "https://cdn.ravenquest.io/assets/pirate_swashbuckler-DnSE_NAS.jpg",
       "description": null,
       "attributes": [
         {
@@ -3399,6 +935,102 @@
       ]
     },
     {
+      "name": "Brotherhood Tracker",
+      "nameNormalized": "brotherhood_tracker",
+      "image": "https://cdn.ravenquest.io/assets/brotherhood_tracker-uiEUhwIa.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Crippling Dagger"
+        }
+      ]
+    },
+    {
+      "name": "Saltdusk Cutthroat",
+      "nameNormalized": "saltdusk_cutthroat",
+      "image": "https://cdn.ravenquest.io/assets/saltdusk_cutthroat-ujovcX2p.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Death Blossom"
+        }
+      ]
+    },
+    {
+      "name": "Widow Queen",
+      "nameNormalized": "widow_queen",
+      "image": "https://cdn.ravenquest.io/assets/widow_queen-BcKfhVvz.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Death Blossom"
+        }
+      ]
+    },
+    {
+      "name": "Kaiman Ambusher",
+      "nameNormalized": "kaiman_ambusher",
+      "image": "https://cdn.ravenquest.io/assets/kaiman_ambusher-MlEl6W56.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shieldbreak"
+        }
+      ]
+    },
+    {
+      "name": "Chainwraith Creep",
+      "nameNormalized": "chainwraith_creep",
+      "image": "https://cdn.ravenquest.io/assets/chainwrath_creep-DFootYp-.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Illusive"
+        }
+      ]
+    },
+    {
+      "name": "Saltdusk Executioner",
+      "nameNormalized": "saltdusk_executioner",
+      "image": "https://cdn.ravenquest.io/assets/saltdusk_executioner-QacwI8PR.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Guillotine"
+        }
+      ]
+    },
+    {
       "name": "Rat Spiketail",
       "nameNormalized": "rat_spiketail",
       "image": "https://cdn.ravenquest.io/assets/rat_spiketail-DuvBVczc.jpg",
@@ -3406,7 +1038,7 @@
       "attributes": [
         {
           "trait_type": "Rarity",
-          "value": "Common"
+          "value": "Uncommon"
         },
         {
           "trait_type": "Spell",
@@ -3415,9 +1047,9 @@
       ]
     },
     {
-      "name": "Dwarf Elementalist",
-      "nameNormalized": "dwarf_elementalist",
-      "image": "https://cdn.ravenquest.io/assets/dwarf_elementalist-es0CE5TH.jpg",
+      "name": "Dwarf Legionnaire",
+      "nameNormalized": "dwarf_legionnaire",
+      "image": "https://cdn.ravenquest.io/assets/dwarf_legionnaire-CW8_hmiO.jpg",
       "description": null,
       "attributes": [
         {
@@ -3426,142 +1058,14 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Earthquake"
+          "value": "Guillotine"
         }
       ]
     },
     {
-      "name": "Dwarf Thunderer",
-      "nameNormalized": "dwarf_thunderer",
-      "image": "https://cdn.ravenquest.io/assets/dwarf_thunderer-Pnd6IEw_.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Concussive Shot"
-        }
-      ]
-    },
-    {
-      "name": "Yornish Druid",
-      "nameNormalized": "yornish_druid",
-      "image": "https://cdn.ravenquest.io/assets/yornish_druid-DqmjBsQe.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Flash Heal"
-        }
-      ]
-    },
-    {
-      "name": "High Elf Priestess",
-      "nameNormalized": "high_elf_priestess",
-      "image": "https://cdn.ravenquest.io/assets/high_elf_priestess-Rr_5GrxZ.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Living Saint"
-        }
-      ]
-    },
-    {
-      "name": "Ghaz Sandbender",
-      "nameNormalized": "ghaz_sandbender",
-      "image": "https://cdn.ravenquest.io/assets/ghaz_sandbender-BXvWvkg-.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Whirlwind"
-        }
-      ]
-    },
-    {
-      "name": "Orc Spellcaster",
-      "nameNormalized": "orc_spellcaster",
-      "image": "https://cdn.ravenquest.io/assets/orc_spellcaster-BjyoREAI.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Siphon"
-        }
-      ]
-    },
-    {
-      "name": "Orc Witchdoctor",
-      "nameNormalized": "orc_witchdoctor",
-      "image": "https://cdn.ravenquest.io/assets/orc_witchdoctor-CoU3LuXX.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Dispel"
-        }
-      ]
-    },
-    {
-      "name": "Lurking Shadow",
-      "nameNormalized": "lurking_shadow",
-      "image": "https://cdn.ravenquest.io/assets/lurking_shadow-BLUNE2Mr.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Teleport"
-        }
-      ]
-    },
-    {
-      "name": "Ghostlamp Hag",
-      "nameNormalized": "ghostlamp_hag",
-      "image": "https://cdn.ravenquest.io/assets/ghostlamp_hag-CmzeVZkM.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Uncommon"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Arcane Pulse"
-        }
-      ]
-    },
-    {
-      "name": "Giant Bee",
-      "nameNormalized": "giant_bee",
-      "image": "https://cdn.ravenquest.io/assets/giant_bee-DC8E3fLI.jpg",
+      "name": "Toad Enforcer",
+      "nameNormalized": "toad_enforcer",
+      "image": "https://cdn.ravenquest.io/assets/toad_enforcer-CELuKCyb.jpg",
       "description": null,
       "attributes": [
         {
@@ -3570,94 +1074,14 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Viper Arrow"
+          "value": "Bull Rush"
         }
       ]
     },
     {
-      "name": "Iceforge Winterlord",
-      "nameNormalized": "iceforge_winterlord",
-      "image": "https://cdn.ravenquest.io/assets/iceforge_winterlord-C7q-zeTA.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Generous Influence"
-        }
-      ]
-    },
-    {
-      "name": "Crowman",
-      "nameNormalized": "crowman",
-      "image": "https://cdn.ravenquest.io/assets/crowman-cwJA_QKX.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Force Push"
-        }
-      ]
-    },
-    {
-      "name": "Elf Druid",
-      "nameNormalized": "elf_druid",
-      "image": "https://cdn.ravenquest.io/assets/elf_druid-CgnrNMGe.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Arcane"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Regenerate"
-        }
-      ]
-    },
-    {
-      "name": "Morningstar Paladin",
-      "nameNormalized": "morningstar_paladin",
-      "image": "https://cdn.ravenquest.io/assets/morningstar_paladin-CJK1DklG.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Flash Heal"
-        }
-      ]
-    },
-    {
-      "name": "Blademaster Djinn",
-      "nameNormalized": "blademaster_djinn",
-      "image": "https://cdn.ravenquest.io/assets/blademaster_djinn-C04K4nG2.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Wind Wall"
-        }
-      ]
-    },
-    {
-      "name": "Mammoth",
-      "nameNormalized": "mammoth",
-      "image": "https://cdn.ravenquest.io/assets/mammoth-B8lZPXUI.jpg",
+      "name": "Troll Brawler",
+      "nameNormalized": "troll_brawler",
+      "image": "https://cdn.ravenquest.io/assets/troll_brawler-BxdvLjKu.jpg",
       "description": null,
       "attributes": [
         {
@@ -3666,14 +1090,78 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Nature'S Strike"
+          "value": "Pummel"
         }
       ]
     },
     {
-      "name": "Morningstar Smiter",
-      "nameNormalized": "morningstar_smiter",
-      "image": "https://cdn.ravenquest.io/assets/morningstar_smiter-BGnSpHiX.jpg",
+      "name": "Hog Warlord",
+      "nameNormalized": "hog_warlord",
+      "image": "https://cdn.ravenquest.io/assets/hog_warlord-CnfHv6Wo.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Feasting Strike"
+        }
+      ]
+    },
+    {
+      "name": "Polar Bear",
+      "nameNormalized": "polar_bear",
+      "image": "https://cdn.ravenquest.io/assets/polar_bear-BqPvCfH2.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Feasting Strike"
+        }
+      ]
+    },
+    {
+      "name": "Skeleton Rotclub",
+      "nameNormalized": "skeleton_rotclub",
+      "image": "https://cdn.ravenquest.io/assets/skeleton_rotclub-Cq93YqS7.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shieldbreak"
+        }
+      ]
+    },
+    {
+      "name": "Rargum The Dread",
+      "nameNormalized": "rargum_the_dread",
+      "image": "https://cdn.ravenquest.io/assets/rargum_the_dread-CjnWYQm-.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Pummel"
+        }
+      ]
+    },
+    {
+      "name": "Troll Knight",
+      "nameNormalized": "troll_knight",
+      "image": "https://cdn.ravenquest.io/assets/troll_knight-SCK5syUz.jpg",
       "description": null,
       "attributes": [
         {
@@ -3682,46 +1170,14 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Grappling Hook"
+          "value": "Bladestorm"
         }
       ]
     },
     {
-      "name": "Saurian Scaleshield",
-      "nameNormalized": "saurian_scaleshield",
-      "image": "https://cdn.ravenquest.io/assets/saurian_scaleshield-Cv-e2xRV.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Grand"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Shield Throw"
-        }
-      ]
-    },
-    {
-      "name": "Vampire Reaver",
-      "nameNormalized": "vampire_reaver",
-      "image": "https://cdn.ravenquest.io/assets/vampire_reaver-C31JRwCr.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Rare"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Dawn'S Light"
-        }
-      ]
-    },
-    {
-      "name": "Minotaur Warden",
-      "nameNormalized": "minotaur_warden",
-      "image": "https://cdn.ravenquest.io/assets/minotaur_warden-BemVuKFM.jpg",
+      "name": "Dwarf Warrior",
+      "nameNormalized": "dwarf_warrior",
+      "image": "https://cdn.ravenquest.io/assets/dwarf_warrior-B5IsIqN4.jpg",
       "description": null,
       "attributes": [
         {
@@ -3730,7 +1186,23 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Shield Throw"
+          "value": "Bladestorm"
+        }
+      ]
+    },
+    {
+      "name": "Boar Runt",
+      "nameNormalized": "boar_runt",
+      "image": "https://cdn.ravenquest.io/assets/boar_runt-Dr69zXF-.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Bull Rush"
         }
       ]
     },
@@ -3751,9 +1223,185 @@
       ]
     },
     {
-      "name": "Yornish Hunter",
-      "nameNormalized": "yornish_hunter",
-      "image": "https://cdn.ravenquest.io/assets/yornish_hunter-BvRzneEu.jpg",
+      "name": "Dwarf Elementalist",
+      "nameNormalized": "dwarf_elementalist",
+      "image": "https://cdn.ravenquest.io/assets/dwarf_elementalist-es0CE5TH.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Earthquake"
+        }
+      ]
+    },
+    {
+      "name": "Dwarf Prospector",
+      "nameNormalized": "dwarf_prospector",
+      "image": "https://cdn.ravenquest.io/assets/dwarf_prospector-B_BWNMcs.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Fissure"
+        }
+      ]
+    },
+    {
+      "name": "Troll Titan",
+      "nameNormalized": "troll_titan",
+      "image": "https://cdn.ravenquest.io/assets/troll_titan-DIyQM2Om.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Fissure"
+        }
+      ]
+    },
+    {
+      "name": "Saurian Monitor",
+      "nameNormalized": "saurian_monitor",
+      "image": "https://cdn.ravenquest.io/assets/saurian_monitor-ChUeP6nu.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Wind Arrow"
+        }
+      ]
+    },
+    {
+      "name": "Minotaur Duelist",
+      "nameNormalized": "minotaur_duelist",
+      "image": "https://cdn.ravenquest.io/assets/minotaur_duelist-DZUocLeo.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Fierce Leap"
+        }
+      ]
+    },
+    {
+      "name": "Goblin Berserker",
+      "nameNormalized": "goblin_berserker",
+      "image": "https://cdn.ravenquest.io/assets/goblin_berserker-BcFWjtBo.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Berserk"
+        }
+      ]
+    },
+    {
+      "name": "Ghaz Sandrider",
+      "nameNormalized": "ghaz_sandrider",
+      "image": "https://cdn.ravenquest.io/assets/ghaz_sandrider-CQBccQET.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Spiked Chains"
+        }
+      ]
+    },
+    {
+      "name": "Dire Bear",
+      "nameNormalized": "dire_bear",
+      "image": "https://cdn.ravenquest.io/assets/dire_bear-DRH01vT4.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Berserk"
+        }
+      ]
+    },
+    {
+      "name": "Twinhead Yeti",
+      "nameNormalized": "twinhead_yeti",
+      "image": "https://cdn.ravenquest.io/assets/twinhead_yeti-DNL0WjHG.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Earthquake"
+        }
+      ]
+    },
+    {
+      "name": "Shark Harpooner",
+      "nameNormalized": "shark_harpooner",
+      "image": "https://cdn.ravenquest.io/assets/shark_harpooner-CxwYY3Ix.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Fierce Leap"
+        }
+      ]
+    },
+    {
+      "name": "Spearhog",
+      "nameNormalized": "spearhog",
+      "image": "https://cdn.ravenquest.io/assets/spearhog-CqmfEVJu.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Snaring Shot"
+        }
+      ]
+    },
+    {
+      "name": "Ghaz Archer",
+      "nameNormalized": "ghaz_archer",
+      "image": "https://cdn.ravenquest.io/assets/ghaz_archer-DxRN0bog.jpg",
       "description": null,
       "attributes": [
         {
@@ -3767,41 +1415,9 @@
       ]
     },
     {
-      "name": "Poisonpetal Thornmaw",
-      "nameNormalized": "poisonpetal_thornmaw",
-      "image": "https://cdn.ravenquest.io/assets/poisonpetal_thornmaw-4I9GLyEL.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Spore Spread"
-        }
-      ]
-    },
-    {
-      "name": "Shark Goldfin",
-      "nameNormalized": "shark_goldfin",
-      "image": "https://cdn.ravenquest.io/assets/shark_goldfin-DXBRyLVP.jpg",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Rarity",
-          "value": "Common"
-        },
-        {
-          "trait_type": "Spell",
-          "value": "Unchained"
-        }
-      ]
-    },
-    {
-      "name": "Goblin Wizard",
-      "nameNormalized": "goblin_wizard",
-      "image": "https://cdn.ravenquest.io/assets/goblin_wizard-BW_SYwBm.jpg",
+      "name": "Yornish Hunter",
+      "nameNormalized": "yornish_hunter",
+      "image": "https://cdn.ravenquest.io/assets/yornish_hunter-BvRzneEu.jpg",
       "description": null,
       "attributes": [
         {
@@ -3810,7 +1426,71 @@
         },
         {
           "trait_type": "Spell",
-          "value": "Fireball"
+          "value": "Rain Of Arrows"
+        }
+      ]
+    },
+    {
+      "name": "Morningstar Hermit",
+      "nameNormalized": "morningstar_hermit",
+      "image": "https://cdn.ravenquest.io/assets/morningstar_hermit-C136tN2e.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Dawn Arrow"
+        }
+      ]
+    },
+    {
+      "name": "Dwarf Thunderer",
+      "nameNormalized": "dwarf_thunderer",
+      "image": "https://cdn.ravenquest.io/assets/dwarf_thunderer-Pnd6IEw_.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Concussive Shot"
+        }
+      ]
+    },
+    {
+      "name": "Pirate Cannoneer",
+      "nameNormalized": "pirate_cannoneer",
+      "image": "https://cdn.ravenquest.io/assets/pirate_cannoneer-DN5pjDIw.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Concussive Shot"
+        }
+      ]
+    },
+    {
+      "name": "Giant Bee",
+      "nameNormalized": "giant_bee",
+      "image": "https://cdn.ravenquest.io/assets/giant_bee-DC8E3fLI.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Viper Arrow"
         }
       ]
     },
@@ -3831,9 +1511,809 @@
       ]
     },
     {
+      "name": "Iceforge Stormgunner",
+      "nameNormalized": "iceforge_stormgunner",
+      "image": "https://cdn.ravenquest.io/assets/iceforge_stormgunner-BWy5s-ed.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Wind Arrow"
+        }
+      ]
+    },
+    {
+      "name": "Frostrisen Shardshooter",
+      "nameNormalized": "frostrisen_shardshooter",
+      "image": "https://cdn.ravenquest.io/assets/frostrisen_shardshooter-BHOGSuNv.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Snaring Shot"
+        }
+      ]
+    },
+    {
+      "name": "Iceforge Hunter",
+      "nameNormalized": "iceforge_hunter",
+      "image": "https://cdn.ravenquest.io/assets/iceforge_hunter-DAjHOjsO.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Precision Shot"
+        }
+      ]
+    },
+    {
+      "name": "Brotherhood Captain",
+      "nameNormalized": "brotherhood_captain",
+      "image": "https://cdn.ravenquest.io/assets/brotherhood_captain-DfeXfjWs.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Quick Fire"
+        }
+      ]
+    },
+    {
+      "name": "Elf Bowman",
+      "nameNormalized": "elf_bowman",
+      "image": "https://cdn.ravenquest.io/assets/elf_bowman-CNBX_u2q.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Disengage"
+        }
+      ]
+    },
+    {
+      "name": "Poisonpetal Goliath",
+      "nameNormalized": "poisonpetal_goliath",
+      "image": "https://cdn.ravenquest.io/assets/poisonpetal_goliath-DdLghYMt.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Venom Grenade"
+        }
+      ]
+    },
+    {
+      "name": "Skeleton Archer",
+      "nameNormalized": "skeleton_archer",
+      "image": "https://cdn.ravenquest.io/assets/skeleton_archer-CE9mdY8q.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Spirit Rangers"
+        }
+      ]
+    },
+    {
+      "name": "Sandwatcher Jackal",
+      "nameNormalized": "sandwatcher_jackal",
+      "image": "https://cdn.ravenquest.io/assets/sandwatcher_jackal-hH9o2hcW.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Dawn Arrow"
+        }
+      ]
+    },
+    {
+      "name": "Yornish Druid",
+      "nameNormalized": "yornish_druid",
+      "image": "https://cdn.ravenquest.io/assets/yornish_druid-DqmjBsQe.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Flash Heal"
+        }
+      ]
+    },
+    {
+      "name": "Captain Boone",
+      "nameNormalized": "captain_boone",
+      "image": "https://cdn.ravenquest.io/assets/captain_boone-B3o6-lFc.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Disengage"
+        }
+      ]
+    },
+    {
+      "name": "Morningstar Paladin",
+      "nameNormalized": "morningstar_paladin",
+      "image": "https://cdn.ravenquest.io/assets/morningstar_paladin-CJK1DklG.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Flash Heal"
+        }
+      ]
+    },
+    {
+      "name": "High Elf Champion",
+      "nameNormalized": "high_elf_champion",
+      "image": "https://cdn.ravenquest.io/assets/high_elf_champion-B6CYl5jI.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Smite"
+        }
+      ]
+    },
+    {
+      "name": "Sunchaser Jackal",
+      "nameNormalized": "sunchaser_jackal",
+      "image": "https://cdn.ravenquest.io/assets/sunchaser_jackal-KkDsdgI5.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Smite"
+        }
+      ]
+    },
+    {
+      "name": "Brotherhood Mender",
+      "nameNormalized": "brotherhood_mender",
+      "image": "https://cdn.ravenquest.io/assets/brotherhood_mender-D7TYbHT5.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Mend"
+        }
+      ]
+    },
+    {
+      "name": "Minotaur Arbalist",
+      "nameNormalized": "minotaur_arbalist",
+      "image": "https://cdn.ravenquest.io/assets/minotaur_arbalist-2t_RRj6a.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Dragons Arrow"
+        }
+      ]
+    },
+    {
+      "name": "Hookmask Slinger",
+      "nameNormalized": "hookmask_slinger",
+      "image": "https://cdn.ravenquest.io/assets/hookmask_slinger-CplJlyMh.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Venom Grenade"
+        }
+      ]
+    },
+    {
+      "name": "Draconic Crusader",
+      "nameNormalized": "draconic_crusader",
+      "image": "https://cdn.ravenquest.io/assets/draconic_crusader-0mF3WhPm.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Dragons Arrow"
+        }
+      ]
+    },
+    {
+      "name": "Winterborn Hunter",
+      "nameNormalized": "winterborn_hunter",
+      "image": "https://cdn.ravenquest.io/assets/winterborn_hunter-BsdegJIV.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Spirit Rangers"
+        }
+      ]
+    },
+    {
+      "name": "Animated Bones",
+      "nameNormalized": "animated_bones",
+      "image": "https://cdn.ravenquest.io/assets/animated_bones-CM1gJt1O.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Mend"
+        }
+      ]
+    },
+    {
+      "name": "Morningstar Bishop",
+      "nameNormalized": "morningstar_bishop",
+      "image": "https://cdn.ravenquest.io/assets/morningstar_bishop-DyA3Q5Or.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Dawn'S Light"
+        }
+      ]
+    },
+    {
+      "name": "Boro'Gorom",
+      "nameNormalized": "boro_gorom",
+      "image": "https://cdn.ravenquest.io/assets/boro'gorom-Bi3vqL0B.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Healing Channel"
+        }
+      ]
+    },
+    {
+      "name": "Dwarf Warpriest",
+      "nameNormalized": "dwarf_warpriest",
+      "image": "https://cdn.ravenquest.io/assets/dwarf_warpriest-Co9U6s9C.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Holy Shackles"
+        }
+      ]
+    },
+    {
+      "name": "Morningstar Flagellant",
+      "nameNormalized": "morningstar_flagellant",
+      "image": "https://cdn.ravenquest.io/assets/morningstar_flagellant-BkWcCiPB.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Holy Shackles"
+        }
+      ]
+    },
+    {
+      "name": "Vampire Reaver",
+      "nameNormalized": "vampire_reaver",
+      "image": "https://cdn.ravenquest.io/assets/vampire_reaver-C31JRwCr.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Dawn'S Light"
+        }
+      ]
+    },
+    {
+      "name": "Hierophant Sigrid",
+      "nameNormalized": "hierophant_sigrid",
+      "image": "https://cdn.ravenquest.io/assets/hierophant_sigrid-DVdPwryC.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Devotion"
+        }
+      ]
+    },
+    {
+      "name": "Kaiman Seer",
+      "nameNormalized": "kaiman_seer",
+      "image": "https://cdn.ravenquest.io/assets/kaiman_seer-BSt59E7H.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Devotion"
+        }
+      ]
+    },
+    {
+      "name": "Bloodthirsty Kaiman",
+      "nameNormalized": "bloodthirsty_kaiman",
+      "image": "https://cdn.ravenquest.io/assets/bloodthirsty_kaiman-DGEvUm5F.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Holy Force"
+        }
+      ]
+    },
+    {
+      "name": "Morningfox Ninetails",
+      "nameNormalized": "morningfox_ninetails",
+      "image": "https://cdn.ravenquest.io/assets/morningfox_ninetails-DPQmCC0v.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Circle Of Light"
+        }
+      ]
+    },
+    {
+      "name": "Ghaz Sandbender",
+      "nameNormalized": "ghaz_sandbender",
+      "image": "https://cdn.ravenquest.io/assets/ghaz_sandbender-BXvWvkg-.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Whirlwind"
+        }
+      ]
+    },
+    {
+      "name": "Pearlshell Giant",
+      "nameNormalized": "pearlshell_giant",
+      "image": "https://cdn.ravenquest.io/assets/pearlshell_giant-Dks1JQ3Z.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Barrier"
+        }
+      ]
+    },
+    {
+      "name": "Many-Eyes Trunk",
+      "nameNormalized": "many_eyes_trunk",
+      "image": "https://cdn.ravenquest.io/assets/many-eyes_trunk-BWijYuRe.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Barrier"
+        }
+      ]
+    },
+    {
+      "name": "Bat",
+      "nameNormalized": "bat",
+      "image": "https://cdn.ravenquest.io/assets/bat-YLZHQFWJ.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Whirlwind"
+        }
+      ]
+    },
+    {
+      "name": "Naturalist Mage",
+      "nameNormalized": "naturalist_mage",
+      "image": "https://cdn.ravenquest.io/assets/naturalist_mage-BLKMqDlq.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Rare"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Cyclone"
+        }
+      ]
+    },
+    {
+      "name": "Elderwood Goliath",
+      "nameNormalized": "elderwood_goliath",
+      "image": "https://cdn.ravenquest.io/assets/elderwood_goliath-DCvJJ8BS.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Generous Influence"
+        }
+      ]
+    },
+    {
+      "name": "Mysticap Mushroom",
+      "nameNormalized": "mysticap_mushroom",
+      "image": "https://cdn.ravenquest.io/assets/mistycap_mushroom-C6pgj6yo.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Windstrike Spirit"
+        }
+      ]
+    },
+    {
+      "name": "Iceforge Winterlord",
+      "nameNormalized": "iceforge_winterlord",
+      "image": "https://cdn.ravenquest.io/assets/iceforge_winterlord-C7q-zeTA.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Generous Influence"
+        }
+      ]
+    },
+    {
+      "name": "Pummeldillo Boxer",
+      "nameNormalized": "pummeldillo_boxer",
+      "image": "https://cdn.ravenquest.io/assets/pummeldillo_boxer-rAnavA3C.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Windstrike Spirit"
+        }
+      ]
+    },
+    {
+      "name": "Toadstool Shaman",
+      "nameNormalized": "toadstool_shaman",
+      "image": "https://cdn.ravenquest.io/assets/toadstool_shaman-Bd3tmuv6.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Purify"
+        }
+      ]
+    },
+    {
+      "name": "High Elf Priestess",
+      "nameNormalized": "high_elf_priestess",
+      "image": "https://cdn.ravenquest.io/assets/high_elf_priestess-Rr_5GrxZ.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Living Saint"
+        }
+      ]
+    },
+    {
+      "name": "Kaiman Illusionist",
+      "nameNormalized": "kaiman_illusionist",
+      "image": "https://cdn.ravenquest.io/assets/kaiman_illusionist-xz5tFvzr.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Purify"
+        }
+      ]
+    },
+    {
+      "name": "Phoenix",
+      "nameNormalized": "phoenix",
+      "image": "https://cdn.ravenquest.io/assets/phoenix-Dj5N_vRU.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Living Saint"
+        }
+      ]
+    },
+    {
+      "name": "Goblin Glider",
+      "nameNormalized": "goblin_glider",
+      "image": "https://cdn.ravenquest.io/assets/goblin_glider-DW97lMXe.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Cyclone"
+        }
+      ]
+    },
+    {
+      "name": "Golden Guardian",
+      "nameNormalized": "golden_guardian",
+      "image": "https://cdn.ravenquest.io/assets/golden_guardian-B3-fLaJf.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Circle Of Light"
+        }
+      ]
+    },
+    {
+      "name": "Shark Hydromancer",
+      "nameNormalized": "shark_hydromancer",
+      "image": "https://cdn.ravenquest.io/assets/shark_hydromancer-CkzV2RRL.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Typhoon"
+        }
+      ]
+    },
+    {
+      "name": "Elf Druid",
+      "nameNormalized": "elf_druid",
+      "image": "https://cdn.ravenquest.io/assets/elf_druid-CgnrNMGe.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Regenerate"
+        }
+      ]
+    },
+    {
+      "name": "Toad",
+      "nameNormalized": "toad",
+      "image": "https://cdn.ravenquest.io/assets/toad-Do-LduYH.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Regenerate"
+        }
+      ]
+    },
+    {
+      "name": "Runegust Jackal",
+      "nameNormalized": "runegust_jackal",
+      "image": "https://cdn.ravenquest.io/assets/runegust_jackal-gg6kA5iV.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Air Aura"
+        }
+      ]
+    },
+    {
+      "name": "Toad Farseer",
+      "nameNormalized": "toad_farseer",
+      "image": "https://cdn.ravenquest.io/assets/toad_farseer-D12rgZ5x.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Air Aura"
+        }
+      ]
+    },
+    {
       "name": "Hookmask Doctor",
       "nameNormalized": "hookmask_doctor",
       "image": "https://cdn.ravenquest.io/assets/hookmask_doctor-s8Fsh-PM.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Party Recovery"
+        }
+      ]
+    },
+    {
+      "name": "Blademaster Djinn",
+      "nameNormalized": "blademaster_djinn",
+      "image": "https://cdn.ravenquest.io/assets/blademaster_djinn-C04K4nG2.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Wind Wall"
+        }
+      ]
+    },
+    {
+      "name": "Sharpweed Trunk",
+      "nameNormalized": "sharpweed_trunk",
+      "image": "https://cdn.ravenquest.io/assets/sharpweed_trunk-nl6bqemH.jpg",
       "description": null,
       "attributes": [
         {
@@ -3845,6 +2325,1526 @@
           "value": "Party Recovery"
         }
       ]
+    },
+    {
+      "name": "Zorian Stormcaller",
+      "nameNormalized": "zorian_stormcaller",
+      "image": "https://cdn.ravenquest.io/assets/zorian_stormcaller-DKbCyZF1.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Typhoon"
+        }
+      ]
+    },
+    {
+      "name": "Grey Wolf",
+      "nameNormalized": "grey_wolf",
+      "image": "https://cdn.ravenquest.io/assets/grey_wolf-CijMOTM2.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Haste"
+        }
+      ]
+    },
+    {
+      "name": "Crowman",
+      "nameNormalized": "crowman",
+      "image": "https://cdn.ravenquest.io/assets/crowman-cwJA_QKX.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Force Push"
+        }
+      ]
+    },
+    {
+      "name": "Brotherhood Sorcerer",
+      "nameNormalized": "brotherhood_sorcerer",
+      "image": "https://cdn.ravenquest.io/assets/brotherhood_sorcerer-qzyksMCn.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Wind Wall"
+        }
+      ]
+    },
+    {
+      "name": "Saurian Skullmage",
+      "nameNormalized": "saurian_skullmage",
+      "image": "https://cdn.ravenquest.io/assets/saurian_skullmage-Bbrz-O4x.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Force Push"
+        }
+      ]
+    },
+    {
+      "name": "Winterborn Shaman",
+      "nameNormalized": "winterborn_shaman",
+      "image": "https://cdn.ravenquest.io/assets/winterborn_shaman-Dcf32aTH.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Healing Air Sphere"
+        }
+      ]
+    },
+    {
+      "name": "Naturalist Praiser",
+      "nameNormalized": "naturalist_praiser",
+      "image": "https://cdn.ravenquest.io/assets/naturalist_praiser-KB22sBw7.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Healing Air Sphere"
+        }
+      ]
+    },
+    {
+      "name": "Doom Gazer",
+      "nameNormalized": "doom_gazer",
+      "image": "https://cdn.ravenquest.io/assets/doom_gazer-DSEzniYb.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Arcane Torrent"
+        }
+      ]
+    },
+    {
+      "name": "Goblin Tinker",
+      "nameNormalized": "goblin_tinker",
+      "image": "https://cdn.ravenquest.io/assets/goblin_tinker-DC450bxK.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Haste"
+        }
+      ]
+    },
+    {
+      "name": "Ghostlamp Hag",
+      "nameNormalized": "ghostlamp_hag",
+      "image": "https://cdn.ravenquest.io/assets/ghostlamp_hag-CmzeVZkM.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Arcane Pulse"
+        }
+      ]
+    },
+    {
+      "name": "Hoghound Shaman",
+      "nameNormalized": "hoghound_shaman",
+      "image": "https://cdn.ravenquest.io/assets/hoghound_shaman-CTG0o8A1.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Arcane Pulse"
+        }
+      ]
+    },
+    {
+      "name": "Orc Spellcaster",
+      "nameNormalized": "orc_spellcaster",
+      "image": "https://cdn.ravenquest.io/assets/orc_spellcaster-BjyoREAI.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Siphon"
+        }
+      ]
+    },
+    {
+      "name": "Rubycap Mushroom",
+      "nameNormalized": "rubycap_mushroom",
+      "image": "https://cdn.ravenquest.io/assets/rubycap_mushroom-B0rzuC9e.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Rare"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Leech"
+        }
+      ]
+    },
+    {
+      "name": "Vampire Necromancer",
+      "nameNormalized": "vampire_necromancer",
+      "image": "https://cdn.ravenquest.io/assets/vampire_necromancer-5z8yvGC-.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Leech"
+        }
+      ]
+    },
+    {
+      "name": "Skorn Warlock",
+      "nameNormalized": "skorn_warlock",
+      "image": "https://cdn.ravenquest.io/assets/skorn_warlock-JjO-mzFD.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Arcane Torrent"
+        }
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "nameNormalized": "skeleton",
+      "image": "https://cdn.ravenquest.io/assets/skeleton-BzuJh4s9.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Curse"
+        }
+      ]
+    },
+    {
+      "name": "Hog Cultist",
+      "nameNormalized": "hog_cultist",
+      "image": "https://cdn.ravenquest.io/assets/hog_cultist-CwJigADl.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Curse"
+        }
+      ]
+    },
+    {
+      "name": "Saltdusk Ritualist",
+      "nameNormalized": "saltdusk_ritualist",
+      "image": "https://cdn.ravenquest.io/assets/saltdusk_ritualist-DpcyEntE.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Eternal Worms"
+        }
+      ]
+    },
+    {
+      "name": "Saltdusk Bloodmage",
+      "nameNormalized": "saltdusk_bloodmage",
+      "image": "https://cdn.ravenquest.io/assets/saltdusk_bloodmage-Cs9z5Zhh.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shackles Of Pain"
+        }
+      ]
+    },
+    {
+      "name": "Warlock Ezanor",
+      "nameNormalized": "warlock_ezanor",
+      "image": "https://cdn.ravenquest.io/assets/warlock_ezanor-BXSVS60x.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Mirror Image"
+        }
+      ]
+    },
+    {
+      "name": "Yornish Frostbearer",
+      "nameNormalized": "yornish_frostbearer",
+      "image": "https://cdn.ravenquest.io/assets/yornish_frostbearer-DPM2xIyR.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Siphon"
+        }
+      ]
+    },
+    {
+      "name": "Glutton Hag",
+      "nameNormalized": "glutton_hag",
+      "image": "https://cdn.ravenquest.io/assets/glutton_hag-TMIyeo9h.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Eternal Worms"
+        }
+      ]
+    },
+    {
+      "name": "Spellslayer Drake",
+      "nameNormalized": "spellslayer_drake",
+      "image": "https://cdn.ravenquest.io/assets/spellslayer_drake-C6WB4_6U.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Dispel"
+        }
+      ]
+    },
+    {
+      "name": "Orc Witchdoctor",
+      "nameNormalized": "orc_witchdoctor",
+      "image": "https://cdn.ravenquest.io/assets/orc_witchdoctor-CoU3LuXX.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Dispel"
+        }
+      ]
+    },
+    {
+      "name": "Skorn Grandmaster",
+      "nameNormalized": "skorn_grandmaster",
+      "image": "https://cdn.ravenquest.io/assets/skorn_grandmaster-CQGYuUeD.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Magic Rupture"
+        }
+      ]
+    },
+    {
+      "name": "Hell Gazer",
+      "nameNormalized": "hell_gazer",
+      "image": "https://cdn.ravenquest.io/assets/hell_gazer-CsWzif7A.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Mirror Image"
+        }
+      ]
+    },
+    {
+      "name": "Manastorm Djinn",
+      "nameNormalized": "manastorm_djinn",
+      "image": "https://cdn.ravenquest.io/assets/manastorm_djinn-_oibe-FL.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Rare"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Magic Rupture"
+        }
+      ]
+    },
+    {
+      "name": "Chainwraith Haunt",
+      "nameNormalized": "chainwraith_haunt",
+      "image": "https://cdn.ravenquest.io/assets/chainwraith_haunt-54jf9vG0.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Fireball"
+        }
+      ]
+    },
+    {
+      "name": "Flamelord Djinn",
+      "nameNormalized": "flamelord_djinn",
+      "image": "https://cdn.ravenquest.io/assets/flamelord_djinn-Bvj10oPz.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Flame Tornado"
+        }
+      ]
+    },
+    {
+      "name": "Goblin Wizard",
+      "nameNormalized": "goblin_wizard",
+      "image": "https://cdn.ravenquest.io/assets/goblin_wizard-BW_SYwBm.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Fireball"
+        }
+      ]
+    },
+    {
+      "name": "Emberscale Drake",
+      "nameNormalized": "emberscale_drake",
+      "image": "https://cdn.ravenquest.io/assets/emberscale_drake-D6R8KZzP.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Combustion"
+        }
+      ]
+    },
+    {
+      "name": "Crow Matriarch",
+      "nameNormalized": "crow_matriarch",
+      "image": "https://cdn.ravenquest.io/assets/crow_matriarch-CueQWBed.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Hex"
+        }
+      ]
+    },
+    {
+      "name": "Harvester Hag",
+      "nameNormalized": "harvester_hag",
+      "image": "https://cdn.ravenquest.io/assets/harvester_hag-Ct4pzNtT.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Shackles Of Pain"
+        }
+      ]
+    },
+    {
+      "name": "Hog Saboteur",
+      "nameNormalized": "hog_saboteur",
+      "image": "https://cdn.ravenquest.io/assets/hog_saboteur-B1F77-gw.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Rare"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Erupt"
+        }
+      ]
+    },
+    {
+      "name": "Bone Gazer",
+      "nameNormalized": "bone_gazer",
+      "image": "https://cdn.ravenquest.io/assets/bone_gazer-DT0ywVJ8.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Hex"
+        }
+      ]
+    },
+    {
+      "name": "Draconic Pyromancer",
+      "nameNormalized": "draconic_pyromancer",
+      "image": "https://cdn.ravenquest.io/assets/draconic_pyromancer-EkyroG8v.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Pyroblast"
+        }
+      ]
+    },
+    {
+      "name": "Coal Contraption",
+      "nameNormalized": "coal_contraption",
+      "image": "https://cdn.ravenquest.io/assets/coal_contraption-C1Dl5s0b.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Pyroblast"
+        }
+      ]
+    },
+    {
+      "name": "Goblin Bomber",
+      "nameNormalized": "goblin_bomber",
+      "image": "https://cdn.ravenquest.io/assets/goblin_bomber-mIkLP8BT.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Combustion"
+        }
+      ]
+    },
+    {
+      "name": "Emberglow Trunk",
+      "nameNormalized": "emberglow_trunk",
+      "image": "https://cdn.ravenquest.io/assets/emberglow_trunk-Qf-4Bbt4.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Erupt"
+        }
+      ]
+    },
+    {
+      "name": "Contagious Sporewalker",
+      "nameNormalized": "contagious_sporewalker",
+      "image": "https://cdn.ravenquest.io/assets/contagious_sporewalker-B8uTVOEo.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Death Touch"
+        }
+      ]
+    },
+    {
+      "name": "Troll Warlock",
+      "nameNormalized": "troll_warlock",
+      "image": "https://cdn.ravenquest.io/assets/troll_warlock-BJOMLh3T.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Death Touch"
+        }
+      ]
+    },
+    {
+      "name": "Blizzard Beast",
+      "nameNormalized": "blizzard_beast",
+      "image": "https://cdn.ravenquest.io/assets/blizzard_beast-3DDEb0Ms.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Icestorm"
+        }
+      ]
+    },
+    {
+      "name": "Iceshell Giant",
+      "nameNormalized": "iceshell_giant",
+      "image": "https://cdn.ravenquest.io/assets/iceshell_giant-C9bez77W.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Coldblast"
+        }
+      ]
+    },
+    {
+      "name": "Frostbound Drake",
+      "nameNormalized": "frostbound_drake",
+      "image": "https://cdn.ravenquest.io/assets/frostbound_drake-Baf2AJsd.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Coldblast"
+        }
+      ]
+    },
+    {
+      "name": "Iceforge Frostcaller",
+      "nameNormalized": "iceforge_frostcaller",
+      "image": "https://cdn.ravenquest.io/assets/iceforge_frostcaller-B6xdoXzg.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Icestorm"
+        }
+      ]
+    },
+    {
+      "name": "Tiger Bug Soldier",
+      "nameNormalized": "tiger_bug_soldier",
+      "image": "https://cdn.ravenquest.io/assets/tiger_bug_soldier-BjTufGG2.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Nature'S Strike"
+        }
+      ]
+    },
+    {
+      "name": "Mammoth",
+      "nameNormalized": "mammoth",
+      "image": "https://cdn.ravenquest.io/assets/mammoth-B8lZPXUI.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Nature'S Strike"
+        }
+      ]
+    },
+    {
+      "name": "Zorian Hailbringer",
+      "nameNormalized": "zorian_hailbringer",
+      "image": "https://cdn.ravenquest.io/assets/zorian_hailbringer-BeO6s796.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Frostbolt"
+        }
+      ]
+    },
+    {
+      "name": "Icicle Gazer",
+      "nameNormalized": "icicle_gazer",
+      "image": "https://cdn.ravenquest.io/assets/icicle_gazer-CA1xeKuA.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Frostbolt"
+        }
+      ]
+    },
+    {
+      "name": "Coldstone Cub",
+      "nameNormalized": "coldstone_cub",
+      "image": "https://cdn.ravenquest.io/assets/coldstone_cub-BOKG3Cs7.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Frost Shards"
+        }
+      ]
+    },
+    {
+      "name": "Goblin Pyro",
+      "nameNormalized": "goblin_pyro",
+      "image": "https://cdn.ravenquest.io/assets/goblin_pyro-Cqjbzkx0.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Flame Tornado"
+        }
+      ]
+    },
+    {
+      "name": "Wildfire Jackal",
+      "nameNormalized": "wildfire_jackal",
+      "image": "https://cdn.ravenquest.io/assets/wildfire_jackal-Csz93hm-.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Meteor Strike"
+        }
+      ]
+    },
+    {
+      "name": "Astor Demon",
+      "nameNormalized": "astor_demon",
+      "image": "https://cdn.ravenquest.io/assets/astor_demon-BrOWIApI.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Meteor Strike"
+        }
+      ]
+    },
+    {
+      "name": "Froll Cryomancer",
+      "nameNormalized": "froll_cryomancer",
+      "image": "https://cdn.ravenquest.io/assets/froll_cryomancer-BhN7d9eF.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Frost Shards"
+        }
+      ]
+    },
+    {
+      "name": "Frostrisen Magus",
+      "nameNormalized": "frostrisen_magus",
+      "image": "https://cdn.ravenquest.io/assets/frostrisen_magus-DsWfTbNo.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Frost Lance"
+        }
+      ]
+    },
+    {
+      "name": "Snow Broodmother",
+      "nameNormalized": "snow_broodmother",
+      "image": "https://cdn.ravenquest.io/assets/snow_broodmother-G18YAkJA.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Frost Lance"
+        }
+      ]
+    },
+    {
+      "name": "Shadowfox Ninetails",
+      "nameNormalized": "shadowfox_ninetails",
+      "image": "https://cdn.ravenquest.io/assets/shadowfox_ninetails-e_4jRh3G.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Teleport"
+        }
+      ]
+    },
+    {
+      "name": "Lurking Shadow",
+      "nameNormalized": "lurking_shadow",
+      "image": "https://cdn.ravenquest.io/assets/lurking_shadow-BLUNE2Mr.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Teleport"
+        }
+      ]
+    },
+    {
+      "name": "Orc Chanta'",
+      "nameNormalized": "orc_chanta",
+      "image": "https://cdn.ravenquest.io/assets/orc_chanta'-Bcr0R53r.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "One With The Hive"
+        }
+      ]
+    },
+    {
+      "name": "Piranha",
+      "nameNormalized": "piranha",
+      "image": "https://cdn.ravenquest.io/assets/piranha-CrvwZtRi.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "One With The Hive"
+        }
+      ]
+    },
+    {
+      "name": "Elf Bladedancer",
+      "nameNormalized": "elf_bladedancer",
+      "image": "https://cdn.ravenquest.io/assets/elf_bladedancer-K2obOQTt.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Queen'S Charge"
+        }
+      ]
+    },
+    {
+      "name": "Morningstar Missionary",
+      "nameNormalized": "morningstar_missionary",
+      "image": "https://cdn.ravenquest.io/assets/morningstar_missionary-CBfh0WzS.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Solar Flare"
+        }
+      ]
+    },
+    {
+      "name": "High Elf Sorcerer",
+      "nameNormalized": "high_elf_sorcerer",
+      "image": "https://cdn.ravenquest.io/assets/high_elf_sorcerer-CKgepD2j.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Solar Flare"
+        }
+      ]
+    },
+    {
+      "name": "Sand Spider",
+      "nameNormalized": "sand_spider",
+      "image": "https://cdn.ravenquest.io/assets/sand_spider-DSGFqOvL.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Thorn Wall"
+        }
+      ]
+    },
+    {
+      "name": "Orca",
+      "nameNormalized": "orca",
+      "image": "https://cdn.ravenquest.io/assets/orca-xrIzS1gp.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Life Touch"
+        }
+      ]
+    },
+    {
+      "name": "Thousand-Eyes Trunk",
+      "nameNormalized": "thousand_eyes_trunk",
+      "image": "https://cdn.ravenquest.io/assets/thousand-eyes_trunk-BkAaZlQE.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Life Touch"
+        }
+      ]
+    },
+    {
+      "name": "Cragglehide",
+      "nameNormalized": "cragglehide",
+      "image": "https://cdn.ravenquest.io/assets/cragglehide-CsVELELT.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Bristlehide"
+        }
+      ]
+    },
+    {
+      "name": "Black Wolf",
+      "nameNormalized": "black_wolf",
+      "image": "https://cdn.ravenquest.io/assets/black_wolf-QDDgDoyf.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Bristlehide"
+        }
+      ]
+    },
+    {
+      "name": "Poisonpetal Thornmaw",
+      "nameNormalized": "poisonpetal_thornmaw",
+      "image": "https://cdn.ravenquest.io/assets/poisonpetal_thornmaw-4I9GLyEL.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Spore Spread"
+        }
+      ]
+    },
+    {
+      "name": "Elderwood Ghostoak",
+      "nameNormalized": "elderwood_ghostoak",
+      "image": "https://cdn.ravenquest.io/assets/elderwood_ghostoak-ClzHrBm2.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Spore Spread"
+        }
+      ]
+    },
+    {
+      "name": "Petrified Trunk",
+      "nameNormalized": "petrified_trunk",
+      "image": "https://cdn.ravenquest.io/assets/petrified_trunk-LTWkPgDH.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Thorn Wall"
+        }
+      ]
+    },
+    {
+      "name": "Thergardian Hero",
+      "nameNormalized": "thergardian_hero",
+      "image": "https://cdn.ravenquest.io/assets/thergardian_hero-Cwc6lP6f.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Avatar Of Decay"
+        }
+      ]
+    },
+    {
+      "name": "Blaze Spider",
+      "nameNormalized": "blaze_spider",
+      "image": "https://cdn.ravenquest.io/assets/blaze_spider-DR6P_Ahn.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Target Practice"
+        }
+      ]
+    },
+    {
+      "name": "Mossback Colossus",
+      "nameNormalized": "mossback_colossus",
+      "image": "https://cdn.ravenquest.io/assets/mossback_colossus-BxpEQEFc.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Queen'S Charge"
+        }
+      ]
+    },
+    {
+      "name": "Ancient Warden",
+      "nameNormalized": "ancient_warden",
+      "image": "https://cdn.ravenquest.io/assets/ancient_warden-CgMCcyJB.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Avatar Of Rebirth"
+        }
+      ]
+    },
+    {
+      "name": "Dusk Crawler",
+      "nameNormalized": "dusk_crawler",
+      "image": "https://cdn.ravenquest.io/assets/dusk_crawler-BQcYfc_A.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Avatar Of Decay"
+        }
+      ]
+    },
+    {
+      "name": "Skeleton Warrior",
+      "nameNormalized": "skeleton_warrior",
+      "image": "https://cdn.ravenquest.io/assets/skeleton_warrior-BKKYa1V4.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Living Roots Swarm"
+        }
+      ]
+    },
+    {
+      "name": "Blood Spawn",
+      "nameNormalized": "blood_spawn",
+      "image": "https://cdn.ravenquest.io/assets/blood_spawn-MY8SLH3W.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Rare"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Target Practice"
+        }
+      ]
+    },
+    {
+      "name": "Molebear",
+      "nameNormalized": "molebear",
+      "image": "https://cdn.ravenquest.io/assets/molebear-BNedKP20.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Blooming Sapling"
+        }
+      ]
+    },
+    {
+      "name": "Serafine",
+      "nameNormalized": "serafine",
+      "image": "https://cdn.ravenquest.io/assets/serafine-vb-fX5X_.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Blooming Sapling"
+        }
+      ]
+    },
+    {
+      "name": "Earthwarden",
+      "nameNormalized": "earthwarden",
+      "image": "https://cdn.ravenquest.io/assets/earthwarden-BjqnLM_q.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Avatar Of Rebirth"
+        }
+      ]
+    },
+    {
+      "name": "Elf Paladin",
+      "nameNormalized": "elf_paladin",
+      "image": "https://cdn.ravenquest.io/assets/elf_paladin-DjEW4g_Y.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Living Roots Swarm"
+        }
+      ]
+    },
+    {
+      "name": "Spikehorn Drake",
+      "nameNormalized": "spikehorn_drake",
+      "image": "https://cdn.ravenquest.io/assets/spikehorn_drake-CoLvib3S.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Double Tap"
+        }
+      ]
+    },
+    {
+      "name": "High Elf Sniper",
+      "nameNormalized": "high_elf_sniper",
+      "image": "https://cdn.ravenquest.io/assets/high_elf_sniper-C4Rw9tV5.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Double Tap"
+        }
+      ]
+    },
+    {
+      "name": "Giant Jellyfish",
+      "nameNormalized": "giant_jellyfish",
+      "image": "https://cdn.ravenquest.io/assets/giant_jellyfish-CW8wg_nk.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Pirate'S Ambrosia"
+        }
+      ]
+    },
+    {
+      "name": "Skeleton Deathweaver",
+      "nameNormalized": "skeleton_deathweaver",
+      "image": "https://cdn.ravenquest.io/assets/skeleton_deathweaver-DFDIPufB.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Smoke Screen"
+        }
+      ]
+    },
+    {
+      "name": "Poisonpetal Rotbloom",
+      "nameNormalized": "poisonpetal_rotbloom",
+      "image": "https://cdn.ravenquest.io/assets/poisonpetal_rotbloom-DbA3qqHE.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Smoke Screen"
+        }
+      ]
+    },
+    {
+      "name": "Great White Shark",
+      "nameNormalized": "great_white_shark",
+      "image": "https://cdn.ravenquest.io/assets/great_white_shark-CWz5QuAB.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Illegal Munitions"
+        }
+      ]
+    },
+    {
+      "name": "Thunderflow Jackal",
+      "nameNormalized": "thunderflow_jackal",
+      "image": "https://cdn.ravenquest.io/assets/thunderflow_jackal-8YUK7CQW.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Target Lock"
+        }
+      ]
+    },
+    {
+      "name": "Mossback Giant",
+      "nameNormalized": "mossback_giant",
+      "image": "https://cdn.ravenquest.io/assets/mossback_giant-D6rglXm7.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Pirate'S Parry"
+        }
+      ]
+    },
+    {
+      "name": "Orc Axe Tossa'",
+      "nameNormalized": "orc_axe_tossa",
+      "image": "https://cdn.ravenquest.io/assets/orc_axe_tossa'-BzlfJcBd.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Pirate'S Parry"
+        }
+      ]
+    },
+    {
+      "name": "Embercap Mushroom",
+      "nameNormalized": "embercap_mushroom",
+      "image": "https://cdn.ravenquest.io/assets/embercap_mushroom-DsCNL-AQ.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Illegal Munitions"
+        }
+      ]
+    },
+    {
+      "name": "Mossolith",
+      "nameNormalized": "mossolith",
+      "image": "https://cdn.ravenquest.io/assets/mossolith-bngHlmGG.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Makeshift Grenade"
+        }
+      ]
+    },
+    {
+      "name": "Vermurat",
+      "nameNormalized": "vermurat",
+      "image": "https://cdn.ravenquest.io/assets/vermurat-Dkw86UDs.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Makeshift Grenade"
+        }
+      ]
+    },
+    {
+      "name": "Morningstar Minuteman",
+      "nameNormalized": "morningstar_minuteman",
+      "image": "https://cdn.ravenquest.io/assets/morningstar_minuteman-K2D3TJj5.jpg",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Spell",
+          "value": "Target Lock"
+        }
+      ]
     }
   ],
   "marketplace": {
@@ -3853,304 +3853,304 @@
     "floorCurrency": null,
     "recentSales": [
       {
-        "tokenId": "5548",
-        "price": 0.78,
+        "tokenId": "5647",
+        "price": 0.35,
         "currency": "USDC",
-        "timestamp": "2026-03-31T19:32:43.272992Z"
+        "timestamp": "2026-04-08T20:26:55.223146Z"
       },
       {
-        "tokenId": "10607",
-        "price": 0.33,
+        "tokenId": "50915",
+        "price": 0.39,
         "currency": "USDC",
-        "timestamp": "2026-04-03T20:29:36.553699Z"
+        "timestamp": "2026-04-08T20:26:55.224507Z"
       },
       {
-        "tokenId": "18115",
-        "price": 0.02,
-        "currency": "USDC",
-        "timestamp": "2026-04-03T19:42:50.552817Z"
-      },
-      {
-        "tokenId": "22162",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-04-05T03:51:52.528092Z"
-      },
-      {
-        "tokenId": "22805",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-04-02T12:24:37.595314Z"
-      },
-      {
-        "tokenId": "32578",
-        "price": 3.51,
-        "currency": "ERC20",
-        "timestamp": "2026-04-03T19:19:50.479681Z"
-      },
-      {
-        "tokenId": "49564",
+        "tokenId": "67741",
         "price": 0.03,
         "currency": "USDC",
-        "timestamp": "2026-04-03T05:20:03.858929Z"
+        "timestamp": "2026-04-09T14:09:30.258573Z"
       },
       {
-        "tokenId": "60619",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-04-05T03:51:15.628905Z"
-      },
-      {
-        "tokenId": "60629",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-04-05T03:43:48.643039Z"
-      },
-      {
-        "tokenId": "60926",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-04-02T12:23:53.525814Z"
-      },
-      {
-        "tokenId": "60993",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-04-03T21:17:04.55821Z"
-      },
-      {
-        "tokenId": "61006",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-03-31T12:58:09.369774Z"
-      },
-      {
-        "tokenId": "78818",
-        "price": 0.78,
-        "currency": "USDC",
-        "timestamp": "2026-03-31T19:35:17.350251Z"
-      },
-      {
-        "tokenId": "83083",
-        "price": 1.51,
-        "currency": "USDC",
-        "timestamp": "2026-04-04T15:10:22.607145Z"
-      },
-      {
-        "tokenId": "83527",
-        "price": 0.5,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T18:37:45.630405Z"
-      },
-      {
-        "tokenId": "89115",
-        "price": 1.75,
+        "tokenId": "87141",
+        "price": 0.39,
         "currency": "ERC20",
-        "timestamp": "2026-04-02T23:07:16.551601Z"
+        "timestamp": "2026-04-09T02:34:08.17277Z"
       },
       {
-        "tokenId": "90577",
-        "price": 3.33,
-        "currency": "ERC20",
-        "timestamp": "2026-04-02T23:06:20.630172Z"
-      },
-      {
-        "tokenId": "91010",
-        "price": 0.09,
+        "tokenId": "88299",
+        "price": 0.35,
         "currency": "USDC",
-        "timestamp": "2026-04-03T15:04:16.644109Z"
+        "timestamp": "2026-04-08T20:26:54.512605Z"
       },
       {
-        "tokenId": "92791",
-        "price": 0.64,
+        "tokenId": "90025",
+        "price": 0.43,
         "currency": "USDC",
-        "timestamp": "2026-04-03T19:21:36.642248Z"
+        "timestamp": "2026-04-08T20:26:54.112128Z"
       },
       {
-        "tokenId": "92990",
-        "price": 0.17,
+        "tokenId": "91000",
+        "price": 0.43,
         "currency": "USDC",
-        "timestamp": "2026-04-03T20:13:48.516687Z"
+        "timestamp": "2026-04-08T20:26:54.604579Z"
       },
       {
-        "tokenId": "93022",
-        "price": 3.52,
-        "currency": "ERC20",
-        "timestamp": "2026-04-02T23:06:46.525787Z"
-      },
-      {
-        "tokenId": "93023",
-        "price": 0.25,
+        "tokenId": "92871",
+        "price": 0.36,
         "currency": "USDC",
-        "timestamp": "2026-04-02T00:04:33.028869Z"
+        "timestamp": "2026-04-08T20:26:54.475566Z"
+      },
+      {
+        "tokenId": "93007",
+        "price": 0.35,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:54.508596Z"
+      },
+      {
+        "tokenId": "93019",
+        "price": 0.35,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:54.418498Z"
       },
       {
         "tokenId": "93036",
-        "price": 0.17,
+        "price": 0.34,
         "currency": "USDC",
-        "timestamp": "2026-04-03T20:16:48.550601Z"
+        "timestamp": "2026-04-08T20:26:00.061875Z"
       },
       {
         "tokenId": "93048",
-        "price": 0.25,
+        "price": 0.34,
         "currency": "USDC",
-        "timestamp": "2026-04-02T00:05:09.049075Z"
+        "timestamp": "2026-04-08T20:24:59.048485Z"
       },
       {
-        "tokenId": "93834",
-        "price": 0.02,
+        "tokenId": "93472",
+        "price": 0.39,
         "currency": "USDC",
-        "timestamp": "2026-04-03T19:43:02.668388Z"
+        "timestamp": "2026-04-08T20:26:54.182335Z"
       },
       {
-        "tokenId": "95375",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-04-05T03:52:24.645611Z"
-      },
-      {
-        "tokenId": "95558",
-        "price": 27130000,
+        "tokenId": "94561",
+        "price": 0.39,
         "currency": "USDC",
-        "timestamp": "2026-04-02T12:54:57.551655Z"
+        "timestamp": "2026-04-08T20:26:54.428098Z"
       },
       {
-        "tokenId": "95592",
+        "tokenId": "95103",
+        "price": 10.47,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T14:50:06.318574Z"
+      },
+      {
+        "tokenId": "95545",
+        "price": 0.39,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:27:09.191342Z"
+      },
+      {
+        "tokenId": "98023",
+        "price": 0.41,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:54.403423Z"
+      },
+      {
+        "tokenId": "98091",
+        "price": 0.34,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:54.238424Z"
+      },
+      {
+        "tokenId": "98498",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T14:14:44.369667Z"
+      },
+      {
+        "tokenId": "99942",
+        "price": 3.08,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T16:51:00.117034Z"
+      },
+      {
+        "tokenId": "100360",
         "price": 0.03,
         "currency": "USDC",
-        "timestamp": "2026-04-03T05:20:03.801187Z"
+        "timestamp": "2026-04-09T23:30:00.109778Z"
       },
       {
-        "tokenId": "95597",
-        "price": 0.03,
+        "tokenId": "100566",
+        "price": 0.35,
         "currency": "USDC",
-        "timestamp": "2026-04-03T05:20:34.678355Z"
+        "timestamp": "2026-04-08T20:26:54.443652Z"
       },
       {
-        "tokenId": "99730",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-03-31T17:26:41.292548Z"
-      },
-      {
-        "tokenId": "100874",
-        "price": 3.42,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T16:37:47.590476Z"
-      },
-      {
-        "tokenId": "101203",
-        "price": 0.07,
-        "currency": "USDC",
-        "timestamp": "2026-04-04T17:56:22.601402Z"
-      },
-      {
-        "tokenId": "101239",
-        "price": 40.7,
-        "currency": "USDC",
-        "timestamp": "2026-04-03T21:49:48.539941Z"
-      },
-      {
-        "tokenId": "101252",
-        "price": 0.11,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T15:20:03.192249Z"
-      },
-      {
-        "tokenId": "101421",
-        "price": 0.32,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T15:10:41.621728Z"
-      },
-      {
-        "tokenId": "101470",
+        "tokenId": "100796",
         "price": 0.02,
         "currency": "USDC",
-        "timestamp": "2026-04-03T19:43:20.600339Z"
+        "timestamp": "2026-04-09T12:51:02.394888Z"
       },
       {
-        "tokenId": "101482",
-        "price": 0.04,
+        "tokenId": "100868",
+        "price": 0.59,
         "currency": "USDC",
-        "timestamp": "2026-04-04T16:29:54.498458Z"
+        "timestamp": "2026-04-08T16:51:44.09148Z"
       },
       {
-        "tokenId": "102142",
-        "price": 0.02,
+        "tokenId": "100911",
+        "price": 0.35,
         "currency": "USDC",
-        "timestamp": "2026-04-04T17:54:16.57302Z"
+        "timestamp": "2026-04-08T20:26:54.456647Z"
       },
       {
-        "tokenId": "102239",
-        "price": 0.53,
+        "tokenId": "100922",
+        "price": 0.42,
         "currency": "USDC",
-        "timestamp": "2026-03-31T19:31:29.280663Z"
+        "timestamp": "2026-04-08T20:26:54.401759Z"
       },
       {
-        "tokenId": "102245",
-        "price": 0.87,
+        "tokenId": "101798",
+        "price": 0.34,
         "currency": "USDC",
-        "timestamp": "2026-04-02T18:38:13.59036Z"
+        "timestamp": "2026-04-08T20:26:54.492471Z"
       },
       {
-        "tokenId": "102260",
-        "price": 0.79,
+        "tokenId": "102161",
+        "price": 1.75,
         "currency": "USDC",
-        "timestamp": "2026-03-31T19:32:07.351167Z"
+        "timestamp": "2026-04-09T07:17:32.096043Z"
       },
       {
-        "tokenId": "102428",
+        "tokenId": "102235",
+        "price": 0.39,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:54.474246Z"
+      },
+      {
+        "tokenId": "102252",
+        "price": 0.39,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:54.387762Z"
+      },
+      {
+        "tokenId": "102426",
         "price": 0.01,
         "currency": "USDC",
-        "timestamp": "2026-04-03T20:25:24.872855Z"
+        "timestamp": "2026-04-08T05:47:00.140299Z"
       },
       {
-        "tokenId": "102432",
+        "tokenId": "102452",
         "price": 0.01,
         "currency": "USDC",
-        "timestamp": "2026-04-03T13:29:00.616266Z"
+        "timestamp": "2026-04-08T05:47:22.094785Z"
       },
       {
-        "tokenId": "102433",
+        "tokenId": "102579",
+        "price": 0.59,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T16:50:08.13484Z"
+      },
+      {
+        "tokenId": "102651",
+        "price": 0.35,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:54.281055Z"
+      },
+      {
+        "tokenId": "102710",
         "price": 0.01,
         "currency": "USDC",
-        "timestamp": "2026-04-04T01:07:54.696159Z"
+        "timestamp": "2026-04-08T05:47:00.092985Z"
       },
       {
-        "tokenId": "102434",
+        "tokenId": "102842",
         "price": 0.01,
         "currency": "USDC",
-        "timestamp": "2026-04-03T19:47:24.568893Z"
+        "timestamp": "2026-04-08T05:47:22.094482Z"
       },
       {
-        "tokenId": "102439",
-        "price": 0.01,
+        "tokenId": "102893",
+        "price": 0.35,
         "currency": "USDC",
-        "timestamp": "2026-04-03T19:10:10.623286Z"
+        "timestamp": "2026-04-08T20:26:54.418284Z"
       },
       {
-        "tokenId": "102441",
-        "price": 0.01,
-        "currency": "USDC",
-        "timestamp": "2026-04-04T05:32:42.552284Z"
+        "tokenId": "102895",
+        "price": 0.39,
+        "currency": "ERC20",
+        "timestamp": "2026-04-10T01:10:16.225996Z"
       },
       {
-        "tokenId": "102447",
-        "price": 0.01,
-        "currency": "USDC",
-        "timestamp": "2026-04-03T15:26:56.576652Z"
-      },
-      {
-        "tokenId": "102449",
+        "tokenId": "102895",
         "price": 0.03,
         "currency": "USDC",
-        "timestamp": "2026-04-04T17:54:48.547054Z"
+        "timestamp": "2026-04-09T14:09:48.036269Z"
       },
       {
-        "tokenId": "102482",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-04-04T14:28:18.575995Z"
+        "tokenId": "103002",
+        "price": 0.35,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:54.316754Z"
+      },
+      {
+        "tokenId": "103008",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T21:30:50.233814Z"
+      },
+      {
+        "tokenId": "103055",
+        "price": 0.05,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T14:32:18.209261Z"
+      },
+      {
+        "tokenId": "103058",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T17:50:26.112172Z"
+      },
+      {
+        "tokenId": "103093",
+        "price": 0.39,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T20:26:55.209644Z"
+      },
+      {
+        "tokenId": "103150",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T05:45:34.174266Z"
+      },
+      {
+        "tokenId": "103158",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T05:46:30.138867Z"
+      },
+      {
+        "tokenId": "103166",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T03:59:22.110377Z"
+      },
+      {
+        "tokenId": "103166",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T21:14:04.09871Z"
+      },
+      {
+        "tokenId": "103208",
+        "price": 0.52,
+        "currency": "USDC",
+        "timestamp": "2026-04-08T16:56:54.234144Z"
+      },
+      {
+        "tokenId": "103218",
+        "price": 0.08,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T22:53:01.126888Z"
       }
     ]
   }
