@@ -6356,9 +6356,9 @@
     },
     {
       "tokenId": "128",
-      "name": "Moa #13",
-      "nameNormalized": "moa_13",
-      "image": "https://cdn.ravenquest.io/assets/3536_0_3939_0-H6NGBEBh.png",
+      "name": "Moa #872",
+      "nameNormalized": "moa_872",
+      "image": "https://cdn.ravenquest.io/assets/3541_0_0_0-B_kUD39r.png",
       "description": null,
       "attributes": [
         {
@@ -6367,39 +6367,43 @@
         },
         {
           "trait_type": "Breed Limit",
-          "value": "1"
+          "value": "3"
         },
         {
           "trait_type": "Breed Count",
-          "value": "1"
+          "value": "0"
         },
         {
           "trait_type": "Base Strength",
-          "value": "46"
+          "value": "141"
         },
         {
           "trait_type": "Base Speed",
-          "value": "326"
+          "value": "481"
         },
         {
           "trait_type": "Tier",
-          "value": "1"
+          "value": "6"
         },
         {
           "trait_type": "Base Height",
-          "value": "134"
+          "value": "181"
         },
         {
           "trait_type": "Base Weight",
-          "value": "51"
+          "value": "76"
         },
         {
           "trait_type": "Base Stamina",
-          "value": "6686"
+          "value": "23828"
         },
         {
           "trait_type": "Bond Level",
           "value": "1"
+        },
+        {
+          "trait_type": "Skill",
+          "value": "Stampede T3"
         }
       ]
     },
@@ -11813,9 +11817,9 @@
     },
     {
       "tokenId": "237",
-      "name": "Moa #1",
-      "nameNormalized": "moa_1",
-      "image": "https://cdn.ravenquest.io/assets/3539_0_0_0-Dj-b_UB9.png",
+      "name": "Moa #781",
+      "nameNormalized": "moa_781",
+      "image": "https://cdn.ravenquest.io/assets/3535_0_0_0-Y6RcUmpX.png",
       "description": null,
       "attributes": [
         {
@@ -11832,31 +11836,31 @@
         },
         {
           "trait_type": "Base Strength",
-          "value": "50"
+          "value": "127"
         },
         {
           "trait_type": "Base Speed",
-          "value": "311"
+          "value": "468"
         },
         {
           "trait_type": "Tier",
-          "value": "1"
+          "value": "6"
         },
         {
           "trait_type": "Base Height",
-          "value": "137"
+          "value": "180"
         },
         {
           "trait_type": "Base Weight",
-          "value": "50"
+          "value": "80"
         },
         {
           "trait_type": "Base Stamina",
-          "value": "2664"
+          "value": "26571"
         },
         {
           "trait_type": "Bond Level",
-          "value": "3"
+          "value": "1"
         }
       ]
     },
@@ -28503,9 +28507,9 @@
     },
     {
       "tokenId": "575",
-      "name": "Moa #5",
-      "nameNormalized": "moa_5",
-      "image": "https://cdn.ravenquest.io/assets/3534_0_0_0-P06hSo_I.png",
+      "name": "Moa #782",
+      "nameNormalized": "moa_782",
+      "image": "https://cdn.ravenquest.io/assets/3541_0_0_0-B_kUD39r.png",
       "description": null,
       "attributes": [
         {
@@ -28522,31 +28526,31 @@
         },
         {
           "trait_type": "Base Strength",
-          "value": "47"
+          "value": "147"
         },
         {
           "trait_type": "Base Speed",
-          "value": "314"
+          "value": "469"
         },
         {
           "trait_type": "Tier",
-          "value": "1"
+          "value": "6"
         },
         {
           "trait_type": "Base Height",
-          "value": "136"
+          "value": "188"
         },
         {
           "trait_type": "Base Weight",
-          "value": "50"
+          "value": "79"
         },
         {
           "trait_type": "Base Stamina",
-          "value": "0"
+          "value": "25886"
         },
         {
           "trait_type": "Bond Level",
-          "value": "2"
+          "value": "1"
         },
         {
           "trait_type": "Skill",
@@ -48570,9 +48574,9 @@
     },
     {
       "tokenId": "978",
-      "name": "Moa #1",
-      "nameNormalized": "moa_1",
-      "image": "https://cdn.ravenquest.io/assets/3533_0_0_0-DmoxdOKM.png",
+      "name": "Moa #831",
+      "nameNormalized": "moa_831",
+      "image": "https://cdn.ravenquest.io/assets/3536_0_0_0-BdqUa98N.png",
       "description": null,
       "attributes": [
         {
@@ -48581,39 +48585,43 @@
         },
         {
           "trait_type": "Breed Limit",
-          "value": "3"
+          "value": "2"
         },
         {
           "trait_type": "Breed Count",
-          "value": "3"
+          "value": "2"
         },
         {
           "trait_type": "Base Strength",
-          "value": "37"
+          "value": "131"
         },
         {
           "trait_type": "Base Speed",
-          "value": "335"
+          "value": "466"
         },
         {
           "trait_type": "Tier",
-          "value": "1"
+          "value": "6"
         },
         {
           "trait_type": "Base Height",
-          "value": "130"
+          "value": "189"
         },
         {
           "trait_type": "Base Weight",
-          "value": "54"
+          "value": "77"
         },
         {
           "trait_type": "Base Stamina",
-          "value": "613"
+          "value": "24514"
         },
         {
           "trait_type": "Bond Level",
-          "value": "4"
+          "value": "1"
+        },
+        {
+          "trait_type": "Skill",
+          "value": "Charge T2"
         }
       ]
     },
@@ -131528,9 +131536,9 @@
     },
     {
       "tokenId": "2632",
-      "name": "Moa #1412",
-      "nameNormalized": "moa_1412",
-      "image": "https://cdn.ravenquest.io/assets/3541_0_0_0-B_kUD39r.png",
+      "name": "Moa #4178",
+      "nameNormalized": "moa_4178",
+      "image": "https://cdn.ravenquest.io/assets/3535_0_0_0-Y6RcUmpX.png",
       "description": null,
       "attributes": [
         {
@@ -131539,47 +131547,39 @@
         },
         {
           "trait_type": "Breed Limit",
-          "value": "2"
+          "value": "1"
         },
         {
           "trait_type": "Breed Count",
-          "value": "2"
+          "value": "1"
         },
         {
           "trait_type": "Base Strength",
-          "value": "135"
+          "value": "174"
         },
         {
           "trait_type": "Base Speed",
-          "value": "469"
+          "value": "510"
         },
         {
           "trait_type": "Tier",
-          "value": "6"
+          "value": "7"
         },
         {
           "trait_type": "Base Height",
-          "value": "183"
+          "value": "199"
         },
         {
           "trait_type": "Base Weight",
-          "value": "75"
+          "value": "85"
         },
         {
           "trait_type": "Base Stamina",
-          "value": "23143"
+          "value": "30000"
         },
         {
           "trait_type": "Bond Level",
           "value": "1"
-        },
-        {
-          "trait_type": "Skill",
-          "value": "Stampede T2"
-        },
-        {
-          "trait_type": "Skill",
-          "value": "Charge T1"
         }
       ]
     },
@@ -192594,7 +192594,6 @@
       "2631",
       "2647",
       "26571",
-      "2664",
       "267",
       "2670",
       "2676",
@@ -192753,7 +192752,6 @@
       "606",
       "607",
       "6104",
-      "613",
       "6135",
       "6140",
       "6159",
@@ -192998,6 +192996,12 @@
         "timestamp": "2026-03-22T02:20:35.631469Z"
       },
       {
+        "tokenId": "1799",
+        "price": 13.16,
+        "currency": "USDC",
+        "timestamp": "2026-04-06T01:31:48.736076Z"
+      },
+      {
         "tokenId": "2146",
         "price": 0.88,
         "currency": "ERC20",
@@ -193044,12 +193048,6 @@
         "price": 4.39,
         "currency": "USDC",
         "timestamp": "2026-03-30T17:12:03.294242Z"
-      },
-      {
-        "tokenId": "2613",
-        "price": 0.07,
-        "currency": "USDC",
-        "timestamp": "2026-03-11T16:28:55.074641Z"
       },
       {
         "tokenId": "2652",
@@ -193130,6 +193128,12 @@
         "timestamp": "2026-03-21T19:10:52.573631Z"
       },
       {
+        "tokenId": "3415",
+        "price": 0.79,
+        "currency": "USDC",
+        "timestamp": "2026-04-06T15:14:00.751006Z"
+      },
+      {
         "tokenId": "3478",
         "price": 0.14,
         "currency": "USDC",
@@ -193148,12 +193152,6 @@
         "timestamp": "2026-04-04T01:35:34.741231Z"
       },
       {
-        "tokenId": "3571",
-        "price": 1.58,
-        "currency": "USDC",
-        "timestamp": "2026-03-11T21:11:24.993522Z"
-      },
-      {
         "tokenId": "3682",
         "price": 1.14,
         "currency": "USDC",
@@ -193166,22 +193164,10 @@
         "timestamp": "2026-03-31T05:06:25.35359Z"
       },
       {
-        "tokenId": "3688",
-        "price": 1.4,
-        "currency": "USDC",
-        "timestamp": "2026-03-11T21:06:48.843374Z"
-      },
-      {
         "tokenId": "3689",
         "price": 0.68,
         "currency": "USDC",
         "timestamp": "2026-04-05T02:00:18.637223Z"
-      },
-      {
-        "tokenId": "3690",
-        "price": 1.32,
-        "currency": "USDC",
-        "timestamp": "2026-03-11T21:06:16.838215Z"
       },
       {
         "tokenId": "3718",
@@ -193206,6 +193192,18 @@
         "price": 0.03,
         "currency": "USDC",
         "timestamp": "2026-04-03T15:22:40.564711Z"
+      },
+      {
+        "tokenId": "3737",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-10T08:41:36.099327Z"
+      },
+      {
+        "tokenId": "3738",
+        "price": 0.01,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T12:07:12.069482Z"
       },
       {
         "tokenId": "3741",
