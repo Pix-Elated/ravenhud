@@ -7,6 +7,42 @@
   },
   "types": [
     {
+      "name": "Black and White Cat Companion",
+      "nameNormalized": "black_and_white_cat_companion",
+      "image": "https://cdn.ravenquest.io/assets/138-Dt_UAT5p.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "RavenIdle Banner",
+      "nameNormalized": "ravenidle_banner",
+      "image": "https://cdn.ravenquest.io/assets/293-BAB_f_hf.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "RavenIdle Warrior Plushie",
+      "nameNormalized": "ravenidle_warrior_plushie",
+      "image": "https://cdn.ravenquest.io/assets/294-9gkTRQy4.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
       "name": "Merry Voyager",
       "nameNormalized": "merry_voyager",
       "image": "https://cdn.ravenquest.io/assets/461-CG5H3bJF.png",
@@ -43,45 +79,33 @@
       ]
     },
     {
-      "name": "Emberveil Chimes",
-      "nameNormalized": "emberveil_chimes",
-      "image": "https://cdn.ravenquest.io/assets/457-CrY4YnJN.png",
+      "name": "Heartbound Voyager",
+      "nameNormalized": "heartbound_voyager",
+      "image": "https://cdn.ravenquest.io/assets/465-CfpFwWvc.png",
       "description": null,
       "attributes": [
         {
           "trait_type": "Type",
-          "value": "decoration"
+          "value": "ship"
         }
       ]
     },
     {
-      "name": "Heartfelt Bouquet",
-      "nameNormalized": "heartfelt_bouquet",
-      "image": "https://cdn.ravenquest.io/assets/464-Cz2bOeQc.png",
+      "name": "Jinglebeak Reins",
+      "nameNormalized": "jinglebeak_reins",
+      "image": "https://cdn.ravenquest.io/assets/460-C6RdncrD.png",
       "description": null,
       "attributes": [
         {
           "trait_type": "Type",
-          "value": "decoration"
+          "value": "mount"
         }
       ]
     },
     {
-      "name": "Merry Munk Helper",
-      "nameNormalized": "merry_munk_helper",
-      "image": "https://cdn.ravenquest.io/assets/459-BjltDulx.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Sir Frostalot",
-      "nameNormalized": "sir_frostalot",
-      "image": "https://cdn.ravenquest.io/assets/458-2TzNaU-K.png",
+      "name": "Valentines Bandit",
+      "nameNormalized": "valentines_bandit",
+      "image": "https://cdn.ravenquest.io/assets/165-BRIWgGGf.png",
       "description": null,
       "attributes": [
         {
@@ -103,9 +127,9 @@
       ]
     },
     {
-      "name": "Valentines Bandit",
-      "nameNormalized": "valentines_bandit",
-      "image": "https://cdn.ravenquest.io/assets/165-BRIWgGGf.png",
+      "name": "Winter Cleaver",
+      "nameNormalized": "winter_cleaver",
+      "image": "https://cdn.ravenquest.io/assets/250-DFEFe56s.png",
       "description": null,
       "attributes": [
         {
@@ -115,14 +139,170 @@
       ]
     },
     {
-      "name": "Heartbound Voyager",
-      "nameNormalized": "heartbound_voyager",
-      "image": "https://cdn.ravenquest.io/assets/465-CfpFwWvc.png",
+      "name": "Spring Sun",
+      "nameNormalized": "spring_sun",
+      "image": "https://cdn.ravenquest.io/assets/249-BIaxyoyw.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Heartfelt Bouquet",
+      "nameNormalized": "heartfelt_bouquet",
+      "image": "https://cdn.ravenquest.io/assets/464-Cz2bOeQc.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Spring Blossom",
+      "nameNormalized": "spring_blossom",
+      "image": "https://cdn.ravenquest.io/assets/251-REjsYGmP.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Sir Frostalot",
+      "nameNormalized": "sir_frostalot",
+      "image": "https://cdn.ravenquest.io/assets/458-2TzNaU-K.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Emberveil Chimes",
+      "nameNormalized": "emberveil_chimes",
+      "image": "https://cdn.ravenquest.io/assets/457-CrY4YnJN.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Carnival Bandit Companion",
+      "nameNormalized": "carnival_bandit_companion",
+      "image": "https://cdn.ravenquest.io/assets/164-Daq2gSEC.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Valkyrie Statue",
+      "nameNormalized": "valkyrie_statue",
+      "image": "https://cdn.ravenquest.io/assets/253-BbDAcB-6.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Octopus Aquarium",
+      "nameNormalized": "octopus_aquarium",
+      "image": "https://cdn.ravenquest.io/assets/256-Bm_rEfkv.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Valkyrie Ship",
+      "nameNormalized": "valkyrie_ship",
+      "image": "https://cdn.ravenquest.io/assets/258-B7xY8Yq6.png",
       "description": null,
       "attributes": [
         {
           "trait_type": "Type",
           "value": "ship"
+        }
+      ]
+    },
+    {
+      "name": "Carnival Wagon",
+      "nameNormalized": "carnival_wagon",
+      "image": "https://cdn.ravenquest.io/assets/160-BumOh3IA.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "wagon"
+        }
+      ]
+    },
+    {
+      "name": "Treasures Below Twitch Chest",
+      "nameNormalized": "treasures_below_twitch_chest",
+      "image": "https://cdn.ravenquest.io/assets/302-BfZE7C7d.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Treasures Below Launch Chest",
+      "nameNormalized": "treasures_below_launch_chest",
+      "image": "https://cdn.ravenquest.io/assets/303-DI19sHVY.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "XPLore Guild Companion",
+      "nameNormalized": "xplore_guild_companion",
+      "image": "https://cdn.ravenquest.io/assets/300-BgrqPHHi.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Merry Munk Helper",
+      "nameNormalized": "merry_munk_helper",
+      "image": "https://cdn.ravenquest.io/assets/459-BjltDulx.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
         }
       ]
     },
@@ -139,9 +319,9 @@
       ]
     },
     {
-      "name": "Suave Suitor",
-      "nameNormalized": "suave_suitor",
-      "image": "https://cdn.ravenquest.io/assets/466-BI8EelCv.png",
+      "name": "Adventurer Moa Armor",
+      "nameNormalized": "adventurer_moa_armor",
+      "image": "https://cdn.ravenquest.io/assets/158-TGK3rTU9.png",
       "description": null,
       "attributes": [
         {
@@ -151,9 +331,21 @@
       ]
     },
     {
-      "name": "Jinglebeak Reins",
-      "nameNormalized": "jinglebeak_reins",
-      "image": "https://cdn.ravenquest.io/assets/460-C6RdncrD.png",
+      "name": "Siberian Husky Companion",
+      "nameNormalized": "siberian_husky_companion",
+      "image": "https://cdn.ravenquest.io/assets/140-D1gUKBtG.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Carnival Moa Armor",
+      "nameNormalized": "carnival_moa_armor",
+      "image": "https://cdn.ravenquest.io/assets/162-K8yKM_LQ.png",
       "description": null,
       "attributes": [
         {
@@ -163,9 +355,117 @@
       ]
     },
     {
-      "name": "Black and White Cat Companion",
-      "nameNormalized": "black_and_white_cat_companion",
-      "image": "https://cdn.ravenquest.io/assets/138-Dt_UAT5p.png",
+      "name": "Dark Ritualist Wagon",
+      "nameNormalized": "dark_ritualist_wagon",
+      "image": "https://cdn.ravenquest.io/assets/2-DtyGix9_.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "wagon"
+        }
+      ]
+    },
+    {
+      "name": "Valkyrie Plushie",
+      "nameNormalized": "valkyrie_plushie",
+      "image": "https://cdn.ravenquest.io/assets/252-g35OI4UL.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Golden Retriever Companion",
+      "nameNormalized": "golden_retriever_companion",
+      "image": "https://cdn.ravenquest.io/assets/141-DmoFj5Yl.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Trailblazer Moa Plushie",
+      "nameNormalized": "trailblazer_moa_plushie",
+      "image": "https://cdn.ravenquest.io/assets/155-D3hOzWl-.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Carnival Ship",
+      "nameNormalized": "carnival_ship",
+      "image": "https://cdn.ravenquest.io/assets/161-COh-q9-v.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "ship"
+        }
+      ]
+    },
+    {
+      "name": "Trailblazer Wagon",
+      "nameNormalized": "trailblazer_wagon",
+      "image": "https://cdn.ravenquest.io/assets/151-Bvn_bacn.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "wagon"
+        }
+      ]
+    },
+    {
+      "name": "War Rider Moa",
+      "nameNormalized": "war_rider_moa",
+      "image": "https://cdn.ravenquest.io/assets/195-Cutv_hfK.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "mount"
+        }
+      ]
+    },
+    {
+      "name": "German Shepherd Companion",
+      "nameNormalized": "german_shepherd_companion",
+      "image": "https://cdn.ravenquest.io/assets/139-BghLmQAV.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Trailblazer Moa Armor",
+      "nameNormalized": "trailblazer_moa_armor",
+      "image": "https://cdn.ravenquest.io/assets/153-8Jq6KNgc.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "mount"
+        }
+      ]
+    },
+    {
+      "name": "Orange Cat Companion",
+      "nameNormalized": "orange_cat_companion",
+      "image": "https://cdn.ravenquest.io/assets/136-C1B8dvgg.png",
       "description": null,
       "attributes": [
         {
@@ -187,9 +487,45 @@
       ]
     },
     {
-      "name": "Siberian Husky Companion",
-      "nameNormalized": "siberian_husky_companion",
-      "image": "https://cdn.ravenquest.io/assets/140-D1gUKBtG.png",
+      "name": "War Rider Wagon",
+      "nameNormalized": "war_rider_wagon",
+      "image": "https://cdn.ravenquest.io/assets/196-DZNGY5In.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "wagon"
+        }
+      ]
+    },
+    {
+      "name": "Trailblazer Ship",
+      "nameNormalized": "trailblazer_ship",
+      "image": "https://cdn.ravenquest.io/assets/152-Otj67vVt.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "ship"
+        }
+      ]
+    },
+    {
+      "name": "Dark Ritualist Moa Armor",
+      "nameNormalized": "dark_ritualist_moa_armor",
+      "image": "https://cdn.ravenquest.io/assets/5-DBLMQ9pp.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "mount"
+        }
+      ]
+    },
+    {
+      "name": "Bandit Plushie",
+      "nameNormalized": "bandit_plushie",
+      "image": "https://cdn.ravenquest.io/assets/450-BN4O0M_5.png",
       "description": null,
       "attributes": [
         {
@@ -199,14 +535,110 @@
       ]
     },
     {
-      "name": "Trailblazer Wagon",
-      "nameNormalized": "trailblazer_wagon",
-      "image": "https://cdn.ravenquest.io/assets/151-Bvn_bacn.png",
+      "name": "Suave Suitor",
+      "nameNormalized": "suave_suitor",
+      "image": "https://cdn.ravenquest.io/assets/466-BI8EelCv.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "mount"
+        }
+      ]
+    },
+    {
+      "name": "Gallant Cluckstrider",
+      "nameNormalized": "gallant_cluckstrider",
+      "image": "https://cdn.ravenquest.io/assets/449-BwLLsyoY.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "mount"
+        }
+      ]
+    },
+    {
+      "name": "Cluckstrider",
+      "nameNormalized": "cluckstrider",
+      "image": "https://cdn.ravenquest.io/assets/448-CwxH9HfS.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "mount"
+        }
+      ]
+    },
+    {
+      "name": "The Beacon Monfae",
+      "nameNormalized": "the_beacon_monfae",
+      "image": "https://cdn.ravenquest.io/assets/248-DeoZjnhD.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Ashen Grave Runner",
+      "nameNormalized": "ashen_grave_runner",
+      "image": "https://cdn.ravenquest.io/assets/447-DzqavMRw.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "mount"
+        }
+      ]
+    },
+    {
+      "name": "Goldfish Aquarium",
+      "nameNormalized": "goldfish_aquarium",
+      "image": "https://cdn.ravenquest.io/assets/255-CXCQW5bT.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Valkyrie Wagon",
+      "nameNormalized": "valkyrie_wagon",
+      "image": "https://cdn.ravenquest.io/assets/259-Bq2HrrB0.png",
       "description": null,
       "attributes": [
         {
           "trait_type": "Type",
           "value": "wagon"
+        }
+      ]
+    },
+    {
+      "name": "Cinderskull Companion",
+      "nameNormalized": "cinderskull_companion",
+      "image": "https://cdn.ravenquest.io/assets/170--0eKGOy9.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
+        }
+      ]
+    },
+    {
+      "name": "Parrot Companion",
+      "nameNormalized": "parrot_companion",
+      "image": "https://cdn.ravenquest.io/assets/254-yBCPCTPE.png",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Type",
+          "value": "decoration"
         }
       ]
     },
@@ -219,18 +651,6 @@
         {
           "trait_type": "Type",
           "value": "ship"
-        }
-      ]
-    },
-    {
-      "name": "RavenIdle Banner",
-      "nameNormalized": "ravenidle_banner",
-      "image": "https://cdn.ravenquest.io/assets/293-BAB_f_hf.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
         }
       ]
     },
@@ -250,18 +670,6 @@
       "name": "Ringbearer Munk",
       "nameNormalized": "ringbearer_munk",
       "image": "https://cdn.ravenquest.io/assets/200-B48J5WR6.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Winter Cleaver",
-      "nameNormalized": "winter_cleaver",
-      "image": "https://cdn.ravenquest.io/assets/250-DFEFe56s.png",
       "description": null,
       "attributes": [
         {
@@ -343,90 +751,6 @@
       ]
     },
     {
-      "name": "Treasures Below Twitch Chest",
-      "nameNormalized": "treasures_below_twitch_chest",
-      "image": "https://cdn.ravenquest.io/assets/302-BfZE7C7d.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Treasures Below Launch Chest",
-      "nameNormalized": "treasures_below_launch_chest",
-      "image": "https://cdn.ravenquest.io/assets/303-DI19sHVY.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Valkyrie Ship",
-      "nameNormalized": "valkyrie_ship",
-      "image": "https://cdn.ravenquest.io/assets/258-B7xY8Yq6.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "ship"
-        }
-      ]
-    },
-    {
-      "name": "RavenIdle Warrior Plushie",
-      "nameNormalized": "ravenidle_warrior_plushie",
-      "image": "https://cdn.ravenquest.io/assets/294-9gkTRQy4.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Spring Blossom",
-      "nameNormalized": "spring_blossom",
-      "image": "https://cdn.ravenquest.io/assets/251-REjsYGmP.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Spring Sun",
-      "nameNormalized": "spring_sun",
-      "image": "https://cdn.ravenquest.io/assets/249-BIaxyoyw.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Gallant Cluckstrider",
-      "nameNormalized": "gallant_cluckstrider",
-      "image": "https://cdn.ravenquest.io/assets/449-BwLLsyoY.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
-        }
-      ]
-    },
-    {
       "name": "Noble Moa Armor",
       "nameNormalized": "noble_moa_armor",
       "image": "https://cdn.ravenquest.io/assets/150-B2rl9EWa.png",
@@ -435,42 +759,6 @@
         {
           "trait_type": "Type",
           "value": "mount"
-        }
-      ]
-    },
-    {
-      "name": "Adventurer Moa Armor",
-      "nameNormalized": "adventurer_moa_armor",
-      "image": "https://cdn.ravenquest.io/assets/158-TGK3rTU9.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
-        }
-      ]
-    },
-    {
-      "name": "German Shepherd Companion",
-      "nameNormalized": "german_shepherd_companion",
-      "image": "https://cdn.ravenquest.io/assets/139-BghLmQAV.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Orange Cat Companion",
-      "nameNormalized": "orange_cat_companion",
-      "image": "https://cdn.ravenquest.io/assets/136-C1B8dvgg.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
         }
       ]
     },
@@ -487,33 +775,9 @@
       ]
     },
     {
-      "name": "Dark Ritualist Wagon",
-      "nameNormalized": "dark_ritualist_wagon",
-      "image": "https://cdn.ravenquest.io/assets/2-DtyGix9_.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "wagon"
-        }
-      ]
-    },
-    {
       "name": "War Rider Banner",
       "nameNormalized": "war_rider_banner",
       "image": "https://cdn.ravenquest.io/assets/198-CWn27dWR.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Valkyrie Plushie",
-      "nameNormalized": "valkyrie_plushie",
-      "image": "https://cdn.ravenquest.io/assets/252-g35OI4UL.png",
       "description": null,
       "attributes": [
         {
@@ -535,18 +799,6 @@
       ]
     },
     {
-      "name": "Golden Retriever Companion",
-      "nameNormalized": "golden_retriever_companion",
-      "image": "https://cdn.ravenquest.io/assets/141-DmoFj5Yl.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
       "name": "Valkyrie Moa Armor",
       "nameNormalized": "valkyrie_moa_armor",
       "image": "https://cdn.ravenquest.io/assets/257-CJMbOcrk.png",
@@ -559,66 +811,6 @@
       ]
     },
     {
-      "name": "Parrot Companion",
-      "nameNormalized": "parrot_companion",
-      "image": "https://cdn.ravenquest.io/assets/254-yBCPCTPE.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Cinderskull Companion",
-      "nameNormalized": "cinderskull_companion",
-      "image": "https://cdn.ravenquest.io/assets/170--0eKGOy9.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Octopus Aquarium",
-      "nameNormalized": "octopus_aquarium",
-      "image": "https://cdn.ravenquest.io/assets/256-Bm_rEfkv.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Valkyrie Statue",
-      "nameNormalized": "valkyrie_statue",
-      "image": "https://cdn.ravenquest.io/assets/253-BbDAcB-6.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Goldfish Aquarium",
-      "nameNormalized": "goldfish_aquarium",
-      "image": "https://cdn.ravenquest.io/assets/255-CXCQW5bT.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
       "name": "Emberveil Socks",
       "nameNormalized": "emberveil_socks",
       "image": "https://cdn.ravenquest.io/assets/213-BCRu7Mpf.png",
@@ -627,42 +819,6 @@
         {
           "trait_type": "Type",
           "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Dark Ritualist Moa Armor",
-      "nameNormalized": "dark_ritualist_moa_armor",
-      "image": "https://cdn.ravenquest.io/assets/5-DBLMQ9pp.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
-        }
-      ]
-    },
-    {
-      "name": "Trailblazer Moa Armor",
-      "nameNormalized": "trailblazer_moa_armor",
-      "image": "https://cdn.ravenquest.io/assets/153-8Jq6KNgc.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
-        }
-      ]
-    },
-    {
-      "name": "War Rider Wagon",
-      "nameNormalized": "war_rider_wagon",
-      "image": "https://cdn.ravenquest.io/assets/196-DZNGY5In.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "wagon"
         }
       ]
     },
@@ -691,18 +847,6 @@
       ]
     },
     {
-      "name": "Cluckstrider",
-      "nameNormalized": "cluckstrider",
-      "image": "https://cdn.ravenquest.io/assets/448-CwxH9HfS.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
-        }
-      ]
-    },
-    {
       "name": "Lizard Labs Companion",
       "nameNormalized": "lizard_labs_companion",
       "image": "https://cdn.ravenquest.io/assets/234-D5cV0MaE.png",
@@ -715,153 +859,9 @@
       ]
     },
     {
-      "name": "Valkyrie Wagon",
-      "nameNormalized": "valkyrie_wagon",
-      "image": "https://cdn.ravenquest.io/assets/259-Bq2HrrB0.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "wagon"
-        }
-      ]
-    },
-    {
-      "name": "Carnival Moa Armor",
-      "nameNormalized": "carnival_moa_armor",
-      "image": "https://cdn.ravenquest.io/assets/162-K8yKM_LQ.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
-        }
-      ]
-    },
-    {
-      "name": "Carnival Ship",
-      "nameNormalized": "carnival_ship",
-      "image": "https://cdn.ravenquest.io/assets/161-COh-q9-v.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "ship"
-        }
-      ]
-    },
-    {
-      "name": "Carnival Bandit Companion",
-      "nameNormalized": "carnival_bandit_companion",
-      "image": "https://cdn.ravenquest.io/assets/164-Daq2gSEC.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Carnival Wagon",
-      "nameNormalized": "carnival_wagon",
-      "image": "https://cdn.ravenquest.io/assets/160-BumOh3IA.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "wagon"
-        }
-      ]
-    },
-    {
-      "name": "The Beacon Monfae",
-      "nameNormalized": "the_beacon_monfae",
-      "image": "https://cdn.ravenquest.io/assets/248-DeoZjnhD.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Ashen Grave Runner",
-      "nameNormalized": "ashen_grave_runner",
-      "image": "https://cdn.ravenquest.io/assets/447-DzqavMRw.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
-        }
-      ]
-    },
-    {
-      "name": "Trailblazer Ship",
-      "nameNormalized": "trailblazer_ship",
-      "image": "https://cdn.ravenquest.io/assets/152-Otj67vVt.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "ship"
-        }
-      ]
-    },
-    {
-      "name": "War Rider Moa",
-      "nameNormalized": "war_rider_moa",
-      "image": "https://cdn.ravenquest.io/assets/195-Cutv_hfK.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "mount"
-        }
-      ]
-    },
-    {
       "name": "Tournament Moa Companion",
       "nameNormalized": "tournament_moa_companion",
       "image": "https://cdn.ravenquest.io/assets/216-DExpgxVq.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Trailblazer Moa Plushie",
-      "nameNormalized": "trailblazer_moa_plushie",
-      "image": "https://cdn.ravenquest.io/assets/155-D3hOzWl-.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "Bandit Plushie",
-      "nameNormalized": "bandit_plushie",
-      "image": "https://cdn.ravenquest.io/assets/450-BN4O0M_5.png",
-      "description": null,
-      "attributes": [
-        {
-          "trait_type": "Type",
-          "value": "decoration"
-        }
-      ]
-    },
-    {
-      "name": "XPLore Guild Companion",
-      "nameNormalized": "xplore_guild_companion",
-      "image": "https://cdn.ravenquest.io/assets/300-BgrqPHHi.png",
       "description": null,
       "attributes": [
         {
@@ -913,304 +913,304 @@
     "floorCurrency": "IMX",
     "recentSales": [
       {
-        "tokenId": "1025",
-        "price": 0.68,
+        "tokenId": "1275",
+        "price": 2.73,
         "currency": "USDC",
-        "timestamp": "2026-04-04T01:20:30.639728Z"
+        "timestamp": "2026-05-06T03:18:15.608334Z"
       },
       {
-        "tokenId": "4825",
-        "price": 0.69,
+        "tokenId": "1483",
+        "price": 1.06,
         "currency": "USDC",
-        "timestamp": "2026-04-04T08:12:10.475766Z"
+        "timestamp": "2026-05-04T17:23:00.533793Z"
       },
       {
-        "tokenId": "5829",
-        "price": 0.69,
+        "tokenId": "2519",
+        "price": 1.96,
         "currency": "USDC",
-        "timestamp": "2026-04-02T13:46:47.692968Z"
+        "timestamp": "2026-05-04T17:23:00.710645Z"
       },
       {
-        "tokenId": "6374",
-        "price": 1.14,
+        "tokenId": "3133",
+        "price": 3.49,
         "currency": "USDC",
-        "timestamp": "2026-04-04T08:06:26.499824Z"
+        "timestamp": "2026-05-05T17:42:39.606029Z"
       },
       {
-        "tokenId": "6380",
-        "price": 0.7,
+        "tokenId": "4266",
+        "price": 2.62,
         "currency": "USDC",
-        "timestamp": "2026-04-02T13:47:09.594696Z"
+        "timestamp": "2026-05-06T03:23:09.679289Z"
       },
       {
-        "tokenId": "6382",
-        "price": 0.67,
+        "tokenId": "4350",
+        "price": 1.95,
         "currency": "USDC",
-        "timestamp": "2026-04-03T23:21:56.522267Z"
+        "timestamp": "2026-05-02T16:55:06.25322Z"
       },
       {
-        "tokenId": "6384",
-        "price": 0.69,
+        "tokenId": "4468",
+        "price": 1.05,
         "currency": "USDC",
-        "timestamp": "2026-04-02T13:46:23.582364Z"
+        "timestamp": "2026-05-04T17:23:01.487838Z"
       },
       {
-        "tokenId": "6385",
-        "price": 0.7,
+        "tokenId": "5888",
+        "price": 1.53,
         "currency": "USDC",
-        "timestamp": "2026-04-04T08:12:58.573416Z"
+        "timestamp": "2026-05-04T17:23:00.864544Z"
       },
       {
-        "tokenId": "10482",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-03-31T22:12:17.315519Z"
-      },
-      {
-        "tokenId": "10892",
-        "price": 1.04,
+        "tokenId": "6797",
+        "price": 1.95,
         "currency": "USDC",
-        "timestamp": "2026-04-02T06:10:07.039065Z"
+        "timestamp": "2026-05-04T17:23:00.749881Z"
       },
       {
-        "tokenId": "10976",
-        "price": 2.04,
+        "tokenId": "9411",
+        "price": 2441860000,
         "currency": "USDC",
-        "timestamp": "2026-04-04T08:10:16.516343Z"
+        "timestamp": "2026-05-02T21:47:29.167537Z"
       },
       {
-        "tokenId": "11294",
-        "price": 1.54,
+        "tokenId": "11012",
+        "price": 0.55,
         "currency": "USDC",
-        "timestamp": "2026-04-04T08:07:03.126037Z"
+        "timestamp": "2026-05-01T20:53:26.113102Z"
       },
       {
-        "tokenId": "12789",
-        "price": 1.12,
-        "currency": "USDC",
-        "timestamp": "2026-04-03T23:48:00.654818Z"
-      },
-      {
-        "tokenId": "12816",
-        "price": 1.7,
-        "currency": "USDC",
-        "timestamp": "2026-04-04T08:09:34.582114Z"
-      },
-      {
-        "tokenId": "13427",
-        "price": 1.12,
-        "currency": "USDC",
-        "timestamp": "2026-04-01T18:11:01.098315Z"
-      },
-      {
-        "tokenId": "13581",
+        "tokenId": "11361",
         "price": 1.67,
         "currency": "USDC",
-        "timestamp": "2026-04-04T08:08:44.577453Z"
+        "timestamp": "2026-05-04T17:23:01.54301Z"
       },
       {
-        "tokenId": "13700",
-        "price": 2.75,
+        "tokenId": "11574",
+        "price": 1.37,
         "currency": "USDC",
-        "timestamp": "2026-04-04T01:09:38.658222Z"
+        "timestamp": "2026-05-04T17:23:00.468075Z"
       },
       {
-        "tokenId": "13899",
-        "price": 5.23,
+        "tokenId": "12569",
+        "price": 1.94,
         "currency": "USDC",
-        "timestamp": "2026-04-02T17:07:39.674123Z"
+        "timestamp": "2026-05-02T16:55:06.45949Z"
       },
       {
-        "tokenId": "14832",
-        "price": 1.45,
-        "currency": "USDC",
-        "timestamp": "2026-04-03T15:15:30.537304Z"
-      },
-      {
-        "tokenId": "14832",
-        "price": 0.71,
-        "currency": "USDC",
-        "timestamp": "2026-04-03T15:15:24.593722Z"
-      },
-      {
-        "tokenId": "15023",
-        "price": 0.7,
-        "currency": "USDC",
-        "timestamp": "2026-03-31T17:16:59.226849Z"
-      },
-      {
-        "tokenId": "15126",
-        "price": 0,
-        "currency": "QUEST",
-        "timestamp": "2026-03-31T22:12:49.338092Z"
-      },
-      {
-        "tokenId": "15489",
-        "price": 0.61,
-        "currency": "USDC",
-        "timestamp": "2026-04-03T15:36:36.685502Z"
-      },
-      {
-        "tokenId": "15590",
+        "tokenId": "13471",
         "price": 1.54,
         "currency": "USDC",
-        "timestamp": "2026-04-04T08:08:01.050757Z"
+        "timestamp": "2026-05-04T17:23:00.419489Z"
       },
       {
-        "tokenId": "16226",
-        "price": 7.73,
+        "tokenId": "14080",
+        "price": 0.48,
         "currency": "USDC",
-        "timestamp": "2026-03-31T19:37:43.335194Z"
+        "timestamp": "2026-05-04T17:23:00.792791Z"
       },
       {
-        "tokenId": "16272",
-        "price": 0.64,
+        "tokenId": "14217",
+        "price": 109.65,
         "currency": "USDC",
-        "timestamp": "2026-04-01T23:07:44.90875Z"
+        "timestamp": "2026-05-04T22:46:20.117382Z"
       },
       {
-        "tokenId": "16273",
+        "tokenId": "14390",
+        "price": 0.57,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:01.510208Z"
+      },
+      {
+        "tokenId": "14673",
+        "price": 0.86,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:00.560473Z"
+      },
+      {
+        "tokenId": "14941",
+        "price": 0.61,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:00.343216Z"
+      },
+      {
+        "tokenId": "15517",
+        "price": 48.25,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T20:11:44.196083Z"
+      },
+      {
+        "tokenId": "15596",
+        "price": 109.65,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T22:45:40.176279Z"
+      },
+      {
+        "tokenId": "15696",
+        "price": 2500000000,
+        "currency": "USDC",
+        "timestamp": "2026-05-03T13:26:54.103848Z"
+      },
+      {
+        "tokenId": "15900",
+        "price": 0.65,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:00.791323Z"
+      },
+      {
+        "tokenId": "16195",
         "price": 0.34,
         "currency": "USDC",
-        "timestamp": "2026-04-02T05:31:12.939529Z"
+        "timestamp": "2026-05-01T20:09:22.102985Z"
       },
       {
-        "tokenId": "16274",
-        "price": 0.34,
+        "tokenId": "16271",
+        "price": 0.47,
         "currency": "USDC",
-        "timestamp": "2026-04-03T05:17:52.483907Z"
+        "timestamp": "2026-05-01T20:52:06.199851Z"
       },
       {
-        "tokenId": "16332",
-        "price": 0.6,
+        "tokenId": "16477",
+        "price": 0.47,
         "currency": "USDC",
-        "timestamp": "2026-04-02T05:58:17.025285Z"
+        "timestamp": "2026-05-05T12:45:00.706545Z"
       },
       {
-        "tokenId": "16467",
-        "price": 0.34,
+        "tokenId": "16932",
+        "price": 6.16,
         "currency": "USDC",
-        "timestamp": "2026-04-03T15:36:36.679039Z"
+        "timestamp": "2026-05-02T06:20:38.030945Z"
       },
       {
-        "tokenId": "16468",
-        "price": 0.34,
+        "tokenId": "16964",
+        "price": 1.73,
         "currency": "USDC",
-        "timestamp": "2026-04-01T16:43:29.935446Z"
+        "timestamp": "2026-05-04T17:23:15.550668Z"
       },
       {
-        "tokenId": "16469",
-        "price": 0.64,
+        "tokenId": "17059",
+        "price": 0.26,
         "currency": "USDC",
-        "timestamp": "2026-04-02T05:57:31.053221Z"
+        "timestamp": "2026-05-02T06:10:50.091387Z"
       },
       {
-        "tokenId": "16472",
-        "price": 0.64,
-        "currency": "USDC",
-        "timestamp": "2026-04-01T16:45:34.954634Z"
-      },
-      {
-        "tokenId": "17019",
-        "price": 0.6,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T05:58:32.94975Z"
-      },
-      {
-        "tokenId": "17032",
-        "price": 0.44,
-        "currency": "USDC",
-        "timestamp": "2026-03-31T22:10:23.200334Z"
-      },
-      {
-        "tokenId": "17098",
-        "price": 4.66,
-        "currency": "ERC20",
-        "timestamp": "2026-04-02T18:22:25.494232Z"
-      },
-      {
-        "tokenId": "17107",
-        "price": 78.94,
-        "currency": "USDC",
-        "timestamp": "2026-04-01T12:12:34.644203Z"
-      },
-      {
-        "tokenId": "17156",
-        "price": 1.98,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T06:09:33.038564Z"
-      },
-      {
-        "tokenId": "17158",
-        "price": 0.7,
-        "currency": "USDC",
-        "timestamp": "2026-04-04T14:32:22.530341Z"
-      },
-      {
-        "tokenId": "17164",
-        "price": 0.69,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T05:52:40.002025Z"
-      },
-      {
-        "tokenId": "17188",
-        "price": 5.2,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T06:08:24.952568Z"
-      },
-      {
-        "tokenId": "17189",
-        "price": 0.33,
-        "currency": "USDC",
-        "timestamp": "2026-04-02T05:51:55.037325Z"
-      },
-      {
-        "tokenId": "17200",
-        "price": 1.23,
-        "currency": "USDC",
-        "timestamp": "2026-03-31T17:34:37.211876Z"
-      },
-      {
-        "tokenId": "17201",
-        "price": 0.8,
-        "currency": "USDC",
-        "timestamp": "2026-03-31T17:34:17.297592Z"
-      },
-      {
-        "tokenId": "17209",
+        "tokenId": "17182",
         "price": 0.87,
         "currency": "USDC",
-        "timestamp": "2026-04-02T06:05:27.192051Z"
+        "timestamp": "2026-05-04T17:23:00.710615Z"
       },
       {
-        "tokenId": "17236",
-        "price": 0.29,
+        "tokenId": "17222",
+        "price": 1.36,
         "currency": "USDC",
-        "timestamp": "2026-04-03T20:58:57.661681Z"
+        "timestamp": "2026-05-04T17:23:00.832201Z"
       },
       {
-        "tokenId": "17243",
-        "price": 0.62,
+        "tokenId": "17223",
+        "price": 3.2,
         "currency": "USDC",
-        "timestamp": "2026-04-03T15:36:36.632334Z"
+        "timestamp": "2026-05-06T03:21:35.603815Z"
       },
       {
-        "tokenId": "17247",
+        "tokenId": "17252",
+        "price": 0.47,
+        "currency": "USDC",
+        "timestamp": "2026-05-01T20:57:02.458265Z"
+      },
+      {
+        "tokenId": "17332",
+        "price": 0.35,
+        "currency": "USDC",
+        "timestamp": "2026-05-03T21:25:52.192898Z"
+      },
+      {
+        "tokenId": "17394",
+        "price": 0.25,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:21:10.151795Z"
+      },
+      {
+        "tokenId": "17397",
+        "price": 0.36,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:00.717872Z"
+      },
+      {
+        "tokenId": "17427",
+        "price": 0.6,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:00.618407Z"
+      },
+      {
+        "tokenId": "17465",
+        "price": 5.26,
+        "currency": "USDC",
+        "timestamp": "2026-05-02T06:20:04.142508Z"
+      },
+      {
+        "tokenId": "17471",
+        "price": 2.29,
+        "currency": "USDC",
+        "timestamp": "2026-05-06T03:19:17.542034Z"
+      },
+      {
+        "tokenId": "17472",
+        "price": 5.88,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:01.367122Z"
+      },
+      {
+        "tokenId": "17476",
+        "price": 0.39,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:00.665913Z"
+      },
+      {
+        "tokenId": "17477",
         "price": 0.61,
         "currency": "USDC",
-        "timestamp": "2026-04-03T23:22:56.627345Z"
+        "timestamp": "2026-05-04T17:23:01.607438Z"
       },
       {
-        "tokenId": "17250",
-        "price": 0.61,
+        "tokenId": "17478",
+        "price": 1.75,
         "currency": "USDC",
-        "timestamp": "2026-04-03T15:36:36.553597Z"
+        "timestamp": "2026-05-04T17:23:01.240799Z"
       },
       {
-        "tokenId": "17255",
-        "price": 0.58,
+        "tokenId": "17480",
+        "price": 0.57,
         "currency": "USDC",
-        "timestamp": "2026-04-03T15:36:36.685799Z"
+        "timestamp": "2026-05-04T17:23:00.544019Z"
+      },
+      {
+        "tokenId": "17485",
+        "price": 0.44,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:01.405856Z"
+      },
+      {
+        "tokenId": "17487",
+        "price": 1.75,
+        "currency": "USDC",
+        "timestamp": "2026-05-03T17:37:06.179838Z"
+      },
+      {
+        "tokenId": "17499",
+        "price": 0.88,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:01.305357Z"
+      },
+      {
+        "tokenId": "17500",
+        "price": 0.78,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:00.940168Z"
+      },
+      {
+        "tokenId": "17501",
+        "price": 1.93,
+        "currency": "USDC",
+        "timestamp": "2026-05-04T17:23:00.276883Z"
       }
     ]
   }
