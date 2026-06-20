@@ -1,30 +1,30 @@
 {
   "collections": {
     "ravencards": {
-      "lastScraped": "2026-04-05T05:26:51.890Z",
+      "lastScraped": "2026-06-20T04:42:17.993Z",
       "marketplace": true,
       "types": 240
     },
     "cosmetics": {
-      "lastScraped": "2026-04-05T05:26:51.890Z",
+      "lastScraped": "2026-06-20T04:42:17.993Z",
       "marketplace": true,
-      "types": 75
+      "types": 94
     },
     "land": {
-      "lastScraped": "2026-04-05T05:26:51.890Z",
+      "lastScraped": "2026-06-20T04:42:17.993Z",
       "marketplace": true,
-      "samples": 3789
+      "samples": 3800
     },
     "munks": {
-      "lastScraped": "2026-04-05T05:26:51.890Z",
+      "lastScraped": "2026-06-20T04:42:17.993Z",
       "marketplace": true,
       "samples": 917
     },
     "moas": {
-      "lastScraped": "2026-04-05T05:26:51.890Z",
+      "lastScraped": "2026-06-20T04:42:17.993Z",
       "marketplace": true,
-      "samples": 3817
+      "samples": 3903
     }
   },
-  "lastRun": "2026-04-05T05:26:51.890Z"
+  "lastRun": "2026-06-20T04:42:17.993Z"
 }
