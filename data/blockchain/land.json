@@ -5,7 +5,7 @@
     "chain": "imtbl-zkevm-mainnet",
     "type": "unique"
   },
-  "totalScanned": 3789,
+  "totalScanned": 3800,
   "sampleTokens": [
     {
       "tokenId": "1",
@@ -12952,15 +12952,31 @@
         },
         {
           "trait_type": "Claimed",
-          "value": "false"
+          "value": "true"
         },
         {
           "trait_type": "Rarity Rolled",
-          "value": "false"
+          "value": "true"
         },
         {
           "trait_type": "Perk Rolled",
-          "value": "false"
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "7003"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4510"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Herb Fields"
         }
       ]
     },
@@ -14180,7 +14196,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Prosperous Land"
+          "value": "Ore Fields"
         }
       ]
     },
@@ -30486,15 +30502,31 @@
         },
         {
           "trait_type": "Claimed",
-          "value": "false"
+          "value": "true"
         },
         {
           "trait_type": "Rarity Rolled",
-          "value": "false"
+          "value": "true"
         },
         {
           "trait_type": "Perk Rolled",
-          "value": "false"
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "5386"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4201"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Common"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Herb Fields"
         }
       ]
     },
@@ -33971,7 +34003,7 @@
         },
         {
           "trait_type": "Perk Rolled",
-          "value": "false"
+          "value": "true"
         },
         {
           "trait_type": "Position X",
@@ -33984,6 +34016,10 @@
         {
           "trait_type": "Rarity",
           "value": "Common"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Smithing Grounds"
         }
       ]
     },
@@ -35634,7 +35670,7 @@
         },
         {
           "trait_type": "Claimed",
-          "value": "false"
+          "value": "true"
         },
         {
           "trait_type": "Rarity Rolled",
@@ -35643,6 +35679,14 @@
         {
           "trait_type": "Perk Rolled",
           "value": "false"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "5386"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4213"
         }
       ]
     },
@@ -72466,7 +72510,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Mixing Grounds"
+          "value": "Angler's Province"
         }
       ]
     },
@@ -74497,7 +74541,7 @@
         },
         {
           "trait_type": "Claimed",
-          "value": "false"
+          "value": "true"
         },
         {
           "trait_type": "Rarity Rolled",
@@ -74506,6 +74550,14 @@
         {
           "trait_type": "Perk Rolled",
           "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "7045"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4481"
         },
         {
           "trait_type": "Rarity",
@@ -84237,7 +84289,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Ore Fields"
+          "value": "Seasoning Grounds"
         }
       ]
     },
@@ -99690,7 +99742,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Prosperous Land"
+          "value": "Treasure Troves"
         }
       ]
     },
@@ -110397,7 +110449,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Fishing Ponds"
+          "value": "Treasure Troves"
         }
       ]
     },
@@ -110438,7 +110490,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Herb Fields"
+          "value": "Ore Fields"
         }
       ]
     },
@@ -116482,7 +116534,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Livestock Boon"
+          "value": "Mixing Grounds"
         }
       ]
     },
@@ -132759,7 +132811,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Timber Boon"
+          "value": "Mixing Grounds"
         }
       ]
     },
@@ -141022,7 +141074,7 @@
         },
         {
           "trait_type": "Perk",
-          "value": "Treasure Troves"
+          "value": "Threading Grounds"
         }
       ]
     },
@@ -144787,6 +144839,393 @@
           "value": "4342"
         }
       ]
+    },
+    {
+      "tokenId": "3790",
+      "name": "Medium Estate",
+      "nameNormalized": "medium_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-2-DzRG7dIZ.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Medium Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "false"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "false"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "tokenId": "3791",
+      "name": "Large Estate",
+      "nameNormalized": "large_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-3-C-sUidCf.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Large Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "true"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "6923"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4869"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Forest Fields"
+        }
+      ]
+    },
+    {
+      "tokenId": "3792",
+      "name": "Large Estate",
+      "nameNormalized": "large_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-3-C-sUidCf.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Large Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "false"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "false"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "tokenId": "3793",
+      "name": "Medium Estate",
+      "nameNormalized": "medium_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-2-DzRG7dIZ.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Medium Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "true"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "6934"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4450"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Threading Grounds"
+        }
+      ]
+    },
+    {
+      "tokenId": "3794",
+      "name": "Medium Estate",
+      "nameNormalized": "medium_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-2-DzRG7dIZ.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Medium Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "true"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "6143"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "5417"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Uncommon"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Sawing Grounds"
+        }
+      ]
+    },
+    {
+      "tokenId": "3795",
+      "name": "Stronghold",
+      "nameNormalized": "stronghold",
+      "image": "https://cdn.ravenquest.io/assets/tier-4-CmGdg3Ms.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Stronghold"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "true"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "6878"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4855"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Arcane"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Prosperous Land"
+        }
+      ]
+    },
+    {
+      "tokenId": "3796",
+      "name": "Large Estate",
+      "nameNormalized": "large_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-3-C-sUidCf.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Large Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "true"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "6728"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "5117"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Grand"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Livestock Boon"
+        }
+      ]
+    },
+    {
+      "tokenId": "3797",
+      "name": "Stronghold",
+      "nameNormalized": "stronghold",
+      "image": "https://cdn.ravenquest.io/assets/tier-4-CmGdg3Ms.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Stronghold"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "false"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "false"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "false"
+        }
+      ]
+    },
+    {
+      "tokenId": "3798",
+      "name": "Large Estate",
+      "nameNormalized": "large_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-3-C-sUidCf.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Large Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "true"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "6898"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4843"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Rare"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Herb Fields"
+        }
+      ]
+    },
+    {
+      "tokenId": "3799",
+      "name": "Stronghold",
+      "nameNormalized": "stronghold",
+      "image": "https://cdn.ravenquest.io/assets/tier-4-CmGdg3Ms.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Stronghold"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "true"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "true"
+        },
+        {
+          "trait_type": "Position X",
+          "value": "5296"
+        },
+        {
+          "trait_type": "Position Y",
+          "value": "4140"
+        },
+        {
+          "trait_type": "Rarity",
+          "value": "Mythic"
+        },
+        {
+          "trait_type": "Perk",
+          "value": "Mixing Grounds"
+        }
+      ]
+    },
+    {
+      "tokenId": "3800",
+      "name": "Large Estate",
+      "nameNormalized": "large_estate",
+      "image": "https://cdn.ravenquest.io/assets/tier-3-C-sUidCf.webp",
+      "description": null,
+      "attributes": [
+        {
+          "trait_type": "Tier",
+          "value": "Large Estate"
+        },
+        {
+          "trait_type": "Claimed",
+          "value": "false"
+        },
+        {
+          "trait_type": "Rarity Rolled",
+          "value": "false"
+        },
+        {
+          "trait_type": "Perk Rolled",
+          "value": "false"
+        }
+      ]
     }
   ],
   "attributeSummary": {
@@ -145710,6 +146149,7 @@
       "5383",
       "5384",
       "5385",
+      "5386",
       "5387",
       "5388",
       "5389",
@@ -146447,6 +146887,7 @@
       "6722",
       "6724",
       "6726",
+      "6728",
       "6730",
       "6732",
       "6737",
@@ -146515,6 +146956,7 @@
       "6873",
       "6874",
       "6875",
+      "6878",
       "6880",
       "6882",
       "6888",
@@ -146532,6 +146974,7 @@
       "6918",
       "6920",
       "6922",
+      "6923",
       "6925",
       "6926",
       "6927",
@@ -146540,6 +146983,7 @@
       "6930",
       "6932",
       "6933",
+      "6934",
       "6936",
       "6937",
       "6939",
@@ -146571,6 +147015,7 @@
       "7028",
       "7043",
       "7044",
+      "7045",
       "7058"
     ],
     "Position Y": [
@@ -146935,6 +147380,7 @@
       "4504",
       "4505",
       "4506",
+      "4510",
       "4511",
       "4512",
       "4513",
@@ -147193,6 +147639,7 @@
       "4848",
       "4850",
       "4851",
+      "4855",
       "4856",
       "4859",
       "4860",
@@ -148044,309 +148491,309 @@
     ]
   },
   "marketplace": {
-    "activeListings": 118,
+    "activeListings": 112,
     "floorPrice": 15788.6,
     "floorCurrency": "USDC",
     "recentSales": [
       {
-        "tokenId": "49",
-        "price": 52.63,
-        "currency": "USDC",
-        "timestamp": "2026-04-04T21:03:22.52693Z"
-      },
-      {
-        "tokenId": "75",
-        "price": 63.16,
-        "currency": "USDC",
-        "timestamp": "2026-03-20T03:11:48.978758Z"
-      },
-      {
         "tokenId": "239",
-        "price": 39.47,
-        "currency": "USDC",
-        "timestamp": "2026-04-01T06:45:42.603636Z"
-      },
-      {
-        "tokenId": "526",
-        "price": 111.4,
-        "currency": "USDC",
-        "timestamp": "2026-03-20T20:57:43.508682Z"
-      },
-      {
-        "tokenId": "527",
-        "price": 100,
-        "currency": "USDC",
-        "timestamp": "2026-03-10T15:59:04.83729Z"
-      },
-      {
-        "tokenId": "666",
-        "price": 140.26,
-        "currency": "USDC",
-        "timestamp": "2026-03-21T16:47:36.616006Z"
-      },
-      {
-        "tokenId": "718",
-        "price": 37.5,
-        "currency": "USDC",
-        "timestamp": "2026-03-27T02:52:20.44091Z"
-      },
-      {
-        "tokenId": "730",
-        "price": 62.28,
-        "currency": "USDC",
-        "timestamp": "2026-03-14T04:03:59.416065Z"
-      },
-      {
-        "tokenId": "856",
-        "price": 105.26,
-        "currency": "USDC",
-        "timestamp": "2026-03-26T15:02:30.23046Z"
-      },
-      {
-        "tokenId": "868",
-        "price": 37.51,
-        "currency": "USDC",
-        "timestamp": "2026-03-30T19:00:46.9723Z"
-      },
-      {
-        "tokenId": "930",
-        "price": 47.37,
-        "currency": "USDC",
-        "timestamp": "2026-04-01T13:25:58.792203Z"
-      },
-      {
-        "tokenId": "1008",
-        "price": 110.53,
-        "currency": "USDC",
-        "timestamp": "2026-03-20T20:56:47.597669Z"
-      },
-      {
-        "tokenId": "1071",
-        "price": 42.54,
-        "currency": "USDC",
-        "timestamp": "2026-03-31T07:29:07.496679Z"
-      },
-      {
-        "tokenId": "1143",
-        "price": 58.14,
-        "currency": "USDC",
-        "timestamp": "2026-03-18T19:39:12.589699Z"
-      },
-      {
-        "tokenId": "1161",
-        "price": 481.58,
-        "currency": "USDC",
-        "timestamp": "2026-03-21T05:51:37.621869Z"
-      },
-      {
-        "tokenId": "1169",
-        "price": 63.16,
-        "currency": "USDC",
-        "timestamp": "2026-03-11T18:39:30.816664Z"
-      },
-      {
-        "tokenId": "1177",
         "price": 42.11,
         "currency": "USDC",
-        "timestamp": "2026-03-31T03:25:03.5244Z"
+        "timestamp": "2026-06-06T16:07:33.374206Z"
       },
       {
-        "tokenId": "1180",
+        "tokenId": "328",
+        "price": 74.56,
+        "currency": "USDC",
+        "timestamp": "2026-05-29T18:10:34.795169Z"
+      },
+      {
+        "tokenId": "507",
         "price": 41.23,
         "currency": "USDC",
-        "timestamp": "2026-03-31T07:13:15.244392Z"
+        "timestamp": "2026-06-06T15:25:19.256566Z"
       },
       {
-        "tokenId": "1287",
-        "price": 37.72,
+        "tokenId": "850",
+        "price": 69.3,
         "currency": "USDC",
-        "timestamp": "2026-03-27T07:04:35.868414Z"
+        "timestamp": "2026-06-14T16:59:12.35232Z"
       },
       {
-        "tokenId": "1341",
+        "tokenId": "860",
+        "price": 35.08,
+        "currency": "USDC",
+        "timestamp": "2026-06-14T06:36:52.343021Z"
+      },
+      {
+        "tokenId": "860",
+        "price": 42.98,
+        "currency": "USDC",
+        "timestamp": "2026-06-01T11:57:52.977285Z"
+      },
+      {
+        "tokenId": "860",
+        "price": 52.61,
+        "currency": "USDC",
+        "timestamp": "2026-05-27T14:47:34.986264Z"
+      },
+      {
+        "tokenId": "1029",
+        "price": 332.46,
+        "currency": "USDC",
+        "timestamp": "2026-06-10T16:40:25.235387Z"
+      },
+      {
+        "tokenId": "1353",
+        "price": 14000000000,
+        "currency": "USDC",
+        "timestamp": "2026-06-22T17:20:57.001193Z"
+      },
+      {
+        "tokenId": "1376",
         "price": 42.11,
         "currency": "USDC",
-        "timestamp": "2026-03-28T08:13:07.569461Z"
+        "timestamp": "2026-06-07T21:19:40.239481Z"
       },
       {
-        "tokenId": "1431",
-        "price": 364.04,
+        "tokenId": "1388",
+        "price": 68.86,
         "currency": "USDC",
-        "timestamp": "2026-04-02T17:46:51.662119Z"
+        "timestamp": "2026-05-27T13:33:35.028038Z"
       },
       {
-        "tokenId": "1470",
-        "price": 37.5,
+        "tokenId": "1407",
+        "price": 48.23,
         "currency": "USDC",
-        "timestamp": "2026-03-30T19:01:05.073156Z"
+        "timestamp": "2026-06-12T22:13:08.441447Z"
       },
       {
-        "tokenId": "1592",
-        "price": 46.49,
+        "tokenId": "1425",
+        "price": 78.95,
         "currency": "USDC",
-        "timestamp": "2026-04-03T03:47:38.604431Z"
+        "timestamp": "2026-06-01T18:53:36.97702Z"
       },
       {
-        "tokenId": "1592",
-        "price": 58.14,
+        "tokenId": "1525",
+        "price": 49.82,
         "currency": "USDC",
-        "timestamp": "2026-03-21T01:28:31.631095Z"
+        "timestamp": "2026-05-30T18:19:58.713775Z"
       },
       {
-        "tokenId": "1672",
-        "price": 127.07,
+        "tokenId": "1582",
+        "price": 35.09,
         "currency": "USDC",
-        "timestamp": "2026-03-14T15:06:13.351943Z"
+        "timestamp": "2026-06-12T08:07:35.473793Z"
       },
       {
-        "tokenId": "1904",
-        "price": 106.14,
+        "tokenId": "1590",
+        "price": 42,
         "currency": "USDC",
-        "timestamp": "2026-04-04T02:24:54.668845Z"
+        "timestamp": "2026-05-28T21:21:02.916074Z"
       },
       {
-        "tokenId": "2008",
+        "tokenId": "1703",
         "price": 57.02,
         "currency": "USDC",
-        "timestamp": "2026-03-22T17:54:15.596438Z"
+        "timestamp": "2026-05-28T21:34:38.726095Z"
       },
       {
-        "tokenId": "2014",
-        "price": 42.11,
+        "tokenId": "1716",
+        "price": 65.79,
         "currency": "USDC",
-        "timestamp": "2026-04-01T23:11:19.976964Z"
+        "timestamp": "2026-06-06T16:58:03.329935Z"
       },
       {
-        "tokenId": "2101",
-        "price": 1578.07,
+        "tokenId": "1838",
+        "price": 83.33,
         "currency": "USDC",
-        "timestamp": "2026-03-26T02:34:06.071562Z"
+        "timestamp": "2026-06-11T00:29:17.226594Z"
       },
       {
-        "tokenId": "2128",
-        "price": 48.25,
+        "tokenId": "1970",
+        "price": 74.56,
         "currency": "USDC",
-        "timestamp": "2026-03-30T11:43:52.939108Z"
+        "timestamp": "2026-06-11T02:18:07.342072Z"
       },
       {
-        "tokenId": "2129",
-        "price": 48.25,
+        "tokenId": "1972",
+        "price": 228.07,
         "currency": "USDC",
-        "timestamp": "2026-03-30T11:44:12.723323Z"
+        "timestamp": "2026-06-18T02:11:51.122457Z"
       },
       {
-        "tokenId": "2133",
-        "price": 48.25,
+        "tokenId": "2064",
+        "price": 26.04,
         "currency": "USDC",
-        "timestamp": "2026-04-03T13:16:16.620261Z"
+        "timestamp": "2026-06-22T11:08:27.204679Z"
       },
       {
-        "tokenId": "2134",
-        "price": 48.25,
+        "tokenId": "2077",
+        "price": 41.23,
         "currency": "USDC",
-        "timestamp": "2026-03-24T19:14:06.271124Z"
+        "timestamp": "2026-05-28T22:04:52.708196Z"
       },
       {
-        "tokenId": "2136",
-        "price": 48.25,
+        "tokenId": "2097",
+        "price": 39.47,
         "currency": "USDC",
-        "timestamp": "2026-03-24T15:51:06.325978Z"
+        "timestamp": "2026-06-16T21:24:46.33442Z"
       },
       {
-        "tokenId": "2139",
-        "price": 48.25,
+        "tokenId": "2284",
+        "price": 76.75,
         "currency": "USDC",
-        "timestamp": "2026-04-02T03:50:17.064424Z"
+        "timestamp": "2026-05-30T04:24:32.731824Z"
       },
       {
-        "tokenId": "2168",
-        "price": 605.26,
+        "tokenId": "2387",
+        "price": 35.09,
         "currency": "USDC",
-        "timestamp": "2026-03-20T15:42:17.557086Z"
+        "timestamp": "2026-06-15T03:07:34.457487Z"
       },
       {
-        "tokenId": "2179",
-        "price": 350,
+        "tokenId": "2420",
+        "price": 38.6,
         "currency": "USDC",
-        "timestamp": "2026-03-31T03:18:53.183314Z"
+        "timestamp": "2026-06-18T06:09:56.392227Z"
       },
       {
-        "tokenId": "2263",
-        "price": 436.84,
+        "tokenId": "2451",
+        "price": 74.56,
         "currency": "USDC",
-        "timestamp": "2026-03-18T17:07:35.37681Z"
+        "timestamp": "2026-06-09T05:16:29.289508Z"
       },
       {
-        "tokenId": "2346",
-        "price": 52.63,
+        "tokenId": "2461",
+        "price": 162.79,
         "currency": "USDC",
-        "timestamp": "2026-03-22T17:52:03.835975Z"
+        "timestamp": "2026-05-27T03:47:33.045458Z"
       },
       {
-        "tokenId": "2362",
-        "price": 191,
+        "tokenId": "2461",
+        "price": 87.72,
         "currency": "USDC",
-        "timestamp": "2026-03-21T16:47:36.613695Z"
+        "timestamp": "2026-05-27T03:47:27.042861Z"
       },
       {
-        "tokenId": "2378",
-        "price": 42.54,
+        "tokenId": "2478",
+        "price": 59.65,
         "currency": "USDC",
-        "timestamp": "2026-03-30T02:29:46.855624Z"
+        "timestamp": "2026-06-21T03:02:31.028188Z"
       },
       {
-        "tokenId": "2378",
-        "price": 14.87,
+        "tokenId": "2536",
+        "price": 57.02,
         "currency": "USDC",
-        "timestamp": "2026-03-28T04:37:26.544652Z"
+        "timestamp": "2026-06-03T21:18:34.62873Z"
       },
       {
-        "tokenId": "2489",
-        "price": 109.65,
+        "tokenId": "2563",
+        "price": 69.3,
         "currency": "USDC",
-        "timestamp": "2026-03-19T14:46:02.754794Z"
+        "timestamp": "2026-06-17T01:32:42.447433Z"
       },
       {
-        "tokenId": "2802",
-        "price": 101.75,
+        "tokenId": "2585",
+        "price": 339.47,
         "currency": "USDC",
-        "timestamp": "2026-03-23T19:12:51.933975Z"
+        "timestamp": "2026-06-07T14:06:44.196283Z"
       },
       {
-        "tokenId": "2833",
-        "price": 127.91,
+        "tokenId": "2643",
+        "price": 60,
         "currency": "USDC",
-        "timestamp": "2026-03-19T11:15:34.622122Z"
+        "timestamp": "2026-06-07T01:11:52.295246Z"
       },
       {
-        "tokenId": "2845",
-        "price": 100.88,
+        "tokenId": "2685",
+        "price": 83.33,
         "currency": "USDC",
-        "timestamp": "2026-03-14T22:12:49.427831Z"
+        "timestamp": "2026-05-27T18:53:37.019292Z"
       },
       {
-        "tokenId": "2975",
-        "price": 108.77,
+        "tokenId": "2688",
+        "price": 69.3,
         "currency": "USDC",
-        "timestamp": "2026-03-14T22:13:09.376597Z"
+        "timestamp": "2026-05-26T19:40:25.210362Z"
       },
       {
-        "tokenId": "3001",
-        "price": 435.96,
+        "tokenId": "2736",
+        "price": 76.75,
         "currency": "USDC",
-        "timestamp": "2026-03-22T18:36:13.645652Z"
+        "timestamp": "2026-05-31T17:56:08.740622Z"
       },
       {
-        "tokenId": "3259",
-        "price": 131.58,
+        "tokenId": "2765",
+        "price": 60,
         "currency": "USDC",
-        "timestamp": "2026-03-21T16:47:36.594568Z"
+        "timestamp": "2026-06-03T16:49:56.718801Z"
       },
       {
-        "tokenId": "3408",
-        "price": 464.91,
+        "tokenId": "2775",
+        "price": 77.19,
         "currency": "USDC",
-        "timestamp": "2026-03-24T05:28:28.33358Z"
+        "timestamp": "2026-06-07T12:27:22.216811Z"
+      },
+      {
+        "tokenId": "2827",
+        "price": 331.58,
+        "currency": "USDC",
+        "timestamp": "2026-06-10T16:39:27.64557Z"
+      },
+      {
+        "tokenId": "2828",
+        "price": 53.51,
+        "currency": "USDC",
+        "timestamp": "2026-06-23T02:39:05.5815Z"
+      },
+      {
+        "tokenId": "2836",
+        "price": 105.26,
+        "currency": "USDC",
+        "timestamp": "2026-06-09T22:24:29.298375Z"
+      },
+      {
+        "tokenId": "2839",
+        "price": 78.95,
+        "currency": "USDC",
+        "timestamp": "2026-05-29T18:30:10.777199Z"
+      },
+      {
+        "tokenId": "2919",
+        "price": 76.75,
+        "currency": "USDC",
+        "timestamp": "2026-05-29T16:24:14.746877Z"
+      },
+      {
+        "tokenId": "2959",
+        "price": 116.3,
+        "currency": "USDC",
+        "timestamp": "2026-05-25T10:17:59.202367Z"
+      },
+      {
+        "tokenId": "2959",
+        "price": 78.95,
+        "currency": "USDC",
+        "timestamp": "2026-05-25T10:18:08.281504Z"
+      },
+      {
+        "tokenId": "3059",
+        "price": 2631.58,
+        "currency": "USDC",
+        "timestamp": "2026-06-20T01:48:44.011305Z"
+      },
+      {
+        "tokenId": "3225",
+        "price": 59.65,
+        "currency": "USDC",
+        "timestamp": "2026-06-23T18:51:35.531335Z"
+      },
+      {
+        "tokenId": "3404",
+        "price": 482.46,
+        "currency": "USDC",
+        "timestamp": "2026-05-27T01:01:39.152559Z"
       }
     ]
   }
