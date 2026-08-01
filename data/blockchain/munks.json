@@ -11942,309 +11942,309 @@
     ]
   },
   "marketplace": {
-    "activeListings": 52,
+    "activeListings": 49,
     "floorPrice": 917.43,
     "floorCurrency": "IMX",
     "recentSales": [
       {
-        "tokenId": "66",
-        "price": 83.52,
-        "currency": "USDC",
-        "timestamp": "2026-02-15T05:20:35.517355Z"
-      },
-      {
-        "tokenId": "66",
-        "price": 62.39,
-        "currency": "USDC",
-        "timestamp": "2026-02-15T05:20:31.617237Z"
-      },
-      {
-        "tokenId": "105",
-        "price": 55.05,
-        "currency": "USDC",
-        "timestamp": "2026-03-27T23:43:17.316139Z"
-      },
-      {
-        "tokenId": "105",
+        "tokenId": "35",
         "price": 64.22,
         "currency": "USDC",
-        "timestamp": "2026-02-27T19:22:06.40121Z"
+        "timestamp": "2026-05-11T00:06:39.475325Z"
       },
       {
-        "tokenId": "109",
-        "price": 62.26,
+        "tokenId": "77",
+        "price": 51.01,
         "currency": "USDC",
-        "timestamp": "2026-02-26T01:51:58.366056Z"
-      },
-      {
-        "tokenId": "115",
-        "price": 23.68,
-        "currency": "USDC",
-        "timestamp": "2026-03-28T06:17:49.708512Z"
+        "timestamp": "2026-05-11T13:27:17.544378Z"
       },
       {
         "tokenId": "115",
-        "price": 11,
+        "price": 0,
         "currency": "USDC",
-        "timestamp": "2026-02-28T21:10:24.338759Z"
+        "timestamp": "2026-04-08T00:01:20.049766Z"
       },
       {
-        "tokenId": "118",
-        "price": 68.81,
+        "tokenId": "171",
+        "price": 27.52,
         "currency": "USDC",
-        "timestamp": "2026-03-04T03:47:28.882701Z"
-      },
-      {
-        "tokenId": "139",
-        "price": 76.92,
-        "currency": "USDC",
-        "timestamp": "2026-02-18T07:25:05.857688Z"
-      },
-      {
-        "tokenId": "140",
-        "price": 52.8,
-        "currency": "USDC",
-        "timestamp": "2026-03-28T16:11:57.232415Z"
-      },
-      {
-        "tokenId": "192",
-        "price": 66.06,
-        "currency": "USDC",
-        "timestamp": "2026-03-01T23:22:22.512779Z"
+        "timestamp": "2026-04-07T21:50:52.13985Z"
       },
       {
         "tokenId": "197",
-        "price": 40,
+        "price": 22.84,
         "currency": "USDC",
-        "timestamp": "2026-03-27T17:16:06.033616Z"
+        "timestamp": "2026-04-16T12:54:06.012257Z"
       },
       {
-        "tokenId": "212",
-        "price": 44.03,
+        "tokenId": "232",
+        "price": 44.95,
         "currency": "USDC",
-        "timestamp": "2026-02-22T20:51:48.465775Z"
+        "timestamp": "2026-05-14T13:39:58.552502Z"
       },
       {
-        "tokenId": "219",
-        "price": 64.22,
+        "tokenId": "240",
+        "price": 11,
         "currency": "USDC",
-        "timestamp": "2026-02-14T01:34:30.562484Z"
+        "timestamp": "2026-05-19T18:39:25.472652Z"
       },
       {
-        "tokenId": "247",
-        "price": 59.63,
+        "tokenId": "301",
+        "price": 70.64,
         "currency": "USDC",
-        "timestamp": "2026-04-03T21:51:16.552114Z"
+        "timestamp": "2026-06-11T02:15:53.181068Z"
       },
       {
-        "tokenId": "298",
-        "price": 18.35,
+        "tokenId": "302",
+        "price": 38.53,
         "currency": "USDC",
-        "timestamp": "2026-03-29T21:02:17.31764Z"
-      },
-      {
-        "tokenId": "303",
-        "price": 50.55,
-        "currency": "USDC",
-        "timestamp": "2026-02-19T20:26:19.656971Z"
-      },
-      {
-        "tokenId": "354",
-        "price": 20.18,
-        "currency": "USDC",
-        "timestamp": "2026-03-03T14:22:53.778533Z"
+        "timestamp": "2026-04-17T18:29:58.021133Z"
       },
       {
         "tokenId": "386",
-        "price": 24.62,
+        "price": 17.58,
         "currency": "USDC",
-        "timestamp": "2026-04-01T13:28:34.66516Z"
+        "timestamp": "2026-06-20T06:18:10.065823Z"
       },
       {
-        "tokenId": "406",
-        "price": 64.22,
+        "tokenId": "386",
+        "price": 22.82,
         "currency": "USDC",
-        "timestamp": "2026-03-02T18:07:33.81366Z"
+        "timestamp": "2026-04-08T10:41:48.089509Z"
       },
       {
-        "tokenId": "433",
+        "tokenId": "402",
+        "price": 46.79,
+        "currency": "USDC",
+        "timestamp": "2026-05-13T17:11:42.568275Z"
+      },
+      {
+        "tokenId": "464",
+        "price": 33.94,
+        "currency": "USDC",
+        "timestamp": "2026-05-30T11:12:08.864193Z"
+      },
+      {
+        "tokenId": "464",
         "price": 41.28,
         "currency": "USDC",
-        "timestamp": "2026-03-27T17:16:06.094064Z"
+        "timestamp": "2026-05-24T18:42:13.187966Z"
       },
       {
-        "tokenId": "445",
-        "price": 55.05,
+        "tokenId": "475",
+        "price": 24.4,
         "currency": "USDC",
-        "timestamp": "2026-03-29T16:21:21.37565Z"
-      },
-      {
-        "tokenId": "459",
-        "price": 55.05,
-        "currency": "USDC",
-        "timestamp": "2026-02-20T05:50:30.228769Z"
-      },
-      {
-        "tokenId": "462",
-        "price": 62.39,
-        "currency": "USDC",
-        "timestamp": "2026-02-13T20:40:03.745931Z"
+        "timestamp": "2026-07-19T01:49:18.811166Z"
       },
       {
         "tokenId": "483",
-        "price": 36.7,
+        "price": 3.18,
         "currency": "USDC",
-        "timestamp": "2026-03-11T17:06:06.884485Z"
+        "timestamp": "2026-07-23T17:11:45.231496Z"
       },
       {
         "tokenId": "509",
-        "price": 22.94,
+        "price": 18.35,
         "currency": "USDC",
-        "timestamp": "2026-02-24T20:43:33.381164Z"
+        "timestamp": "2026-05-02T15:55:50.314492Z"
       },
       {
-        "tokenId": "561",
-        "price": 16,
+        "tokenId": "549",
+        "price": 17.42,
         "currency": "USDC",
-        "timestamp": "2026-02-23T11:02:23.653572Z"
+        "timestamp": "2026-06-03T16:46:34.707977Z"
       },
       {
-        "tokenId": "564",
-        "price": 69.72,
+        "tokenId": "555",
+        "price": 45.66,
         "currency": "USDC",
-        "timestamp": "2026-03-15T20:32:05.433206Z"
+        "timestamp": "2026-05-17T11:30:20.645854Z"
       },
       {
-        "tokenId": "574",
-        "price": 64.31,
+        "tokenId": "567",
+        "price": 35.78,
         "currency": "USDC",
-        "timestamp": "2026-02-22T20:54:03.716236Z"
+        "timestamp": "2026-05-18T20:51:50.470599Z"
       },
       {
-        "tokenId": "584",
-        "price": 66.97,
+        "tokenId": "567",
+        "price": 45.87,
         "currency": "USDC",
-        "timestamp": "2026-03-11T20:41:06.882707Z"
+        "timestamp": "2026-05-09T13:01:14.589633Z"
       },
       {
-        "tokenId": "650",
-        "price": 40.37,
+        "tokenId": "577",
+        "price": 60.44,
         "currency": "USDC",
-        "timestamp": "2026-03-27T17:16:06.038652Z"
+        "timestamp": "2026-05-02T18:42:10.1049Z"
       },
       {
-        "tokenId": "659",
-        "price": 55.05,
+        "tokenId": "577",
+        "price": 18348623853.21,
         "currency": "USDC",
-        "timestamp": "2026-04-03T09:29:46.556535Z"
+        "timestamp": "2026-05-02T18:42:04.381903Z"
       },
       {
-        "tokenId": "691",
-        "price": 66.06,
+        "tokenId": "634",
+        "price": 25,
         "currency": "USDC",
-        "timestamp": "2026-03-07T19:51:55.853099Z"
+        "timestamp": "2026-05-14T00:37:36.626044Z"
       },
       {
-        "tokenId": "722",
-        "price": 63.3,
+        "tokenId": "652",
+        "price": 44.95,
         "currency": "USDC",
-        "timestamp": "2026-02-23T16:13:33.708889Z"
+        "timestamp": "2026-05-09T15:54:38.49934Z"
       },
       {
-        "tokenId": "742",
-        "price": 15.72,
+        "tokenId": "654",
+        "price": 25.69,
         "currency": "USDC",
-        "timestamp": "2026-02-17T16:02:20.707828Z"
+        "timestamp": "2026-04-20T19:19:53.041215Z"
       },
       {
-        "tokenId": "742",
-        "price": 10.45,
+        "tokenId": "673",
+        "price": 45.87,
         "currency": "USDC",
-        "timestamp": "2026-02-17T11:55:49.556761Z"
+        "timestamp": "2026-06-12T03:08:01.394621Z"
       },
       {
-        "tokenId": "749",
-        "price": 42.16,
+        "tokenId": "688",
+        "price": 17.43,
         "currency": "USDC",
-        "timestamp": "2026-02-21T20:32:46.368836Z"
+        "timestamp": "2026-06-23T02:55:35.358536Z"
       },
       {
-        "tokenId": "749",
-        "price": 26.59,
+        "tokenId": "689",
+        "price": 31.1,
         "currency": "USDC",
-        "timestamp": "2026-02-21T05:34:46.430248Z"
+        "timestamp": "2026-04-07T18:25:42.088697Z"
       },
       {
-        "tokenId": "750",
-        "price": 55.05,
+        "tokenId": "709",
+        "price": 45,
         "currency": "USDC",
-        "timestamp": "2026-03-17T20:46:13.352419Z"
+        "timestamp": "2026-06-01T23:37:57.961489Z"
+      },
+      {
+        "tokenId": "709",
+        "price": 36.7,
+        "currency": "USDC",
+        "timestamp": "2026-04-27T12:03:46.944779Z"
+      },
+      {
+        "tokenId": "711",
+        "price": 43.12,
+        "currency": "USDC",
+        "timestamp": "2026-07-09T08:55:23.48746Z"
       },
       {
         "tokenId": "758",
-        "price": 38.53,
+        "price": 27.52,
         "currency": "USDC",
-        "timestamp": "2026-03-11T21:30:40.856836Z"
+        "timestamp": "2026-06-06T07:19:41.277367Z"
+      },
+      {
+        "tokenId": "768",
+        "price": 27.29,
+        "currency": "USDC",
+        "timestamp": "2026-05-03T09:51:14.123388Z"
+      },
+      {
+        "tokenId": "768",
+        "price": 12.66,
+        "currency": "USDC",
+        "timestamp": "2026-04-30T18:46:32.468475Z"
+      },
+      {
+        "tokenId": "780",
+        "price": 20.18,
+        "currency": "USDC",
+        "timestamp": "2026-04-17T14:38:20.18659Z"
       },
       {
         "tokenId": "781",
-        "price": 41.28,
+        "price": 25,
         "currency": "USDC",
-        "timestamp": "2026-03-27T17:16:06.12089Z"
+        "timestamp": "2026-05-08T14:25:36.143401Z"
       },
       {
-        "tokenId": "799",
-        "price": 36.7,
+        "tokenId": "794",
+        "price": 32.11,
         "currency": "USDC",
-        "timestamp": "2026-03-09T22:47:55.695565Z"
+        "timestamp": "2026-07-12T14:42:19.282668Z"
       },
       {
-        "tokenId": "800",
-        "price": 65.14,
+        "tokenId": "794",
+        "price": 25,
         "currency": "USDC",
-        "timestamp": "2026-02-28T00:24:30.407894Z"
+        "timestamp": "2026-05-14T00:38:15.715978Z"
       },
       {
-        "tokenId": "822",
-        "price": 39.45,
+        "tokenId": "835",
+        "price": 16.51,
         "currency": "USDC",
-        "timestamp": "2026-03-19T14:47:44.614581Z"
+        "timestamp": "2026-04-14T01:55:16.008234Z"
       },
       {
-        "tokenId": "827",
-        "price": 40.46,
+        "tokenId": "842",
+        "price": 24.94,
         "currency": "USDC",
-        "timestamp": "2026-03-20T09:20:21.424605Z"
+        "timestamp": "2026-05-12T11:53:41.606243Z"
       },
       {
-        "tokenId": "856",
+        "tokenId": "858",
         "price": 25.69,
         "currency": "USDC",
-        "timestamp": "2026-04-01T01:03:01.604901Z"
+        "timestamp": "2026-06-04T01:35:25.223347Z"
       },
       {
         "tokenId": "861",
-        "price": 27.52,
+        "price": 15.4,
         "currency": "USDC",
-        "timestamp": "2026-03-18T18:42:52.59181Z"
+        "timestamp": "2026-04-07T14:56:55.703575Z"
       },
       {
-        "tokenId": "871",
-        "price": 41.19,
+        "tokenId": "867",
+        "price": 13.76,
         "currency": "USDC",
-        "timestamp": "2026-03-27T17:16:06.133229Z"
+        "timestamp": "2026-06-17T01:09:58.431204Z"
+      },
+      {
+        "tokenId": "872",
+        "price": 40.78,
+        "currency": "USDC",
+        "timestamp": "2026-06-05T02:34:46.839579Z"
       },
       {
         "tokenId": "891",
-        "price": 11.01,
+        "price": 15.59,
         "currency": "USDC",
-        "timestamp": "2026-03-03T10:52:31.817891Z"
+        "timestamp": "2026-05-28T21:40:16.725101Z"
+      },
+      {
+        "tokenId": "903",
+        "price": 9.17,
+        "currency": "USDC",
+        "timestamp": "2026-07-05T10:09:26.464562Z"
       },
       {
         "tokenId": "908",
-        "price": 11.08,
+        "price": 13.58,
         "currency": "USDC",
-        "timestamp": "2026-02-14T14:28:51.595645Z"
+        "timestamp": "2026-05-02T15:55:50.168866Z"
+      },
+      {
+        "tokenId": "911",
+        "price": 12.12,
+        "currency": "USDC",
+        "timestamp": "2026-05-02T15:55:50.227953Z"
+      },
+      {
+        "tokenId": "911",
+        "price": 10.58,
+        "currency": "USDC",
+        "timestamp": "2026-04-09T03:49:18.143553Z"
       }
     ]
   }
